@@ -65,13 +65,15 @@ BOOK_PREVIEW_URL=http://127.0.0.1:8765 PLAYWRIGHT_CHROMIUM_CHANNEL=chromium npm 
 
 已提供可独立复用的 [interactive-textbook 技能](skills/interactive-textbook/SKILL.md)，包含科学核查、统一计算模型、公式/图表/读数一致、局部符号释义、交互实验和视觉标准。支持新书、继续章节和专项修复，不强制重建已有项目。
 
+v0.2.0已纳入本次全书复核的[问题与检查方法](skills/interactive-textbook/references/review-cases.md)：有限积分与归一化、实际绘线路径和探针、阈值与极值、局部符号优先级、完整数学表达式及可追溯的覆盖记录。下一本书沿用这些方法，重新核对自己的来源和模型。
+
 本机已安装时，在新书任务中输入：
 
 ```text
 $interactive-textbook 把《书名》制作成中文交互教材。参考资料在……，面向……读者；先核对来源并完成一个样板章。
 ```
 
-[下载独立技能ZIP](https://github.com/HainaHuang729/galaxies-interactive-textbook/releases/latest/download/interactive-textbook-skill.zip)。其他使用者可以把仓库中的 `skills/interactive-textbook/` 整个文件夹放入其Codex技能目录，保留 `SKILL.md`、`agents/`、`references/`、`assets/`、`scripts/` 的相对结构。若有同名技能，先比较后更新。结构化作者源初始化助手只创建骨架，不包含原书、已核实模型或自动生成的完整网站。
+[下载独立技能ZIP（v0.2.0）](https://github.com/HainaHuang729/galaxies-interactive-textbook/releases/download/skill-v0.2.0/interactive-textbook-skill.zip)。其他使用者可以把仓库中的 `skills/interactive-textbook/` 整个文件夹放入其Codex技能目录，保留 `SKILL.md`、`agents/`、`references/`、`assets/`、`scripts/` 的相对结构。若有同名技能，先比较后更新。结构化作者源初始化助手只创建骨架，不包含原书、已核实模型或自动生成的完整网站。
 
 ## 项目结构
 

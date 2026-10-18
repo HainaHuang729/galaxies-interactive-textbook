@@ -1,14 +1,88 @@
 {
-  "scope": {"chapters": [], "models": [], "sharedComponents": []},
-  "sourceReview": {"status": "not-run", "evidence": []},
-  "scienceReview": {"status": "not-run", "method": null, "domain": null, "evidence": []},
-  "independentNumerics": {"status": "not-run", "method": null, "tolerances": [], "evidence": []},
-  "formulaChartReadout": {"status": "not-run", "actualRenderedStates": [], "evidence": []},
-  "symbols": {"status": "not-run", "observedGlyphBindings": [], "unboundGlyphs": [], "unreviewedCompounds": [], "evidence": []},
-  "interaction": {"status": "not-run", "testedActions": [], "animationStates": [], "evidence": []},
-  "visuals": {"status": "not-run", "viewports": [], "themes": [], "reviewedImages": []},
-  "build": {"status": "not-run", "command": null, "evidence": []},
+  "scope": {
+    "chapters": [],
+    "models": [],
+    "sharedComponents": []
+  },
+  "sourceReview": {
+    "status": "not-run",
+    "evidence": []
+  },
+  "scienceReview": {
+    "status": "not-run",
+    "method": null,
+    "domain": null,
+    "evidence": []
+  },
+  "independentNumerics": {
+    "status": "not-run",
+    "method": null,
+    "tolerances": [],
+    "evidence": []
+  },
+  "formulaChartReadout": {
+    "status": "not-run",
+    "actualRenderedStates": [],
+    "evidence": [],
+    "integrationContractChecks": [],
+    "actualPathChecks": [],
+    "axisDomainChecks": [],
+    "thresholdAndExtremaChecks": []
+  },
+  "symbols": {
+    "status": "not-run",
+    "observedGlyphBindings": [],
+    "unboundGlyphs": null,
+    "unreviewedCompounds": null,
+    "evidence": [],
+    "observedHitTargets": [],
+    "equivalentExplanationEntrypoints": [],
+    "excludedDecorativeSurfaces": []
+  },
+  "interaction": {
+    "status": "not-run",
+    "testedActions": [],
+    "animationStates": [],
+    "evidence": []
+  },
+  "visuals": {
+    "status": "not-run",
+    "viewports": [],
+    "themes": [],
+    "reviewedImages": [],
+    "executedThemeViewportPairs": []
+  },
+  "build": {
+    "status": "not-run",
+    "command": null,
+    "evidence": []
+  },
   "limitations": [],
   "remainingWork": [],
-  "conclusion": "pending"
+  "conclusion": "pending",
+  "inventory": {
+    "status": "not-run",
+    "chaptersAndPages": [],
+    "modelsAndControls": [],
+    "testEntrypoints": [],
+    "unexecutedChecks": null
+  },
+  "coverage": {
+    "status": "not-run",
+    "requiredStates": [],
+    "executedStates": [],
+    "notRunStates": [],
+    "exclusions": [],
+    "stateFields": [
+      "chapterOrPage",
+      "modelId",
+      "parameters",
+      "units",
+      "theme",
+      "viewport",
+      "checkLayer",
+      "status",
+      "evidence"
+    ]
+  }
 }

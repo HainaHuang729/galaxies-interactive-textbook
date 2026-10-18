@@ -86,6 +86,8 @@
 
 本流程已整理成 [`interactive-textbook`](../skills/interactive-textbook/SKILL.md)，并附科学核查、数学语义、图像交互与交付参考。整份技能可独立复制，运行时不依赖GALAXIES仓库或其原书PDF。
 
+v0.2.0将本次复核的问题整理为[可迁移的检查案例](../skills/interactive-textbook/references/review-cases.md)，并在模型契约与复核模板中记录积分域、归一化、阈值/极值、实际路径证据和已执行的覆盖状态；下一本书使用同样标准，科学来源与具体模型重新核实。
+
 调用示例：`$interactive-textbook 继续制作这本书的下一章，沿用现有风格，核对模型、图表、公式和局部符号解释。`
 
 技能的可选 `scripts/init_book.py` 为新项目建立来源登记、章节地图、模型契约、符号与待运行复核记录；不会覆盖非空目录。已有教材直接在原项目上继续，不运行初始化器重建。
