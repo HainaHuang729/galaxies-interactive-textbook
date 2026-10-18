@@ -2313,15 +2313,13 @@
     "id": "c8-blast-energy",
     "kind": "symbol",
     "aliases": [
-      "E",
-      "ρ₀",
-      "ρ0"
+      "E"
     ],
-    "title": "爆炸注能与环境密度",
-    "english": "explosion energy and ambient density",
-    "definition": "E为一次瞬时注入后保留的能量，ρ0=mp nH为本页均匀纯氢环境密度；二者决定爆炸扩展尺度。",
-    "unit": "E：erg；ρ0：g cm⁻³",
-    "scope": "ρ0在此为环境密度，不是NFW气体的中心归一。",
+    "title": "爆炸注入能量",
+    "english": "explosion energy",
+    "definition": "E为一次瞬时注入后保留的总能量；Sedov绝热相似解假定该能量不随时间损失。",
+    "unit": "erg",
+    "scope": "只用于瞬时爆炸模型；环境质量密度另由ρ0=mp nH给出。",
     "chapters": [
       8
     ],
@@ -6584,14 +6582,12 @@
     "aliases": [
       "R",
       "v",
-      "t",
-      "ρ₀",
-      "ρ0"
+      "t"
     ],
-    "title": "风泡半径、薄壳速度与环境密度",
-    "english": "wind-bubble radius, speed and ambient density",
-    "definition": "R为薄壳半径，v=(3/5)R/t为相似解扩张速度，t为持续注能时间，ρ0=mp nH为均匀纯氢环境密度。",
-    "unit": "pc；km s⁻¹；Myr；g cm⁻³",
+    "title": "风泡半径、薄壳速度与时间",
+    "english": "wind-bubble radius, shell speed and time",
+    "definition": "R为薄壳半径，v=(3/5)R/t为相似解扩张速度，t为持续注能时间。",
+    "unit": "R：pc；v：km s⁻¹；t：Myr",
     "scope": "与瞬时爆炸的2/5时间指数不同；忽略泡内部辐射但允许外壳辐射。",
     "chapters": [
       8

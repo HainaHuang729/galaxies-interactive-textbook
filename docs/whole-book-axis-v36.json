@@ -1,0 +1,545 @@
+{
+  "rows": [
+    {
+      "theme": "afterglow",
+      "width": 1440,
+      "ch": 2,
+      "id": "profile-lab",
+      "v": 1,
+      "min": 0.00022673356550294085,
+      "max": 5.356693980033321,
+      "yd": [
+        0.00001,
+        10
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "afterglow",
+      "width": 1440,
+      "ch": 2,
+      "id": "profile-lab",
+      "v": 4,
+      "min": 0.013117938941331928,
+      "max": 2141.4735428847125,
+      "yd": [
+        0.00001,
+        10000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "afterglow",
+      "width": 1440,
+      "ch": 2,
+      "id": "profile-lab",
+      "v": 8,
+      "min": 0.017237600745329287,
+      "max": 116816.91429307731,
+      "yd": [
+        0.00001,
+        1000000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "afterglow",
+      "width": 1440,
+      "ch": 7,
+      "id": "boundary-lab",
+      "v": 2,
+      "min": 30.831228945242167,
+      "max": 5701.412342926967,
+      "yd": [
+        10,
+        10000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "afterglow",
+      "width": 1440,
+      "ch": 7,
+      "id": "boundary-lab",
+      "v": 10,
+      "min": 24.50795910173543,
+      "max": 12589.400554117601,
+      "yd": [
+        10,
+        100000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "afterglow",
+      "width": 1440,
+      "ch": 7,
+      "id": "boundary-lab",
+      "v": 20,
+      "min": 22.56071151559129,
+      "max": 18022.840603744367,
+      "yd": [
+        10,
+        100000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "afterglow",
+      "width": 390,
+      "ch": 2,
+      "id": "profile-lab",
+      "v": 1,
+      "min": 0.00022673356550294085,
+      "max": 5.356693980033321,
+      "yd": [
+        0.00001,
+        10
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "afterglow",
+      "width": 390,
+      "ch": 2,
+      "id": "profile-lab",
+      "v": 4,
+      "min": 0.013117938941331928,
+      "max": 2141.4735428847125,
+      "yd": [
+        0.00001,
+        10000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "afterglow",
+      "width": 390,
+      "ch": 2,
+      "id": "profile-lab",
+      "v": 8,
+      "min": 0.017237600745329287,
+      "max": 116816.91429307731,
+      "yd": [
+        0.00001,
+        1000000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "afterglow",
+      "width": 390,
+      "ch": 7,
+      "id": "boundary-lab",
+      "v": 2,
+      "min": 30.831228945242167,
+      "max": 5701.412342926967,
+      "yd": [
+        10,
+        10000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "afterglow",
+      "width": 390,
+      "ch": 7,
+      "id": "boundary-lab",
+      "v": 10,
+      "min": 24.50795910173543,
+      "max": 12589.400554117601,
+      "yd": [
+        10,
+        100000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "afterglow",
+      "width": 390,
+      "ch": 7,
+      "id": "boundary-lab",
+      "v": 20,
+      "min": 22.56071151559129,
+      "max": 18022.840603744367,
+      "yd": [
+        10,
+        100000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "afterglow",
+      "width": 320,
+      "ch": 2,
+      "id": "profile-lab",
+      "v": 1,
+      "min": 0.00022673356550294085,
+      "max": 5.356693980033321,
+      "yd": [
+        0.00001,
+        10
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "afterglow",
+      "width": 320,
+      "ch": 2,
+      "id": "profile-lab",
+      "v": 4,
+      "min": 0.013117938941331928,
+      "max": 2141.4735428847125,
+      "yd": [
+        0.00001,
+        10000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "afterglow",
+      "width": 320,
+      "ch": 2,
+      "id": "profile-lab",
+      "v": 8,
+      "min": 0.017237600745329287,
+      "max": 116816.91429307731,
+      "yd": [
+        0.00001,
+        1000000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "afterglow",
+      "width": 320,
+      "ch": 7,
+      "id": "boundary-lab",
+      "v": 2,
+      "min": 30.831228945242167,
+      "max": 5701.412342926967,
+      "yd": [
+        10,
+        10000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "afterglow",
+      "width": 320,
+      "ch": 7,
+      "id": "boundary-lab",
+      "v": 10,
+      "min": 24.50795910173543,
+      "max": 12589.400554117601,
+      "yd": [
+        10,
+        100000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "afterglow",
+      "width": 320,
+      "ch": 7,
+      "id": "boundary-lab",
+      "v": 20,
+      "min": 22.56071151559129,
+      "max": 18022.840603744367,
+      "yd": [
+        10,
+        100000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "moon",
+      "width": 1440,
+      "ch": 2,
+      "id": "profile-lab",
+      "v": 1,
+      "min": 0.00022673356550294085,
+      "max": 5.356693980033321,
+      "yd": [
+        0.00001,
+        10
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "moon",
+      "width": 1440,
+      "ch": 2,
+      "id": "profile-lab",
+      "v": 4,
+      "min": 0.013117938941331928,
+      "max": 2141.4735428847125,
+      "yd": [
+        0.00001,
+        10000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "moon",
+      "width": 1440,
+      "ch": 2,
+      "id": "profile-lab",
+      "v": 8,
+      "min": 0.017237600745329287,
+      "max": 116816.91429307731,
+      "yd": [
+        0.00001,
+        1000000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "moon",
+      "width": 1440,
+      "ch": 7,
+      "id": "boundary-lab",
+      "v": 2,
+      "min": 30.831228945242167,
+      "max": 5701.412342926967,
+      "yd": [
+        10,
+        10000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "moon",
+      "width": 1440,
+      "ch": 7,
+      "id": "boundary-lab",
+      "v": 10,
+      "min": 24.50795910173543,
+      "max": 12589.400554117601,
+      "yd": [
+        10,
+        100000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "moon",
+      "width": 1440,
+      "ch": 7,
+      "id": "boundary-lab",
+      "v": 20,
+      "min": 22.56071151559129,
+      "max": 18022.840603744367,
+      "yd": [
+        10,
+        100000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "moon",
+      "width": 390,
+      "ch": 2,
+      "id": "profile-lab",
+      "v": 1,
+      "min": 0.00022673356550294085,
+      "max": 5.356693980033321,
+      "yd": [
+        0.00001,
+        10
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "moon",
+      "width": 390,
+      "ch": 2,
+      "id": "profile-lab",
+      "v": 4,
+      "min": 0.013117938941331928,
+      "max": 2141.4735428847125,
+      "yd": [
+        0.00001,
+        10000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "moon",
+      "width": 390,
+      "ch": 2,
+      "id": "profile-lab",
+      "v": 8,
+      "min": 0.017237600745329287,
+      "max": 116816.91429307731,
+      "yd": [
+        0.00001,
+        1000000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "moon",
+      "width": 390,
+      "ch": 7,
+      "id": "boundary-lab",
+      "v": 2,
+      "min": 30.831228945242167,
+      "max": 5701.412342926967,
+      "yd": [
+        10,
+        10000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "moon",
+      "width": 390,
+      "ch": 7,
+      "id": "boundary-lab",
+      "v": 10,
+      "min": 24.50795910173543,
+      "max": 12589.400554117601,
+      "yd": [
+        10,
+        100000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "moon",
+      "width": 390,
+      "ch": 7,
+      "id": "boundary-lab",
+      "v": 20,
+      "min": 22.56071151559129,
+      "max": 18022.840603744367,
+      "yd": [
+        10,
+        100000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "moon",
+      "width": 320,
+      "ch": 2,
+      "id": "profile-lab",
+      "v": 1,
+      "min": 0.00022673356550294085,
+      "max": 5.356693980033321,
+      "yd": [
+        0.00001,
+        10
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "moon",
+      "width": 320,
+      "ch": 2,
+      "id": "profile-lab",
+      "v": 4,
+      "min": 0.013117938941331928,
+      "max": 2141.4735428847125,
+      "yd": [
+        0.00001,
+        10000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "moon",
+      "width": 320,
+      "ch": 2,
+      "id": "profile-lab",
+      "v": 8,
+      "min": 0.017237600745329287,
+      "max": 116816.91429307731,
+      "yd": [
+        0.00001,
+        1000000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "moon",
+      "width": 320,
+      "ch": 7,
+      "id": "boundary-lab",
+      "v": 2,
+      "min": 30.831228945242167,
+      "max": 5701.412342926967,
+      "yd": [
+        10,
+        10000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "moon",
+      "width": 320,
+      "ch": 7,
+      "id": "boundary-lab",
+      "v": 10,
+      "min": 24.50795910173543,
+      "max": 12589.400554117601,
+      "yd": [
+        10,
+        100000
+      ],
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "theme": "moon",
+      "width": 320,
+      "ch": 7,
+      "id": "boundary-lab",
+      "v": 20,
+      "min": 22.56071151559129,
+      "max": 18022.840603744367,
+      "yd": [
+        10,
+        100000
+      ],
+      "overflow": false,
+      "errors": 0
+    }
+  ],
+  "extraCards": 2
+}

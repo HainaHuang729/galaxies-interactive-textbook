@@ -51,7 +51,14 @@
   ref.series.forEach(c=>layer.append('path').attr('d',d3.line().defined(p=>Number.isFinite(p.x)&&Number.isFinite(p.y)&&(!info.y.base||p.y>0)).x(p=>info.x(p.x)).y(p=>info.y(p.y))(c.data)).attr('fill','none').attr('stroke','var(--muted)').attr('stroke-width',1.4).attr('stroke-dasharray','2 5').attr('opacity',.7));
  }
  function setSeries(node,series){if(typeof node==='string')node=document.getElementById(node);const info=frames.get(node);if(!info)return;info.series=series.map((s,i)=>({label:s.label||`曲线 ${i+1}`,data:s.data.filter(p=>Number.isFinite(p.x)&&Number.isFinite(p.y)).map(p=>({x:p.x,y:p.y}))}));queueMicrotask(()=>enhance(node));}
- function addSeries(node,data,label){if(typeof node==='string')node=document.getElementById(node);const info=frames.get(node);if(!info)return;info.series.push({label:label||`曲线 ${info.series.length+1}`,data:data.filter(p=>Number.isFinite(p.x)&&Number.isFinite(p.y))});}
+ function addSeries(node,data,label){if(typeof node==='string')node=document.getElementById(node);const info=frames.get(node);if(!info)return;info.series.push({label:label||`曲线 ${info.series.length+1}`,data:data.filter(p=>Number.isFinite(p.x)&&Number.isFinite(p.y))});return info.series.length-1;}
+ // Insert the analytical current state into the actual line, not just a parallel readout array.
+ function includeSample(node,index,x,y){
+  if(typeof node==='string')node=document.getElementById(node);const info=frames.get(node),curve=info?.series[index];
+  if(!curve||!Number.isFinite(x)||!Number.isFinite(y))return;
+  const at=curve.data.findIndex(p=>p.x===x);if(at>=0)curve.data[at]={x,y};else curve.data.push({x,y});curve.data.sort((a,b)=>a.x-b.x);
+  const path=node.querySelector(`path[data-plot-series="${index}"]`);if(path)d3.select(path).datum(curve.data).attr('d',d3.line().defined(p=>Number.isFinite(p.y)&&(!info.y.base||p.y>0)).x(p=>info.x(p.x)).y(p=>info.y(p.y)));
+ }
  function snapshot(node){
   const clone=node.cloneNode(true),prefix=`plot-export-${++serial}-`,from=[node,...node.querySelectorAll('*')],to=[clone,...clone.querySelectorAll('*')],ids=new Map();
   const properties=['color','fill','fill-opacity','stroke','stroke-opacity','stroke-width','stroke-dasharray','stroke-linecap','stroke-linejoin','font-family','font-size','font-weight','font-style','text-anchor','dominant-baseline','opacity','display','visibility','paint-order'];
@@ -92,6 +99,6 @@
   node.addEventListener('pointermove',event=>{const current=frames.get(node),b=node.getBoundingClientRect(),vb=node.viewBox.baseVal,x=(event.clientX-b.left)/b.width*vb.width,y=(event.clientY-b.top)/b.height*vb.height;if(x<current.box.x||x>current.box.x+current.box.w||y<current.box.y||y>current.box.y+current.box.h)return;px=(x-current.box.x)/current.box.w;py=(y-current.box.y)/current.box.h;show();});
   node.addEventListener('focus',show);node.addEventListener('keydown',event=>{const d={ArrowLeft:[-.01,0],ArrowRight:[.01,0],ArrowUp:[0,-.01],ArrowDown:[0,.01]}[event.key];if(!d)return;event.preventDefault();event.stopPropagation();if(frames.get(node)?.series.length&&d[1])chosen=(chosen+(d[1]>0?1:-1)+frames.get(node).series.length)%frames.get(node).series.length;else{px=Math.max(0,Math.min(1,px+d[0]));py=Math.max(0,Math.min(1,py+d[1]));}show();});
  }
- window.BookCharts={frame,enhance,snapshot,setSeries,addSeries,inspect:node=>frames.get(typeof node==='string'?document.getElementById(node):node)};
+ window.BookCharts={frame,enhance,snapshot,setSeries,addSeries,includeSample,inspect:node=>frames.get(typeof node==='string'?document.getElementById(node):node)};
  document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('svg.chart').forEach(enhance);window.dispatchEvent(new Event('resize'));},{once:true});
 })();

@@ -362,7 +362,7 @@
     "AV": "A_V",
     "A_V": "A_V",
     "A_B": "A_B",
-    "ZA": "ZA",
+    "ZA": "Z_{\\mathrm A}",
     "ZW": "ZW",
     "GM": "GM",
     "GMBH": "GM_{\\rm BH}",
@@ -402,7 +402,7 @@
     "ρc²": "\\rho c^2",
     "ρΛ": "\\rho_\\Lambda",
     "ρm": "\\rho_{\\rm m}",
-    "μm": "\\mu\\mathrm{m}",
+    "μm": "\\mu\\mathrm m",
     "[Fe/H]": "[\\mathrm{Fe}/\\mathrm{H}]",
     "D_L": "D_{\\rm L}",
     "D_A": "D_{\\rm A}",
@@ -552,6 +552,8 @@
     "Δt₀": "\\Delta t_0",
     "Δte": "\\Delta t_e",
     "z⋆": "z_\\star",
-    "ΩΛ,0": "\\Omega_{\\Lambda,0}"
+    "ΩΛ,0": "\\Omega_{\\Lambda,0}",
+    "Hβ": "\\mathrm H\\beta",
+    "r_rms": "r_{\\rm rms}"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "checks": 172,
+  "independentMatchingCases": 15,
+  "independentSfrCases": 18,
+  "maxLogLErrorDex": 0.0000054832561531270585,
+  "maxSfrRelativeError": 1.5114809404082052e-9,
+  "scope": "Independent early-chapter ODE/analytic/quadrature checks, finite toy distributions and declared model domains; no claim of observational calibration."
+}

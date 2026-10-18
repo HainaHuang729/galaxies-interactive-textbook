@@ -27,9 +27,11 @@
       if (entry.chapters?.length && !entry.chapters.includes(+context.chapter)) continue;
       let rank = entry.chapters?.length ? 100 : 0;
       if (entry.contexts?.length) {
-        const matched = entry.contexts.filter(want => (context.contexts || []).some(actual => matchesContext(actual, want)));
+        const matched = entry.contexts.flatMap(want => (context.contexts || []).flatMap((actual,index) => matchesContext(actual,want) ? [{want,index}] : []));
         if (!matched.length) continue;
-        rank += 1000 + Math.max(...matched.map(id => id.length));
+        // A local experiment outranks an ancestor section even when its ID is shorter.
+        const nearest = Math.min(...matched.map(m => m.index));
+        rank += 100000 - nearest * 100 + Math.max(...matched.filter(m => m.index === nearest).map(m => m.want.length));
       }
       ranked.push({entry, rank});
     }
@@ -59,10 +61,11 @@
   function contextOf(element) {
     const contexts = [];
     for (let el = element?.nodeType === 3 ? element.parentElement : element; el && el !== document.body; el = el.parentElement) {
+      // Explicit author bindings on an element precede its generic HTML ID.
+      if (el.dataset.glossaryContext) contexts.push(...el.dataset.glossaryContext.split('|'));
       if (el.id && !/^reader-page-\d+$/.test(el.id)) contexts.push(el.id);
       if (el.dataset.pageTarget) contexts.push(el.dataset.pageTarget.replace(/-model$/, ''));
       if (el.dataset.lab) contexts.push(el.dataset.lab);
-      if (el.dataset.glossaryContext) contexts.push(...el.dataset.glossaryContext.split('|'));
     }
     return {chapter, contexts: [...new Set(contexts)]};
   }
@@ -150,7 +153,7 @@
       if(expression.dataset.glossaryWhole||expression.closest('button,a,.glossary-ui,.math-measure,.math-select-preview'))continue;
       const tex=expression.querySelector('annotation')?.textContent||'',powers=numericPowerBases(expression),context=contextOf(expression);
       for(const node of expression.querySelectorAll('.katex-html .mord:has(>.msupsub),.katex-html .katex-accent')){
-        if(node.closest('[data-glossary-ids]')||node.querySelector('.mfrac,.sqrt,.mbin,.mrel,.mopen,.mclose'))continue;
+        if(node.closest('[data-glossary-ids]')||node.querySelector('.mfrac,.sqrt'))continue;
         // In \mathrm{cm^3}, KaTeX attaches the power only to the final m.
         // Leave that group for the complete unit match (cm³), not metre³.
         if(node.querySelector('.mathrm')&&node.previousElementSibling?.matches('.mathrm'))continue;

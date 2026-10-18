@@ -1,0 +1,294 @@
+[
+  {
+    "id": "v36-c8-rho-ambient",
+    "kind": "symbol",
+    "aliases": [
+      "ρ₀",
+      "ρ0"
+    ],
+    "tex": "\\rho_0",
+    "title": "反馈模型的均匀环境质量密度",
+    "english": "uniform ambient mass density",
+    "definition": "瞬时爆炸和恒功率风泡模型共同采用ρ0=mp nH；这里nH是氢核数密度，环境为纯氢。该量不是能量，也不是NFW静水平衡气体的中心密度。",
+    "unit": "g cm⁻³",
+    "scope": "仅用于本章均匀环境的爆炸波与风泡教学解；忽略环境分层与自引力。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "blast-lab",
+      "wind-lab"
+    ],
+    "source": "MBW (2010) §8.6.1–8.6.2 pp.398–406；网页统一纯氢参数约定。"
+  },
+  {
+    "id": "v36-match-ell",
+    "kind": "symbol",
+    "aliases": [
+      "ℓ"
+    ],
+    "tex": "\\ell",
+    "title": "匹配实验的对数光度坐标",
+    "english": "logarithmic luminosity coordinate",
+    "definition": "ℓ=log10(L/L☉)，本模型的有限范围为6至11.5；不是CMB多极数。",
+    "unit": "无量纲",
+    "scope": "仅用于所列实验的局部语境，不继承其他章节同字母的含义。",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "matching-lab"
+    ],
+    "source": "MBW (2010) §15.3.1 pp.663–665 的单调匹配思想；具体有限分布与归一化为网页教学设定。"
+  },
+  {
+    "id": "v36-match-m",
+    "kind": "symbol",
+    "aliases": [
+      "m"
+    ],
+    "tex": "m",
+    "title": "匹配实验的对数暗晕质量坐标",
+    "english": "logarithmic halo mass coordinate",
+    "definition": "m=log10(M/M☉)，本模型的有限范围为10至15；不是视星等，也不是单颗恒星质量。",
+    "unit": "无量纲",
+    "scope": "仅用于所列实验的局部语境，不继承其他章节同字母的含义。",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "matching-lab"
+    ],
+    "source": "MBW (2010) §15.3.1 pp.663–665 的单调匹配思想；具体有限分布与归一化为网页教学设定。"
+  },
+  {
+    "id": "v36-match-u",
+    "kind": "symbol",
+    "aliases": [
+      "u"
+    ],
+    "tex": "u",
+    "title": "光度累计积分的哑变量",
+    "english": "dummy log-luminosity variable",
+    "definition": "u与ℓ同属无量纲对数光度坐标；积分时变化，积分下限ℓ由当前匹配光度给定。不是速度或Voigt变量。",
+    "unit": "无量纲",
+    "scope": "仅用于所列实验的局部语境，不继承其他章节同字母的含义。",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "matching-lab"
+    ],
+    "source": "MBW (2010) §15.3.1 pp.663–665 的单调匹配思想；具体有限分布与归一化为网页教学设定。"
+  },
+  {
+    "id": "v36-match-v",
+    "kind": "symbol",
+    "aliases": [
+      "v"
+    ],
+    "tex": "v",
+    "title": "暗晕累计积分的哑变量",
+    "english": "dummy log-halo-mass variable",
+    "definition": "v与m同属无量纲对数暗晕质量坐标；不是有量纲的速度。",
+    "unit": "无量纲",
+    "scope": "仅用于所列实验的局部语境，不继承其他章节同字母的含义。",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "matching-lab"
+    ],
+    "source": "MBW (2010) §15.3.1 pp.663–665 的单调匹配思想；具体有限分布与归一化为网页教学设定。"
+  },
+  {
+    "id": "v36-match-phi",
+    "kind": "symbol",
+    "aliases": [
+      "φtoy",
+      "φ_toy"
+    ],
+    "tex": "\\phi_{\\rm toy}",
+    "title": "未归一化的合成每dex光度形状",
+    "english": "unnormalized toy luminosity shape",
+    "definition": "φtoy(ℓ)=ln(10)10^[(ℓ−10)(α+1)]exp[−10^(ℓ−10)]，相当于L*=10¹⁰L☉的Schechter每dex形状。累计积分除以6至11.5间的总积分，归一化常数因而约去；不是实测数量密度。",
+    "unit": "无量纲",
+    "scope": "仅用于所列实验的局部语境，不继承其他章节同字母的含义。",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "matching-lab"
+    ],
+    "source": "MBW (2010) §15.3.1 pp.663–665 的单调匹配思想；具体有限分布与归一化为网页教学设定。"
+  },
+  {
+    "id": "v36-c4-smoothed-delta",
+    "kind": "symbol",
+    "aliases": [
+      "δR",
+      "δ_R"
+    ],
+    "tex": "\\delta_R",
+    "title": "平滑后的密度反差场",
+    "english": "smoothed density contrast",
+    "definition": "将原始密度反差的各个Fourier振幅乘以Gaussian窗口W(kR)后得到δR；下标R表示平滑尺度，不是将δ与半径R相乘。",
+    "unit": "无量纲",
+    "scope": "仅用于所列实验的局部语境，不继承其他章节同字母的含义。",
+    "chapters": [
+      4
+    ],
+    "contexts": [
+      "smoothing-lab"
+    ],
+    "source": "MBW (2010) §4.4 pp.202–209；网页8模式Gaussian平滑教学实例。"
+  },
+  {
+    "id": "v36-match-alpha",
+    "kind": "symbol",
+    "aliases": [
+      "α"
+    ],
+    "tex": "\\alpha",
+    "title": "合成光度函数的低光度斜率",
+    "english": "toy faint-end Schechter slope",
+    "definition": "匹配实验采用Schechter形状的α；每dex低光度端按L^(α+1)变化，而非L^α。即使α≤−1，本实验保留L≥10⁶L☉的有限下限，因此只对声明区间归一。",
+    "unit": "无量纲",
+    "scope": "仅用于本实验的合成分布；不是IMF斜率、谱指数或实测拟合。",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "matching-lab"
+    ],
+    "source": "MBW (2010) §15.1、§15.3 pp.653–655、663–665；网页有限分布设定。"
+  },
+  {
+    "id": "v36-sfr-cut",
+    "kind": "symbol",
+    "aliases": [
+      "Mcut",
+      "M_cut"
+    ],
+    "tex": "M_{\\rm cut}",
+    "title": "形成率积分的暗晕质量下限",
+    "english": "toy cosmic SFR mass scale",
+    "definition": "当前指定的冷却阈值；低于它的中心SFR设为0，积分从log10(Mcut/M☉)开始。",
+    "unit": "M☉",
+    "scope": "仅用于第15章cosmic-sfr实验；合成设定，不是巡天测量。",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "cosmic-sfr-lab"
+    ],
+    "source": "MBW (2010) §15.4 pp.670–674为主题依据；指定模型的峰值推导见本页公式。"
+  },
+  {
+    "id": "v36-sfr-M1",
+    "kind": "symbol",
+    "aliases": [
+      "M1",
+      "M_1"
+    ],
+    "tex": "M_1",
+    "title": "合成暗晕质量函数的指数截止",
+    "english": "toy cosmic SFR mass scale",
+    "definition": "M1=10¹⁴exp(−z)M☉，是本页人为选择的质量函数截止尺度。",
+    "unit": "M☉",
+    "scope": "仅用于第15章cosmic-sfr实验；合成设定，不是巡天测量。",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "cosmic-sfr-lab"
+    ],
+    "source": "MBW (2010) §15.4 pp.670–674为主题依据；指定模型的峰值推导见本页公式。"
+  },
+  {
+    "id": "v36-sfr-M2",
+    "kind": "symbol",
+    "aliases": [
+      "M2",
+      "M_2"
+    ],
+    "tex": "M_2",
+    "title": "合成中心形成率的指数截止",
+    "english": "toy cosmic SFR mass scale",
+    "definition": "M2=10¹²·⁵M☉，是本页人为选择的中心SFR高质量截止。",
+    "unit": "M☉",
+    "scope": "仅用于第15章cosmic-sfr实验；合成设定，不是巡天测量。",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "cosmic-sfr-lab"
+    ],
+    "source": "MBW (2010) §15.4 pp.670–674为主题依据；指定模型的峰值推导见本页公式。"
+  },
+  {
+    "id": "v36-sfr-peak",
+    "kind": "symbol",
+    "aliases": [
+      "Mpeak",
+      "M_peak"
+    ],
+    "tex": "M_{\\rm peak}",
+    "title": "形成率密度贡献最大的暗晕质量",
+    "english": "toy cosmic SFR mass scale",
+    "definition": "对于ε>0，本页每dex贡献∝M⁰·¹exp[−M/M1−M/M2]。未截断峰为0.1/(1/M1+1/M2)，若低于Mcut则最大值在阈值处；ε=0时贡献处处为0，不定义唯一峰。",
+    "unit": "M☉",
+    "scope": "仅用于第15章cosmic-sfr实验；合成设定，不是巡天测量。",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "cosmic-sfr-lab"
+    ],
+    "source": "MBW (2010) §15.4 pp.670–674为主题依据；指定模型的峰值推导见本页公式。"
+  },
+  {
+    "id": "v36-c4-Ddot",
+    "kind": "symbol",
+    "aliases": [
+      "Ḋ+",
+      "Ḋ+",
+      "Ḋ₊",
+      "Ḋ₊"
+    ],
+    "tex": "\\dot D_+",
+    "title": "增长因子的宇宙时一阶导数",
+    "english": "cosmic-time derivative of growing mode",
+    "definition": "对宇宙物理时间t求线性增长因子D+的导数。不是D+本身，也不是以尺度因子a为自变量的导数；增长率f需再用f=Ḋ+/(HD+)换算。",
+    "unit": "时间⁻¹",
+    "scope": "平直无压物质加Λ、忽略辐射的线性增长模型。",
+    "chapters": [
+      4
+    ],
+    "contexts": [
+      "growth-lab"
+    ],
+    "source": "MBW (2010) §4.1.6(a) pp.172–173；增长因子的时间约定。"
+  },
+  {
+    "id": "v36-c4-Dddot",
+    "kind": "symbol",
+    "aliases": [
+      "D̈+",
+      "D̈₊"
+    ],
+    "tex": "\\ddot D_+",
+    "title": "增长因子的宇宙时二阶导数",
+    "english": "cosmic-time derivative of growing mode",
+    "definition": "对宇宙物理时间t求D+的二阶导数，出现在无压线性扰动增长方程中。两点重音表示二阶时间导数；不代表增长因子平方。",
+    "unit": "时间⁻²",
+    "scope": "平直无压物质加Λ、忽略辐射的线性增长模型。",
+    "chapters": [
+      4
+    ],
+    "contexts": [
+      "growth-lab"
+    ],
+    "source": "MBW (2010) §4.1.6(a) pp.172–173；增长因子的时间约定。"
+  }
+]

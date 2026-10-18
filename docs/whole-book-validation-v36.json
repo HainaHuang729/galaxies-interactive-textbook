@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-18",
+  "scope": {
+    "chapters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "readerPages": 548,
+    "additionalPage": "rotation.html",
+    "skill": "skills/interactive-textbook/SKILL.md"
+  },
+  "sourceReview": {
+    "status": "reviewed-with-stated-scope",
+    "basis": [
+      "current authored JSON and local cached textbook extracts",
+      "MBW §4.1.6 pp.172–173",
+      "MBW §10.4.3 pp.490–492",
+      "MBW §15.3–15.4 pp.663–674"
+    ],
+    "originalReferenceModified": false,
+    "limit": "Current interactive guide and model assumptions; not every derivation in the reference book."
+  },
+  "independentNumerics": {
+    "status": "passed",
+    "runner": "npm test",
+    "checkScripts": 18,
+    "newChecks": 172,
+    "newMethods": [
+      "RK4 hot/cold/locked/outflow mass budgets",
+      "analytic EdS/radiation distances and ages",
+      "RK4 linear growth ODE",
+      "direct Sersic area quadrature",
+      "50-digit incomplete gamma integrals and bisection",
+      "finite-difference constrained SFR peak"
+    ],
+    "evidence": [
+      "whole-book-numerics-v36.json",
+      "../scripts/fixtures/whole-book-v36.json"
+    ]
+  },
+  "formulaChartReadout": {
+    "status": "passed-for-tested-states",
+    "wholeBookLayouts": 1096,
+    "parameterStates": 69,
+    "physicalMarkersCompared": 70,
+    "checks": [
+      "registered XY nodes",
+      "actual SVG path datum and serialized path",
+      "current marker projection",
+      "original UI readouts and key interaction regressions"
+    ],
+    "evidence": [
+      "whole-book-browser-v36.json",
+      "whole-book-axis-v36.json"
+    ]
+  },
+  "symbols": {
+    "status": "passed-for-visible-math-and-tested-contexts",
+    "entries": 2019,
+    "newEntries": 14,
+    "observedSemanticCases": 28,
+    "dictionaryCardsRendered": 2019,
+    "controlPages": 126,
+    "rangeInputs": 347,
+    "endpointStates": 252,
+    "unboundVisibleAlphabeticMathGlyphs": 0,
+    "limit": "Decorative native-select overlays have adjacent option glossary; no single-glyph omission is not a proof of exhaustive compound/term science review.",
+    "evidence": [
+      "whole-book-glossary-v36.json",
+      "whole-book-browser-v36.json",
+      "whole-book-axis-v36.json"
+    ]
+  },
+  "interaction": {
+    "status": "passed-for-related-regressions",
+    "actualPathStates": 69,
+    "existingUiFeatures": 5,
+    "existingUiLayouts": 40,
+    "motion": "Existing CMB/transfer/scan off-page, reduced motion and manual takeover regressions passed."
+  },
+  "visuals": {
+    "status": "passed-for-stated-views",
+    "fullBookViews": [
+      {
+        "theme": "afterglow",
+        "width": 1440
+      },
+      {
+        "theme": "moon",
+        "width": 320
+      }
+    ],
+    "focusedLayouts": 36,
+    "axisLayoutParameterStates": 36,
+    "widths": [
+      1440,
+      390,
+      320
+    ],
+    "reviewedImages": 12,
+    "consoleErrors": [],
+    "limitations": [
+      "No new raster figures generated; existing observation files retained and hash-checked.",
+      "Full traversal uses two viewport/theme pairings, supplemented by focused tests at all three widths in both themes."
+    ]
+  },
+  "remainingLimitations": [
+    "Not a substitute for independent domain-expert review of every scientific assertion.",
+    "Teaching models retain local thin-disk/WKB, pure hydrogen, static-background, fixed-potential and synthetic-distribution assumptions.",
+    "No fresh observational calibration or full hydrodynamic/cosmological simulation.",
+    "Tutor exports contextual questions; no online answer backend."
+  ],
+  "conclusion": "Found discrepancies corrected; current authored content and tested physical/display states pass within declared assumptions."
+}

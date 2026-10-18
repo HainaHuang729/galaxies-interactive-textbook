@@ -1,10 +1,12 @@
 {
   "name": "galaxies-interactive-textbook",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "An open-source Chinese interactive textbook of galaxy formation and evolution",
   "license": "MIT",
-  "engines": {"node": ">=22"},
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "start": "python3 start.py",
     "build": "python3 scripts/build-chapters.py",
@@ -13,5 +15,7 @@
     "check:public": "python3 scripts/check-public-release.py",
     "release:offline": "python3 scripts/package-offline.py"
   },
-  "devDependencies": {"playwright": "1.62.1"}
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
 }

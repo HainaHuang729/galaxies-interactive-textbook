@@ -148,12 +148,14 @@
         663,
         665
       ],
-      "formula": "∫L∞φ(L)dL=∫M∞n(M)dM<br>ε*=ΥL/(fbM)，fb=0.16",
-      "assumptions": "合成暗晕每dex∝M⁻⁰·⁹，M=10¹⁰–10¹⁵M☉；星系Schechter的L*=10¹⁰L☉，L=10⁶–10¹¹·⁵L☉。两分布分别归一至同数量，单调、一晕一星系，无散布、无卫星。ε*>1时显式判无效，不裁成1。",
+      "formula": "有限区间的归一化累计数量份额相等（见LaTeX公式）；ε*=ΥL/(fbM)，fb=0.16",
+      "assumptions": "合成暗晕每dex∝M⁻⁰·⁹，M=10¹⁰–10¹⁵M☉；星系Schechter的L*=10¹⁰L☉，L=10⁶–10¹¹·⁵L☉。两分布分别归一至同数量，单调、一晕一星系，无散布、无卫星。ε*>1时显式判无效，不裁成1。 这里匹配有限区间的累计份额，不直接用无限区间的未归一数量积分；ℓ、m、u、v为对数坐标或积分哑变量，不是多极、视星等或速度。光度累计分布用4001点梯形积分与线性反演，独立高精度积分另验误差。",
       "scene": false,
       "ref": "MBW (2010) pp.663–665",
       "formulaTex": [
-        "\\int_L^\\infty\\phi(L')\\,dL'=\\int_M^\\infty n(M')\\,dM'",
+        "\\ell=\\log_{10}(L/L_\\odot),\\quad m=\\log_{10}(M/M_\\odot)",
+        "\\phi_{\\rm toy}(\\ell)=\\ln(10)\\,10^{(\\ell-10)(\\alpha+1)}e^{-10^{\\ell-10}}",
+        "\\frac{\\int_\\ell^{11.5}\\phi_{\\rm toy}(u)\\,du}{\\int_6^{11.5}\\phi_{\\rm toy}(u)\\,du}=\\frac{\\int_m^{15}10^{-0.9(v-10)}\\,dv}{\\int_{10}^{15}10^{-0.9(v-10)}\\,dv}",
         "\\epsilon_\\star=\\frac{\\Upsilon L}{f_bM},\\quad f_b=0.16"
       ]
     },
@@ -253,13 +255,15 @@
         674
       ],
       "formula": "ρSFR=∫(dn/dlogM) Ψcentral(M,z) dlogM<br>nlog=0.003(M/10¹²)⁻⁰·⁹ exp[−M/(10¹⁴e⁻ᶻ)]<br>Ψ=ε(M/10¹²)exp(−M/10¹²·⁵)(1+z)²e⁻ᶻᐟ³",
-      "assumptions": "质量单位M☉，nlog单位Mpc⁻³dex⁻¹；只在阈值至10¹⁵M☉积分。函数与时期因子为明确教学设定，无观测点、无校准，不宣称所有卫星SFR为0或独立预测真实峰值。",
+      "assumptions": "质量单位M☉，nlog单位Mpc⁻³dex⁻¹；只在阈值至10¹⁵M☉积分。函数与时期因子为明确教学设定，无观测点、无校准，不宣称所有卫星SFR为0或独立预测真实峰值。 本参数域的峰不超过10¹⁵M☉；SFR归一化为0时没有可定义的贡献峰。峰公式来自本页玩具函数的对数导数0.1−M/M1−M/M2，不是从观测反演。",
       "scene": false,
       "ref": "MBW (2010) pp.670–674",
       "formulaTex": [
-        "\\rho_{\\mathrm{SFR}}=\\int\\frac{dn}{d\\log_{10}M}\\,\\Psi_{\\mathrm{central}}(M,z)\\,d\\log_{10}M",
-        "n_{\\log}=0.003\\left(\\frac M{10^{12}M_\\odot}\\right)^{-0.9}\\exp\\!\\left[-\\frac M{10^{14}e^{-z}M_\\odot}\\right]\\mathrm{Mpc}^{-3}",
-        "\\Psi=\\epsilon\\frac M{10^{12}M_\\odot}\\exp\\!\\left[-\\frac M{10^{12.5}M_\\odot}\\right](1+z)^2e^{-z/3}"
+        "\\rho_{\\mathrm{SFR}}=\\int_{\\log_{10}(M_{\\rm cut}/M_\\odot)}^{15}n_{\\log}(M)\\,\\Psi_{\\mathrm{central}}(M,z)\\,d\\log_{10}(M/M_\\odot)",
+        "n_{\\log}=0.003\\left(\\frac M{10^{12}M_\\odot}\\right)^{-0.9}\\exp\\!\\left[-\\frac M{10^{14}e^{-z}M_\\odot}\\right]\\mathrm{Mpc}^{-3}\\,\\mathrm{dex}^{-1}",
+        "\\Psi=\\epsilon\\frac M{10^{12}M_\\odot}\\exp\\!\\left[-\\frac M{10^{12.5}M_\\odot}\\right](1+z)^2e^{-z/3}",
+        "\\Psi=0\\quad(M<M_{\\rm cut}),\\quad M_1=10^{14}e^{-z}M_\\odot,\\quad M_2=10^{12.5}M_\\odot",
+        "M_{\\rm peak}=\\max\\!\\left[M_{\\rm cut},\\,\\frac{0.1}{M_1^{-1}+M_2^{-1}}\\right]\\quad(\\epsilon>0)"
       ]
     },
     {

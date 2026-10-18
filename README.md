@@ -59,6 +59,8 @@ BOOK_PREVIEW_URL=http://127.0.0.1:8765 PLAYWRIGHT_CHROMIUM_CHANNEL=chromium npm 
 
 默认浏览器回归使用系统Chrome；其他专项脚本的环境变量与报告路径见脚本头部。数值检查不等于所有科学假设都已被证明；科学复核材料在 `docs/`，本次基础内容见 [v34复核](docs/photometry-drift-review-v34.md)。
 
+本次全书复核与修正见 [v36复核记录](docs/whole-book-review-v36.md)，包括有限分布公式、形成率阈值/峰、实际绘线节点和局部符号语境。
+
 ## 下一本书：直接调用 skill
 
 已提供可独立复用的 [interactive-textbook 技能](skills/interactive-textbook/SKILL.md)，包含科学核查、统一计算模型、公式/图表/读数一致、局部符号释义、交互实验和视觉标准。支持新书、继续章节和专项修复，不强制重建已有项目。
@@ -69,7 +71,7 @@ BOOK_PREVIEW_URL=http://127.0.0.1:8765 PLAYWRIGHT_CHROMIUM_CHANNEL=chromium npm 
 $interactive-textbook 把《书名》制作成中文交互教材。参考资料在……，面向……读者；先核对来源并完成一个样板章。
 ```
 
-[下载独立技能ZIP](https://github.com/HainaHuang729/galaxies-interactive-textbook/releases/download/v0.1.0/interactive-textbook-skill.zip)。其他使用者可以把仓库中的 `skills/interactive-textbook/` 整个文件夹放入其Codex技能目录，保留 `SKILL.md`、`agents/`、`references/`、`assets/`、`scripts/` 的相对结构。若有同名技能，先比较后更新。结构化作者源初始化助手只创建骨架，不包含原书、已核实模型或自动生成的完整网站。
+[下载独立技能ZIP](https://github.com/HainaHuang729/galaxies-interactive-textbook/releases/latest/download/interactive-textbook-skill.zip)。其他使用者可以把仓库中的 `skills/interactive-textbook/` 整个文件夹放入其Codex技能目录，保留 `SKILL.md`、`agents/`、`references/`、`assets/`、`scripts/` 的相对结构。若有同名技能，先比较后更新。结构化作者源初始化助手只创建骨架，不包含原书、已核实模型或自动生成的完整网站。
 
 ## 项目结构
 
