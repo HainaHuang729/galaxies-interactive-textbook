@@ -1,0 +1,22 @@
+{
+  "id": null,
+  "learningQuestion": null,
+  "sources": [],
+  "assumptions": [],
+  "parameters": [],
+  "parameterFields": ["key", "label", "unit", "min", "max", "step", "default", "physicalBoundsReason"],
+  "equationsTex": [],
+  "constants": [],
+  "initialConditions": [],
+  "boundaryConditions": [],
+  "signConventions": [],
+  "referenceZero": null,
+  "normalization": {"definition": null, "changesWithParameters": null},
+  "outputs": [],
+  "outputFields": ["key", "meaning", "unit", "validity", "displayPrecision"],
+  "plotBindings": [],
+  "plotBindingFields": ["plotId", "seriesId", "xQuantity", "yQuantity", "xUnit", "yUnit", "domain", "transform", "currentPoint", "referencePolicy"],
+  "invalidStatePolicy": "分别表示数值零、无解、不适用、超出图域和计算失败；不靠裁剪掩盖错误。",
+  "animation": {"quantityAdvanced": null, "modelTimeUnit": null, "pauseOffscreen": true, "pauseOffPage": true, "pauseWhenHidden": true, "reducedMotion": "manual-static"},
+  "independentValidation": {"method": null, "differsFromImplementation": null, "fixtures": [], "invariants": [], "limits": [], "transitionStates": [], "absoluteTolerance": null, "relativeTolerance": null, "evidence": []}
+}

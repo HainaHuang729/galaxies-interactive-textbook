@@ -1,0 +1,4 @@
+interface:
+  display_name: "交互教材制作"
+  short_description: "将专业书制作成可核查的交互教材，统一模型、公式、图表、释义与风格"
+  default_prompt: "使用 $interactive-textbook 将这本书制作成交互教材，先核对来源并完成样板章，保留科学核查、公式图表一致、符号释义与统一风格。"

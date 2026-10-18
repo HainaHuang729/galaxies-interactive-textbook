@@ -6,7 +6,7 @@ import shutil
 import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
-FOLDERS = ['content', 'dist', 'docs', 'scripts', 'vendor', 'testdata', 'templates', '.github']
+FOLDERS = ['content', 'dist', 'docs', 'scripts', 'vendor', 'testdata', 'templates', '.github', 'skills']
 FILES = ['README.md', 'LICENSE', 'LICENSE-CONTENT.md', 'THIRD_PARTY_NOTICES.md', 'CONTRIBUTING.md', 'CITATION.cff', '.gitignore', '.gitattributes', 'package.json', 'package-lock.json', 'start.py', 'MODEL_AUDIT.md', 'DETAIL_REVIEW.md']
 EXCLUDED = {'dist/assets/observations/planck-cmb-2013.jpg'}
 

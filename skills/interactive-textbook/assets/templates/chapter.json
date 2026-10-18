@@ -1,0 +1,15 @@
+{
+  "id": null,
+  "number": null,
+  "title": null,
+  "status": "source-review-required",
+  "sources": [{"id": null, "reference": null, "printedPages": [], "filePages": [], "sections": [], "equations": [], "verified": false}],
+  "learningQuestions": [],
+  "prerequisites": [],
+  "narrative": [],
+  "models": [],
+  "figures": [],
+  "symbols": [],
+  "practice": [],
+  "reviewRecord": null
+}

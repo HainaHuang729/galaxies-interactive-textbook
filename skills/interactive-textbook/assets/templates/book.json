@@ -1,0 +1,10 @@
+{
+  "project": {"title": null, "language": null, "audience": null, "status": "source-review-required"},
+  "reference": {"title": null, "authors": [], "edition": null, "year": null},
+  "pageMapping": {"verified": false, "segments": [], "note": "按真实文件分段核对印刷页与PDF页，不沿用其他书的偏移。"},
+  "sourceHandling": {"originalReadOnly": true, "privateExtractsOutsidePublicTree": true},
+  "design": {"inheritExisting": true, "reference": null, "tokens": null, "themes": []},
+  "tutor": {"mode": "question-context-only", "onlineService": null},
+  "delivery": {"scope": "local-reviewable", "codeLicense": null, "originalContentLicense": null, "repository": null},
+  "sampleChapter": null
+}
