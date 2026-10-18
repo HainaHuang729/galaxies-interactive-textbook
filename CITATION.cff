@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you reuse the original code or learning materials, please cite this project and the scientific sources used by the relevant model."
+title: "GALAXIES · 星系形成与演化 — Interactive Textbook"
+authors:
+  - name: "HainaHuang729 and contributors"
+version: 0.1.0
+date-released: 2026-10-18
+url: "https://github.com/HainaHuang729/galaxies-interactive-textbook"
+license: MIT

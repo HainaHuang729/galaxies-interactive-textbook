@@ -1,0 +1,7561 @@
+[
+  {
+    "id": "c7-nfw",
+    "kind": "abbreviation",
+    "aliases": [
+      "NFW",
+      "NFW密度模型",
+      "NFW 暗晕"
+    ],
+    "title": "NFW 暗晕密度剖面",
+    "english": "Navarro–Frenk–White profile",
+    "definition": "球平均暗晕密度的经验模型：ρ=ρs/[x(1+x)²]，x=r/rs。中心和远外区的对数斜率分别趋于−1和−3。",
+    "unit": "不适用",
+    "scope": "是无碰撞模拟常用拟合，不表示真实暗晕一定光滑球形；无限延伸的总质量对数发散。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354"
+  },
+  {
+    "id": "c7-m200c",
+    "kind": "symbol",
+    "aliases": [
+      "M₂₀₀c",
+      "M200c",
+      "M_{200c}"
+    ],
+    "title": "200 倍临界密度内质量",
+    "english": "critical-overdensity halo mass",
+    "definition": "半径R200c内的总质量，该半径内平均密度等于同一红移临界密度的200倍。",
+    "unit": "M☉",
+    "scope": "必须连同参考密度和红移比较；不是宇宙中所有束缚物质的唯一边界。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354",
+    "tex": "M_{200c}"
+  },
+  {
+    "id": "c7-r200c",
+    "kind": "symbol",
+    "aliases": [
+      "R₂₀₀c",
+      "R200c",
+      "R_{200c}",
+      "r200c"
+    ],
+    "title": "200 倍临界密度半径",
+    "english": "critical-overdensity radius",
+    "definition": "满足3M(<R)/(4πR³)=200ρcrit的球形定义半径。",
+    "unit": "kpc",
+    "scope": "它是质量约定，不自动等于真实的束缚面或维里化边界。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354",
+    "tex": "R_{200c}"
+  },
+  {
+    "id": "c7-c200c",
+    "kind": "symbol",
+    "aliases": [
+      "c₂₀₀c",
+      "c200c",
+      "c_{200c}",
+      "c"
+    ],
+    "title": "临界密度定义的浓度",
+    "english": "NFW concentration",
+    "definition": "c200c=R200c/rs；固定外部质量时，浓度增大意味着较小的尺度半径和更集中的内部分布。",
+    "unit": "无量纲",
+    "scope": "这里的c不是光速；更改质量边界时浓度也随之改变。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354",
+    "tex": "c_{200c}"
+  },
+  {
+    "id": "c7-concentration",
+    "kind": "term",
+    "aliases": [
+      "浓度",
+      "浓度参数"
+    ],
+    "title": "暗晕浓度",
+    "english": "halo concentration",
+    "definition": "以指定外半径除以密度剖面尺度半径的无量纲比值，用来描述质量向中心集中的程度。",
+    "unit": "不适用",
+    "scope": "需注明200c、200m等边界；不同边界下的数值不可直接混用。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354"
+  },
+  {
+    "id": "c7-rs",
+    "kind": "symbol",
+    "aliases": [
+      "rₛ",
+      "rs",
+      "r_s"
+    ],
+    "title": "NFW 尺度半径",
+    "english": "scale radius",
+    "definition": "NFW密度对数斜率恰为−2的半径，也满足rs=R200c/c200c。",
+    "unit": "kpc",
+    "scope": "NFW的rs是对数斜率为−2的尺度，不是观测光度的有效半径。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354",
+    "tex": "r_s"
+  },
+  {
+    "id": "c7-rhos",
+    "kind": "symbol",
+    "aliases": [
+      "ρₛ",
+      "ρs",
+      "ρ_s"
+    ],
+    "title": "NFW 尺度密度",
+    "english": "characteristic density",
+    "definition": "决定NFW密度幅度的参数；本页按200c质量与浓度归一，使半径内质量等于输入的M200c。",
+    "unit": "M☉ kpc⁻³",
+    "scope": "ρs不等于有限的中心密度；NFW在r趋零时具有密度尖峰。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354",
+    "tex": "\\rho_s"
+  },
+  {
+    "id": "c7-rhocrit",
+    "kind": "symbol",
+    "aliases": [
+      "ρcrit",
+      "ρcrit,₀",
+      "ρcrit,0",
+      "ρcrit₀"
+    ],
+    "title": "宇宙临界密度",
+    "english": "critical density",
+    "definition": "由ρcrit(z)=3H²(z)/(8πG)定义的参考密度，本章200c边界使用这一量。",
+    "unit": "M☉ kpc⁻³",
+    "scope": "它不是暗晕局部密度；ρcrit,0表示今日值。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354",
+    "tex": "\\rho_{\\mathrm{crit}}"
+  },
+  {
+    "id": "c7-rho-mean",
+    "kind": "symbol",
+    "aliases": [
+      "ρ̄₀",
+      "ρ̄m",
+      "ρ̄",
+      "ρ̄(<r)"
+    ],
+    "title": "平均密度",
+    "english": "mean mass density",
+    "definition": "横线表示相应体积或宇宙背景的平均；宇宙今日物质平均密度为ρ̄0=Ωm,0ρcrit,0，球内平均密度为3M(<r)/(4πr³)。",
+    "unit": "质量/体积",
+    "scope": "须从括号与下标判断是宇宙背景平均还是某个球内平均，二者不可互换。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2, 7.5.1 pp.326–334, 351–354"
+  },
+  {
+    "id": "c7-g-nfw",
+    "kind": "symbol",
+    "aliases": [
+      "g(x)",
+      "g(c)",
+      "g"
+    ],
+    "title": "NFW 累计质量函数",
+    "english": "NFW mass function factor",
+    "definition": "g(x)=ln(1+x)−x/(1+x)，来自球壳积分；它把NFW密度转为半径内质量。",
+    "unit": "无量纲",
+    "scope": "此处g是无量纲函数，不是重力加速度；本章g(c)使用同一函数。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354",
+    "contexts": [
+      "opening",
+      "nfw-lab",
+      "structure",
+      "boundaries",
+      "boundary-lab"
+    ],
+    "tex": "g(x)"
+  },
+  {
+    "id": "c7-x-nfw",
+    "kind": "symbol",
+    "aliases": [
+      "x"
+    ],
+    "title": "NFW 无量纲半径",
+    "english": "scaled NFW radius",
+    "definition": "NFW质量和密度函数中的x=r/rs，用尺度半径衡量位置。",
+    "unit": "无量纲",
+    "scope": "此x只按rs归一；不能替换为R/R200c而保持同一g(x)质量式。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354",
+    "contexts": [
+      "opening",
+      "nfw-lab"
+    ],
+    "tex": "x"
+  },
+  {
+    "id": "c7-r",
+    "kind": "symbol",
+    "aliases": [
+      "r"
+    ],
+    "title": "球心距离",
+    "english": "spherical radius",
+    "definition": "从暗晕中心量到探针或球壳的三维距离；投影画面中的距离不总等于该三维距离。",
+    "unit": "kpc",
+    "scope": "球内质量使用三维球半径；图像中的投影距离不是通用替代。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354",
+    "contexts": [
+      "opening",
+      "nfw-lab",
+      "structure",
+      "boundaries",
+      "boundary-lab"
+    ],
+    "tex": "r"
+  },
+  {
+    "id": "c7-vc",
+    "kind": "symbol",
+    "aliases": [
+      "v꜀",
+      "v_c",
+      "vc",
+      "v"
+    ],
+    "title": "圆周速度",
+    "english": "circular speed",
+    "definition": "球对称模型中维持半径r圆轨道所需速度，vc²=GM(<r)/r。",
+    "unit": "km s⁻¹",
+    "scope": "不是所有暗物质粒子的实际速度，也不能把这一球对称关系直接当作薄盘引力。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354",
+    "tex": "v_c"
+  },
+  {
+    "id": "c7-gaussian",
+    "kind": "term",
+    "aliases": [
+      "Gaussian",
+      "高斯平滑",
+      "高斯随机场"
+    ],
+    "title": "高斯平滑与高斯统计",
+    "english": "Gaussian smoothing and statistics",
+    "definition": "高斯平滑以高斯权重抑制小尺度模式；高斯随机场则指场的联合统计服从高斯分布，这两种“高斯”描述不同对象。",
+    "unit": "不适用",
+    "scope": "本页固定六个模式的示范不构成三维高斯峰统计抽样。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.1 pp.321–326"
+  },
+  {
+    "id": "c7-bbks",
+    "kind": "abbreviation",
+    "aliases": [
+      "BBKS"
+    ],
+    "title": "BBKS 峰统计",
+    "english": "Bardeen–Bond–Kaiser–Szalay peak statistics",
+    "definition": "研究三维高斯随机场局部极大值的高度、曲率和形状等统计的经典框架。",
+    "unit": "不适用",
+    "scope": "本章一维采样峰计数不是BBKS公式，也不能直接给出暗晕质量函数。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.1 pp.321–326"
+  },
+  {
+    "id": "c7-delta",
+    "kind": "symbol",
+    "aliases": [
+      "δ",
+      "δR",
+      "δ_R"
+    ],
+    "title": "密度对比度",
+    "english": "density contrast",
+    "definition": "密度相对平均密度的偏离δ=(ρ−ρ̄)/ρ̄；δR表示在指定尺度平滑后的密度对比度。",
+    "unit": "无量纲",
+    "scope": "图上的峰高δ不是自动除以方差后的峰显著度ν。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.1 pp.321–326",
+    "contexts": [
+      "peaks",
+      "peak-lab",
+      "abundance"
+    ],
+    "tex": "\\delta"
+  },
+  {
+    "id": "c7-smooth-r",
+    "kind": "symbol",
+    "aliases": [
+      "R"
+    ],
+    "title": "平滑尺度",
+    "english": "smoothing scale",
+    "definition": "高斯滤波宽度；增大R更强地抑制高波数模式，使细小起伏和部分局部峰消失。",
+    "unit": "盒长单位",
+    "scope": "不是暗晕的R200c，也不是随时间推进的轨道半径。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.1 pp.321–326",
+    "contexts": [
+      "peaks",
+      "peak-lab"
+    ],
+    "tex": "R"
+  },
+  {
+    "id": "c7-mode-a",
+    "kind": "symbol",
+    "aliases": [
+      "Aj",
+      "Aⱼ",
+      "A_j"
+    ],
+    "title": "模式振幅",
+    "english": "mode amplitude",
+    "definition": "把示范密度场分解为余弦模式时，第j个模式的强度系数。",
+    "unit": "无量纲",
+    "scope": "本页模式振幅固定，不是从给定三维宇宙学功率谱重新抽样。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.1 pp.321–326",
+    "contexts": [
+      "peaks",
+      "peak-lab"
+    ],
+    "tex": "A_j"
+  },
+  {
+    "id": "c7-mode-k",
+    "kind": "symbol",
+    "aliases": [
+      "kj",
+      "kⱼ",
+      "k_j"
+    ],
+    "title": "模式波数",
+    "english": "mode wavenumber",
+    "definition": "第j个空间余弦模式的波数，波长为2π/kj；高波数对应更细小结构。",
+    "unit": "盒长单位⁻¹",
+    "scope": "第j个模式的波数对应2π/kj波长，高波数被高斯平滑更强抑制。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.1 pp.321–326",
+    "contexts": [
+      "peaks",
+      "peak-lab"
+    ],
+    "tex": "k_j"
+  },
+  {
+    "id": "c7-mode-phase",
+    "kind": "symbol",
+    "aliases": [
+      "φj",
+      "φⱼ",
+      "φ_j"
+    ],
+    "title": "模式相位",
+    "english": "mode phase",
+    "definition": "余弦模式在空间中的位置偏移角，和振幅一起确定该固定实现的峰位置。",
+    "unit": "rad",
+    "scope": "固定相位定义一次实现，不代表全部随机场的统计平均。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.1 pp.321–326",
+    "contexts": [
+      "peaks",
+      "peak-lab"
+    ],
+    "tex": "\\phi_j"
+  },
+  {
+    "id": "c7-peak-nesting",
+    "kind": "term",
+    "aliases": [
+      "峰嵌套",
+      "峰的嵌套"
+    ],
+    "title": "峰嵌套问题",
+    "english": "cloud-in-cloud problem",
+    "definition": "小尺度超过坍缩条件的区域可能位于更大尺度同样会坍缩的区域里；若逐尺度都计数，会重复分配同一份物质。",
+    "unit": "不适用",
+    "scope": "初次越障分配可在理想滤波下避免重复，但并不逐点恢复真实宿主。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.1–7.2 pp.321–334"
+  },
+  {
+    "id": "c7-press-schechter",
+    "kind": "term",
+    "aliases": [
+      "Press–Schechter",
+      "Press-Schechter",
+      "PS"
+    ],
+    "title": "Press–Schechter 模型",
+    "english": "Press–Schechter formalism",
+    "definition": "把平滑线性高斯密度场、坍缩阈值和质量尺度联系起来，估算暗晕质量分布的统计模型。",
+    "unit": "不适用",
+    "scope": "球形阈值与简化滤波有明确假设；实际质量函数还需模拟校准及统一质量定义。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2 pp.326–334"
+  },
+  {
+    "id": "c7-cdm",
+    "kind": "abbreviation",
+    "aliases": [
+      "CDM"
+    ],
+    "title": "冷暗物质",
+    "english": "cold dark matter",
+    "definition": "结构形成时具有很小自由流动尺度、可近似无碰撞的非重子暗物质模型。",
+    "unit": "不适用",
+    "scope": "网页人为指定的幂律σ(M)并非完整CDM功率谱预报。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2 pp.326–334"
+  },
+  {
+    "id": "c7-mass-function",
+    "kind": "term",
+    "aliases": [
+      "暗晕质量函数",
+      "质量函数"
+    ],
+    "title": "暗晕质量函数",
+    "english": "halo mass function",
+    "definition": "给定时刻、质量定义和体积约定下，单位质量或对数质量区间内暗晕数目的统计。",
+    "unit": "不适用",
+    "scope": "dn/dM与dn/dlnM相差M；数量份额也不同于质量加权份额。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2 pp.326–334"
+  },
+  {
+    "id": "c7-delta-c",
+    "kind": "symbol",
+    "aliases": [
+      "δ꜀",
+      "δc",
+      "δ_c"
+    ],
+    "title": "线性坍缩阈值",
+    "english": "linear collapse threshold",
+    "definition": "球形坍缩模型中外推到坍缩时刻的线性密度对比度，常用近似为1.686。",
+    "unit": "无量纲",
+    "scope": "不是非线性真实密度，也不是200倍临界密度边界。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2 pp.326–334",
+    "tex": "\\delta_c"
+  },
+  {
+    "id": "c7-sigma-m",
+    "kind": "symbol",
+    "aliases": [
+      "σ(M)",
+      "σ"
+    ],
+    "title": "平滑线性密度标准差",
+    "english": "linear density rms",
+    "definition": "在质量M对应的平滑尺度上，线性密度对比度的均方根；本页使用人为幂律展示质量依赖。",
+    "unit": "无量纲",
+    "scope": "此σ不是气体或恒星的速度弥散；D与σ的归一化必须配套。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2 pp.326–334",
+    "tex": "\\sigma(M)"
+  },
+  {
+    "id": "c7-alpha-variance",
+    "kind": "symbol",
+    "aliases": [
+      "α"
+    ],
+    "title": "标准差的质量指数",
+    "english": "mass exponent of density standard deviation",
+    "definition": "本实验定义σ(M)∝M^(−α)，因此α=−dlnσ/dlnM；相应方差σ²的对数质量斜率为−2α。",
+    "unit": "无量纲",
+    "scope": "是教学参数，不是IMF指数或冷却函数斜率。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2 pp.326–334",
+    "contexts": [
+      "abundance",
+      "ps-lab"
+    ],
+    "tex": "\\alpha"
+  },
+  {
+    "id": "c7-growth",
+    "kind": "symbol",
+    "aliases": [
+      "D"
+    ],
+    "title": "线性增长因子",
+    "english": "linear growth factor",
+    "definition": "描述线性密度振幅随历时变化的乘数，本实验以今日值为1直接输入D。",
+    "unit": "无量纲",
+    "scope": "不是距离；本页D未通过额外宇宙学参数自动转换成红移。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2 pp.326–334",
+    "contexts": [
+      "abundance",
+      "ps-lab"
+    ],
+    "tex": "D"
+  },
+  {
+    "id": "c7-nu",
+    "kind": "symbol",
+    "aliases": [
+      "ν"
+    ],
+    "title": "峰显著度",
+    "english": "peak height",
+    "definition": "ν=δc/[Dσ(M)]，表示在给定尺度与历时达到坍缩阈值有多罕见；ν越大通常越罕见。",
+    "unit": "无量纲",
+    "scope": "偏置实验的ν独立输入，不与质量函数探针自动联动。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2, 7.4.1 pp.326–334, 345–348",
+    "tex": "\\nu"
+  },
+  {
+    "id": "c7-f-ps",
+    "kind": "symbol",
+    "aliases": [
+      "fPS",
+      "f_PS",
+      "fPS(ν)"
+    ],
+    "title": "PS 重数函数",
+    "english": "PS multiplicity function",
+    "definition": "fPS(ν)=√(2/π)νexp(−ν²/2)，配合质量尺度导数把标准差映射为每对数质量的质量份额。",
+    "unit": "无量纲",
+    "scope": "它本身不是数密度；本页dFmass/dlnM=αfPS。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2 pp.326–334",
+    "tex": "f_{\\mathrm{PS}}"
+  },
+  {
+    "id": "c7-number-density",
+    "kind": "symbol",
+    "aliases": [
+      "dn / d ln M",
+      "dn/dlnM",
+      "dn/d ln M",
+      "n(M)",
+      "n"
+    ],
+    "title": "暗晕微分数密度",
+    "english": "differential halo number density",
+    "definition": "dn/dlnM表示单位共动体积、每单位自然对数质量的暗晕数；晕模型积分中的n(M)约定为dn/dM。",
+    "unit": "Mpc⁻³（每 dlnM）；Mpc⁻³ M☉⁻¹（每 dM）",
+    "scope": "阅读时需检查积分测度dM或dlnM；二者相差质量因子M。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2, 7.6 pp.326–334, 362–365",
+    "contexts": [
+      "abundance",
+      "ps-lab",
+      "halo-model",
+      "hpair-lab"
+    ]
+  },
+  {
+    "id": "c7-f-mass",
+    "kind": "symbol",
+    "aliases": [
+      "F(>M)",
+      "Fmass",
+      "F_mass",
+      "F"
+    ],
+    "title": "超过给定质量的质量份额",
+    "english": "cumulative collapsed mass fraction",
+    "definition": "统计总物质中被分配给质量大于M暗晕的份额；PS近似给F(>M)=erfc(ν/√2)。",
+    "unit": "无量纲",
+    "scope": "不是大于M的暗晕个数份额，也不是单个暗晕的内部质量。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2 pp.326–334",
+    "tex": "F(>M)",
+    "contexts": [
+      "abundance",
+      "ps-lab"
+    ]
+  },
+  {
+    "id": "c7-mstar",
+    "kind": "symbol",
+    "aliases": [
+      "M*₀",
+      "M*",
+      "M∗",
+      "M_*",
+      "M⋆",
+      "Mstar",
+      "M⋆,0",
+      "Mstar,0"
+    ],
+    "title": "特征非线性质量",
+    "english": "characteristic nonlinear mass",
+    "definition": "满足Dσ(M*)=δc，即ν=1的质量尺度；本页今日参考值人为设为10¹³M☉。",
+    "unit": "M☉",
+    "scope": "这里星号表示特征尺度，不是恒星质量下标。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2 pp.326–334"
+  },
+  {
+    "id": "c7-excursion",
+    "kind": "term",
+    "aliases": [
+      "首次越障",
+      "首次穿越",
+      "excursion set",
+      "越障"
+    ],
+    "title": "首次越障与 excursion-set",
+    "english": "first crossing and excursion set",
+    "definition": "对同一初始位置逐步减小平滑尺度，以密度轨迹第一次越过坍缩屏障的尺度确定其质量归属。",
+    "unit": "不适用",
+    "scope": "S是方差而不是时间，轨迹也不是粒子的空间运动。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2.2 pp.328–331"
+  },
+  {
+    "id": "c7-sharp-k",
+    "kind": "term",
+    "aliases": [
+      "sharp-k",
+      "sharp-k窗口"
+    ],
+    "title": "傅里叶锐截滤波",
+    "english": "sharp-k filter",
+    "definition": "保留某一波数以内模式、截去外侧模式的滤波；对高斯场逐层加模可得到独立增量。",
+    "unit": "不适用",
+    "scope": "常规实空间top-hat或Gaussian滤波不具有这一简单Markov性质。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2.2 pp.328–331"
+  },
+  {
+    "id": "c7-top-hat",
+    "kind": "term",
+    "aliases": [
+      "top-hat"
+    ],
+    "title": "实空间球顶帽滤波",
+    "english": "real-space top-hat filter",
+    "definition": "在指定球体内等权平均、球外权重为零的平滑方法。",
+    "unit": "不适用",
+    "scope": "尺度间增量通常相关，不能直接套用sharp-k的独立随机游走推导。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2.2 pp.328–331"
+  },
+  {
+    "id": "c7-markov",
+    "kind": "term",
+    "aliases": [
+      "Markov",
+      "马尔可夫"
+    ],
+    "title": "马尔可夫性质",
+    "english": "Markov property",
+    "definition": "给定当前状态后，下一步增量不再依赖更早历史的随机过程性质。",
+    "unit": "不适用",
+    "scope": "理想sharp-k高斯密度轨迹具有这一简化；真实宿主归属或所有滤波轨迹不必满足。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2.2 pp.328–331"
+  },
+  {
+    "id": "c7-s-variance",
+    "kind": "symbol",
+    "aliases": [
+      "S",
+      "ΔS"
+    ],
+    "title": "线性密度方差及其差",
+    "english": "density variance and variance increment",
+    "definition": "S=σ²，减小平滑质量通常使S增大；ΔS是相邻尺度或祖先与终态之间的方差差。",
+    "unit": "无量纲",
+    "scope": "不是时间、距离或恒星形成率；祖先分布中ΔS=S(M1)−S(M0)>0。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2.2, 7.3.1 pp.328–331, 336–338",
+    "tex": "S"
+  },
+  {
+    "id": "c7-barrier",
+    "kind": "symbol",
+    "aliases": [
+      "B"
+    ],
+    "title": "常数坍缩屏障",
+    "english": "constant collapse barrier",
+    "definition": "随机游走δ(S)必须越过的线性密度阈值；屏障越高，在同一方差内首次越障越困难。",
+    "unit": "无量纲",
+    "scope": "此B不是磁感应强度；本页取常数屏障，移动屏障及非球形效应需另行处理。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2.2 pp.328–331",
+    "contexts": [
+      "excursion",
+      "walk-lab"
+    ],
+    "tex": "B"
+  },
+  {
+    "id": "c7-walk-f",
+    "kind": "symbol",
+    "aliases": [
+      "f(S;B)"
+    ],
+    "title": "首次越障概率密度",
+    "english": "first-crossing probability density",
+    "definition": "理想sharp-k、常屏障的随机游走中，首次越障落在S到S+dS的概率为f(S;B)dS。",
+    "unit": "无量纲",
+    "scope": "离散采样可能漏掉点间穿越，12条示范轨迹比例不等于连续理论的精确值。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2.2 pp.328–331",
+    "contexts": [
+      "excursion",
+      "walk-lab"
+    ]
+  },
+  {
+    "id": "c7-eps",
+    "kind": "abbreviation",
+    "aliases": [
+      "EPS",
+      "条件EPS"
+    ],
+    "title": "扩展 Press–Schechter",
+    "english": "extended Press–Schechter",
+    "definition": "在给定终态暗晕条件下，用较早屏障与方差的差估计祖先的质量加权分布。",
+    "unit": "不适用",
+    "scope": "单个质量元的边际分布不确定全部祖先的联合分布，不能独立抽样就宣称得到自洽并合树。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.3 pp.336–344"
+  },
+  {
+    "id": "c7-omega",
+    "kind": "symbol",
+    "aliases": [
+      "ω",
+      "Δω",
+      "ω0",
+      "ω1"
+    ],
+    "title": "坍缩屏障及其历时差",
+    "english": "collapse barrier and barrier interval",
+    "definition": "EPS中ω通常代表δc/D；Δω=ω1−ω0>0表示较早和较晚时刻的屏障差。",
+    "unit": "无量纲",
+    "scope": "此ω不是轨道角频率或不稳定扰动频率。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.3.1 pp.336–338",
+    "contexts": [
+      "progenitors",
+      "prog-lab"
+    ],
+    "tex": "\\Delta\\omega"
+  },
+  {
+    "id": "c7-progenitor-mass",
+    "kind": "symbol",
+    "aliases": [
+      "M₀",
+      "M0",
+      "M₁",
+      "M1"
+    ],
+    "title": "终态与祖先暗晕质量",
+    "english": "descendant and progenitor masses",
+    "definition": "本章条件EPS中M0是给定较晚时刻终态质量，M1是其中质量元较早所属祖先的质量。",
+    "unit": "M☉",
+    "scope": "下标表示条件分布的两个时刻；不是第9或10章的初始气体质量。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.3.1 pp.336–338",
+    "contexts": [
+      "progenitors",
+      "prog-lab"
+    ]
+  },
+  {
+    "id": "c7-merger-tree",
+    "kind": "term",
+    "aliases": [
+      "并合树",
+      "主祖先",
+      "祖先分布",
+      "祖先"
+    ],
+    "title": "祖先分布与并合树",
+    "english": "progenitors and merger trees",
+    "definition": "祖先分布统计较早质量归属；并合树则把多个时刻的祖先连接为一个实现，主祖先通常指各时刻质量最大的分支。",
+    "unit": "不适用",
+    "scope": "树的每次分支必须守恒，且应满足联合统计；质量加权分布不等于平均祖先数。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.3 pp.336–344"
+  },
+  {
+    "id": "c7-formation-time",
+    "kind": "term",
+    "aliases": [
+      "形成时间",
+      "组装历史"
+    ],
+    "title": "暗晕形成时间与组装历史",
+    "english": "halo formation time and assembly history",
+    "definition": "组装历史追踪暗晕随历时获得质量的过程；形成时间常按主祖先首次达到终态质量某个比例来定义。",
+    "unit": "不适用",
+    "scope": "必须给出所用比例，不能当作所有粒子同时诞生的时刻。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.3.3–7.3.4 pp.339–342"
+  },
+  {
+    "id": "c7-bias",
+    "kind": "term",
+    "aliases": [
+      "偏置",
+      "线性暗晕偏置",
+      "峰背景分裂",
+      "Euler偏置",
+      "Euler 偏置",
+      "Lagrange响应"
+    ],
+    "title": "暗晕偏置与峰背景分裂",
+    "english": "halo bias and peak-background split",
+    "definition": "暗晕数密度起伏对大尺度物质起伏的统计响应；峰背景分裂把长波背景视作对局部坍缩难度的改变。",
+    "unit": "不适用",
+    "scope": "Euler空间偏置比对应Lagrange响应多出体积压缩项1；这里只作线性、大尺度、同一形成观测时刻近似。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.4.1 pp.345–348"
+  },
+  {
+    "id": "c7-be",
+    "kind": "symbol",
+    "aliases": [
+      "bE",
+      "b_E",
+      "bₑ",
+      "b"
+    ],
+    "title": "Euler 线性偏置系数",
+    "english": "Eulerian linear bias",
+    "definition": "小起伏极限δh≈bEδ中的系数；球形PS峰背景分裂给bE=1+(ν²−1)/δc。",
+    "unit": "无量纲",
+    "scope": "不是气体静力平衡参数b；本页不包含尺度依赖、非线性或随机偏置。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.4.1 pp.345–348",
+    "contexts": [
+      "bias",
+      "hbias-lab"
+    ],
+    "tex": "b_{\\mathrm E}"
+  },
+  {
+    "id": "c7-delta-h",
+    "kind": "symbol",
+    "aliases": [
+      "δh",
+      "δ_h",
+      "δ"
+    ],
+    "title": "暗晕与物质的线性密度对比度",
+    "english": "halo and matter contrasts",
+    "definition": "δ是大尺度物质相对平均值的起伏，δh是所选暗晕族群数密度起伏，在线性模型中δh=bEδ。",
+    "unit": "无量纲",
+    "scope": "只在小振幅、大尺度确定性线性近似中采用δh=bEδ。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.4.1 pp.345–348",
+    "contexts": [
+      "bias",
+      "hbias-lab"
+    ]
+  },
+  {
+    "id": "c7-xi",
+    "kind": "symbol",
+    "aliases": [
+      "ξhh",
+      "ξmm",
+      "ξ",
+      "ξ_hh",
+      "ξ_mm"
+    ],
+    "title": "二点相关函数",
+    "english": "two-point correlation function",
+    "definition": "衡量相隔给定距离的两处起伏或对象配对相对随机分布的过量相关；hh与mm分别指暗晕和物质。",
+    "unit": "无量纲",
+    "scope": "线性确定性偏置且随机项可忽略时ξhh≈b²ξmm；原始配对数DD不是ξ。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.4.1, 7.6 pp.345–348, 362–365"
+  },
+  {
+    "id": "c7-assembly-bias",
+    "kind": "term",
+    "aliases": [
+      "组装偏置"
+    ],
+    "title": "组装偏置",
+    "english": "assembly bias",
+    "definition": "固定暗晕质量后，聚集强弱仍与形成历史、浓度、自旋或子结构等性质有关的现象。",
+    "unit": "不适用",
+    "scope": "一维Markov EPS不能完整解释该环境依赖。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.4.2 pp.348–349"
+  },
+  {
+    "id": "c7-einasto",
+    "kind": "term",
+    "aliases": [
+      "Einasto",
+      "Einasto剖面"
+    ],
+    "title": "Einasto 密度剖面",
+    "english": "Einasto profile",
+    "definition": "对数密度斜率随半径连续变化的暗晕经验剖面，形状参数允许剖面曲率变化。",
+    "unit": "不适用",
+    "scope": "与NFW不同的拟合族；本章交互计算主要使用NFW。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354"
+  },
+  {
+    "id": "c7-triaxial",
+    "kind": "term",
+    "aliases": [
+      "三轴",
+      "三轴形状",
+      "轴比"
+    ],
+    "title": "三轴结构与等密度面",
+    "english": "triaxial structure and isodensity surfaces",
+    "definition": "三条主轴长度不同的椭球可近似描述暗晕非球形；等密度面连接密度相同的位置，轴比量化扁长程度。",
+    "unit": "不适用",
+    "scope": "图中等密度轮廓不是物质外壳；abc=1仅用于保持示范体积。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.2 pp.354–355"
+  },
+  {
+    "id": "c7-axes",
+    "kind": "symbol",
+    "aliases": [
+      "a",
+      "b",
+      "c",
+      "m"
+    ],
+    "title": "三轴椭球的轴尺度与椭球坐标",
+    "english": "ellipsoidal axes and radius",
+    "definition": "图解定义m²=(x/a)²+(y/b)²+(z/c)²；a、b、c是三条轴尺度，m是相应椭球半径坐标。",
+    "unit": "无量纲",
+    "scope": "此c为几何轴尺度而非NFW浓度，m不是粒子质量。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.2 pp.354–355",
+    "contexts": [
+      "body-figure-7-structure-13"
+    ]
+  },
+  {
+    "id": "c7-subhalo",
+    "kind": "term",
+    "aliases": [
+      "子晕",
+      "子结构"
+    ],
+    "title": "暗晕子结构及其演化",
+    "english": "subhalos, stripping and dynamical friction",
+    "definition": "子晕是宿主中仍自束缚的小暗晕。宿主潮汐可剥去其外围物质；引力尾流产生的动力摩擦可降低其轨道能量与角动量。",
+    "unit": "不适用",
+    "scope": "吸积时质量不同于当前束缚质量；存活统计也受模拟分辨率和识别方法影响。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.3 pp.355–358"
+  },
+  {
+    "id": "c7-spin",
+    "kind": "symbol",
+    "aliases": [
+      "λ",
+      "λ′",
+      "λ'"
+    ],
+    "title": "暗晕自旋参数",
+    "english": "halo spin parameter",
+    "definition": "Peebles定义λ=J|E|^(1/2)/(GM^(5/2))；另一常用定义λ′=J/(√2MVh rh)，都将净角动量无量纲化。",
+    "unit": "无量纲",
+    "scope": "两种归一化不相同；小净自旋可与大量随机运动共存，不等于刚体自转速度。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.4 pp.358–362",
+    "tex": "\\lambda"
+  },
+  {
+    "id": "c7-angular-momentum",
+    "kind": "symbol",
+    "aliases": [
+      "J",
+      "总角动量",
+      "潮汐力矩"
+    ],
+    "title": "总角动量与潮汐力矩",
+    "english": "angular momentum and tidal torque",
+    "definition": "J为全部质量元角动量的向量和的大小；早期潮汐力矩可由惯性张量与外部潮汐张量的错位产生。",
+    "unit": "质量×长度×速度",
+    "scope": "后期并合可改变幅度和方向；单条圆周速度曲线不唯一给出净角动量。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.4 pp.358–362"
+  },
+  {
+    "id": "c7-energy",
+    "kind": "symbol",
+    "aliases": [
+      "E"
+    ],
+    "title": "暗晕总能量",
+    "english": "total halo energy",
+    "definition": "Peebles自旋定义中E是暗晕总机械能；束缚体系通常E<0，定义使用其绝对值。",
+    "unit": "质量×速度²",
+    "scope": "需与同一质量边界和体系定义一致。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.4 pp.358–362",
+    "contexts": [
+      "structure"
+    ],
+    "tex": "E"
+  },
+  {
+    "id": "c7-boundary-m",
+    "kind": "symbol",
+    "aliases": [
+      "R₂₀₀m",
+      "R200m",
+      "M₂₀₀m",
+      "M200m",
+      "c₂₀₀m",
+      "c200m"
+    ],
+    "title": "200 倍物质平均密度边界",
+    "english": "mean-matter-overdensity halo boundary",
+    "definition": "R200m内平均密度为200ρ̄m，M200m为其内质量，c200m=R200m/rs；可在固定物理剖面下换算。",
+    "unit": "R：kpc；M：M☉；c：无量纲",
+    "scope": "Ωm<1时200m门槛低于200c，边界通常更外；定义换算不等于真实吸积。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354"
+  },
+  {
+    "id": "c7-omega-m",
+    "kind": "symbol",
+    "aliases": [
+      "Ωm",
+      "Ωₘ",
+      "Ω_m",
+      "Ω"
+    ],
+    "title": "物质密度参数",
+    "english": "matter density parameter",
+    "definition": "Ωm=ρ̄m/ρcrit；边界实验将其作为今日参考密度比例输入。",
+    "unit": "无量纲",
+    "scope": "该滑块只改变200m边界的参考密度，不演化暗晕或宇宙。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354",
+    "contexts": [
+      "boundaries",
+      "boundary-lab",
+      "practice-question-4",
+      "chapter-references"
+    ],
+    "tex": "\\Omega_m"
+  },
+  {
+    "id": "c7-halo-model",
+    "kind": "term",
+    "aliases": [
+      "晕模型",
+      "单晕项",
+      "双晕项"
+    ],
+    "title": "暗物质晕模型",
+    "english": "halo model",
+    "definition": "把物质场近似为暗晕中心及其内部剖面的叠加，同晕配对产生单晕项、不同晕配对产生双晕项。",
+    "unit": "不适用",
+    "scope": "双晕近似在小尺度需考虑晕排斥；简单单晕项的极小k常数不满足严格质量动量守恒极限。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.6 pp.362–365"
+  },
+  {
+    "id": "c7-dd",
+    "kind": "abbreviation",
+    "aliases": [
+      "DD",
+      "DD1h",
+      "DD2h",
+      "DD₁h",
+      "DD₂h",
+      "RR"
+    ],
+    "title": "数据配对与随机配对计数",
+    "english": "data-data and random-random pair counts",
+    "definition": "DD是在间距分箱内的数据无序配对数，分为同晕与跨晕；RR是匹配选择函数的随机样本配对数。",
+    "unit": "不适用",
+    "scope": "配对分解本身是计数恒等式；本章示范未用RR归一，不能直接把DD叫作相关函数。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.6 pp.362–365"
+  },
+  {
+    "id": "c7-power",
+    "kind": "symbol",
+    "aliases": [
+      "P(k)",
+      "P1h",
+      "P2h",
+      "Plin",
+      "P₁h",
+      "P₂h",
+      "P"
+    ],
+    "title": "物质功率谱及晕模型分解",
+    "english": "matter power spectrum",
+    "definition": "P(k)描述各波数上密度起伏的方差贡献；晕模型近似写为P1h+P2h，Plin是线性物质功率谱。",
+    "unit": "按常用密度对比度傅里叶约定为体积",
+    "scope": "网页配对示范不产生具有宇宙学归一化的三维P(k)。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.6 pp.362–365",
+    "contexts": [
+      "halo-model",
+      "hpair-lab"
+    ]
+  },
+  {
+    "id": "c7-u-profile",
+    "kind": "symbol",
+    "aliases": [
+      "ũ",
+      "ũ",
+      "u",
+      "ũ(k|M)"
+    ],
+    "title": "质量归一化剖面的傅里叶变换",
+    "english": "normalized halo-profile transform",
+    "definition": "将单晕密度除以其质量后作傅里叶变换得到ũ(k|M)，长波极限趋于1。",
+    "unit": "无量纲",
+    "scope": "质量积分及偏置积分的归一化决定双晕项能否回到线性谱。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.6 pp.362–365"
+  },
+  {
+    "id": "c7-fourier",
+    "kind": "term",
+    "aliases": [
+      "Fourier",
+      "傅里叶模式",
+      "傅里叶变换"
+    ],
+    "title": "傅里叶分解",
+    "english": "Fourier decomposition",
+    "definition": "把空间起伏表示为不同波数、振幅和相位的波的叠加，使平滑和功率谱能按尺度分析。",
+    "unit": "不适用",
+    "scope": "傅里叶约定会改变功率谱归一系数，比较文献需统一约定。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.1, 7.6 pp.321–326, 362–365"
+  },
+  {
+    "id": "c7-projected-mass",
+    "kind": "term",
+    "aliases": [
+      "投影质量",
+      "透镜质量反演",
+      "质量反演"
+    ],
+    "title": "投影质量与透镜重建",
+    "english": "projected mass and lensing reconstruction",
+    "definition": "投影质量沿视线方向积分；透镜重建由背景像形变等信息反推这一总质量分布。",
+    "unit": "不适用",
+    "scope": "蓝色质量层不是暗物质直接发光，也不逐像素给出纯暗物质密度。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5 pp.351–362"
+  },
+  {
+    "id": "c7-bullet",
+    "kind": "term",
+    "aliases": [
+      "子弹星系团"
+    ],
+    "title": "子弹星系团的碰撞证据",
+    "english": "Bullet Cluster",
+    "definition": "碰撞星系团中，X射线热气体与引力透镜重建的主要质量集中区出现空间错位的观测系统。",
+    "unit": "不适用",
+    "scope": "是本章结构主题的观测补充；不能只凭一幅图测定暗物质自相互作用截面。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5 pp.351–362"
+  },
+  {
+    "id": "c8-shock",
+    "kind": "term",
+    "aliases": [
+      "激波",
+      "上游",
+      "下游",
+      "Rankine–Hugoniot"
+    ],
+    "title": "激波与上下游",
+    "english": "shock and upstream/downstream",
+    "definition": "激波是流体状态的急剧跃迁；上游为流入激波一侧，下游为穿过后的一侧。质量、动量和总能量守恒约束两侧状态。",
+    "unit": "不适用",
+    "scope": "本页为平面稳态绝热跃迁，不解析有限激波厚度或后方辐射冷却层。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.1, 8.3.1 pp.366–367, 375–379"
+  },
+  {
+    "id": "c8-mach",
+    "kind": "symbol",
+    "aliases": [
+      "ℳ",
+      "ℳ₁",
+      "Mach",
+      "Mach数",
+      "Mach 数",
+      "M"
+    ],
+    "title": "马赫数",
+    "english": "Mach number",
+    "definition": "激波静止参考系中，上游流速与上游声速之比ℳ1=v1/cs,1；大于1表示超声速。",
+    "unit": "无量纲",
+    "scope": "ℳ=1为无跃迁极限；有限γ的强激波压缩比具有上限。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1 pp.366–371",
+    "contexts": [
+      "opening",
+      "shock-lab",
+      "practice",
+      "accretion"
+    ],
+    "tex": "\\mathcal M_1"
+  },
+  {
+    "id": "c8-gamma",
+    "kind": "symbol",
+    "aliases": [
+      "γ"
+    ],
+    "title": "绝热指数",
+    "english": "adiabatic index",
+    "definition": "理想气体定压比热与定容比热之比γ=cp/cv；本章单原子非相对论理想气体取5/3。",
+    "unit": "无量纲",
+    "scope": "不是第6章的引力剪切γ；电离、分子自由度或相对论组分可改变有效γ。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1 pp.366–371",
+    "tex": "\\gamma"
+  },
+  {
+    "id": "c8-mu",
+    "kind": "symbol",
+    "aliases": [
+      "μ"
+    ],
+    "title": "平均粒子分子量",
+    "english": "mean molecular weight",
+    "definition": "每个参与热压力粒子的平均质量以质子质量mp为单位表示，ρ=μmp n。",
+    "unit": "无量纲",
+    "scope": "本章多数实验固定完全电离纯氢，μ=0.5；与第9章含氦分子气体的2.33不同。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1 pp.366–371",
+    "tex": "\\mu"
+  },
+  {
+    "id": "c8-nh",
+    "kind": "symbol",
+    "aliases": [
+      "nH",
+      "nH,₁",
+      "nH,1",
+      "nH,0",
+      "nH,₀",
+      "nₕ",
+      "n_H",
+      "nH,2",
+      "nH,₂"
+    ],
+    "title": "氢核数密度",
+    "english": "hydrogen-nucleus number density",
+    "definition": "单位体积内氢核的数目；完全电离纯氢中np=ne=nH，总粒子数密度n=2nH。",
+    "unit": "cm⁻³",
+    "scope": "不可把nH与总热粒子密度n或分子数密度nH₂混用。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1 pp.366–371",
+    "tex": "n_{\\mathrm H}"
+  },
+  {
+    "id": "c8-ne-np",
+    "kind": "symbol",
+    "aliases": [
+      "nₑ",
+      "nₚ",
+      "ne",
+      "np",
+      "n"
+    ],
+    "title": "电子、质子及总粒子数密度",
+    "english": "electron, proton and particle densities",
+    "definition": "ne为电子数密度、np为质子数密度，n为参与压力与内能的总粒子数密度；完全电离纯氢取n=ne+np=2nH。",
+    "unit": "cm⁻³",
+    "scope": "原初含氦、部分电离或分子气体需重新计算粒子比例。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1 pp.366–371"
+  },
+  {
+    "id": "c8-shock-chi",
+    "kind": "symbol",
+    "aliases": [
+      "χ"
+    ],
+    "title": "激波密度压缩比",
+    "english": "shock compression ratio",
+    "definition": "χ=ρ2/ρ1=[(γ+1)ℳ1²]/[(γ−1)ℳ1²+2]；γ=5/3的强激波趋于4。",
+    "unit": "无量纲",
+    "scope": "此χ不是共动距离，也不是第11章恒星响应的q²。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1 pp.366–371",
+    "contexts": [
+      "opening",
+      "shock-lab"
+    ],
+    "tex": "\\chi"
+  },
+  {
+    "id": "c8-shock-states",
+    "kind": "symbol",
+    "aliases": [
+      "ρ₁",
+      "ρ₂",
+      "ρ1",
+      "ρ2",
+      "P₁",
+      "P₂",
+      "P1",
+      "P2",
+      "T₁",
+      "T₂",
+      "T1",
+      "T2",
+      "v₁",
+      "v₂",
+      "v1",
+      "v2",
+      "v"
+    ],
+    "title": "激波两侧状态量",
+    "english": "upstream and downstream states",
+    "definition": "下标1、2分别为上游、下游；ρ为质量密度、P为热压力、T为温度、v为激波参考系速度大小。",
+    "unit": "ρ：质量/体积；P：能量/体积；T：K；v：km s⁻¹",
+    "scope": "同一稳态跃迁满足ρ1v1=ρ2v2，速度下降并不表示质量通量丢失。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1 pp.366–371",
+    "contexts": [
+      "opening",
+      "shock-lab"
+    ]
+  },
+  {
+    "id": "c8-entropy-k",
+    "kind": "symbol",
+    "aliases": [
+      "K",
+      "K₁",
+      "K₂",
+      "K₀",
+      "K1",
+      "K2",
+      "K0",
+      "Kenv",
+      "Kparcel"
+    ],
+    "title": "熵代理",
+    "english": "entropy proxy",
+    "definition": "本章定义K=P/ρ^γ；固定化学组成时比熵随lnK单调增加，绝热无耗散气团保持K。",
+    "unit": "压力×密度^(−γ)",
+    "scope": "K不是温度单位开尔文，也不是热传导系数；不可逆激波会增加K。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1 pp.366–371",
+    "tex": "K"
+  },
+  {
+    "id": "c8-cs",
+    "kind": "symbol",
+    "aliases": [
+      "cₛ",
+      "cs",
+      "c_s"
+    ],
+    "title": "声速",
+    "english": "sound speed",
+    "definition": "激波和绝热扰动的理想气体声速满足cs²=γkBT/(μmp)。",
+    "unit": "km s⁻¹",
+    "scope": "第9章Jeans实验使用等温声速，公式不含γ；须区分热力学过程。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1 pp.366–371",
+    "contexts": [
+      "opening",
+      "shock-lab"
+    ],
+    "tex": "c_s"
+  },
+  {
+    "id": "c8-kb",
+    "kind": "symbol",
+    "aliases": [
+      "kB",
+      "k_B",
+      "kᵦ"
+    ],
+    "title": "玻尔兹曼常数",
+    "english": "Boltzmann constant",
+    "definition": "把温度转换为每粒子热能尺度的常数，理想气体压力P=nkBT。",
+    "unit": "erg K⁻¹",
+    "scope": "需把温度、质量和速度单位配套使用，不可把kB温度能量与体积内能直接混同。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1 pp.366–371",
+    "tex": "k_{\\mathrm B}"
+  },
+  {
+    "id": "c8-mp-me",
+    "kind": "symbol",
+    "aliases": [
+      "mₚ",
+      "mp",
+      "m_p",
+      "mₑ",
+      "me",
+      "m_e"
+    ],
+    "title": "质子与电子质量",
+    "english": "proton and electron mass",
+    "definition": "mp为质子质量，用于由氢核密度求质量密度；me为电子质量，进入Compton能量交换时标。",
+    "unit": "g",
+    "scope": "二者相差约1836倍，不可在气体质量与电子散射式中互换。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1 pp.366–371"
+  },
+  {
+    "id": "c8-lambda",
+    "kind": "symbol",
+    "aliases": [
+      "Λ",
+      "Λ(T)",
+      "ΛX",
+      "Λ_X"
+    ],
+    "title": "辐射冷却函数",
+    "english": "radiative cooling function",
+    "definition": "按选定粒子密度乘积归一的辐射能损失系数；本页纯氢采用每体积损失率nH²Λ(T)。",
+    "unit": "erg cm³ s⁻¹",
+    "scope": "ΛX只统计指定X射线能段；实验幂律Λ不是原子冷却数据库，也不是波长λ。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.3, 8.4.1, 8.8 pp.368–370, 385–387, 410–416",
+    "tex": "\\Lambda"
+  },
+  {
+    "id": "c8-radiative",
+    "kind": "term",
+    "aliases": [
+      "辐射冷却",
+      "等容",
+      "等压",
+      "光加热",
+      "光电离加热"
+    ],
+    "title": "辐射冷却与热力学条件",
+    "english": "radiative cooling and thermodynamic paths",
+    "definition": "气体通过辐射损失热能；等容过程用内能预算，等压过程还需考虑压缩功与焓。外来电离辐射也能提供加热。",
+    "unit": "不适用",
+    "scope": "当前内能除以损失率是局部时标，不自动等于气体降到任意温度的完整历时。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.3–8.1.4, 8.4.1 pp.368–371, 385–387"
+  },
+  {
+    "id": "c8-cool-alpha",
+    "kind": "symbol",
+    "aliases": [
+      "α"
+    ],
+    "title": "冷却函数的温度斜率",
+    "english": "cooling-function slope",
+    "definition": "局部幂律Λ(T)∝T^α中的指数，即dlnΛ/dlnT；控制温度变化对冷却率的影响。",
+    "unit": "无量纲",
+    "scope": "不是第7章标准差的质量斜率；热不稳定门槛还依赖加热律和扰动过程。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.4.1, 8.5.1 pp.385–387, 393–395",
+    "contexts": [
+      "radiative",
+      "radcool-lab",
+      "instability",
+      "thermal-lab",
+      "practice-question-5"
+    ],
+    "tex": "\\alpha"
+  },
+  {
+    "id": "c8-u-cooling",
+    "kind": "symbol",
+    "aliases": [
+      "u",
+      "𝒞",
+      "C"
+    ],
+    "title": "体积内能与体积冷却率",
+    "english": "energy density and volumetric cooling",
+    "definition": "完全电离纯氢有u=3nHkBT，𝒞=nH²Λ；两者之比给等容瞬时冷却时标。",
+    "unit": "u：erg cm⁻³；𝒞：erg cm⁻³ s⁻¹",
+    "scope": "3nH来自电子和质子共同储热；此C不是NFW浓度。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.4.1 pp.385–387",
+    "contexts": [
+      "radiative",
+      "radcool-lab"
+    ]
+  },
+  {
+    "id": "c8-tcool",
+    "kind": "symbol",
+    "aliases": [
+      "tcool",
+      "t_cool",
+      "t꜀ool"
+    ],
+    "title": "辐射冷却时标",
+    "english": "radiative cooling time",
+    "definition": "给定状态的热能密度除以辐射损失率，本页纯氢等容模型为3kBT/(nHΛ)。",
+    "unit": "Myr 或 Gyr",
+    "scope": "未包含光加热、金属、电离非平衡与不透明效应，不能当作任何条件下通用冷却时间。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.4.1 pp.385–387",
+    "tex": "t_{\\mathrm{cool}}"
+  },
+  {
+    "id": "c8-tff",
+    "kind": "symbol",
+    "aliases": [
+      "tff",
+      "t_ff"
+    ],
+    "title": "总密度自由落体时标",
+    "english": "free-fall time from total density",
+    "definition": "均匀无压球模型的tff=√[3π/(32Gρtot)]；本页用气体占总质量0.15推得ρtot。",
+    "unit": "Myr",
+    "scope": "以气体密度替代总密度会改写比较；这不是已经求解了实际非均匀坍缩。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.4.1 pp.385–387",
+    "contexts": [
+      "radiative",
+      "radcool-lab"
+    ],
+    "tex": "t_{\\mathrm{ff}}"
+  },
+  {
+    "id": "c8-compton",
+    "kind": "term",
+    "aliases": [
+      "Compton",
+      "Compton冷却",
+      "Compton 冷却"
+    ],
+    "title": "Compton 冷却",
+    "english": "Compton cooling",
+    "definition": "热电子通过散射背景光子把能量转给辐射场；完全电离热气体与CMB耦合时，冷却时标随辐射能量密度增大而缩短。",
+    "unit": "不适用",
+    "scope": "本页非相对论、电子质子同温并固定背景红移，不含宇宙膨胀冷却。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.2 pp.367–368"
+  },
+  {
+    "id": "c8-cmb",
+    "kind": "abbreviation",
+    "aliases": [
+      "CMB"
+    ],
+    "title": "宇宙微波背景",
+    "english": "cosmic microwave background",
+    "definition": "早期宇宙留下的近黑体辐射背景，其温度随红移满足Tγ=2.725(1+z) K。",
+    "unit": "不适用",
+    "scope": "本章它是Compton能量交换的辐射浴，不是气体的温度。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.2 pp.367–368"
+  },
+  {
+    "id": "c8-tgamma",
+    "kind": "symbol",
+    "aliases": [
+      "Tγ",
+      "T_γ",
+      "Tγ,0"
+    ],
+    "title": "背景辐射温度",
+    "english": "CMB temperature",
+    "definition": "CMB黑体温度；Compton实验演示气体温度超额T−Tγ的衰减。",
+    "unit": "K",
+    "scope": "背景温度在单个固定红移演示中不变；真实宇宙长历时内随红移变化。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.2 pp.367–368",
+    "contexts": [
+      "compton",
+      "compton-lab"
+    ],
+    "tex": "T_\\gamma"
+  },
+  {
+    "id": "c8-tcomp",
+    "kind": "symbol",
+    "aliases": [
+      "tComp",
+      "t_Comp",
+      "tcomp"
+    ],
+    "title": "Compton 温度衰减时标",
+    "english": "Compton cooling time",
+    "definition": "本页纯氢气体中电子质子同温、共同储热时，tComp=3me c/(4σT ar Tγ⁴)。",
+    "unit": "Gyr",
+    "scope": "这是高温非相对论温度超额衰减时标，在固定电离度近似下与气体密度无关。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.2 pp.367–368",
+    "contexts": [
+      "compton",
+      "compton-lab"
+    ],
+    "tex": "t_{\\mathrm{Comp}}"
+  },
+  {
+    "id": "c8-sigma-thomson",
+    "kind": "symbol",
+    "aliases": [
+      "σT",
+      "σ_T",
+      "σₜ"
+    ],
+    "title": "汤姆孙散射截面",
+    "english": "Thomson cross section",
+    "definition": "低能光子被自由电子弹性散射的截面，是非相对论Compton耦合系数的组成部分。",
+    "unit": "cm²",
+    "scope": "此σ不是速度弥散，也不是密度方差。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.2 pp.367–368",
+    "contexts": [
+      "compton",
+      "compton-lab"
+    ],
+    "tex": "\\sigma_{\\mathrm T}"
+  },
+  {
+    "id": "c8-radiation-constant",
+    "kind": "symbol",
+    "aliases": [
+      "ar",
+      "a_r",
+      "aᵣ"
+    ],
+    "title": "辐射常数",
+    "english": "radiation constant",
+    "definition": "黑体辐射能量密度满足uγ=arTγ⁴，ar把温度四次方转换为能量密度。",
+    "unit": "erg cm⁻³ K⁻⁴",
+    "scope": "这里a带下标r，不是尺度因子或浮力实验的梯度a。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.2 pp.367–368",
+    "contexts": [
+      "compton",
+      "compton-lab"
+    ],
+    "tex": "a_r"
+  },
+  {
+    "id": "c8-redshift",
+    "kind": "symbol",
+    "aliases": [
+      "z"
+    ],
+    "title": "宇宙学红移",
+    "english": "cosmological redshift",
+    "definition": "宇宙膨胀使光波长伸长的比例，1+z为今日尺度因子与发射时尺度因子的比。",
+    "unit": "无量纲",
+    "scope": "Compton实验固定z演示局部时标；浮力实验的z则是高度，需单独解释。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.2 pp.367–368",
+    "contexts": [
+      "compton",
+      "compton-lab",
+      "hydrostatic",
+      "hse-lab"
+    ],
+    "tex": "z"
+  },
+  {
+    "id": "c8-hubble-time",
+    "kind": "symbol",
+    "aliases": [
+      "H(z)",
+      "H₀",
+      "ΩΛ",
+      "Ωm",
+      "H",
+      "H0"
+    ],
+    "title": "膨胀率及教学背景参数",
+    "english": "expansion rate and background parameters",
+    "definition": "H(z)是红移z的宇宙膨胀率，H0是今日值；Ωm与ΩΛ分别为物质和宇宙学常数密度参数。",
+    "unit": "H：km s⁻¹ Mpc⁻¹；Ω：无量纲",
+    "scope": "Compton图中的1/H(z)是局部膨胀时标，不是宇宙年龄。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.2 pp.367–368",
+    "contexts": [
+      "compton",
+      "compton-lab",
+      "hydrostatic",
+      "hse-lab"
+    ]
+  },
+  {
+    "id": "c8-hse",
+    "kind": "abbreviation",
+    "aliases": [
+      "HSE",
+      "静力平衡",
+      "流体静力平衡"
+    ],
+    "title": "流体静力平衡",
+    "english": "hydrostatic equilibrium",
+    "definition": "压力梯度与引力平衡，使流体在宏观上静止；球对称形式为dP/dr=−ρGM(<r)/r²。",
+    "unit": "不适用",
+    "scope": "空间等温不等于扰动也等温；湍流、磁场或非平衡会增加额外支持或加速度。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.2.1 pp.371–373"
+  },
+  {
+    "id": "c8-hse-b",
+    "kind": "symbol",
+    "aliases": [
+      "b"
+    ],
+    "title": "等温 NFW 气体的势阱参数",
+    "english": "dimensionless potential-depth parameter",
+    "definition": "b=4πGρsrs²μmp/(kBT)，比较暗晕引力势深度与气体热能；b越大密度梯度越陡。",
+    "unit": "无量纲",
+    "scope": "不是第7章暗晕偏置；此处忽略气体自引力，只给相对密度剖面。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.2.1 pp.371–373",
+    "contexts": [
+      "hydrostatic",
+      "hse-lab"
+    ],
+    "tex": "b"
+  },
+  {
+    "id": "c8-hse-eta",
+    "kind": "symbol",
+    "aliases": [
+      "η"
+    ],
+    "title": "气体与暗晕温度尺度之比",
+    "english": "gas-to-halo temperature ratio",
+    "definition": "η=Tgas/T200c，T200c=μmpV200c²/(2kB)；调节η改变热支持相对暗晕势阱的强度。",
+    "unit": "无量纲",
+    "scope": "不是第10章外流的锁定质量负载；η和c固定时归一化剖面形状不随质量变化。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.2.1 pp.371–373",
+    "contexts": [
+      "hydrostatic",
+      "hse-lab"
+    ],
+    "tex": "\\eta"
+  },
+  {
+    "id": "c8-hse-temp",
+    "kind": "symbol",
+    "aliases": [
+      "Tgas",
+      "T_gas",
+      "T₂₀₀c",
+      "T200c",
+      "T_200c"
+    ],
+    "title": "等温气体温度与暗晕温度尺度",
+    "english": "gas and halo temperature scales",
+    "definition": "Tgas为空间上取常数的气体温度，T200c是由暗晕圆速度定义的引力温度尺度，两者之比为η。",
+    "unit": "K",
+    "scope": "T200c是模型尺度，不表示整个暗晕的所有组分都热化到同一温度。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.2.1 pp.371–373",
+    "contexts": [
+      "hydrostatic",
+      "hse-lab"
+    ]
+  },
+  {
+    "id": "c8-hse-density",
+    "kind": "symbol",
+    "aliases": [
+      "ρgas",
+      "ρ_gas",
+      "ρ₀",
+      "ρ0"
+    ],
+    "title": "静力气体密度及中心归一化",
+    "english": "gas density and central normalization",
+    "definition": "ρgas(r)是等温平衡解，ρ0为其中心相对归一；ρgas/ρ0展示形状。",
+    "unit": "质量/体积；比值无量纲",
+    "scope": "网页未指定绝对气体质量；NFW暗物质有尖峰并不强迫该等温气体中心也发散。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.2.1 pp.371–373",
+    "contexts": [
+      "hydrostatic",
+      "hse-lab"
+    ]
+  },
+  {
+    "id": "c8-convection",
+    "kind": "term",
+    "aliases": [
+      "对流",
+      "浮力",
+      "气团",
+      "对流不稳定"
+    ],
+    "title": "浮力与对流稳定性",
+    "english": "buoyancy and convective stability",
+    "definition": "近似绝热气团位移后与新环境达到压力平衡，若密度差使其继续远离原位便对流不稳定；使其返回则稳定。",
+    "unit": "不适用",
+    "scope": "本页成分均匀、压力快速平衡，不含磁场、热传导或成分梯度。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.2.2 pp.373–374"
+  },
+  {
+    "id": "c8-height-z",
+    "kind": "symbol",
+    "aliases": [
+      "z",
+      "Δz",
+      "H"
+    ],
+    "title": "垂直高度、位移及高度标度",
+    "english": "height, displacement and height scale",
+    "definition": "浮力实验以z为向上高度、Δz为气团位移，以固定长度H把高度无量纲化。",
+    "unit": "长度；z/H与Δz/H无量纲",
+    "scope": "这里z不是红移，H不是哈勃参数。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.2.2 pp.373–374",
+    "contexts": [
+      "convection",
+      "buoy-lab"
+    ]
+  },
+  {
+    "id": "c8-entropy-gradient",
+    "kind": "symbol",
+    "aliases": [
+      "a"
+    ],
+    "title": "熵代理的无量纲高度梯度",
+    "english": "dimensionless entropy gradient",
+    "definition": "a=dlnK/d(z/H)，即环境熵代理沿高度增长的强弱；正梯度在此模型中给恢复浮力。",
+    "unit": "无量纲",
+    "scope": "a不是宇宙尺度因子；其稳定性解释依赖当前均匀成分绝热气团假设。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.2.2 pp.373–374",
+    "contexts": [
+      "convection",
+      "buoy-lab"
+    ],
+    "tex": "a"
+  },
+  {
+    "id": "c8-gravity-g",
+    "kind": "symbol",
+    "aliases": [
+      "g"
+    ],
+    "title": "重力与向上浮力加速度",
+    "english": "gravity and buoyant acceleration",
+    "definition": "g是向下重力加速度的正大小；ab定义向上为正，由气团和环境密度差决定。",
+    "unit": "长度/时间²",
+    "scope": "此g不是NFW累计质量函数；ab/g>0表示向上加速。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.2.2 pp.373–374",
+    "contexts": [
+      "convection",
+      "buoy-lab"
+    ]
+  },
+  {
+    "id": "c8-brunt",
+    "kind": "symbol",
+    "aliases": [
+      "N²",
+      "N^2"
+    ],
+    "title": "浮力频率平方",
+    "english": "Brunt–Väisälä frequency squared",
+    "definition": "N²=(g/γ)dlnK/dz；正值对应小位移恢复振荡，负值对应对流不稳定。",
+    "unit": "时间⁻²",
+    "scope": "图中显示N²/(g/H)的无量纲值；N不是恒星个数或KS斜率。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.2.2 pp.373–374",
+    "contexts": [
+      "convection",
+      "buoy-lab"
+    ],
+    "tex": "N^2"
+  },
+  {
+    "id": "c8-parcel-density",
+    "kind": "symbol",
+    "aliases": [
+      "ρparcel",
+      "ρambient",
+      "ρenv",
+      "ρ_parcel",
+      "ρ_env"
+    ],
+    "title": "气团与环境密度",
+    "english": "parcel and ambient density",
+    "definition": "ρparcel为保持自身熵代理的位移气团密度，ρenv为新高度的背景密度；同压下两者之比决定浮力方向。",
+    "unit": "质量/体积",
+    "scope": "比值比较是在压力平衡后进行，不是两个任意气团的碰撞。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.2.2 pp.373–374",
+    "contexts": [
+      "convection",
+      "buoy-lab"
+    ]
+  },
+  {
+    "id": "c8-cooling-radius",
+    "kind": "term",
+    "aliases": [
+      "冷却半径",
+      "冷却波"
+    ],
+    "title": "冷却半径",
+    "english": "cooling radius",
+    "definition": "预先给定初始气体剖面后，满足tcool(r)=诊断年龄的半径，常用于估计哪些初始气体来得及冷却。",
+    "unit": "不适用",
+    "scope": "不是同一团物质向外运动的轨迹；本页使用独立r⁻²初始剖面，不与上方NFW静力解合并。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.4.2–8.4.3 pp.387–389"
+  },
+  {
+    "id": "c8-rcool",
+    "kind": "symbol",
+    "aliases": [
+      "rcool",
+      "r_cool",
+      "Mcool",
+      "M_cool"
+    ],
+    "title": "冷却诊断半径与质量",
+    "english": "cooling diagnostic radius and mass",
+    "definition": "rcool为时标满足条件的外界，Mcool为该界内初始质量；本页r⁻²剖面给Mcool/Mgas=rcool/R。",
+    "unit": "kpc；M☉",
+    "scope": "达到外边界后诊断新增率为零，不代表真实吸积或恒星形成停止。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.4.2 pp.387–389",
+    "contexts": [
+      "cooling-radius",
+      "cradius-lab"
+    ]
+  },
+  {
+    "id": "c8-cooling-t-r",
+    "kind": "symbol",
+    "aliases": [
+      "tR",
+      "t_R",
+      "R",
+      "t"
+    ],
+    "title": "边界冷却时标、外半径与诊断年龄",
+    "english": "boundary cooling time and diagnostic age",
+    "definition": "R是固定初始气体外半径，tR=tcool(R)，t是用于比较tcool(r)的诊断年龄；半径比例为min[1,√(t/tR)]。",
+    "unit": "R：kpc；t：Gyr",
+    "scope": "t推进的是初始剖面的时标筛选，没有更新冷却后的流动或密度。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.4.2 pp.387–389",
+    "contexts": [
+      "cooling-radius",
+      "cradius-lab",
+      "practice-question-4"
+    ]
+  },
+  {
+    "id": "c8-thermal",
+    "kind": "term",
+    "aliases": [
+      "热不稳定",
+      "热平衡",
+      "净冷却"
+    ],
+    "title": "热平衡与热不稳定",
+    "english": "thermal equilibrium and thermal instability",
+    "definition": "热平衡为加热与辐射损失相等；小温度扰动若使净损失进一步放大扰动则热不稳定。",
+    "unit": "不适用",
+    "scope": "稳定性取决于等压或等容约束以及加热律，不能只凭冷却函数向上或向下判断。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.5.1 pp.393–395"
+  },
+  {
+    "id": "c8-gamma-heating",
+    "kind": "symbol",
+    "aliases": [
+      "Γ"
+    ],
+    "title": "每氢核恒定加热率",
+    "english": "heating rate per hydrogen nucleus",
+    "definition": "本实验每个氢核每秒获得的能量，平衡态Γ=nH,0Λ(T0)。",
+    "unit": "erg s⁻¹ 每氢核",
+    "scope": "不是体积加热率，也不是光电离率；更换加热律会改变稳定阈值。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.5.1 pp.393–395",
+    "contexts": [
+      "instability",
+      "thermal-lab"
+    ],
+    "tex": "\\Gamma"
+  },
+  {
+    "id": "c8-ell-net",
+    "kind": "symbol",
+    "aliases": [
+      "ℓ",
+      "ell"
+    ],
+    "title": "每氢核净能损失率",
+    "english": "net energy-loss rate per hydrogen nucleus",
+    "definition": "ℓ=nHΛ(T)−Γ，正值表示净冷却、负值表示净加热；本页ℓ/Γ=θ^(α−1)−1。",
+    "unit": "erg s⁻¹ 每氢核",
+    "scope": "此ℓ按每氢核归一，不是体积冷却率；正值的符号约定为净损失。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.5.1 pp.393–395",
+    "contexts": [
+      "instability",
+      "thermal-lab"
+    ],
+    "tex": "\\ell"
+  },
+  {
+    "id": "c8-theta",
+    "kind": "symbol",
+    "aliases": [
+      "θ",
+      "δθ",
+      "δT / T₀",
+      "δT/T₀"
+    ],
+    "title": "温度比与相对扰动",
+    "english": "temperature ratio and fractional perturbation",
+    "definition": "θ=T/T0，δθ=δT/T0；等压纯氢气体有nH=nH,0/θ。",
+    "unit": "无量纲",
+    "scope": "图中探针沿线性扰动解推进，未积分任意大振幅的非线性温度方程。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.5.1 pp.393–395",
+    "contexts": [
+      "instability",
+      "thermal-lab"
+    ],
+    "tex": "\\theta"
+  },
+  {
+    "id": "c8-tau",
+    "kind": "symbol",
+    "aliases": [
+      "τ"
+    ],
+    "title": "无量纲热演化时间",
+    "english": "dimensionless thermal time",
+    "definition": "τ=tΓ/(5kBT0)，把每氢核等压热容及加热时标吸收到时间单位中。",
+    "unit": "无量纲",
+    "scope": "仅为当前恒压纯氢模型的标度，不是光学深度。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.5.1 pp.393–395",
+    "contexts": [
+      "instability",
+      "thermal-lab"
+    ],
+    "tex": "\\tau"
+  },
+  {
+    "id": "c8-blast",
+    "kind": "term",
+    "aliases": [
+      "Sedov",
+      "Sedov阶段",
+      "Sedov–Taylor",
+      "爆炸波",
+      "相似解"
+    ],
+    "title": "Sedov–Taylor 爆炸相似解",
+    "english": "Sedov–Taylor blast wave",
+    "definition": "瞬时注入能量E后，在均匀介质中近似能量守恒的强激波满足R∝(E/ρ0)^(1/5)t^(2/5)。",
+    "unit": "不适用",
+    "scope": "适用扫过质量远大于抛射物且辐射损失小的阶段，不覆盖全部超新星遗迹历史。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.6.1 pp.398–403"
+  },
+  {
+    "id": "c8-blast-energy",
+    "kind": "symbol",
+    "aliases": [
+      "E",
+      "ρ₀",
+      "ρ0"
+    ],
+    "title": "爆炸注能与环境密度",
+    "english": "explosion energy and ambient density",
+    "definition": "E为一次瞬时注入后保留的能量，ρ0=mp nH为本页均匀纯氢环境密度；二者决定爆炸扩展尺度。",
+    "unit": "E：erg；ρ0：g cm⁻³",
+    "scope": "ρ0在此为环境密度，不是NFW气体的中心归一。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.6.1 pp.398–403",
+    "contexts": [
+      "feedback",
+      "blast-lab"
+    ]
+  },
+  {
+    "id": "c8-blast-rvt",
+    "kind": "symbol",
+    "aliases": [
+      "R",
+      "vsh",
+      "v_sh",
+      "Mswept",
+      "M_swept",
+      "t",
+      "v"
+    ],
+    "title": "爆炸激波半径、速度与扫过质量",
+    "english": "blast radius, speed and swept-up mass",
+    "definition": "R为激波位置，vsh=(2/5)R/t；均匀环境中Mswept=4πρ0R³/3，是被激波扫过的环境质量。",
+    "unit": "pc；km s⁻¹；M☉；kyr",
+    "scope": "图中圆内填色不代表已经画出相似解的真实密度压力剖面。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.6.1 pp.398–403",
+    "contexts": [
+      "blast-lab"
+    ]
+  },
+  {
+    "id": "c8-wind",
+    "kind": "term",
+    "aliases": [
+      "风泡",
+      "风驱动泡",
+      "辐射薄壳",
+      "持续注能"
+    ],
+    "title": "恒定功率风驱动泡",
+    "english": "wind-driven bubble",
+    "definition": "恒定机械功率持续供应热泡，热泡驱动外部薄壳扫过均匀介质；经典模型给R∝t^(3/5)。",
+    "unit": "不适用",
+    "scope": "模型保留泡内热能而允许壳层辐射，不能与完全绝热瞬时爆炸的能量分配混用。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.6.2 pp.403–406"
+  },
+  {
+    "id": "c8-wind-power",
+    "kind": "symbol",
+    "aliases": [
+      "Lw",
+      "L_w",
+      "L"
+    ],
+    "title": "风的机械功率",
+    "english": "wind mechanical luminosity",
+    "definition": "每单位时间注入泡内的机械能，恒定Lw维持经典风泡的相似扩张。",
+    "unit": "erg s⁻¹",
+    "scope": "不是电磁辐射光度；真实恒星风和超新星供能可随时间变化。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.6.2 pp.403–406",
+    "contexts": [
+      "feedback",
+      "wind-lab",
+      "practice-question-6"
+    ],
+    "tex": "L_w"
+  },
+  {
+    "id": "c8-wind-energies",
+    "kind": "symbol",
+    "aliases": [
+      "Eth",
+      "E_th",
+      "Ekin",
+      "E_kin",
+      "Erad",
+      "E_rad"
+    ],
+    "title": "热泡、壳动能与辐射能",
+    "english": "bubble thermal, shell kinetic and radiated energies",
+    "definition": "此薄壳模型中Eth=(5/11)Lwt、Ekin=(15/77)Lwt、Erad=(27/77)Lwt，三项合计注入的Lwt。",
+    "unit": "erg",
+    "scope": "能量比例属于当前恒功率均匀环境模型，不是所有星系反馈的通用效率。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.6.2 pp.403–406",
+    "contexts": [
+      "feedback",
+      "wind-lab"
+    ]
+  },
+  {
+    "id": "c8-feedback",
+    "kind": "term",
+    "aliases": [
+      "反馈",
+      "超新星反馈",
+      "质量负载",
+      "能量耦合"
+    ],
+    "title": "恒星反馈及其耦合",
+    "english": "stellar feedback and energy coupling",
+    "definition": "恒星风、辐射与超新星将能量、动量、物质和金属返还气体；其保留或逃逸程度由冷却、环境和几何共同决定。",
+    "unit": "不适用",
+    "scope": "源能量总和不等于实际外流动能；仅能量比不足以确定逃逸质量。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.6.3 pp.406–407"
+  },
+  {
+    "id": "c8-hydro-instabilities",
+    "kind": "term",
+    "aliases": [
+      "流体不稳定"
+    ],
+    "title": "流体不稳定与热传导",
+    "english": "hydrodynamic instabilities and conduction",
+    "definition": "密度分层的加速度和界面速度剪切可分别产生Rayleigh–Taylor、Kelvin–Helmholtz不稳定；热传导可抹平温度梯度并影响小尺度扰动。",
+    "unit": "不适用",
+    "scope": "本章简单热扰动实验没有把这些机制一并求解。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.5.2–8.5.3 pp.395–398"
+  },
+  {
+    "id": "c8-xray",
+    "kind": "symbol",
+    "aliases": [
+      "LX",
+      "L_X",
+      "Z",
+      "V"
+    ],
+    "title": "热气体 X 射线光度积分",
+    "english": "X-ray luminosity integral",
+    "definition": "LX≈∫ne nH ΛX(T,Z)dV；Z在此是金属质量分数，V为体积，ΛX取指定观测能段。",
+    "unit": "LX：erg s⁻¹；Z：无量纲；V：体积",
+    "scope": "密度平方权重使团块提高发射；亮度不是气体质量的直接线性图像。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.8 pp.410–416",
+    "contexts": [
+      "observations",
+      "tests"
+    ]
+  },
+  {
+    "id": "c8-clumping",
+    "kind": "term",
+    "aliases": [
+      "团块",
+      "密度平方",
+      "视线积分",
+      "X 射线"
+    ],
+    "title": "热气体团块与发射权重",
+    "english": "clumping and emission weighting",
+    "definition": "热等离子体常见发射近似随密度平方变化；同平均密度下，密度起伏可使平均n²大于平均n的平方。",
+    "unit": "不适用",
+    "scope": "投影、温度、丰度和仪器响应都影响X射线图，不能从显示色直接读取三维气体密度。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.8 pp.410–416"
+  },
+  {
+    "id": "c9-ism",
+    "kind": "abbreviation",
+    "aliases": [
+      "ISM",
+      "星际介质"
+    ],
+    "title": "星际介质",
+    "english": "interstellar medium",
+    "definition": "恒星之间的气体、尘埃和相关场，包含不同温度、密度、电离状态与分子含量的多种组分。",
+    "unit": "不适用",
+    "scope": "一个平均密度不能代表所有致密成星核。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.1 pp.418–420"
+  },
+  {
+    "id": "c9-gmc",
+    "kind": "abbreviation",
+    "aliases": [
+      "GMC",
+      "巨分子云",
+      "分子云"
+    ],
+    "title": "巨分子云",
+    "english": "giant molecular cloud",
+    "definition": "以分子气体为主要冷气体组分、内部具有层级结构的巨大星际云，是许多恒星形成区域的宿主。",
+    "unit": "不适用",
+    "scope": "云的整体性质不意味着每个局部区域都同样稳定或成星。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.1 pp.418–420"
+  },
+  {
+    "id": "c9-jeans",
+    "kind": "term",
+    "aliases": [
+      "Jeans",
+      "Jeans尺度",
+      "Jeans质量",
+      "Jeans长度"
+    ],
+    "title": "Jeans 引力不稳定尺度",
+    "english": "Jeans length and mass",
+    "definition": "在均匀气体小扰动近似中，热压力与自引力竞争给出Jeans长度；本页Jeans质量为直径λJ球内的质量。",
+    "unit": "不适用",
+    "scope": "只检验热支持，不包含磁场、湍流、有限边界和真实云的非均匀结构。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.1 pp.419–420"
+  },
+  {
+    "id": "c9-cs",
+    "kind": "symbol",
+    "aliases": [
+      "cs",
+      "c_s",
+      "cₛ"
+    ],
+    "title": "等温声速",
+    "english": "isothermal sound speed",
+    "definition": "本页cs²=kBT/(μmp)，表示恒温气体压力对密度扰动的响应速度尺度。",
+    "unit": "km s⁻¹",
+    "scope": "不含绝热声速的γ因子；当前含氦分子气体取μ=2.33。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.1 pp.419–420",
+    "contexts": [
+      "clouds",
+      "jeans-lab"
+    ],
+    "tex": "c_s"
+  },
+  {
+    "id": "c9-density-n",
+    "kind": "symbol",
+    "aliases": [
+      "n",
+      "ρ",
+      "μ"
+    ],
+    "title": "总粒子密度、质量密度与分子量",
+    "english": "particle density, mass density and molecular weight",
+    "definition": "n为全部热粒子数密度，ρ=μmpn，μ=2.33为含氦分子气体的平均粒子质量除以质子质量。",
+    "unit": "n：cm⁻³；ρ：g cm⁻³；μ：无量纲",
+    "scope": "n不是氢核nH，也不是H₂分子数密度；这一区别直接影响Jeans与自由落体尺度。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.1 pp.419–420",
+    "contexts": [
+      "clouds",
+      "jeans-lab",
+      "efficiency-lab",
+      "chapter-references"
+    ]
+  },
+  {
+    "id": "c9-lambda-j",
+    "kind": "symbol",
+    "aliases": [
+      "λJ",
+      "λ_J",
+      "λⱼ",
+      "λ"
+    ],
+    "title": "Jeans 长度",
+    "english": "Jeans length",
+    "definition": "本页λJ=cs√[π/(Gρ)]；超过这一波长的线性扰动在理想均匀热气体中可能受自引力放大。",
+    "unit": "pc",
+    "scope": "不是所有有限云的精确坍缩边界，实际还受其他压力与几何影响。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.1 pp.419–420",
+    "tex": "\\lambda_{\\mathrm J}",
+    "contexts": [
+      "jeans-lab"
+    ]
+  },
+  {
+    "id": "c9-mass-j",
+    "kind": "symbol",
+    "aliases": [
+      "MJ",
+      "M_J",
+      "Mⱼ"
+    ],
+    "title": "Jeans 质量",
+    "english": "Jeans mass",
+    "definition": "以λJ为直径的均匀球质量MJ=(π/6)ρλJ³；给定约定后可比较温度与密度的影响。",
+    "unit": "M☉",
+    "scope": "不同文献的几何约定可导致常数差异；不应直接与磁临界质量相加。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.1 pp.419–420",
+    "tex": "M_{\\mathrm J}"
+  },
+  {
+    "id": "c9-tff",
+    "kind": "symbol",
+    "aliases": [
+      "tff",
+      "t_ff"
+    ],
+    "title": "自由落体时标",
+    "english": "free-fall time",
+    "definition": "无压、均匀球由静止塌缩的时间tff=√[3π/(32Gρ)]，用于定义每自由落体效率。",
+    "unit": "Myr",
+    "scope": "实际云有压力、磁场、湍流和边界；效率实验固定初始密度给定的tff。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.1 pp.419–420, 425–428",
+    "tex": "t_{\\mathrm{ff}}"
+  },
+  {
+    "id": "c9-virial",
+    "kind": "term",
+    "aliases": [
+      "维里参数",
+      "维里平衡",
+      "束缚",
+      "零总能量"
+    ],
+    "title": "维里平衡与引力束缚",
+    "english": "virial balance and gravitational binding",
+    "definition": "维里平衡约束动能与势能及表面项，束缚则关心总能量是否为负；两者不是相同条件。",
+    "unit": "不适用",
+    "scope": "孤立均匀球无表面项时αvir=1对应维里关系，αvir=2对应零总能量。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.1 pp.419–420"
+  },
+  {
+    "id": "c9-alpha-vir",
+    "kind": "symbol",
+    "aliases": [
+      "αvir",
+      "α_vir",
+      "αᵥᵢᵣ"
+    ],
+    "title": "云的维里参数",
+    "english": "virial parameter",
+    "definition": "αvir=5σ²R/(GM)=2K/|W|，比较均匀球整体随机支持与自引力。",
+    "unit": "无量纲",
+    "scope": "真实受压或磁化云有表面及磁能项；αvir不是坍缩概率的普适刻度。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.1 pp.419–420",
+    "tex": "\\alpha_{\\mathrm{vir}}"
+  },
+  {
+    "id": "c9-kinetic-k",
+    "kind": "symbol",
+    "aliases": [
+      "K",
+      "W"
+    ],
+    "title": "云的动能与引力势能",
+    "english": "cloud kinetic and gravitational energies",
+    "definition": "均匀球模型有K=3Mσ²/2、W=−3GM²/(5R)，σ为各向同性随机速度的一维弥散。",
+    "unit": "质量×速度²",
+    "scope": "此K为动能，不是第8章熵代理；本页σ已包括总支持，不再重复加热声速。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.1 pp.419–420",
+    "contexts": [
+      "cloud-lab"
+    ]
+  },
+  {
+    "id": "c9-sigma-cloud",
+    "kind": "symbol",
+    "aliases": [
+      "σ"
+    ],
+    "title": "一维总支持速度弥散",
+    "english": "one-dimensional supporting velocity dispersion",
+    "definition": "云内部随机运动沿一个方向的均方根速度，本页直接用它计算总随机动能。",
+    "unit": "km s⁻¹",
+    "scope": "采用各向同性、均匀球假设；不再额外重复加入相同热支持。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.1 pp.419–420",
+    "contexts": [
+      "cloud-lab"
+    ],
+    "tex": "\\sigma"
+  },
+  {
+    "id": "c9-mass-radius",
+    "kind": "symbol",
+    "aliases": [
+      "M",
+      "R"
+    ],
+    "title": "云质量与云半径",
+    "english": "cloud mass and radius",
+    "definition": "云实验的M为整团云质量，R为均匀球外半径；磁实验R则指定磁通截面半径。",
+    "unit": "M：M☉；R：pc",
+    "scope": "这些是局部云尺度，不是暗晕M200c和R200c。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.1 pp.419–420, 425–426",
+    "contexts": [
+      "cloud-lab",
+      "magnetic-lab"
+    ]
+  },
+  {
+    "id": "c9-vesc",
+    "kind": "symbol",
+    "aliases": [
+      "vesc",
+      "v_esc"
+    ],
+    "title": "云边缘逃逸速度",
+    "english": "surface escape speed",
+    "definition": "均匀孤立球表面逃到无穷远所需的最小速度vesc=√(2GM/R)。",
+    "unit": "km s⁻¹",
+    "scope": "忽略外部势阱、压力和时间变化，不等于云内气体的实际运动速度。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.1 pp.419–420",
+    "tex": "v_{\\mathrm{esc}}"
+  },
+  {
+    "id": "c9-h2",
+    "kind": "symbol",
+    "aliases": [
+      "H₂",
+      "H2",
+      "nH₂"
+    ],
+    "title": "分子氢",
+    "english": "molecular hydrogen",
+    "definition": "H₂是两个氢原子结合形成的分子；nH₂计分子个数，一个分子包含两个氢核。",
+    "unit": "nH₂：cm⁻³；H₂：化学物种",
+    "scope": "分子数密度与总粒子数密度、氢核数密度不可混同。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.2.1 pp.421–422"
+  },
+  {
+    "id": "c9-shielding",
+    "kind": "term",
+    "aliases": [
+      "解离",
+      "分子化学网络"
+    ],
+    "title": "分子形成、解离与遮蔽",
+    "english": "molecular formation, dissociation and shielding",
+    "definition": "紫外光可使分子解离；分子自身吸收相关波段称自遮蔽，尘埃吸光也能降低破坏率。尘埃表面还可促进H₂形成。",
+    "unit": "不适用",
+    "scope": "形成率与辐射、柱密度、尘埃及化学状态共同相关，不能只靠一个临界密度替代完整反应网络。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.2.1 pp.421–422"
+  },
+  {
+    "id": "c9-turbulence",
+    "kind": "term",
+    "aliases": [
+      "湍流",
+      "湍流支持",
+      "磁支撑"
+    ],
+    "title": "湍流与磁支撑",
+    "english": "turbulent and magnetic support",
+    "definition": "随机流动和磁应力可提供整体支持，也能局部压缩气体；磁通冻结是理想导电流体磁通随物质运动的近似，非理想扩散可改变它。",
+    "unit": "不适用",
+    "scope": "湍流不只阻碍坍缩；真实效率不能由单一支持速度或理想冻结条件确定。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.3.1–9.3.2 pp.425–427"
+  },
+  {
+    "id": "c9-field-b",
+    "kind": "symbol",
+    "aliases": [
+      "B"
+    ],
+    "title": "穿过云截面的磁场",
+    "english": "magnetic field",
+    "definition": "取穿过半径R截面的平均垂直磁场分量，使磁通Φ=πR²B。",
+    "unit": "μG",
+    "scope": "B不是第7章坍缩屏障；几何、方向和非均匀性会影响真实磁支撑。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.3.1 pp.425–426",
+    "contexts": [
+      "magnetic-lab"
+    ],
+    "tex": "B"
+  },
+  {
+    "id": "c9-flux-phi",
+    "kind": "symbol",
+    "aliases": [
+      "Φ"
+    ],
+    "title": "磁通",
+    "english": "magnetic flux",
+    "definition": "磁场穿过给定截面的面积积分；本页均匀垂直场近似为Φ=πR²B。",
+    "unit": "G cm²",
+    "scope": "此Φ不是引力势；磁通与质量的比值用于磁临界性估计。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.3.1 pp.425–426",
+    "contexts": [
+      "magnetic-lab"
+    ],
+    "tex": "\\Phi"
+  },
+  {
+    "id": "c9-mflux",
+    "kind": "symbol",
+    "aliases": [
+      "MΦ",
+      "M_Φ",
+      "M_\\Phi"
+    ],
+    "title": "磁临界质量",
+    "english": "magnetic critical mass",
+    "definition": "本页采用MΦ=Φ/(2π√G)作为常用理想磁临界质量约定。",
+    "unit": "M☉",
+    "scope": "几何系数与原书均匀球估算不完全相同，不能与MJ直接相加称为精确临界质量。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.3.1 pp.425–426",
+    "contexts": [
+      "magnetic-lab"
+    ],
+    "tex": "M_\\Phi"
+  },
+  {
+    "id": "c9-muflux",
+    "kind": "symbol",
+    "aliases": [
+      "μΦ",
+      "μ_Φ",
+      "μ_\\Phi"
+    ],
+    "title": "归一化质量—磁通比",
+    "english": "normalized mass-to-flux ratio",
+    "definition": "μΦ=M/MΦ，比较云质量与当前约定的磁临界质量；大于1称磁超临界，小于1称磁次临界。",
+    "unit": "无量纲",
+    "scope": "此μΦ不是平均分子量；超临界不保证没有其他支持或一定立即成星。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.3.1 pp.425–426",
+    "contexts": [
+      "magnetic-lab"
+    ],
+    "tex": "\\mu_\\Phi"
+  },
+  {
+    "id": "c9-eff",
+    "kind": "symbol",
+    "aliases": [
+      "εff",
+      "ε_ff",
+      "ϵff"
+    ],
+    "title": "每自由落体恒星形成效率",
+    "english": "star formation efficiency per free-fall time",
+    "definition": "定义为一个自由落体时标内形成的恒星质量相对现有气体质量的比例，瞬时关系为SFR=εff Mg/tff。",
+    "unit": "无量纲",
+    "scope": "当前实验固定εff和初始tff，并把形成质量永久锁定，未解释真实效率的来源。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.3 pp.425–428",
+    "tex": "\\epsilon_{\\mathrm{ff}}"
+  },
+  {
+    "id": "c9-mg",
+    "kind": "symbol",
+    "aliases": [
+      "Mg",
+      "M_g",
+      "M₀",
+      "M0"
+    ],
+    "title": "剩余气体与初始气体质量",
+    "english": "remaining and initial gas masses",
+    "definition": "效率实验M0是初始气体质量，Mg(t)是经过形成后留下的气体质量，Mg/M0=exp(−εff t/tff)。",
+    "unit": "M☉",
+    "scope": "未加入回流、补给、反馈或密度演化；不是EPS祖先质量的下标约定。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.3 pp.425–428",
+    "contexts": [
+      "efficiency-lab"
+    ]
+  },
+  {
+    "id": "c9-tdep",
+    "kind": "symbol",
+    "aliases": [
+      "tdep",
+      "t_dep"
+    ],
+    "title": "气体耗尽时标",
+    "english": "gas depletion time",
+    "definition": "当前气体质量除以当前恒星形成率；固定tff和效率时tdep=tff/εff，面密度关系中也可用Σgas/ΣSFR。",
+    "unit": "Myr、Gyr 或 yr",
+    "scope": "是瞬时比值，不意味着真实气体将在这一精确历时后全部消失。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.3, 9.5 pp.425–428, 433–439",
+    "tex": "t_{\\mathrm{dep}}"
+  },
+  {
+    "id": "c9-protostar",
+    "kind": "term",
+    "aliases": [
+      "致密核",
+      "前主序"
+    ],
+    "title": "从致密核到前主序星",
+    "english": "dense cores, protostars and pre-main-sequence evolution",
+    "definition": "云内致密核可在坍缩后形成吸积原恒星，随后在主序氢燃烧前继续收缩；辐射输运决定能量如何离开物质。",
+    "unit": "不适用",
+    "scope": "角动量、磁场、盘和H₂解离使真实过程偏离单一球对称热坍缩。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.4.1 pp.429–432"
+  },
+  {
+    "id": "c9-hii-term",
+    "kind": "term",
+    "aliases": [
+      "HII",
+      "H II",
+      "HⅡ",
+      "电离区",
+      "电离反馈",
+      "Strömgren"
+    ],
+    "title": "H II 区与 Strömgren 球",
+    "english": "H II region and Strömgren sphere",
+    "definition": "氢主要被恒星紫外光电离的区域。理想静态球中，电离光子供应与复合损失平衡定义Strömgren半径。",
+    "unit": "不适用",
+    "scope": "本页局部推导为纯氢、固定密度、固定光子率示范，不包括气压膨胀、尘埃或光子逃逸。",
+    "chapters": [
+      9
+    ],
+    "source": "主题参照 MBW (2010) 第9章 §9.4.2 pp.432–433；静态 Strömgren 光子预算为网页新增局部推导"
+  },
+  {
+    "id": "c9-ion-q",
+    "kind": "symbol",
+    "aliases": [
+      "Q"
+    ],
+    "title": "氢电离光子产生率",
+    "english": "ionizing photon production rate",
+    "definition": "光源每秒发射能够电离氢的光子数，固定Q供给理想H II球的电离预算。",
+    "unit": "s⁻¹",
+    "scope": "此Q不是Toomre稳定参数；光子数率也不是能量光度。",
+    "chapters": [
+      9
+    ],
+    "source": "主题参照 MBW (2010) 第9章 §9.4.2 pp.432–433；静态 Strömgren 光子预算为网页新增局部推导",
+    "contexts": [
+      "hii-lab",
+      "individual"
+    ],
+    "tex": "Q"
+  },
+  {
+    "id": "c9-alpha-b",
+    "kind": "symbol",
+    "aliases": [
+      "αB",
+      "α_B"
+    ],
+    "title": "case-B 复合系数",
+    "english": "case-B recombination coefficient",
+    "definition": "排除直接复合到氢基态的有效复合系数，假设相应电离光子在局部重新吸收；本页10⁴K取2.6×10⁻¹³cm³ s⁻¹。",
+    "unit": "cm³ s⁻¹",
+    "scope": "温度与辐射输运假设改变时数值及case-B适用性也变。",
+    "chapters": [
+      9
+    ],
+    "source": "主题参照 MBW (2010) 第9章 §9.4.2 pp.432–433；静态 Strömgren 光子预算为网页新增局部推导",
+    "contexts": [
+      "hii-lab"
+    ],
+    "tex": "\\alpha_{\\mathrm B}"
+  },
+  {
+    "id": "c9-rs-ion",
+    "kind": "symbol",
+    "aliases": [
+      "RS",
+      "R_S",
+      "Rₛ"
+    ],
+    "title": "Strömgren 半径",
+    "english": "Strömgren radius",
+    "definition": "RS=[3Q/(4παB nH²)]^(1/3)，是当前均匀纯氢模型光子供给与复合平衡的球半径。",
+    "unit": "pc",
+    "scope": "不是NFW尺度半径rs，也不是膨胀后所有真实电离区的固定边界。",
+    "chapters": [
+      9
+    ],
+    "source": "主题参照 MBW (2010) 第9章 §9.4.2 pp.432–433；静态 Strömgren 光子预算为网页新增局部推导",
+    "contexts": [
+      "hii-lab"
+    ],
+    "tex": "R_{\\mathrm S}"
+  },
+  {
+    "id": "c9-trec",
+    "kind": "symbol",
+    "aliases": [
+      "trec",
+      "t_rec"
+    ],
+    "title": "复合时标",
+    "english": "recombination time",
+    "definition": "完全电离纯氢中trec=1/(αB nH)，描述没有足够持续电离供给时离子复合的特征时标。",
+    "unit": "yr 或 Myr",
+    "scope": "静态固定密度实验用t/trec描绘电离半径建立，不包含流体膨胀。",
+    "chapters": [
+      9
+    ],
+    "source": "主题参照 MBW (2010) 第9章 §9.4.2 pp.432–433；静态 Strömgren 光子预算为网页新增局部推导",
+    "contexts": [
+      "hii-lab"
+    ],
+    "tex": "t_{\\mathrm{rec}}"
+  },
+  {
+    "id": "c9-nh-ion",
+    "kind": "symbol",
+    "aliases": [
+      "nH",
+      "n_H",
+      "n"
+    ],
+    "title": "电离区氢核密度",
+    "english": "hydrogen-nucleus density in the H II model",
+    "definition": "H II实验以nH为固定氢核数密度；完全电离纯氢区内ne=np=nH，复合率与nH²成正比。",
+    "unit": "cm⁻³",
+    "scope": "此处滑块n指氢核密度，不是Jeans实验总粒子密度。",
+    "chapters": [
+      9
+    ],
+    "source": "主题参照 MBW (2010) 第9章 §9.4.2 pp.432–433；静态 Strömgren 光子预算为网页新增局部推导",
+    "contexts": [
+      "hii-lab"
+    ]
+  },
+  {
+    "id": "c9-ks-law",
+    "kind": "abbreviation",
+    "aliases": [
+      "KS",
+      "KS关系",
+      "Kennicutt",
+      "Kennicutt–Schmidt",
+      "Kennicutt-Schmidt",
+      "经验定律"
+    ],
+    "title": "Kennicutt–Schmidt 关系",
+    "english": "Kennicutt–Schmidt law",
+    "definition": "气体面密度与恒星形成率面密度的经验幂律关系，常写ΣSFR∝Σgas^N。",
+    "unit": "不适用",
+    "scope": "全局与局部标定、气体定义和平均时间不同；经验相关不直接证明唯一成星机制。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.5.1 pp.434–436"
+  },
+  {
+    "id": "c9-sigma-gas",
+    "kind": "symbol",
+    "aliases": [
+      "Σgas",
+      "Σ_gas",
+      "Σ"
+    ],
+    "title": "气体面密度",
+    "english": "gas surface density",
+    "definition": "单位投影盘面积中的气体质量，是KS经验关系的输入。",
+    "unit": "M☉ pc⁻²",
+    "scope": "本页约定不额外加氦修正，比较观测标定须统一气体种类、面积和投影。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.5 pp.433–439",
+    "contexts": [
+      "laws",
+      "ks-lab"
+    ],
+    "tex": "\\Sigma_{\\mathrm{gas}}"
+  },
+  {
+    "id": "c9-sigma-sfr",
+    "kind": "symbol",
+    "aliases": [
+      "ΣSFR",
+      "Σ_SFR"
+    ],
+    "title": "恒星形成率面密度",
+    "english": "star formation rate surface density",
+    "definition": "每单位面积每单位时间新形成的恒星质量，是KS关系的输出量。",
+    "unit": "M☉ yr⁻¹ kpc⁻²",
+    "scope": "与输入M☉ pc⁻²的面积单位不同，求耗尽时间时需乘10⁶进行换算。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.5 pp.433–439",
+    "contexts": [
+      "laws",
+      "ks-lab"
+    ],
+    "tex": "\\Sigma_{\\mathrm{SFR}}"
+  },
+  {
+    "id": "c9-ks-n",
+    "kind": "symbol",
+    "aliases": [
+      "N"
+    ],
+    "title": "KS 经验幂律指数",
+    "english": "KS power-law index",
+    "definition": "ΣSFR∝Σgas^N中的斜率；本页N=1.4作为参考，改变N只作教学比较。",
+    "unit": "无量纲",
+    "scope": "不是恒星个数，也不是浮力频率；调整滑块没有重新拟合真实数据。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.5.1 pp.434–436",
+    "contexts": [
+      "laws",
+      "ks-lab"
+    ],
+    "tex": "N"
+  },
+  {
+    "id": "c9-sfr",
+    "kind": "abbreviation",
+    "aliases": [
+      "SFR",
+      "恒星形成率",
+      "形成率"
+    ],
+    "title": "恒星形成率",
+    "english": "star formation rate",
+    "definition": "单位时间新形成的恒星质量；观测值须通过谱线、紫外或红外等示踪量并依赖IMF标定。",
+    "unit": "M☉ yr⁻¹",
+    "scope": "不同指标有不同平均时间和尘埃敏感性；恒星形成率不等于净锁定质量增长率。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.5–9.6 pp.433–445"
+  },
+  {
+    "id": "c9-imf",
+    "kind": "abbreviation",
+    "aliases": [
+      "IMF",
+      "初始质量分布",
+      "初始质量函数"
+    ],
+    "title": "恒星初始质量函数",
+    "english": "initial mass function",
+    "definition": "一次形成事件中新生恒星按初始质量分配的数目分布，常以dN/dm或dN/dlnm表示。",
+    "unit": "不适用",
+    "scope": "两种测度的斜率相差1；低质量转折、上下限与归一决定光和反馈预算。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.6 pp.440–445"
+  },
+  {
+    "id": "c9-salpeter",
+    "kind": "term",
+    "aliases": [
+      "Salpeter",
+      "单幂律"
+    ],
+    "title": "Salpeter 幂律 IMF",
+    "english": "Salpeter IMF",
+    "definition": "经典高质量范围近似为dN/dm∝m^(−2.35)的初始恒星质量分布。",
+    "unit": "不适用",
+    "scope": "本页延伸到0.1–100M☉是教学假设，不是低质量IMF已被这一幂律精确描述。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.6 pp.440–445"
+  },
+  {
+    "id": "c9-imf-phi",
+    "kind": "symbol",
+    "aliases": [
+      "φ(m)",
+      "φ"
+    ],
+    "title": "按质量的 IMF 密度",
+    "english": "IMF per unit mass",
+    "definition": "φ(m)=dN/dm，本页取Cm^(−s)；φ(m)dm为初始质量落在m到m+dm的恒星数。",
+    "unit": "质量⁻¹（按所选形成质量归一）",
+    "scope": "dN/dlnm=mφ(m)，按数量和按质量求份额使用不同积分权重。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.6 pp.440–445",
+    "contexts": [
+      "mass-function",
+      "imf-lab"
+    ],
+    "tex": "\\phi(m)"
+  },
+  {
+    "id": "c9-imf-s",
+    "kind": "symbol",
+    "aliases": [
+      "s"
+    ],
+    "title": "单幂律 IMF 指数",
+    "english": "IMF power-law exponent",
+    "definition": "dN/dm∝m^(−s)的正指数，Salpeter参考值s=2.35；增大s使相对高质量星更少。",
+    "unit": "无量纲",
+    "scope": "若改用dN/dlnm，幂指数变为1−s，不可直接沿用同一数值。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.6 pp.440–445",
+    "contexts": [
+      "mass-function",
+      "imf-lab"
+    ],
+    "tex": "s"
+  },
+  {
+    "id": "c9-imf-cm",
+    "kind": "symbol",
+    "aliases": [
+      "C",
+      "m",
+      "N"
+    ],
+    "title": "IMF 归一系数、质量与星数",
+    "english": "IMF normalization, mass and star counts",
+    "definition": "m为初始恒星质量、N为星数，C通过本页0.1–100M☉内∫mφ(m)dm=1M☉设定。",
+    "unit": "m：M☉；N：个数；C：依测度定义",
+    "scope": "本页按1M☉形成质量归一；m表示太阳质量数值时积分上下限写作0.1、100。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.6 pp.440–445",
+    "contexts": [
+      "mass-function",
+      "imf-lab"
+    ]
+  },
+  {
+    "id": "c9-sn-threshold",
+    "kind": "term",
+    "aliases": [
+      "超新星前身",
+      "遗迹",
+      "数量份额",
+      "质量份额"
+    ],
+    "title": "IMF 的数量与质量预算",
+    "english": "IMF number and mass budgets",
+    "definition": "数量份额积分φ(m)，质量份额积分mφ(m)；本页8M☉以上仅作大质量前身预算的简化阈值。",
+    "unit": "不适用",
+    "scope": "阈值不决定具体超新星类型或遗迹，双星、金属丰度和质量损失均会改变通道。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.6 pp.440–445"
+  },
+  {
+    "id": "c9-popiii",
+    "kind": "term",
+    "aliases": [
+      "Population III",
+      "PopulationIII",
+      "Pop III",
+      "第三星族",
+      "第一代恒星"
+    ],
+    "title": "第三星族恒星",
+    "english": "Population III stars",
+    "definition": "由几乎不含重元素的原初气体形成的早期恒星族群，冷却与碎裂条件不同于富金属分子云。",
+    "unit": "不适用",
+    "scope": "本页未求原始化学网络，不能由单个Jeans质量直接预测其IMF。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.7 pp.446–448"
+  },
+  {
+    "id": "c9-cmb",
+    "kind": "abbreviation",
+    "aliases": [
+      "CMB"
+    ],
+    "title": "宇宙微波背景",
+    "english": "cosmic microwave background",
+    "definition": "近黑体宇宙辐射背景，温度随(1+z)升高，可改变早期气体低温冷却与碎裂条件。",
+    "unit": "不适用",
+    "scope": "是热背景约束之一，不是唯一决定首代恒星质量的因素。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.7 pp.446–448"
+  },
+  {
+    "id": "c9-atomic-threshold",
+    "kind": "term",
+    "aliases": [
+      "原子冷却阈值",
+      "碎裂",
+      "原始化学",
+      "气相分子反应"
+    ],
+    "title": "原初气体的冷却与碎裂",
+    "english": "primordial cooling and fragmentation",
+    "definition": "缺少尘埃时H₂可通过气相反应形成并冷却气体；足够高温时原子跃迁也提供冷却，进而影响自引力碎裂。",
+    "unit": "不适用",
+    "scope": "阈值取决于电离与辐射环境；单独给出维里温度并不能确定首代恒星的最终质量。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.7 pp.446–448"
+  },
+  {
+    "id": "c9-diskjet",
+    "kind": "term",
+    "aliases": [
+      "双极外流",
+      "喷流",
+      "散射星云",
+      "尘埃盘"
+    ],
+    "title": "年轻恒星的盘、喷流与外流",
+    "english": "young-stellar disks, jets and outflows",
+    "definition": "旋转吸积盘供给年轻恒星，磁场等机制可驱动沿轴向的狭窄喷流与较宽外流；尘埃散射也可使周围云发亮。",
+    "unit": "不适用",
+    "scope": "HH30照片中的暗带、喷流和散射光不是气体密度的直接三维切片；观测配图仅作过程参照。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.4.1 pp.429–432"
+  },
+  {
+    "id": "c10-structure",
+    "kind": "term",
+    "aliases": [
+      "恒星结构",
+      "状态方程",
+      "不透明度",
+      "核反应",
+      "流体静力"
+    ],
+    "title": "恒星结构的物理约束",
+    "english": "stellar structure",
+    "definition": "质量连续、静力平衡、能量产生与能量输运共同确定恒星内部；状态方程连接压力密度温度，不透明度控制辐射传播。",
+    "unit": "不适用",
+    "scope": "真实对流、核反应、丰度与演化轨迹会使简单同源标度失效。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.1.1–10.1.4 pp.450–462"
+  },
+  {
+    "id": "c10-ms",
+    "kind": "term",
+    "aliases": [
+      "主序",
+      "主序星",
+      "主序寿命"
+    ],
+    "title": "主序阶段与寿命",
+    "english": "main sequence and main-sequence lifetime",
+    "definition": "恒星以核心氢燃烧为主要能量来源的阶段；主序寿命取决于可用燃料、混合与光度消耗率。",
+    "unit": "不适用",
+    "scope": "不是动力学时间或引力收缩时间；网页采用原书近太阳丰度拟合而非完整轨迹。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.1.5 pp.462–463"
+  },
+  {
+    "id": "c10-kh",
+    "kind": "term",
+    "aliases": [
+      "Kelvin–Helmholtz",
+      "Kelvin-Helmholtz",
+      "Kelvin–Helmholtz时钟"
+    ],
+    "title": "Kelvin–Helmholtz 热时标",
+    "english": "Kelvin–Helmholtz timescale",
+    "definition": "引力束缚能除以辐射光度给出的热调整或引力收缩时标。",
+    "unit": "不适用",
+    "scope": "不同于核心核燃料消耗决定的主序寿命；这里不是剪切界面的同名流体不稳定。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.1 pp.449–463"
+  },
+  {
+    "id": "c10-tms",
+    "kind": "symbol",
+    "aliases": [
+      "tMS",
+      "t_MS"
+    ],
+    "title": "主序寿命",
+    "english": "main-sequence lifetime",
+    "definition": "单星在主序停留的特征时间；本页用原书式10.72的质量拟合计算，时间单位为Myr。",
+    "unit": "Myr 或 Gyr",
+    "scope": "近太阳丰度并忽略旋转与双星；未指定其他物理时不能从质量唯一得到全部演化轨迹。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.1.5 pp.462–463",
+    "tex": "t_{\\mathrm{MS}}"
+  },
+  {
+    "id": "c10-m-star",
+    "kind": "symbol",
+    "aliases": [
+      "m",
+      "Mstar",
+      "M_star",
+      "M⋆",
+      "M_⋆"
+    ],
+    "title": "太阳质量归一的初始恒星质量",
+    "english": "stellar mass in solar units",
+    "definition": "本页寿命与主序积分以m=Mstar/M☉表示恒星初始质量的数值。",
+    "unit": "m：无量纲；Mstar：M☉",
+    "scope": "主序质量—光度标度L∝m^3.5是独立教学近似，不是寿命拟合附带的精确光度。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.1.5, 10.3.2 pp.462–463, 471–472",
+    "contexts": [
+      "structure",
+      "lifetime-lab",
+      "ssp-lab"
+    ]
+  },
+  {
+    "id": "c10-mto",
+    "kind": "symbol",
+    "aliases": [
+      "mTO",
+      "m_TO"
+    ],
+    "title": "主序转折质量",
+    "english": "main-sequence turnoff mass",
+    "definition": "以太阳质量为单位的主序转折质量数值\\(m_{\\rm TO}=M_{\\rm TO}/M_\\odot\\)；给定星群年龄时，该初始质量的主序寿命恰等于年龄，更高初始质量恒星已离开主序。",
+    "unit": "\\(m_{\\rm TO}\\)无量纲；对应物理质量\\(M_{\\rm TO}=m_{\\rm TO}M_\\odot\\)",
+    "scope": "本章积分变量\\(m=M_{\\star}/M_\\odot\\)，积分上限\\(m_{\\rm TO}\\)同样无量纲；图上按太阳质量报告对应物理质量。离开主序不代表质量全部返还或不再发光。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.1.5, 10.3.3 pp.462–463, 472–474",
+    "tex": "m_{\\mathrm{TO}}"
+  },
+  {
+    "id": "c10-tracks",
+    "kind": "term",
+    "aliases": [
+      "前主序",
+      "演化轨迹",
+      "巨星"
+    ],
+    "title": "恒星演化轨迹与 AGB",
+    "english": "stellar evolutionary tracks and asymptotic giant branch",
+    "definition": "轨迹描述单星状态随年龄改变；前主序以收缩为主，后主序可经历巨星与渐近巨星支等明亮阶段。",
+    "unit": "不适用",
+    "scope": "不同初始质量和丰度走不同路径，AGB及其他后主序光在网页主序积分中被省略。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.2 pp.463–470"
+  },
+  {
+    "id": "c10-hr",
+    "kind": "abbreviation",
+    "aliases": [
+      "HR",
+      "HR图",
+      "H-R图"
+    ],
+    "title": "赫罗图",
+    "english": "Hertzsprung–Russell diagram",
+    "definition": "以光度和有效温度等量展示恒星状态的图，是比较主序与演化阶段的重要工具。",
+    "unit": "不适用",
+    "scope": "按作者p475勘误，高金属丰度的恒星在相关比较中更冷更暗，不能概括为全部更快演化。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.2, 10.3.5 pp.463–470, 475"
+  },
+  {
+    "id": "c10-imf",
+    "kind": "abbreviation",
+    "aliases": [
+      "IMF"
+    ],
+    "title": "恒星初始质量函数",
+    "english": "initial mass function",
+    "definition": "给定形成事件中新生恒星按初始质量的数目分布，为星族光、回流、超新星与元素预算提供共同权重。",
+    "unit": "不适用",
+    "scope": "本页用单幂律并固定上下限；真实低质量IMF转折不由此模型解决。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3.2 pp.471–472"
+  },
+  {
+    "id": "c10-sps",
+    "kind": "abbreviation",
+    "aliases": [
+      "SPS",
+      "星族合成",
+      "恒星族合成",
+      "谱库"
+    ],
+    "title": "恒星族合成",
+    "english": "stellar population synthesis",
+    "definition": "综合初始质量函数、演化轨迹、恒星光谱、丰度和形成史，预测整体星群光谱与光度。",
+    "unit": "不适用",
+    "scope": "网页主序加权和指数响应核为教学近似，不能替代真实SPS数据库。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3 pp.470–485"
+  },
+  {
+    "id": "c10-ssp",
+    "kind": "abbreviation",
+    "aliases": [
+      "SSP",
+      "简单星族",
+      "单一星族"
+    ],
+    "title": "简单恒星族",
+    "english": "simple stellar population",
+    "definition": "理想化为同时形成、具有同一初始化学组成并按指定IMF分配质量的星群。",
+    "unit": "不适用",
+    "scope": "网页只追踪主序贡献；完整SSP还包括各后主序阶段、质量损失与遗迹等。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3 pp.471–474"
+  },
+  {
+    "id": "c10-imf-c-s",
+    "kind": "symbol",
+    "aliases": [
+      "C",
+      "s"
+    ],
+    "title": "主序积分中的 IMF 归一与指数",
+    "english": "IMF normalization and slope",
+    "definition": "Cm^(−s)给单位形成质量的初始星数分布；C由0.1–100M☉内∫Cm^(1−s)dm=1确定。",
+    "unit": "s：无量纲；C：随质量测度",
+    "scope": "光度积分再乘单星教学光度m^3.5，和质量份额积分的权重不同。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3 pp.471–474",
+    "contexts": [
+      "ssp-lab"
+    ]
+  },
+  {
+    "id": "c10-lms",
+    "kind": "symbol",
+    "aliases": [
+      "LMS",
+      "L_MS"
+    ],
+    "title": "主序星总光度",
+    "english": "integrated main-sequence luminosity",
+    "definition": "将仍在主序的初始恒星按IMF和m^3.5光度权重积分得到的光度。",
+    "unit": "每单位初始质量的太阳光度",
+    "scope": "只包含主序；年龄较大时巨星和AGB的遗漏可使它偏离总星群光。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3 pp.471–474",
+    "contexts": [
+      "ssp-lab"
+    ],
+    "tex": "L_{\\mathrm{MS}}"
+  },
+  {
+    "id": "c10-sfh",
+    "kind": "abbreviation",
+    "aliases": [
+      "SFH",
+      "形成史",
+      "恒星形成史"
+    ],
+    "title": "恒星形成史",
+    "english": "star formation history",
+    "definition": "恒星形成率随历时的变化，决定不同年龄星群的质量权重，再与光度响应卷积得到观测光。",
+    "unit": "通常以M☉ yr⁻¹随时间表示",
+    "scope": "从光谱反演形成史通常有年龄、丰度和尘埃简并，不能指定唯一历史。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3 pp.471–474, 484–485"
+  },
+  {
+    "id": "c10-psi-sfh",
+    "kind": "symbol",
+    "aliases": [
+      "ψ",
+      "ψ(t′)",
+      "ψ(t')"
+    ],
+    "title": "历时恒星形成率",
+    "english": "time-dependent star formation rate",
+    "definition": "ψ(t′)是在形成时刻t′每单位时间形成的恒星质量，卷积中与该批恒星现在的年龄响应相乘。",
+    "unit": "质量/时间",
+    "scope": "本页形成质量总和归一为1，ψ采用指数教学形状。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3 pp.471–474",
+    "contexts": [
+      "sfh-lab"
+    ],
+    "tex": "\\psi"
+  },
+  {
+    "id": "c10-ell-ssp",
+    "kind": "symbol",
+    "aliases": [
+      "ℓSSP",
+      "lSSP",
+      "ℓ_SSP",
+      "l_SSP"
+    ],
+    "title": "单位形成质量的星族光响应",
+    "english": "SSP luminosity response kernel",
+    "definition": "ℓSSP(a)给年龄为a的单位初始质量星群的光响应；本页指定exp(−a/τL)。",
+    "unit": "本页为任意响应单位/初始质量",
+    "scope": "没有实际滤镜、谱库或太阳光度归一，不能据此推断精确观测年龄。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3 pp.471–474",
+    "contexts": [
+      "sfh-lab"
+    ],
+    "tex": "\\ell_{\\mathrm{SSP}}"
+  },
+  {
+    "id": "c10-sf-times",
+    "kind": "symbol",
+    "aliases": [
+      "τSF",
+      "τ_SF",
+      "τL",
+      "τ_L"
+    ],
+    "title": "形成史与光响应的 e 折时间",
+    "english": "formation and light e-folding times",
+    "definition": "τSF控制形成率指数衰减，τL控制单一星族光响应随年龄衰减；经过一个对应时标，函数幅度降至原来的1/e。",
+    "unit": "Gyr",
+    "scope": "二者是独立教学形状参数，不代表已拟合某个波段的真实星族演化。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3 pp.471–474",
+    "contexts": [
+      "sfh-lab"
+    ]
+  },
+  {
+    "id": "c10-time-sfh",
+    "kind": "symbol",
+    "aliases": [
+      "t",
+      "t′",
+      "t'",
+      "a"
+    ],
+    "title": "系统时刻、形成时刻与星群年龄",
+    "english": "time, formation time and stellar age",
+    "definition": "卷积中t为观察系统时刻，t′为某批恒星的形成时刻，a=t−t′为它现在的年龄。",
+    "unit": "Gyr",
+    "scope": "这里a是年龄，不是尺度因子或消光系数。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3 pp.471–474",
+    "contexts": [
+      "sfh-lab"
+    ]
+  },
+  {
+    "id": "c10-age-weights",
+    "kind": "term",
+    "aliases": [
+      "质量加权",
+      "光度加权"
+    ],
+    "title": "年龄权重与光度卷积",
+    "english": "age weights and luminosity convolution",
+    "definition": "质量加权按各年龄形成质量平均，光度加权还乘当前光响应；卷积把历次形成贡献按现在年龄相加。",
+    "unit": "不适用",
+    "scope": "年轻明亮星可主导光而不主导质量，两个加权年龄通常不同。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3 pp.471–474"
+  },
+  {
+    "id": "c10-age-metal-degeneracy",
+    "kind": "term",
+    "aliases": [
+      "年龄—金属丰度简并",
+      "年龄–金属丰度简并",
+      "年龄、金属丰度",
+      "简并"
+    ],
+    "title": "年龄—金属丰度简并",
+    "english": "age–metallicity degeneracy",
+    "definition": "改变年龄与元素丰度可能产生相近颜色或光谱，使单一观测难以唯一分辨两者贡献。",
+    "unit": "不适用",
+    "scope": "尘埃也会影响颜色，需要多种谱线、波段和模型假设联合约束。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3.5 pp.475"
+  },
+  {
+    "id": "c10-ke-correction",
+    "kind": "term",
+    "aliases": [
+      "K修正",
+      "E修正",
+      "K 修正",
+      "E 修正"
+    ],
+    "title": "K 修正与 E 修正",
+    "english": "K correction and evolution correction",
+    "definition": "K修正处理红移导致观测滤镜对应不同静止波段；E修正处理恒星族随宇宙历时自身演化造成的光变化。",
+    "unit": "不适用",
+    "scope": "二者物理来源不同，比较不同红移星系时需分别说明。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3.6 pp.475–476"
+  },
+  {
+    "id": "c10-dust",
+    "kind": "term",
+    "aliases": [
+      "尘埃",
+      "散射",
+      "再辐射"
+    ],
+    "title": "尘埃消光与整体衰减",
+    "english": "dust extinction and attenuation",
+    "definition": "单条视线的吸收与散射使直达光减弱；星系整体衰减还取决于光源、尘埃混合几何与散射入视线。吸收能量可在红外再辐射。",
+    "unit": "不适用",
+    "scope": "本页前景屏只模拟消光，未求红外能量再辐射与真实混合几何。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3.7 pp.476–481"
+  },
+  {
+    "id": "c10-dust-lambda",
+    "kind": "symbol",
+    "aliases": [
+      "λ"
+    ],
+    "title": "波长",
+    "english": "wavelength",
+    "definition": "本页尘埃模型以λ指定光谱位置，Aλ=AV(λ/0.55μm)^(−1)。",
+    "unit": "μm",
+    "scope": "此λ不是化学外流质量负载或暗晕自旋。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3.7 pp.476–481",
+    "contexts": [
+      "dust-lab"
+    ],
+    "tex": "\\lambda"
+  },
+  {
+    "id": "c10-f-lambda",
+    "kind": "symbol",
+    "aliases": [
+      "Fλ",
+      "Fλ,in",
+      "Fλ,out",
+      "F_λ"
+    ],
+    "title": "单位波长光通量",
+    "english": "spectral flux density per wavelength",
+    "definition": "Fλ,in、Fλ,out分别表示穿过尘埃屏前后每单位波长的光通量，Fout=Fin10^(−0.4Aλ)。",
+    "unit": "能量/(面积×时间×波长)，本页归一化显示",
+    "scope": "单温黑体仅示范谱形，不是完整星族光谱。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3.7 pp.476–481",
+    "contexts": [
+      "dust-lab"
+    ],
+    "tex": "F_\\lambda"
+  },
+  {
+    "id": "c10-a-lambda",
+    "kind": "symbol",
+    "aliases": [
+      "Aλ",
+      "A_λ",
+      "AV",
+      "A_V",
+      "AB",
+      "A_B"
+    ],
+    "title": "消光星等",
+    "english": "extinction in magnitudes",
+    "definition": "Aλ定义尘埃使该波长光减弱的星等数；AV、AB分别为V和B波段消光。",
+    "unit": "mag",
+    "scope": "A_B的下标B表示B滤镜，不是AB星等系统；本页滤镜取窄带近似。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3.7 pp.476–481",
+    "contexts": [
+      "dust-lab"
+    ],
+    "tex": "A_\\lambda"
+  },
+  {
+    "id": "c10-bv",
+    "kind": "symbol",
+    "aliases": [
+      "B−V",
+      "B-V",
+      "E(B−V)",
+      "E(B-V)"
+    ],
+    "title": "B−V 颜色与色余",
+    "english": "B–V color and color excess",
+    "definition": "B−V为两个波段星等差；尘埃带来的颜色变化E(B−V)=AB−AV，称色余。",
+    "unit": "mag",
+    "scope": "颜色同时依赖温度、年龄、丰度和消光；本页B/V近似0.44/0.55μm。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3.7 pp.476–481",
+    "contexts": [
+      "dust-lab"
+    ]
+  },
+  {
+    "id": "c10-blackbody",
+    "kind": "term",
+    "aliases": [
+      "黑体",
+      "单温黑体",
+      "连续谱"
+    ],
+    "title": "黑体谱与连续谱",
+    "english": "blackbody and continuum spectrum",
+    "definition": "黑体是给定温度的理想热辐射谱；连续谱随波长平滑变化，真实恒星族还叠加各恒星谱线与气体尘埃贡献。",
+    "unit": "不适用",
+    "scope": "本页单温黑体仅用于展示消光，0.15–2.5μm积分不等于全波段吸收。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3.1, 10.3.7 pp.470–471, 476–481"
+  },
+  {
+    "id": "c10-ha-uv",
+    "kind": "abbreviation",
+    "aliases": [
+      "Hα",
+      "H-alpha",
+      "UV",
+      "红外"
+    ],
+    "title": "Hα、紫外与红外成星示踪",
+    "english": "H-alpha, ultraviolet and infrared tracers",
+    "definition": "Hα为氢Balmer谱线，年轻大质量星电离气体可产生该线；UV追踪较年轻星光，红外常含尘埃吸收后再辐射。",
+    "unit": "不适用",
+    "scope": "成星率标定依赖IMF、形成史、电离与尘埃，三者时间响应不同且可能受其他源污染。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3.8 pp.482–484"
+  },
+  {
+    "id": "c10-chemical-box",
+    "kind": "term",
+    "aliases": [
+      "化学箱",
+      "封闭箱",
+      "井混合",
+      "均匀混合",
+      "瞬时回收",
+      "即时回收",
+      "瞬时回收近似"
+    ],
+    "title": "一箱化学演化与瞬时回收",
+    "english": "one-zone chemistry and instantaneous recycling",
+    "definition": "把气体视为瞬间均匀混合的一箱，并把短寿命星的返回视为立即发生；封闭箱进一步排除外界流入流出。",
+    "unit": "不适用",
+    "scope": "忽略空间丰度梯度与延迟通道，不能据此解释全部元素丰度比。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.4.1–10.4.2 pp.486–490"
+  },
+  {
+    "id": "c10-z-metal",
+    "kind": "symbol",
+    "aliases": [
+      "Z",
+      "Zinit",
+      "Z_init",
+      "Z⋆",
+      "Zstar",
+      "Z_star"
+    ],
+    "title": "金属质量分数",
+    "english": "metal mass fraction",
+    "definition": "天文学中金属指氦以外更重元素；Z为其占气体总质量的比例，Zstar表示恒星对应比例。",
+    "unit": "无量纲",
+    "scope": "Z不是红移，也不是对数元素数丰度[Fe/H]；气体与恒星平均必须分别定义。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.4 pp.486–492",
+    "tex": "Z"
+  },
+  {
+    "id": "c10-yield",
+    "kind": "symbol",
+    "aliases": [
+      "y",
+      "净产额",
+      "有效产额"
+    ],
+    "title": "净金属产额与有效产额",
+    "english": "net yield and effective yield",
+    "definition": "本章y为每单位永久锁定在长寿命星和遗迹中的质量所新合成并返回的金属质量。有效产额常以Z/ln(1/μ)比较简单模型。",
+    "unit": "无量纲",
+    "scope": "不是每单位总形成质量的产额，后者还差(1−R)；有效产额的μ约定必须说明。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.4.1–10.4.3 pp.486–491",
+    "tex": "y"
+  },
+  {
+    "id": "c10-gas-mu",
+    "kind": "symbol",
+    "aliases": [
+      "μ"
+    ],
+    "title": "相对初始气体质量的剩余份额",
+    "english": "gas mass relative to the initial mass",
+    "definition": "当前封闭箱与漏箱实验均定义μ=Mg/M0，M0为初始气体质量。",
+    "unit": "无量纲",
+    "scope": "无外流封闭箱可等于Mg/(Mg+Mlocked)，漏箱中两种定义不再相同；也不是分子量。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.4.2–10.4.3 pp.488–491",
+    "contexts": [
+      "chemistry",
+      "closed-lab",
+      "leaky-lab",
+      "practice-question-5"
+    ],
+    "tex": "\\mu"
+  },
+  {
+    "id": "c10-zstar-mean",
+    "kind": "symbol",
+    "aliases": [
+      "⟨Z*⟩",
+      "⟨Z⋆⟩",
+      "⟨Zstar⟩"
+    ],
+    "title": "质量加权平均恒星丰度",
+    "english": "mass-weighted mean stellar metallicity",
+    "definition": "把每次形成时的气体丰度按永久锁定恒星质量加权平均；封闭箱模型给y[1+μlnμ/(1−μ)]。",
+    "unit": "无量纲",
+    "scope": "不是当前气体丰度Z，也不是光度加权光谱拟合丰度。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.4.2 pp.488–490",
+    "contexts": [
+      "closed-lab"
+    ],
+    "tex": "\\langle Z_\\star\\rangle"
+  },
+  {
+    "id": "c10-return-r",
+    "kind": "symbol",
+    "aliases": [
+      "R"
+    ],
+    "title": "瞬时质量回流比例",
+    "english": "instantaneous returned fraction",
+    "definition": "每单位总形成恒星质量中被近似立即返回气体的比例，净锁定质量形成率为(1−R)Ψ。",
+    "unit": "无量纲",
+    "scope": "此R不是半径或滤镜；实际延迟回收须用恒星寿命和IMF积分处理。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.4.1–10.4.3 pp.486–492",
+    "contexts": [
+      "chemistry",
+      "leaky-lab",
+      "inflow-lab",
+      "practice-question-4"
+    ],
+    "tex": "R"
+  },
+  {
+    "id": "c10-psi-chem",
+    "kind": "symbol",
+    "aliases": [
+      "Ψ",
+      "ψ"
+    ],
+    "title": "总恒星形成率",
+    "english": "total star formation rate",
+    "definition": "化学演化中的Ψ表示单位时间形成的全部恒星初始质量；其中RΨ立即回流，(1−R)Ψ永久锁定。",
+    "unit": "M☉ yr⁻¹",
+    "scope": "不能把Ψ与锁定质量增长率直接视作相同。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.4 pp.486–492",
+    "contexts": [
+      "chemistry",
+      "leaky-lab",
+      "inflow-lab",
+      "practice-question-4"
+    ],
+    "tex": "\\Psi"
+  },
+  {
+    "id": "c10-flows",
+    "kind": "symbol",
+    "aliases": [
+      "A",
+      "W"
+    ],
+    "title": "气体流入率与流出率",
+    "english": "gas inflow and outflow rates",
+    "definition": "A为每单位时间进入化学箱的气体质量，W为离开的气体质量；稳态流入实验令A=(1−R)Ψ、W=0。",
+    "unit": "M☉ yr⁻¹",
+    "scope": "A不是消光；该流入率使用作者p490勘误，初始与流入气体取原初丰度。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.4.3 pp.490–492",
+    "contexts": [
+      "chemistry",
+      "leaky-lab",
+      "inflow-lab",
+      "practice-question-4"
+    ]
+  },
+  {
+    "id": "c10-lambda-loading",
+    "kind": "symbol",
+    "aliases": [
+      "λ"
+    ],
+    "title": "相对总形成率的质量负载",
+    "english": "outflow mass-loading factor",
+    "definition": "漏箱模型定义λ=W/Ψ，即每形成一单位初始恒星质量流出的气体质量。",
+    "unit": "无量纲",
+    "scope": "此λ不是波长或自旋；外流取与箱内气体相同金属丰度，没有选择性金属富集风。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.4.3 pp.490–491",
+    "contexts": [
+      "leaky-lab",
+      "chemistry",
+      "body-figure-10-chemistry-19"
+    ],
+    "tex": "\\lambda"
+  },
+  {
+    "id": "c10-eta-loading",
+    "kind": "symbol",
+    "aliases": [
+      "η"
+    ],
+    "title": "相对锁定形成率的外流负载",
+    "english": "outflow loading per locked mass",
+    "definition": "η=λ/(1−R)，因而总外流质量Mout=ηMlocked；它把负载归一到永久锁定质量。",
+    "unit": "无量纲",
+    "scope": "η和λ分母不同，不应混用；此η不是第8章温度比。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.4.3 pp.490–491",
+    "contexts": [
+      "leaky-lab"
+    ],
+    "tex": "\\eta"
+  },
+  {
+    "id": "c10-mass-budgets",
+    "kind": "symbol",
+    "aliases": [
+      "Mg",
+      "Mgas",
+      "M_g",
+      "M₀",
+      "M0",
+      "Mlocked",
+      "M_locked",
+      "Mout",
+      "M_out"
+    ],
+    "title": "化学演化的质量账",
+    "english": "chemical-evolution mass budget",
+    "definition": "Mg为剩余气体，M0为初始气体，Mlocked为永久锁定的恒星与遗迹质量，Mout为累计外流质量。",
+    "unit": "M☉ 或以M0归一",
+    "scope": "漏箱满足M0=Mg+Mlocked+Mout；恒定气体流入实验会增加总质量。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.4 pp.486–492",
+    "contexts": [
+      "chemistry",
+      "closed-lab",
+      "leaky-lab",
+      "inflow-lab",
+      "practice-question-4",
+      "practice-question-5"
+    ]
+  },
+  {
+    "id": "c10-tdep",
+    "kind": "symbol",
+    "aliases": [
+      "tdep",
+      "t_dep"
+    ],
+    "title": "形成率归一的气体耗尽时标",
+    "english": "gas depletion time using the total SFR",
+    "definition": "稳态流入实验tdep=Mg/Ψ，锁定质量相对气体为(1−R)t/tdep。",
+    "unit": "Gyr",
+    "scope": "本实验流入补偿锁定损失，气体量并未随该时标指数耗尽。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.4.3 pp.490–492",
+    "contexts": [
+      "inflow-lab",
+      "inflow"
+    ],
+    "tex": "t_{\\mathrm{dep}}"
+  },
+  {
+    "id": "c10-fe-alpha",
+    "kind": "symbol",
+    "aliases": [
+      "[Fe/H]",
+      "α/Fe",
+      "[α/Fe]"
+    ],
+    "title": "铁丰度与 α 元素比",
+    "english": "iron abundance and alpha-to-iron ratio",
+    "definition": "[Fe/H]是铁氢数目比相对太阳的十进对数；α/Fe比较氧、镁等α元素与铁的相对丰度，可受不同超新星延迟通道影响。",
+    "unit": "[Fe/H]与[α/Fe]：dex；未取对数α/Fe：比值",
+    "scope": "不是金属总质量分数Z，也不能单凭一个比值唯一确定形成时标。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.4.4 pp.491–492"
+  },
+  {
+    "id": "c10-supernova",
+    "kind": "term",
+    "aliases": [
+      "Ia",
+      "Ia型",
+      "Ia 型",
+      "核心坍缩",
+      "超新星",
+      "终末遗迹"
+    ],
+    "title": "超新星通道与恒星遗迹",
+    "english": "supernova channels and stellar remnants",
+    "definition": "Ia型通常关联白矮星热核爆炸；核心坍缩来自大质量恒星末期核心失稳。双星、质量损失与丰度可改变结局和事件时序。",
+    "unit": "不适用",
+    "scope": "第谷是Ia型，不能套用IMF平均的核心坍缩事件率；遗迹光和物质回流也不相同。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.2.3, 10.5 pp.468–470, 492–494"
+  },
+  {
+    "id": "c10-feedback",
+    "kind": "term",
+    "aliases": [
+      "恒星反馈",
+      "星风",
+      "能量预算",
+      "金属预算",
+      "源项",
+      "能量耦合效率"
+    ],
+    "title": "恒星反馈的源预算与耦合",
+    "english": "stellar feedback budget and coupling",
+    "definition": "同一IMF和形成史确定星风、超新星、质量回流与金属源项；实际能量留在气体或驱动逃逸的比例还取决于辐射损失和环境。",
+    "unit": "不适用",
+    "scope": "供应能量加总不是气体必然逃离星系的证明，也不等于观测外流能量。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.5 pp.492–494"
+  },
+  {
+    "id": "c10-doppler",
+    "kind": "term",
+    "aliases": [
+      "多普勒",
+      "谱线",
+      "X 射线显示色"
+    ],
+    "title": "谱线多普勒信息与显示色",
+    "english": "Doppler line information and display color",
+    "definition": "相对视线运动可移动谱线位置；多能段X射线图可把不同能段或选定谱线位移映射到显示色。",
+    "unit": "不适用",
+    "scope": "第谷图红蓝并非统一逐像素温度或速度标尺，不能只凭颜色读取完整三维状态。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.5 pp.492–494"
+  },
+  {
+    "id": "c11-exponential",
+    "kind": "term",
+    "aliases": [
+      "指数盘",
+      "指数剖面",
+      "指数表面密度"
+    ],
+    "title": "指数盘",
+    "english": "exponential disk",
+    "definition": "面密度随半径按Σ(R)=Σ0 exp(−R/Rd)下降的盘模型，其总质量为2πΣ0Rd²。",
+    "unit": "不适用",
+    "scope": "质量盘与光度盘可因质量光度比梯度不同；球内质量引力公式不能替代薄盘真实引力。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.1 pp.496–498"
+  },
+  {
+    "id": "c11-md",
+    "kind": "symbol",
+    "aliases": [
+      "Md",
+      "M_d",
+      "Mᵈ"
+    ],
+    "title": "盘总质量",
+    "english": "disk mass",
+    "definition": "轴对称指数盘对全部半径积分的总质量，决定面密度幅度和盘的引力贡献。",
+    "unit": "M☉",
+    "scope": "大写Md是质量；小写md在自旋实验中表示盘与暗晕的质量比例。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.1 pp.496–498",
+    "tex": "M_d"
+  },
+  {
+    "id": "c11-rd",
+    "kind": "symbol",
+    "aliases": [
+      "Rd",
+      "R_d",
+      "Rᵈ"
+    ],
+    "title": "盘的径向尺度长度",
+    "english": "disk scale length",
+    "definition": "指数盘面密度随半径每增加Rd下降到原来的1/e，决定径向质量分布的宽度。",
+    "unit": "kpc",
+    "scope": "Rd不是半质量半径；无限指数盘半质量半径约为1.678Rd。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.1 pp.496–498",
+    "tex": "R_d"
+  },
+  {
+    "id": "c11-sigma",
+    "kind": "symbol",
+    "aliases": [
+      "Σ",
+      "Σ(R)",
+      "Σ₀",
+      "Σ0"
+    ],
+    "title": "盘面密度",
+    "english": "disk surface density",
+    "definition": "垂直于盘面对三维质量密度积分得到每单位面积的质量；Σ0为指数盘中心面密度。",
+    "unit": "M☉ pc⁻²",
+    "scope": "不是体密度ρ，也不是光度面亮度；气体与恒星的Σ须分别注明。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.1 pp.496–498",
+    "tex": "\\Sigma"
+  },
+  {
+    "id": "c11-radial-r",
+    "kind": "symbol",
+    "aliases": [
+      "R",
+      "r"
+    ],
+    "title": "盘面径向坐标",
+    "english": "cylindrical disk radius",
+    "definition": "盘中R表示距对称轴的柱坐标半径；独立旋转实验的r用于同一圆轨道半径及球对称暗晕球内质量。",
+    "unit": "kpc",
+    "scope": "盘的质量积分是2π∫ΣR dR，不应称为球壳积分。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.1–11.1.2 pp.496–501",
+    "contexts": [
+      "disk-profile-lab",
+      "components",
+      "epicycle-lab",
+      "disk-spin-lab",
+      "rotation",
+      "galaxy-laboratory",
+      "exponential",
+      "spirals",
+      "winding-lab",
+      "body-figure-11-instability-20",
+      "practice"
+    ]
+  },
+  {
+    "id": "c11-x-disk",
+    "kind": "symbol",
+    "aliases": [
+      "x"
+    ],
+    "title": "无量纲指数盘半径",
+    "english": "scaled exponential-disk radius",
+    "definition": "盘质量累计式中x=R/Rd，使Md(<R)/Md=1−exp(−x)(1+x)。",
+    "unit": "无量纲",
+    "scope": "不是NFW暗晕的r/rs，也不是独立图形的笛卡尔x坐标。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.1 pp.496–498",
+    "contexts": [
+      "disk-profile-lab"
+    ],
+    "tex": "x"
+  },
+  {
+    "id": "c11-half-mass",
+    "kind": "term",
+    "aliases": [
+      "半质量半径",
+      "盘内质量份额"
+    ],
+    "title": "半质量半径与累计质量",
+    "english": "half-mass radius and enclosed disk mass",
+    "definition": "累计盘质量是在圆柱半径内对面密度积分；半质量半径包围总盘质量的一半。",
+    "unit": "不适用",
+    "scope": "指数盘Re,mass≈1.678Rd；亮度有效半径只有质量光度比恒定等条件下才与其一致。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.1 pp.496–498"
+  },
+  {
+    "id": "c11-vc",
+    "kind": "symbol",
+    "aliases": [
+      "Vc",
+      "V_c",
+      "vc",
+      "v_c",
+      "v꜀"
+    ],
+    "title": "圆周速度",
+    "english": "circular speed",
+    "definition": "在给定轴对称引力势中保持盘面圆轨道的速度，满足vc²=R∂Φ/∂R；独立质量组分的vc²相加。",
+    "unit": "km s⁻¹",
+    "scope": "不是视线速度；薄盘项依赖整个盘的密度，球对称晕项才可写GMh(<r)/r。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.2 pp.498–501",
+    "tex": "V_c"
+  },
+  {
+    "id": "c11-vd",
+    "kind": "symbol",
+    "aliases": [
+      "vd",
+      "v_d",
+      "vhalo",
+      "vh",
+      "v_h"
+    ],
+    "title": "盘与暗晕的圆速度贡献",
+    "english": "disk and halo circular-speed contributions",
+    "definition": "vd²是盘引力对圆速度平方的贡献；vh²为暗晕贡献，在独立叠加模型中总vc²=vd²+vh²。",
+    "unit": "km s⁻¹",
+    "scope": "贡献先按平方相加，再开方；不是两个速度直接相加。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.2 pp.498–501",
+    "contexts": [
+      "components",
+      "rotation",
+      "galaxy-laboratory"
+    ]
+  },
+  {
+    "id": "c11-bessel",
+    "kind": "term",
+    "aliases": [
+      "Bessel",
+      "Bessel函数",
+      "修正Bessel函数"
+    ],
+    "title": "修正 Bessel 函数",
+    "english": "modified Bessel functions",
+    "definition": "轴对称无限薄指数盘的精确盘面圆速度可用修正Bessel函数I0、I1、K0、K1的组合表示。",
+    "unit": "不适用",
+    "scope": "式11.30采用作者勘误后的正号；这不同于把盘内累计质量当球对称质量。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.2 pp.498–500"
+  },
+  {
+    "id": "c11-bessel-symbol",
+    "kind": "symbol",
+    "aliases": [
+      "I₀",
+      "I₁",
+      "K₀",
+      "K₁",
+      "I0",
+      "I1",
+      "K0",
+      "K1",
+      "I_0",
+      "I_1",
+      "K_0",
+      "K_1"
+    ],
+    "title": "修正 Bessel 函数记号",
+    "english": "modified Bessel notation",
+    "definition": "Iν与Kν分别为第一类和第二类修正Bessel函数，下标0、1为阶数；指数盘公式在y=R/(2Rd)取值。",
+    "unit": "无量纲",
+    "scope": "K0在此是特殊函数，不是第8章熵代理K0。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.2 pp.498–500",
+    "contexts": [
+      "rotation",
+      "galaxy-laboratory"
+    ],
+    "tex": "I_0(y),K_0(y),I_1(y),K_1(y)"
+  },
+  {
+    "id": "c11-y-bessel",
+    "kind": "symbol",
+    "aliases": [
+      "y"
+    ],
+    "title": "Bessel 公式的无量纲半径",
+    "english": "scaled radius in the disk force formula",
+    "definition": "独立旋转实验的指数盘引力公式定义y=R/(2Rd)，作为I0、K0、I1、K1的共同自变量。",
+    "unit": "无量纲",
+    "scope": "不是第10章净金属产额。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.2 pp.498–500",
+    "contexts": [
+      "rotation",
+      "galaxy-laboratory"
+    ],
+    "tex": "y"
+  },
+  {
+    "id": "c11-nfw",
+    "kind": "abbreviation",
+    "aliases": [
+      "NFW"
+    ],
+    "title": "NFW 暗晕剖面",
+    "english": "Navarro–Frenk–White profile",
+    "definition": "球平均暗晕密度模型ρ=ρs/[x(1+x)²]，用总定义质量与浓度确定暗晕圆速度贡献。",
+    "unit": "不适用",
+    "scope": "本章独立旋转实验不包含盘—晕自洽响应、气体或核球，不是真实观测拟合。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.2, 11.2.3 pp.498–501, 507–509"
+  },
+  {
+    "id": "c11-m200c",
+    "kind": "symbol",
+    "aliases": [
+      "M₂₀₀c",
+      "M200c",
+      "M_{200c}",
+      "Mh",
+      "M_h"
+    ],
+    "title": "暗晕边界质量及累计质量",
+    "english": "halo boundary and enclosed masses",
+    "definition": "M200c为R200c内平均密度等于200ρcrit的暗晕质量；Mh(<r)为同一NFW模型半径r内的暗晕质量。",
+    "unit": "M☉",
+    "scope": "R200c不是整个暗晕无限延伸的物理边缘；模型外推与实际束缚范围需区分。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.2, 11.2.3 pp.498–501, 507–509"
+  },
+  {
+    "id": "c11-halo-concentration",
+    "kind": "symbol",
+    "aliases": [
+      "c₂₀₀c",
+      "c200c",
+      "c_{200c}",
+      "c"
+    ],
+    "title": "NFW 暗晕浓度",
+    "english": "halo concentration",
+    "definition": "c200c=R200c/rs；在固定边界质量下改变内部暗晕质量分布，从而影响旋转曲线。",
+    "unit": "无量纲",
+    "scope": "旋转实验的c表示浓度，不是光速或声速。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.2, 11.2.3 pp.498–501, 507–509",
+    "contexts": [
+      "rotation",
+      "galaxy-laboratory",
+      "formation"
+    ]
+  },
+  {
+    "id": "c11-rs-g",
+    "kind": "symbol",
+    "aliases": [
+      "rₛ",
+      "rs",
+      "r_s",
+      "g(x)",
+      "g(c)",
+      "g"
+    ],
+    "title": "NFW 尺度半径与积分函数",
+    "english": "NFW scale radius and mass factor",
+    "definition": "rs=R200c/c200c；g(x)=ln(1+x)−x/(1+x)，因此Mh(<r)=M200c g(r/rs)/g(c200c)。",
+    "unit": "rs：kpc；g：无量纲",
+    "scope": "此g不是重力加速度，且其自变量x是r/rs而非R/Rd。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.2, 11.2.3 pp.498–501, 507–509",
+    "contexts": [
+      "rotation",
+      "galaxy-laboratory"
+    ]
+  },
+  {
+    "id": "c11-orbital-period",
+    "kind": "symbol",
+    "aliases": [
+      "Porb",
+      "P_orb",
+      "Pₒᵣᵦ"
+    ],
+    "title": "圆轨道周期",
+    "english": "circular orbital period",
+    "definition": "在固定势的半径r圆轨道上运行一周的时间Porb=2πr/vc。",
+    "unit": "Myr",
+    "scope": "只是所选圆轨道模型周期；动画未求解自洽N体演化或轨道加热。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.2 pp.498–501",
+    "contexts": [
+      "rotation",
+      "galaxy-laboratory"
+    ],
+    "tex": "P_{\\mathrm{orb}}"
+  },
+  {
+    "id": "c11-rotation-degeneracy",
+    "kind": "term",
+    "aliases": [
+      "旋转曲线",
+      "质量分解",
+      "简并",
+      "固定势",
+      "示踪粒子"
+    ],
+    "title": "旋转曲线的质量分解",
+    "english": "rotation-curve decomposition",
+    "definition": "旋转曲线记录圆速度随半径变化；不同盘质量、尺度和暗晕参数可能给出相近总曲线，形成质量分解简并。",
+    "unit": "不适用",
+    "scope": "网页只比较解析模型；固定势中的示踪圆轨道没有求解粒子彼此引力。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.2 pp.498–501"
+  },
+  {
+    "id": "c11-adiabatic-contraction",
+    "kind": "term",
+    "aliases": [
+      "绝热收缩"
+    ],
+    "title": "暗晕绝热收缩",
+    "english": "adiabatic contraction",
+    "definition": "重子缓慢集中改变引力势时，暗晕轨道在近似保持绝热不变量条件下作出的收缩响应。",
+    "unit": "不适用",
+    "scope": "依赖慢变化、轨道与几何假设；与近圆轨道的径向振荡不是同一机制。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.3 pp.501–502"
+  },
+  {
+    "id": "c11-epicycle",
+    "kind": "term",
+    "aliases": [
+      "epicycle",
+      "epicycle近似",
+      "近圆轨道",
+      "径向振荡"
+    ],
+    "title": "近圆轨道的径向振荡近似",
+    "english": "epicyclic approximation",
+    "definition": "把近圆轨道分解为导引中心绕转和其附近小振幅振荡，径向振荡频率为κ。",
+    "unit": "不适用",
+    "scope": "仅限近圆、小振幅与稳定轴对称背景；不是所有偏心轨道的精确表示。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.5 pp.503–505"
+  },
+  {
+    "id": "c11-omega",
+    "kind": "symbol",
+    "aliases": [
+      "Ω"
+    ],
+    "title": "圆轨道角频率",
+    "english": "circular angular frequency",
+    "definition": "Ω(R)=Vc(R)/R，描述导引中心或圆轨道的绕转角速度。",
+    "unit": "km s⁻¹ kpc⁻¹",
+    "scope": "不是宇宙密度参数Ωm；与κ、棒模式速度及扰动频率ω分别不同。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.5 pp.503–505",
+    "tex": "\\Omega"
+  },
+  {
+    "id": "c11-kappa",
+    "kind": "symbol",
+    "aliases": [
+      "κ"
+    ],
+    "title": "径向振荡频率",
+    "english": "epicyclic frequency",
+    "definition": "近圆轨道受小径向偏离时的线性振荡频率，\\(\\kappa^2=R\\frac{\\mathrm d\\Omega^2}{\\mathrm dR}+4\\Omega^2\\)；幂律旋转曲线 \\(V_c\\propto R^\\beta\\) 给出 \\(\\kappa^2=2(1+\\beta)\\Omega^2\\)。",
+    "unit": "km s⁻¹ kpc⁻¹",
+    "scope": "此κ不是第6章透镜会聚；局部稳定实验也使用这一轨道频率。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.5, 11.5.2 pp.503–505, 523–525",
+    "tex": "\\kappa"
+  },
+  {
+    "id": "c11-beta",
+    "kind": "symbol",
+    "aliases": [
+      "β"
+    ],
+    "title": "旋转曲线的幂律指数",
+    "english": "rotation-curve power-law slope",
+    "definition": "定义Vc∝R^β：β=0为平坦曲线，β=−1/2为Kepler曲线，β=1为固体转动。",
+    "unit": "无量纲",
+    "scope": "这只是局部或指定区间的教学幂律，不能覆盖任意实际旋转曲线。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.5 pp.503–505",
+    "contexts": [
+      "epicycle-lab"
+    ],
+    "tex": "\\beta"
+  },
+  {
+    "id": "c11-m-azimuth",
+    "kind": "symbol",
+    "aliases": [
+      "m"
+    ],
+    "title": "方位模式数",
+    "english": "azimuthal mode number",
+    "definition": "在盘扰动或图样中，m为绕圆周重复次数；m=2对应双重对称，如常见棒或双臂模式。",
+    "unit": "无量纲",
+    "scope": "不是恒星质量m，也不是盘质量比例md；Ω−κ/2本身不证明发生共振。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.5, 11.5 pp.503–505, 521–531",
+    "contexts": [
+      "components",
+      "epicycle-lab",
+      "instability"
+    ],
+    "tex": "m"
+  },
+  {
+    "id": "c11-resonance",
+    "kind": "term",
+    "aliases": [
+      "共振",
+      "模式速度",
+      "棒模式速度"
+    ],
+    "title": "轨道频率与图样共振",
+    "english": "orbital frequencies and pattern resonances",
+    "definition": "图样按模式速度旋转；只有图样与轨道及振荡频率满足匹配条件时才可能出现对应共振。",
+    "unit": "不适用",
+    "scope": "频率组合Ω−κ/2仅是诊断；没有给定模式速度就不能判定某半径已共振。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.5, 11.5.3 pp.503–505, 525–528"
+  },
+  {
+    "id": "c11-spin-lambda",
+    "kind": "symbol",
+    "aliases": [
+      "λ"
+    ],
+    "title": "暗晕自旋参数",
+    "english": "halo spin parameter",
+    "definition": "把暗晕净角动量无量纲化的参数；简单等温暗晕、忽略盘自引力时Rd=(jd/md)λRvir/√2。",
+    "unit": "无量纲",
+    "scope": "此λ是自旋，不是Toomre扰动波长或辐射波长；有限浓度和盘晕响应会改写尺寸标度。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.2.2 pp.505–507",
+    "contexts": [
+      "formation",
+      "disk-spin-lab",
+      "practice-question-6"
+    ],
+    "tex": "\\lambda"
+  },
+  {
+    "id": "c11-jd-md",
+    "kind": "symbol",
+    "aliases": [
+      "jd",
+      "j_d",
+      "md",
+      "m_d"
+    ],
+    "title": "盘的角动量与质量保留比例",
+    "english": "disk angular-momentum and mass fractions",
+    "definition": "jd=Jdisk/Jhalo，md=Mdisk/Mhalo；jd/md是盘相对暗晕的比角动量之比，控制简单盘模型的尺度。",
+    "unit": "无量纲",
+    "scope": "两者都是比例；小写jd不是单位质量角动量，大写Md则为盘总质量。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.2.2 pp.505–507",
+    "contexts": [
+      "formation",
+      "disk-spin-lab"
+    ]
+  },
+  {
+    "id": "c11-specific-j",
+    "kind": "symbol",
+    "aliases": [
+      "jdisc",
+      "j_disc"
+    ],
+    "title": "盘的比角动量",
+    "english": "disk specific angular momentum",
+    "definition": "总盘角动量除以盘质量；平坦圆速度的指数盘有jdisc=2RdVvir。",
+    "unit": "kpc km s⁻¹",
+    "scope": "和无量纲角动量保留分数jd不同；本页简化令平坦圆速度等于Vvir。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.4, 11.2.2 pp.502–503, 505–507",
+    "contexts": [
+      "disk-spin-lab"
+    ],
+    "tex": "j_{\\mathrm{disc}}"
+  },
+  {
+    "id": "c11-virial",
+    "kind": "symbol",
+    "aliases": [
+      "Rvir",
+      "R_vir",
+      "Vvir",
+      "V_vir",
+      "Mvir",
+      "M_vir",
+      "V"
+    ],
+    "title": "暗晕边界尺度量",
+    "english": "virial halo scales",
+    "definition": "Rvir和Mvir是在声明过密度边界内的半径和质量，Vvir=√(GMvir/Rvir)是对应速度尺度。",
+    "unit": "kpc；M☉；km s⁻¹",
+    "scope": "具体vir边界不能与200c自动等同；固定边界密度时有Mvir∝Vvir³/H。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.2–11.3 pp.505–515",
+    "contexts": [
+      "scalings",
+      "formation"
+    ]
+  },
+  {
+    "id": "c11-vobs",
+    "kind": "symbol",
+    "aliases": [
+      "Vobs",
+      "V_obs",
+      "M/L",
+      "H"
+    ],
+    "title": "观测旋转速度、质量光度比与膨胀率",
+    "english": "observed speed, mass-to-light ratio and expansion rate",
+    "definition": "标度关系中Vobs为指定观测速度，M/L将质量转为光度，H给当时膨胀率，三者影响维里尺度与可见星系的对应。",
+    "unit": "Vobs：km s⁻¹；M/L：太阳单位；H：时间⁻¹",
+    "scope": "Vobs不必等于Vvir；仅维里比例不能决定光度—速度关系的零点、斜率与散布。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.3 pp.512–515",
+    "contexts": [
+      "scalings",
+      "formation",
+      "disk-spin-lab"
+    ]
+  },
+  {
+    "id": "c11-scaling",
+    "kind": "term",
+    "aliases": [
+      "标度关系",
+      "光度—速度关系",
+      "Tully–Fisher",
+      "Tully-Fisher",
+      "残差",
+      "散布"
+    ],
+    "title": "盘星系的标度关系",
+    "english": "disk-galaxy scaling relations",
+    "definition": "光度或恒星质量、尺寸与旋转速度的统计关联，Tully–Fisher关系是光度或重子质量与速度的典型例子。",
+    "unit": "不适用",
+    "scope": "各关系散布和残差相关提供额外物理约束，平均幂律不独自确定形成机制。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.3 pp.512–515"
+  },
+  {
+    "id": "c11-viscosity",
+    "kind": "term",
+    "aliases": [
+      "黏性",
+      "角动量再分配",
+      "遗留角动量分布",
+      "角动量转移"
+    ],
+    "title": "指数盘与角动量再分配",
+    "english": "angular-momentum redistribution and exponential disks",
+    "definition": "气体初始角动量分布、冷却和盘内输运都可能塑造径向分布；黏性或引力力矩可使质量和角动量在不同半径间交换。",
+    "unit": "不适用",
+    "scope": "看到指数光剖面并不能唯一证明某一种形成机制。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.4.1–11.4.2 pp.515–518"
+  },
+  {
+    "id": "c11-z-height",
+    "kind": "symbol",
+    "aliases": [
+      "z"
+    ],
+    "title": "盘中面以上高度",
+    "english": "height above the disk midplane",
+    "definition": "垂直盘面量取的空间高度，中面z=0；等温薄层密度关于中面对称。",
+    "unit": "pc",
+    "scope": "本处z不是宇宙红移；此坐标与盘面径向R不同。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.1, 11.4.3 pp.498, 518–520",
+    "contexts": [
+      "sheet-lab",
+      "exponential"
+    ],
+    "tex": "z"
+  },
+  {
+    "id": "c11-z0-zd",
+    "kind": "symbol",
+    "aliases": [
+      "z₀",
+      "z0",
+      "z_0",
+      "zd",
+      "z_d"
+    ],
+    "title": "等温薄层厚度标度",
+    "english": "isothermal-sheet scale height",
+    "definition": "本页ρ(z)=Σ sech²(z/z0)/(2z0)，z0=σz²/(πGΣ)，原书另一厚度约定zd=z0/2。",
+    "unit": "pc",
+    "scope": "系数取决于sech²自变量如何定义；不能把不同zd记法直接比较。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.1, 11.4.3 pp.498, 518–520",
+    "contexts": [
+      "sheet-lab",
+      "exponential",
+      "practice-question-4",
+      "chapter-references"
+    ],
+    "tex": "z_0=2z_d"
+  },
+  {
+    "id": "c11-sigmaz",
+    "kind": "symbol",
+    "aliases": [
+      "σz",
+      "σ_z",
+      "σ"
+    ],
+    "title": "垂向速度弥散",
+    "english": "vertical velocity dispersion",
+    "definition": "恒星沿盘面垂直方向的随机速度标准差；在单组分等温自引力薄层中，它与Σ共同决定z0。",
+    "unit": "km s⁻¹",
+    "scope": "不同年龄、多组分气体与暗晕支持会改写厚度关系。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.4.3 pp.518–520",
+    "contexts": [
+      "sheet-lab",
+      "exponential",
+      "practice-question-4"
+    ],
+    "tex": "\\sigma_z"
+  },
+  {
+    "id": "c11-rho0-sheet",
+    "kind": "symbol",
+    "aliases": [
+      "ρ₀",
+      "ρ0",
+      "ρ(z)",
+      "ρ"
+    ],
+    "title": "中面密度与垂向密度",
+    "english": "midplane and vertical mass density",
+    "definition": "ρ(z)为垂向体密度，ρ0=Σ/(2z0)为中面值；沿全部z积分恰为Σ。",
+    "unit": "M☉ pc⁻³",
+    "scope": "ρ不是表面密度；该单组分平衡解不能唯一解释真实厚盘来源。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.1, 11.4.3 pp.498, 518–520",
+    "contexts": [
+      "sheet-lab"
+    ]
+  },
+  {
+    "id": "c11-sech",
+    "kind": "notation",
+    "aliases": [
+      "sech",
+      "sech²"
+    ],
+    "title": "双曲正割函数",
+    "english": "hyperbolic secant",
+    "definition": "sech(x)=1/cosh(x)=2/(exp(x)+exp(−x))；sech²(x)即其平方，是等温自引力薄层密度形状。",
+    "unit": "无量纲",
+    "scope": "不是三角函数sec(x)，也不是sech(2x)；厚度因子应按自变量一并说明。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.1, 11.4.3 pp.498, 518–520",
+    "contexts": [
+      "sheet-lab"
+    ],
+    "tex": "\\operatorname{sech}"
+  },
+  {
+    "id": "c11-thin-sheet",
+    "kind": "term",
+    "aliases": [
+      "等温薄层",
+      "垂向平衡"
+    ],
+    "title": "盘的垂向平衡与厚度",
+    "english": "vertical equilibrium and disk thickness",
+    "definition": "垂向随机运动或压力梯度可抵抗盘的垂向引力；不同年龄恒星和气体可形成不同厚度分布。",
+    "unit": "不适用",
+    "scope": "本页为局部、单组分、等温自引力解，忽略暗晕与多年龄耦合。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.4.3 pp.518–520"
+  },
+  {
+    "id": "c11-toomre",
+    "kind": "term",
+    "aliases": [
+      "Toomre",
+      "Toomre分析",
+      "Toomre Q"
+    ],
+    "title": "Toomre 局部稳定分析",
+    "english": "Toomre local stability analysis",
+    "definition": "研究薄盘局部轴对称小扰动中，转动、随机运动或压力与自引力如何竞争的近似。",
+    "unit": "不适用",
+    "scope": "局部Q>1不排除全球棒、非轴对称、多组分或有限厚度引起的演化。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5.2 pp.523–525"
+  },
+  {
+    "id": "c11-qgas",
+    "kind": "symbol",
+    "aliases": [
+      "Q",
+      "Qgas",
+      "Q_gas"
+    ],
+    "title": "气体盘 Toomre 参数",
+    "english": "gaseous Toomre parameter",
+    "definition": "无限薄流体盘Qgas=csκ/(πGΣ)，局部轴对称模型中Q<1存在不稳定波数，Q=1是初发中性边界。",
+    "unit": "无量纲",
+    "scope": "此Q不是电离光子率；Q>1时没有最快增长模式，虽仍存在ω²最小的稳定波长。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5.2 pp.523–525",
+    "contexts": [
+      "toomre-lab",
+      "instability",
+      "practice-question-3",
+      "chapter-references"
+    ],
+    "tex": "Q_{\\mathrm{gas}}"
+  },
+  {
+    "id": "c11-sigma-gas",
+    "kind": "symbol",
+    "aliases": [
+      "Σgas",
+      "Σ_gas",
+      "Σ"
+    ],
+    "title": "气体盘局部面密度",
+    "english": "gas surface density",
+    "definition": "Toomre流体实验中Σ是局部气体质量面密度，进入自引力项2πGΣ|k|。",
+    "unit": "M☉ pc⁻²",
+    "scope": "只含该单组分流体，不自动计入恒星盘、气体厚度或暗晕自引力响应。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5.2 pp.523–525",
+    "contexts": [
+      "toomre-lab"
+    ],
+    "tex": "\\Sigma_{\\mathrm{gas}}"
+  },
+  {
+    "id": "c11-cs-gas",
+    "kind": "symbol",
+    "aliases": [
+      "cs",
+      "c_s",
+      "cₛ"
+    ],
+    "title": "流体盘的有效声速",
+    "english": "effective fluid sound speed",
+    "definition": "流体色散式中P扰动响应对应的速度尺度，给压力稳定项cs²k²。",
+    "unit": "km s⁻¹",
+    "scope": "采用薄流体近似；把恒星σR直接代入不等于求得恒星无碰撞色散关系。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5.2 pp.523–525",
+    "contexts": [
+      "toomre-lab",
+      "stellar-response-lab"
+    ],
+    "tex": "c_s"
+  },
+  {
+    "id": "c11-perturbation-omega",
+    "kind": "symbol",
+    "aliases": [
+      "ω",
+      "ω²",
+      "ω^2"
+    ],
+    "title": "局部扰动频率",
+    "english": "local perturbation frequency",
+    "definition": "流体小扰动满足ω²=κ²−2πGΣ|k|+cs²k²；ω²<0表示指数增长或衰减支，正值为稳定振荡。",
+    "unit": "ω：时间⁻¹；ω²：时间⁻²",
+    "scope": "不同于圆周角频率Ω或EPS屏障ω；图中ω²/κ²无量纲。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5.2 pp.523–525",
+    "contexts": [
+      "toomre-lab",
+      "instability",
+      "chapter-references"
+    ],
+    "tex": "\\omega^2"
+  },
+  {
+    "id": "c11-wavenumber",
+    "kind": "symbol",
+    "aliases": [
+      "k",
+      "k*",
+      "k∗",
+      "k_*"
+    ],
+    "title": "局部扰动波数",
+    "english": "local perturbation wavenumber",
+    "definition": "|k|=2π/λ指定扰动尺度，k*=πGΣ/cs²使当前流体色散式的ω²最小。",
+    "unit": "pc⁻¹",
+    "scope": "只有Q<1时该最小值负，k*才对应最快增长波数。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5.2 pp.523–525",
+    "contexts": [
+      "toomre-lab",
+      "stellar-response-lab",
+      "instability"
+    ],
+    "tex": "k"
+  },
+  {
+    "id": "c11-lambda-toomre",
+    "kind": "symbol",
+    "aliases": [
+      "λ",
+      "λ*",
+      "λ∗",
+      "λ_*",
+      "λcrit",
+      "λ_crit"
+    ],
+    "title": "扰动波长与临界波长",
+    "english": "perturbation and critical wavelengths",
+    "definition": "扰动波长λ=2π/|k|；λ*=2cs²/(GΣ)使流体ω²最小，冷盘参考临界尺度λcrit=4π²GΣ/κ²，故λ*=λcrit Q²/2。",
+    "unit": "pc",
+    "scope": "λ*仅在Q<1是最快增长波长；λcrit/2仅在Q=1等于λ*，此λ不是暗晕自旋。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5.2 pp.523–525",
+    "contexts": [
+      "toomre-lab",
+      "stellar-response-lab",
+      "instability"
+    ],
+    "tex": "\\lambda"
+  },
+  {
+    "id": "c11-wkb",
+    "kind": "abbreviation",
+    "aliases": [
+      "WKB"
+    ],
+    "title": "局部短波长近似",
+    "english": "Wentzel–Kramers–Brillouin approximation",
+    "definition": "把扰动波长取为远小于背景盘变化尺度，以局部近似均匀参数推导响应或色散关系。",
+    "unit": "不适用",
+    "scope": "需检验实际波长是否仍短于背景尺度；不能用局部结果自动判断全球棒模式。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5.1–11.5.2 pp.521–525"
+  },
+  {
+    "id": "c11-axisym",
+    "kind": "term",
+    "aliases": [
+      "轴对称",
+      "非轴对称",
+      "全球模式",
+      "局部轴对称"
+    ],
+    "title": "局部轴对称与全球模式",
+    "english": "local axisymmetric and global modes",
+    "definition": "轴对称扰动绕方位角不变，局部理论只检查小区域短波长；棒等非轴对称全球模式需要整个盘的响应与边界。",
+    "unit": "不适用",
+    "scope": "局部稳定与整体长期稳定是不同命题。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5 pp.521–531"
+  },
+  {
+    "id": "c11-collisionless",
+    "kind": "term",
+    "aliases": [
+      "无碰撞",
+      "Schwarzschild",
+      "Schwarzschild速度分布"
+    ],
+    "title": "恒星盘的无碰撞响应",
+    "english": "collisionless stellar response",
+    "definition": "恒星的离散轨道运动不通过普通粒子碰撞形成流体压力；此局部分析取Schwarzschild型近高斯轨道速度分布。",
+    "unit": "不适用",
+    "scope": "即使流体对照cs=σR，两者响应函数仍不同；未计算完整复频增长率。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5.2 pp.524–525"
+  },
+  {
+    "id": "c11-sigmar",
+    "kind": "symbol",
+    "aliases": [
+      "σR",
+      "σ_R"
+    ],
+    "title": "恒星径向速度弥散",
+    "english": "radial stellar velocity dispersion",
+    "definition": "近圆恒星轨道径向随机速度的标准差，反映径向轨道散布并进入恒星盘稳定参数。",
+    "unit": "km s⁻¹",
+    "scope": "不是垂向σz；本实验以相同数值作流体cs对照并不意味着恒星已热化。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5.2 pp.524–525",
+    "contexts": [
+      "stellar-response-lab"
+    ],
+    "tex": "\\sigma_R"
+  },
+  {
+    "id": "c11-qstar",
+    "kind": "symbol",
+    "aliases": [
+      "Qstar",
+      "Q_star",
+      "Q⋆",
+      "Q_⋆"
+    ],
+    "title": "恒星盘 Toomre 参数",
+    "english": "stellar Toomre parameter",
+    "definition": "Qstar=κσR/(3.36GΣ)，其中3.36来自无碰撞恒星零频响应对波数寻峰。",
+    "unit": "无量纲",
+    "scope": "不能把流体分母π换成3.36后仍使用同一流体色散式；只在当前薄盘局部假设下比较。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5.2 pp.524–525",
+    "contexts": [
+      "stellar-response-lab"
+    ],
+    "tex": "Q_\\star"
+  },
+  {
+    "id": "c11-q-chi",
+    "kind": "symbol",
+    "aliases": [
+      "q",
+      "χ"
+    ],
+    "title": "恒星响应的无量纲波数与平方",
+    "english": "dimensionless stellar-response wavenumber",
+    "definition": "q=|k|σR/κ，χ=q²，比较扰动尺度与恒星径向轨道振荡尺度。",
+    "unit": "无量纲",
+    "scope": "χ不是第8章激波压缩比，也不是共动距离；q不是Toomre Q。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5.2 pp.524–525",
+    "contexts": [
+      "stellar-response-lab"
+    ],
+    "tex": "q,\\chi"
+  },
+  {
+    "id": "c11-reduction",
+    "kind": "symbol",
+    "aliases": [
+      "𝓕",
+      "F(0,χ)",
+      "ℱ",
+      "reduction factor",
+      "F"
+    ],
+    "title": "恒星轨道响应削弱因子",
+    "english": "stellar reduction factor",
+    "definition": "零频边界取𝓕(0,χ)=[1−exp(−χ)I0(χ)]/χ，量化随机轨道运动对自引力密度响应的削弱。",
+    "unit": "无量纲",
+    "scope": "χ→0需用有限解析极限；本页只计算零频，不把此函数当作增长率。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5.2 pp.524–525",
+    "contexts": [
+      "stellar-response-lab"
+    ],
+    "tex": "\\mathcal F(0,\\chi)"
+  },
+  {
+    "id": "c11-i0-response",
+    "kind": "symbol",
+    "aliases": [
+      "I0",
+      "I₀",
+      "I_0"
+    ],
+    "title": "零阶第一类修正 Bessel 函数",
+    "english": "modified Bessel function of the first kind, order zero",
+    "definition": "恒星响应因子中的特殊函数I0(χ)；计算exp(−χ)I0(χ)时采用缩放形式以避免大χ数值溢出。",
+    "unit": "无量纲",
+    "scope": "此处自变量是χ，与旋转曲线实验中的y不同。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5.2 pp.524–525",
+    "contexts": [
+      "stellar-response-lab"
+    ],
+    "tex": "I_0(\\chi)"
+  },
+  {
+    "id": "c11-response-s",
+    "kind": "symbol",
+    "aliases": [
+      "𝒮⋆",
+      "𝒮star",
+      "Sstar",
+      "S_star",
+      "Sg",
+      "S_g",
+      "𝒮g",
+      "𝒮",
+      "S",
+      "S⋆"
+    ],
+    "title": "零频自引力响应",
+    "english": "zero-frequency self-gravity response",
+    "definition": "恒星𝒮star(q)=(2πGΣ/κσR)q𝓕(0,q²)，流体对照𝒮g(q)=(2πGΣ/κσR)q/(1+q²)。",
+    "unit": "无量纲",
+    "scope": "最大响应超过1标记局部轴对称不稳定边界；纵轴不是频率平方、增长率或时间。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5.2 pp.524–525",
+    "contexts": [
+      "stellar-response-lab"
+    ],
+    "tex": "\\mathcal S_\\star"
+  },
+  {
+    "id": "c11-bar",
+    "kind": "term",
+    "aliases": [
+      "恒星棒",
+      "棒",
+      "棒旋星系",
+      "长期演化"
+    ],
+    "title": "棒结构与长期演化",
+    "english": "stellar bars and secular evolution",
+    "definition": "棒是盘中延展的非轴对称恒星结构，可通过引力力矩和共振输运角动量，垂向屈曲等过程可改变中心结构。",
+    "unit": "不适用",
+    "scope": "照片形态本身不给出模式速度或局部Q；伪核球不一定由大并合形成。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5.3–11.5.4 pp.525–531"
+  },
+  {
+    "id": "c11-winding",
+    "kind": "term",
+    "aliases": [
+      "差动转动",
+      "缠绕问题",
+      "物质旋臂",
+      "旋臂"
+    ],
+    "title": "差动转动与旋臂缠绕",
+    "english": "differential rotation and the winding problem",
+    "definition": "若一条旋臂由同一批物质组成，内外不同角速度会快速把它缠紧；图样可与单颗恒星不同步。",
+    "unit": "不适用",
+    "scope": "运动学示范揭示物质线问题，不能单独证明某一种真实旋臂理论。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.6 pp.531–534"
+  },
+  {
+    "id": "c11-phi-winding",
+    "kind": "symbol",
+    "aliases": [
+      "φ",
+      "φ₀",
+      "φ0"
+    ],
+    "title": "物质标记的方位角",
+    "english": "material-marker azimuth",
+    "definition": "平坦旋转曲线下φ(R,t)=φ0+Vct/R，φ0为同一条初始径向物质线的初始角度。",
+    "unit": "rad",
+    "scope": "角度计算要换算km、kpc与Gyr；标记不是锁在固定密度波中的恒星。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.6 pp.531–534",
+    "contexts": [
+      "winding-lab"
+    ],
+    "tex": "\\phi"
+  },
+  {
+    "id": "c11-pitch",
+    "kind": "symbol",
+    "aliases": [
+      "i",
+      "俯仰角"
+    ],
+    "title": "旋臂局部俯仰角",
+    "english": "local pitch angle",
+    "definition": "曲线切线与当地圆周方向的夹角；本页平坦曲线从径向物质线出发，tan i=1/(Ωt)。",
+    "unit": "度或rad",
+    "scope": "t增长使物质线更紧；i不是观测盘倾角，独立旋转实验中的倾角另行定义。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.6 pp.531–534",
+    "contexts": [
+      "winding-lab",
+      "spirals"
+    ],
+    "tex": "i"
+  },
+  {
+    "id": "c11-inclination",
+    "kind": "term",
+    "aliases": [
+      "倾角",
+      "观察倾角",
+      "视角",
+      "投影"
+    ],
+    "title": "观察倾角与投影",
+    "english": "inclination and projection",
+    "definition": "盘法线与视线的夹角控制正面或侧面外观；旋转实验改变倾角只是观察方向变化。",
+    "unit": "度",
+    "scope": "不会改变给定模型内的vc；真实视线旋转分量还受倾角投影影响。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.2 pp.498–501",
+    "contexts": [
+      "rotation",
+      "galaxy-laboratory"
+    ]
+  },
+  {
+    "id": "c11-migration",
+    "kind": "term",
+    "aliases": [
+      "颜色梯度",
+      "丰度梯度",
+      "金属梯度"
+    ],
+    "title": "盘的径向迁移与族群梯度",
+    "english": "radial migration and population gradients",
+    "definition": "恒星角动量改变可迁移到不同导引半径；形成史、尘埃、金属和加热共同塑造径向颜色及丰度梯度。",
+    "unit": "不适用",
+    "scope": "迁移不必等同于显著径向随机加热；一箱模型不能直接代替每个半径的完整历史。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.7–11.8 pp.534–543"
+  },
+  {
+    "id": "c11-g-dwarf",
+    "kind": "term",
+    "aliases": [
+      "G矮星问题",
+      "G 矮星问题"
+    ],
+    "title": "G 矮星问题",
+    "english": "G-dwarf problem",
+    "definition": "简单原初封闭箱预期较多低金属丰度长寿命恒星，而太阳邻域观测分布较少，提示需气体流入等更丰富历史。",
+    "unit": "不适用",
+    "scope": "比较需要观测选择、局部迁移和丰度分布模型；有效产额也受气体分数与流出影响。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.8.1 pp.538–540"
+  },
+  {
+    "id": "c7-walk-delta",
+    "kind": "symbol",
+    "aliases": [
+      "δ",
+      "δ(S)",
+      "δᵢ",
+      "δ_i",
+      "δi+1",
+      "δi"
+    ],
+    "title": "随平滑尺度改变的密度轨迹",
+    "english": "density trajectory across smoothing scales",
+    "definition": "对同一初始位置在不同平滑方差S处计算的线性密度对比度，sharp-k高斯情形的增量独立且方差为ΔS。",
+    "unit": "无量纲",
+    "scope": "轨迹不是粒子空间路径，S也不是时间。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2.2 pp.328–331",
+    "contexts": [
+      "excursion",
+      "walk-lab"
+    ],
+    "tex": "\\delta(S)"
+  },
+  {
+    "id": "c7-mass-abundance",
+    "kind": "symbol",
+    "aliases": [
+      "M"
+    ],
+    "title": "质量函数探针的暗晕质量",
+    "english": "halo mass in the abundance model",
+    "definition": "质量函数中M表示分配给一个宿主暗晕的质量尺度，借助σ(M)决定峰显著度与数密度。",
+    "unit": "M☉",
+    "scope": "当前幂律标准差只作教学，不给完整宇宙学质量函数预报。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2 pp.326–334",
+    "contexts": [
+      "abundance",
+      "ps-lab"
+    ],
+    "tex": "M"
+  },
+  {
+    "id": "c7-first-f",
+    "kind": "symbol",
+    "aliases": [
+      "f",
+      "F"
+    ],
+    "title": "首次越障密度与累计概率",
+    "english": "first-crossing density and cumulative probability",
+    "definition": "f(S;B)dS给首次越障落在小方差区间的概率，F(≤S)给此前已经首次越障的累计概率。",
+    "unit": "f：每单位S；F：无量纲",
+    "scope": "必须先定相应测度，概率密度不等于区间概率。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.2.2 pp.328–331",
+    "contexts": [
+      "excursion",
+      "walk-lab"
+    ]
+  },
+  {
+    "id": "c7-conditional-f",
+    "kind": "symbol",
+    "aliases": [
+      "f",
+      "F"
+    ],
+    "title": "祖先条件分布密度与累计质量份额",
+    "english": "conditional density and cumulative mass fraction",
+    "definition": "f(ΔS|Δω)dΔS是在给定终态条件下，随机质量元的祖先方差差落在该区间的概率；F为其累计值。",
+    "unit": "f：每单位ΔS；F：无量纲",
+    "scope": "这是质量加权分布，不是祖先个数函数。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.3.1 pp.336–338",
+    "contexts": [
+      "progenitors",
+      "prog-lab"
+    ]
+  },
+  {
+    "id": "c7-k-halomodel",
+    "kind": "symbol",
+    "aliases": [
+      "k"
+    ],
+    "title": "功率谱波数",
+    "english": "power-spectrum wavenumber",
+    "definition": "傅里叶尺度的波数，|k|越大对应越小空间尺度；晕模型剖面变换与物质功率谱都以此为自变量。",
+    "unit": "Mpc⁻¹",
+    "scope": "须与共动或物理长度约定一致。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.6 pp.362–365",
+    "contexts": [
+      "halo-model",
+      "hpair-lab"
+    ],
+    "tex": "k"
+  },
+  {
+    "id": "c7-b-mass",
+    "kind": "symbol",
+    "aliases": [
+      "b(M)",
+      "b"
+    ],
+    "title": "质量依赖的线性暗晕偏置",
+    "english": "mass-dependent linear halo bias",
+    "definition": "晕模型中质量为M的暗晕中心对大尺度物质起伏的线性响应，进入双晕项的质量加权积分。",
+    "unit": "无量纲",
+    "scope": "质量加权∫Mn(M)b(M)dM/ρ̄=1是物质不偏置的归一约束。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.6 pp.362–365",
+    "contexts": [
+      "halo-model",
+      "hpair-lab"
+    ]
+  },
+  {
+    "id": "c8-pressure",
+    "kind": "symbol",
+    "aliases": [
+      "P"
+    ],
+    "title": "气体热压力",
+    "english": "thermal gas pressure",
+    "definition": "单位面积的热运动动量通量，理想气体有P=nkBT；其空间梯度可提供静力支持。",
+    "unit": "erg cm⁻³",
+    "scope": "本章热压力未自动包含湍流、磁场和宇宙线的额外支持。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.1 pp.366–367",
+    "tex": "P"
+  },
+  {
+    "id": "c8-density",
+    "kind": "symbol",
+    "aliases": [
+      "ρ"
+    ],
+    "title": "气体质量密度",
+    "english": "gas mass density",
+    "definition": "单位体积中的气体质量，完全电离纯氢时ρ=mpnH；下标可进一步标记上游、下游、环境或气团。",
+    "unit": "g cm⁻³ 或 M☉ kpc⁻³",
+    "scope": "体密度不同于面密度，亦不能不经组成换算直接视作粒子数密度。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.1 pp.366–367",
+    "tex": "\\rho"
+  },
+  {
+    "id": "c8-temperature",
+    "kind": "symbol",
+    "aliases": [
+      "T"
+    ],
+    "title": "气体温度",
+    "english": "gas temperature",
+    "definition": "表征热粒子随机运动能量的热力学温度，在理想气体模型中与粒子密度一起决定热压力。",
+    "unit": "K",
+    "scope": "等温背景与绝热扰动是不同约束；观测显示色也不自动等于温度。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1 pp.366–371",
+    "tex": "T"
+  },
+  {
+    "id": "c8-potential",
+    "kind": "symbol",
+    "aliases": [
+      "Φ",
+      "∇Φ"
+    ],
+    "title": "引力势及空间梯度",
+    "english": "gravitational potential and gradients",
+    "definition": "Φ为单位质量引力势能，−∇Φ给引力加速度；∇P是压力沿空间的变化，静力平衡要求∇P=−ρ∇Φ。",
+    "unit": "Φ：速度²；∇Φ：长度/时间²",
+    "scope": "此Φ为引力势，不是第9章磁通。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.2.1 pp.371–373",
+    "contexts": [
+      "hydrostatic",
+      "hse-lab"
+    ],
+    "tex": "\\Phi"
+  },
+  {
+    "id": "c8-nfw-parameters",
+    "kind": "symbol",
+    "aliases": [
+      "x",
+      "rs",
+      "rₛ",
+      "r_s",
+      "ρs",
+      "ρₛ",
+      "ρ_s",
+      "c",
+      "c₂₀₀c"
+    ],
+    "title": "静力模型的 NFW 尺度参数",
+    "english": "NFW scales in the hydrostatic model",
+    "definition": "x=r/rs，rs和ρs为NFW尺度半径与密度，c=R200c/rs；本页c固定为8。",
+    "unit": "x,c：无量纲；rs：kpc；ρs：质量/体积",
+    "scope": "这些参数属于固定引力势，不是气体密度归一或光速。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.2.1 pp.371–373",
+    "contexts": [
+      "hydrostatic",
+      "hse-lab"
+    ]
+  },
+  {
+    "id": "c8-compton-c",
+    "kind": "symbol",
+    "aliases": [
+      "c"
+    ],
+    "title": "真空光速",
+    "english": "speed of light",
+    "definition": "电磁辐射在真空中传播的速度，进入电子散射导致的Compton能量交换时标。",
+    "unit": "cm s⁻¹",
+    "scope": "此c不是NFW浓度。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.2 pp.367–368",
+    "contexts": [
+      "compton",
+      "compton-lab"
+    ],
+    "tex": "c"
+  },
+  {
+    "id": "c8-compton-times",
+    "kind": "symbol",
+    "aliases": [
+      "t",
+      "Tinit",
+      "T_init"
+    ],
+    "title": "局部经过时间与初始温度",
+    "english": "elapsed time and initial temperature",
+    "definition": "固定红移的Compton演示从Tinit开始，温度超额按(T−Tγ)/(Tinit−Tγ)=exp(−t/tComp)衰减。",
+    "unit": "t：Gyr；Tinit：K",
+    "scope": "并未在长时间演化中更新背景红移、宇宙膨胀和电离度。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.2 pp.367–368",
+    "contexts": [
+      "compton-lab"
+    ]
+  },
+  {
+    "id": "c8-freefree",
+    "kind": "term",
+    "aliases": [
+      "自由—自由辐射",
+      "自由–自由辐射",
+      "制动辐射"
+    ],
+    "title": "自由—自由辐射",
+    "english": "free–free emission",
+    "definition": "自由电子在离子电场中加速或减速时发射辐射，高温稀薄热等离子体的重要冷却与X射线发射机制。",
+    "unit": "不适用",
+    "scope": "真实频谱和冷却率依赖温度、粒子密度、离子电荷与能段。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.3 pp.368–370"
+  },
+  {
+    "id": "c8-atomic-processes",
+    "kind": "term",
+    "aliases": [
+      "碰撞与复合的原子过程"
+    ],
+    "title": "碰撞与复合的原子过程",
+    "english": "collisional excitation, ionization and recombination",
+    "definition": "碰撞激发把原子或离子提升到高能级，碰撞电离去掉束缚电子，复合则为离子重新捕获电子；这些过程共同影响冷却与电离状态。",
+    "unit": "不适用",
+    "scope": "冷却函数取决于电离平衡与辐射背景，当前幂律模型未解完整网络。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.3–8.1.4 pp.368–371"
+  },
+  {
+    "id": "c8-accretion-shock",
+    "kind": "term",
+    "aliases": [
+      "吸积激波"
+    ],
+    "title": "吸积激波与自相似坍缩",
+    "english": "accretion shocks and self-similar collapse",
+    "definition": "超声速气体落入暗晕势阱可被激波热化；某些理想初始条件允许各时刻剖面经尺度变换后保持相同形状。",
+    "unit": "不适用",
+    "scope": "吸积率、冷却、预热和几何决定是否维持稳定热晕，本章只演示局部跃迁。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.3 pp.375–384"
+  },
+  {
+    "id": "c8-overcooling",
+    "kind": "term",
+    "aliases": [
+      "过度冷却"
+    ],
+    "title": "层级模型的过度冷却问题",
+    "english": "overcooling problem",
+    "definition": "若早期小暗晕气体高效冷却并几乎全部成星，模型会预测过多冷重子或恒星，提示需光加热和反馈等调节。",
+    "unit": "不适用",
+    "scope": "不是指冷却函数本身错误，而是完整形成模型中的供应与反馈预算不一致。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.4.4 pp.389–393"
+  },
+  {
+    "id": "c8-numerics",
+    "kind": "term",
+    "aliases": [
+      "数值扩散",
+      "收敛性",
+      "求解器",
+      "分辨率",
+      "未解析过程"
+    ],
+    "title": "数值模拟的分辨率与收敛",
+    "english": "numerical resolution and convergence",
+    "definition": "求解器把连续流体方程离散化，有限分辨率与数值扩散影响混合和激波；收敛检查比较更精细计算下结果是否稳定。",
+    "unit": "不适用",
+    "scope": "未解析物理需要明确处方；可视粒子数量不是研究模拟的精度证明。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.7 pp.408–410"
+  },
+  {
+    "id": "c7-stripping",
+    "kind": "term",
+    "aliases": [
+      "潮汐剥离"
+    ],
+    "title": "潮汐剥离",
+    "english": "tidal stripping",
+    "definition": "宿主引力场在子系统不同位置的差异，可使其外围物质脱离子系统并成为尾流或宿主的一部分。",
+    "unit": "不适用",
+    "scope": "优先影响弱束缚外区；吸积时质量与当前束缚质量不同，损失量取决于轨道和内部结构。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.3 pp.355–358"
+  },
+  {
+    "id": "c7-dynamical-friction",
+    "kind": "term",
+    "aliases": [
+      "动力摩擦"
+    ],
+    "title": "动力摩擦",
+    "english": "dynamical friction",
+    "definition": "运动质量扰动周围粒子分布产生引力尾流，尾流的反作用可使其轨道能量与角动量转移给背景。",
+    "unit": "不适用",
+    "scope": "是集体引力效应而非普通接触摩擦；局部理想解析式有背景与轨道假设。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5.3 pp.355–358"
+  },
+  {
+    "id": "c7-isodensity",
+    "kind": "term",
+    "aliases": [
+      "等密度面"
+    ],
+    "title": "等密度面",
+    "english": "isodensity surface",
+    "definition": "三维密度场中所有密度相同的位置构成的曲面，可用来描述球形或三轴结构。",
+    "unit": "不适用",
+    "scope": "曲面仅是对连续场的几何表示，不是实体外壳，也不同于投影等亮度线。",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) 第7章 §7.5 pp.351–362"
+  },
+  {
+    "id": "c8-kh-instability",
+    "kind": "term",
+    "aliases": [
+      "Kelvin–Helmholtz"
+    ],
+    "title": "Kelvin–Helmholtz 不稳定",
+    "english": "Kelvin–Helmholtz instability",
+    "definition": "相邻流体层存在切向速度剪切时，界面扰动可通过流动的动能放大并促进混合。",
+    "unit": "不适用",
+    "scope": "密度差、重力、磁场和有限层厚会改变增长；本页热不稳定实验未求这一机制。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.5.2–8.5.3 pp.395–398"
+  },
+  {
+    "id": "c8-rt-instability",
+    "kind": "term",
+    "aliases": [
+      "Rayleigh–Taylor"
+    ],
+    "title": "Rayleigh–Taylor 不稳定",
+    "english": "Rayleigh–Taylor instability",
+    "definition": "在有效加速度方向上，重流体由轻流体支撑时，界面扰动可使重物质下沉、轻物质上升并被放大。",
+    "unit": "不适用",
+    "scope": "须明确有效加速度和密度排列；不是任何密度不均匀都自动不稳定。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.5.2–8.5.3 pp.395–398"
+  },
+  {
+    "id": "c8-conduction",
+    "kind": "term",
+    "aliases": [
+      "热传导"
+    ],
+    "title": "热传导",
+    "english": "thermal conduction",
+    "definition": "粒子输运把热能由高温区传向低温区，可平滑温度扰动、蒸发冷云并影响小尺度热稳定。",
+    "unit": "不适用",
+    "scope": "磁场可使输运显著各向异性；网页线性热实验未加入导热。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.5.2–8.5.3 pp.395–398"
+  },
+  {
+    "id": "c8-collisional-excitation",
+    "kind": "term",
+    "aliases": [
+      "碰撞激发"
+    ],
+    "title": "碰撞激发",
+    "english": "collisional excitation",
+    "definition": "粒子碰撞把原子或离子的束缚电子提升到更高能级，后续辐射退激可带走气体热能。",
+    "unit": "不适用",
+    "scope": "速率依赖温度、电离状态与能级丰度；本页幂律冷却函数未逐条计算谱线。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.3–8.1.4 pp.368–371"
+  },
+  {
+    "id": "c8-collisional-ionization",
+    "kind": "term",
+    "aliases": [
+      "碰撞电离"
+    ],
+    "title": "碰撞电离",
+    "english": "collisional ionization",
+    "definition": "高能粒子碰撞提供电离能，使原子或离子的束缚电子成为自由电子。",
+    "unit": "不适用",
+    "scope": "与外部光子导致的光电离不同，电离平衡受温度与密度历时影响。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.3–8.1.4 pp.368–371"
+  },
+  {
+    "id": "c8-recombination",
+    "kind": "term",
+    "aliases": [
+      "复合"
+    ],
+    "title": "电子复合",
+    "english": "recombination",
+    "definition": "自由电子被离子捕获进入束缚态，使离子电离级降低，并可通过连续谱和级联谱线释放能量。",
+    "unit": "不适用",
+    "scope": "冷却与光子输运取决于电子温度及光学厚度；不应一概假设所有复合光子立即逃逸。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.1.3–8.1.4 pp.368–371"
+  },
+  {
+    "id": "c8-preheating",
+    "kind": "term",
+    "aliases": [
+      "预热"
+    ],
+    "title": "气体预热",
+    "english": "gas preheating",
+    "definition": "气体进入当前吸积激波或势阱前，因其他热源获得额外热能或熵的过程。",
+    "unit": "不适用",
+    "scope": "改变上游声速、马赫数和后续热晕结构；本章局部激波滑块未自洽求完整预热历史。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.3 pp.375–384"
+  },
+  {
+    "id": "c8-selfsimilar",
+    "kind": "term",
+    "aliases": [
+      "自相似坍缩"
+    ],
+    "title": "自相似坍缩",
+    "english": "self-similar collapse",
+    "definition": "在特殊初始与边界条件下，不同时刻的坍缩剖面可用随时间变化的尺度归一为同一函数。",
+    "unit": "不适用",
+    "scope": "不是一般三维气体坍缩的精确性质；纯气体与无碰撞组分主导模型需分别求解。",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) 第8章 §8.3 pp.375–384"
+  },
+  {
+    "id": "c9-self-shielding",
+    "kind": "term",
+    "aliases": [
+      "自遮蔽"
+    ],
+    "title": "分子自遮蔽",
+    "english": "molecular self-shielding",
+    "definition": "分子自身吸收会解离它的谱线光子，使更深处的同种分子免于受到同样强度的破坏。",
+    "unit": "不适用",
+    "scope": "取决于柱密度、速度展宽和辐射谱，不能只由局部体密度决定。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.2.1 pp.421–422"
+  },
+  {
+    "id": "c9-dust-shielding",
+    "kind": "term",
+    "aliases": [
+      "尘埃遮蔽"
+    ],
+    "title": "尘埃遮蔽",
+    "english": "dust shielding",
+    "definition": "尘埃吸收和散射外来紫外光，降低云内部的分子光解离及光电离辐射强度。",
+    "unit": "不适用",
+    "scope": "与尘埃丰度和视线柱密度相关，不等同于分子自遮蔽；尘埃也可促进表面H₂形成。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.2.1 pp.421–422"
+  },
+  {
+    "id": "c9-flux-freezing",
+    "kind": "term",
+    "aliases": [
+      "磁通冻结"
+    ],
+    "title": "磁通冻结",
+    "english": "flux freezing",
+    "definition": "理想高导电磁流体近似中，随物质移动的闭合回路所包围磁通保持不变。",
+    "unit": "不适用",
+    "scope": "非理想电阻、双极扩散等过程可破坏冻结；不能把理想条件视为所有分子云都精确满足。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.3.1–9.3.2 pp.425–427"
+  },
+  {
+    "id": "c9-flux-diffusion",
+    "kind": "term",
+    "aliases": [
+      "磁通扩散"
+    ],
+    "title": "磁通扩散",
+    "english": "magnetic flux diffusion",
+    "definition": "非理想效应允许磁场与部分气体发生相对输运，从而改变一个质量区域的质量—磁通比。",
+    "unit": "不适用",
+    "scope": "弱电离云中离子与中性粒子的漂移可参与其中，具体时标依赖电离度与碰撞耦合。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.3.1–9.3.2 pp.425–427"
+  },
+  {
+    "id": "c9-protostar-only",
+    "kind": "term",
+    "aliases": [
+      "原恒星"
+    ],
+    "title": "原恒星",
+    "english": "protostar",
+    "definition": "由云核坍缩形成、仍通过周围盘或包层显著吸积的年轻恒星对象，其热结构与成熟主序星不同。",
+    "unit": "不适用",
+    "scope": "吸积、辐射、角动量和磁场共同影响演化，不由简单Jeans条件唯一决定最终质量。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.4.1 pp.429–432"
+  },
+  {
+    "id": "c9-accretion",
+    "kind": "term",
+    "aliases": [
+      "吸积"
+    ],
+    "title": "恒星吸积",
+    "english": "stellar accretion",
+    "definition": "周围气体在引力作用下向年轻恒星输送质量，通常伴随盘中的角动量输运和能量释放。",
+    "unit": "不适用",
+    "scope": "真实几何常非球对称，外流、磁场与辐射反馈均能影响供应。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.4.1 pp.429–432"
+  },
+  {
+    "id": "c9-radiative-transfer",
+    "kind": "term",
+    "aliases": [
+      "辐射输运"
+    ],
+    "title": "辐射输运",
+    "english": "radiative transfer",
+    "definition": "光子在介质中传播并经历吸收、发射和散射的过程，决定辐射如何带走或沉积能量。",
+    "unit": "不适用",
+    "scope": "不透明度和方向分布重要；单一均匀温度或黑体假设不代表已求完整输运。",
+    "chapters": [
+      9
+    ],
+    "source": "MBW (2010) 第9章 §9.4.1 pp.429–432"
+  },
+  {
+    "id": "c10-agb",
+    "kind": "term",
+    "aliases": [
+      "AGB",
+      "渐近巨星支"
+    ],
+    "title": "渐近巨星支",
+    "english": "asymptotic giant branch",
+    "definition": "部分中低质量恒星在核心氦燃烧之后经历的演化阶段，常具惰性核心、壳层燃烧、明亮低温外包层及显著质量损失。",
+    "unit": "不适用",
+    "scope": "少量AGB星可影响星族光，网页仅主序积分故意省略此阶段。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.2 pp.463–470"
+  },
+  {
+    "id": "c10-white-dwarf",
+    "kind": "term",
+    "aliases": [
+      "白矮星"
+    ],
+    "title": "白矮星",
+    "english": "white dwarf",
+    "definition": "由电子简并压力主要支撑、通常已停止稳定核心核燃烧的致密恒星遗迹。",
+    "unit": "不适用",
+    "scope": "不同白矮星组成和双星相互作用导致不同结局；并非每颗白矮星都会发生Ia超新星。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.2.3, 10.5 pp.468–470, 492–494"
+  },
+  {
+    "id": "c10-binary",
+    "kind": "term",
+    "aliases": [
+      "双星"
+    ],
+    "title": "双星系统",
+    "english": "binary star system",
+    "definition": "两颗恒星或恒星遗迹相互引力束缚并围绕共同质心运行的系统，近距离相互作用可发生质量转移或并合。",
+    "unit": "不适用",
+    "scope": "其演化可改变寿命、谱光与超新星通道，网页单星拟合未包含这些过程。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.2.3, 10.5 pp.468–470, 492–494"
+  },
+  {
+    "id": "c10-extinction",
+    "kind": "term",
+    "aliases": [
+      "消光"
+    ],
+    "title": "消光",
+    "english": "extinction",
+    "definition": "沿一条视线，尘埃或其他介质的吸收和散射使直达光通量减弱的效应，通常用星等Aλ表示。",
+    "unit": "不适用",
+    "scope": "整体未分辨星系的衰减还包含混合几何和散射入视线，不能完全等同单一前景屏。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3.7 pp.476–481"
+  },
+  {
+    "id": "c10-attenuation",
+    "kind": "term",
+    "aliases": [
+      "衰减"
+    ],
+    "title": "星系整体衰减",
+    "english": "attenuation",
+    "definition": "未分辨光源的净光谱减弱，综合光源与尘埃空间几何、吸收和散射效应。",
+    "unit": "不适用",
+    "scope": "不一定遵循单颗背景恒星的消光曲线，网页仅采用简单前景屏。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3.7 pp.476–481"
+  },
+  {
+    "id": "c10-reddening",
+    "kind": "term",
+    "aliases": [
+      "红化"
+    ],
+    "title": "尘埃红化",
+    "english": "dust reddening",
+    "definition": "尘埃对不同波长的减光不同，常使短波相对长波更弱并改变颜色的效应。",
+    "unit": "不适用",
+    "scope": "颜色变红也可能来自年龄或丰度变化，不能只凭红颜色确定尘埃量。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3.7 pp.476–481"
+  },
+  {
+    "id": "c10-convolution",
+    "kind": "term",
+    "aliases": [
+      "卷积",
+      "响应核"
+    ],
+    "title": "形成史与光响应的卷积",
+    "english": "convolution of SFH and luminosity response",
+    "definition": "将每个形成时刻的恒星质量乘以它在当前年龄的光响应，再对全部形成时刻积分。",
+    "unit": "不适用",
+    "scope": "网页两个指数核为指定教学形状，未对应实际滤镜或真实星族数据库。",
+    "chapters": [
+      10
+    ],
+    "source": "MBW (2010) 第10章 §10.3 pp.471–474"
+  },
+  {
+    "id": "c11-kepler",
+    "kind": "term",
+    "aliases": [
+      "Kepler"
+    ],
+    "title": "Kepler 旋转曲线",
+    "english": "Keplerian rotation curve",
+    "definition": "当引力由中心近似点质量主导时，圆速度满足Vc∝R^(−1/2)，近圆轨道有κ=Ω。",
+    "unit": "不适用",
+    "scope": "是理想引力极限，平坦星系外盘旋转曲线通常不满足这一标度。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.5, 11.5.3 pp.503–505, 525–528"
+  },
+  {
+    "id": "c11-solidbody",
+    "kind": "term",
+    "aliases": [
+      "固体转动"
+    ],
+    "title": "固体转动",
+    "english": "solid-body rotation",
+    "definition": "所有半径具有相同角速度的旋转形式，Vc∝R，近圆轨道径向频率κ=2Ω。",
+    "unit": "不适用",
+    "scope": "这里只是运动学标度，不表示整个星系或暗晕是刚性实体。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.1.5, 11.5.3 pp.503–505, 525–528"
+  },
+  {
+    "id": "c11-thin-disk",
+    "kind": "term",
+    "aliases": [
+      "薄盘"
+    ],
+    "title": "薄盘近似",
+    "english": "thin-disk approximation",
+    "definition": "盘的垂向厚度比所研究径向尺度或扰动尺度小，从而可用面密度近似其引力响应。",
+    "unit": "不适用",
+    "scope": "有限厚度会改变自引力与稳定性；几何“薄”不表示总质量小。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.4.3 pp.518–520"
+  },
+  {
+    "id": "c11-thick-disk",
+    "kind": "term",
+    "aliases": [
+      "厚盘"
+    ],
+    "title": "厚恒星盘",
+    "english": "thick stellar disk",
+    "definition": "相对薄恒星盘具有较大垂向尺度的恒星组分，其运动学和族群性质也可不同。",
+    "unit": "不适用",
+    "scope": "仅单组分等温平衡关系不能唯一确定其形成于加热、早期湍流或其他历史。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.4.3 pp.518–520"
+  },
+  {
+    "id": "c11-pseudobulge",
+    "kind": "term",
+    "aliases": [
+      "伪核球"
+    ],
+    "title": "伪核球",
+    "english": "pseudobulge",
+    "definition": "具有部分盘样运动学、结构或形成特征的中央恒星增密组分，常与盘内长期演化相关。",
+    "unit": "不适用",
+    "scope": "定义和观测诊断需说明；不能仅凭一张照片或局部Q便指定形成历史。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5.3–11.5.4 pp.525–531"
+  },
+  {
+    "id": "c11-buckling",
+    "kind": "term",
+    "aliases": [
+      "屈曲"
+    ],
+    "title": "恒星棒的垂向屈曲",
+    "english": "bar buckling",
+    "definition": "棒结构发生向盘面上下不对称的垂向弯曲与加厚过程，可参与盒形或花生形中心结构形成。",
+    "unit": "不适用",
+    "scope": "不是局部轴对称Toomre不稳定；需三维轨道与全球模式分析。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.5.3–11.5.4 pp.525–531"
+  },
+  {
+    "id": "c11-density-wave",
+    "kind": "term",
+    "aliases": [
+      "密度波"
+    ],
+    "title": "盘中的密度波图样",
+    "english": "spiral density wave",
+    "definition": "密度扰动的波动图样可以以不同于单颗恒星运动的方式传播或旋转，恒星可穿过图样。",
+    "unit": "不适用",
+    "scope": "实际旋臂可瞬变、多模式或由棒驱动，本页物质线缠绕并未求出自洽密度波。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.6 pp.531–534"
+  },
+  {
+    "id": "c11-radial-migration",
+    "kind": "term",
+    "aliases": [
+      "径向迁移"
+    ],
+    "title": "恒星径向迁移",
+    "english": "stellar radial migration",
+    "definition": "恒星与非轴对称扰动交换角动量，使其导引中心半径发生变化的过程。",
+    "unit": "不适用",
+    "scope": "可与随机加热有所区别，影响局部年龄和丰度分布；网页运动学示范未直接求迁移。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.7–11.8 pp.534–543"
+  },
+  {
+    "id": "c11-heating",
+    "kind": "term",
+    "aliases": [
+      "加热"
+    ],
+    "title": "恒星盘动力学加热",
+    "english": "dynamical heating of a stellar disk",
+    "definition": "恒星随机速度弥散增大、轨道偏离近圆或薄层状态的过程，可能来自散射、扰动与并合等。",
+    "unit": "不适用",
+    "scope": "此处不是气体温度升高；净角动量迁移与随机加热不是同一物理量。",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) 第11章 §11.7–11.8 pp.534–543"
+  },
+  {
+    "id": "c8-hse-boundary",
+    "kind": "symbol",
+    "aliases": [
+      "M₂₀₀c",
+      "M200c",
+      "R₂₀₀c",
+      "R200c",
+      "V₂₀₀c",
+      "V200c"
+    ],
+    "title": "200c 暗晕边界尺度",
+    "english": "200c halo boundary scales",
+    "definition": "R200c内平均密度为200ρcrit，M200c是其内质量，V200c=√(GM200c/R200c)并决定T200c。",
+    "unit": "M☉；kpc；km s⁻¹",
+    "scope": "边界采用z=0、H0=70的教学设置；参考密度不是气体局部密度。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "hydrostatic",
+      "hse-lab"
+    ],
+    "source": "MBW (2010) 第8章 §8.2.1 pp.371–373"
+  },
+  {
+    "id": "c8-hse-g",
+    "kind": "symbol",
+    "aliases": [
+      "g(c)",
+      "g(x)",
+      "g"
+    ],
+    "title": "NFW 势模型的质量积分函数",
+    "english": "NFW mass factor",
+    "definition": "g(c)=ln(1+c)−c/(1+c)来自NFW球壳质量积分，用于将势阱参数写为b=2c/[ηg(c)]。",
+    "unit": "无量纲",
+    "scope": "此g是函数，而浮力实验g为重力加速度。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "hydrostatic",
+      "hse-lab"
+    ],
+    "source": "MBW (2010) 第8章 §8.2.1 pp.371–373"
+  },
+  {
+    "id": "c8-wind-rvt",
+    "kind": "symbol",
+    "aliases": [
+      "R",
+      "v",
+      "t",
+      "ρ₀",
+      "ρ0"
+    ],
+    "title": "风泡半径、薄壳速度与环境密度",
+    "english": "wind-bubble radius, speed and ambient density",
+    "definition": "R为薄壳半径，v=(3/5)R/t为相似解扩张速度，t为持续注能时间，ρ0=mp nH为均匀纯氢环境密度。",
+    "unit": "pc；km s⁻¹；Myr；g cm⁻³",
+    "scope": "与瞬时爆炸的2/5时间指数不同；忽略泡内部辐射但允许外壳辐射。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "wind-lab"
+    ],
+    "source": "MBW (2010) 第8章 §8.6.2 pp.403–406"
+  },
+  {
+    "id": "c9-hii-radius-time",
+    "kind": "symbol",
+    "aliases": [
+      "R(t)",
+      "R",
+      "t"
+    ],
+    "title": "静态气体中建立电离区的半径和历时",
+    "english": "ionization-front radius and elapsed time",
+    "definition": "固定密度纯氢实验给R(t)=RS[1−exp(−t/trec)]^(1/3)，由持续光子供应逐步建立电离体积。",
+    "unit": "pc；时间",
+    "scope": "此解未跟踪气压驱动的实际气体膨胀和光传播前沿的早期相对论限制。",
+    "chapters": [
+      9
+    ],
+    "contexts": [
+      "hii-lab"
+    ],
+    "source": "MBW (2010) 第9章 §9.4.2 pp.432–433；网页新增局部光子预算示范"
+  },
+  {
+    "id": "c9-efficiency-time",
+    "kind": "symbol",
+    "aliases": [
+      "t"
+    ],
+    "title": "固定初始自由落体时标下的经过时间",
+    "english": "elapsed time at fixed initial free-fall time",
+    "definition": "效率实验从初始气体开始计时，以恒定εff和初始tff给出气体指数消耗。",
+    "unit": "Myr",
+    "scope": "没有重新计算消耗过程中的密度与tff；实际气体供应和回流也被省略。",
+    "chapters": [
+      9
+    ],
+    "contexts": [
+      "efficiency-lab"
+    ],
+    "source": "MBW (2010) 第9章 §9.3 pp.425–428",
+    "tex": "t"
+  },
+  {
+    "id": "c10-sfh-l",
+    "kind": "symbol",
+    "aliases": [
+      "L(t)",
+      "L"
+    ],
+    "title": "形成史卷积后的总光响应",
+    "english": "integrated luminosity response",
+    "definition": "把历次形成质量与其当前年龄的SSP响应卷积所得总响应L(t)=∫ψ(t′)ℓSSP(t−t′)dt′。",
+    "unit": "本页任意光响应单位",
+    "scope": "总形成质量归一为1；没有真实滤镜或太阳光度标定。",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "sfh-lab"
+    ],
+    "source": "MBW (2010) 第10章 §10.3.2 pp.471–472"
+  },
+  {
+    "id": "c10-blackbody-t",
+    "kind": "symbol",
+    "aliases": [
+      "T"
+    ],
+    "title": "示范黑体温度",
+    "english": "demonstration blackbody temperature",
+    "definition": "尘埃屏实验用单温T生成入射黑体谱，再比较波长依赖消光如何改变谱形。",
+    "unit": "K",
+    "scope": "不是多年龄恒星族的唯一温度；未计算星族谱线或红外再辐射。",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "dust-lab"
+    ],
+    "source": "MBW (2010) 第10章 §10.3.1, 10.3.7 pp.470–471, 476–481",
+    "tex": "T"
+  },
+  {
+    "id": "c11-winding-t",
+    "kind": "symbol",
+    "aliases": [
+      "t"
+    ],
+    "title": "物质线差动转动的经过时间",
+    "english": "elapsed differential-rotation time",
+    "definition": "以固定平坦Vc让同一组物质标记持续绕转的时间，进入φ=φ0+Vct/R。",
+    "unit": "Gyr",
+    "scope": "只推进运动学位置，不求自引力、旋臂增长或棒驱动。",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "winding-lab"
+    ],
+    "source": "MBW (2010) 第11章 §11.6 pp.531–534",
+    "tex": "t"
+  },
+  {
+    "id": "c7-halo-m",
+    "kind": "symbol",
+    "aliases": [
+      "M",
+      "M(<r)"
+    ],
+    "title": "暗晕质量及其累计值",
+    "english": "halo mass and enclosed mass",
+    "definition": "本章M表示暗晕质量；M(<r)是某半径内的球对称累计质量。在并合树示意中M是一个节点所分配的暗晕质量。",
+    "unit": "M☉ 或图中以终态M0归一",
+    "scope": "自旋式使用同一边界内的总M；不同200c/200m边界不可自动混用。",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "opening",
+      "nfw-lab",
+      "structure",
+      "progenitors",
+      "boundaries",
+      "halo-model",
+      "practice"
+    ],
+    "source": "MBW (2010) 第7章 §7.3–7.6 pp.336–365"
+  },
+  {
+    "id": "c7-halo-radius-r",
+    "kind": "symbol",
+    "aliases": [
+      "R"
+    ],
+    "title": "NFW 边界半径的主记号",
+    "english": "halo boundary radius",
+    "definition": "NFW公式中的R在带200c下标时指平均密度200ρcrit所定义的暗晕外半径。",
+    "unit": "kpc",
+    "scope": "峰平滑实验的R是平滑尺度，有独立局部解释；这里不把半径当作实体壳层。",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "opening",
+      "nfw-lab",
+      "boundaries",
+      "boundary-lab"
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354"
+  },
+  {
+    "id": "c7-redshift",
+    "kind": "symbol",
+    "aliases": [
+      "z"
+    ],
+    "title": "暗晕模型的红移",
+    "english": "redshift of the halo model",
+    "definition": "描述模型所在宇宙历时的宇宙学红移；本章NFW及边界实验固定z=0。",
+    "unit": "无量纲",
+    "scope": "三轴图中的笛卡尔z坐标另有专门解释，不能混作红移。",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "opening",
+      "nfw-lab",
+      "boundaries",
+      "boundary-lab"
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354",
+    "tex": "z"
+  },
+  {
+    "id": "c7-hubble",
+    "kind": "symbol",
+    "aliases": [
+      "H",
+      "H0",
+      "H₀"
+    ],
+    "title": "今日哈勃膨胀率",
+    "english": "present-day Hubble rate",
+    "definition": "H0是今日宇宙膨胀率，网页固定70 km s⁻¹ Mpc⁻¹，并据此计算今日临界密度。",
+    "unit": "km s⁻¹ Mpc⁻¹",
+    "scope": "不是局部暗晕绕转角速度或气体压力高度。",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "opening",
+      "nfw-lab",
+      "boundaries",
+      "boundary-lab"
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354",
+    "tex": "H_0"
+  },
+  {
+    "id": "c7-peak-coordinate",
+    "kind": "symbol",
+    "aliases": [
+      "x"
+    ],
+    "title": "一维示范场的位置坐标",
+    "english": "one-dimensional field coordinate",
+    "definition": "周期盒中量取密度场的位置，六个余弦模式通过kjx+φj在该坐标上叠加。",
+    "unit": "盒长单位",
+    "scope": "x不是NFW无量纲半径r/rs；盒长与峰数只作教学示范。",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "peaks",
+      "peak-lab"
+    ],
+    "source": "MBW (2010) 第7章 §7.1 pp.321–326",
+    "tex": "x"
+  },
+  {
+    "id": "c7-filter-k",
+    "kind": "symbol",
+    "aliases": [
+      "k"
+    ],
+    "title": "滤波中的傅里叶波数",
+    "english": "Fourier wavenumber in the filter",
+    "definition": "sharp-k中的k是空间傅里叶波数，逐步扩展保留的波数范围相当于增加更小尺度的模式。",
+    "unit": "长度⁻¹",
+    "scope": "独立增量结论依赖高斯场及锐截波数滤波，不适用于所有实空间窗口。",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "abundance",
+      "excursion",
+      "walk-lab",
+      "progenitors",
+      "prog-lab"
+    ],
+    "source": "MBW (2010) 第7章 §7.2.2–7.3.1 pp.328–331, 336–338",
+    "tex": "k"
+  },
+  {
+    "id": "c7-normal-random",
+    "kind": "symbol",
+    "aliases": [
+      "N",
+      "𝒩"
+    ],
+    "title": "正态分布记号",
+    "english": "normal-distribution notation",
+    "definition": "𝒩(0,ΔS)表示均值为0、方差为ΔS的高斯随机变量，用来生成密度轨迹的独立增量。",
+    "unit": "随机量δ无量纲",
+    "scope": "花体𝒩不是粒子个数或恒星形成律指数。",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "walk-lab"
+    ],
+    "source": "MBW (2010) 第7章 §7.2.2 pp.328–331",
+    "tex": "\\mathcal N(0,\\Delta S)"
+  },
+  {
+    "id": "c7-difference",
+    "kind": "notation",
+    "aliases": [
+      "Δ"
+    ],
+    "title": "方差或屏障的有限差",
+    "english": "finite variance or barrier difference",
+    "definition": "大写Δ表示两个指定状态之差；EPS中ΔS为祖先与终态方差差，Δω为较早与较晚坍缩屏障差。",
+    "unit": "本处均无量纲",
+    "scope": "Δ不是独立物理量；须与后面的S或ω共同读取。",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "excursion",
+      "walk-lab",
+      "progenitors",
+      "prog-lab"
+    ],
+    "source": "MBW (2010) 第7章 §7.2.2–7.3.1 pp.328–331, 336–338",
+    "tex": "\\Delta"
+  },
+  {
+    "id": "c7-spin-boundary",
+    "kind": "symbol",
+    "aliases": [
+      "V",
+      "Vh",
+      "V_h",
+      "rh",
+      "r_h"
+    ],
+    "title": "另一自旋约定的边界速度与半径",
+    "english": "halo boundary speed and radius in the spin definition",
+    "definition": "λ′中的rh是定义质量M的暗晕边界半径，Vh=√(GM/rh)，两者提供角动量归一化尺度。",
+    "unit": "rh：kpc；Vh：km s⁻¹",
+    "scope": "λ′与Peebles λ的转换还取决于能量与密度结构。",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "structure"
+    ],
+    "source": "MBW (2010) 第7章 §7.5.4 pp.358–362",
+    "tex": "V_h,r_h"
+  },
+  {
+    "id": "c7-triaxial-xyz",
+    "kind": "symbol",
+    "aliases": [
+      "x",
+      "y",
+      "z"
+    ],
+    "title": "三轴模型的空间坐标",
+    "english": "Cartesian coordinates of the triaxial model",
+    "definition": "x、y、z沿椭球三条主轴量取空间位置，m²=(x/a)²+(y/b)²+(z/c)²定义椭球半径。",
+    "unit": "以图中轴尺度归一",
+    "scope": "图中z=0是空间截面，不是宇宙红移零。",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "body-figure-7-structure-13"
+    ],
+    "source": "MBW (2010) 第7章 §7.5.2 pp.354–355"
+  },
+  {
+    "id": "c7-triaxial-rho",
+    "kind": "symbol",
+    "aliases": [
+      "ρ"
+    ],
+    "title": "椭球半径上的模型密度",
+    "english": "density in the ellipsoidal illustration",
+    "definition": "几何示意把NFW形状写为ρ(m)∝[m(1+m)²]⁻¹，用等密度面比较球形和三轴结构。",
+    "unit": "图中相对密度",
+    "scope": "只展示保持abc=1的几何变形，未预测子结构或完成动力学平衡求解。",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "body-figure-7-structure-13"
+    ],
+    "source": "MBW (2010) 第7章 §7.5.2 pp.354–355"
+  },
+  {
+    "id": "c7-pair-separation",
+    "kind": "symbol",
+    "aliases": [
+      "r"
+    ],
+    "title": "配对间距",
+    "english": "pair separation",
+    "definition": "晕模型配对示范中r是两个成员标记之间的距离，分箱内分别计同晕与跨晕配对。",
+    "unit": "盒长单位",
+    "scope": "不是从晕心到单个成员的半径，也不是已归一化的相关函数。",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "halo-model",
+      "hpair-lab"
+    ],
+    "source": "MBW (2010) 第7章 §7.6 pp.362–365",
+    "tex": "r"
+  },
+  {
+    "id": "c7-halo-labels",
+    "kind": "notation",
+    "aliases": [
+      "A",
+      "B",
+      "C"
+    ],
+    "title": "示范暗晕的身份标签",
+    "english": "identifiers of the three example halos",
+    "definition": "A、B、C只标识配对示范中三个固定宿主，帮助判断一对成员来自同晕还是不同晕。",
+    "unit": "不适用",
+    "scope": "字母不代表磁场、坍缩屏障或物理参数。",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "hpair-lab"
+    ],
+    "source": "MBW (2010) 第7章 §7.6 pp.362–365"
+  },
+  {
+    "id": "c8-hse-radii",
+    "kind": "symbol",
+    "aliases": [
+      "r",
+      "R"
+    ],
+    "title": "静力暗晕中的球半径",
+    "english": "spherical radius in the hydrostatic halo",
+    "definition": "r是距暗晕中心的球半径；归一化曲线以r/R200c作横轴，R200c是指定临界密度边界。",
+    "unit": "kpc 或无量纲半径比",
+    "scope": "不是对流高度z，也不是冷却前沿的拉格朗日轨迹。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "hydrostatic",
+      "hse-lab"
+    ],
+    "source": "MBW (2010) 第8章 §8.2.1 pp.371–373"
+  },
+  {
+    "id": "c8-hse-mass",
+    "kind": "symbol",
+    "aliases": [
+      "M",
+      "V"
+    ],
+    "title": "暗晕边界质量与速度的主记号",
+    "english": "halo mass and circular-speed bases",
+    "definition": "HSE实验M在M200c中表示定义边界内的暗晕质量，V在V200c中表示其圆速度尺度。",
+    "unit": "M☉；km s⁻¹",
+    "scope": "并非气体总质量，网页只指定气体相对密度归一。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "hydrostatic",
+      "hse-lab"
+    ],
+    "source": "MBW (2010) 第8章 §8.2.1 pp.371–373"
+  },
+  {
+    "id": "c8-cooling-gas-mass",
+    "kind": "symbol",
+    "aliases": [
+      "M",
+      "Mgas",
+      "M_gas"
+    ],
+    "title": "初始气体剖面内的总质量",
+    "english": "total mass of the initial gas profile",
+    "definition": "冷却半径实验对初始ρ∝r⁻²气体分布积分到外边界R，得到Mgas=4πmpnH(R)R³。",
+    "unit": "M☉",
+    "scope": "质量在中心有限但密度奇异；这不是暗晕总质量。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "cooling-radius",
+      "cradius-lab"
+    ],
+    "source": "MBW (2010) 第8章 §8.4.2 pp.387–389"
+  },
+  {
+    "id": "c8-cooling-r",
+    "kind": "symbol",
+    "aliases": [
+      "r"
+    ],
+    "title": "初始剖面中的球半径",
+    "english": "radius within the initial cooling profile",
+    "definition": "冷却诊断在每一球半径r计算初始密度与tcool(r)，再与年龄t比较。",
+    "unit": "kpc",
+    "scope": "没有跟踪同一气团运动，r也不代表对流位移高度。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "cooling-radius",
+      "cradius-lab",
+      "practice-question-4"
+    ],
+    "source": "MBW (2010) 第8章 §8.4.2 pp.387–389"
+  },
+  {
+    "id": "c8-thermal-perturbation",
+    "kind": "symbol",
+    "aliases": [
+      "δ",
+      "t"
+    ],
+    "title": "小温度扰动与经过时间",
+    "english": "small thermal perturbation and elapsed time",
+    "definition": "δ在δθ中表示相对平衡态的微小偏离，t为实际经过时间，τ=tΓ/(5kBT0)为无量纲时间。",
+    "unit": "δθ：无量纲；t：时间",
+    "scope": "线性指数响应只在扰动足够小时成立，不能外推为完整非线性多相演化。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "thermal-lab"
+    ],
+    "source": "MBW (2010) 第8章 §8.5.1 pp.393–395"
+  },
+  {
+    "id": "c8-delta-height",
+    "kind": "notation",
+    "aliases": [
+      "Δ"
+    ],
+    "title": "高度的有限位移符号",
+    "english": "finite height-displacement notation",
+    "definition": "浮力图中Δz表示气团从原位置到新高度的位移，向上取正。",
+    "unit": "Δz：长度",
+    "scope": "Δ只是差分记号，不能脱离后面的z单独赋予单位或红移意义。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "convection",
+      "buoy-lab"
+    ],
+    "source": "MBW (2010) 第8章 §8.2.2 pp.373–374"
+  },
+  {
+    "id": "c8-feedback-radius-time",
+    "kind": "symbol",
+    "aliases": [
+      "R",
+      "t"
+    ],
+    "title": "反馈示意的外扩半径与时间",
+    "english": "feedback expansion radius and time",
+    "definition": "R为瞬时爆炸激波或持续风泡薄壳的外边界，t为相应注能开始后的经过时间；不同注能律给不同时间指数。",
+    "unit": "pc；时间",
+    "scope": "图解同时比较R∝t^(2/5)和R∝t^(3/5)，不能把任一指数当作所有反馈通用律。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "body-figure-8-feedback-14"
+    ],
+    "source": "MBW (2010) 第8章 §8.6.1–8.6.2 pp.398–406"
+  },
+  {
+    "id": "c8-optical-bands",
+    "kind": "term",
+    "aliases": [
+      "B",
+      "V",
+      "r"
+    ],
+    "title": "光学 B、V 与 r 滤镜",
+    "english": "optical B, V and r bands",
+    "definition": "观测合成中的B、V、r表示不同光学通带，用于组合恒星与其他光学辐射的颜色。",
+    "unit": "通带名称",
+    "scope": "这里r不是球半径，B不是磁场，V不是速度；显示色也不直接等于温度。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "body-figure-8-observations-15"
+    ],
+    "source": "MBW (2010) 第8章 §8.8 pp.410–416"
+  },
+  {
+    "id": "c9-temperature",
+    "kind": "symbol",
+    "aliases": [
+      "T"
+    ],
+    "title": "气体温度",
+    "english": "gas temperature",
+    "definition": "T是气体热运动温度；Jeans实验用分子气体等温温度，H II实验固定电离气体约10⁴K。",
+    "unit": "K",
+    "scope": "两种成分与温度范围不同，声速和平均分子量必须使用各实验的本地约定。",
+    "chapters": [
+      9
+    ],
+    "contexts": [
+      "clouds",
+      "jeans-lab",
+      "individual",
+      "hii-lab"
+    ],
+    "source": "MBW (2010) 第9章 §9.1.2, 9.4.2 pp.419–420, 432–433",
+    "tex": "T"
+  },
+  {
+    "id": "c9-hydrogen-number",
+    "kind": "symbol",
+    "aliases": [
+      "nH",
+      "n_H"
+    ],
+    "title": "氢核数密度",
+    "english": "hydrogen-nucleus number density",
+    "definition": "单位体积的氢核数，无论氢以原子、分子或电离形式存在都按核计数。",
+    "unit": "cm⁻³",
+    "scope": "Jeans实验滑块n是总粒子密度，包含氦的分子气体中不等于nH。",
+    "chapters": [
+      9
+    ],
+    "contexts": [
+      "clouds",
+      "jeans-lab",
+      "molecules"
+    ],
+    "source": "MBW (2010) 第9章 §9.1–9.2 pp.418–424"
+  },
+  {
+    "id": "c9-case-b",
+    "kind": "term",
+    "aliases": [
+      "B",
+      "case-B",
+      "case B"
+    ],
+    "title": "case-B 复合近似",
+    "english": "case-B recombination approximation",
+    "definition": "直接复合到氢基态产生的电离光子被假定在局部再次吸收，因此净复合系数αB不计这一直接基态通道。",
+    "unit": "不适用",
+    "scope": "B在此标记复合约定，不是磁场；光学薄、逃逸或尘埃吸收时假设需重新检查。",
+    "chapters": [
+      9
+    ],
+    "contexts": [
+      "hii-lab"
+    ],
+    "source": "MBW (2010) 第9章 §9.4.2 pp.432–433"
+  },
+  {
+    "id": "c9-q-stability",
+    "kind": "symbol",
+    "aliases": [
+      "Q"
+    ],
+    "title": "盘的局部稳定性参数",
+    "english": "local disk stability parameter",
+    "definition": "恒星形成阈值讨论中Q衡量盘的转动与压力或随机运动相对自引力的局部支持。",
+    "unit": "无量纲",
+    "scope": "这里Q不是H II电离光子率；气体与恒星Q的具体分母不同，详见第11章。",
+    "chapters": [
+      9
+    ],
+    "contexts": [
+      "laws"
+    ],
+    "source": "MBW (2010) 第9章 §9.5.3 pp.438–439",
+    "tex": "Q"
+  },
+  {
+    "id": "c10-single-luminosity",
+    "kind": "symbol",
+    "aliases": [
+      "L"
+    ],
+    "title": "单星的教学光度标度",
+    "english": "demonstration single-star luminosity",
+    "definition": "寿命实验单独用L/L☉=m^3.5展示恒星质量与光度的粗略联系。",
+    "unit": "L☉",
+    "scope": "不是原书寿命拟合自动提供的精确光度，也不覆盖所有质量或演化阶段。",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "lifetime-lab"
+    ],
+    "source": "MBW (2010) 第10章 §10.1.4–10.1.5 pp.460–463"
+  },
+  {
+    "id": "c10-population-lm",
+    "kind": "symbol",
+    "aliases": [
+      "L",
+      "M"
+    ],
+    "title": "星族光度与初始形成质量",
+    "english": "population luminosity and initial formed mass",
+    "definition": "SSP实验的L只含仍在主序的光，M是其初始总形成质量；SFH实验也按总形成质量归一光响应。",
+    "unit": "L：模型光度；M：初始形成质量",
+    "scope": "M不是当前存活星质量；离开主序不等于质量已全部回流。",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "ssp-lab"
+    ],
+    "source": "MBW (2010) 第10章 §10.3.2–10.3.3 pp.471–474"
+  },
+  {
+    "id": "c10-ssp-age",
+    "kind": "symbol",
+    "aliases": [
+      "t"
+    ],
+    "title": "简单星群年龄",
+    "english": "age of the simple stellar population",
+    "definition": "从共同形成事件到当前时刻的经过时间，用于求主序转折质量并截断主序积分上限。",
+    "unit": "Gyr",
+    "scope": "后主序贡献被省略；年龄不是恒星总质量或反馈延迟分布。",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "ssp-lab"
+    ],
+    "source": "MBW (2010) 第10章 §10.3.3 pp.472–474"
+  },
+  {
+    "id": "c10-ke-label",
+    "kind": "notation",
+    "aliases": [
+      "K",
+      "E"
+    ],
+    "title": "K 与 E 修正的字母标签",
+    "english": "K- and E-correction labels",
+    "definition": "K在此指红移引起的通带对应修正；E表示恒星族本身随时间演化的光度修正。",
+    "unit": "不适用",
+    "scope": "不是温度单位K或爆炸能量E，两种修正不可混用。",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "synthesis"
+    ],
+    "source": "MBW (2010) 第10章 §10.3.6 pp.475–476"
+  },
+  {
+    "id": "c10-optical-bv",
+    "kind": "term",
+    "aliases": [
+      "B",
+      "V"
+    ],
+    "title": "B 与 V 光学通带",
+    "english": "B and V optical bands",
+    "definition": "B、V分别表示蓝光与可见光的标准光学通带，本页用0.44和0.55μm的窄带近似。",
+    "unit": "通带名称",
+    "scope": "字母不是磁场或体积，AB表示B带消光而非AB星等系统。",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "dust-lab"
+    ],
+    "source": "MBW (2010) 第10章 §10.3.7 pp.476–481"
+  },
+  {
+    "id": "c10-dust-a-e",
+    "kind": "symbol",
+    "aliases": [
+      "A",
+      "E"
+    ],
+    "title": "消光与色余的主记号",
+    "english": "extinction and color-excess notation",
+    "definition": "A在Aλ、AB、AV中表示减光星等；E(B−V)=AB−AV表示颜色相对无尘状态的变化。",
+    "unit": "mag",
+    "scope": "A不是化学流入率，E也不是能量；下标与括号是定义的一部分。",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "dust-lab"
+    ],
+    "source": "MBW (2010) 第10章 §10.3.7 pp.476–481"
+  },
+  {
+    "id": "c10-chemical-star-time",
+    "kind": "symbol",
+    "aliases": [
+      "M",
+      "M⋆",
+      "Mstar",
+      "M_star",
+      "t"
+    ],
+    "title": "锁定恒星质量与化学历时",
+    "english": "locked stellar mass and chemical-evolution time",
+    "definition": "化学箱图中的恒星质量指永久锁定在长寿命星和遗迹的部分，其增长率为(1−R)Ψ；t为模型经过时间。",
+    "unit": "M：质量；t：时间",
+    "scope": "锁定质量不同于总形成质量，图中回流已由R计入，不能重复补充。",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "chemistry",
+      "body-figure-10-chemistry-19",
+      "inflow-lab",
+      "practice-question-4",
+      "practice-question-5"
+    ],
+    "source": "MBW (2010) 第10章 §10.4 pp.486–492"
+  },
+  {
+    "id": "c10-za",
+    "kind": "symbol",
+    "aliases": [
+      "ZA",
+      "Z_A"
+    ],
+    "title": "流入气体的金属质量分数",
+    "english": "inflow metallicity",
+    "definition": "ZA为进入化学箱的气体金属质量分数，所以流入金属质量率为ZA A。",
+    "unit": "无量纲",
+    "scope": "网页稳态原初流入实验取ZA=0；一般流入不一定无金属。",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "chemistry",
+      "body-figure-10-chemistry-19"
+    ],
+    "source": "MBW (2010) 第10章 §10.4.3 pp.490–492",
+    "tex": "Z_A"
+  },
+  {
+    "id": "c11-disk-xyz",
+    "kind": "symbol",
+    "aliases": [
+      "x",
+      "y"
+    ],
+    "title": "盘图解的平面坐标",
+    "english": "disk-plane Cartesian coordinates",
+    "definition": "x、y是在盘面内相互垂直的空间坐标，柱半径满足R=√(x²+y²)，图中通常以Rd归一。",
+    "unit": "kpc 或以Rd归一",
+    "scope": "这里y不是Bessel公式的R/(2Rd)，也不是化学产额。",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "body-figure-11-exponential-21",
+      "body-figure-11-instability-20"
+    ],
+    "source": "MBW (2010) 第11章 §11.1.1, 11.5 pp.496–498, 521–531"
+  },
+  {
+    "id": "c11-figure-height",
+    "kind": "symbol",
+    "aliases": [
+      "h",
+      "ρ"
+    ],
+    "title": "三维盘图的厚度与体密度",
+    "english": "illustration scale height and volume density",
+    "definition": "图解定义ρ(R,z)=Σ0 exp(−R/Rd)sech²(z/h)/(2h)，h为该图独立指定的垂向厚度标度。",
+    "unit": "h：长度；ρ：质量/体积",
+    "scope": "h/Rd=0.18是展示几何的输入，不是拟合观测厚度，也不是哈勃归一因子。",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "body-figure-11-exponential-21"
+    ],
+    "source": "MBW (2010) 第11章 §11.1.1, 11.4.3 pp.496–498, 518–520"
+  },
+  {
+    "id": "c11-bar-axes",
+    "kind": "symbol",
+    "aliases": [
+      "a",
+      "b"
+    ],
+    "title": "Gaussian 棒的两轴尺度",
+    "english": "Gaussian-bar axis scales",
+    "definition": "程序图用椭圆Gaussian密度exp[−(x²/a²+y²/b²)/2]/(2πab)构造棒，a和b分别控制长短方向尺度。",
+    "unit": "以Rd归一",
+    "scope": "参数只保证几何与质量归一，没有解棒不稳定或角动量交换。",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "body-figure-11-instability-20"
+    ],
+    "source": "MBW (2010) 第11章 §11.5 pp.521–531"
+  },
+  {
+    "id": "c11-figure-mass",
+    "kind": "symbol",
+    "aliases": [
+      "M"
+    ],
+    "title": "棒盘对照图的共同总质量",
+    "english": "common total mass of the morphology comparison",
+    "definition": "两幅二维模型采用相同总质量M并各自归一，颜色显示Σ/(M/Rd²)的对数。",
+    "unit": "图中归一M=1",
+    "scope": "相同总质量不保证同光度；图形不是NGC1300质量反演。",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "body-figure-11-instability-20"
+    ],
+    "source": "MBW (2010) 第11章 §11.5 pp.521–531"
+  },
+  {
+    "id": "c7-overdensity-h",
+    "kind": "symbol",
+    "aliases": [
+      "Δh",
+      "Δ_h",
+      "Δ"
+    ],
+    "title": "相对平均物质密度的暗晕过密度",
+    "english": "halo overdensity relative to mean matter",
+    "definition": "一般边界定义中Δh=ρ̄halo/ρ̄m；因ρ̄m=Ωmρcrit，相对临界密度的倍率为ΔhΩm。200c边界因而满足ΔhΩm=200。",
+    "unit": "无量纲",
+    "scope": "此大写Δh是整体边界过密度，不是线性坍缩阈值δc，也不是EPS方差差。",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "chapter-references",
+      "boundaries"
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354；网页已核对式7.141作者勘误",
+    "tex": "\\Delta_h"
+  },
+  {
+    "id": "c7-m-label",
+    "kind": "notation",
+    "aliases": [
+      "m",
+      "200m",
+      "200c"
+    ],
+    "title": "暗晕边界的 m 与 c 标签",
+    "english": "mean-matter and critical-density labels",
+    "definition": "200m的m表示以物质平均密度为参考，200c的c表示以临界密度为参考；两者的“200”都是相应平均密度倍率。",
+    "unit": "不适用",
+    "scope": "下标m/c是定义标签，不是独立质量变量、光速或米的单位。",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "boundaries",
+      "boundary-lab",
+      "practice-question-4"
+    ],
+    "source": "MBW (2010) 第7章 §7.5.1 pp.351–354"
+  },
+  {
+    "id": "c7-h-units",
+    "kind": "symbol",
+    "aliases": [
+      "h"
+    ],
+    "title": "哈勃常数的无量纲归一因子",
+    "english": "dimensionless Hubble parameter",
+    "definition": "常用h=H0/(100 km s⁻¹ Mpc⁻¹)把宇宙学距离和质量单位中的哈勃常数依赖显式保留。",
+    "unit": "无量纲",
+    "scope": "PS教学页的质量与共动数密度没有额外h因子，不能自行把M☉换成h⁻¹M☉。",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "ps-lab",
+      "abundance"
+    ],
+    "source": "MBW (2010) 第7章 §7.2 pp.326–334"
+  }
+]

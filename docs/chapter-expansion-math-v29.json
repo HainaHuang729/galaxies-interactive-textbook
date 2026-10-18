@@ -1,0 +1,5288 @@
+{
+  "checkedAt": "2026-10-17T02:32:38.439Z",
+  "width": 320,
+  "records": [
+    {
+      "chapter": 1,
+      "id": "opening",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 1,
+      "id": "opening-experiment",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 1,
+      "id": "diversity",
+      "inline": 0,
+      "formulas": 1,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 1,
+      "id": "body-figure-1-diversity-0",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 3,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 1,
+      "id": "ingredients",
+      "inline": 5,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 1,
+      "id": "baryon-lab",
+      "inline": 10,
+      "formulas": 0,
+      "svgMath": 1,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 1,
+      "id": "baryon-lab-model",
+      "inline": 10,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 1,
+      "id": "ingredients-reading-1",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 1,
+      "id": "clocks",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 1,
+      "id": "clocks-experiment-2",
+      "inline": 6,
+      "formulas": 0,
+      "svgMath": 1,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 1,
+      "id": "clocks-experiment-2-model",
+      "inline": 4,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 1,
+      "id": "clocks-reading-1",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 1,
+      "id": "body-figure-1-clocks-1",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 3,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 1,
+      "id": "history",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 1,
+      "id": "practice",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 1,
+      "id": "practice-question-2",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 1,
+      "id": "practice-question-3",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 1,
+      "id": "chapter-references",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "opening",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "opening-experiment",
+      "inline": 11,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "observing",
+      "inline": 4,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "spectral-lab",
+      "inline": 13,
+      "formulas": 0,
+      "svgMath": 5,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "spectral-lab-model",
+      "inline": 5,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "observing-reading-1",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "resolution-lab",
+      "inline": 16,
+      "formulas": 0,
+      "svgMath": 3,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "resolution-lab-model",
+      "inline": 1,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "body-figure-2-observing-2",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "stars",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "body-figure-2-stars-3",
+      "inline": 9,
+      "formulas": 0,
+      "svgMath": 8,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "galaxies",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "profile-lab",
+      "inline": 11,
+      "formulas": 0,
+      "svgMath": 3,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "profile-lab-model",
+      "inline": 5,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "galaxies-reading-1",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "illustration-edge-on-dust",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "population",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "survey-lab",
+      "inline": 6,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "survey-lab-model",
+      "inline": 13,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "population-reading-1",
+      "inline": 5,
+      "formulas": 1,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "universe",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "section-5",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "section-6",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "section-7",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "section-8",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "section-9",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "section-10",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "universe-reading-1",
+      "inline": 5,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "practice",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "practice-question-2",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "practice-question-3",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "practice-question-4",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 2,
+      "id": "chapter-references",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "opening",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "opening-experiment",
+      "inline": 19,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "geometry",
+      "inline": 16,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "background",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "components-lab",
+      "inline": 14,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "components-lab-model",
+      "inline": 8,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "distance",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "distance-lab",
+      "inline": 22,
+      "formulas": 0,
+      "svgMath": 3,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "distance-lab-model",
+      "inline": 6,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "distance-reading-1",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "body-figure-3-distance-4",
+      "inline": 15,
+      "formulas": 0,
+      "svgMath": 9,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "body-figure-3-distance-5",
+      "inline": 20,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "thermal",
+      "inline": 10,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "body-figure-3-planck-cmb-2013",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "inflation",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "inflation-lab",
+      "inline": 9,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "inflation-lab-model",
+      "inline": 3,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "inflation-reading-1",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "practice",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "practice-question-2",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "practice-question-3",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "practice-question-4",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 3,
+      "id": "chapter-references",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "opening",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "opening-experiment",
+      "inline": 6,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "linear",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "jeans-lab",
+      "inline": 13,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "jeans-lab-model",
+      "inline": 15,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "linear-reading-1",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "body-figure-4-linear-6",
+      "inline": 16,
+      "formulas": 0,
+      "svgMath": 4,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "growth",
+      "inline": 5,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "growth-lab",
+      "inline": 46,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "growth-lab-model",
+      "inline": 6,
+      "formulas": 5,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "body-figure-4-growth-7",
+      "inline": 33,
+      "formulas": 0,
+      "svgMath": 16,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "displacement",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "sheet-lab",
+      "inline": 5,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "sheet-lab-model",
+      "inline": 7,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "relativity",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "relativity-evidence-1",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "relativity-evidence-2",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "relativity-evidence-3",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "relativity-evidence-4",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "transfer",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "transfer-lab",
+      "inline": 18,
+      "formulas": 0,
+      "svgMath": 4,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "transfer-lab-model",
+      "inline": 8,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "statistics",
+      "inline": 6,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "smoothing-lab",
+      "inline": 15,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "smoothing-lab-model",
+      "inline": 6,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "origin",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "practice",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "practice-question-2",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "practice-question-3",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "practice-question-4",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "practice-question-5",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 4,
+      "id": "chapter-references",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "opening",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "sphere-lab",
+      "inline": 11,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "spherical",
+      "inline": 13,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "virial-lab",
+      "inline": 12,
+      "formulas": 0,
+      "svgMath": 3,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "virial-lab-model",
+      "inline": 2,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "similarity",
+      "inline": 9,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "body-figure-5-similarity-9",
+      "inline": 15,
+      "formulas": 0,
+      "svgMath": 6,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "ellipsoid",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "body-figure-5-ellipsoid-8",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "dynamics",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "orbit-lab",
+      "inline": 9,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "orbit-lab-model",
+      "inline": 7,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "dynamics-reading-1",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "jeans",
+      "inline": 7,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "jeans-lab",
+      "inline": 16,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "jeans-lab-model",
+      "inline": 5,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "relaxation",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "relax-lab",
+      "inline": 19,
+      "formulas": 0,
+      "svgMath": 9,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "relax-lab-model",
+      "inline": 3,
+      "formulas": 1,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "mixing",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "mix-lab",
+      "inline": 11,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "mix-lab-model",
+      "inline": 7,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "mixing-reading-1",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "illustration-stellar-stream",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "hierarchy",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "practice",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "practice-question-2",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "practice-question-3",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "practice-question-4",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "practice-question-5",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 5,
+      "id": "chapter-references",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "opening",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "pair-lab",
+      "inline": 9,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "statistics",
+      "inline": 10,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "velocity",
+      "inline": 7,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "redshift",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "rsd-lab",
+      "inline": 17,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "rsd-lab-model",
+      "inline": 10,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "kaiser-lab",
+      "inline": 17,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "kaiser-lab-model",
+      "inline": 4,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "evolution",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "galaxies",
+      "inline": 7,
+      "formulas": 1,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "bias-lab",
+      "inline": 13,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "bias-lab-model",
+      "inline": 3,
+      "formulas": 1,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "body-figure-6-galaxies-11",
+      "inline": 9,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "lensing",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "lens-lab",
+      "inline": 12,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "lens-lab-model",
+      "inline": 13,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "body-figure-6-lensing-10",
+      "inline": 18,
+      "formulas": 0,
+      "svgMath": 6,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "body-figure-6-cosmic-horseshoe",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "shear",
+      "inline": 5,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "shear-lab",
+      "inline": 10,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "shear-lab-model",
+      "inline": 6,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "cmb",
+      "inline": 6,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "cmb-lab",
+      "inline": 8,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "cmb-lab-model",
+      "inline": 4,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "cmb-reading-1",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "cmb-sampling-lab",
+      "inline": 14,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "cmb-sampling-lab-model",
+      "inline": 4,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "practice",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "practice-question-2",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "practice-question-3",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "practice-question-4",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "practice-question-5",
+      "inline": 5,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 6,
+      "id": "chapter-references",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "opening",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "nfw-lab",
+      "inline": 25,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "nfw-lab-model",
+      "inline": 5,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "peaks",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "peak-lab",
+      "inline": 6,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "peak-lab-model",
+      "inline": 1,
+      "formulas": 1,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "abundance",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "ps-lab",
+      "inline": 14,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "ps-lab-model",
+      "inline": 6,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "abundance-reading-1",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "excursion",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "walk-lab",
+      "inline": 11,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "walk-lab-model",
+      "inline": 2,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "progenitors",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "prog-lab",
+      "inline": 13,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "prog-lab-model",
+      "inline": 4,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "progenitors-reading-1",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "body-figure-7-progenitors-12",
+      "inline": 6,
+      "formulas": 0,
+      "svgMath": 1,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "bias",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "hbias-lab",
+      "inline": 15,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "hbias-lab-model",
+      "inline": 1,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "bias-concept-4",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "structure",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "structure-concept-2",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "structure-concept-3",
+      "inline": 4,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "body-figure-7-structure-13",
+      "inline": 21,
+      "formulas": 0,
+      "svgMath": 4,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "body-figure-7-bullet-cluster-composite",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "boundaries",
+      "inline": 7,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "boundary-lab",
+      "inline": 26,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "boundary-lab-model",
+      "inline": 6,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "halo-escape-lab",
+      "inline": 16,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "halo-escape-lab-model",
+      "inline": 7,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "halo-model",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "hpair-lab",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "hpair-lab-model",
+      "inline": 4,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "halo-model-reading-1",
+      "inline": 2,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "practice",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "practice-question-2",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "practice-question-3",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "practice-question-4",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "practice-question-5",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "practice-question-6",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 7,
+      "id": "chapter-references",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "opening",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "shock-lab",
+      "inline": 25,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "shock-lab-model",
+      "inline": 4,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "radiative",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "radcool-lab",
+      "inline": 16,
+      "formulas": 0,
+      "svgMath": 3,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "radcool-lab-model",
+      "inline": 6,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "compton",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "compton-lab",
+      "inline": 13,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "compton-lab-model",
+      "inline": 6,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "hydrostatic",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "hse-lab",
+      "inline": 17,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "hse-lab-model",
+      "inline": 9,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "convection",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "buoy-lab",
+      "inline": 12,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "buoy-lab-model",
+      "inline": 7,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "accretion",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "cooling-radius",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "cradius-lab",
+      "inline": 17,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "cradius-lab-model",
+      "inline": 3,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "instability",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "thermal-lab",
+      "inline": 13,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "thermal-lab-model",
+      "inline": 6,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "feedback",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "blast-lab",
+      "inline": 32,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "blast-lab-model",
+      "inline": 1,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "wind-lab",
+      "inline": 28,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "wind-lab-model",
+      "inline": 0,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "body-figure-8-feedback-14",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 1,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "simulations",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "observations",
+      "inline": 2,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "body-figure-8-observations-15",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "practice",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "practice-question-2",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "practice-question-3",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "practice-question-4",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "practice-question-5",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "practice-question-6",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 8,
+      "id": "chapter-references",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "opening",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "jeans-lab",
+      "inline": 18,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "jeans-lab-model",
+      "inline": 4,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "clouds",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "cloud-lab",
+      "inline": 16,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "cloud-lab-model",
+      "inline": 3,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "molecules",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "body-figure-9-molecules-17",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "efficiency-section",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "magnetic-lab",
+      "inline": 18,
+      "formulas": 0,
+      "svgMath": 3,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "magnetic-lab-model",
+      "inline": 2,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "efficiency-lab",
+      "inline": 16,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "efficiency-lab-model",
+      "inline": 2,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "individual",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "hii-lab",
+      "inline": 13,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "hii-lab-model",
+      "inline": 3,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "illustration-hii-ionized-cloud",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "body-figure-9-individual-16",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "body-figure-9-hh30-webb-disk-jet",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "laws",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "ks-lab",
+      "inline": 14,
+      "formulas": 0,
+      "svgMath": 3,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "ks-lab-model",
+      "inline": 2,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "mass-function",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "imf-lab",
+      "inline": 15,
+      "formulas": 0,
+      "svgMath": 3,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "imf-lab-model",
+      "inline": 1,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "first-stars",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "practice",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "practice-question-2",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "practice-question-3",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "practice-question-4",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "practice-question-5",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "practice-question-6",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 9,
+      "id": "chapter-references",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "opening",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "lifetime-lab",
+      "inline": 13,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "lifetime-lab-model",
+      "inline": 2,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "structure",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "tracks",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "ssp-lab",
+      "inline": 10,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "ssp-lab-model",
+      "inline": 0,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "illustration-agb-mass-return",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "body-figure-10-tracks-18",
+      "inline": 7,
+      "formulas": 0,
+      "svgMath": 6,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "synthesis",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "sfh-lab",
+      "inline": 17,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "sfh-lab-model",
+      "inline": 0,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "dust-lab",
+      "inline": 29,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "dust-lab-model",
+      "inline": 6,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "chemistry",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "closed-lab",
+      "inline": 11,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "closed-lab-model",
+      "inline": 5,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "leaky-lab",
+      "inline": 15,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "leaky-lab-model",
+      "inline": 2,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "inflow-lab",
+      "inline": 21,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "inflow-lab-model",
+      "inline": 5,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "metal-distribution-lab",
+      "inline": 13,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "metal-distribution-lab-model",
+      "inline": 4,
+      "formulas": 5,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "body-figure-10-chemistry-19",
+      "inline": 41,
+      "formulas": 0,
+      "svgMath": 26,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "feedback",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "body-figure-10-tycho-remnant-2019",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "practice",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "practice-question-2",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "practice-question-3",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "practice-question-4",
+      "inline": 5,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "practice-question-5",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "practice-question-6",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 10,
+      "id": "chapter-references",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "opening",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "disk-profile-lab",
+      "inline": 17,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "disk-profile-lab-model",
+      "inline": 0,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "components",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "epicycle-lab",
+      "inline": 25,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "epicycle-lab-model",
+      "inline": 1,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "components-reading-1",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "formation",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "disk-spin-lab",
+      "inline": 30,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "disk-spin-lab-model",
+      "inline": 2,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "scalings",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "exponential",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "sheet-lab",
+      "inline": 20,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "sheet-lab-model",
+      "inline": 4,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "body-figure-11-exponential-21",
+      "inline": 19,
+      "formulas": 0,
+      "svgMath": 9,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "instability",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "toomre-lab",
+      "inline": 20,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "toomre-lab-model",
+      "inline": 10,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "stellar-response-lab",
+      "inline": 23,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "stellar-response-lab-model",
+      "inline": 6,
+      "formulas": 5,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "body-figure-11-instability-20",
+      "inline": 15,
+      "formulas": 0,
+      "svgMath": 5,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "body-figure-11-ngc1300-stellar-bar",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "spirals",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "winding-lab",
+      "inline": 9,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "winding-lab-model",
+      "inline": 3,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "populations",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "chemistry",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "practice",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "practice-question-2",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "practice-question-3",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "practice-question-4",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "practice-question-5",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "practice-question-6",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 11,
+      "id": "chapter-references",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "opening",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "tidal-shock-lab",
+      "inline": 29,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "tidal-shock-lab-model",
+      "inline": 8,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "fast-encounters",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "heat-end-lab",
+      "inline": 9,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "heat-end-lab-model",
+      "inline": 1,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "stripping",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "tidal-radius-lab",
+      "inline": 13,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "tidal-radius-lab-model",
+      "inline": 0,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "dynamical-friction",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "drag-lab",
+      "inline": 19,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "drag-lab-model",
+      "inline": 1,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "friction-lab",
+      "inline": 16,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "friction-lab-model",
+      "inline": 4,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "body-figure-12-dynamical-friction-23",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 1,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "mergers",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "clusters",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "ram-lab",
+      "inline": 18,
+      "formulas": 0,
+      "svgMath": 7,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "ram-lab-model",
+      "inline": 2,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "starvation-lab",
+      "inline": 14,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "starvation-lab-model",
+      "inline": 0,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "illustration-ram-pressure-gas",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "body-figure-12-clusters-22",
+      "inline": 16,
+      "formulas": 0,
+      "svgMath": 7,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "body-figure-12-eso137-stripping",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "practice",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "practice-question-2",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "practice-question-3",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "practice-question-4",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "practice-question-5",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "practice-question-6",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 12,
+      "id": "chapter-references",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "opening",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "projection-lab",
+      "inline": 10,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "projection-lab-model",
+      "inline": 1,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "structure",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "anisotropy-lab",
+      "inline": 24,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "anisotropy-lab-model",
+      "inline": 5,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "bh-resolution-lab",
+      "inline": 12,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "bh-resolution-lab-model",
+      "inline": 1,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "body-figure-13-structure-24",
+      "inline": 12,
+      "formulas": 0,
+      "svgMath": 4,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "formation",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "tests",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "dry-merger-lab",
+      "inline": 9,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "dry-merger-lab-model",
+      "inline": 0,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "phase-proxy-lab",
+      "inline": 23,
+      "formulas": 0,
+      "svgMath": 6,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "phase-proxy-lab-model",
+      "inline": 0,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "body-figure-13-eso38112-stellar-shells",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "plane",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "fundamental-plane-lab",
+      "inline": 25,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "fundamental-plane-lab-model",
+      "inline": 1,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "body-figure-13-plane-25",
+      "inline": 13,
+      "formulas": 0,
+      "svgMath": 6,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "populations",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "frosting-lab",
+      "inline": 9,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "frosting-lab-model",
+      "inline": 1,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "relatives",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "practice",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "practice-question-2",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "practice-question-3",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "practice-question-4",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "practice-question-5",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "practice-question-6",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 13,
+      "id": "chapter-references",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "opening",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "eddington-lab",
+      "inline": 22,
+      "formulas": 0,
+      "svgMath": 7,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "eddington-lab-model",
+      "inline": 1,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "population",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "engine",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "thin-disk-lab",
+      "inline": 16,
+      "formulas": 0,
+      "svgMath": 3,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "thin-disk-lab-model",
+      "inline": 0,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "superluminal-lab",
+      "inline": 14,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "superluminal-lab-model",
+      "inline": 2,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "beaming-lab",
+      "inline": 12,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "beaming-lab-model",
+      "inline": 0,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "reverb-lab",
+      "inline": 15,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "reverb-lab-model",
+      "inline": 1,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "torus-lab",
+      "inline": 5,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "torus-lab-model",
+      "inline": 1,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "velocity-delay-lab",
+      "inline": 20,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "velocity-delay-lab-model",
+      "inline": 6,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "illustration-radio-jets-lobes",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "body-figure-14-engine-26",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "body-figure-14-engine-27",
+      "inline": 10,
+      "formulas": 0,
+      "svgMath": 4,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "evolution",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "bh-growth-lab",
+      "inline": 17,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "bh-growth-lab-model",
+      "inline": 2,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "feedback",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "agn-feedback-lab",
+      "inline": 11,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "agn-feedback-lab-model",
+      "inline": 1,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "practice",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "practice-question-2",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "practice-question-3",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "practice-question-4",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "practice-question-5",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "practice-question-6",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 14,
+      "id": "chapter-references",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "opening",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "luminosity-lab",
+      "inline": 21,
+      "formulas": 0,
+      "svgMath": 4,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "luminosity-lab-model",
+      "inline": 3,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "distribution",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "body-figure-15-distribution-28",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "luminosities",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "counts-lab",
+      "inline": 18,
+      "formulas": 0,
+      "svgMath": 3,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "counts-lab-model",
+      "inline": 2,
+      "formulas": 1,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "halo-light",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "matching-lab",
+      "inline": 16,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "matching-lab-model",
+      "inline": 7,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "central-lab",
+      "inline": 23,
+      "formulas": 0,
+      "svgMath": 6,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "central-lab-model",
+      "inline": 0,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "histories",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "cosmic-sfr-lab",
+      "inline": 12,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "cosmic-sfr-lab-model",
+      "inline": 3,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "environmental-dependence",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "environment-lab",
+      "inline": 5,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "environment-lab-model",
+      "inline": 0,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "illustration-galaxy-group-environment",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "body-figure-15-coma-cluster-field",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "clustering",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "occupation-lab",
+      "inline": 16,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "occupation-lab-model",
+      "inline": 0,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "occupation-bias-lab",
+      "inline": 17,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "occupation-bias-lab-model",
+      "inline": 3,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "body-figure-15-clustering-29",
+      "inline": 20,
+      "formulas": 0,
+      "svgMath": 12,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "synthesis",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "practice",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "practice-question-2",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "practice-question-3",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "practice-question-4",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "practice-question-5",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "practice-question-6",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 15,
+      "id": "chapter-references",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "opening",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "transmission-lab",
+      "inline": 16,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "transmission-lab-model",
+      "inline": 3,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "ionization",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "transfer-bench-lab",
+      "inline": 7,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "transfer-bench-lab-model",
+      "inline": 0,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "sources",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "photo-equilibrium-lab",
+      "inline": 19,
+      "formulas": 0,
+      "svgMath": 4,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "photo-equilibrium-lab-model",
+      "inline": 3,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "evolution",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "ion-bubble-lab",
+      "inline": 17,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "ion-bubble-lab-model",
+      "inline": 5,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "causal-front-lab",
+      "inline": 28,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "causal-front-lab-model",
+      "inline": 3,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "spin-21-lab",
+      "inline": 24,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "spin-21-lab-model",
+      "inline": 9,
+      "formulas": 5,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "illustration-patchy-reionization",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "lines",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "absorption-line-lab",
+      "inline": 23,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "absorption-line-lab-model",
+      "inline": 11,
+      "formulas": 5,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "incidence-lab",
+      "inline": 25,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "incidence-lab-model",
+      "inline": 4,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "curve-of-growth-lab",
+      "inline": 20,
+      "formulas": 0,
+      "svgMath": 3,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "curve-of-growth-lab-model",
+      "inline": 0,
+      "formulas": 3,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "lyman-forest",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "body-figure-16-lyman-forest-30",
+      "inline": 10,
+      "formulas": 0,
+      "svgMath": 3,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "forest-models",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "forest-lab",
+      "inline": 13,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "forest-lab-model",
+      "inline": 2,
+      "formulas": 4,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "limit-systems",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "lyman-limit-lab",
+      "inline": 12,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "lyman-limit-lab-model",
+      "inline": 3,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "body-figure-16-limit-systems-31",
+      "inline": 10,
+      "formulas": 0,
+      "svgMath": 5,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "damped",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "neutral-census-lab",
+      "inline": 20,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "neutral-census-lab-model",
+      "inline": 4,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "metals",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "metal-thermometer-lab",
+      "inline": 25,
+      "formulas": 0,
+      "svgMath": 2,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "metal-thermometer-lab-model",
+      "inline": 0,
+      "formulas": 2,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "practice",
+      "inline": 1,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "practice-question-2",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "practice-question-3",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "practice-question-4",
+      "inline": 2,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "practice-question-5",
+      "inline": 3,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "practice-question-6",
+      "inline": 0,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    },
+    {
+      "chapter": 16,
+      "id": "chapter-references",
+      "inline": 4,
+      "formulas": 0,
+      "svgMath": 0,
+      "overflow": false,
+      "parseErrors": 0,
+      "bad": []
+    }
+  ],
+  "errors": [],
+  "issues": []
+}

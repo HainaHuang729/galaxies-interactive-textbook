@@ -1,0 +1,7 @@
+{
+  "assertions": 1273,
+  "independentApertureStates": 62,
+  "independentDriftStates": 33,
+  "independentOptima": 5,
+  "finiteBaselineErrorBoundCmS": 0.000007543432609455688
+}

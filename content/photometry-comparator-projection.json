@@ -1,0 +1,1020 @@
+{
+  "P": {
+    "origin": [
+      425,
+      240.6889816809048
+    ],
+    "scale": 1.4128779687986832,
+    "azimuth": 50,
+    "elevation": 46
+  },
+  "width": 850,
+  "height": 500,
+  "parts": 67,
+  "items": 67,
+  "panels": [
+    {
+      "index": 0,
+      "role": "Gaussian-encircled-signal-fraction",
+      "order": "left/smaller-world-x",
+      "plane": {
+        "originWorld": [
+          -116,
+          20,
+          29.04
+        ],
+        "uWorld": [
+          88,
+          0,
+          0
+        ],
+        "vWorld": [
+          0,
+          -50,
+          0
+        ],
+        "corners": [
+          [
+            243.21510538906097,
+            128.47584459321254
+          ],
+          [
+            363.6913116101593,
+            201.19501294075178
+          ],
+          [
+            421.1296867270692,
+            151.95448445856823
+          ],
+          [
+            300.65348050597095,
+            79.235316111029
+          ]
+        ],
+        "origin": [
+          243.21510538906097,
+          128.47584459321254
+        ],
+        "basis": {
+          "u": [
+            120.47620622109832,
+            72.71916834753924
+          ],
+          "v": [
+            57.43837511690998,
+            -49.24052848218355
+          ]
+        },
+        "mapping": "screen = origin + u*basis.u + v*basis.v; u,v in [0,1]; u = (r/FWHM)/3; v increases toward back (-world y)"
+      },
+      "traceHook": "data-photometry-trace-0",
+      "probeHook": "data-photometry-probe-0",
+      "selectionHook": "data-photometry-selection-0",
+      "clipId": "photometry-screen-0",
+      "xDomain": [
+        0,
+        3
+      ],
+      "xTickValues": [
+        0,
+        0.5,
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "physicalScreen": {
+        "width": 88,
+        "depth": 50,
+        "z": 29.04
+      }
+    },
+    {
+      "index": 1,
+      "role": "normalized-SNR",
+      "order": "right/larger-world-x",
+      "plane": {
+        "originWorld": [
+          30,
+          20,
+          29.04
+        ],
+        "uWorld": [
+          88,
+          0,
+          0
+        ],
+        "vWorld": [
+          0,
+          -50,
+          0
+        ],
+        "corners": [
+          [
+            443.0960838922468,
+            249.12355571526626
+          ],
+          [
+            563.5722901133452,
+            321.8427240628055
+          ],
+          [
+            621.0106652302551,
+            272.602195580622
+          ],
+          [
+            500.53445900915676,
+            199.88302723308271
+          ]
+        ],
+        "origin": [
+          443.0960838922468,
+          249.12355571526626
+        ],
+        "basis": {
+          "u": [
+            120.47620622109838,
+            72.71916834753921
+          ],
+          "v": [
+            57.43837511690998,
+            -49.24052848218355
+          ]
+        },
+        "mapping": "screen = origin + u*basis.u + v*basis.v; u,v in [0,1]; u = (r/FWHM)/3; v increases toward back (-world y)"
+      },
+      "traceHook": "data-photometry-trace-1",
+      "probeHook": "data-photometry-probe-1",
+      "selectionHook": "data-photometry-selection-1",
+      "clipId": "photometry-screen-1",
+      "xDomain": [
+        0,
+        3
+      ],
+      "xTickValues": [
+        0,
+        0.5,
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "physicalScreen": {
+        "width": 88,
+        "depth": 50,
+        "z": 29.04
+      }
+    }
+  ],
+  "partsList": [
+    {
+      "name": "base.foot.0",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -149,
+        "y": -59,
+        "w": 14,
+        "d": 14,
+        "r": 3
+      },
+      "z": -18,
+      "h": 7
+    },
+    {
+      "name": "base.foot.1",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 135,
+        "y": -59,
+        "w": 14,
+        "d": 14,
+        "r": 3
+      },
+      "z": -18,
+      "h": 7
+    },
+    {
+      "name": "base.foot.2",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -149,
+        "y": 45,
+        "w": 14,
+        "d": 14,
+        "r": 3
+      },
+      "z": -18,
+      "h": 7
+    },
+    {
+      "name": "base.foot.3",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 135,
+        "y": 45,
+        "w": 14,
+        "d": 14,
+        "r": 3
+      },
+      "z": -18,
+      "h": 7
+    },
+    {
+      "name": "base.plate",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -161,
+        "y": -71,
+        "w": 322,
+        "d": 142,
+        "r": 8
+      },
+      "z": -11,
+      "h": 11
+    },
+    {
+      "name": "base.deck",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -147,
+        "y": -58,
+        "w": 294,
+        "d": 116,
+        "r": 4
+      },
+      "z": 0,
+      "h": 3
+    },
+    {
+      "name": "base.fastener.0",
+      "kind": "cylinder",
+      "x": -151,
+      "y": -61,
+      "r": 1.6,
+      "z": 0,
+      "h": 1
+    },
+    {
+      "name": "base.fastener.1",
+      "kind": "cylinder",
+      "x": 151,
+      "y": -61,
+      "r": 1.6,
+      "z": 0,
+      "h": 1
+    },
+    {
+      "name": "base.fastener.2",
+      "kind": "cylinder",
+      "x": -151,
+      "y": 61,
+      "r": 1.6,
+      "z": 0,
+      "h": 1
+    },
+    {
+      "name": "base.fastener.3",
+      "kind": "cylinder",
+      "x": 151,
+      "y": 61,
+      "r": 1.6,
+      "z": 0,
+      "h": 1
+    },
+    {
+      "name": "base.ruler.-57",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -141,
+        "y": -57,
+        "w": 282,
+        "d": 5,
+        "r": 0.6
+      },
+      "z": 3,
+      "h": 0.7
+    },
+    {
+      "name": "base.ruler.51",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -141,
+        "y": 51,
+        "w": 282,
+        "d": 5,
+        "r": 0.6
+      },
+      "z": 3,
+      "h": 0.7
+    },
+    {
+      "name": "base.plaque",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -39,
+        "y": 62,
+        "w": 78,
+        "d": 7,
+        "r": 1
+      },
+      "z": 0,
+      "h": 0.8
+    },
+    {
+      "name": "base.plaque-rivet.-34",
+      "kind": "cylinder",
+      "x": -34,
+      "y": 65.5,
+      "r": 0.9,
+      "z": 0.8,
+      "h": 0.5
+    },
+    {
+      "name": "base.plaque-rivet.34",
+      "kind": "cylinder",
+      "x": 34,
+      "y": 65.5,
+      "r": 0.9,
+      "z": 0.8,
+      "h": 0.5
+    },
+    {
+      "name": "channel.0.plinth",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -121,
+        "y": -42,
+        "w": 98,
+        "d": 84,
+        "r": 2
+      },
+      "z": 3,
+      "h": 4
+    },
+    {
+      "name": "channel.0.rubber-foot.-111.-29",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -117,
+        "y": -35,
+        "w": 12,
+        "d": 12,
+        "r": 2
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "channel.0.rubber-foot.-111.29",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -117,
+        "y": 23,
+        "w": 12,
+        "d": 12,
+        "r": 2
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "channel.0.rubber-foot.-33.-29",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -39,
+        "y": -35,
+        "w": 12,
+        "d": 12,
+        "r": 2
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "channel.0.rubber-foot.-33.29",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -39,
+        "y": 23,
+        "w": 12,
+        "d": 12,
+        "r": 2
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "channel.0.case",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -128,
+        "y": -45,
+        "w": 112,
+        "d": 90,
+        "r": 2
+      },
+      "z": 11,
+      "h": 17
+    },
+    {
+      "name": "channel.0.screen-backplate",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -120,
+        "y": -34,
+        "w": 96,
+        "d": 58,
+        "r": 0.6
+      },
+      "z": 28,
+      "h": 1
+    },
+    {
+      "name": "channel.0.bezel.back",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -123,
+        "y": -37,
+        "w": 102,
+        "d": 3,
+        "r": 0.2
+      },
+      "z": 28,
+      "h": 3
+    },
+    {
+      "name": "channel.0.bezel.front",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -123,
+        "y": 24,
+        "w": 102,
+        "d": 3,
+        "r": 0.2
+      },
+      "z": 28,
+      "h": 3
+    },
+    {
+      "name": "channel.0.bezel.left",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -123,
+        "y": -34,
+        "w": 3,
+        "d": 58,
+        "r": 0.2
+      },
+      "z": 28,
+      "h": 3
+    },
+    {
+      "name": "channel.0.bezel.right",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -24,
+        "y": -34,
+        "w": 3,
+        "d": 58,
+        "r": 0.2
+      },
+      "z": 28,
+      "h": 3
+    },
+    {
+      "name": "channel.0.control-fascia",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -121,
+        "y": 45,
+        "w": 98,
+        "d": 3,
+        "r": 0.5
+      },
+      "z": 14,
+      "h": 9
+    },
+    {
+      "name": "channel.0.knob.-108",
+      "kind": "face-cylinder",
+      "worldOrigin": [
+        -108,
+        48,
+        18.5
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "r": 2.8,
+      "h": 4
+    },
+    {
+      "name": "channel.0.knob.-86",
+      "kind": "face-cylinder",
+      "worldOrigin": [
+        -86,
+        48,
+        18.5
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "r": 2.8,
+      "h": 4
+    },
+    {
+      "name": "channel.0.knob.-64",
+      "kind": "face-cylinder",
+      "worldOrigin": [
+        -64,
+        48,
+        18.5
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "r": 2.8,
+      "h": 4
+    },
+    {
+      "name": "channel.0.rocker-switch",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -48,
+        "y": 48,
+        "w": 7,
+        "d": 2,
+        "r": 0.5
+      },
+      "z": 16.5,
+      "h": 4
+    },
+    {
+      "name": "channel.0.connector.-34",
+      "kind": "face-cylinder",
+      "worldOrigin": [
+        -34,
+        48,
+        18.5
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "r": 1.5,
+      "h": 2
+    },
+    {
+      "name": "channel.0.connector.-28",
+      "kind": "face-cylinder",
+      "worldOrigin": [
+        -28,
+        48,
+        18.5
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "r": 1.5,
+      "h": 2
+    },
+    {
+      "name": "channel.0.vent-plate",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -116,
+        "y": 29,
+        "w": 68,
+        "d": 10,
+        "r": 1
+      },
+      "z": 28,
+      "h": 0.5
+    },
+    {
+      "name": "channel.0.top-fastener.-124.-41",
+      "kind": "cylinder",
+      "x": -124,
+      "y": -41,
+      "r": 1,
+      "z": 28,
+      "h": 0.7
+    },
+    {
+      "name": "channel.0.top-fastener.-124.41",
+      "kind": "cylinder",
+      "x": -124,
+      "y": 41,
+      "r": 1,
+      "z": 28,
+      "h": 0.7
+    },
+    {
+      "name": "channel.0.top-fastener.-20.-41",
+      "kind": "cylinder",
+      "x": -20,
+      "y": -41,
+      "r": 1,
+      "z": 28,
+      "h": 0.7
+    },
+    {
+      "name": "channel.0.top-fastener.-20.41",
+      "kind": "cylinder",
+      "x": -20,
+      "y": 41,
+      "r": 1,
+      "z": 28,
+      "h": 0.7
+    },
+    {
+      "name": "channel.0.handle-post.-108",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -108,
+        "y": -44,
+        "w": 6,
+        "d": 5,
+        "r": 0.7
+      },
+      "z": 28,
+      "h": 6
+    },
+    {
+      "name": "channel.0.handle-post.-42",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -42,
+        "y": -44,
+        "w": 6,
+        "d": 5,
+        "r": 0.7
+      },
+      "z": 28,
+      "h": 6
+    },
+    {
+      "name": "channel.0.handle-bridge",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -108,
+        "y": -44,
+        "w": 72,
+        "d": 5,
+        "r": 1
+      },
+      "z": 34,
+      "h": 3
+    },
+    {
+      "name": "channel.1.plinth",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 25,
+        "y": -42,
+        "w": 98,
+        "d": 84,
+        "r": 2
+      },
+      "z": 3,
+      "h": 4
+    },
+    {
+      "name": "channel.1.rubber-foot.35.-29",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 29,
+        "y": -35,
+        "w": 12,
+        "d": 12,
+        "r": 2
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "channel.1.rubber-foot.35.29",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 29,
+        "y": 23,
+        "w": 12,
+        "d": 12,
+        "r": 2
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "channel.1.rubber-foot.113.-29",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 107,
+        "y": -35,
+        "w": 12,
+        "d": 12,
+        "r": 2
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "channel.1.rubber-foot.113.29",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 107,
+        "y": 23,
+        "w": 12,
+        "d": 12,
+        "r": 2
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "channel.1.case",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 18,
+        "y": -45,
+        "w": 112,
+        "d": 90,
+        "r": 2
+      },
+      "z": 11,
+      "h": 17
+    },
+    {
+      "name": "channel.1.screen-backplate",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 26,
+        "y": -34,
+        "w": 96,
+        "d": 58,
+        "r": 0.6
+      },
+      "z": 28,
+      "h": 1
+    },
+    {
+      "name": "channel.1.bezel.back",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 23,
+        "y": -37,
+        "w": 102,
+        "d": 3,
+        "r": 0.2
+      },
+      "z": 28,
+      "h": 3
+    },
+    {
+      "name": "channel.1.bezel.front",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 23,
+        "y": 24,
+        "w": 102,
+        "d": 3,
+        "r": 0.2
+      },
+      "z": 28,
+      "h": 3
+    },
+    {
+      "name": "channel.1.bezel.left",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 23,
+        "y": -34,
+        "w": 3,
+        "d": 58,
+        "r": 0.2
+      },
+      "z": 28,
+      "h": 3
+    },
+    {
+      "name": "channel.1.bezel.right",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 122,
+        "y": -34,
+        "w": 3,
+        "d": 58,
+        "r": 0.2
+      },
+      "z": 28,
+      "h": 3
+    },
+    {
+      "name": "channel.1.control-fascia",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 25,
+        "y": 45,
+        "w": 98,
+        "d": 3,
+        "r": 0.5
+      },
+      "z": 14,
+      "h": 9
+    },
+    {
+      "name": "channel.1.knob.38",
+      "kind": "face-cylinder",
+      "worldOrigin": [
+        38,
+        48,
+        18.5
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "r": 2.8,
+      "h": 4
+    },
+    {
+      "name": "channel.1.knob.60",
+      "kind": "face-cylinder",
+      "worldOrigin": [
+        60,
+        48,
+        18.5
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "r": 2.8,
+      "h": 4
+    },
+    {
+      "name": "channel.1.knob.82",
+      "kind": "face-cylinder",
+      "worldOrigin": [
+        82,
+        48,
+        18.5
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "r": 2.8,
+      "h": 4
+    },
+    {
+      "name": "channel.1.rocker-switch",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 98,
+        "y": 48,
+        "w": 7,
+        "d": 2,
+        "r": 0.5
+      },
+      "z": 16.5,
+      "h": 4
+    },
+    {
+      "name": "channel.1.connector.112",
+      "kind": "face-cylinder",
+      "worldOrigin": [
+        112,
+        48,
+        18.5
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "r": 1.5,
+      "h": 2
+    },
+    {
+      "name": "channel.1.connector.118",
+      "kind": "face-cylinder",
+      "worldOrigin": [
+        118,
+        48,
+        18.5
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "r": 1.5,
+      "h": 2
+    },
+    {
+      "name": "channel.1.vent-plate",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 30,
+        "y": 29,
+        "w": 68,
+        "d": 10,
+        "r": 1
+      },
+      "z": 28,
+      "h": 0.5
+    },
+    {
+      "name": "channel.1.top-fastener.22.-41",
+      "kind": "cylinder",
+      "x": 22,
+      "y": -41,
+      "r": 1,
+      "z": 28,
+      "h": 0.7
+    },
+    {
+      "name": "channel.1.top-fastener.22.41",
+      "kind": "cylinder",
+      "x": 22,
+      "y": 41,
+      "r": 1,
+      "z": 28,
+      "h": 0.7
+    },
+    {
+      "name": "channel.1.top-fastener.126.-41",
+      "kind": "cylinder",
+      "x": 126,
+      "y": -41,
+      "r": 1,
+      "z": 28,
+      "h": 0.7
+    },
+    {
+      "name": "channel.1.top-fastener.126.41",
+      "kind": "cylinder",
+      "x": 126,
+      "y": 41,
+      "r": 1,
+      "z": 28,
+      "h": 0.7
+    },
+    {
+      "name": "channel.1.handle-post.38",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 38,
+        "y": -44,
+        "w": 6,
+        "d": 5,
+        "r": 0.7
+      },
+      "z": 28,
+      "h": 6
+    },
+    {
+      "name": "channel.1.handle-post.104",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 104,
+        "y": -44,
+        "w": 6,
+        "d": 5,
+        "r": 0.7
+      },
+      "z": 28,
+      "h": 6
+    },
+    {
+      "name": "channel.1.handle-bridge",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 38,
+        "y": -44,
+        "w": 72,
+        "d": 5,
+        "r": 1
+      },
+      "z": 34,
+      "h": 3
+    }
+  ],
+  "ordering": "Panel 0 at smaller world x/left is Gaussian encircled signal fraction; panel 1 at larger x/right is normalized SNR. Use explicit hooks/index, never DOM painter order.",
+  "limits": "Computational photometry comparison only; no real telescope, PSF optics, detected photons or empirical noise response is depicted. All solids stay fixed. Both top plot windows use exactly the same x domain 0<=r/FWHM<=3, with u=(r/FWHM)/3. Vertical quantities differ and must be labeled separately outside the machine. Parent owns Gaussian encircled-energy law, aperture-noise/SNR model, normalization, probes, values and chapter integration."
+}

@@ -1,0 +1,9 @@
+{
+  "checkedAt": "2026-10-18T04:11:27.074Z",
+  "checks": 995,
+  "independentChecks": 127,
+  "states": 132,
+  "maxMassError": 5.88418203051333e-15,
+  "maxVarianceError": 5.662137425588298e-15,
+  "scope": "Gaussian absorption convolution and one-dimensional uniform-brightness local linear-velocity model. Controls exclude zero intrinsic width distributions. No observational calibration claim."
+}

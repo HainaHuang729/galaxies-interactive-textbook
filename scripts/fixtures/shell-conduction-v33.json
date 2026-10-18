@@ -1,0 +1,4058 @@
+{
+  "metadata": {
+    "version": 33,
+    "method": "Independent Python stdlib: Decimal 90-digit closed expressions; adaptive Simpson radial and direct Newton angular quadrature; high-precision derivatives; RK4 time integration. No repository model imported.",
+    "precisionDigits": 90,
+    "units": {
+      "shellPotential": "GM/b",
+      "shellAcceleration": "GM/b^2",
+      "shellSpeed": "sqrt(GM/b)",
+      "shellDensity": "M/b^3"
+    },
+    "constants": {
+      "GKpcKm2S2Msun": 4.30091e-06,
+      "parsecCm": 3.0856775814913674e+18,
+      "myrSeconds": 31557600000000.0,
+      "kBoltzmannErgPerK": 1.380649e-16,
+      "protonMassG": 1.67262192369e-24,
+      "mu": 0.6,
+      "gamma": 1.6666666666666667,
+      "temperature0K": 1000000.0,
+      "L0Pc": 100.0,
+      "tthMyr": 100.0,
+      "epsilon0": 0.001,
+      "cpParticleErgPerK": 3.4516225e-16,
+      "cpMassErgPerGPerK": 343933323.19688404,
+      "soundSpeedKmS": 151.42287876383014
+    },
+    "modelBoundaries": [
+      "Newtonian static spherical density; no collapse/orbit/equilibrium simulation.",
+      "Linear single isobaric Fourier mode around exact thermal equilibrium, fixed composition and constant coefficient chi.",
+      "Heating is constant per particle, not per unit volume.",
+      "Density and temperature satisfy pressure balance to first order only.",
+      "Critical wavelength uses lambda=2pi/k; not an empirically calibrated Spitzer conductivity."
+    ]
+  },
+  "shell": {
+    "cases": [
+      {
+        "q": 0.0,
+        "x": 0.0,
+        "enclosedFraction": 0.0,
+        "gNorm": 0.0,
+        "phiNorm": -1.5,
+        "vcNorm": 0.0,
+        "vescNorm": 1.7320508075688772,
+        "densityNorm": 0.238732414637843,
+        "numericalRadialPotential": -1.5,
+        "numericalRadialEnclosedFraction": 0.0,
+        "radialPotentialAbsoluteError": 0.0,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.0,
+        "x": 1e-06,
+        "enclosedFraction": 1e-18,
+        "gNorm": -1e-06,
+        "phiNorm": -1.4999999999995,
+        "vcNorm": 1e-06,
+        "vescNorm": 1.7320508075685885,
+        "densityNorm": 0.238732414637843,
+        "numericalRadialPotential": -1.4999999999995002,
+        "numericalRadialEnclosedFraction": 9.999999999999997e-19,
+        "radialPotentialAbsoluteError": 2.220446049250313e-16,
+        "radialMassAbsoluteError": 3.851859888774472e-34
+      },
+      {
+        "q": 0.0,
+        "x": 0.25,
+        "enclosedFraction": 0.015625,
+        "gNorm": -0.25,
+        "phiNorm": -1.46875,
+        "vcNorm": 0.25,
+        "vescNorm": 1.713913650100261,
+        "densityNorm": 0.238732414637843,
+        "numericalRadialPotential": -1.46875,
+        "numericalRadialEnclosedFraction": 0.015625,
+        "radialPotentialAbsoluteError": 0.0,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.0,
+        "x": 0.5,
+        "enclosedFraction": 0.125,
+        "gNorm": -0.5,
+        "phiNorm": -1.375,
+        "vcNorm": 0.5,
+        "vescNorm": 1.6583123951777,
+        "densityNorm": 0.238732414637843,
+        "numericalRadialPotential": -1.375,
+        "numericalRadialEnclosedFraction": 0.125,
+        "radialPotentialAbsoluteError": 0.0,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.0,
+        "x": 0.99999999,
+        "enclosedFraction": 0.9999999700000003,
+        "gNorm": -0.99999999,
+        "phiNorm": -1.00000001,
+        "vcNorm": 0.99999999,
+        "vescNorm": 1.4142135694441629,
+        "densityNorm": 0.238732414637843,
+        "numericalRadialPotential": -1.00000001,
+        "numericalRadialEnclosedFraction": 0.9999999700000001,
+        "radialPotentialAbsoluteError": 0.0,
+        "radialMassAbsoluteError": 2.220446049250313e-16
+      },
+      {
+        "q": 0.0,
+        "x": 1.0,
+        "enclosedFraction": 1.0,
+        "gNorm": -1.0,
+        "phiNorm": -1.0,
+        "vcNorm": 1.0,
+        "vescNorm": 1.4142135623730951,
+        "densityNorm": null,
+        "numericalRadialPotential": -1.0,
+        "numericalRadialEnclosedFraction": 1.0,
+        "radialPotentialAbsoluteError": 0.0,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.0,
+        "x": 1.00000001,
+        "enclosedFraction": 1.0,
+        "gNorm": -0.9999999800000003,
+        "phiNorm": -0.9999999900000001,
+        "vcNorm": 0.999999995,
+        "vescNorm": 1.4142135553020272,
+        "densityNorm": 0.0,
+        "numericalRadialPotential": -0.9999999900000002,
+        "numericalRadialEnclosedFraction": 1.0,
+        "radialPotentialAbsoluteError": 1.1102230246251565e-16,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.0,
+        "x": 2.0,
+        "enclosedFraction": 1.0,
+        "gNorm": -0.25,
+        "phiNorm": -0.5,
+        "vcNorm": 0.7071067811865476,
+        "vescNorm": 1.0,
+        "densityNorm": 0.0,
+        "numericalRadialPotential": -0.5,
+        "numericalRadialEnclosedFraction": 1.0,
+        "radialPotentialAbsoluteError": 0.0,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.0,
+        "x": 3.0,
+        "enclosedFraction": 1.0,
+        "gNorm": -0.1111111111111111,
+        "phiNorm": -0.3333333333333333,
+        "vcNorm": 0.5773502691896257,
+        "vescNorm": 0.816496580927726,
+        "densityNorm": 0.0,
+        "numericalRadialPotential": -0.33333333333333337,
+        "numericalRadialEnclosedFraction": 1.0,
+        "radialPotentialAbsoluteError": 5.551115123125783e-17,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.5,
+        "x": 0.0,
+        "enclosedFraction": 0.0,
+        "gNorm": 0.0,
+        "phiNorm": -1.2857142857142858,
+        "vcNorm": 0.0,
+        "vescNorm": 1.6035674514745464,
+        "densityNorm": 0.0,
+        "numericalRadialPotential": -1.2857142857142856,
+        "numericalRadialEnclosedFraction": 0.0,
+        "radialPotentialAbsoluteError": 2.220446049250313e-16,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.5,
+        "x": 0.25,
+        "enclosedFraction": 0.0,
+        "gNorm": 0.0,
+        "phiNorm": -1.2857142857142858,
+        "vcNorm": -0.0,
+        "vescNorm": 1.6035674514745464,
+        "densityNorm": 0.0,
+        "numericalRadialPotential": -1.2857142857142856,
+        "numericalRadialEnclosedFraction": 0.0,
+        "radialPotentialAbsoluteError": 2.220446049250313e-16,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.5,
+        "x": 0.49999999,
+        "enclosedFraction": 0.0,
+        "gNorm": 0.0,
+        "phiNorm": -1.2857142857142858,
+        "vcNorm": -0.0,
+        "vescNorm": 1.6035674514745464,
+        "densityNorm": 0.0,
+        "numericalRadialPotential": -1.2857142857142856,
+        "numericalRadialEnclosedFraction": 0.0,
+        "radialPotentialAbsoluteError": 2.220446049250313e-16,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.5,
+        "x": 0.5,
+        "enclosedFraction": 0.0,
+        "gNorm": 0.0,
+        "phiNorm": -1.2857142857142858,
+        "vcNorm": -0.0,
+        "vescNorm": 1.6035674514745464,
+        "densityNorm": null,
+        "numericalRadialPotential": -1.2857142857142856,
+        "numericalRadialEnclosedFraction": 0.0,
+        "radialPotentialAbsoluteError": 2.220446049250313e-16,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.5,
+        "x": 0.50000001,
+        "enclosedFraction": 8.571428742857145e-09,
+        "gNorm": -3.428571360000002e-08,
+        "phiNorm": -1.2857142857142856,
+        "vcNorm": 0.00013093073414159544,
+        "vescNorm": 1.6035674514745462,
+        "densityNorm": 0.272837045300392,
+        "numericalRadialPotential": -1.2857142857142854,
+        "numericalRadialEnclosedFraction": 8.57142878592651e-09,
+        "radialPotentialAbsoluteError": 2.220446049250313e-16,
+        "radialMassAbsoluteError": 4.306936551044768e-17
+      },
+      {
+        "q": 0.5,
+        "x": 0.75,
+        "enclosedFraction": 0.3392857142857143,
+        "gNorm": -0.6031746031746031,
+        "phiNorm": -1.2023809523809523,
+        "vcNorm": 0.6725927091345493,
+        "vescNorm": 1.5507294750413125,
+        "densityNorm": 0.272837045300392,
+        "numericalRadialPotential": -1.2023809523809523,
+        "numericalRadialEnclosedFraction": 0.3392857142857143,
+        "radialPotentialAbsoluteError": 0.0,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.5,
+        "x": 0.99999999,
+        "enclosedFraction": 0.9999999657142861,
+        "gNorm": -0.9999999857142857,
+        "phiNorm": -1.00000001,
+        "vcNorm": 0.9999999878571428,
+        "vescNorm": 1.4142135694441629,
+        "densityNorm": 0.272837045300392,
+        "numericalRadialPotential": -1.00000001,
+        "numericalRadialEnclosedFraction": 0.9999999657142858,
+        "radialPotentialAbsoluteError": 0.0,
+        "radialMassAbsoluteError": 2.220446049250313e-16
+      },
+      {
+        "q": 0.5,
+        "x": 1.0,
+        "enclosedFraction": 1.0,
+        "gNorm": -1.0,
+        "phiNorm": -1.0,
+        "vcNorm": 1.0,
+        "vescNorm": 1.4142135623730951,
+        "densityNorm": null,
+        "numericalRadialPotential": -1.0,
+        "numericalRadialEnclosedFraction": 1.0,
+        "radialPotentialAbsoluteError": 0.0,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.5,
+        "x": 1.00000001,
+        "enclosedFraction": 1.0,
+        "gNorm": -0.9999999800000003,
+        "phiNorm": -0.9999999900000001,
+        "vcNorm": 0.999999995,
+        "vescNorm": 1.4142135553020272,
+        "densityNorm": 0.0,
+        "numericalRadialPotential": -0.9999999900000003,
+        "numericalRadialEnclosedFraction": 1.0,
+        "radialPotentialAbsoluteError": 2.220446049250313e-16,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.5,
+        "x": 3.0,
+        "enclosedFraction": 1.0,
+        "gNorm": -0.1111111111111111,
+        "phiNorm": -0.3333333333333333,
+        "vcNorm": 0.5773502691896257,
+        "vescNorm": 0.816496580927726,
+        "densityNorm": 0.0,
+        "numericalRadialPotential": -0.33333333333333337,
+        "numericalRadialEnclosedFraction": 1.0,
+        "radialPotentialAbsoluteError": 5.551115123125783e-17,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.9,
+        "x": 0.0,
+        "enclosedFraction": 0.0,
+        "gNorm": 0.0,
+        "phiNorm": -1.051660516605166,
+        "vcNorm": 0.0,
+        "vescNorm": 1.4502830872661834,
+        "densityNorm": 0.0,
+        "numericalRadialPotential": -1.0516605166051662,
+        "numericalRadialEnclosedFraction": 0.0,
+        "radialPotentialAbsoluteError": 2.220446049250313e-16,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.9,
+        "x": 0.45,
+        "enclosedFraction": 0.0,
+        "gNorm": 0.0,
+        "phiNorm": -1.051660516605166,
+        "vcNorm": -0.0,
+        "vescNorm": 1.4502830872661834,
+        "densityNorm": 0.0,
+        "numericalRadialPotential": -1.0516605166051662,
+        "numericalRadialEnclosedFraction": 0.0,
+        "radialPotentialAbsoluteError": 2.220446049250313e-16,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.9,
+        "x": 0.89999999,
+        "enclosedFraction": 0.0,
+        "gNorm": 0.0,
+        "phiNorm": -1.051660516605166,
+        "vcNorm": -0.0,
+        "vescNorm": 1.4502830872661834,
+        "densityNorm": 0.0,
+        "numericalRadialPotential": -1.0516605166051662,
+        "numericalRadialEnclosedFraction": 0.0,
+        "radialPotentialAbsoluteError": 2.220446049250313e-16,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.9,
+        "x": 0.9,
+        "enclosedFraction": 0.0,
+        "gNorm": 0.0,
+        "phiNorm": -1.051660516605166,
+        "vcNorm": -0.0,
+        "vescNorm": 1.4502830872661834,
+        "densityNorm": null,
+        "numericalRadialPotential": -1.0516605166051662,
+        "numericalRadialEnclosedFraction": 0.0,
+        "radialPotentialAbsoluteError": 2.220446049250313e-16,
+        "radialMassAbsoluteError": 0.0
+      },
+      {
+        "q": 0.9,
+        "x": 0.90000001,
+        "enclosedFraction": 8.966789767527676e-08,
+        "gNorm": -1.1070110578105783e-07,
+        "phiNorm": -1.0516605166051656,
+        "vcNorm": 0.00031564378072435246,
+        "vescNorm": 1.450283087266183,
+        "densityNorm": 0.8809314193278339,
+        "numericalRadialPotential": -1.0516605166051656,
+        "numericalRadialEnclosedFraction": 8.966789713032275e-08,
+        "radialPotentialAbsoluteError": 0.0,
+        "radialMassAbsoluteError": 5.449540123231129e-16
+      },
+      {
+        "q": 0.9,
+        "x": 0.95,
+        "enclosedFraction": 0.47370848708487084,
+        "gNorm": -0.5248847502325439,
+        "phiNorm": -1.0383084093998836,
+        "vcNorm": 0.7061448241833376,
+        "vescNorm": 1.4410471258080935,
+        "densityNorm": 0.8809314193278339,
+        "numericalRadialPotential": -1.0383084093998836,
+        "numericalRadialEnclosedFraction": 0.47370848708487034,
+        "radialPotentialAbsoluteError": 0.0,
+        "radialMassAbsoluteError": 4.996003610813204e-16
+      },
+      {
+        "q": 0.9,
+        "x": 0.99999999,
+        "enclosedFraction": 0.999999889298894,
+        "gNorm": -0.9999999092988922,
+        "phiNorm": -1.0000000099999995,
+        "vcNorm": 0.9999999496494453,
+        "vescNorm": 1.4142135694441624,
+        "densityNorm": 0.8809314193278339,
+        "numericalRadialPotential": -1.0000000099999997,
+        "numericalRadialEnclosedFraction": 0.9999998892988937,
+        "radialPotentialAbsoluteError": 2.220446049250313e-16,
+        "radialMassAbsoluteError": 3.3306690738754696e-16
+      },
+      {
+        "q": 0.9,
+        "x": 1.0,
+        "enclosedFraction": 1.0,
+        "gNorm": -1.0,
+        "phiNorm": -1.0,
+        "vcNorm": 1.0,
+        "vescNorm": 1.4142135623730951,
+        "densityNorm": null,
+        "numericalRadialPotential": -1.0000000000000002,
+        "numericalRadialEnclosedFraction": 1.0000000000000002,
+        "radialPotentialAbsoluteError": 2.220446049250313e-16,
+        "radialMassAbsoluteError": 2.220446049250313e-16
+      },
+      {
+        "q": 0.9,
+        "x": 1.00000001,
+        "enclosedFraction": 1.0,
+        "gNorm": -0.9999999800000003,
+        "phiNorm": -0.9999999900000001,
+        "vcNorm": 0.999999995,
+        "vescNorm": 1.4142135553020272,
+        "densityNorm": 0.0,
+        "numericalRadialPotential": -0.9999999900000003,
+        "numericalRadialEnclosedFraction": 1.0000000000000002,
+        "radialPotentialAbsoluteError": 2.220446049250313e-16,
+        "radialMassAbsoluteError": 2.220446049250313e-16
+      },
+      {
+        "q": 0.9,
+        "x": 2.0,
+        "enclosedFraction": 1.0,
+        "gNorm": -0.25,
+        "phiNorm": -0.5,
+        "vcNorm": 0.7071067811865476,
+        "vescNorm": 1.0,
+        "densityNorm": 0.0,
+        "numericalRadialPotential": -0.5000000000000001,
+        "numericalRadialEnclosedFraction": 1.0000000000000002,
+        "radialPotentialAbsoluteError": 1.1102230246251565e-16,
+        "radialMassAbsoluteError": 2.220446049250313e-16
+      },
+      {
+        "q": 0.9,
+        "x": 3.0,
+        "enclosedFraction": 1.0,
+        "gNorm": -0.1111111111111111,
+        "phiNorm": -0.3333333333333333,
+        "vcNorm": 0.5773502691896257,
+        "vescNorm": 0.816496580927726,
+        "densityNorm": 0.0,
+        "numericalRadialPotential": -0.33333333333333337,
+        "numericalRadialEnclosedFraction": 1.0000000000000002,
+        "radialPotentialAbsoluteError": 5.551115123125783e-17,
+        "radialMassAbsoluteError": 2.220446049250313e-16
+      }
+    ],
+    "angularThinShellQuadrature": [
+      {
+        "thinShellRadius": 1,
+        "observationRadius": 0,
+        "numericalNewtonAngularForce": 0.0,
+        "expectedForce": 0.0,
+        "absoluteForceError": 0.0,
+        "numericalNewtonAngularPotential": -1.0,
+        "expectedPotential": -1.0,
+        "absolutePotentialError": 0.0
+      },
+      {
+        "thinShellRadius": 1,
+        "observationRadius": 0.25,
+        "numericalNewtonAngularForce": -3.469446951953614e-18,
+        "expectedForce": 0.0,
+        "absoluteForceError": 3.469446951953614e-18,
+        "numericalNewtonAngularPotential": -1.0,
+        "expectedPotential": -1.0,
+        "absolutePotentialError": 0.0
+      },
+      {
+        "thinShellRadius": 1,
+        "observationRadius": 0.5,
+        "numericalNewtonAngularForce": -5.984795992119984e-17,
+        "expectedForce": 0.0,
+        "absoluteForceError": 5.984795992119984e-17,
+        "numericalNewtonAngularPotential": -1.0,
+        "expectedPotential": -1.0,
+        "absolutePotentialError": 0.0
+      },
+      {
+        "thinShellRadius": 1,
+        "observationRadius": 0.9,
+        "numericalNewtonAngularForce": 1.9949319973733282e-17,
+        "expectedForce": 0.0,
+        "absoluteForceError": 1.9949319973733282e-17,
+        "numericalNewtonAngularPotential": -1.0,
+        "expectedPotential": -1.0,
+        "absolutePotentialError": 0.0
+      },
+      {
+        "thinShellRadius": 1,
+        "observationRadius": 0.999,
+        "numericalNewtonAngularForce": 8.673617379884035e-19,
+        "expectedForce": 0.0,
+        "absoluteForceError": 8.673617379884035e-19,
+        "numericalNewtonAngularPotential": -1.0,
+        "expectedPotential": -1.0,
+        "absolutePotentialError": 0.0
+      },
+      {
+        "thinShellRadius": 1,
+        "observationRadius": 1,
+        "numericalNewtonAngularForce": -0.5,
+        "expectedForce": -0.5,
+        "absoluteForceError": 0.0,
+        "numericalNewtonAngularPotential": -1.0,
+        "expectedPotential": -1.0,
+        "absolutePotentialError": 0.0
+      },
+      {
+        "thinShellRadius": 1,
+        "observationRadius": 1.001,
+        "numericalNewtonAngularForce": -0.9980029960049943,
+        "expectedForce": -0.9980029960049943,
+        "absoluteForceError": 0.0,
+        "numericalNewtonAngularPotential": -0.999000999000999,
+        "expectedPotential": -0.9990009990009991,
+        "absolutePotentialError": 1.1102230246251565e-16
+      },
+      {
+        "thinShellRadius": 1,
+        "observationRadius": 1.1,
+        "numericalNewtonAngularForce": -0.8264462809917353,
+        "expectedForce": -0.8264462809917354,
+        "absoluteForceError": 1.1102230246251565e-16,
+        "numericalNewtonAngularPotential": -0.909090909090909,
+        "expectedPotential": -0.9090909090909091,
+        "absolutePotentialError": 1.1102230246251565e-16
+      },
+      {
+        "thinShellRadius": 1,
+        "observationRadius": 2,
+        "numericalNewtonAngularForce": -0.25,
+        "expectedForce": -0.25,
+        "absoluteForceError": 0.0,
+        "numericalNewtonAngularPotential": -0.5,
+        "expectedPotential": -0.5,
+        "absolutePotentialError": 0.0
+      },
+      {
+        "thinShellRadius": 1,
+        "observationRadius": 3,
+        "numericalNewtonAngularForce": -0.11111111111111112,
+        "expectedForce": -0.1111111111111111,
+        "absoluteForceError": 1.3877787807814457e-17,
+        "numericalNewtonAngularPotential": -0.3333333333333333,
+        "expectedPotential": -0.3333333333333333,
+        "absolutePotentialError": 0.0
+      }
+    ],
+    "derivativePoissonChecks": [
+      {
+        "q": 0.0,
+        "x": 0.1,
+        "h": 1e-16,
+        "numericMinusDPhiDx": -0.1,
+        "expectedG": -0.1,
+        "forceAbsoluteError": 0.0,
+        "numericLaplacianPhi": 3.0,
+        "expected4PiDensity": 3.0,
+        "poissonAbsoluteError": 0.0
+      },
+      {
+        "q": 0.0,
+        "x": 0.5,
+        "h": 1e-16,
+        "numericMinusDPhiDx": -0.5,
+        "expectedG": -0.5,
+        "forceAbsoluteError": 0.0,
+        "numericLaplacianPhi": 3.0,
+        "expected4PiDensity": 3.0,
+        "poissonAbsoluteError": 0.0
+      },
+      {
+        "q": 0.0,
+        "x": 1.5,
+        "h": 1e-16,
+        "numericMinusDPhiDx": -0.4444444444444444,
+        "expectedG": -0.4444444444444444,
+        "forceAbsoluteError": 1.9753086419753087e-33,
+        "numericLaplacianPhi": -3.847736508459076e-58,
+        "expected4PiDensity": 0.0,
+        "poissonAbsoluteError": 3.847736508459076e-58
+      },
+      {
+        "q": 0.5,
+        "x": 0.25,
+        "h": 1e-16,
+        "numericMinusDPhiDx": 0.0,
+        "expectedG": 0.0,
+        "forceAbsoluteError": 0.0,
+        "numericLaplacianPhi": 0.0,
+        "expected4PiDensity": 0.0,
+        "poissonAbsoluteError": 0.0
+      },
+      {
+        "q": 0.5,
+        "x": 0.75,
+        "h": 1e-16,
+        "numericMinusDPhiDx": -0.6031746031746031,
+        "expectedG": -0.6031746031746031,
+        "forceAbsoluteError": 4.514991181657848e-33,
+        "numericLaplacianPhi": 3.4285714285714284,
+        "expected4PiDensity": 3.4285714285714284,
+        "poissonAbsoluteError": 7.64254179371611e-59
+      },
+      {
+        "q": 0.5,
+        "x": 1.5,
+        "h": 1e-16,
+        "numericMinusDPhiDx": -0.4444444444444444,
+        "expectedG": -0.4444444444444444,
+        "forceAbsoluteError": 1.9753086419753087e-33,
+        "numericLaplacianPhi": -3.847736508459076e-58,
+        "expected4PiDensity": 0.0,
+        "poissonAbsoluteError": 3.847736508459076e-58
+      },
+      {
+        "q": 0.9,
+        "x": 0.45,
+        "h": 1e-16,
+        "numericMinusDPhiDx": 0.0,
+        "expectedG": 0.0,
+        "forceAbsoluteError": 0.0,
+        "numericLaplacianPhi": 0.0,
+        "expected4PiDensity": 0.0,
+        "poissonAbsoluteError": 0.0
+      },
+      {
+        "q": 0.9,
+        "x": 0.95,
+        "h": 1e-16,
+        "numericMinusDPhiDx": -0.5248847502325439,
+        "expectedG": -0.5248847502325439,
+        "forceAbsoluteError": 3.3026596178592905e-32,
+        "numericLaplacianPhi": 11.07011070110701,
+        "expected4PiDensity": 11.07011070110701,
+        "poissonAbsoluteError": 3.0126597531305614e-58
+      },
+      {
+        "q": 0.9,
+        "x": 2.0,
+        "h": 1e-16,
+        "numericMinusDPhiDx": -0.25,
+        "expectedG": -0.25,
+        "forceAbsoluteError": 6.25e-34,
+        "numericLaplacianPhi": 1.5625e-66,
+        "expected4PiDensity": 0.0,
+        "poissonAbsoluteError": 1.5625e-66
+      },
+      {
+        "q": 0.0,
+        "x": 0,
+        "h": 1e-16,
+        "centerLaplacianPhi": 3.0,
+        "expected4PiDensity": 3.0,
+        "poissonAbsoluteError": 0.0
+      },
+      {
+        "q": 0.9,
+        "x": 0,
+        "h": 1e-16,
+        "centerLaplacianPhi": 0.0,
+        "expected4PiDensity": 0.0,
+        "poissonAbsoluteError": 0.0
+      }
+    ],
+    "interfaceIntegralChecks": [
+      {
+        "q": 0.0,
+        "x": 1.0,
+        "epsilon": 1e-09,
+        "phiLeft": -1.000000001,
+        "phiAt": -1.0,
+        "phiRight": -0.999999999,
+        "gLeft": -0.999999999,
+        "gAt": -1.0,
+        "gRight": -0.9999999980000001,
+        "integratedPoissonFlux": 2.999999997e-09,
+        "enclosedMassJump": 2.999999997e-09,
+        "integratedPoissonAbsoluteError": 0.0
+      },
+      {
+        "q": 0.5,
+        "x": 0.5,
+        "epsilon": 1e-09,
+        "phiLeft": -1.2857142857142858,
+        "phiAt": -1.2857142857142858,
+        "phiRight": -1.2857142857142858,
+        "gLeft": 0.0,
+        "gAt": 0.0,
+        "gRight": -3.428571421714286e-09,
+        "integratedPoissonFlux": 8.571428588571429e-10,
+        "enclosedMassJump": 8.571428588571429e-10,
+        "integratedPoissonAbsoluteError": 1e-99
+      },
+      {
+        "q": 0.5,
+        "x": 1.0,
+        "epsilon": 1e-09,
+        "phiLeft": -1.000000001,
+        "phiAt": -1.0,
+        "phiRight": -0.999999999,
+        "gLeft": -0.9999999985714285,
+        "gAt": -1.0,
+        "gRight": -0.9999999980000001,
+        "integratedPoissonFlux": 3.4285714251428573e-09,
+        "enclosedMassJump": 3.4285714251428573e-09,
+        "integratedPoissonAbsoluteError": 0.0
+      },
+      {
+        "q": 0.9,
+        "x": 0.9,
+        "epsilon": 1e-09,
+        "phiLeft": -1.051660516605166,
+        "phiAt": -1.051660516605166,
+        "phiRight": -1.051660516605166,
+        "gLeft": 0.0,
+        "gAt": 0.0,
+        "gRight": -1.1070110688806888e-08,
+        "integratedPoissonFlux": 8.966789677859779e-09,
+        "enclosedMassJump": 8.966789677859779e-09,
+        "integratedPoissonAbsoluteError": 2e-98
+      },
+      {
+        "q": 0.9,
+        "x": 1.0,
+        "epsilon": 1e-09,
+        "phiLeft": -1.000000001,
+        "phiAt": -1.0,
+        "phiRight": -0.999999999,
+        "gLeft": -0.9999999909298893,
+        "gAt": -1.0,
+        "gRight": -0.9999999980000001,
+        "integratedPoissonFlux": 1.10701106900369e-08,
+        "enclosedMassJump": 1.10701106900369e-08,
+        "integratedPoissonAbsoluteError": 0.0
+      }
+    ],
+    "physicalReadouts": [
+      {
+        "logM": 9,
+        "bKpc": 50.0,
+        "q": 0.9,
+        "x": 0.0,
+        "rKpc": 0.0,
+        "enclosedMassMsun": 0.0,
+        "phiKm2S2": -90.4619446494465,
+        "signedGKm2S2PerKpc": 0.0,
+        "vcKmS": 0.0,
+        "vescKmS": 13.450795117720476
+      },
+      {
+        "logM": 9,
+        "bKpc": 50.0,
+        "q": 0.9,
+        "x": 1.0,
+        "rKpc": 50.0,
+        "enclosedMassMsun": 1000000000.0,
+        "phiKm2S2": -86.0182,
+        "signedGKm2S2PerKpc": -1.720364,
+        "vcKmS": 9.274599721820882,
+        "vescKmS": 13.116264712180827
+      },
+      {
+        "logM": 12,
+        "bKpc": 5.0,
+        "q": 0.0,
+        "x": 0.0,
+        "rKpc": 0.0,
+        "enclosedMassMsun": 0.0,
+        "phiKm2S2": -1290273.0,
+        "signedGKm2S2PerKpc": 0.0,
+        "vcKmS": 0.0,
+        "vescKmS": 1606.4077938057944
+      },
+      {
+        "logM": 12,
+        "bKpc": 5.0,
+        "q": 0.0,
+        "x": 1.0,
+        "rKpc": 5.0,
+        "enclosedMassMsun": 1000000000000.0,
+        "phiKm2S2": -860182.0,
+        "signedGKm2S2PerKpc": -172036.4,
+        "vcKmS": 927.4599721820883,
+        "vescKmS": 1311.6264712180828
+      },
+      {
+        "logM": 12,
+        "bKpc": 5.0,
+        "q": 0.9,
+        "x": 0.95,
+        "rKpc": 4.75,
+        "enclosedMassMsun": 473708487084.87085,
+        "phiKm2S2": -893134.2042144105,
+        "signedGKm2S2PerKpc": -90299.28284490602,
+        "vcKmS": 654.9210589936039,
+        "vescKmS": 1336.5135272150526
+      },
+      {
+        "logM": 11,
+        "bKpc": 20.0,
+        "q": 0.5,
+        "x": 0.25,
+        "rKpc": 5.0,
+        "enclosedMassMsun": 0.0,
+        "phiKm2S2": -27648.707142857143,
+        "signedGKm2S2PerKpc": 0.0,
+        "vcKmS": -0.0,
+        "vescKmS": 235.15402247402506
+      },
+      {
+        "logM": 11,
+        "bKpc": 20.0,
+        "q": 0.5,
+        "x": 3.0,
+        "rKpc": 60.0,
+        "enclosedMassMsun": 100000000000.0,
+        "phiKm2S2": -7168.183333333333,
+        "signedGKm2S2PerKpc": -119.46972222222222,
+        "vcKmS": 84.66512465787393,
+        "vescKmS": 119.73456755117407
+      }
+    ],
+    "tolerances": {
+      "closedDoubleAbs": 2e-12,
+      "radialQuadratureAbs": 2e-12,
+      "angularQuadratureAbs": 2e-10,
+      "finiteDifferenceDecimalAbsolute": 1e-28,
+      "physicalReadoutRelative": 2e-12
+    },
+    "validation": {
+      "maxRadialPotentialAbs": 2.220446049250313e-16,
+      "maxRadialMassAbs": 5.449540123231129e-16,
+      "maxAngularForceAbs": 1.1102230246251565e-16,
+      "maxAngularPotentialAbs": 1.1102230246251565e-16,
+      "maxForceDerivativeAbs": 3.3026596178592905e-32,
+      "maxPoissonAbs": 3.847736508459076e-58,
+      "maxIntegratedPoissonAbs": 2e-98
+    }
+  },
+  "thermal": {
+    "cases": [
+      {
+        "alpha": -1.0,
+        "d": 0.0,
+        "w": 0.25,
+        "tau": 0.0,
+        "wavelengthPc": 25.0,
+        "timeMyr": 0.0,
+        "sigmaTth": 2.0,
+        "sigmaPerMyr": 0.02,
+        "coolingOnlySigmaTth": 2.0,
+        "conductionDampingTth": 0.0,
+        "amplitude": 0.001,
+        "noConductionAmplitude": 0.001,
+        "conductionAmplitudeRatio": 1.0,
+        "criticalWavelengthPc": 0.0,
+        "classification": "growing",
+        "soundCrossMyr": 0.16143402992717884,
+        "soundToEFoldRatio": 0.003228680598543577,
+        "eFoldMyr": 50.0,
+        "maxPressureTruncationError": 1e-06,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.001,
+            "deltaDensity": -0.001,
+            "temperatureRatio": 1.001,
+            "densityRatio": 0.999,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.0007071067811865476,
+            "deltaDensity": -0.0007071067811865476,
+            "temperatureRatio": 1.0007071067811866,
+            "densityRatio": 0.9992928932188134,
+            "pressureRatio": 0.9999995
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 6.123233995736766e-20,
+            "deltaDensity": -6.123233995736766e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.0007071067811865475,
+            "deltaDensity": 0.0007071067811865475,
+            "temperatureRatio": 0.9992928932188134,
+            "densityRatio": 1.0007071067811866,
+            "pressureRatio": 0.9999995
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.001,
+            "deltaDensity": 0.001,
+            "temperatureRatio": 0.999,
+            "densityRatio": 1.001,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.8369701987210296e-19,
+            "deltaDensity": 1.8369701987210296e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.001,
+            "deltaDensity": -0.001,
+            "temperatureRatio": 1.001,
+            "densityRatio": 0.999,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 3.061616997868383e-19,
+            "deltaDensity": -3.061616997868383e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.001,
+            "deltaDensity": 0.001,
+            "temperatureRatio": 0.999,
+            "densityRatio": 1.001,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -4.286263797015736e-19,
+            "deltaDensity": 4.286263797015736e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.001,
+            "deltaDensity": -0.001,
+            "temperatureRatio": 1.001,
+            "densityRatio": 0.999,
+            "pressureRatio": 0.999999
+          }
+        ]
+      },
+      {
+        "alpha": -1.0,
+        "d": 0.0,
+        "w": 4.0,
+        "tau": 2.0,
+        "wavelengthPc": 400.0,
+        "timeMyr": 200.0,
+        "sigmaTth": 2.0,
+        "sigmaPerMyr": 0.02,
+        "coolingOnlySigmaTth": 2.0,
+        "conductionDampingTth": 0.0,
+        "amplitude": 0.05459815003314424,
+        "noConductionAmplitude": 0.05459815003314424,
+        "conductionAmplitudeRatio": 1.0,
+        "criticalWavelengthPc": 0.0,
+        "classification": "growing",
+        "soundCrossMyr": 2.5829444788348614,
+        "soundToEFoldRatio": 0.05165888957669723,
+        "eFoldMyr": 50.0,
+        "maxPressureTruncationError": 0.002980957987041728,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.05459815003314424,
+            "deltaDensity": -0.05459815003314424,
+            "temperatureRatio": 1.0545981500331443,
+            "densityRatio": 0.9454018499668557,
+            "pressureRatio": 0.9970190420129583
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.03860672212867682,
+            "deltaDensity": -0.03860672212867682,
+            "temperatureRatio": 1.0386067221286768,
+            "densityRatio": 0.9613932778713232,
+            "pressureRatio": 0.9985095210064792
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 3.3431724838728524e-18,
+            "deltaDensity": -3.3431724838728524e-18,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.038606722128676815,
+            "deltaDensity": 0.038606722128676815,
+            "temperatureRatio": 0.9613932778713232,
+            "densityRatio": 1.0386067221286768,
+            "pressureRatio": 0.9985095210064792
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.05459815003314424,
+            "deltaDensity": 0.05459815003314424,
+            "temperatureRatio": 0.9454018499668557,
+            "densityRatio": 1.0545981500331443,
+            "pressureRatio": 0.9970190420129583
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.0029517451618557e-17,
+            "deltaDensity": 1.0029517451618557e-17,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.05459815003314424,
+            "deltaDensity": -0.05459815003314424,
+            "temperatureRatio": 1.0545981500331443,
+            "densityRatio": 0.9454018499668557,
+            "pressureRatio": 0.9970190420129583
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 1.6715862419364262e-17,
+            "deltaDensity": -1.6715862419364262e-17,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.05459815003314424,
+            "deltaDensity": 0.05459815003314424,
+            "temperatureRatio": 0.9454018499668557,
+            "densityRatio": 1.0545981500331443,
+            "pressureRatio": 0.9970190420129583
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -2.3402207387109967e-17,
+            "deltaDensity": 2.3402207387109967e-17,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.05459815003314424,
+            "deltaDensity": -0.05459815003314424,
+            "temperatureRatio": 1.0545981500331443,
+            "densityRatio": 0.9454018499668557,
+            "pressureRatio": 0.9970190420129583
+          }
+        ]
+      },
+      {
+        "alpha": -1.0,
+        "d": 0.05,
+        "w": 0.25,
+        "tau": 2.0,
+        "wavelengthPc": 25.0,
+        "timeMyr": 200.0,
+        "sigmaTth": -29.58273408348595,
+        "sigmaPerMyr": -0.29582734083485945,
+        "coolingOnlySigmaTth": 2.0,
+        "conductionDampingTth": 31.58273408348595,
+        "amplitude": 2.017268262502731e-29,
+        "noConductionAmplitude": 0.05459815003314424,
+        "conductionAmplitudeRatio": 3.6947557037704255e-28,
+        "criticalWavelengthPc": 99.34588265796101,
+        "classification": "decaying",
+        "soundCrossMyr": 0.16143402992717884,
+        "soundToEFoldRatio": 0.04775659979361244,
+        "eFoldMyr": 3.380350163638975,
+        "maxPressureTruncationError": 4.0693712429007885e-58,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 2.017268262502731e-29,
+            "deltaDensity": -2.017268262502731e-29,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 1.4264240678880858e-29,
+            "deltaDensity": -1.4264240678880858e-29,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 1.2352205603477562e-45,
+            "deltaDensity": -1.2352205603477562e-45,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -1.4264240678880856e-29,
+            "deltaDensity": 1.4264240678880856e-29,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -2.017268262502731e-29,
+            "deltaDensity": 2.017268262502731e-29,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -3.7056616810432684e-45,
+            "deltaDensity": 3.7056616810432684e-45,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 2.017268262502731e-29,
+            "deltaDensity": -2.017268262502731e-29,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 6.176102801738782e-45,
+            "deltaDensity": -6.176102801738782e-45,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -2.017268262502731e-29,
+            "deltaDensity": 2.017268262502731e-29,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -8.646543922434293e-45,
+            "deltaDensity": 8.646543922434293e-45,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 2.017268262502731e-29,
+            "deltaDensity": -2.017268262502731e-29,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          }
+        ]
+      },
+      {
+        "alpha": -1.0,
+        "d": 0.05,
+        "w": 4.0,
+        "tau": 2.0,
+        "wavelengthPc": 400.0,
+        "timeMyr": 200.0,
+        "sigmaTth": 1.876629944986383,
+        "sigmaPerMyr": 0.01876629944986383,
+        "coolingOnlySigmaTth": 2.0,
+        "conductionDampingTth": 0.12337005501361699,
+        "amplitude": 0.042659922227885984,
+        "noConductionAmplitude": 0.05459815003314424,
+        "conductionAmplitudeRatio": 0.7813437305474442,
+        "criticalWavelengthPc": 99.34588265796101,
+        "classification": "growing",
+        "soundCrossMyr": 2.5829444788348614,
+        "soundToEFoldRatio": 0.04847230955218748,
+        "eFoldMyr": 53.287010722151514,
+        "maxPressureTruncationError": 0.0018198689644892809,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.042659922227885984,
+            "deltaDensity": -0.042659922227885984,
+            "temperatureRatio": 1.042659922227886,
+            "densityRatio": 0.957340077772114,
+            "pressureRatio": 0.9981801310355107
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.030165120292228915,
+            "deltaDensity": -0.030165120292228915,
+            "temperatureRatio": 1.0301651202922288,
+            "densityRatio": 0.969834879707771,
+            "pressureRatio": 0.9990900655177554
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 2.6121668604127798e-18,
+            "deltaDensity": -2.6121668604127798e-18,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.03016512029222891,
+            "deltaDensity": 0.03016512029222891,
+            "temperatureRatio": 0.969834879707771,
+            "densityRatio": 1.0301651202922288,
+            "pressureRatio": 0.9990900655177554
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.042659922227885984,
+            "deltaDensity": 0.042659922227885984,
+            "temperatureRatio": 0.957340077772114,
+            "densityRatio": 1.042659922227886,
+            "pressureRatio": 0.9981801310355107
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -7.836500581238339e-18,
+            "deltaDensity": 7.836500581238339e-18,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.042659922227885984,
+            "deltaDensity": -0.042659922227885984,
+            "temperatureRatio": 1.042659922227886,
+            "densityRatio": 0.957340077772114,
+            "pressureRatio": 0.9981801310355107
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 1.30608343020639e-17,
+            "deltaDensity": -1.30608343020639e-17,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.042659922227885984,
+            "deltaDensity": 0.042659922227885984,
+            "temperatureRatio": 0.957340077772114,
+            "densityRatio": 1.042659922227886,
+            "pressureRatio": 0.9981801310355107
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -1.8285168022889458e-17,
+            "deltaDensity": 1.8285168022889458e-17,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.042659922227885984,
+            "deltaDensity": -0.042659922227885984,
+            "temperatureRatio": 1.042659922227886,
+            "densityRatio": 0.957340077772114,
+            "pressureRatio": 0.9981801310355107
+          }
+        ]
+      },
+      {
+        "alpha": 0.0,
+        "d": 0.0,
+        "w": 1.0,
+        "tau": 2.0,
+        "wavelengthPc": 100.0,
+        "timeMyr": 200.0,
+        "sigmaTth": 1.0,
+        "sigmaPerMyr": 0.01,
+        "coolingOnlySigmaTth": 1.0,
+        "conductionDampingTth": 0.0,
+        "amplitude": 0.00738905609893065,
+        "noConductionAmplitude": 0.00738905609893065,
+        "conductionAmplitudeRatio": 1.0,
+        "criticalWavelengthPc": 0.0,
+        "classification": "growing",
+        "soundCrossMyr": 0.6457361197087154,
+        "soundToEFoldRatio": 0.006457361197087154,
+        "eFoldMyr": 100.0,
+        "maxPressureTruncationError": 5.459815003314424e-05,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.00738905609893065,
+            "deltaDensity": -0.00738905609893065,
+            "temperatureRatio": 1.0073890560989307,
+            "densityRatio": 0.9926109439010693,
+            "pressureRatio": 0.9999454018499668
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.00522485167412168,
+            "deltaDensity": -0.00522485167412168,
+            "temperatureRatio": 1.0052248516741218,
+            "densityRatio": 0.9947751483258783,
+            "pressureRatio": 0.9999727009249835
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 4.524491950137825e-19,
+            "deltaDensity": -4.524491950137825e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.0052248516741216795,
+            "deltaDensity": 0.0052248516741216795,
+            "temperatureRatio": 0.9947751483258783,
+            "densityRatio": 1.0052248516741218,
+            "pressureRatio": 0.9999727009249835
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.00738905609893065,
+            "deltaDensity": 0.00738905609893065,
+            "temperatureRatio": 0.9926109439010693,
+            "densityRatio": 1.0073890560989307,
+            "pressureRatio": 0.9999454018499668
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.3573475850413472e-18,
+            "deltaDensity": 1.3573475850413472e-18,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.00738905609893065,
+            "deltaDensity": -0.00738905609893065,
+            "temperatureRatio": 1.0073890560989307,
+            "densityRatio": 0.9926109439010693,
+            "pressureRatio": 0.9999454018499668
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 2.2622459750689124e-18,
+            "deltaDensity": -2.2622459750689124e-18,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.00738905609893065,
+            "deltaDensity": 0.00738905609893065,
+            "temperatureRatio": 0.9926109439010693,
+            "densityRatio": 1.0073890560989307,
+            "pressureRatio": 0.9999454018499668
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -3.1671443650964772e-18,
+            "deltaDensity": 3.1671443650964772e-18,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.00738905609893065,
+            "deltaDensity": -0.00738905609893065,
+            "temperatureRatio": 1.0073890560989307,
+            "densityRatio": 0.9926109439010693,
+            "pressureRatio": 0.9999454018499668
+          }
+        ]
+      },
+      {
+        "alpha": 0.0,
+        "d": 0.01,
+        "w": 1.0,
+        "tau": 2.0,
+        "wavelengthPc": 100.0,
+        "timeMyr": 200.0,
+        "sigmaTth": 0.6052158239564257,
+        "sigmaPerMyr": 0.006052158239564257,
+        "coolingOnlySigmaTth": 1.0,
+        "conductionDampingTth": 0.39478417604357435,
+        "amplitude": 0.003354932489655528,
+        "noConductionAmplitude": 0.00738905609893065,
+        "conductionAmplitudeRatio": 0.45404073872724504,
+        "criticalWavelengthPc": 62.83185307179586,
+        "classification": "growing",
+        "soundCrossMyr": 0.6457361197087154,
+        "soundToEFoldRatio": 0.0039080971774793525,
+        "eFoldMyr": 165.2303129589021,
+        "maxPressureTruncationError": 1.1255572010146238e-05,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.003354932489655528,
+            "deltaDensity": -0.003354932489655528,
+            "temperatureRatio": 1.0033549324896556,
+            "densityRatio": 0.9966450675103444,
+            "pressureRatio": 0.9999887444279899
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.002372295513858491,
+            "deltaDensity": -0.002372295513858491,
+            "temperatureRatio": 1.0023722955138585,
+            "densityRatio": 0.9976277044861415,
+            "pressureRatio": 0.9999943722139949
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 2.0543036674060514e-19,
+            "deltaDensity": -2.0543036674060514e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.0023722955138584904,
+            "deltaDensity": 0.0023722955138584904,
+            "temperatureRatio": 0.9976277044861415,
+            "densityRatio": 1.0023722955138585,
+            "pressureRatio": 0.9999943722139949
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.003354932489655528,
+            "deltaDensity": 0.003354932489655528,
+            "temperatureRatio": 0.9966450675103444,
+            "densityRatio": 1.0033549324896556,
+            "pressureRatio": 0.9999887444279899
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -6.162911002218154e-19,
+            "deltaDensity": 6.162911002218154e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.003354932489655528,
+            "deltaDensity": -0.003354932489655528,
+            "temperatureRatio": 1.0033549324896556,
+            "densityRatio": 0.9966450675103444,
+            "pressureRatio": 0.9999887444279899
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 1.0271518337030257e-18,
+            "deltaDensity": -1.0271518337030257e-18,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.003354932489655528,
+            "deltaDensity": 0.003354932489655528,
+            "temperatureRatio": 0.9966450675103444,
+            "densityRatio": 1.0033549324896556,
+            "pressureRatio": 0.9999887444279899
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -1.438012567184236e-18,
+            "deltaDensity": 1.438012567184236e-18,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.003354932489655528,
+            "deltaDensity": -0.003354932489655528,
+            "temperatureRatio": 1.0033549324896556,
+            "densityRatio": 0.9966450675103444,
+            "pressureRatio": 0.9999887444279899
+          }
+        ]
+      },
+      {
+        "alpha": 0.0,
+        "d": 0.05,
+        "w": 0.25,
+        "tau": 2.0,
+        "wavelengthPc": 25.0,
+        "timeMyr": 200.0,
+        "sigmaTth": -30.58273408348595,
+        "sigmaPerMyr": -0.30582734083485946,
+        "coolingOnlySigmaTth": 1.0,
+        "conductionDampingTth": 31.58273408348595,
+        "amplitude": 2.730075716700367e-30,
+        "noConductionAmplitude": 0.00738905609893065,
+        "conductionAmplitudeRatio": 3.6947557037704255e-28,
+        "criticalWavelengthPc": 140.49629462081452,
+        "classification": "decaying",
+        "soundCrossMyr": 0.16143402992717884,
+        "soundToEFoldRatio": 0.04937094009288423,
+        "eFoldMyr": 3.2698188372241694,
+        "maxPressureTruncationError": 7.453313418917022e-60,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 2.730075716700367e-30,
+            "deltaDensity": -2.730075716700367e-30,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 1.9304550524315535e-30,
+            "deltaDensity": -1.9304550524315535e-30,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 1.6716892439435104e-46,
+            "deltaDensity": -1.6716892439435104e-46,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -1.930455052431553e-30,
+            "deltaDensity": 1.930455052431553e-30,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -2.730075716700367e-30,
+            "deltaDensity": 2.730075716700367e-30,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -5.015067731830531e-46,
+            "deltaDensity": 5.015067731830531e-46,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 2.730075716700367e-30,
+            "deltaDensity": -2.730075716700367e-30,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 8.358446219717551e-46,
+            "deltaDensity": -8.358446219717551e-46,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -2.730075716700367e-30,
+            "deltaDensity": 2.730075716700367e-30,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -1.1701824707604571e-45,
+            "deltaDensity": 1.1701824707604571e-45,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 2.730075716700367e-30,
+            "deltaDensity": -2.730075716700367e-30,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          }
+        ]
+      },
+      {
+        "alpha": 0.0,
+        "d": 0.05,
+        "w": 4.0,
+        "tau": 2.0,
+        "wavelengthPc": 400.0,
+        "timeMyr": 200.0,
+        "sigmaTth": 0.876629944986383,
+        "sigmaPerMyr": 0.00876629944986383,
+        "coolingOnlySigmaTth": 1.0,
+        "conductionDampingTth": 0.12337005501361699,
+        "amplitude": 0.00577339265756282,
+        "noConductionAmplitude": 0.00738905609893065,
+        "conductionAmplitudeRatio": 0.7813437305474442,
+        "criticalWavelengthPc": 140.49629462081452,
+        "classification": "growing",
+        "soundCrossMyr": 2.5829444788348614,
+        "soundToEFoldRatio": 0.022642864763838866,
+        "eFoldMyr": 114.07321934633813,
+        "maxPressureTruncationError": 3.3332062778400275e-05,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.00577339265756282,
+            "deltaDensity": -0.00577339265756282,
+            "temperatureRatio": 1.0057733926575627,
+            "densityRatio": 0.9942266073424372,
+            "pressureRatio": 0.9999666679372216
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.004082405098615293,
+            "deltaDensity": -0.004082405098615293,
+            "temperatureRatio": 1.0040824050986152,
+            "densityRatio": 0.9959175949013848,
+            "pressureRatio": 0.9999833339686108
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 3.535183419152569e-19,
+            "deltaDensity": -3.535183419152569e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.004082405098615293,
+            "deltaDensity": 0.004082405098615293,
+            "temperatureRatio": 0.9959175949013848,
+            "densityRatio": 1.0040824050986152,
+            "pressureRatio": 0.9999833339686108
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.00577339265756282,
+            "deltaDensity": 0.00577339265756282,
+            "temperatureRatio": 0.9942266073424372,
+            "densityRatio": 1.0057733926575627,
+            "pressureRatio": 0.9999666679372216
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.0605550257457706e-18,
+            "deltaDensity": 1.0605550257457706e-18,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.00577339265756282,
+            "deltaDensity": -0.00577339265756282,
+            "temperatureRatio": 1.0057733926575627,
+            "densityRatio": 0.9942266073424372,
+            "pressureRatio": 0.9999666679372216
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 1.7675917095762846e-18,
+            "deltaDensity": -1.7675917095762846e-18,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.00577339265756282,
+            "deltaDensity": 0.00577339265756282,
+            "temperatureRatio": 0.9942266073424372,
+            "densityRatio": 1.0057733926575627,
+            "pressureRatio": 0.9999666679372216
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -2.4746283934067982e-18,
+            "deltaDensity": 2.4746283934067982e-18,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.00577339265756282,
+            "deltaDensity": -0.00577339265756282,
+            "temperatureRatio": 1.0057733926575627,
+            "densityRatio": 0.9942266073424372,
+            "pressureRatio": 0.9999666679372216
+          }
+        ]
+      },
+      {
+        "alpha": 1.0,
+        "d": 0.0,
+        "w": 1.0,
+        "tau": 2.0,
+        "wavelengthPc": 100.0,
+        "timeMyr": 200.0,
+        "sigmaTth": 0.0,
+        "sigmaPerMyr": 0.0,
+        "coolingOnlySigmaTth": 0.0,
+        "conductionDampingTth": 0.0,
+        "amplitude": 0.001,
+        "noConductionAmplitude": 0.001,
+        "conductionAmplitudeRatio": 1.0,
+        "criticalWavelengthPc": null,
+        "classification": "neutral",
+        "soundCrossMyr": 0.6457361197087154,
+        "soundToEFoldRatio": 0.0,
+        "eFoldMyr": null,
+        "maxPressureTruncationError": 1e-06,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.001,
+            "deltaDensity": -0.001,
+            "temperatureRatio": 1.001,
+            "densityRatio": 0.999,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.0007071067811865476,
+            "deltaDensity": -0.0007071067811865476,
+            "temperatureRatio": 1.0007071067811866,
+            "densityRatio": 0.9992928932188134,
+            "pressureRatio": 0.9999995
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 6.123233995736766e-20,
+            "deltaDensity": -6.123233995736766e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.0007071067811865475,
+            "deltaDensity": 0.0007071067811865475,
+            "temperatureRatio": 0.9992928932188134,
+            "densityRatio": 1.0007071067811866,
+            "pressureRatio": 0.9999995
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.001,
+            "deltaDensity": 0.001,
+            "temperatureRatio": 0.999,
+            "densityRatio": 1.001,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.8369701987210296e-19,
+            "deltaDensity": 1.8369701987210296e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.001,
+            "deltaDensity": -0.001,
+            "temperatureRatio": 1.001,
+            "densityRatio": 0.999,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 3.061616997868383e-19,
+            "deltaDensity": -3.061616997868383e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.001,
+            "deltaDensity": 0.001,
+            "temperatureRatio": 0.999,
+            "densityRatio": 1.001,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -4.286263797015736e-19,
+            "deltaDensity": 4.286263797015736e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.001,
+            "deltaDensity": -0.001,
+            "temperatureRatio": 1.001,
+            "densityRatio": 0.999,
+            "pressureRatio": 0.999999
+          }
+        ]
+      },
+      {
+        "alpha": 1.0,
+        "d": 0.05,
+        "w": 4.0,
+        "tau": 2.0,
+        "wavelengthPc": 400.0,
+        "timeMyr": 200.0,
+        "sigmaTth": -0.12337005501361699,
+        "sigmaPerMyr": -0.0012337005501361698,
+        "coolingOnlySigmaTth": 0.0,
+        "conductionDampingTth": 0.12337005501361699,
+        "amplitude": 0.0007813437305474443,
+        "noConductionAmplitude": 0.001,
+        "conductionAmplitudeRatio": 0.7813437305474442,
+        "criticalWavelengthPc": null,
+        "classification": "decaying",
+        "soundCrossMyr": 2.5829444788348614,
+        "soundToEFoldRatio": 0.003186580024509751,
+        "eFoldMyr": 810.5694691387022,
+        "maxPressureTruncationError": 6.104980252657972e-07,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.0007813437305474443,
+            "deltaDensity": -0.0007813437305474443,
+            "temperatureRatio": 1.0007813437305475,
+            "densityRatio": 0.9992186562694526,
+            "pressureRatio": 0.9999993895019748
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.0005524934503076924,
+            "deltaDensity": -0.0005524934503076924,
+            "temperatureRatio": 1.0005524934503076,
+            "densityRatio": 0.9994475065496923,
+            "pressureRatio": 0.9999996947509874
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 4.784350493243898e-20,
+            "deltaDensity": -4.784350493243898e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.0005524934503076924,
+            "deltaDensity": 0.0005524934503076924,
+            "temperatureRatio": 0.9994475065496923,
+            "densityRatio": 1.0005524934503076,
+            "pressureRatio": 0.9999996947509874
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.0007813437305474443,
+            "deltaDensity": 0.0007813437305474443,
+            "temperatureRatio": 0.9992186562694526,
+            "densityRatio": 1.0007813437305475,
+            "pressureRatio": 0.9999993895019748
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.4353051479731692e-19,
+            "deltaDensity": 1.4353051479731692e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.0007813437305474443,
+            "deltaDensity": -0.0007813437305474443,
+            "temperatureRatio": 1.0007813437305475,
+            "densityRatio": 0.9992186562694526,
+            "pressureRatio": 0.9999993895019748
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 2.392175246621949e-19,
+            "deltaDensity": -2.392175246621949e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.0007813437305474443,
+            "deltaDensity": 0.0007813437305474443,
+            "temperatureRatio": 0.9992186562694526,
+            "densityRatio": 1.0007813437305475,
+            "pressureRatio": 0.9999993895019748
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -3.3490453452707284e-19,
+            "deltaDensity": 3.3490453452707284e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.0007813437305474443,
+            "deltaDensity": -0.0007813437305474443,
+            "temperatureRatio": 1.0007813437305475,
+            "densityRatio": 0.9992186562694526,
+            "pressureRatio": 0.9999993895019748
+          }
+        ]
+      },
+      {
+        "alpha": 1.0,
+        "d": 0.05,
+        "w": 0.25,
+        "tau": 2.0,
+        "wavelengthPc": 25.0,
+        "timeMyr": 200.0,
+        "sigmaTth": -31.58273408348595,
+        "sigmaPerMyr": -0.31582734083485947,
+        "coolingOnlySigmaTth": 0.0,
+        "conductionDampingTth": 31.58273408348595,
+        "amplitude": 3.6947557037704256e-31,
+        "noConductionAmplitude": 0.001,
+        "conductionAmplitudeRatio": 3.6947557037704255e-28,
+        "criticalWavelengthPc": null,
+        "classification": "decaying",
+        "soundCrossMyr": 0.16143402992717884,
+        "soundToEFoldRatio": 0.05098528039215602,
+        "eFoldMyr": 3.1662869888230554,
+        "maxPressureTruncationError": 1.3651219710544093e-61,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 3.6947557037704256e-31,
+            "deltaDensity": -3.6947557037704256e-31,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 2.612586812963743e-31,
+            "deltaDensity": -2.612586812963743e-31,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 2.262385373126939e-47,
+            "deltaDensity": -2.262385373126939e-47,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -2.6125868129637426e-31,
+            "deltaDensity": 2.6125868129637426e-31,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -3.6947557037704256e-31,
+            "deltaDensity": 3.6947557037704256e-31,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -6.787156119380816e-47,
+            "deltaDensity": 6.787156119380816e-47,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 3.6947557037704256e-31,
+            "deltaDensity": -3.6947557037704256e-31,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 1.1311926865634695e-46,
+            "deltaDensity": -1.1311926865634695e-46,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -3.6947557037704256e-31,
+            "deltaDensity": 3.6947557037704256e-31,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -1.5836697611888572e-46,
+            "deltaDensity": 1.5836697611888572e-46,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 3.6947557037704256e-31,
+            "deltaDensity": -3.6947557037704256e-31,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          }
+        ]
+      },
+      {
+        "alpha": 2.0,
+        "d": 0.0,
+        "w": 4.0,
+        "tau": 2.0,
+        "wavelengthPc": 400.0,
+        "timeMyr": 200.0,
+        "sigmaTth": -1.0,
+        "sigmaPerMyr": -0.01,
+        "coolingOnlySigmaTth": -1.0,
+        "conductionDampingTth": 0.0,
+        "amplitude": 0.0001353352832366127,
+        "noConductionAmplitude": 0.0001353352832366127,
+        "conductionAmplitudeRatio": 1.0,
+        "criticalWavelengthPc": null,
+        "classification": "decaying",
+        "soundCrossMyr": 2.5829444788348614,
+        "soundToEFoldRatio": 0.025829444788348616,
+        "eFoldMyr": 100.0,
+        "maxPressureTruncationError": 1.831563888873418e-08,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.0001353352832366127,
+            "deltaDensity": -0.0001353352832366127,
+            "temperatureRatio": 1.0001353352832365,
+            "densityRatio": 0.9998646647167634,
+            "pressureRatio": 0.9999999816843611
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 9.569649651041094e-05,
+            "deltaDensity": -9.569649651041094e-05,
+            "temperatureRatio": 1.0000956964965104,
+            "densityRatio": 0.9999043035034896,
+            "pressureRatio": 0.9999999908421806
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 8.286896071370909e-21,
+            "deltaDensity": -8.286896071370909e-21,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -9.569649651041092e-05,
+            "deltaDensity": 9.569649651041092e-05,
+            "temperatureRatio": 0.9999043035034896,
+            "densityRatio": 1.0000956964965104,
+            "pressureRatio": 0.9999999908421806
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.0001353352832366127,
+            "deltaDensity": 0.0001353352832366127,
+            "temperatureRatio": 0.9998646647167634,
+            "densityRatio": 1.0001353352832365,
+            "pressureRatio": 0.9999999816843611
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -2.4860688214112724e-20,
+            "deltaDensity": 2.4860688214112724e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.0001353352832366127,
+            "deltaDensity": -0.0001353352832366127,
+            "temperatureRatio": 1.0001353352832365,
+            "densityRatio": 0.9998646647167634,
+            "pressureRatio": 0.9999999816843611
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 4.1434480356854544e-20,
+            "deltaDensity": -4.1434480356854544e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.0001353352832366127,
+            "deltaDensity": 0.0001353352832366127,
+            "temperatureRatio": 0.9998646647167634,
+            "densityRatio": 1.0001353352832365,
+            "pressureRatio": 0.9999999816843611
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -5.800827249959636e-20,
+            "deltaDensity": 5.800827249959636e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.0001353352832366127,
+            "deltaDensity": -0.0001353352832366127,
+            "temperatureRatio": 1.0001353352832365,
+            "densityRatio": 0.9998646647167634,
+            "pressureRatio": 0.9999999816843611
+          }
+        ]
+      },
+      {
+        "alpha": 2.0,
+        "d": 0.05,
+        "w": 0.25,
+        "tau": 2.0,
+        "wavelengthPc": 25.0,
+        "timeMyr": 200.0,
+        "sigmaTth": -32.582734083485946,
+        "sigmaPerMyr": -0.3258273408348595,
+        "coolingOnlySigmaTth": -1.0,
+        "conductionDampingTth": 31.58273408348595,
+        "amplitude": 5.000308096598608e-32,
+        "noConductionAmplitude": 0.0001353352832366127,
+        "conductionAmplitudeRatio": 3.6947557037704255e-28,
+        "criticalWavelengthPc": null,
+        "classification": "decaying",
+        "soundCrossMyr": 0.16143402992717884,
+        "soundToEFoldRatio": 0.05259962069142781,
+        "eFoldMyr": 3.0691101533644303,
+        "maxPressureTruncationError": 2.5003081060909596e-63,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 5.000308096598608e-32,
+            "deltaDensity": -5.000308096598608e-32,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 3.5357517631268743e-32,
+            "deltaDensity": -3.5357517631268743e-32,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 3.0618056526250395e-48,
+            "deltaDensity": -3.0618056526250395e-48,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -3.535751763126874e-32,
+            "deltaDensity": 3.535751763126874e-32,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -5.000308096598608e-32,
+            "deltaDensity": 5.000308096598608e-32,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -9.185416957875119e-48,
+            "deltaDensity": 9.185416957875119e-48,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 5.000308096598608e-32,
+            "deltaDensity": -5.000308096598608e-32,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 1.5309028263125198e-47,
+            "deltaDensity": -1.5309028263125198e-47,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -5.000308096598608e-32,
+            "deltaDensity": 5.000308096598608e-32,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -2.1432639568375277e-47,
+            "deltaDensity": 2.1432639568375277e-47,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 5.000308096598608e-32,
+            "deltaDensity": -5.000308096598608e-32,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          }
+        ]
+      },
+      {
+        "alpha": 2.0,
+        "d": 0.05,
+        "w": 4.0,
+        "tau": 2.0,
+        "wavelengthPc": 400.0,
+        "timeMyr": 200.0,
+        "sigmaTth": -1.123370055013617,
+        "sigmaPerMyr": -0.01123370055013617,
+        "coolingOnlySigmaTth": -1.0,
+        "conductionDampingTth": 0.12337005501361699,
+        "amplitude": 0.00010574337507878996,
+        "noConductionAmplitude": 0.0001353352832366127,
+        "conductionAmplitudeRatio": 0.7813437305474442,
+        "criticalWavelengthPc": null,
+        "classification": "decaying",
+        "soundCrossMyr": 2.5829444788348614,
+        "soundToEFoldRatio": 0.029016024812858365,
+        "eFoldMyr": 89.0178615263052,
+        "maxPressureTruncationError": 1.1181661373053657e-08,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.00010574337507878996,
+            "deltaDensity": -0.00010574337507878996,
+            "temperatureRatio": 1.0001057433750788,
+            "densityRatio": 0.9998942566249213,
+            "pressureRatio": 0.9999999888183386
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 7.477185758376495e-05,
+            "deltaDensity": -7.477185758376495e-05,
+            "temperatureRatio": 1.0000747718575838,
+            "densityRatio": 0.9999252281424162,
+            "pressureRatio": 0.9999999944091693
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 6.474914291063906e-21,
+            "deltaDensity": -6.474914291063906e-21,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -7.477185758376495e-05,
+            "deltaDensity": 7.477185758376495e-05,
+            "temperatureRatio": 0.9999252281424162,
+            "densityRatio": 1.0000747718575838,
+            "pressureRatio": 0.9999999944091693
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.00010574337507878996,
+            "deltaDensity": 0.00010574337507878996,
+            "temperatureRatio": 0.9998942566249213,
+            "densityRatio": 1.0001057433750788,
+            "pressureRatio": 0.9999999888183386
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.9424742873191715e-20,
+            "deltaDensity": 1.9424742873191715e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.00010574337507878996,
+            "deltaDensity": -0.00010574337507878996,
+            "temperatureRatio": 1.0001057433750788,
+            "densityRatio": 0.9998942566249213,
+            "pressureRatio": 0.9999999888183386
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 3.237457145531953e-20,
+            "deltaDensity": -3.237457145531953e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.00010574337507878996,
+            "deltaDensity": 0.00010574337507878996,
+            "temperatureRatio": 0.9998942566249213,
+            "densityRatio": 1.0001057433750788,
+            "pressureRatio": 0.9999999888183386
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -4.532440003744734e-20,
+            "deltaDensity": 4.532440003744734e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.00010574337507878996,
+            "deltaDensity": -0.00010574337507878996,
+            "temperatureRatio": 1.0001057433750788,
+            "densityRatio": 0.9998942566249213,
+            "pressureRatio": 0.9999999888183386
+          }
+        ]
+      },
+      {
+        "alpha": 0.99999999,
+        "d": 0.0,
+        "w": 1.0,
+        "tau": 2.0,
+        "wavelengthPc": 100.0,
+        "timeMyr": 200.0,
+        "sigmaTth": 1e-08,
+        "sigmaPerMyr": 1e-10,
+        "coolingOnlySigmaTth": 1e-08,
+        "conductionDampingTth": 0.0,
+        "amplitude": 0.0010000000200000002,
+        "noConductionAmplitude": 0.0010000000200000002,
+        "conductionAmplitudeRatio": 1.0,
+        "criticalWavelengthPc": 0.0,
+        "classification": "growing",
+        "soundCrossMyr": 0.6457361197087154,
+        "soundToEFoldRatio": 6.457361197087154e-11,
+        "eFoldMyr": 10000000000.0,
+        "maxPressureTruncationError": 1.0000000400000007e-06,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.0010000000200000002,
+            "deltaDensity": -0.0010000000200000002,
+            "temperatureRatio": 1.00100000002,
+            "densityRatio": 0.99899999998,
+            "pressureRatio": 0.99999899999996
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.0007071067953286833,
+            "deltaDensity": -0.0007071067953286833,
+            "temperatureRatio": 1.0007071067953286,
+            "densityRatio": 0.9992928932046713,
+            "pressureRatio": 0.99999949999998
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 6.123234118201447e-20,
+            "deltaDensity": -6.123234118201447e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.0007071067953286832,
+            "deltaDensity": 0.0007071067953286832,
+            "temperatureRatio": 0.9992928932046713,
+            "densityRatio": 1.0007071067953286,
+            "pressureRatio": 0.99999949999998
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.0010000000200000002,
+            "deltaDensity": 0.0010000000200000002,
+            "temperatureRatio": 0.99899999998,
+            "densityRatio": 1.00100000002,
+            "pressureRatio": 0.99999899999996
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.836970235460434e-19,
+            "deltaDensity": 1.836970235460434e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.0010000000200000002,
+            "deltaDensity": -0.0010000000200000002,
+            "temperatureRatio": 1.00100000002,
+            "densityRatio": 0.99899999998,
+            "pressureRatio": 0.99999899999996
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 3.0616170591007236e-19,
+            "deltaDensity": -3.0616170591007236e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.0010000000200000002,
+            "deltaDensity": 0.0010000000200000002,
+            "temperatureRatio": 0.99899999998,
+            "densityRatio": 1.00100000002,
+            "pressureRatio": 0.99999899999996
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -4.2862638827410126e-19,
+            "deltaDensity": 4.2862638827410126e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.0010000000200000002,
+            "deltaDensity": -0.0010000000200000002,
+            "temperatureRatio": 1.00100000002,
+            "densityRatio": 0.99899999998,
+            "pressureRatio": 0.99999899999996
+          }
+        ]
+      },
+      {
+        "alpha": 1.00000001,
+        "d": 0.0,
+        "w": 1.0,
+        "tau": 2.0,
+        "wavelengthPc": 100.0,
+        "timeMyr": 200.0,
+        "sigmaTth": -1e-08,
+        "sigmaPerMyr": -1e-10,
+        "coolingOnlySigmaTth": -1e-08,
+        "conductionDampingTth": 0.0,
+        "amplitude": 0.00099999998,
+        "noConductionAmplitude": 0.00099999998,
+        "conductionAmplitudeRatio": 1.0,
+        "criticalWavelengthPc": null,
+        "classification": "decaying",
+        "soundCrossMyr": 0.6457361197087154,
+        "soundToEFoldRatio": 6.457361197087154e-11,
+        "eFoldMyr": 10000000000.0,
+        "maxPressureTruncationError": 9.999999600000009e-07,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.00099999998,
+            "deltaDensity": -0.00099999998,
+            "temperatureRatio": 1.00099999998,
+            "densityRatio": 0.99900000002,
+            "pressureRatio": 0.99999900000004
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.0007071067670444121,
+            "deltaDensity": -0.0007071067670444121,
+            "temperatureRatio": 1.0007071067670443,
+            "densityRatio": 0.9992928932329556,
+            "pressureRatio": 0.99999950000002
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 6.123233873272088e-20,
+            "deltaDensity": -6.123233873272088e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.000707106767044412,
+            "deltaDensity": 0.000707106767044412,
+            "temperatureRatio": 0.9992928932329556,
+            "densityRatio": 1.0007071067670443,
+            "pressureRatio": 0.99999950000002
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.00099999998,
+            "deltaDensity": 0.00099999998,
+            "temperatureRatio": 0.99900000002,
+            "densityRatio": 1.00099999998,
+            "pressureRatio": 0.99999900000004
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.836970161981626e-19,
+            "deltaDensity": 1.836970161981626e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.00099999998,
+            "deltaDensity": -0.00099999998,
+            "temperatureRatio": 1.00099999998,
+            "densityRatio": 0.99900000002,
+            "pressureRatio": 0.99999900000004
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 3.061616936636044e-19,
+            "deltaDensity": -3.061616936636044e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.00099999998,
+            "deltaDensity": 0.00099999998,
+            "temperatureRatio": 0.99900000002,
+            "densityRatio": 1.00099999998,
+            "pressureRatio": 0.99999900000004
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -4.286263711290461e-19,
+            "deltaDensity": 4.286263711290461e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.00099999998,
+            "deltaDensity": -0.00099999998,
+            "temperatureRatio": 1.00099999998,
+            "densityRatio": 0.99900000002,
+            "pressureRatio": 0.99999900000004
+          }
+        ]
+      },
+      {
+        "alpha": -1.0,
+        "d": 0.05,
+        "w": 1.0,
+        "tau": 1.0,
+        "wavelengthPc": 100.0,
+        "timeMyr": 100.0,
+        "sigmaTth": 0.026079119782128277,
+        "sigmaPerMyr": 0.00026079119782128276,
+        "coolingOnlySigmaTth": 2.0,
+        "conductionDampingTth": 1.9739208802178718,
+        "amplitude": 0.0010264221555581756,
+        "noConductionAmplitude": 0.00738905609893065,
+        "conductionAmplitudeRatio": 0.13891113314280024,
+        "criticalWavelengthPc": 99.34588265796101,
+        "classification": "growing",
+        "soundCrossMyr": 0.6457361197087154,
+        "soundToEFoldRatio": 0.00016840229613530313,
+        "eFoldMyr": 3834.485244725509,
+        "maxPressureTruncationError": 1.0535424414206919e-06,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.0010264221555581756,
+            "deltaDensity": -0.0010264221555581756,
+            "temperatureRatio": 1.0010264221555583,
+            "densityRatio": 0.9989735778444419,
+            "pressureRatio": 0.9999989464575586
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.0007257900665552995,
+            "deltaDensity": -0.0007257900665552995,
+            "temperatureRatio": 1.0007257900665554,
+            "densityRatio": 0.9992742099334447,
+            "pressureRatio": 0.9999994732287792
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 6.285023036891233e-20,
+            "deltaDensity": -6.285023036891233e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.0007257900665552994,
+            "deltaDensity": 0.0007257900665552994,
+            "temperatureRatio": 0.9992742099334447,
+            "densityRatio": 1.0007257900665554,
+            "pressureRatio": 0.9999994732287792
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.0010264221555581756,
+            "deltaDensity": 0.0010264221555581756,
+            "temperatureRatio": 0.9989735778444419,
+            "densityRatio": 1.0010264221555583,
+            "pressureRatio": 0.9999989464575586
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.8855069110673696e-19,
+            "deltaDensity": 1.8855069110673696e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.0010264221555581756,
+            "deltaDensity": -0.0010264221555581756,
+            "temperatureRatio": 1.0010264221555583,
+            "densityRatio": 0.9989735778444419,
+            "pressureRatio": 0.9999989464575586
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 3.1425115184456164e-19,
+            "deltaDensity": -3.1425115184456164e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.0010264221555581756,
+            "deltaDensity": 0.0010264221555581756,
+            "temperatureRatio": 0.9989735778444419,
+            "densityRatio": 1.0010264221555583,
+            "pressureRatio": 0.9999989464575586
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -4.399516125823863e-19,
+            "deltaDensity": 4.399516125823863e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.0010264221555581756,
+            "deltaDensity": -0.0010264221555581756,
+            "temperatureRatio": 1.0010264221555583,
+            "densityRatio": 0.9989735778444419,
+            "pressureRatio": 0.9999989464575586
+          }
+        ]
+      },
+      {
+        "alpha": -1.0,
+        "d": 0.05,
+        "w": 1.0,
+        "tau": 2.0,
+        "wavelengthPc": 100.0,
+        "timeMyr": 200.0,
+        "sigmaTth": 0.026079119782128277,
+        "sigmaPerMyr": 0.00026079119782128276,
+        "coolingOnlySigmaTth": 2.0,
+        "conductionDampingTth": 1.9739208802178718,
+        "amplitude": 0.0010535424414206919,
+        "noConductionAmplitude": 0.05459815003314424,
+        "conductionAmplitudeRatio": 0.019296302911016777,
+        "criticalWavelengthPc": 99.34588265796101,
+        "classification": "growing",
+        "soundCrossMyr": 0.6457361197087154,
+        "soundToEFoldRatio": 0.00016840229613530313,
+        "eFoldMyr": 3834.485244725509,
+        "maxPressureTruncationError": 1.109951675874672e-06,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.0010535424414206919,
+            "deltaDensity": -0.0010535424414206919,
+            "temperatureRatio": 1.0010535424414206,
+            "densityRatio": 0.9989464575585794,
+            "pressureRatio": 0.9999988900483241
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.0007449670045964023,
+            "deltaDensity": -0.0007449670045964023,
+            "temperatureRatio": 1.0007449670045965,
+            "densityRatio": 0.9992550329954036,
+            "pressureRatio": 0.999999445024162
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 6.45108689325869e-20,
+            "deltaDensity": -6.45108689325869e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.0007449670045964022,
+            "deltaDensity": 0.0007449670045964022,
+            "temperatureRatio": 0.9992550329954036,
+            "densityRatio": 1.0007449670045965,
+            "pressureRatio": 0.999999445024162
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.0010535424414206919,
+            "deltaDensity": 0.0010535424414206919,
+            "temperatureRatio": 0.9989464575585794,
+            "densityRatio": 1.0010535424414206,
+            "pressureRatio": 0.9999988900483241
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.9353260679776072e-19,
+            "deltaDensity": 1.9353260679776072e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.0010535424414206919,
+            "deltaDensity": -0.0010535424414206919,
+            "temperatureRatio": 1.0010535424414206,
+            "densityRatio": 0.9989464575585794,
+            "pressureRatio": 0.9999988900483241
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 3.2255434466293453e-19,
+            "deltaDensity": -3.2255434466293453e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.0010535424414206919,
+            "deltaDensity": 0.0010535424414206919,
+            "temperatureRatio": 0.9989464575585794,
+            "densityRatio": 1.0010535424414206,
+            "pressureRatio": 0.9999988900483241
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -4.515760825281083e-19,
+            "deltaDensity": 4.515760825281083e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.0010535424414206919,
+            "deltaDensity": -0.0010535424414206919,
+            "temperatureRatio": 1.0010535424414206,
+            "densityRatio": 0.9989464575585794,
+            "pressureRatio": 0.9999988900483241
+          }
+        ]
+      }
+    ],
+    "neutralBoundaryCases": [
+      {
+        "alpha": -1.0,
+        "d": 0.0031662838225360664,
+        "w": 0.25,
+        "tau": 2.0,
+        "wavelengthPc": 25.0,
+        "timeMyr": 200.0,
+        "sigmaTth": 2e-06,
+        "sigmaPerMyr": 2e-08,
+        "coolingOnlySigmaTth": 2.0,
+        "conductionDampingTth": 1.999998,
+        "amplitude": 0.001000004000008,
+        "noConductionAmplitude": 0.05459815003314424,
+        "conductionAmplitudeRatio": 0.01831571215143626,
+        "criticalWavelengthPc": 24.999987499996877,
+        "classification": "growing",
+        "soundCrossMyr": 0.16143402992717884,
+        "soundToEFoldRatio": 3.228680598543577e-09,
+        "eFoldMyr": 50000000.0,
+        "maxPressureTruncationError": 1.000008000032e-06,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.001000004000008,
+            "deltaDensity": -0.001000004000008,
+            "temperatureRatio": 1.001000004000008,
+            "densityRatio": 0.998999995999992,
+            "pressureRatio": 0.9999989999919999
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.0007071096096193292,
+            "deltaDensity": -0.0007071096096193292,
+            "temperatureRatio": 1.0007071096096194,
+            "densityRatio": 0.9992928903903807,
+            "pressureRatio": 0.999999499996
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 6.123258488721735e-20,
+            "deltaDensity": -6.123258488721735e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.0007071096096193291,
+            "deltaDensity": 0.0007071096096193291,
+            "temperatureRatio": 0.9992928903903807,
+            "densityRatio": 1.0007071096096194,
+            "pressureRatio": 0.999999499996
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.001000004000008,
+            "deltaDensity": 0.001000004000008,
+            "temperatureRatio": 0.998999995999992,
+            "densityRatio": 1.001000004000008,
+            "pressureRatio": 0.9999989999919999
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.8369775466165204e-19,
+            "deltaDensity": 1.8369775466165204e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.001000004000008,
+            "deltaDensity": -0.001000004000008,
+            "temperatureRatio": 1.001000004000008,
+            "densityRatio": 0.998999995999992,
+            "pressureRatio": 0.9999989999919999
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 3.0616292443608674e-19,
+            "deltaDensity": -3.0616292443608674e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.001000004000008,
+            "deltaDensity": 0.001000004000008,
+            "temperatureRatio": 0.998999995999992,
+            "densityRatio": 1.001000004000008,
+            "pressureRatio": 0.9999989999919999
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -4.286280942105214e-19,
+            "deltaDensity": 4.286280942105214e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.001000004000008,
+            "deltaDensity": -0.001000004000008,
+            "temperatureRatio": 1.001000004000008,
+            "densityRatio": 0.998999995999992,
+            "pressureRatio": 0.9999989999919999
+          }
+        ],
+        "criticalDiffusivityD": 0.0031662869888230555,
+        "relativeToCriticalD": 0.999999
+      },
+      {
+        "alpha": -1.0,
+        "d": 0.0031662869888230555,
+        "w": 0.25,
+        "tau": 2.0,
+        "wavelengthPc": 25.0,
+        "timeMyr": 200.0,
+        "sigmaTth": 0.0,
+        "sigmaPerMyr": 0.0,
+        "coolingOnlySigmaTth": 2.0,
+        "conductionDampingTth": 2.0,
+        "amplitude": 0.001,
+        "noConductionAmplitude": 0.05459815003314424,
+        "conductionAmplitudeRatio": 0.01831563888873418,
+        "criticalWavelengthPc": 25.0,
+        "classification": "neutral",
+        "soundCrossMyr": 0.16143402992717884,
+        "soundToEFoldRatio": 0.0,
+        "eFoldMyr": null,
+        "maxPressureTruncationError": 1e-06,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.001,
+            "deltaDensity": -0.001,
+            "temperatureRatio": 1.001,
+            "densityRatio": 0.999,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.0007071067811865476,
+            "deltaDensity": -0.0007071067811865476,
+            "temperatureRatio": 1.0007071067811866,
+            "densityRatio": 0.9992928932188134,
+            "pressureRatio": 0.9999995
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 6.123233995736766e-20,
+            "deltaDensity": -6.123233995736766e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.0007071067811865475,
+            "deltaDensity": 0.0007071067811865475,
+            "temperatureRatio": 0.9992928932188134,
+            "densityRatio": 1.0007071067811866,
+            "pressureRatio": 0.9999995
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.001,
+            "deltaDensity": 0.001,
+            "temperatureRatio": 0.999,
+            "densityRatio": 1.001,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.8369701987210296e-19,
+            "deltaDensity": 1.8369701987210296e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.001,
+            "deltaDensity": -0.001,
+            "temperatureRatio": 1.001,
+            "densityRatio": 0.999,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 3.061616997868383e-19,
+            "deltaDensity": -3.061616997868383e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.001,
+            "deltaDensity": 0.001,
+            "temperatureRatio": 0.999,
+            "densityRatio": 1.001,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -4.286263797015736e-19,
+            "deltaDensity": 4.286263797015736e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.001,
+            "deltaDensity": -0.001,
+            "temperatureRatio": 1.001,
+            "densityRatio": 0.999,
+            "pressureRatio": 0.999999
+          }
+        ],
+        "criticalDiffusivityD": 0.0031662869888230555,
+        "relativeToCriticalD": 1.0
+      },
+      {
+        "alpha": -1.0,
+        "d": 0.003166290155110044,
+        "w": 0.25,
+        "tau": 2.0,
+        "wavelengthPc": 25.0,
+        "timeMyr": 200.0,
+        "sigmaTth": -2e-06,
+        "sigmaPerMyr": -2e-08,
+        "coolingOnlySigmaTth": 2.0,
+        "conductionDampingTth": 2.000002,
+        "amplitude": 0.000999996000008,
+        "noConductionAmplitude": 0.05459815003314424,
+        "conductionAmplitudeRatio": 0.01831556562632515,
+        "criticalWavelengthPc": 25.000012499996874,
+        "classification": "decaying",
+        "soundCrossMyr": 0.16143402992717884,
+        "soundToEFoldRatio": 3.228680598543577e-09,
+        "eFoldMyr": 50000000.0,
+        "maxPressureTruncationError": 9.99992000032e-07,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.000999996000008,
+            "deltaDensity": -0.000999996000008,
+            "temperatureRatio": 1.000999996000008,
+            "densityRatio": 0.999000003999992,
+            "pressureRatio": 0.999999000008
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.0007071039527650797,
+            "deltaDensity": -0.0007071039527650797,
+            "temperatureRatio": 1.000707103952765,
+            "densityRatio": 0.9992928960472349,
+            "pressureRatio": 0.999999500004
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 6.123209502849768e-20,
+            "deltaDensity": -6.123209502849768e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.0007071039527650796,
+            "deltaDensity": 0.0007071039527650796,
+            "temperatureRatio": 0.9992928960472349,
+            "densityRatio": 1.000707103952765,
+            "pressureRatio": 0.999999500004
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.000999996000008,
+            "deltaDensity": 0.000999996000008,
+            "temperatureRatio": 0.999000003999992,
+            "densityRatio": 1.000999996000008,
+            "pressureRatio": 0.999999000008
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.8369628508549306e-19,
+            "deltaDensity": 1.8369628508549306e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.000999996000008,
+            "deltaDensity": -0.000999996000008,
+            "temperatureRatio": 1.000999996000008,
+            "densityRatio": 0.999000003999992,
+            "pressureRatio": 0.999999000008
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 3.0616047514248846e-19,
+            "deltaDensity": -3.0616047514248846e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.000999996000008,
+            "deltaDensity": 0.000999996000008,
+            "temperatureRatio": 0.999000003999992,
+            "densityRatio": 1.000999996000008,
+            "pressureRatio": 0.999999000008
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -4.286246651994838e-19,
+            "deltaDensity": 4.286246651994838e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.000999996000008,
+            "deltaDensity": -0.000999996000008,
+            "temperatureRatio": 1.000999996000008,
+            "densityRatio": 0.999000003999992,
+            "pressureRatio": 0.999999000008
+          }
+        ],
+        "criticalDiffusivityD": 0.0031662869888230555,
+        "relativeToCriticalD": 1.000001
+      },
+      {
+        "alpha": 0.0,
+        "d": 0.02533027058028853,
+        "w": 1.0,
+        "tau": 2.0,
+        "wavelengthPc": 100.0,
+        "timeMyr": 200.0,
+        "sigmaTth": 1e-06,
+        "sigmaPerMyr": 1e-08,
+        "coolingOnlySigmaTth": 1.0,
+        "conductionDampingTth": 0.999999,
+        "amplitude": 0.001000002000002,
+        "noConductionAmplitude": 0.00738905609893065,
+        "conductionAmplitudeRatio": 0.13533555390744983,
+        "criticalWavelengthPc": 99.9999499999875,
+        "classification": "growing",
+        "soundCrossMyr": 0.6457361197087154,
+        "soundToEFoldRatio": 6.457361197087154e-09,
+        "eFoldMyr": 100000000.0,
+        "maxPressureTruncationError": 1.000004000008e-06,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.001000002000002,
+            "deltaDensity": -0.001000002000002,
+            "temperatureRatio": 1.001000002000002,
+            "densityRatio": 0.998999997999998,
+            "pressureRatio": 0.999998999996
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.0007071081954015242,
+            "deltaDensity": -0.0007071081954015242,
+            "temperatureRatio": 1.0007071081954015,
+            "densityRatio": 0.9992928918045985,
+            "pressureRatio": 0.999999499998
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 6.123246242217004e-20,
+            "deltaDensity": -6.123246242217004e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.0007071081954015241,
+            "deltaDensity": 0.0007071081954015241,
+            "temperatureRatio": 0.9992928918045985,
+            "densityRatio": 1.0007071081954015,
+            "pressureRatio": 0.999999499998
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.001000002000002,
+            "deltaDensity": 0.001000002000002,
+            "temperatureRatio": 0.998999997999998,
+            "densityRatio": 1.001000002000002,
+            "pressureRatio": 0.999998999996
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.8369738726651012e-19,
+            "deltaDensity": 1.8369738726651012e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.001000002000002,
+            "deltaDensity": -0.001000002000002,
+            "temperatureRatio": 1.001000002000002,
+            "densityRatio": 0.998999997999998,
+            "pressureRatio": 0.999998999996
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 3.061623121108502e-19,
+            "deltaDensity": -3.061623121108502e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.001000002000002,
+            "deltaDensity": 0.001000002000002,
+            "temperatureRatio": 0.998999997999998,
+            "densityRatio": 1.001000002000002,
+            "pressureRatio": 0.999998999996
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -4.2862723695519025e-19,
+            "deltaDensity": 4.2862723695519025e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.001000002000002,
+            "deltaDensity": -0.001000002000002,
+            "temperatureRatio": 1.001000002000002,
+            "densityRatio": 0.998999997999998,
+            "pressureRatio": 0.999998999996
+          }
+        ],
+        "criticalDiffusivityD": 0.025330295910584444,
+        "relativeToCriticalD": 0.999999
+      },
+      {
+        "alpha": 0.0,
+        "d": 0.025330295910584444,
+        "w": 1.0,
+        "tau": 2.0,
+        "wavelengthPc": 100.0,
+        "timeMyr": 200.0,
+        "sigmaTth": 0.0,
+        "sigmaPerMyr": 0.0,
+        "coolingOnlySigmaTth": 1.0,
+        "conductionDampingTth": 1.0,
+        "amplitude": 0.001,
+        "noConductionAmplitude": 0.00738905609893065,
+        "conductionAmplitudeRatio": 0.1353352832366127,
+        "criticalWavelengthPc": 100.0,
+        "classification": "neutral",
+        "soundCrossMyr": 0.6457361197087154,
+        "soundToEFoldRatio": 0.0,
+        "eFoldMyr": null,
+        "maxPressureTruncationError": 1e-06,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.001,
+            "deltaDensity": -0.001,
+            "temperatureRatio": 1.001,
+            "densityRatio": 0.999,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.0007071067811865476,
+            "deltaDensity": -0.0007071067811865476,
+            "temperatureRatio": 1.0007071067811866,
+            "densityRatio": 0.9992928932188134,
+            "pressureRatio": 0.9999995
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 6.123233995736766e-20,
+            "deltaDensity": -6.123233995736766e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.0007071067811865475,
+            "deltaDensity": 0.0007071067811865475,
+            "temperatureRatio": 0.9992928932188134,
+            "densityRatio": 1.0007071067811866,
+            "pressureRatio": 0.9999995
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.001,
+            "deltaDensity": 0.001,
+            "temperatureRatio": 0.999,
+            "densityRatio": 1.001,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.8369701987210296e-19,
+            "deltaDensity": 1.8369701987210296e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.001,
+            "deltaDensity": -0.001,
+            "temperatureRatio": 1.001,
+            "densityRatio": 0.999,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 3.061616997868383e-19,
+            "deltaDensity": -3.061616997868383e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.001,
+            "deltaDensity": 0.001,
+            "temperatureRatio": 0.999,
+            "densityRatio": 1.001,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -4.286263797015736e-19,
+            "deltaDensity": 4.286263797015736e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.001,
+            "deltaDensity": -0.001,
+            "temperatureRatio": 1.001,
+            "densityRatio": 0.999,
+            "pressureRatio": 0.999999
+          }
+        ],
+        "criticalDiffusivityD": 0.025330295910584444,
+        "relativeToCriticalD": 1.0
+      },
+      {
+        "alpha": 0.0,
+        "d": 0.025330321240880353,
+        "w": 1.0,
+        "tau": 2.0,
+        "wavelengthPc": 100.0,
+        "timeMyr": 200.0,
+        "sigmaTth": -1e-06,
+        "sigmaPerMyr": -1e-08,
+        "coolingOnlySigmaTth": 1.0,
+        "conductionDampingTth": 1.000001,
+        "amplitude": 0.000999998000002,
+        "noConductionAmplitude": 0.00738905609893065,
+        "conductionAmplitudeRatio": 0.1353350125663169,
+        "criticalWavelengthPc": 100.0000499999875,
+        "classification": "decaying",
+        "soundCrossMyr": 0.6457361197087154,
+        "soundToEFoldRatio": 6.457361197087154e-09,
+        "eFoldMyr": 100000000.0,
+        "maxPressureTruncationError": 9.99996000008e-07,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.000999998000002,
+            "deltaDensity": -0.000999998000002,
+            "temperatureRatio": 1.000999998000002,
+            "densityRatio": 0.999000001999998,
+            "pressureRatio": 0.999999000004
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.0007071053669743994,
+            "deltaDensity": -0.0007071053669743994,
+            "temperatureRatio": 1.0007071053669745,
+            "densityRatio": 0.9992928946330256,
+            "pressureRatio": 0.999999500002
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 6.12322174928102e-20,
+            "deltaDensity": -6.12322174928102e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.0007071053669743993,
+            "deltaDensity": 0.0007071053669743993,
+            "temperatureRatio": 0.9992928946330256,
+            "densityRatio": 1.0007071053669745,
+            "pressureRatio": 0.999999500002
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.000999998000002,
+            "deltaDensity": 0.000999998000002,
+            "temperatureRatio": 0.999000001999998,
+            "densityRatio": 1.000999998000002,
+            "pressureRatio": 0.999999000004
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.8369665247843062e-19,
+            "deltaDensity": 1.8369665247843062e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.000999998000002,
+            "deltaDensity": -0.000999998000002,
+            "temperatureRatio": 1.000999998000002,
+            "densityRatio": 0.999000001999998,
+            "pressureRatio": 0.999999000004
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 3.0616108746405103e-19,
+            "deltaDensity": -3.0616108746405103e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.000999998000002,
+            "deltaDensity": 0.000999998000002,
+            "temperatureRatio": 0.999000001999998,
+            "densityRatio": 1.000999998000002,
+            "pressureRatio": 0.999999000004
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -4.2862552244967144e-19,
+            "deltaDensity": 4.2862552244967144e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.000999998000002,
+            "deltaDensity": -0.000999998000002,
+            "temperatureRatio": 1.000999998000002,
+            "densityRatio": 0.999000001999998,
+            "pressureRatio": 0.999999000004
+          }
+        ],
+        "criticalDiffusivityD": 0.025330295910584444,
+        "relativeToCriticalD": 1.000001
+      },
+      {
+        "alpha": 0.9,
+        "d": 0.04052843292846165,
+        "w": 4.0,
+        "tau": 2.0,
+        "wavelengthPc": 400.0,
+        "timeMyr": 200.0,
+        "sigmaTth": 1e-07,
+        "sigmaPerMyr": 1e-09,
+        "coolingOnlySigmaTth": 0.1,
+        "conductionDampingTth": 0.0999999,
+        "amplitude": 0.00100000020000002,
+        "noConductionAmplitude": 0.0012214027581601697,
+        "conductionAmplitudeRatio": 0.8187309168241489,
+        "criticalWavelengthPc": 399.99979999995,
+        "classification": "growing",
+        "soundCrossMyr": 2.5829444788348614,
+        "soundToEFoldRatio": 2.5829444788348614e-09,
+        "eFoldMyr": 1000000000.0,
+        "maxPressureTruncationError": 1.00000040000008e-06,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.00100000020000002,
+            "deltaDensity": -0.00100000020000002,
+            "temperatureRatio": 1.0010000002000001,
+            "densityRatio": 0.9989999998,
+            "pressureRatio": 0.9999989999996
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.000707106922607918,
+            "deltaDensity": -0.000707106922607918,
+            "temperatureRatio": 1.000707106922608,
+            "densityRatio": 0.9992928930773921,
+            "pressureRatio": 0.9999994999998
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 6.123235220383687e-20,
+            "deltaDensity": -6.123235220383687e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.0007071069226079179,
+            "deltaDensity": 0.0007071069226079179,
+            "temperatureRatio": 0.9992928930773921,
+            "densityRatio": 1.000707106922608,
+            "pressureRatio": 0.9999994999998
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.00100000020000002,
+            "deltaDensity": 0.00100000020000002,
+            "temperatureRatio": 0.9989999998,
+            "densityRatio": 1.0010000002000001,
+            "pressureRatio": 0.9999989999996
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.8369705661151062e-19,
+            "deltaDensity": 1.8369705661151062e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.00100000020000002,
+            "deltaDensity": -0.00100000020000002,
+            "temperatureRatio": 1.0010000002000001,
+            "densityRatio": 0.9989999998,
+            "pressureRatio": 0.9999989999996
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 3.061617610191844e-19,
+            "deltaDensity": -3.061617610191844e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.00100000020000002,
+            "deltaDensity": 0.00100000020000002,
+            "temperatureRatio": 0.9989999998,
+            "densityRatio": 1.0010000002000001,
+            "pressureRatio": 0.9999989999996
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -4.286264654268581e-19,
+            "deltaDensity": 4.286264654268581e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.00100000020000002,
+            "deltaDensity": -0.00100000020000002,
+            "temperatureRatio": 1.0010000002000001,
+            "densityRatio": 0.9989999998,
+            "pressureRatio": 0.9999989999996
+          }
+        ],
+        "criticalDiffusivityD": 0.04052847345693511,
+        "relativeToCriticalD": 0.999999
+      },
+      {
+        "alpha": 0.9,
+        "d": 0.04052847345693511,
+        "w": 4.0,
+        "tau": 2.0,
+        "wavelengthPc": 400.0,
+        "timeMyr": 200.0,
+        "sigmaTth": 0.0,
+        "sigmaPerMyr": 0.0,
+        "coolingOnlySigmaTth": 0.1,
+        "conductionDampingTth": 0.1,
+        "amplitude": 0.001,
+        "noConductionAmplitude": 0.0012214027581601697,
+        "conductionAmplitudeRatio": 0.8187307530779818,
+        "criticalWavelengthPc": 400.0,
+        "classification": "neutral",
+        "soundCrossMyr": 2.5829444788348614,
+        "soundToEFoldRatio": 0.0,
+        "eFoldMyr": null,
+        "maxPressureTruncationError": 1e-06,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.001,
+            "deltaDensity": -0.001,
+            "temperatureRatio": 1.001,
+            "densityRatio": 0.999,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.0007071067811865476,
+            "deltaDensity": -0.0007071067811865476,
+            "temperatureRatio": 1.0007071067811866,
+            "densityRatio": 0.9992928932188134,
+            "pressureRatio": 0.9999995
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 6.123233995736766e-20,
+            "deltaDensity": -6.123233995736766e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.0007071067811865475,
+            "deltaDensity": 0.0007071067811865475,
+            "temperatureRatio": 0.9992928932188134,
+            "densityRatio": 1.0007071067811866,
+            "pressureRatio": 0.9999995
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.001,
+            "deltaDensity": 0.001,
+            "temperatureRatio": 0.999,
+            "densityRatio": 1.001,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.8369701987210296e-19,
+            "deltaDensity": 1.8369701987210296e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.001,
+            "deltaDensity": -0.001,
+            "temperatureRatio": 1.001,
+            "densityRatio": 0.999,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 3.061616997868383e-19,
+            "deltaDensity": -3.061616997868383e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.001,
+            "deltaDensity": 0.001,
+            "temperatureRatio": 0.999,
+            "densityRatio": 1.001,
+            "pressureRatio": 0.999999
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -4.286263797015736e-19,
+            "deltaDensity": 4.286263797015736e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.001,
+            "deltaDensity": -0.001,
+            "temperatureRatio": 1.001,
+            "densityRatio": 0.999,
+            "pressureRatio": 0.999999
+          }
+        ],
+        "criticalDiffusivityD": 0.04052847345693511,
+        "relativeToCriticalD": 1.0
+      },
+      {
+        "alpha": 0.9,
+        "d": 0.04052851398540856,
+        "w": 4.0,
+        "tau": 2.0,
+        "wavelengthPc": 400.0,
+        "timeMyr": 200.0,
+        "sigmaTth": -1e-07,
+        "sigmaPerMyr": -1e-09,
+        "coolingOnlySigmaTth": 0.1,
+        "conductionDampingTth": 0.1000001,
+        "amplitude": 0.00099999980000002,
+        "noConductionAmplitude": 0.0012214027581601697,
+        "conductionAmplitudeRatio": 0.8187305893318476,
+        "criticalWavelengthPc": 400.00019999995,
+        "classification": "decaying",
+        "soundCrossMyr": 2.5829444788348614,
+        "soundToEFoldRatio": 2.5829444788348614e-09,
+        "eFoldMyr": 1000000000.0,
+        "maxPressureTruncationError": 9.9999960000008e-07,
+        "fields": [
+          {
+            "xi": 0,
+            "deltaTemperature": 0.00099999980000002,
+            "deltaDensity": -0.00099999980000002,
+            "temperatureRatio": 1.0009999998,
+            "densityRatio": 0.9990000002,
+            "pressureRatio": 0.9999990000004
+          },
+          {
+            "xi": 0.125,
+            "deltaTemperature": 0.0007071066397652055,
+            "deltaDensity": -0.0007071066397652055,
+            "temperatureRatio": 1.0007071066397653,
+            "densityRatio": 0.9992928933602347,
+            "pressureRatio": 0.9999995000002
+          },
+          {
+            "xi": 0.25,
+            "deltaTemperature": 6.123232771090089e-20,
+            "deltaDensity": -6.123232771090089e-20,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 0.375,
+            "deltaTemperature": -0.0007071066397652054,
+            "deltaDensity": 0.0007071066397652054,
+            "temperatureRatio": 0.9992928933602347,
+            "densityRatio": 1.0007071066397653,
+            "pressureRatio": 0.9999995000002
+          },
+          {
+            "xi": 0.5,
+            "deltaTemperature": -0.00099999980000002,
+            "deltaDensity": 0.00099999980000002,
+            "temperatureRatio": 0.9990000002,
+            "densityRatio": 1.0009999998,
+            "pressureRatio": 0.9999990000004
+          },
+          {
+            "xi": 0.75,
+            "deltaTemperature": -1.8369698313270266e-19,
+            "deltaDensity": 1.8369698313270266e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1,
+            "deltaTemperature": 0.00099999980000002,
+            "deltaDensity": -0.00099999980000002,
+            "temperatureRatio": 1.0009999998,
+            "densityRatio": 0.9990000002,
+            "pressureRatio": 0.9999990000004
+          },
+          {
+            "xi": 1.25,
+            "deltaTemperature": 3.061616385545045e-19,
+            "deltaDensity": -3.061616385545045e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 1.5,
+            "deltaTemperature": -0.00099999980000002,
+            "deltaDensity": 0.00099999980000002,
+            "temperatureRatio": 0.9990000002,
+            "densityRatio": 1.0009999998,
+            "pressureRatio": 0.9999990000004
+          },
+          {
+            "xi": 1.75,
+            "deltaTemperature": -4.286262939763062e-19,
+            "deltaDensity": 4.286262939763062e-19,
+            "temperatureRatio": 1.0,
+            "densityRatio": 1.0,
+            "pressureRatio": 1.0
+          },
+          {
+            "xi": 2,
+            "deltaTemperature": 0.00099999980000002,
+            "deltaDensity": -0.00099999980000002,
+            "temperatureRatio": 1.0009999998,
+            "densityRatio": 0.9990000002,
+            "pressureRatio": 0.9999990000004
+          }
+        ],
+        "criticalDiffusivityD": 0.04052847345693511,
+        "relativeToCriticalD": 1.000001
+      }
+    ],
+    "sourceDerivativeChecks": [
+      {
+        "alpha": -1.0,
+        "finiteDifferenceHeatingMinusCoolingSlope": 2.0,
+        "expectedLinearSlope": 2.0,
+        "absoluteError": 4e-32
+      },
+      {
+        "alpha": 0.0,
+        "finiteDifferenceHeatingMinusCoolingSlope": 1.0,
+        "expectedLinearSlope": 1.0,
+        "absoluteError": 1e-32
+      },
+      {
+        "alpha": 1.0,
+        "finiteDifferenceHeatingMinusCoolingSlope": 0.0,
+        "expectedLinearSlope": 0.0,
+        "absoluteError": 0.0
+      },
+      {
+        "alpha": 2.0,
+        "finiteDifferenceHeatingMinusCoolingSlope": -1.0,
+        "expectedLinearSlope": -1.0,
+        "absoluteError": 0.0
+      }
+    ],
+    "rk4TimeChecks": [
+      {
+        "alpha": -1.0,
+        "d": 0.0,
+        "w": 4.0,
+        "tau": 2.0,
+        "rk4Amplitude": 0.05459815003314446,
+        "expectedAmplitude": 0.05459815003314424,
+        "relativeError": 3.9968028886505635e-15
+      },
+      {
+        "alpha": -1.0,
+        "d": 0.05,
+        "w": 0.25,
+        "tau": 2.0,
+        "rk4Amplitude": 2.0172682625790814e-29,
+        "expectedAmplitude": 2.017268262502731e-29,
+        "relativeError": 3.7848391087891287e-11
+      },
+      {
+        "alpha": -1.0,
+        "d": 0.05,
+        "w": 4.0,
+        "tau": 2.0,
+        "rk4Amplitude": 0.04265992222788596,
+        "expectedAmplitude": 0.042659922227885984,
+        "relativeError": 4.440892098500626e-16
+      },
+      {
+        "alpha": 0.0,
+        "d": 0.01,
+        "w": 1.0,
+        "tau": 2.0,
+        "rk4Amplitude": 0.0033549324896555337,
+        "expectedAmplitude": 0.003354932489655528,
+        "relativeError": 1.7763568394002505e-15
+      },
+      {
+        "alpha": 1.0,
+        "d": 0.0,
+        "w": 1.0,
+        "tau": 2.0,
+        "rk4Amplitude": 0.001,
+        "expectedAmplitude": 0.001,
+        "relativeError": 0.0
+      },
+      {
+        "alpha": 2.0,
+        "d": 0.05,
+        "w": 0.25,
+        "tau": 2.0,
+        "rk4Amplitude": 5.000308096905482e-32,
+        "expectedAmplitude": 5.000308096598608e-32,
+        "relativeError": 6.13709083552294e-11
+      },
+      {
+        "alpha": -1.0,
+        "d": 0.05,
+        "w": 1.0,
+        "tau": 2.0,
+        "rk4Amplitude": 0.0010535424414206919,
+        "expectedAmplitude": 0.0010535424414206919,
+        "relativeError": 0.0
+      }
+    ],
+    "parameterCornerBounds": [
+      {
+        "alpha": -1.0,
+        "d": 0.0,
+        "w": 0.25,
+        "sigmaTth": 2.0,
+        "soundToEFoldRatio": 0.003228680598543577,
+        "amplitude": 0.05459815003314424
+      },
+      {
+        "alpha": -1.0,
+        "d": 0.0,
+        "w": 4.0,
+        "sigmaTth": 2.0,
+        "soundToEFoldRatio": 0.05165888957669723,
+        "amplitude": 0.05459815003314424
+      },
+      {
+        "alpha": -1.0,
+        "d": 0.05,
+        "w": 0.25,
+        "sigmaTth": -29.58273408348595,
+        "soundToEFoldRatio": 0.04775659979361244,
+        "amplitude": 2.017268262502731e-29
+      },
+      {
+        "alpha": -1.0,
+        "d": 0.05,
+        "w": 4.0,
+        "sigmaTth": 1.876629944986383,
+        "soundToEFoldRatio": 0.04847230955218748,
+        "amplitude": 0.042659922227885984
+      },
+      {
+        "alpha": 2.0,
+        "d": 0.0,
+        "w": 0.25,
+        "sigmaTth": -1.0,
+        "soundToEFoldRatio": 0.0016143402992717885,
+        "amplitude": 0.0001353352832366127
+      },
+      {
+        "alpha": 2.0,
+        "d": 0.0,
+        "w": 4.0,
+        "sigmaTth": -1.0,
+        "soundToEFoldRatio": 0.025829444788348616,
+        "amplitude": 0.0001353352832366127
+      },
+      {
+        "alpha": 2.0,
+        "d": 0.05,
+        "w": 0.25,
+        "sigmaTth": -32.582734083485946,
+        "soundToEFoldRatio": 0.05259962069142781,
+        "amplitude": 5.000308096598608e-32
+      },
+      {
+        "alpha": 2.0,
+        "d": 0.05,
+        "w": 4.0,
+        "sigmaTth": -1.123370055013617,
+        "soundToEFoldRatio": 0.029016024812858365,
+        "amplitude": 0.00010574337507878996
+      }
+    ],
+    "bounds": {
+      "maxSoundToEFoldRatio": 0.05259962069142781,
+      "soundWorstCase": {
+        "alpha": 2.0,
+        "d": 0.05,
+        "w": 0.25,
+        "sigmaTth": -32.582734083485946,
+        "soundToEFoldRatio": 0.05259962069142781,
+        "amplitude": 5.000308096598608e-32
+      },
+      "maxAmplitude": 0.05459815003314424,
+      "minAmplitude": 5.000308096598608e-32,
+      "maxPressureTruncationError": 0.002980957987041728,
+      "minTemperatureOrDensityRatio": 0.9454018499668557,
+      "maxTemperatureOrDensityRatio": 1.0545981500331443,
+      "maxChiCm2PerS": 1.5085757688985243e+24,
+      "maxChiPc2PerMyr": 5.0
+    },
+    "tolerances": {
+      "closedDoubleRelative": 3e-12,
+      "sigmaNearNeutralAbsolute": 2e-12,
+      "rk4Relative": 2e-10
+    },
+    "validation": {
+      "maxSourceDerivativeAbs": 4e-32,
+      "maxRk4Relative": 6.13709083552294e-11
+    }
+  }
+}

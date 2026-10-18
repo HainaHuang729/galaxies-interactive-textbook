@@ -1,0 +1,163 @@
+
+    #galaxy-redesign .g-product {
+      --g-bg:light-dark(#f2f4f1,#0b141b);--g-surface:light-dark(#ffffff,#13212a);
+      --g-text:light-dark(#233b3d,#e7efed);--g-muted:light-dark(#627775,#98aeae);
+      --g-line:light-dark(#d9e1da,#293c45);--g-accent:light-dark(#395f53,#b5cebb);
+      --g-on-accent:light-dark(#ffffff,#132019);--g-soft:light-dark(#e7ece5,#1b2c32);
+      --g-total:light-dark(#a27633,#e4c389);--g-disk:light-dark(#657573,#bfc8bf);--g-halo:light-dark(#388592,#7abdc4);
+      --g-scene:light-dark(#0c1722,#070f18);--g-star:light-dark(#f5e6cc,#f7e9d1);
+      --g-cold-star:light-dark(#9cbccf,#a7d0e8);--g-scene-line:light-dark(#87b3bc,#87b3bc);
+      --g-scene-text:light-dark(#e0ece9,#e0ece9);--g-scene-muted:light-dark(#91a9ae,#91a9ae);
+      --g-orbit:light-dark(#e7c28a,#e7c28a);
+      box-sizing:border-box;position:relative;min-width:0;min-height:var(--g-stage-height,0px);
+      background:var(--g-bg);color:var(--g-text);font:400 14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;
+      padding:0 28px 22px;border-radius:16px;overflow:clip;
+    }
+    #galaxy-redesign .g-product * {box-sizing:border-box}
+    #galaxy-redesign .g-product [hidden] {display:none!important}
+    #galaxy-redesign .g-product button,#galaxy-redesign .g-product input,#galaxy-redesign .g-product select {font:inherit}
+    #galaxy-redesign .g-product button {color:inherit}
+    #galaxy-redesign .g-topbar {display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px;border-bottom:1px solid var(--g-line);padding-right:78px}
+    #galaxy-redesign .g-brand {display:flex;align-items:center;gap:10px;font:500 15px/1.2 Georgia,serif;letter-spacing:3px}
+    #galaxy-redesign .g-brand svg {width:22px;height:22px;stroke-width:1.2;letter-spacing:0}
+    #galaxy-redesign .g-bookname {font-size:12px;color:var(--g-muted);letter-spacing:1px}
+    #galaxy-redesign .g-intro {display:flex;align-items:flex-end;justify-content:space-between;gap:24px;padding:25px 0 23px}
+    #galaxy-redesign .g-eyebrow {font-size:11px;letter-spacing:2px;color:var(--g-muted);text-transform:uppercase}
+    #galaxy-redesign h1 {font:400 32px/1.25 "Songti SC","Noto Serif SC",Georgia,serif;letter-spacing:1px;margin:8px 0 0;color:var(--g-text)}
+    #galaxy-redesign .g-subtitle {font:400 14px/1.5 Georgia,serif;letter-spacing:1px;color:var(--g-muted);padding-bottom:3px;white-space:nowrap}
+    #galaxy-redesign .g-workspace {display:grid;grid-template-columns:minmax(0,1fr) 278px;grid-template-areas:"scene controls" "chart notes";gap:24px}
+    #galaxy-redesign .g-stage {grid-area:scene;min-width:0;background:var(--g-scene);color:var(--g-scene-text);border-radius:12px;overflow:hidden;position:relative;align-self:stretch;display:flex;flex-direction:column}
+    #galaxy-redesign .g-scene {position:relative;min-width:0;height:338px;min-height:338px;flex:1}
+    #galaxy-redesign canvas {display:block;width:100%;height:100%;touch-action:none;cursor:grab}
+    #galaxy-redesign canvas:active {cursor:grabbing}
+    #galaxy-redesign .g-scene-top {position:absolute;inset:18px 20px auto;display:flex;justify-content:space-between;gap:12px;pointer-events:none;font-size:11px;color:var(--g-scene-muted);letter-spacing:1px}
+    #galaxy-redesign .g-scene-bottom {position:absolute;inset:auto 20px 17px;display:flex;justify-content:space-between;align-items:end;gap:16px;pointer-events:none}
+    #galaxy-redesign .g-live-label {font-size:11px;color:var(--g-scene-muted);letter-spacing:1px}
+    #galaxy-redesign .g-live-value {font:400 27px/1.2 Georgia,serif;font-variant-numeric:tabular-nums;color:var(--g-scene-text);margin-top:4px}
+    #galaxy-redesign .g-live-value small {font:400 11px/1.3 -apple-system,sans-serif;color:var(--g-scene-muted);padding-left:5px}
+    #galaxy-redesign .g-drag-label {font-size:11px;color:var(--g-scene-muted);display:flex;align-items:center;gap:6px}
+    #galaxy-redesign .g-drag-label svg {width:13px;height:13px}
+    #galaxy-redesign .g-transport {padding:13px 18px;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:14px;border-top:1px solid color-mix(in srgb,var(--g-scene-muted) 20%,transparent)}
+    #galaxy-redesign .g-play {background:transparent;border:1px solid color-mix(in srgb,var(--g-scene-muted) 35%,transparent);padding:6px 12px;border-radius:20px;color:var(--g-scene-text)!important;font-size:11px!important;white-space:nowrap;min-height:32px}
+    #galaxy-redesign .g-time-label {font:400 11px/1.3 ui-monospace,Menlo,monospace;color:var(--g-scene-muted);white-space:nowrap;min-width:56px;text-align:right}
+    #galaxy-redesign .g-controls {grid-area:controls;background:var(--g-surface);padding:20px 20px 12px;border:1px solid var(--g-line);border-radius:12px;align-self:stretch;min-width:0}
+    #galaxy-redesign .g-section-heading {display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+    #galaxy-redesign .g-section-heading h2 {margin:0;font-size:14px;line-height:1.3;font-weight:500;letter-spacing:.5px}
+    #galaxy-redesign .g-section-number {color:var(--g-muted);font:400 11px/1.3 ui-monospace,Menlo,monospace;letter-spacing:1px}
+    #galaxy-redesign select {width:100%;background:var(--g-bg);color:var(--g-text);border:1px solid var(--g-line);border-radius:6px;padding:7px 9px;font-size:12px!important;margin-bottom:15px}
+    #galaxy-redesign .g-param {display:block;min-width:0;margin:0 0 13px}
+    #galaxy-redesign .g-param-top {display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:5px;font-size:12px}
+    #galaxy-redesign .g-param output {font-size:11px;color:var(--g-muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+    #galaxy-redesign .g-range {display:block;appearance:none;-webkit-appearance:none;background:transparent;height:18px;width:100%;margin:0;accent-color:var(--g-accent)}
+    #galaxy-redesign .g-range::-webkit-slider-runnable-track {height:2px;background:linear-gradient(to right,var(--g-accent) var(--g-range-progress,40%),var(--g-line) var(--g-range-progress,40%));border-radius:2px}
+    #galaxy-redesign .g-range::-webkit-slider-thumb {appearance:none;-webkit-appearance:none;margin-top:-4px;width:10px;height:10px;border-radius:50%;background:var(--g-accent);border:0}
+    #galaxy-redesign .g-range::-moz-range-track {height:2px;background:var(--g-line);border-radius:2px}
+    #galaxy-redesign .g-range::-moz-range-progress {height:2px;background:var(--g-accent)}
+    #galaxy-redesign .g-range::-moz-range-thumb {width:10px;height:10px;border:0;border-radius:50%;background:var(--g-accent)}
+    #galaxy-redesign .g-transport .g-range {--g-accent:var(--g-orbit);--g-line:color-mix(in srgb,var(--g-scene-muted) 30%,transparent)}
+    #galaxy-redesign .g-view-settings {border-top:1px solid var(--g-line);padding-top:10px;margin-top:3px}
+    #galaxy-redesign .g-view-settings summary {font-size:12px;color:var(--g-muted);margin-bottom:8px}
+    #galaxy-redesign .g-view-settings .g-param {margin-bottom:9px}
+    #galaxy-redesign .g-chart {grid-area:chart;min-width:0;padding-top:2px}
+    #galaxy-redesign .g-chart-top {display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-bottom:6px}
+    #galaxy-redesign .g-chart-title {font-size:14px;font-weight:500;letter-spacing:.5px;margin:0}
+    #galaxy-redesign .g-legend {display:flex;flex-wrap:wrap;gap:14px}
+    #galaxy-redesign .g-legend button {padding:0;border:0;background:transparent;display:inline-flex;align-items:center;gap:5px;font-size:11px;min-height:25px}
+    #galaxy-redesign .g-legend button[aria-pressed="false"] {opacity:.4}
+    #galaxy-redesign .g-swatch {width:14px;display:inline-block;border-top:2px solid var(--g-total)}
+    #galaxy-redesign [data-series="disk"] .g-swatch {border-color:var(--g-disk);border-top-style:dashed}
+    #galaxy-redesign [data-series="halo"] .g-swatch {border-color:var(--g-halo);border-top-style:dotted}
+    #galaxy-redesign .gl-plot {width:100%;height:224px;display:block;overflow:visible}
+    #galaxy-redesign .gl-plot text {fill:var(--g-muted);font-size:11px;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+    #galaxy-redesign .g-chart-bottom {display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:6px}
+    #galaxy-redesign .g-reference {font-size:11px;color:var(--g-muted)}
+    #galaxy-redesign .g-compare {font-size:11px!important;border:0;border-bottom:1px solid var(--g-line);padding:3px 0;background:transparent;white-space:nowrap;color:var(--g-accent)!important}
+    #galaxy-redesign .g-notes {grid-area:notes;align-self:stretch;border-top:1px solid var(--g-line);padding-top:17px;display:flex;flex-direction:column;min-width:0}
+    #galaxy-redesign .g-readout {display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:4px 0 18px}
+    #galaxy-redesign .g-readout-label {font-size:11px;color:var(--g-muted)}
+    #galaxy-redesign .g-readout-value {font:400 28px/1.2 Georgia,serif;margin-top:5px;font-variant-numeric:tabular-nums}
+    #galaxy-redesign .g-readout-value small {font:400 11px/1.3 -apple-system,sans-serif;color:var(--g-muted);padding-left:4px}
+    #galaxy-redesign .g-tutor {width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--g-accent);color:var(--g-on-accent)!important;padding:13px 14px;border:0;border-radius:7px;margin-top:auto;font-size:12px!important}
+    #galaxy-redesign .g-tutor-label {display:flex;align-items:center;gap:8px}
+    #galaxy-redesign .g-tutor svg {width:15px;height:15px;stroke-width:1.5}
+    #galaxy-redesign .g-tutor-hint {font-size:11px;color:var(--g-muted);margin-top:8px}
+    #galaxy-redesign .g-status {font-size:12px;margin-top:8px}
+    #galaxy-redesign .g-status:empty {display:none}
+    #galaxy-redesign .g-footer {display:flex;justify-content:space-between;flex-wrap:wrap;gap:9px 18px;margin-top:22px;padding-top:14px;border-top:1px solid var(--g-line);font-size:11px;line-height:1.7;color:var(--g-muted)}
+    #galaxy-redesign .g-footer details {max-width:100%}
+    #galaxy-redesign .g-footer summary {color:var(--g-muted)}
+    #galaxy-redesign .g-foot-detail {max-width:550px;margin-top:7px}
+    #galaxy-redesign .g-tip {position:absolute;pointer-events:none;z-index:5;padding:10px 12px;border:1px solid var(--g-line);border-radius:8px;background:var(--g-surface);color:var(--g-text);font-size:11px;box-shadow:0 5px 18px color-mix(in srgb,var(--g-text) 8%,transparent)}
+    #galaxy-redesign .gl-tip-row {display:flex;justify-content:space-between;gap:22px;margin-top:3px}
+    #galaxy-redesign .g-sr {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    #galaxy-redesign .g-atlas {
+      --g-bg:light-dark(#f5f0e5,#1b1c18);--g-surface:light-dark(#f5f0e5,#1b1c18);--g-text:light-dark(#3d392f,#eae4d6);
+      --g-muted:light-dark(#7d7564,#b1a995);--g-line:light-dark(#dcd2c0,#3d3e32);--g-accent:light-dark(#74613e,#d6bd8c);
+      --g-on-accent:light-dark(#fff9ed,#25251d);--g-soft:light-dark(#e9dfce,#313328);--g-total:light-dark(#9a6526,#e1b974);
+      --g-disk:light-dark(#788374,#b8c2a6);--g-halo:light-dark(#537d87,#87b4ba);border-radius:3px;padding-left:32px;padding-right:32px;
+    }
+    #galaxy-redesign .g-atlas .g-topbar {min-height:66px}
+    #galaxy-redesign .g-atlas .g-intro {padding:29px 0 27px;align-items:center}
+    #galaxy-redesign .g-atlas h1 {font-size:37px}
+    #galaxy-redesign .g-atlas .g-workspace {grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);grid-template-areas:"scene chart" "controls controls" "notes notes";gap:25px 28px}
+    #galaxy-redesign .g-atlas .g-stage {border-radius:2px}
+    #galaxy-redesign .g-atlas .g-scene {height:304px;min-height:304px}
+    #galaxy-redesign .g-atlas .g-chart {display:flex;flex-direction:column;padding-top:6px}
+    #galaxy-redesign .g-atlas .g-chart-top {align-items:start;gap:15px;flex-direction:column}
+    #galaxy-redesign .g-atlas .gl-plot {height:243px;flex:1}
+    #galaxy-redesign .g-atlas .g-chart-bottom {flex-wrap:wrap;margin-top:12px}
+    #galaxy-redesign .g-atlas .g-controls {padding:19px 0 0;border:0;border-top:1px solid var(--g-line);border-radius:0;display:grid;grid-template-columns:180px minmax(0,1fr);column-gap:26px;align-items:start}
+    #galaxy-redesign .g-atlas .g-control-head {grid-column:1;grid-row:1 / span 2}
+    #galaxy-redesign .g-atlas .g-params {grid-column:2;display:grid;grid-template-columns:1fr 1fr;gap:8px 25px}
+    #galaxy-redesign .g-atlas .g-view-settings {grid-column:2;border-top:0;padding-top:0;margin-top:0}
+    #galaxy-redesign .g-atlas .g-view-grid {display:grid;grid-template-columns:1fr 1fr;gap:25px}
+    #galaxy-redesign .g-atlas .g-notes {display:grid;grid-template-columns:minmax(0,1fr) 255px;column-gap:35px;padding-top:18px;align-items:center}
+    #galaxy-redesign .g-atlas .g-readout {grid-column:1;grid-row:1 / span 2;margin:0;max-width:320px}
+    #galaxy-redesign .g-atlas .g-tutor {grid-column:2;grid-row:1}
+    #galaxy-redesign .g-atlas .g-tutor-hint {grid-column:2;grid-row:2}
+    #galaxy-redesign .g-atlas .g-notes .g-section-heading {display:none}
+    #galaxy-redesign .g-atlas .g-status {grid-column:1 / -1}
+    @media(max-width:850px) {
+      #galaxy-redesign .g-product {padding-left:20px;padding-right:20px}
+      #galaxy-redesign .g-workspace {grid-template-columns:minmax(0,1fr) 244px;gap:20px}
+      #galaxy-redesign .g-controls {padding:17px 15px 10px}
+      #galaxy-redesign .g-subtitle {font-size:12px}
+      #galaxy-redesign .g-atlas .g-workspace {gap:23px}
+      #galaxy-redesign .g-atlas .g-controls {grid-template-columns:150px minmax(0,1fr);column-gap:20px}
+      #galaxy-redesign .g-atlas .g-params {column-gap:18px}
+    }
+    @media(max-width:640px) {
+      #galaxy-redesign .g-product {padding:0 16px 18px;border-radius:10px}
+      #galaxy-redesign .g-topbar {min-height:63px;padding-right:82px}
+      #galaxy-redesign .g-bookname {display:none}
+      #galaxy-redesign .g-intro {padding:23px 0 21px;display:block}
+      #galaxy-redesign h1,#galaxy-redesign .g-atlas h1 {font-size:29px}
+      #galaxy-redesign .g-subtitle {margin-top:9px}
+      #galaxy-redesign .g-workspace,#galaxy-redesign .g-atlas .g-workspace {grid-template-columns:minmax(0,1fr);grid-template-areas:"scene" "controls" "chart" "notes";gap:24px}
+      #galaxy-redesign .g-scene,#galaxy-redesign .g-atlas .g-scene {height:295px;min-height:295px}
+      #galaxy-redesign .g-controls,#galaxy-redesign .g-atlas .g-controls {display:block;padding:18px 18px 8px;border:1px solid var(--g-line);border-radius:10px}
+      #galaxy-redesign .g-atlas .g-params {display:block}
+      #galaxy-redesign .g-atlas .g-view-grid {display:block}
+      #galaxy-redesign .g-atlas .g-view-settings {border-top:1px solid var(--g-line);padding-top:10px}
+      #galaxy-redesign .g-chart-top,#galaxy-redesign .g-atlas .g-chart-top {flex-direction:row;align-items:center}
+      #galaxy-redesign .gl-plot,#galaxy-redesign .g-atlas .gl-plot {height:240px;flex:none}
+      #galaxy-redesign .g-notes,#galaxy-redesign .g-atlas .g-notes {display:flex;flex-direction:column;align-items:stretch}
+      #galaxy-redesign .g-readout,#galaxy-redesign .g-atlas .g-readout {max-width:none;margin:4px 0 18px}
+      #galaxy-redesign .g-scene-top {inset:15px 15px auto}
+      #galaxy-redesign .g-scene-bottom {inset:auto 15px 16px}
+      #galaxy-redesign .g-drag-label {max-width:75px;line-height:1.7}
+      #galaxy-redesign .g-transport {gap:9px;padding:12px 13px}
+      #galaxy-redesign .g-play {padding:6px 9px}
+      #galaxy-redesign .g-chart-bottom {align-items:flex-start;flex-wrap:wrap}
+    }
+    @media(pointer:coarse) {
+      #galaxy-redesign .g-range {height:30px}
+      #galaxy-redesign .g-play,#galaxy-redesign .g-compare,#galaxy-redesign .g-legend button {min-height:44px}
+      #galaxy-redesign select {font-size:16px!important}
+      #galaxy-redesign .g-param {margin-bottom:15px}
+    }
+
+#galaxy-redesign .g-topbar{display:none}#galaxy-redesign .g-product{padding-top:20px}#galaxy-redesign .g-intro{padding-top:20px}
+@media(max-width:600px){.rotation-wrap{padding:0 4px;margin-top:10px}}
+/* Keep canvas backing-store resolution out of grid intrinsic sizing. */
+#galaxy-redesign .g-scene canvas{position:absolute;inset:0}

@@ -1,0 +1,162 @@
+{
+  "checks": 602,
+  "authoredModelStates": 595,
+  "feedback": [
+    {
+      "kind": "blast",
+      "nH": 0.001,
+      "time": 1,
+      "temperature": 1000,
+      "mach": 997.3182652391299,
+      "warnings": [
+        "扫掠质量小于抛射质量，能量守恒Sedov阶段尚不成立；早期自由膨胀需要另一模型。"
+      ]
+    },
+    {
+      "kind": "blast",
+      "nH": 0.001,
+      "time": 1,
+      "temperature": 1000000,
+      "mach": 31.537972702435827,
+      "warnings": [
+        "扫掠质量小于抛射质量，能量守恒Sedov阶段尚不成立；早期自由膨胀需要另一模型。"
+      ]
+    },
+    {
+      "kind": "blast",
+      "nH": 0.001,
+      "time": 100,
+      "temperature": 1000,
+      "mach": 62.92652842368745,
+      "warnings": []
+    },
+    {
+      "kind": "blast",
+      "nH": 0.001,
+      "time": 100,
+      "temperature": 1000000,
+      "mach": 1.9899115506617737,
+      "warnings": [
+        "马赫数低于3：强激波近似较弱，忽略外部压力的自相似结果仅作外推。"
+      ]
+    },
+    {
+      "kind": "blast",
+      "nH": 1,
+      "time": 1,
+      "temperature": 1000,
+      "mach": 250.51502183508427,
+      "warnings": [
+        "扫掠质量小于抛射质量，能量守恒Sedov阶段尚不成立；早期自由膨胀需要另一模型。"
+      ]
+    },
+    {
+      "kind": "blast",
+      "nH": 1,
+      "time": 1,
+      "temperature": 1000000,
+      "mach": 7.921980570856808,
+      "warnings": [
+        "扫掠质量小于抛射质量，能量守恒Sedov阶段尚不成立；早期自由膨胀需要另一模型。"
+      ]
+    },
+    {
+      "kind": "blast",
+      "nH": 1,
+      "time": 100,
+      "temperature": 1000,
+      "mach": 15.806429292946243,
+      "warnings": [
+        "年龄超过原书含氦、金属冷却估计的辐射参考时间；纯氢绝热曲线没有计算这些损失，不能据此声称仍然绝热。"
+      ]
+    },
+    {
+      "kind": "blast",
+      "nH": 1,
+      "time": 100,
+      "temperature": 1000000,
+      "mach": 0.4998431824011497,
+      "warnings": [
+        "模型速度不超过环境声速，不能把这条外推曲线解释为传播中的强激波。",
+        "年龄超过原书含氦、金属冷却估计的辐射参考时间；纯氢绝热曲线没有计算这些损失，不能据此声称仍然绝热。"
+      ]
+    },
+    {
+      "kind": "wind",
+      "nH": 0.001,
+      "time": 1,
+      "temperature": 1000,
+      "mach": 12.488085657502122,
+      "warnings": []
+    },
+    {
+      "kind": "wind",
+      "nH": 0.001,
+      "time": 1,
+      "temperature": 1000000,
+      "mach": 0.3949079429298811,
+      "warnings": [
+        "模型速度不超过环境声速，不能把这条外推曲线解释为传播中的强激波。"
+      ]
+    },
+    {
+      "kind": "wind",
+      "nH": 0.001,
+      "time": 100,
+      "temperature": 1000,
+      "mach": 1.9792281945446377,
+      "warnings": [
+        "马赫数低于3：强激波近似较弱，忽略外部压力的自相似结果仅作外推。"
+      ]
+    },
+    {
+      "kind": "wind",
+      "nH": 0.001,
+      "time": 100,
+      "temperature": 1000000,
+      "mach": 0.06258869103983904,
+      "warnings": [
+        "模型速度不超过环境声速，不能把这条外推曲线解释为传播中的强激波。"
+      ]
+    },
+    {
+      "kind": "wind",
+      "nH": 1,
+      "time": 1,
+      "temperature": 1000,
+      "mach": 3.136865291860897,
+      "warnings": []
+    },
+    {
+      "kind": "wind",
+      "nH": 1,
+      "time": 1,
+      "temperature": 1000000,
+      "mach": 0.09919639035409278,
+      "warnings": [
+        "模型速度不超过环境声速，不能把这条外推曲线解释为传播中的强激波。"
+      ]
+    },
+    {
+      "kind": "wind",
+      "nH": 1,
+      "time": 100,
+      "temperature": 1000,
+      "mach": 0.4971596446737878,
+      "warnings": [
+        "模型速度不超过环境声速，不能把这条外推曲线解释为传播中的强激波。"
+      ]
+    },
+    {
+      "kind": "wind",
+      "nH": 1,
+      "time": 100,
+      "temperature": 1000000,
+      "mach": 0.015721568378891687,
+      "warnings": [
+        "模型速度不超过环境声速，不能把这条外推曲线解释为传播中的强激波。"
+      ]
+    }
+  ],
+  "scope": "Numerical consistency and explicitly stated approximation diagnostics, not validation of full physical realism."
+}

@@ -1,0 +1,68 @@
+:root {
+  color-scheme: dark;
+  --bg: #10151c; --panel: #1a222d; --text: #f1ece2; --muted: #b6b5b1;
+  --line: #3a434d; --accent: #e5bf83; --gold: #e5bf83; --cyan: #84bcd5;
+  --hot: #d7a2b4; --out: #a5acc1; --series-3: #b0b9e0;
+  --soft: #242e3b; --subtle: #151c25; --on-accent: #272013;
+  --accent-hover: #f1cfa0; --body-copy: #d3d0c9;
+}
+:root[data-book-theme="moon"] {
+  color-scheme: light;
+  --bg: #edf0f7; --panel: #fafbff; --text: #19263f; --muted: #5d6c87;
+  --line: #cbd3e3; --accent: #435cb1; --gold: #6c4fb0; --cyan: #287e92;
+  --hot: #a2456c; --out: #606f90; --series-3: #435cb1;
+  --soft: #e0e6f1; --subtle: #e7ebf4; --on-accent: #ffffff;
+  --accent-hover: #354a96; --body-copy: #35445f;
+}
+p { color: var(--body-copy); }
+.bookbar, .reader-pager { background: var(--bg); }
+.lab, .density-instrument, .resolution-lab { background: var(--panel); }
+.quiet:hover, .reader-page-controls > button:hover:not(:disabled) { background: var(--soft); }
+.primary, .reader-page-controls > .reader-page-next { color: var(--on-accent); background: var(--accent); }
+.primary:hover, .reader-page-controls > .reader-page-next:hover:not(:disabled) { background: var(--accent-hover); }
+.reader-outline-toggle, .reader-more-content { background: var(--panel); color: var(--muted); border-color: var(--line); }
+dialog.reader-outline, .reader-outline-header { background: var(--panel); }
+.reader-outline-pages a:hover, .reader-outline-pages a[aria-current="page"], .segmented button[aria-pressed="true"], .quiz-options button[aria-pressed="true"] { background: var(--soft); color: var(--text); }
+.plot-legend .comparison::before { background: var(--series-3); }
+.chart .axis-title { fill: var(--muted); }
+/* Keep the isometric instrument's four separate solid-face tones. */
+.bench-figure.iso {
+  --anatomy-card: #1a222d; --anatomy-paper: #1a222d; --anatomy-face: #2b3746; --anatomy-top: #354356;
+  --anatomy-shade-0: #131b25; --anatomy-shade-1: #1d2835; --anatomy-shade-2: #273443; --anatomy-shade-3: #303e50;
+  --anatomy-hi: #c3cbd5; --anatomy-mid: #91a0b3; --anatomy-lo: #586b80; --anatomy-faint: #35465a;
+  --anatomy-lit: #e5bf83; --anatomy-lit-top: #756248; --anatomy-lit-shade: #504738;
+}
+:root[data-book-theme="moon"] .bench-figure.iso {
+  --anatomy-card: #fafbff; --anatomy-paper: #fafbff; --anatomy-face: #d5ddeb; --anatomy-top: #f1f4fc;
+  --anatomy-shade-0: #b7c3d8; --anatomy-shade-1: #c9d3e4; --anatomy-shade-2: #dde4f0; --anatomy-shade-3: #f1f4fc;
+  --anatomy-hi: #263855; --anatomy-mid: #6a7f9d; --anatomy-lo: #9aabc4; --anatomy-faint: #c9d3e4;
+  --anatomy-lit: #6c4fb0; --anatomy-lit-top: #e0d9f1; --anatomy-lit-shade: #c2b5dd;
+}
+.book-theme-toggle { display: inline-flex; align-items: center; justify-content: center; gap: 7px; flex-shrink: 0; min-height: 40px; padding: 6px 10px; color: var(--text); background: var(--panel); border: 1px solid var(--line); border-radius: 6px; font: inherit; white-space: nowrap; }
+.book-theme-toggle:hover { border-color: var(--accent); background: var(--soft); }
+.theme-symbol { font-size: 20px; line-height: 1; }
+.theme-name { font-size: 12px; }
+/* The rotation experiment shares book surfaces; its star field stays dark. */
+#galaxy-redesign .g-product {
+  --g-bg: var(--bg); --g-surface: var(--panel); --g-text: var(--text); --g-muted: var(--muted);
+  --g-line: var(--line); --g-accent: var(--accent); --g-on-accent: var(--on-accent); --g-soft: var(--soft);
+  --g-total: var(--gold); --g-disk: var(--series-3); --g-halo: var(--cyan);
+  --g-scene: #070f18; --g-star: #f7e9d1; --g-cold-star: #a7d0e8;
+  --g-scene-line: #87b3bc; --g-scene-text: #e0ece9; --g-scene-muted: #91a9ae; --g-orbit: #e7c28a;
+}
+.opening-visual { background: #070f18; }
+.opening-visual .scene-caption, .opening-visual .scene-caption span:not(.inline-math, .inline-math *) { color: #e0ece9; }
+@media (max-width: 800px) {
+  .bookbar { gap: 12px; }
+  .bookbar nav { gap: 10px; }
+  .book-theme-toggle { width: 40px; padding: 6px; }
+  .theme-name { display: none; }
+}
+@media (max-width: 440px) {
+  .bookbar { padding-inline: 12px; gap: 8px; }
+  .reader-brand-group { gap: 8px; }
+  .bookbar nav { gap: 8px; }
+  .bookbar nav a:not(:first-child) { display: none; }
+  .book-theme-toggle { min-height: 44px; width: 40px; }
+}
+@media print { .book-theme-toggle { display: none; } }

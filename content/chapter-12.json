@@ -1,0 +1,508 @@
+{
+  "scope": "原创交互导读，覆盖本章主节与精选定量模型；不复刻原书全文、原图或全部推导。各实验的背景与近似分别声明，不组成一套统一研究模拟。伴读生成可复制的参数化问题，未提供在线模型回答。",
+  "number": 12,
+  "title": "星系相互作用与转化",
+  "headline": "一次相遇，\n改变一座星系",
+  "lede": "飞掠、剥离、摩擦与并合，各自改变什么？把轨道、内部能量与气体供应分别放到可检查的模型里。",
+  "pages": [
+    544,
+    573
+  ],
+  "labs": [
+    {
+      "id": "tidal-shock",
+      "model": "tidalShock",
+      "title": "一次飞掠，留下多少加热",
+      "intro": "改变飞掠质量、速度与冲量参数，比较远距离脉冲注能。先检查遭遇够不够快，再解释公式。",
+      "params": [
+        {
+          "key": "mass",
+          "label": "log₁₀ 扰动质量 / M☉",
+          "min": 10,
+          "max": 12,
+          "step": 0.1,
+          "value": 11,
+          "digits": 2
+        },
+        {
+          "key": "b",
+          "label": "冲量参数 b（kpc）",
+          "min": 20,
+          "max": 100,
+          "step": 1,
+          "value": 40,
+          "digits": 2
+        },
+        {
+          "key": "V",
+          "label": "相对速度（km/s）",
+          "min": 300,
+          "max": 1500,
+          "step": 25,
+          "value": 1200,
+          "digits": 2
+        },
+        {
+          "key": "r",
+          "label": "目标均方根半径（kpc）",
+          "min": 0.5,
+          "max": 3,
+          "step": 0.1,
+          "value": 3,
+          "digits": 2
+        }
+      ],
+      "values": [
+        "ΔE/M（km²/s²）",
+        "等效RMS速度增量（km/s）",
+        "遭遇/内部时标比",
+        "引力聚焦参数 χ"
+      ],
+      "pages": [
+        546,
+        547
+      ],
+      "formula": "ΔE/M=(4/3)(GMp/V)²⟨r²⟩/b⁴<br>tenc/tint=(b/V)/(rrms/20km s⁻¹)",
+      "assumptions": "球对称目标、直线远距离飞掠，b≥5rrms；内部速度标度固定20km/s，仅用来检查脉冲条件。tenc/tint不远小于1时需要绝热响应，图中加热只能视为公式外推。几何示意不积分真实轨道。 同时显示聚焦参数χ=GMp/(bV²)与r_rms/b；χ或r_rms/b不小会破坏直线/远距离近似。0.1及遭遇时标比0.3仅作网页质量提示，不是精确分界。",
+      "scene": true,
+      "ref": "MBW (2010) pp.546–547",
+      "formulaTex": [
+        "\\frac{\\Delta E}M=\\frac43\\left(\\frac{GM_p}V\\right)^2\\frac{\\langle r^2\\rangle}{b^4}",
+        "\\frac{t_{\\mathrm{enc}}}{t_{\\mathrm{int}}}=\\frac{b/V}{r_{\\mathrm{rms}}/(20\\,\\mathrm{km\\,s}^{-1})}",
+        "\\chi=\\frac{GM_p}{bV^2}"
+      ]
+    },
+    {
+      "id": "heat-end",
+      "model": "heatEnd",
+      "title": "注入能量，终态却更冷",
+      "intro": "对一个初始维里平衡的系统比较即时动能与假设平衡终态。负热容来自引力能量账。",
+      "params": [
+        {
+          "key": "h",
+          "label": "注能 \\(h=\\Delta E/|E_i|\\)",
+          "min": 0,
+          "max": 1.2,
+          "step": 0.01,
+          "value": 0.3,
+          "digits": 2
+        }
+      ],
+      "values": [
+        "Rf / Ri",
+        "终态 Kf / Ki",
+        "即时 K+ / Ki"
+      ],
+      "pages": [
+        547,
+        548
+      ],
+      "formula": "Rf/Ri=1/(1−h)，Kf/Ki=1−h<br>K+/Ki=1+h；仅h<1有此束缚终态",
+      "assumptions": "同源、质量不流失、初态与终态维里平衡且无外部交换。给出能量守恒终点，不将插值动画当作弛豫轨迹；h≥1时没有这类束缚终态。",
+      "scene": false,
+      "ref": "MBW (2010) pp.547–548",
+      "formulaTex": [
+        "\\frac{R_f}{R_i}=\\frac1{1-h},\\quad\\frac{K_f}{K_i}=1-h\\quad(h<1)",
+        "\\frac{K_+}{K_i}=1+h"
+      ]
+    },
+    {
+      "id": "tidal-radius",
+      "model": "tidalRadius",
+      "title": "潮汐半径，是近似边界",
+      "intro": "比较圆轨道点质量模型与小质量比Hill近似。改变半径与质量比，观察剥离尺度。",
+      "params": [
+        {
+          "key": "q",
+          "label": "log₁₀ 卫星/宿主质量比",
+          "min": -4,
+          "max": -1,
+          "step": 0.1,
+          "value": -2,
+          "digits": 2
+        },
+        {
+          "key": "R",
+          "label": "圆轨道半径（kpc）",
+          "min": 20,
+          "max": 200,
+          "step": 5,
+          "value": 80,
+          "digits": 2
+        }
+      ],
+      "values": [
+        "rt（kpc）",
+        "rt / R",
+        "Hill近似偏大（%）"
+      ],
+      "pages": [
+        548,
+        549
+      ],
+      "formula": "rt/R=[q/(3+q)]¹ᐟ³<br>q≪1：rt/R≈(q/3)¹ᐟ³",
+      "assumptions": "点质量宿主、圆轨道、理想共转潮汐边界。球形尺度不是严格逃逸面，外侧物质不立即全部消失；偏心轨道、延展质量与真实流结构需要进一步求解。",
+      "scene": true,
+      "ref": "MBW (2010) pp.548–549",
+      "formulaTex": [
+        "\\frac{r_t}R=\\left(\\frac q{3+q}\\right)^{1/3}",
+        "\\frac{r_t}R\\simeq\\left(\\frac q3\\right)^{1/3}\\quad(q\\ll1)"
+      ]
+    },
+    {
+      "id": "drag",
+      "model": "drag",
+      "title": "慢的和快的卫星，阻力不同",
+      "intro": "把速度换成X=v/(√2σ)，观察Maxwell背景中阻力的低速与高速极限。",
+      "params": [
+        {
+          "key": "mass",
+          "label": "log₁₀ 试验体质量 / M☉",
+          "min": 8,
+          "max": 10,
+          "step": 0.1,
+          "value": 9,
+          "digits": 2
+        },
+        {
+          "key": "rho",
+          "label": "log₁₀ 背景密度 / M☉ kpc⁻³",
+          "min": 5,
+          "max": 7,
+          "step": 0.1,
+          "value": 6,
+          "digits": 2
+        },
+        {
+          "key": "sigma",
+          "label": "背景 σ（km/s）",
+          "min": 100,
+          "max": 300,
+          "step": 10,
+          "value": 200,
+          "digits": 2
+        },
+        {
+          "key": "X",
+          "label": "X=v/(√2σ)",
+          "min": 0,
+          "max": 4,
+          "step": 0.05,
+          "value": 1,
+          "digits": 2
+        }
+      ],
+      "values": [
+        "阻力加速度（km/s/Gyr）",
+        "v/|a|（Gyr）",
+        "Maxwell括号 B(X)"
+      ],
+      "pages": [
+        556,
+        557
+      ],
+      "formula": "|a|=4πG²Mρ lnΛ B(X)/v²<br>B=erf(X)−2Xexp(−X²)/√π，lnΛ=3",
+      "assumptions": "均匀、各向同性Maxwell背景，试验体质量远大于单粒子。零速处按解析极限返回0。加速度始终反向于运动；v/|a|是局部时标，并非完整轨道衰减时间。",
+      "scene": false,
+      "ref": "MBW (2010) pp.556–557",
+      "formulaTex": [
+        "|a_{\\mathrm{DF}}|=\\frac{4\\pi G^2M\\rho\\ln\\Lambda}{v^2}\\,B(X)",
+        "B(X)=\\operatorname{erf}X-\\frac{2X}{\\sqrt\\pi}e^{-X^2}",
+        "X=\\frac v{\\sqrt2\\sigma},\\quad \\ln\\Lambda=3"
+      ]
+    },
+    {
+      "id": "friction",
+      "model": "friction",
+      "title": "把局部阻力，积成轨道衰减",
+      "intro": "在固定质量的圆轨道近似中推进时间。看看质量翻倍为什么会缩短理想衰减时标。",
+      "params": [
+        {
+          "key": "mass",
+          "label": "log₁₀ 卫星质量 / M☉",
+          "min": 8,
+          "max": 11,
+          "step": 0.1,
+          "value": 10,
+          "digits": 2
+        },
+        {
+          "key": "R",
+          "label": "初始半径（kpc）",
+          "min": 20,
+          "max": 150,
+          "step": 5,
+          "value": 80,
+          "digits": 2
+        },
+        {
+          "key": "tau",
+          "label": "t / tDF",
+          "min": 0,
+          "max": 1,
+          "step": 0.01,
+          "value": 0.3,
+          "digits": 2
+        }
+      ],
+      "values": [
+        "tDF（Gyr）",
+        "当前半径（kpc）",
+        "当前卫星/内部宿主质量比"
+      ],
+      "pages": [
+        557,
+        560
+      ],
+      "formula": "tDF=1.17Ri²Vc/(GM lnΛ)<br>r(t)=Ri√(1−t/tDF)<br>Vc=200km/s，lnΛ=3",
+      "assumptions": "奇异等温宿主、圆轨道、恒定卫星质量。大质量比、失质量、宿主核结构及轨道偏心都会破坏模型；r=0仅为理想吸收端点，不描绘奇点内部。 质量比使用当前r(t)：M/Mhost(<r)=GM/(Vc²r)；半径趋零时此比不定义，不能把理想吸收端点当成轻卫星近似仍成立。",
+      "scene": true,
+      "ref": "MBW (2010) pp.557–560",
+      "sweep": "tau",
+      "formulaTex": [
+        "t_{\\mathrm{DF}}=\\frac{1.17R_i^2V_c}{GM\\ln\\Lambda}",
+        "r(t)=R_i\\sqrt{1-t/t_{\\mathrm{DF}}}",
+        "V_c=200\\,\\mathrm{km\\,s}^{-1},\\quad\\ln\\Lambda=3"
+      ]
+    },
+    {
+      "id": "ram",
+      "model": "ram",
+      "title": "冲压，能越过盘的恢复力吗",
+      "intro": "在明确的指数恒星盘与气体盘中比较压力，积分保留的冷气体质量。",
+      "params": [
+        {
+          "key": "n",
+          "label": "log₁₀ 团际氢核密度 / cm⁻³",
+          "min": -5,
+          "max": -2,
+          "step": 0.1,
+          "value": -3,
+          "digits": 2
+        },
+        {
+          "key": "V",
+          "label": "迎风速度（km/s）",
+          "min": 0,
+          "max": 1500,
+          "step": 25,
+          "value": 800,
+          "digits": 2
+        }
+      ],
+      "values": [
+        "Pram / 中心恢复压力",
+        "剥离半径（kpc）",
+        "剩余气体份额（%）"
+      ],
+      "pages": [
+        571,
+        572
+      ],
+      "formula": "Pram=mp nH V²，Prest=2πGΣstarΣgas<br>rstrip=max[0,ln(P₀/Pram)/(1/Rstar+1/Rgas)]<br>fgas=1−(1+x)e⁻ˣ，x=rstrip/Rgas",
+      "assumptions": "面密度中心值500/50M☉pc⁻²，尺度3/5kpc，均显式指定；纯氢团际气体、薄盘垂直迎风局部恢复力。零压力保留全部气体。未计算倾角、压缩或实际剥离速度，更不等于立即淬火。",
+      "scene": true,
+      "ref": "MBW (2010) pp.571–572",
+      "formulaTex": [
+        "P_{\\mathrm{ram}}=m_pn_{\\mathrm H}V^2",
+        "P_{\\mathrm{rest}}=2\\pi G\\Sigma_\\star\\Sigma_g",
+        "r_{\\mathrm{strip}}=\\max\\!\\left[0,\\frac{\\ln(P_0/P_{\\mathrm{ram}})}{R_\\star^{-1}+R_g^{-1}}\\right]",
+        "f_{\\mathrm{gas}}=1-(1+x)e^{-x},\\quad x=\\frac{r_{\\mathrm{strip}}}{R_g}"
+      ]
+    },
+    {
+      "id": "starvation",
+      "model": "starvation",
+      "title": "补给切断之后，星形成还能持续多久",
+      "intro": "保留已有冷气体，切断新流入。把即时回流、外流与锁定恒星放在同一质量账中。",
+      "params": [
+        {
+          "key": "dep",
+          "label": "形成耗尽时间（Gyr）",
+          "min": 1,
+          "max": 5,
+          "step": 0.1,
+          "value": 2,
+          "digits": 2
+        },
+        {
+          "key": "loading",
+          "label": "外流率 / Ψ",
+          "min": 0,
+          "max": 3,
+          "step": 0.1,
+          "value": 1,
+          "digits": 2
+        },
+        {
+          "key": "time",
+          "label": "切断后时间（Gyr）",
+          "min": 0,
+          "max": 10,
+          "step": 0.1,
+          "value": 3,
+          "digits": 2
+        }
+      ],
+      "values": [
+        "当前 Ψ（M☉/yr）",
+        "锁定恒星 / M₀（%）",
+        "累计外流 / M₀（%）"
+      ],
+      "pages": [
+        572,
+        573
+      ],
+      "formula": "Mg/M₀=exp[−(1−R+η)t/tdep]<br>Ψ=Mg/tdep，R=0.4，M₀=10¹⁰M☉",
+      "assumptions": "本章定性机制的新增单区解析类比，回流瞬时、井混合、参数不随时间变化。切断的是补给，非立刻移除全部冷气体；红色卫星不能凭颜色唯一归因于窒息。",
+      "scene": true,
+      "ref": "MBW (2010) pp.572–573",
+      "sweep": "time",
+      "formulaTex": [
+        "\\frac{M_g}{M_0}=e^{-(1-R+\\eta)t/t_{\\mathrm{dep}}}",
+        "\\Psi=\\frac{M_g}{t_{\\mathrm{dep}}},\\quad R=0.4,\\quad M_0=10^{10}M_\\odot"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "fast-encounters",
+      "num": "12.1",
+      "title": "快速相遇，先改变能量分配",
+      "pages": [
+        545,
+        548
+      ],
+      "paragraphs": [
+        "潮汐力是扰动引力在目标尺度上的差异。整体加速度会移动质心，差分加速度才会改变内部运动；脉冲近似还要求遭遇比内部响应快得多。",
+        "注能之后，系统可能膨胀、失去物质或破坏。只有在同源、无失质量并重新维里平衡的限制下，才能由能量守恒得到简单终态比值。"
+      ],
+      "labs": [
+        "tidal-shock",
+        "heat-end"
+      ]
+    },
+    {
+      "id": "stripping",
+      "num": "12.2",
+      "title": "边界外的物质，如何进入流和尾",
+      "pages": [
+        548,
+        553
+      ],
+      "paragraphs": [
+        "潮汐尺度依赖宿主质量剖面与轨道，不能把一个圆轨道公式当作普适截断半径。流星体的逃逸、再次捕获和相位混合还需要时间。",
+        "前导、后随流以及顺行、逆行相遇的响应保留轨道和盘取向信息。漂亮的潮汐尾不是质量分布的唯一反演，也不能用任意画出的螺旋代替轨道积分。"
+      ],
+      "labs": [
+        "tidal-radius"
+      ]
+    },
+    {
+      "id": "dynamical-friction",
+      "num": "12.3",
+      "title": "尾迹交换能量与角动量",
+      "pages": [
+        553,
+        560
+      ],
+      "paragraphs": [
+        "动力学摩擦来自引力响应而非接触摩擦。Chandrasekhar公式把无限均匀背景和局部速度分布压缩成一个阻力，库仑对数汇总了冲量参数范围。",
+        "真实宿主非均匀、可能有核或三轴结构，卫星还会被剥离。质量下降通常延长衰减，因此把初始质量一直带到中心会高估后期衰减；局部阻力时标与全轨道时间也不同。"
+      ],
+      "labs": [
+        "drag",
+        "friction"
+      ]
+    },
+    {
+      "id": "mergers",
+      "num": "12.4",
+      "title": "俘获、并合与转化，是不同问题",
+      "pages": [
+        560,
+        568
+      ],
+      "paragraphs": [
+        "正的初始轨道能需要向内部运动等自由度转移，才可能形成束缚对；被俘获也不保证迅速合并。角动量、质量比、共同暗晕与轨道结构都很重要。",
+        "引力力矩可以驱动气体内流，触发星暴或活动核，但没有自动发生的唯一结局。小并合还会增厚和扰动盘，效果取决于轨道、结构与气体；不将一个垂向加热标度当作完整盘演化。",
+        "并合率的观测需要把形态或近邻选择换算成事件率，必须考虑可见时标和样本选择。这里的终态实验不提供这种观测标定。"
+      ],
+      "labs": []
+    },
+    {
+      "id": "clusters",
+      "num": "12.5",
+      "title": "同在星系团，机制却不相同",
+      "pages": [
+        568,
+        573
+      ],
+      "paragraphs": [
+        "反复快速潮汐相遇与团势可以共同造成骚扰；中心大星系的吞食与层级增长又依赖轨道衰减。它们都不同于气体受团际介质迎风产生的冲压。",
+        "冲压可能去掉外盘冷气体，也可能压缩剩余部分；热气体库的剥离则通过切断补给造成延迟耗尽。颜色—环境相关性不能独自区分这些通道。"
+      ],
+      "labs": [
+        "ram",
+        "starvation"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "脉冲近似要求什么？",
+      "options": [
+        "遭遇远快于内部响应",
+        "遭遇无限缓慢"
+      ],
+      "answer": 0,
+      "why": "缓慢扰动会发生绝热响应，快速冲量公式不再可靠。"
+    },
+    {
+      "q": "注能后重新平衡的速度弥散能降低吗？",
+      "options": [
+        "能，在所述膨胀终态中",
+        "不能"
+      ],
+      "answer": 0,
+      "why": "固定质量同源终态Kf/Ki=1−h。"
+    },
+    {
+      "q": "潮汐半径外的物质会立即全部逃走吗？",
+      "options": [
+        "会",
+        "不会，逃逸面与过程更复杂"
+      ],
+      "answer": 1,
+      "why": "潮汐尺度不是瞬时删除物质的开关。"
+    },
+    {
+      "q": "固定宿主、圆轨道近似中，卫星质量翻倍会怎样？",
+      "options": [
+        "tDF减半",
+        "tDF翻倍"
+      ],
+      "answer": 0,
+      "why": "tDF与卫星质量成反比，但失质量会改变后续演化。"
+    },
+    {
+      "q": "速度翻倍使冲压怎样变化？",
+      "options": [
+        "翻倍",
+        "变为4倍"
+      ],
+      "answer": 1,
+      "why": "Pram=ρV²。"
+    },
+    {
+      "q": "切断补给等于立刻移除冷气体吗？",
+      "options": [
+        "等于",
+        "不等于"
+      ],
+      "answer": 1,
+      "why": "已有冷库可以按耗尽时标继续形成恒星。"
+    }
+  ],
+  "errata": "潮汐与摩擦实验分别说明有效域；盘增厚以定性机制解释，未沿用p567局部系数与固定面密度标度之间的不一致。"
+}

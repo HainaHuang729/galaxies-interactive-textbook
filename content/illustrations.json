@@ -1,0 +1,856 @@
+{
+  "generated_at": "2026-10-17",
+  "provenance": "AI 科教示意 · 非观测数据",
+  "images": [
+    {
+      "id": "galaxy-diversity",
+      "chapter": 1,
+      "anchor": "opening",
+      "title": "星系的不同形态",
+      "caption": "盘、核球、旋臂与不规则结构的几何差异；外观不能独自确定动力学支撑。",
+      "provenance": "AI 科教示意 · 非观测数据",
+      "prompt": "Use case: scientific-educational. Asset type: wide illustration embedded in a Chinese undergraduate galaxy-formation textbook. Editorial astronomical illustration, physically plausible geometry, restrained graphite-blue, ice-blue and warm starlight accents, detailed yet legible at mobile size. No text, no letters, no numbers, no axes, no UI, no watermark, no telescope logos. This is an explicitly labelled conceptual illustration, never a claimed observation or measured simulation. Three separate realistically rendered galaxy morphologies arranged across a wide field at comparable apparent sizes: a moderately inclined spiral disk showing warm central bulge, cool-blue outer disk and dusty lanes; a smooth warm elliptical galaxy without a disk or spiral arms; a clumpy irregular dwarf with patchy young stars. Keep generous separation, no connecting arrows, no borders, no named real objects. Landscape composition, aspect ratio 3:2. Fill the whole image with the illustration; no surrounding frame.",
+      "page": "index.html",
+      "cue": "比较盘的扁平程度、核球的集中程度与恒星分布的规则性。",
+      "alt": "AI 科教示意：左侧有旋臂和尘埃带的盘星系、右上的平滑椭圆星系与下方的团块状不规则星系。",
+      "width": 1536,
+      "height": 1024,
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "original_filename": "exec-d5c64c5e-4ca1-41ae-82ff-75c09eb4d1f0.png",
+      "files": [
+        {
+          "path": "assets/illustrations/galaxy-diversity-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 54706
+        },
+        {
+          "path": "assets/illustrations/galaxy-diversity-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 118998
+        },
+        {
+          "path": "assets/illustrations/galaxy-diversity-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 270924
+        }
+      ]
+    },
+    {
+      "id": "cosmic-web",
+      "chapter": 4,
+      "anchor": "opening",
+      "title": "从密度起伏到宇宙网",
+      "caption": "宇宙网的概念示意；不代表可见光直接观测到的暗物质，也不标定增长时间。",
+      "provenance": "AI 科教示意 · 非观测数据",
+      "prompt": "Use case: scientific-educational. Asset type: wide illustration embedded in a Chinese undergraduate galaxy-formation textbook. Editorial astronomical illustration, physically plausible geometry, restrained graphite-blue, ice-blue and warm starlight accents, detailed yet legible at mobile size. No text, no letters, no numbers, no axes, no UI, no watermark, no telescope logos. This is an explicitly labelled conceptual illustration, never a claimed observation or measured simulation. A wide single coherent three-dimensional cosmic-web volume: fine branching filaments linking several compact nodes, large low-density voids between filaments. Small points suggest galaxies inside filaments; diffuse structure represents the modeled mass field. Clearly distinguish diffuse filaments from bright galaxy points; no uniform lattice, no central explosion, no central observer, no unsupported timeline or quantitative scale. Landscape composition, aspect ratio 3:2. Fill the whole image with the illustration; no surrounding frame.",
+      "page": "chapter-4.html",
+      "cue": "先找低密度空洞，再沿细丝追踪连接处的高密度节点。",
+      "alt": "AI 科教示意：蓝色细丝连接暖色高密度节点，细丝之间分布着较暗的低密度空洞。",
+      "width": 1536,
+      "height": 1024,
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "original_filename": "exec-552f7170-7912-42bc-8be3-ce8b00e81029.png",
+      "files": [
+        {
+          "path": "assets/illustrations/cosmic-web-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 93734
+        },
+        {
+          "path": "assets/illustrations/cosmic-web-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 187776
+        },
+        {
+          "path": "assets/illustrations/cosmic-web-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 388106
+        }
+      ]
+    },
+    {
+      "id": "halo-cooling-v2",
+      "chapter": 8,
+      "anchor": "opening",
+      "title": "星系与周围弥散气体",
+      "caption": "星系周围气体分布的概念图。颜色不表示定量温度，也不能由静态图像判定冷却或流入；相关推断见正文的模型与观测。",
+      "provenance": "AI 科教示意 · 非观测数据",
+      "prompt": "Use case: scientific-educational. Asset for a Chinese galaxy formation textbook. Restrained, highly detailed editorial astronomical illustration in deep graphite blue, cool gas blue and warm stellar light; landscape 3:2. No text, numbers, diagrams, arrows, scale bars, labels, telescope logos, watermark, or UI. Clearly conceptual, not a named observed object. Keep important subject fully visible with space around it. A small central disk galaxy inside a much larger, softly fading diffuse hot gas halo. The halo's density changes continuously from inner to outer regions; use a few faint approaching cool gas filaments and a compact central disk. Absolutely no hard outer edge, spherical shell, bubble wall, slice plane, cutaway wall, glass orb or luminous round boundary. The gas halo fades gradually into the background; its extent is a schematic spatial distribution, not a surface. No physically solid structure except the depicted galaxy light.",
+      "page": "chapter-8.html",
+      "cue": "观察弥散气体如何向背景连续淡出；热晕没有实体外壳。",
+      "alt": "AI 科教示意：中央盘星系周围的蓝色弥散热气体逐渐向外淡去，少量冷气体细丝伸向内侧。",
+      "width": 1536,
+      "height": 1024,
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "original_filename": "exec-09bc0251-5829-4003-a955-f926091dce01.png",
+      "files": [
+        {
+          "path": "assets/illustrations/halo-cooling-v2-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 21692
+        },
+        {
+          "path": "assets/illustrations/halo-cooling-v2-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 45122
+        },
+        {
+          "path": "assets/illustrations/halo-cooling-v2-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 102786
+        }
+      ],
+      "supersedes": "halo-cooling"
+    },
+    {
+      "id": "molecular-cloud",
+      "chapter": 9,
+      "anchor": "opening",
+      "title": "分子云中的恒星形成",
+      "caption": "尘埃遮蔽、云内丝状结构与局部恒星形成的示意；亮度不用于定量推断密度。",
+      "provenance": "AI 科教示意 · 非观测数据",
+      "prompt": "Use case: scientific-educational. Asset type: wide illustration embedded in a Chinese undergraduate galaxy-formation textbook. Editorial astronomical illustration, physically plausible geometry, restrained graphite-blue, ice-blue and warm starlight accents, detailed yet legible at mobile size. No text, no letters, no numbers, no axes, no UI, no watermark, no telescope logos. This is an explicitly labelled conceptual illustration, never a claimed observation or measured simulation. An elongated dense molecular cloud with irregular dark dusty filaments, a few localized compact warm star-forming condensations, and one small illuminated cavity around a young star cluster. Wide field with a clear hierarchy of diffuse cloud, dense filament, localized cores; young stars do not form uniformly everywhere. Astronomical scale and textures, no planet surfaces, no anthropomorphic shapes, no decorative giant stars. Landscape composition, aspect ratio 3:2. Fill the whole image with the illustration; no surrounding frame.",
+      "page": "chapter-9.html",
+      "cue": "沿暗尘埃丝寻找局部亮核，比较连续云体和局部形成区的尺度。",
+      "alt": "AI 科教示意：不规则尘埃暗丝横贯分子云，少数局部亮核和年轻星团分布在云内。",
+      "width": 1536,
+      "height": 1024,
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "original_filename": "exec-4dc7e66e-ffe6-4b82-9a24-9533155db66e.png",
+      "files": [
+        {
+          "path": "assets/illustrations/molecular-cloud-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 56284
+        },
+        {
+          "path": "assets/illustrations/molecular-cloud-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 107646
+        },
+        {
+          "path": "assets/illustrations/molecular-cloud-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 218092
+        }
+      ]
+    },
+    {
+      "id": "disk-anatomy",
+      "chapter": 11,
+      "anchor": "opening",
+      "title": "盘星系的结构",
+      "caption": "恒星盘、中央核球与薄尘埃层的空间关系；不在图中展示可见的暗物质实体。",
+      "provenance": "AI 科教示意 · 非观测数据",
+      "prompt": "Use case: scientific-educational. Asset type: wide illustration embedded in a Chinese undergraduate galaxy-formation textbook. Editorial astronomical illustration, physically plausible geometry, restrained graphite-blue, ice-blue and warm starlight accents, detailed yet legible at mobile size. No text, no letters, no numbers, no axes, no UI, no watermark, no telescope logos. This is an explicitly labelled conceptual illustration, never a claimed observation or measured simulation. A single generic spiral galaxy seen at a moderate oblique inclination, enough to show a broad thin stellar disk, compact smooth central bulge, dusty midplane lanes and patchy blue young-star regions in the disk. Make the old stellar disk continuous and much wider than its thickness; bulge is smooth and spheroidal, not an accretion disk. Natural star-light distribution, no artificial nested glass rings, no exposed solid parts, no dark-matter shell. Landscape composition, aspect ratio 3:2. Fill the whole image with the illustration; no surrounding frame.",
+      "page": "chapter-11.html",
+      "cue": "从中央向外找核球、薄盘与尘埃带；旋臂图案不等于盘的全部质量。",
+      "alt": "AI 科教示意：倾斜盘星系的明亮中央核球、宽而薄的恒星盘、暗尘埃带和局部蓝色形成区。",
+      "width": 1536,
+      "height": 1024,
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "original_filename": "exec-0ab7ed52-c105-47e1-b338-7b01b2beaf9c.png",
+      "files": [
+        {
+          "path": "assets/illustrations/disk-anatomy-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 59682
+        },
+        {
+          "path": "assets/illustrations/disk-anatomy-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 129332
+        },
+        {
+          "path": "assets/illustrations/disk-anatomy-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 285232
+        }
+      ]
+    },
+    {
+      "id": "tidal-encounter",
+      "chapter": 12,
+      "anchor": "opening",
+      "title": "引力相遇留下潮汐尾",
+      "caption": "两座延展星系的潮汐形变示意；并非按当前实验参数积分的轨道结果。",
+      "provenance": "AI 科教示意 · 非观测数据",
+      "prompt": "Use case: scientific-educational. Asset type: wide illustration embedded in a Chinese undergraduate galaxy-formation textbook. Editorial astronomical illustration, physically plausible geometry, restrained graphite-blue, ice-blue and warm starlight accents, detailed yet legible at mobile size. No text, no letters, no numbers, no axes, no UI, no watermark, no telescope logos. This is an explicitly labelled conceptual illustration, never a claimed observation or measured simulation. Two extended stellar disk galaxies during a close gravitational encounter in one coherent field. Show long diffuse curved tidal tails and a faint stellar bridge between galaxies, distorted disks with surviving bright central bulges, no literal solid impact, no explosion, no fire, no shockwave rings. Rich stellar textures but a clean readable silhouette, believable elongated tidal debris. Do not claim a named observed galaxy pair or exact encounter stage. Landscape composition, aspect ratio 3:2. Fill the whole image with the illustration; no surrounding frame.",
+      "page": "chapter-12.html",
+      "cue": "找出两个仍然可辨的中心，再追踪它们之间的桥与外侧潮汐尾。",
+      "alt": "AI 科教示意：两个星系的中心仍可辨认，星光桥连接两者，弯曲潮汐尾向外延伸。",
+      "width": 1536,
+      "height": 1024,
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "original_filename": "exec-281182c9-6cd4-4375-9b67-9bd969c63078.png",
+      "files": [
+        {
+          "path": "assets/illustrations/tidal-encounter-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 49488
+        },
+        {
+          "path": "assets/illustrations/tidal-encounter-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 104236
+        },
+        {
+          "path": "assets/illustrations/tidal-encounter-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 221652
+        }
+      ]
+    },
+    {
+      "id": "stellar-populations",
+      "chapter": 10,
+      "page": "chapter-10.html",
+      "anchor": "opening",
+      "title": "年轻星协与年老星团",
+      "caption": "左侧为疏散的年轻星协，右侧为致密的年老星团，帮助比较恒星光与空间分布。两者未按相同质量或光度归一；星团形态和颜色都不能单独确定年龄。",
+      "cue": "比较恒星的集中程度、亮星颜色和周围气体；定量年龄与光度权重仍由本章模型计算。",
+      "alt": "AI科教示意：左侧年轻星协中蓝白亮星疏散分布并伴少量残余云气，右侧年老球状星团集中而无明显星云。",
+      "prompt": "Use case: scientific-educational. Asset type: landscape 3:2 editorial astronomical illustration for chapter 10, stellar populations, of a Chinese university textbook. Primary request: a beautifully detailed restrained deep-space two-field comparison of a loose young stellar association versus an old compact stellar cluster, with no labels or text inside image. Left field: loose irregular young association, sparse bright blue-white massive stars mixed with many fainter stars, subtle residual dusty nebulosity confined to this field. Right field: old compact approximately spherical globular cluster, dense smooth central concentration of numerous faint stars with a few brighter warm red giants, sparse blue-white stars are allowed but no blue nebulosity. Separate the fields with ample dark space, no border. Star points should have natural varied brightness with subtle small point-spread halos, never five-point star icons. Do not imply that every young/old population has this morphology or that color uniquely determines age; caption outside image will explain this is a conceptual contrast, not equal-mass or equal-luminosity comparison. No axes, no measurement, no scale bars, no arrows, no lettering, no watermark, no planets, no galaxy spiral arms. Elegant graphite-blue background, ivory star light, muted cool blue and warm amber accents. Physically plausible astronomical textures, no glass orb or solid cluster edge.",
+      "original_filename": "exec-9b2234a8-0d55-4f50-91b8-81fc39bb4c16.png",
+      "width": 1536,
+      "height": 1024,
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "provenance": "AI 科教示意 · 非观测数据",
+      "files": [
+        {
+          "path": "assets/illustrations/stellar-populations-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 68744
+        },
+        {
+          "path": "assets/illustrations/stellar-populations-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 146250
+        },
+        {
+          "path": "assets/illustrations/stellar-populations-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 322992
+        }
+      ]
+    },
+    {
+      "id": "elliptical-light",
+      "chapter": 13,
+      "page": "chapter-13.html",
+      "anchor": "opening",
+      "title": "平滑而集中的椭圆星系星光",
+      "caption": "椭圆星系可呈现平滑、中心集中的恒星光包层。这张概念图不对应特定天体或表面亮度数据，也不能确定三维形状、轨道各向异性或动力学支撑。",
+      "cue": "从明亮中心向外追踪连续变淡的星光，区别光分布、质量分布和恒星轨道这三类信息。",
+      "alt": "AI科教示意：一座平滑的椭圆形星光系统，暖色中心向宽广暗弱包层连续淡出，没有明显旋臂或薄盘。",
+      "prompt": "Use case: scientific-educational. Asset type: wide landscape 3:2 editorial astronomical illustration for chapter 13, elliptical galaxies, of a Chinese university galaxy-formation textbook. Primary request: a carefully rendered generic elliptical galaxy, useful for learning the visual appearance of a smooth centrally concentrated stellar light distribution. One oblate-looking gently elliptical stellar spheroid viewed in projection, warm ivory central concentration smoothly fading to a broad faint envelope; detailed fine star-light texture but no resolved giant stars in the core. A sparse handful of tiny globular-cluster-like points may surround the envelope, kept much smaller and fainter than the galaxy. Deep graphite-blue star field, restrained warm ivory and muted blue-grey palette, elegant and quiet, generous space around the full faint envelope. It must have no spiral arms, no stellar disk, no dust ring, no giant glowing black hole, no hard outer surface, no cutaway or glass orb, no image-frame border, no cosmic explosion, no false diffraction spike on diffuse core. No labels, no numbers, no text, no axes, no scale bar, no telescope name, no watermark. This is a conceptual astronomical illustration, not a named observed galaxy, not a surface brightness measurement or a determination of the 3D shape or orbital anisotropy. The luminous envelope must fade continuously into dark space.",
+      "original_filename": "exec-1cd5bbc9-6013-4205-bf08-b16e4a0473f6.png",
+      "width": 1536,
+      "height": 1024,
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "provenance": "AI 科教示意 · 非观测数据",
+      "files": [
+        {
+          "path": "assets/illustrations/elliptical-light-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 38192
+        },
+        {
+          "path": "assets/illustrations/elliptical-light-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 93866
+        },
+        {
+          "path": "assets/illustrations/elliptical-light-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 238980
+        }
+      ]
+    },
+    {
+      "id": "edge-on-dust",
+      "chapter": 2,
+      "anchor": "galaxies",
+      "title": "侧向视角中的盘与尘埃",
+      "prompt": "Use case: scientific-educational. Asset type: original landscape 3:2 astronomical editorial image for a Chinese university interactive textbook. A visually unified series: deep graphite-navy space, fine natural star-light texture, restrained ivory/amber stellar light and muted ice-blue or blue-grey material. Thoughtful scientific illustration, not a claimed telescope exposure or a calculated simulation. No text, letters, numerals, axes, labels, arrows, diagrams, borders, logo, or watermark. Clean readable silhouette, generous space around subject, understated realistic textures, no excessive lens flares. Show one generic disk galaxy viewed almost exactly edge-on, horizontal long thin but finite-thickness stellar disk extending well beyond a smooth spheroidal central bulge. A dark irregular dust lane lies in the stellar disk midplane and obscures some of the stellar light behind it, continuing across the lower central bulge. The galaxy is stellar light and dust, with a gradual diffuse envelope fading into space, no hard edge. No enormous black central hole, no black-hole accretion ring, no hollow galaxy, no glass or solid rings. A subtle blue-white extended disk and warm bulge are illustrative, not a stellar age or extinction measurement. Do not depict any named actual object. One coherent scene, sparse background stars.",
+      "caption": "近侧视盘星系的结构示意：扁平恒星盘穿过中央核球，盘面尘埃遮挡其后的星光，形成暗带。颜色为说明结构而选取，不能据此测量恒星年龄、尘埃质量或消光。",
+      "cue": "寻找贯穿盘面的暗带，并比较盘与核球的厚度。二维投影外形不能单独确定三维形状。",
+      "alt": "科学示意：近侧视的薄恒星盘与平滑中央核球，盘面不规则尘埃带遮挡背景星光。",
+      "book_reference": "MBW §2.3，pp.37–61",
+      "references": [
+        {
+          "label": "NASA：侧视星系与尘埃带",
+          "url": "https://science.nasa.gov/missions/hubble/hubble-sees-galaxy-on-edge/"
+        }
+      ],
+      "placement": "body",
+      "page": "chapter-2.html",
+      "provenance": "AI 科学示意 · 非观测数据 · 无定量标尺",
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "original_filename": "exec-0652df2e-e8ee-44db-9aef-987513656674.png",
+      "files": [
+        {
+          "path": "assets/illustrations/edge-on-dust-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 12426
+        },
+        {
+          "path": "assets/illustrations/edge-on-dust-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 29572
+        },
+        {
+          "path": "assets/illustrations/edge-on-dust-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 78484
+        }
+      ],
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "stellar-stream",
+      "chapter": 5,
+      "anchor": "mixing",
+      "title": "在真实空间辨认恒星流",
+      "prompt": "Use case: scientific-educational. Asset type: original landscape 3:2 astronomical editorial image for a Chinese university interactive textbook. A visually unified series: deep graphite-navy space, fine natural star-light texture, restrained ivory/amber stellar light and muted ice-blue or blue-grey material. Thoughtful scientific illustration, not a claimed telescope exposure or a calculated simulation. No text, letters, numerals, axes, labels, arrows, diagrams, borders, logo, or watermark. Clean readable silhouette, generous space around subject, understated realistic textures, no excessive lens flares. Show one small smooth generic stellar galaxy left of center, broad faint stellar halo around it. Across the outer halo runs one long very faint narrow gently curved stellar tidal stream made of countless diffuse star points, with a subtle small elongated remnant clump along it. Stream extends over much greater distance than its thickness, small but discernible and unbroken, no spiral arm anchored in a central disk. The curve is a distributed stellar structure, not a single particle trajectory. Real-space morphology only: no orbit tracer lines, no luminous tube or tube walls, no mechanical wire, no complete circular ring, no arrows, no duplicate panels, no x-p phase-space pattern. The stream's surface brightness must be much fainter than the galaxy core. No collisions or explosions. No claim of a particular orbit or mixing time.",
+      "caption": "潮汐剥离可使卫星系统中的恒星沿宿主周围展开，留下低表面亮度的弧状恒星流。图中弧带代表许多恒星的空间分布，不是一颗恒星的轨道，也不是旁边实验中的位置–动量相空间图。",
+      "cue": "比较明亮主体与暗淡弧带。仅凭这张静态形态图，不能读出剥离时间、混合时标或细粒度信息是否丢失。",
+      "alt": "科学示意：宿主星系外侧有一条暗淡、由分散星点构成的弧状潮汐恒星流。",
+      "book_reference": "MBW §5.5，pp.248–257（相混合）；恒星流形态为补充案例",
+      "references": [
+        {
+          "label": "Martínez-Delgado 等：恒星潮汐流巡天",
+          "url": "https://arxiv.org/abs/1003.4860"
+        }
+      ],
+      "placement": "body",
+      "page": "chapter-5.html",
+      "provenance": "AI 科学示意 · 非观测数据 · 无定量标尺",
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "original_filename": "exec-bfd15314-db07-472c-a67f-5671de027503.png",
+      "files": [
+        {
+          "path": "assets/illustrations/stellar-stream-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 29558
+        },
+        {
+          "path": "assets/illustrations/stellar-stream-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 70368
+        },
+        {
+          "path": "assets/illustrations/stellar-stream-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 163190
+        }
+      ],
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "radio-jets-lobes",
+      "chapter": 14,
+      "anchor": "engine",
+      "title": "从中心喷流到延展射电瓣",
+      "prompt": "Use case: scientific-educational. Asset type: original landscape 3:2 astronomical editorial image for a Chinese university interactive textbook. A visually unified series: deep graphite-navy space, fine natural star-light texture, restrained ivory/amber stellar light and muted ice-blue or blue-grey material. Thoughtful scientific illustration, not a claimed telescope exposure or a calculated simulation. No text, letters, numerals, axes, labels, arrows, diagrams, borders, logo, or watermark. Clean readable silhouette, generous space around subject, understated realistic textures, no excessive lens flares. Show one generic radio-loud active galaxy as a small smooth warm elliptical stellar host at the center of the composition. Two opposite narrow collimated jets emerge from the same central point along one common diagonal axis, one to upper-right and the counterjet to lower-left. Each feeds a much wider diffuse irregular radio lobe at its far end; both lobes are far larger than the central stellar host. Smooth volume-filling faint plasma wisps in lobes, no glass bubble shells, no burning flame or smoke-column terrestrial analogy. Use muted ice-blue to explicitly illustrate radio-emitting plasma superposed on ivory stellar light; this is an imagined multiwavelength composite, not visible-light colors. The inner accretion disk and event horizon must be unresolved and not drawn; do not add a huge torus or a giant black sphere, planets, light beams toward an observer, or unrelated jet axes. Bilateral overall geometry but not identical mirrored texture. No quantitative field strength, speed, brightness or length scale implied. Only some active galaxies have strong jets.",
+      "caption": "部分活动星系核会产生沿共同轴线向两侧延伸的喷流，并在远处形成宽广的射电瓣。蓝色编码射电等离子体，暖色表示宿主恒星光；这是多波段概念合成，不是肉眼可见的颜色，也不描绘已分辨的事件视界。",
+      "cue": "从中央宿主沿细喷流追踪到弥散射电瓣。图中没有长度、速度或能量标尺，不能用亮度和尺寸估算反馈效率。",
+      "alt": "科学示意：一个暖色椭圆宿主的中心沿同一轴线伸出两束蓝色喷流，分别连接到远大于宿主的弥散射电瓣。",
+      "book_reference": "MBW §14.2，pp.623–640",
+      "references": [
+        {
+          "label": "ESA：喷流与射电瓣的多波段观测",
+          "url": "https://www.esa.int/ESA_Multimedia/Images/2015/11/A_supermassive_black_hole_in_action"
+        }
+      ],
+      "placement": "body",
+      "page": "chapter-14.html",
+      "provenance": "AI 科学示意 · 非观测数据 · 无定量标尺",
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "original_filename": "exec-648090a6-1110-498b-bd60-ee0316aa61ef.png",
+      "files": [
+        {
+          "path": "assets/illustrations/radio-jets-lobes-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 32968
+        },
+        {
+          "path": "assets/illustrations/radio-jets-lobes-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 72178
+        },
+        {
+          "path": "assets/illustrations/radio-jets-lobes-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 160978
+        }
+      ],
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "patchy-reionization",
+      "chapter": 16,
+      "anchor": "evolution",
+      "title": "再电离是斑驳而相连的过程",
+      "prompt": "Use case: scientific-educational. Asset type: original landscape 3:2 astronomical editorial image for a Chinese university interactive textbook. A visually unified series: deep graphite-navy space, fine natural star-light texture, restrained ivory/amber stellar light and muted ice-blue or blue-grey material. Thoughtful scientific illustration, not a claimed telescope exposure or a calculated simulation. No text, letters, numerals, axes, labels, arrows, diagrams, borders, logo, or watermark. Clean readable silhouette, generous space around subject, understated realistic textures, no excessive lens flares. Create a scientific concept illustration of one planar slice through intergalactic gas during patchy reionization, viewed straight-on; absolutely not a photograph. Show a continuous softly textured low-density gas field across the full image. Muted blue-grey gas denotes neutral regions; irregular pale warm ivory regions denote ionized gas around several small clustered point-like galaxy sources. Ionized patches have unequal sizes and softly varying noncircular boundaries; a few overlap into contiguous larger regions while some neutral gas corridors remain connected between them. Both colors retain comparable subtle gas texture: ionized regions are NOT evacuated holes or empty space. No shiny bubble rims, no hard spherical shells, no glass globes, no exposed cube or 3D slice wall, no central explosion, no uniform grid, no timeline, no particular redshift, no photons as visible beams. This is an illustrative two-color state encoding, not true visible-light emission, not temperature or density calibration, no measurable scale.",
+      "caption": "再电离过程中，聚集光源周围的电离区逐步扩展、相互重叠，中性区仍可在其间连通。暖色与蓝灰色只区分电离和中性状态；两者都含有气体。图为概念平面切片，亮点表示光源位置，不是可分辨的单颗恒星。",
+      "cue": "辨认大小不同、边缘不规则的电离区及其重叠。颜色不代表实测温度、密度或可见光亮度，也没有指定红移或中性分数。",
+      "alt": "再电离概念切片：带有气体纹理的暖色电离区域在聚集光源周围不规则扩展和相互重叠，蓝灰中性气体仍在其间连通。",
+      "book_reference": "MBW §16.3，pp.702–709",
+      "references": [
+        {
+          "label": "ESA：宇宙结构形成与再电离",
+          "url": "https://www.esa.int/Science_Exploration/Space_Science/Planck/History_of_cosmic_structure_formation"
+        }
+      ],
+      "placement": "body",
+      "page": "chapter-16.html",
+      "provenance": "AI 科学示意 · 非观测数据 · 无定量标尺",
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "original_filename": "exec-758b8ddc-072c-4f67-b6d6-7f311f9ce690.png",
+      "files": [
+        {
+          "path": "assets/illustrations/patchy-reionization-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 72344
+        },
+        {
+          "path": "assets/illustrations/patchy-reionization-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 149068
+        },
+        {
+          "path": "assets/illustrations/patchy-reionization-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 327494
+        }
+      ],
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ram-pressure-gas",
+      "chapter": 12,
+      "anchor": "clusters",
+      "page": "chapter-12.html",
+      "title": "冲压作用于气体，恒星主体仍可保留",
+      "caption": "盘星系受到周围气体迎风作用、形成不对称气体尾迹的概念示意。蓝色用于区分气体，不编码温度、密度或真实波段；恒星主体与被剥离气体应分别识别。静态图像不测量剥离速率或剩余气体质量。",
+      "cue": "对照迎风侧、相对紧凑的恒星盘与下游气体尾迹；用本节冲压实验计算压力比较。",
+      "alt": "AI科教示意：左下盘星系保留紧凑恒星主体，蓝色气体尾迹向右上方延伸。",
+      "book_reference": "Mo, van den Bosch & White (2010), §12.5, pp.568–573。",
+      "regions": [
+        {
+          "label": "恒星主体",
+          "text": "温暖色恒星主体保持相对紧凑。冲压直接作用于气体，不能把蓝色尾迹自动视作恒星的引力潮汐尾。",
+          "box": [
+            9,
+            39,
+            34,
+            31
+          ]
+        },
+        {
+          "label": "气体尾迹",
+          "text": "下游蓝色尾迹表示被风作用的气体。形状只解释机制；剥离半径与剩余气体比例由本节模型计算。",
+          "box": [
+            39,
+            4,
+            54,
+            53
+          ]
+        },
+        {
+          "label": "迎风侧",
+          "text": "左侧是本图设定的迎风方向，压缩与剥离可同时存在。这个视角不包含完整流体、磁场与恒星形成反馈。",
+          "box": [
+            7,
+            38,
+            12,
+            28
+          ]
+        }
+      ],
+      "placement": "body",
+      "provenance": "AI 科教示意 · 非观测数据",
+      "width": 1536,
+      "height": 1024,
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "original_filename": "ram-pressure-gas.png",
+      "files": [
+        {
+          "path": "assets/illustrations/ram-pressure-gas-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 25262
+        },
+        {
+          "path": "assets/illustrations/ram-pressure-gas-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 47278
+        },
+        {
+          "path": "assets/illustrations/ram-pressure-gas-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 100366
+        }
+      ],
+      "prompt": "Use case: scientific-educational. Asset: a landscape 3:2 conceptual astronomical illustration for chapter 12 of a Chinese university galaxy formation textbook. Restrained deep graphite-blue, ice blue, soft teal and warm stellar ivory, compatible with a refined scientific book. Scene: one moderately inclined spiral galaxy moving through intracluster gas. A smooth compact stellar disk and warm central bulge remain gravitationally intact. Diffuse blue stripped GAS trails to the right and slightly upwards in one asymmetric broad wake, with a few physically plausible clumps; the stellar disk does not stretch into the gas wake. Show the ram-pressure head/windward gas compression at the left edge, and a single downstream gas wake to the right. Cluster ambient gas is extremely diffuse and fades smoothly, no hard walls, no shells. No gravitational tidal stellar tails, no companion encounter, no explosions, no flames, no planet surfaces. Scientifically motivated editorial illustration, NOT a real observation or a hydrodynamical simulation; no quantitative implications. No text, labels, numbers, axes, arrows, frames, logos or watermark. Keep the galaxy and entire gaseous wake comfortably in frame, legible at mobile size."
+    },
+    {
+      "id": "galaxy-group-environment",
+      "chapter": 15,
+      "anchor": "environmental-dependence",
+      "page": "chapter-15.html",
+      "title": "共同环境中的不同星系",
+      "caption": "星系群中平滑椭圆星系、盘星系与较暗成员共存的空间概念图。成员距离、质量和星族年龄均未定量标定；图像不证明环境对形态或淬火的因果关系。",
+      "cue": "找出同一环境中的形态多样性，再用本节混合样本实验区分相关、选择效应和因果推断。",
+      "alt": "AI科教示意：中央平滑椭圆星系附近分布两座盘星系及较暗的小成员。",
+      "book_reference": "Mo, van den Bosch & White (2010), §15.5, pp.674–678；群内气体作用见第12章。",
+      "regions": [
+        {
+          "label": "中央平滑成员",
+          "text": "平滑光分布与盘结构不同；外观本身不能确定全部三维轨道或形成历史。",
+          "box": [
+            34,
+            21,
+            32,
+            48
+          ]
+        },
+        {
+          "label": "仍有盘结构",
+          "text": "同一群环境可同时出现盘星系和椭圆星系。不能把这幅静态排列读成单向演化序列。",
+          "box": [
+            69,
+            30,
+            27,
+            40
+          ]
+        },
+        {
+          "label": "样本与环境",
+          "text": "实际环境统计还需成员身份、距离、选择函数与投影校正。网页的混合比例实验是明确指定的合成样本。",
+          "box": [
+            7,
+            18,
+            88,
+            65
+          ]
+        }
+      ],
+      "placement": "body",
+      "provenance": "AI 科教示意 · 非观测数据",
+      "width": 1536,
+      "height": 1024,
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "original_filename": "galaxy-group-environment.png",
+      "files": [
+        {
+          "path": "assets/illustrations/galaxy-group-environment-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 27920
+        },
+        {
+          "path": "assets/illustrations/galaxy-group-environment-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 64120
+        },
+        {
+          "path": "assets/illustrations/galaxy-group-environment-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 151550
+        }
+      ],
+      "prompt": "Use case: scientific-educational. Asset: landscape 3:2 conceptual illustration for chapter 15 on galaxy environments, a refined Chinese university galaxy-formation textbook. Match restrained deep graphite-blue, pale ice blue and warm ivory starlight. A single coherent small galaxy group in three-dimensional space: one larger smooth elliptical galaxy, two distinct smaller inclined disk galaxies with subtle spiral structures, and a few faint compact satellite galaxies. Diverse morphologies coexist in the same group; do not sort by age or align in an evolutionary sequence. Clear separation between members, realistic thin stellar disks, soft diffuse stellar light around the central concentration, a dark sparse background with no foreground planet or huge stars. No glowing cosmic filament ropes or dark matter rendered as visible solid structures. No hard halo boundary, no orbital lines, no evidence-free arrows or collisions. This is a physically plausible editorial concept, NOT an identified real system, measured simulation, or proof that environment causes morphology. No text, labels, numbers, quantitative scales, axes, frames, UI, logos or watermark. Entire group fits with breathing room; detailed yet legible at mobile size."
+    },
+    {
+      "id": "hii-ionized-cloud",
+      "chapter": 9,
+      "anchor": "individual",
+      "title": "热星、发光气体与仍在遮挡的云",
+      "caption": "年轻热星与周围电离气体、尘埃云的结构示意。电离区内部仍有气体，不是一个真空空心球；颜色不测温度、密度或电离份额。真实结构可有非均匀性与压力驱动流动，本章固定密度Strömgren实验不求解这些过程。",
+      "cue": "找到年轻星协，再比较较透明的发光气体与遮挡背景光的尘埃；不将图中亮边当作模型要求的薄壳。",
+      "alt": "AI科教示意：蓝白年轻星协位于不规则的淡粉电离气体中，周围有被照亮的较暗尘埃云。",
+      "book_reference": "MBW 第9章，pp.432–433的电离反馈背景；定量球模型为明确假设下的补充推导。",
+      "references": [
+        {
+          "label": "ESA：HII区与周围云结构",
+          "url": "https://www.esa.int/ESA_Multimedia/Images/2015/08/Feathery_filaments_in_Mon_R2"
+        }
+      ],
+      "regions": [
+        {
+          "label": "年轻热星",
+          "box": [
+            19,
+            29,
+            28,
+            35
+          ],
+          "text": "热的大质量恒星提供电离光子；图示亮度不能直接换成实验中的电离光子率。"
+        },
+        {
+          "label": "区内仍有气体",
+          "box": [
+            28,
+            19,
+            40,
+            49
+          ],
+          "text": "发光气体没有被完全排空。均匀、光学薄的填充电离球投影中心通常较亮；此图复杂结构不是该均匀模型的计算输出。"
+        },
+        {
+          "label": "尘埃与遮挡",
+          "box": [
+            60,
+            5,
+            35,
+            74
+          ],
+          "text": "暗带提示尘埃对背景光的遮挡，不能仅凭颜色测出分子气体质量。"
+        }
+      ],
+      "page": "chapter-9.html",
+      "placement": "body",
+      "width": 1536,
+      "height": 1024,
+      "provenance": "AI 科教示意 · 非观测数据",
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "prompt": "Use case: scientific-educational. Create a landscape 3:2 editorial astronomy illustration for a rigorous Chinese university textbook on galaxy formation, chapter 9 about star formation and an idealized H II ionization region. Match a refined dark graphite-blue, pale ice-blue, soft muted rose emission and warm ivory starlight palette. One small young association including several hot blue-white massive stars sits slightly left of center within a diffuse, irregular, glowing hydrogen nebula. The gas is clumpy and continuous rather than an empty cavity; much fainter ionized gas is still present around the stars. At the right and lower edges, dusty neutral cloud filaments partially obscure background light and have softly illuminated interfaces. No single perfectly spherical luminous wall. Show that the stars illuminate and ionize a surrounding cloud; do not show an explosion, a shockwave, a jet, a hard transparent ball, or gas completely evacuated from the interior. No unrelated foreground planet, no giant diffraction spikes. This is a scientifically motivated conceptual rendering, not an identified object, observational image, radiation-hydrodynamic simulation, temperature map or quantitative density field. No text, labels, diagrams, graphs, arrows, axes, scales, borders, logos or watermark. Maintain breathing room and a clear young-star/gas/dust distinction, detailed but legible at phone size.",
+      "files": [
+        {
+          "path": "assets/illustrations/hii-ionized-cloud-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 58944
+        },
+        {
+          "path": "assets/illustrations/hii-ionized-cloud-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 122826
+        },
+        {
+          "path": "assets/illustrations/hii-ionized-cloud-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 259994
+        }
+      ]
+    },
+    {
+      "id": "agb-mass-return",
+      "chapter": 10,
+      "anchor": "tracks",
+      "title": "晚期恒星把物质重新送回周围",
+      "caption": "冷的渐近巨星支恒星及其团块状含尘星风包层的概念示意。返还的总质量既包含原有物质，也可含新合成元素；整个包层不能都算成净产额。本图没有热白矮星中心、超新星爆炸或真实温度、质量、速度标尺。",
+      "cue": "区分中央晚期恒星与更远处形成的尘埃，再核对“返回的总质量”和“新生金属”两本账。",
+      "alt": "AI科教示意：中央暖红色晚期恒星，周围有向外渐淡、非均匀的气体与尘埃包层。",
+      "book_reference": "MBW §10.2 pp.465–467；质量返还与净产额定义见§10.4.2 pp.488–490。",
+      "references": [
+        {
+          "label": "ESO：AGB星的含尘星风",
+          "url": "https://www.eso.org/public/unitedkingdom/blog/how-stars-die/"
+        }
+      ],
+      "regions": [
+        {
+          "label": "冷的晚期恒星",
+          "box": [
+            46,
+            40,
+            11,
+            15
+          ],
+          "text": "中央是仍在失质量的冷星，不是已暴露热核的行星状星云，也不是一次超新星爆发。"
+        },
+        {
+          "label": "含尘包层",
+          "box": [
+            24,
+            18,
+            57,
+            66
+          ],
+          "text": "尘埃离开光球一段距离后形成，分布可能团块化；低尘内区仍可有气体，不能当作真空。"
+        },
+        {
+          "label": "回流与净产额",
+          "box": [
+            5,
+            4,
+            89,
+            90
+          ],
+          "text": "星风返还的物质含原本已有的氢氦和金属；净产额只计新合成并返回气体的金属。"
+        }
+      ],
+      "page": "chapter-10.html",
+      "placement": "body",
+      "width": 1536,
+      "height": 1024,
+      "provenance": "AI 科教示意 · 非观测数据",
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "prompt": "Use case: scientific-educational. Create a landscape 3:2 editorial astrophysical concept illustration for chapter 10 of a rigorous Chinese galaxy formation textbook, explaining a cool asymptotic giant branch star returning material to its surroundings through a dusty stellar wind. Refined dark graphite-blue background, warm ivory and subdued reddish-orange starlight, low-saturation teal ambient shadows; match a cohesive scientific book illustration style. A single cool red giant star is seen as a small warm central stellar source, embedded in an extended, softly illuminated, somewhat clumpy gas-and-dust circumstellar envelope. Dust begins away from the stellar photosphere, leaving a small dust-free inner region while gas continues through it. The envelope fades outward smoothly, with subtle broad radial structure and mild asymmetry, not a rigid shell, a perfectly geometric set of detached concentric rings, a fiery blast, or a planetary nebula with a hot blue-white central dwarf. No companion star, no inferred binary spiral, no accretion disk or collimated jets, no planets. Convey slow mass loss from an evolved star, not a supernova, not that the entire shell is freshly synthesized metals. The star and dusty envelope are an uncalibrated artistic concept, not a resolved observation or measured mass-loss simulation; no claim about actual size, temperature, composition or wind speed. No text, numbers, labels, axes, arrows, frames, UI, logos or watermark. Landscape composition, full envelope comfortably in frame, physically plausible and legible at small size.",
+      "files": [
+        {
+          "path": "assets/illustrations/agb-mass-return-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 46906
+        },
+        {
+          "path": "assets/illustrations/agb-mass-return-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 96240
+        },
+        {
+          "path": "assets/illustrations/agb-mass-return-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 206710
+        }
+      ]
+    }
+  ],
+  "retired": [
+    {
+      "id": "active-nucleus",
+      "chapter": 14,
+      "anchor": "opening",
+      "title": "活动星系核的中心引擎",
+      "caption": "吸积盘、尘埃环与极向喷流的结构示意；尺度经过压缩，喷流并非所有活动核都具备。",
+      "provenance": "AI 科教示意 · 非观测数据",
+      "prompt": "Use case: scientific-educational. Asset type: wide illustration embedded in a Chinese undergraduate galaxy-formation textbook. Editorial astronomical illustration, physically plausible geometry, restrained graphite-blue, ice-blue and warm starlight accents, detailed yet legible at mobile size. No text, no letters, no numbers, no axes, no UI, no watermark, no telescope logos. This is an explicitly labelled conceptual illustration, never a claimed observation or measured simulation. A conceptual cutaway of a radio-loud active galactic nucleus: a small bright central accretion disk, a much larger thick dusty torus surrounding it with an open polar funnel, and a pair of opposite collimated jets perpendicular to the disk plane. Use a clean oblique view and subdued material. The torus has an obvious central opening; jets emerge along the polar axis, not through the torus body. No giant visible solid black-hole sphere, no text or scale marks, no impossible crossing axes. Landscape composition, aspect ratio 3:2. Fill the whole image with the illustration; no surrounding frame.",
+      "page": "chapter-14.html",
+      "cue": "区分中心吸积盘和外围尘埃环，再检查喷流轴与盘面的方向。",
+      "alt": "AI 科教示意：明亮吸积盘位于尘埃环的中央开口内，一对喷流沿盘面的极向伸展。",
+      "width": 1536,
+      "height": 1024,
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "original_filename": "exec-9b851d8e-a852-4d31-8254-608941683da5.png",
+      "files": [
+        {
+          "path": "assets/illustrations/active-nucleus-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 44460
+        },
+        {
+          "path": "assets/illustrations/active-nucleus-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 86686
+        },
+        {
+          "path": "assets/illustrations/active-nucleus-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 167604
+        }
+      ],
+      "retired_reason": "2026-10-16科学复核：实体感或尺度/前景关系无法可靠读出；正文已有确定性结构图。"
+    },
+    {
+      "id": "intergalactic-medium-v2",
+      "chapter": 16,
+      "anchor": "opening",
+      "title": "光穿过星系际介质",
+      "caption": "远处背景光源与近处稀薄气体的空间关系示意。气体吸收需由光谱推断；图中没有可见的视线光束。",
+      "provenance": "AI 科教示意 · 非观测数据",
+      "prompt": "Use case: scientific-educational. Asset for a Chinese galaxy formation textbook. Restrained, highly detailed editorial astronomical illustration in deep graphite blue, cool gas blue and warm stellar light; landscape 3:2. No text, numbers, diagrams, arrows, scale bars, labels, telescope logos, watermark, or UI. Clearly conceptual, not a named observed object. Keep important subject fully visible with space around it. A small bright distant quasar located near the upper-right of the composition, with several separated translucent foreground gas filaments diagonally between that source and the empty lower-left foreground. Depth perspective through a sparse cosmic field. Do NOT draw any ray, beam, connection line, jet, lensing arc or light trail between quasar and foreground. Leave the lower-left mostly empty for a later interface sightline marker. It illustrates the foreground absorbing matter and background source, not a visible beam.",
+      "page": "chapter-16.html",
+      "cue": "区分右上方背景光源与较近的弥散气体，再在正文图解中追踪气体和吸收谱的对应。",
+      "alt": "AI 科教示意：右上方的遥远类星体位于多层弥散前景气体之后，各处之间没有可见连接光束。",
+      "width": 1536,
+      "height": 1024,
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "original_filename": "exec-451f12ba-28bf-4c82-b2a7-9185c8a2846b.png",
+      "files": [
+        {
+          "path": "assets/illustrations/intergalactic-medium-v2-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 32402
+        },
+        {
+          "path": "assets/illustrations/intergalactic-medium-v2-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 64878
+        },
+        {
+          "path": "assets/illustrations/intergalactic-medium-v2-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 137552
+        }
+      ],
+      "supersedes": "intergalactic-medium",
+      "retired_reason": "2026-10-16科学复核：实体感或尺度/前景关系无法可靠读出；正文已有确定性结构图。"
+    }
+  ]
+}

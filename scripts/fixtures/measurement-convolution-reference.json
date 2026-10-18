@@ -1,0 +1,1017 @@
+{
+  "constants": {
+    "c_km_s": 299792.458,
+    "FWHM_over_sigma_Gaussian": 2.3548200450309493
+  },
+  "references": [
+    {
+      "title": "MBW 2010 §13.1.1 Observables",
+      "printedPages": [
+        575
+      ],
+      "local": "work/chapter-13-source.txt",
+      "supports": "Normalized LOSVD, absorption-line spectroscopy, Gaussian baseline and non-Gaussian Gauss-Hermite departures."
+    },
+    {
+      "title": "MBW 2010 §11.1.2 Rotation Curves",
+      "printedPages": [
+        499,
+        501
+      ],
+      "local": "work/chapter-11-source.txt",
+      "supports": "Rotation-curve interpretation; finite spatial resolution can alter inner observed gradients, p.501."
+    },
+    {
+      "title": "ESO X-Shooter Spectral Library DR2 release description, p.6",
+      "url": "https://www.eso.org/rm/api/v1/public/releaseDescriptions/150",
+      "supports": "Gaussian velocity FWHM to sigma conversion and R=c/FWHM."
+    },
+    {
+      "title": "pPXF author-maintained documentation: sigma_diff",
+      "url": "https://pypi.org/project/ppxf/",
+      "supports": "Galaxy-versus-template instrumental variance difference, and low-dispersion sensitivity to LSF calibration."
+    },
+    {
+      "title": "Cappellari (2017), MNRAS 466, 798",
+      "url": "https://arxiv.org/abs/1607.08538",
+      "supports": "LOSVD convolution, log-wavelength velocity sampling, accurate low-dispersion extraction; not a universal hard instrumental cutoff."
+    },
+    {
+      "title": "Davies et al. (2011), intrinsic velocity dispersion of distant discs",
+      "url": "https://arxiv.org/abs/1108.0285",
+      "supports": "Beam smearing from unresolved velocity gradients; spatially and spectrally convolved forward models."
+    },
+    {
+      "title": "Graham et al. (2018), Appendix C",
+      "url": "https://academic.oup.com/mnras/article/477/4/4711/4919618",
+      "supports": "Flux-weighted first and second velocity-moment convolution with the PSF."
+    }
+  ],
+  "spectralConvolution": [
+    {
+      "name": "default",
+      "input": {
+        "sigmaStar_km_s": 150,
+        "sigmaTemplateIntrinsic_km_s": 25,
+        "resolvingPower_FWHM": 2000,
+        "EWv_km_s": 40,
+        "calibrationResolvingPower_FWHM": 2000,
+        "calibrationSigmaTemplateIntrinsic_km_s": 25
+      },
+      "expected": {
+        "sigmaInst_km_s": 63.65506753533258,
+        "sigmaObserved_km_s": 164.85438308679497,
+        "observedFWHM_km_s": 388.2024058039959,
+        "observedDepth": 0.09679870754577188,
+        "templateDepth": 0.6383076486422924,
+        "validAbsorptionTemplate": true,
+        "calibrationRadicand_km2_s2": 22500.0,
+        "inferredSigmaStar_km_s": 150.0,
+        "inversionStatus": "positive solution"
+      },
+      "profileSamples": [
+        {
+          "vMinusV0_km_s": -494.5631492603849,
+          "fluxNormalized": 0.9989246634929677
+        },
+        {
+          "vMinusV0_km_s": -164.85438308679497,
+          "fluxNormalized": 0.9412886160529327
+        },
+        {
+          "vMinusV0_km_s": 0.0,
+          "fluxNormalized": 0.9032012924542281
+        },
+        {
+          "vMinusV0_km_s": 164.85438308679497,
+          "fluxNormalized": 0.9412886160529327
+        },
+        {
+          "vMinusV0_km_s": 494.5631492603849,
+          "fluxNormalized": 0.9989246634929677
+        }
+      ],
+      "independentMomentCheck": {
+        "EWv_integrated": 40.0,
+        "variance_integrated_km2_s2": 27176.967622927754,
+        "EWv_relativeResidual": 0.0,
+        "variance_relativeResidual": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "cold_exact_calibration",
+      "input": {
+        "sigmaStar_km_s": 20,
+        "sigmaTemplateIntrinsic_km_s": 25,
+        "resolvingPower_FWHM": 2000,
+        "EWv_km_s": 40,
+        "calibrationResolvingPower_FWHM": 2000,
+        "calibrationSigmaTemplateIntrinsic_km_s": 25
+      },
+      "expected": {
+        "sigmaInst_km_s": 63.65506753533258,
+        "sigmaObserved_km_s": 71.25284291119725,
+        "observedFWHM_km_s": 167.78762275272865,
+        "observedDepth": 0.22395865995052935,
+        "templateDepth": 0.6383076486422924,
+        "validAbsorptionTemplate": true,
+        "calibrationRadicand_km2_s2": 400.00000000000045,
+        "inferredSigmaStar_km_s": 20.00000000000001,
+        "inversionStatus": "positive solution"
+      },
+      "profileSamples": [
+        {
+          "vMinusV0_km_s": -213.75852873359173,
+          "fluxNormalized": 0.9975120440219002
+        },
+        {
+          "vMinusV0_km_s": -71.25284291119725,
+          "fluxNormalized": 0.8641622062318481
+        },
+        {
+          "vMinusV0_km_s": 0.0,
+          "fluxNormalized": 0.7760413400494707
+        },
+        {
+          "vMinusV0_km_s": 71.25284291119725,
+          "fluxNormalized": 0.8641622062318481
+        },
+        {
+          "vMinusV0_km_s": 213.75852873359173,
+          "fluxNormalized": 0.9975120440219002
+        }
+      ],
+      "independentMomentCheck": {
+        "EWv_integrated": 40.00000000000001,
+        "variance_integrated_km2_s2": 5076.967622927753,
+        "EWv_relativeResidual": 2.220446049250313e-16,
+        "variance_relativeResidual": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "cold_overestimated_instrument_width",
+      "input": {
+        "sigmaStar_km_s": 20,
+        "sigmaTemplateIntrinsic_km_s": 25,
+        "resolvingPower_FWHM": 2000,
+        "EWv_km_s": 40,
+        "calibrationResolvingPower_FWHM": 1500,
+        "calibrationSigmaTemplateIntrinsic_km_s": 25
+      },
+      "expected": {
+        "sigmaInst_km_s": 63.65506753533258,
+        "sigmaObserved_km_s": 71.25284291119725,
+        "observedFWHM_km_s": 167.78762275272865,
+        "observedDepth": 0.22395865995052935,
+        "templateDepth": 0.6383076486422924,
+        "validAbsorptionTemplate": true,
+        "calibrationRadicand_km2_s2": -2751.530373388251,
+        "inferredSigmaStar_km_s": null,
+        "inversionStatus": "negative variance difference: calibration/model inconsistent"
+      },
+      "profileSamples": [
+        {
+          "vMinusV0_km_s": -213.75852873359173,
+          "fluxNormalized": 0.9975120440219002
+        },
+        {
+          "vMinusV0_km_s": -71.25284291119725,
+          "fluxNormalized": 0.8641622062318481
+        },
+        {
+          "vMinusV0_km_s": 0.0,
+          "fluxNormalized": 0.7760413400494707
+        },
+        {
+          "vMinusV0_km_s": 71.25284291119725,
+          "fluxNormalized": 0.8641622062318481
+        },
+        {
+          "vMinusV0_km_s": 213.75852873359173,
+          "fluxNormalized": 0.9975120440219002
+        }
+      ],
+      "independentMomentCheck": {
+        "EWv_integrated": 40.00000000000001,
+        "variance_integrated_km2_s2": 5076.967622927753,
+        "EWv_relativeResidual": 2.220446049250313e-16,
+        "variance_relativeResidual": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "cold_underestimated_instrument_width",
+      "input": {
+        "sigmaStar_km_s": 20,
+        "sigmaTemplateIntrinsic_km_s": 25,
+        "resolvingPower_FWHM": 2000,
+        "EWv_km_s": 40,
+        "calibrationResolvingPower_FWHM": 3000,
+        "calibrationSigmaTemplateIntrinsic_km_s": 25
+      },
+      "expected": {
+        "sigmaInst_km_s": 63.65506753533258,
+        "sigmaObserved_km_s": 71.25284291119725,
+        "observedFWHM_km_s": 167.78762275272865,
+        "observedDepth": 0.22395865995052935,
+        "templateDepth": 0.6383076486422924,
+        "validAbsorptionTemplate": true,
+        "calibrationRadicand_km2_s2": 2651.093123848751,
+        "inferredSigmaStar_km_s": 51.48876696764791,
+        "inversionStatus": "positive solution"
+      },
+      "profileSamples": [
+        {
+          "vMinusV0_km_s": -213.75852873359173,
+          "fluxNormalized": 0.9975120440219002
+        },
+        {
+          "vMinusV0_km_s": -71.25284291119725,
+          "fluxNormalized": 0.8641622062318481
+        },
+        {
+          "vMinusV0_km_s": 0.0,
+          "fluxNormalized": 0.7760413400494707
+        },
+        {
+          "vMinusV0_km_s": 71.25284291119725,
+          "fluxNormalized": 0.8641622062318481
+        },
+        {
+          "vMinusV0_km_s": 213.75852873359173,
+          "fluxNormalized": 0.9975120440219002
+        }
+      ],
+      "independentMomentCheck": {
+        "EWv_integrated": 40.00000000000001,
+        "variance_integrated_km2_s2": 5076.967622927753,
+        "EWv_relativeResidual": 2.220446049250313e-16,
+        "variance_relativeResidual": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "zero_intrinsic_boundary",
+      "input": {
+        "sigmaStar_km_s": 0,
+        "sigmaTemplateIntrinsic_km_s": 25,
+        "resolvingPower_FWHM": 2000,
+        "EWv_km_s": 40,
+        "calibrationResolvingPower_FWHM": 2000,
+        "calibrationSigmaTemplateIntrinsic_km_s": 25
+      },
+      "expected": {
+        "sigmaInst_km_s": 63.65506753533258,
+        "sigmaObserved_km_s": 68.3883588261025,
+        "observedFWHM_km_s": 161.04227821047542,
+        "observedDepth": 0.23333929180307464,
+        "templateDepth": 0.6383076486422924,
+        "validAbsorptionTemplate": true,
+        "calibrationRadicand_km2_s2": 0.0,
+        "inferredSigmaStar_km_s": null,
+        "inversionStatus": "zero-boundary: no detected positive dispersion"
+      },
+      "profileSamples": [
+        {
+          "vMinusV0_km_s": -205.16507647830753,
+          "fluxNormalized": 0.9974078346151237
+        },
+        {
+          "vMinusV0_km_s": -68.3883588261025,
+          "fluxNormalized": 0.8584725654058025
+        },
+        {
+          "vMinusV0_km_s": 0.0,
+          "fluxNormalized": 0.7666607081969253
+        },
+        {
+          "vMinusV0_km_s": 68.3883588261025,
+          "fluxNormalized": 0.8584725654058025
+        },
+        {
+          "vMinusV0_km_s": 205.16507647830753,
+          "fluxNormalized": 0.9974078346151237
+        }
+      ],
+      "independentMomentCheck": {
+        "EWv_integrated": 40.0,
+        "variance_integrated_km2_s2": 4676.967622927753,
+        "EWv_relativeResidual": 0.0,
+        "variance_relativeResidual": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "low_R",
+      "input": {
+        "sigmaStar_km_s": 350,
+        "sigmaTemplateIntrinsic_km_s": 25,
+        "resolvingPower_FWHM": 500,
+        "EWv_km_s": 40,
+        "calibrationResolvingPower_FWHM": 500,
+        "calibrationSigmaTemplateIntrinsic_km_s": 25
+      },
+      "expected": {
+        "sigmaInst_km_s": 254.6202701413303,
+        "sigmaObserved_km_s": 433.53948143951555,
+        "observedFWHM_km_s": 1020.9074612060945,
+        "observedDepth": 0.03680793076347215,
+        "templateDepth": 0.6383076486422924,
+        "validAbsorptionTemplate": true,
+        "calibrationRadicand_km2_s2": 122500.0,
+        "inferredSigmaStar_km_s": 350.0,
+        "inversionStatus": "positive solution"
+      },
+      "profileSamples": [
+        {
+          "vMinusV0_km_s": -1300.6184443185466,
+          "fluxNormalized": 0.9995911008245687
+        },
+        {
+          "vMinusV0_km_s": -433.53948143951555,
+          "fluxNormalized": 0.9776748614713743
+        },
+        {
+          "vMinusV0_km_s": 0.0,
+          "fluxNormalized": 0.9631920692365279
+        },
+        {
+          "vMinusV0_km_s": 433.53948143951555,
+          "fluxNormalized": 0.9776748614713743
+        },
+        {
+          "vMinusV0_km_s": 1300.6184443185466,
+          "fluxNormalized": 0.9995911008245687
+        }
+      ],
+      "independentMomentCheck": {
+        "EWv_integrated": 40.0,
+        "variance_integrated_km2_s2": 187956.48196684403,
+        "EWv_relativeResidual": 0.0,
+        "variance_relativeResidual": -1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "high_R",
+      "input": {
+        "sigmaStar_km_s": 20,
+        "sigmaTemplateIntrinsic_km_s": 10,
+        "resolvingPower_FWHM": 20000,
+        "EWv_km_s": 20,
+        "calibrationResolvingPower_FWHM": 20000,
+        "calibrationSigmaTemplateIntrinsic_km_s": 10
+      },
+      "expected": {
+        "sigmaInst_km_s": 6.365506753533258,
+        "sigmaObserved_km_s": 23.249079040454,
+        "observedFWHM_km_s": 54.74739735296998,
+        "observedDepth": 0.343189749329221,
+        "templateDepth": 0.7978845608028655,
+        "validAbsorptionTemplate": true,
+        "calibrationRadicand_km2_s2": 399.99999999999994,
+        "inferredSigmaStar_km_s": 20.0,
+        "inversionStatus": "positive solution"
+      },
+      "profileSamples": [
+        {
+          "vMinusV0_km_s": -69.74723712136199,
+          "fluxNormalized": 0.9961875062627414
+        },
+        {
+          "vMinusV0_km_s": -23.249079040454,
+          "fluxNormalized": 0.7918448949327344
+        },
+        {
+          "vMinusV0_km_s": 0.0,
+          "fluxNormalized": 0.6568102506707789
+        },
+        {
+          "vMinusV0_km_s": 23.249079040454,
+          "fluxNormalized": 0.7918448949327344
+        },
+        {
+          "vMinusV0_km_s": 69.74723712136199,
+          "fluxNormalized": 0.9961875062627414
+        }
+      ],
+      "independentMomentCheck": {
+        "EWv_integrated": 20.0,
+        "variance_integrated_km2_s2": 540.5196762292775,
+        "EWv_relativeResidual": 0.0,
+        "variance_relativeResidual": 0.0
+      }
+    },
+    {
+      "name": "unphysical_template_negative_flux",
+      "input": {
+        "sigmaStar_km_s": 150,
+        "sigmaTemplateIntrinsic_km_s": 5,
+        "resolvingPower_FWHM": 500,
+        "EWv_km_s": 100,
+        "calibrationResolvingPower_FWHM": 500,
+        "calibrationSigmaTemplateIntrinsic_km_s": 5
+      },
+      "expected": {
+        "sigmaInst_km_s": 254.6202701413303,
+        "sigmaObserved_km_s": 295.5612998463162,
+        "observedFWHM_km_s": 695.9936734135083,
+        "observedDepth": 0.13497784744107968,
+        "templateDepth": 7.978845608028655,
+        "validAbsorptionTemplate": false,
+        "calibrationRadicand_km2_s2": 22500.000000000007,
+        "inferredSigmaStar_km_s": 150.00000000000003,
+        "inversionStatus": "positive solution"
+      },
+      "profileSamples": [
+        {
+          "vMinusV0_km_s": -886.6838995389487,
+          "fluxNormalized": 0.9985005315600376
+        },
+        {
+          "vMinusV0_km_s": -295.5612998463162,
+          "fluxNormalized": 0.9181317971449707
+        },
+        {
+          "vMinusV0_km_s": 0.0,
+          "fluxNormalized": 0.8650221525589203
+        },
+        {
+          "vMinusV0_km_s": 295.5612998463162,
+          "fluxNormalized": 0.9181317971449707
+        },
+        {
+          "vMinusV0_km_s": 886.6838995389487,
+          "fluxNormalized": 0.9985005315600376
+        }
+      ],
+      "independentMomentCheck": {
+        "EWv_integrated": 100.00000000000001,
+        "variance_integrated_km2_s2": 87356.48196684406,
+        "EWv_relativeResidual": 2.220446049250313e-16,
+        "variance_relativeResidual": 2.220446049250313e-16
+      }
+    }
+  ],
+  "localBeamSmearing": [
+    {
+      "name": "default",
+      "input": {
+        "sigma0_km_s": 20,
+        "gradient_km_s_per_kpc": 80,
+        "PSF_sigma_kpc": 0.4,
+        "apertureFullWidth_kpc": 1,
+        "v0_km_s": 0
+      },
+      "expected": {
+        "gaussianCoreSigma_km_s": 37.73592452822641,
+        "apertureVelocityHalfwidth_km_s": 40.0,
+        "secondMomentSigma_km_s": 44.24176006143215,
+        "variance_km2_s2": 1957.333333333333,
+        "meanVelocity_km_s": 0,
+        "profileKind": "Gaussian convolved top-hat",
+        "excessKurtosis": -0.08909413537853873,
+        "gaussianEquivalentFWHM_km_s": 104.18138342011012,
+        "actualProfileFWHM_km_s": 106.62412379094499
+      },
+      "profileSamples": [
+        {
+          "v_km_s": -88.4835201228643,
+          "density_per_km_s": 0.0012387270500863442
+        },
+        {
+          "v_km_s": -44.24176006143215,
+          "density_per_km_s": 0.00553070483509123
+        },
+        {
+          "v_km_s": 0.0,
+          "density_per_km_s": 0.00888568045253436
+        },
+        {
+          "v_km_s": 44.24176006143215,
+          "density_per_km_s": 0.00553070483509123
+        },
+        {
+          "v_km_s": 88.4835201228643,
+          "density_per_km_s": 0.0012387270500863442
+        }
+      ],
+      "independentMomentCheck": {
+        "normalization": 0.9999999999999999,
+        "variance_integrated_km2_s2": 1957.3333333333335,
+        "normalizationResidual": -1.1102230246251565e-16,
+        "varianceRelativeResidual": 2.220446049250313e-16
+      },
+      "independentSpatialMixingCheck": [
+        {
+          "vMinusV0_km_s": 0.0,
+          "spatialIntegralDensity_per_km_s": 0.00888568045253436,
+          "closedProfileDensity_per_km_s": 0.00888568045253436,
+          "relativeResidual": 0.0
+        },
+        {
+          "vMinusV0_km_s": 44.24176006143215,
+          "spatialIntegralDensity_per_km_s": 0.0055307048350912305,
+          "closedProfileDensity_per_km_s": 0.00553070483509123,
+          "relativeResidual": 2.220446049250313e-16
+        },
+        {
+          "vMinusV0_km_s": 88.4835201228643,
+          "spatialIntegralDensity_per_km_s": 0.0012387270500863444,
+          "closedProfileDensity_per_km_s": 0.0012387270500863442,
+          "relativeResidual": 2.220446049250313e-16
+        }
+      ]
+    },
+    {
+      "name": "point_aperture",
+      "input": {
+        "sigma0_km_s": 20,
+        "gradient_km_s_per_kpc": 80,
+        "PSF_sigma_kpc": 0.4,
+        "apertureFullWidth_kpc": 0,
+        "v0_km_s": 0
+      },
+      "expected": {
+        "gaussianCoreSigma_km_s": 37.73592452822641,
+        "apertureVelocityHalfwidth_km_s": 0.0,
+        "secondMomentSigma_km_s": 37.73592452822641,
+        "variance_km2_s2": 1423.9999999999998,
+        "meanVelocity_km_s": 0,
+        "profileKind": "Gaussian",
+        "excessKurtosis": -0.0,
+        "gaussianEquivalentFWHM_km_s": 88.86131149684263,
+        "actualProfileFWHM_km_s": 88.86131149684263
+      },
+      "profileSamples": [
+        {
+          "v_km_s": -75.47184905645283,
+          "density_per_km_s": 0.001430757751086843
+        },
+        {
+          "v_km_s": -37.73592452822641,
+          "density_per_km_s": 0.006412211375347373
+        },
+        {
+          "v_km_s": 0.0,
+          "density_per_km_s": 0.010571949286760538
+        },
+        {
+          "v_km_s": 37.73592452822641,
+          "density_per_km_s": 0.006412211375347373
+        },
+        {
+          "v_km_s": 75.47184905645283,
+          "density_per_km_s": 0.001430757751086843
+        }
+      ],
+      "independentMomentCheck": {
+        "normalization": 1.0,
+        "variance_integrated_km2_s2": 1424.0,
+        "normalizationResidual": 0.0,
+        "varianceRelativeResidual": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "zero_gradient",
+      "input": {
+        "sigma0_km_s": 20,
+        "gradient_km_s_per_kpc": 0,
+        "PSF_sigma_kpc": 2,
+        "apertureFullWidth_kpc": 4,
+        "v0_km_s": 30
+      },
+      "expected": {
+        "gaussianCoreSigma_km_s": 20.0,
+        "apertureVelocityHalfwidth_km_s": 0.0,
+        "secondMomentSigma_km_s": 20.0,
+        "variance_km2_s2": 400.0,
+        "meanVelocity_km_s": 30,
+        "profileKind": "Gaussian",
+        "excessKurtosis": -0.0,
+        "gaussianEquivalentFWHM_km_s": 47.09640090061899,
+        "actualProfileFWHM_km_s": 47.09640090061899
+      },
+      "profileSamples": [
+        {
+          "v_km_s": -10.0,
+          "density_per_km_s": 0.002699548325659403
+        },
+        {
+          "v_km_s": 10.0,
+          "density_per_km_s": 0.01209853622595717
+        },
+        {
+          "v_km_s": 30.0,
+          "density_per_km_s": 0.019947114020071637
+        },
+        {
+          "v_km_s": 50.0,
+          "density_per_km_s": 0.01209853622595717
+        },
+        {
+          "v_km_s": 70.0,
+          "density_per_km_s": 0.002699548325659403
+        }
+      ],
+      "independentMomentCheck": {
+        "normalization": 1.0000000000000002,
+        "variance_integrated_km2_s2": 400.00000000000006,
+        "normalizationResidual": 2.220446049250313e-16,
+        "varianceRelativeResidual": 2.220446049250313e-16
+      },
+      "independentSpatialMixingCheck": [
+        {
+          "vMinusV0_km_s": 0.0,
+          "spatialIntegralDensity_per_km_s": 0.019947114020071637,
+          "closedProfileDensity_per_km_s": 0.019947114020071637,
+          "relativeResidual": 0.0
+        },
+        {
+          "vMinusV0_km_s": 20.0,
+          "spatialIntegralDensity_per_km_s": 0.012098536225957168,
+          "closedProfileDensity_per_km_s": 0.01209853622595717,
+          "relativeResidual": -1.1102230246251565e-16
+        },
+        {
+          "vMinusV0_km_s": 40.0,
+          "spatialIntegralDensity_per_km_s": 0.002699548325659403,
+          "closedProfileDensity_per_km_s": 0.002699548325659403,
+          "relativeResidual": 0.0
+        }
+      ]
+    },
+    {
+      "name": "no_PSF",
+      "input": {
+        "sigma0_km_s": 20,
+        "gradient_km_s_per_kpc": 80,
+        "PSF_sigma_kpc": 0,
+        "apertureFullWidth_kpc": 1,
+        "v0_km_s": 0
+      },
+      "expected": {
+        "gaussianCoreSigma_km_s": 20.0,
+        "apertureVelocityHalfwidth_km_s": 40.0,
+        "secondMomentSigma_km_s": 30.550504633038933,
+        "variance_km2_s2": 933.3333333333334,
+        "meanVelocity_km_s": 0,
+        "profileKind": "Gaussian convolved top-hat",
+        "excessKurtosis": -0.3918367346938776,
+        "gaussianEquivalentFWHM_km_s": 71.94094069569097,
+        "actualProfileFWHM_km_s": 82.27978663151703
+      },
+      "profileSamples": [
+        {
+          "v_km_s": -61.10100926607787,
+          "density_per_km_s": 0.0018212613477124838
+        },
+        {
+          "v_km_s": -30.550504633038933,
+          "density_per_km_s": 0.008518703680190844
+        },
+        {
+          "v_km_s": 0.0,
+          "density_per_km_s": 0.01193124670129552
+        },
+        {
+          "v_km_s": 30.550504633038933,
+          "density_per_km_s": 0.008518703680190844
+        },
+        {
+          "v_km_s": 61.10100926607787,
+          "density_per_km_s": 0.0018212613477124838
+        }
+      ],
+      "independentMomentCheck": {
+        "normalization": 1.0,
+        "variance_integrated_km2_s2": 933.3333333333334,
+        "normalizationResidual": 0.0,
+        "varianceRelativeResidual": 0.0
+      }
+    },
+    {
+      "name": "aperture_dominated",
+      "input": {
+        "sigma0_km_s": 5,
+        "gradient_km_s_per_kpc": 100,
+        "PSF_sigma_kpc": 0.05,
+        "apertureFullWidth_kpc": 4,
+        "v0_km_s": 0
+      },
+      "expected": {
+        "gaussianCoreSigma_km_s": 7.0710678118654755,
+        "apertureVelocityHalfwidth_km_s": 200.0,
+        "secondMomentSigma_km_s": 115.68635759385518,
+        "variance_km2_s2": 13383.333333333334,
+        "meanVelocity_km_s": 0,
+        "profileKind": "Gaussian convolved top-hat",
+        "excessKurtosis": -1.1910503730562072,
+        "gaussianEquivalentFWHM_km_s": 272.42055379862853,
+        "actualProfileFWHM_km_s": 400.0
+      },
+      "profileSamples": [
+        {
+          "v_km_s": -231.37271518771036,
+          "density_per_km_s": 1.1414744444525431e-08
+        },
+        {
+          "v_km_s": -115.68635759385518,
+          "density_per_km_s": 0.0025
+        },
+        {
+          "v_km_s": 0.0,
+          "density_per_km_s": 0.0025
+        },
+        {
+          "v_km_s": 115.68635759385518,
+          "density_per_km_s": 0.0025
+        },
+        {
+          "v_km_s": 231.37271518771036,
+          "density_per_km_s": 1.1414744444525431e-08
+        }
+      ],
+      "independentMomentCheck": {
+        "normalization": 1.0,
+        "variance_integrated_km2_s2": 13383.333333333334,
+        "normalizationResidual": 0.0,
+        "varianceRelativeResidual": 0.0
+      },
+      "independentSpatialMixingCheck": [
+        {
+          "vMinusV0_km_s": 0.0,
+          "spatialIntegralDensity_per_km_s": 0.0025000000000000005,
+          "closedProfileDensity_per_km_s": 0.0025,
+          "relativeResidual": 2.220446049250313e-16
+        },
+        {
+          "vMinusV0_km_s": 115.68635759385518,
+          "spatialIntegralDensity_per_km_s": 0.0025000000000000005,
+          "closedProfileDensity_per_km_s": 0.0025,
+          "relativeResidual": 2.220446049250313e-16
+        },
+        {
+          "vMinusV0_km_s": 231.37271518771036,
+          "spatialIntegralDensity_per_km_s": 1.1414744444525373e-08,
+          "closedProfileDensity_per_km_s": 1.1414744444525431e-08,
+          "relativeResidual": -5.10702591327572e-15
+        }
+      ]
+    },
+    {
+      "name": "PSF_dominated",
+      "input": {
+        "sigma0_km_s": 5,
+        "gradient_km_s_per_kpc": 200,
+        "PSF_sigma_kpc": 2,
+        "apertureFullWidth_kpc": 0.1,
+        "v0_km_s": 0
+      },
+      "expected": {
+        "gaussianCoreSigma_km_s": 400.03124877939223,
+        "apertureVelocityHalfwidth_km_s": 10.0,
+        "secondMomentSigma_km_s": 400.07291002182757,
+        "variance_km2_s2": 160058.33333333334,
+        "meanVelocity_km_s": 0,
+        "profileKind": "Gaussian convolved top-hat",
+        "excessKurtosis": -5.204537666159371e-08,
+        "gaussianEquivalentFWHM_km_s": 942.0997079932629,
+        "actualProfileFWHM_km_s": 942.0997174211664
+      },
+      "profileSamples": [
+        {
+          "v_km_s": -800.1458200436551,
+          "density_per_km_s": 0.00013495281921388613
+        },
+        {
+          "v_km_s": -400.07291002182757,
+          "density_per_km_s": 0.0006048165709488546
+        },
+        {
+          "v_km_s": 0.0,
+          "density_per_km_s": 0.0009971739345804851
+        },
+        {
+          "v_km_s": 400.07291002182757,
+          "density_per_km_s": 0.0006048165709488546
+        },
+        {
+          "v_km_s": 800.1458200436551,
+          "density_per_km_s": 0.00013495281921388613
+        }
+      ],
+      "independentMomentCheck": {
+        "normalization": 1.0,
+        "variance_integrated_km2_s2": 160058.33333333337,
+        "normalizationResidual": 0.0,
+        "varianceRelativeResidual": 2.220446049250313e-16
+      },
+      "independentSpatialMixingCheck": [
+        {
+          "vMinusV0_km_s": 0.0,
+          "spatialIntegralDensity_per_km_s": 0.0009971739345804851,
+          "closedProfileDensity_per_km_s": 0.0009971739345804851,
+          "relativeResidual": 0.0
+        },
+        {
+          "vMinusV0_km_s": 400.07291002182757,
+          "spatialIntegralDensity_per_km_s": 0.0006048165709488538,
+          "closedProfileDensity_per_km_s": 0.0006048165709488546,
+          "relativeResidual": -1.2212453270876722e-15
+        },
+        {
+          "vMinusV0_km_s": 800.1458200436551,
+          "spatialIntegralDensity_per_km_s": 0.00013495281921388684,
+          "closedProfileDensity_per_km_s": 0.00013495281921388613,
+          "relativeResidual": 5.329070518200751e-15
+        }
+      ]
+    },
+    {
+      "name": "gradient_sign_reversal",
+      "input": {
+        "sigma0_km_s": 20,
+        "gradient_km_s_per_kpc": -80,
+        "PSF_sigma_kpc": 0.4,
+        "apertureFullWidth_kpc": 1,
+        "v0_km_s": 0
+      },
+      "expected": {
+        "gaussianCoreSigma_km_s": 37.73592452822641,
+        "apertureVelocityHalfwidth_km_s": 40.0,
+        "secondMomentSigma_km_s": 44.24176006143215,
+        "variance_km2_s2": 1957.333333333333,
+        "meanVelocity_km_s": 0,
+        "profileKind": "Gaussian convolved top-hat",
+        "excessKurtosis": -0.08909413537853873,
+        "gaussianEquivalentFWHM_km_s": 104.18138342011012,
+        "actualProfileFWHM_km_s": 106.62412379094499
+      },
+      "profileSamples": [
+        {
+          "v_km_s": -88.4835201228643,
+          "density_per_km_s": 0.0012387270500863442
+        },
+        {
+          "v_km_s": -44.24176006143215,
+          "density_per_km_s": 0.00553070483509123
+        },
+        {
+          "v_km_s": 0.0,
+          "density_per_km_s": 0.00888568045253436
+        },
+        {
+          "v_km_s": 44.24176006143215,
+          "density_per_km_s": 0.00553070483509123
+        },
+        {
+          "v_km_s": 88.4835201228643,
+          "density_per_km_s": 0.0012387270500863442
+        }
+      ],
+      "independentMomentCheck": {
+        "normalization": 0.9999999999999999,
+        "variance_integrated_km2_s2": 1957.3333333333335,
+        "normalizationResidual": -1.1102230246251565e-16,
+        "varianceRelativeResidual": 2.220446049250313e-16
+      },
+      "independentSpatialMixingCheck": [
+        {
+          "vMinusV0_km_s": 0.0,
+          "spatialIntegralDensity_per_km_s": 0.00888568045253436,
+          "closedProfileDensity_per_km_s": 0.00888568045253436,
+          "relativeResidual": 0.0
+        },
+        {
+          "vMinusV0_km_s": 44.24176006143215,
+          "spatialIntegralDensity_per_km_s": 0.0055307048350912305,
+          "closedProfileDensity_per_km_s": 0.00553070483509123,
+          "relativeResidual": 2.220446049250313e-16
+        },
+        {
+          "vMinusV0_km_s": 88.4835201228643,
+          "spatialIntegralDensity_per_km_s": 0.0012387270500863444,
+          "closedProfileDensity_per_km_s": 0.0012387270500863442,
+          "relativeResidual": 2.220446049250313e-16
+        }
+      ]
+    },
+    {
+      "name": "narrow_aperture_limit",
+      "input": {
+        "sigma0_km_s": 20,
+        "gradient_km_s_per_kpc": 80,
+        "PSF_sigma_kpc": 0.4,
+        "apertureFullWidth_kpc": 1e-10,
+        "v0_km_s": 0
+      },
+      "expected": {
+        "gaussianCoreSigma_km_s": 37.73592452822641,
+        "apertureVelocityHalfwidth_km_s": 4e-09,
+        "secondMomentSigma_km_s": 37.73592452822641,
+        "variance_km2_s2": 1423.9999999999998,
+        "meanVelocity_km_s": 0,
+        "profileKind": "Gaussian convolved top-hat",
+        "excessKurtosis": -1.683289146993226e-41,
+        "gaussianEquivalentFWHM_km_s": 88.86131149684263,
+        "actualProfileFWHM_km_s": 88.86131149684263
+      },
+      "profileSamples": [
+        {
+          "v_km_s": -75.47184905645283,
+          "density_per_km_s": 0.001430757751086843
+        },
+        {
+          "v_km_s": -37.73592452822641,
+          "density_per_km_s": 0.006412211375347373
+        },
+        {
+          "v_km_s": 0.0,
+          "density_per_km_s": 0.010571949286760538
+        },
+        {
+          "v_km_s": 37.73592452822641,
+          "density_per_km_s": 0.006412211375347373
+        },
+        {
+          "v_km_s": 75.47184905645283,
+          "density_per_km_s": 0.001430757751086843
+        }
+      ],
+      "independentMomentCheck": {
+        "normalization": 1.0,
+        "variance_integrated_km2_s2": 1424.0,
+        "normalizationResidual": 0.0,
+        "varianceRelativeResidual": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "pure_top_hat",
+      "input": {
+        "sigma0_km_s": 0,
+        "gradient_km_s_per_kpc": 100,
+        "PSF_sigma_kpc": 0,
+        "apertureFullWidth_kpc": 1,
+        "v0_km_s": 0
+      },
+      "expected": {
+        "gaussianCoreSigma_km_s": 0.0,
+        "apertureVelocityHalfwidth_km_s": 50.0,
+        "secondMomentSigma_km_s": 28.867513459481287,
+        "variance_km2_s2": 833.3333333333334,
+        "meanVelocity_km_s": 0,
+        "profileKind": "top-hat",
+        "excessKurtosis": -1.2,
+        "gaussianEquivalentFWHM_km_s": 67.97779934458727,
+        "actualProfileFWHM_km_s": 100.0
+      },
+      "profileSamples": [
+        {
+          "v_km_s": -57.735026918962575,
+          "density_per_km_s": 0
+        },
+        {
+          "v_km_s": -28.867513459481287,
+          "density_per_km_s": 0.01
+        },
+        {
+          "v_km_s": 0.0,
+          "density_per_km_s": 0.01
+        },
+        {
+          "v_km_s": 28.867513459481287,
+          "density_per_km_s": 0.01
+        },
+        {
+          "v_km_s": 57.735026918962575,
+          "density_per_km_s": 0
+        }
+      ]
+    },
+    {
+      "name": "delta_line",
+      "input": {
+        "sigma0_km_s": 0,
+        "gradient_km_s_per_kpc": 0,
+        "PSF_sigma_kpc": 0,
+        "apertureFullWidth_kpc": 0,
+        "v0_km_s": 0
+      },
+      "expected": {
+        "gaussianCoreSigma_km_s": 0.0,
+        "apertureVelocityHalfwidth_km_s": 0.0,
+        "secondMomentSigma_km_s": 0.0,
+        "variance_km2_s2": 0.0,
+        "meanVelocity_km_s": 0,
+        "profileKind": "Dirac delta",
+        "excessKurtosis": null,
+        "gaussianEquivalentFWHM_km_s": 0.0,
+        "actualProfileFWHM_km_s": null
+      },
+      "profileSamples": []
+    }
+  ],
+  "validation": {
+    "profileNormalizationMaxAbsError": 2.220446049250313e-16,
+    "profileVarianceMaxRelativeError": 2.220446049250313e-16,
+    "directSpatialMixingVsClosedProfileMaxRelativeError": 5.329070518200751e-15
+  },
+  "scope": "Independent pure-Python references; no repository model imports. New models are analytic teaching extensions, not quoted MBW equations."
+}

@@ -1,0 +1,1437 @@
+[
+  {
+    "id": "common-G",
+    "kind": "symbol",
+    "aliases": [
+      "G"
+    ],
+    "title": "万有引力常数",
+    "english": "Newtonian constant of gravitation",
+    "definition": "把质量分布与牛顿引力联系起来的常数，出现在引力加速度、势与轨道公式中。SI值约为6.67430×10⁻¹¹ m³ kg⁻¹ s⁻²；实验可使用换算后的天文单位数值。",
+    "unit": "m³ kg⁻¹ s⁻²",
+    "scope": "G是有测量不确定度的物理常数；数值不能跨单位制直接照搬。",
+    "chapters": [],
+    "source": "NIST / CODATA 2022 · https://physics.nist.gov/cuu/Constants/index.html",
+    "tex": "G"
+  },
+  {
+    "id": "common-c",
+    "kind": "symbol",
+    "aliases": [
+      "c"
+    ],
+    "title": "真空光速",
+    "english": "speed of light in vacuum",
+    "definition": "真空中光传播的速度，SI中精确定义为299792458 m/s。红移距离、相对论和光子传播计算中用于把时间与长度联系起来。",
+    "unit": "m s⁻¹",
+    "scope": "仅用于光速语境；暗晕实验中的同字母c表示浓度，优先采用该模型定义。",
+    "chapters": [],
+    "source": "NIST / SI · https://physics.nist.gov/cuu/Constants/index.html",
+    "tex": "c"
+  },
+  {
+    "id": "common-kB",
+    "kind": "symbol",
+    "aliases": [
+      "kB",
+      "k_B",
+      "kᵦ"
+    ],
+    "title": "玻尔兹曼常数",
+    "english": "Boltzmann constant",
+    "definition": "通过kBT把温度T转换为能量尺度；SI值精确定义为1.380649×10⁻²³ J/K。",
+    "unit": "J K⁻¹",
+    "scope": "单个粒子的典型热能尺度与自由度、气体模型有关；不能把kBT直接等同所有体系的总内能。",
+    "chapters": [],
+    "source": "NIST / SI · https://physics.nist.gov/cuu/Constants/index.html",
+    "tex": "k_{\rm B}"
+  },
+  {
+    "id": "common-mp",
+    "kind": "symbol",
+    "aliases": [
+      "mp",
+      "mₚ",
+      "m_p"
+    ],
+    "title": "质子质量",
+    "english": "proton mass",
+    "definition": "单个质子的静止质量，约1.67262×10⁻²⁷ kg。气体公式常用μmp表示每粒子平均质量。",
+    "unit": "kg",
+    "scope": "μ依赖成分与电离状态；总粒子数密度与氢核数密度不能混同。",
+    "chapters": [],
+    "source": "NIST / CODATA 2022 · https://physics.nist.gov/cuu/Constants/index.html",
+    "tex": "m_{\rm p}"
+  },
+  {
+    "id": "common-pi",
+    "kind": "notation",
+    "aliases": [
+      "π"
+    ],
+    "title": "圆周率",
+    "english": "pi",
+    "definition": "圆周长与直径之比，约3.14159265。球面积4πr²、球体积4πr³/3和傅里叶波长关系中的几何常数。",
+    "unit": "无量纲",
+    "scope": "π是数学常数；不是模型的可调参数。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\pi"
+  },
+  {
+    "id": "common-e",
+    "kind": "notation",
+    "aliases": [
+      "e"
+    ],
+    "title": "自然对数的底",
+    "english": "Euler’s number",
+    "definition": "指数函数exp(x)=eˣ的底，约2.71828。衰减、增长和概率分布中用它定义自然指数。",
+    "unit": "无量纲",
+    "scope": "指数的自变量必须无量纲；偏心率也可能使用e，采用所在模型的局部定义。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "e"
+  },
+  {
+    "id": "common-ln",
+    "kind": "notation",
+    "aliases": [
+      "ln"
+    ],
+    "title": "自然对数",
+    "english": "natural logarithm",
+    "definition": "以e为底的对数，满足ln(eˣ)=x。对数增长率d ln y/d ln x衡量相对变化。",
+    "unit": "无量纲",
+    "scope": "自变量为无量纲量或与参考量之比。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\ln"
+  },
+  {
+    "id": "common-log10",
+    "kind": "notation",
+    "aliases": [
+      "log₁₀",
+      "log10",
+      "log_{10}"
+    ],
+    "title": "常用对数",
+    "english": "base-ten logarithm",
+    "definition": "以10为底的对数；数值增加1表示原量增大10倍。",
+    "unit": "无量纲",
+    "scope": "图轴若写log₁₀ n，n先按标明单位取数值；不能忽略坐标基底。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\log_{10}"
+  },
+  {
+    "id": "common-log",
+    "kind": "notation",
+    "aliases": [
+      "log"
+    ],
+    "title": "对数",
+    "english": "logarithm",
+    "definition": "把乘法尺度转换为加法尺度的函数。天文图中常用10为底，推导中也常用自然对数。",
+    "unit": "无量纲",
+    "scope": "本书以明确写出的log₁₀或ln为准；没有底数时需结合所在公式说明，不能擅自替换。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\log"
+  },
+  {
+    "id": "common-exp",
+    "kind": "notation",
+    "aliases": [
+      "exp"
+    ],
+    "title": "指数函数",
+    "english": "exponential function",
+    "definition": "exp(x)等于eˣ，常描述增长、衰减及Boltzmann权重。",
+    "unit": "无量纲",
+    "scope": "指数x必须无量纲。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\exp"
+  },
+  {
+    "id": "common-sin",
+    "kind": "notation",
+    "aliases": [
+      "sin"
+    ],
+    "title": "正弦",
+    "english": "sine",
+    "definition": "角度的三角函数，可给出投影分量或周期相位。",
+    "unit": "无量纲",
+    "scope": "数学函数内部使用弧度；标为度的控件会先换算。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\sin"
+  },
+  {
+    "id": "common-cos",
+    "kind": "notation",
+    "aliases": [
+      "cos"
+    ],
+    "title": "余弦",
+    "english": "cosine",
+    "definition": "角度的三角函数，常把向量投影到一条方向。",
+    "unit": "无量纲",
+    "scope": "数学函数内部使用弧度；标为度的控件会先换算。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\cos"
+  },
+  {
+    "id": "common-tan",
+    "kind": "notation",
+    "aliases": [
+      "tan"
+    ],
+    "title": "正切",
+    "english": "tangent",
+    "definition": "sinθ/cosθ，常连接方向角与分量比。",
+    "unit": "无量纲",
+    "scope": "cosθ=0时不有限。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\tan"
+  },
+  {
+    "id": "common-sinh",
+    "kind": "notation",
+    "aliases": [
+      "sinh"
+    ],
+    "title": "双曲正弦",
+    "english": "hyperbolic sine",
+    "definition": "sinh(x)=(eˣ−e⁻ˣ)/2，常出现在曲率距离与指数型解中。",
+    "unit": "无量纲",
+    "scope": "与普通正弦不同，不是周期函数。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\sinh"
+  },
+  {
+    "id": "common-cosh",
+    "kind": "notation",
+    "aliases": [
+      "cosh"
+    ],
+    "title": "双曲余弦",
+    "english": "hyperbolic cosine",
+    "definition": "cosh(x)=(eˣ+e⁻ˣ)/2。Jeans不稳定实验使用它表示特定初始条件下增长与衰减模的叠加。",
+    "unit": "无量纲",
+    "scope": "cosh解的初始导数为零；不能自动当作纯增长模。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\cosh"
+  },
+  {
+    "id": "common-tanh",
+    "kind": "notation",
+    "aliases": [
+      "tanh"
+    ],
+    "title": "双曲正切",
+    "english": "hyperbolic tangent",
+    "definition": "tanh(x)=sinh(x)/cosh(x)，在平滑过渡和自引力等温盘剖面中出现。",
+    "unit": "无量纲",
+    "scope": "自变量必须无量纲。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\tanh"
+  },
+  {
+    "id": "common-sech",
+    "kind": "notation",
+    "aliases": [
+      "sech"
+    ],
+    "title": "双曲正割",
+    "english": "hyperbolic secant",
+    "definition": "sech(x)=1/cosh(x)；等温自引力薄盘的垂直密度可具有sech²型。",
+    "unit": "无量纲",
+    "scope": "具体尺度高度的数值系数以本处剖面定义为准。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\operatorname{sech}"
+  },
+  {
+    "id": "common-equal",
+    "kind": "notation",
+    "aliases": [
+      "="
+    ],
+    "title": "相等",
+    "english": "equality",
+    "definition": "等号两侧是同一个量或同一数值；物理等式还必须满足量纲一致。",
+    "unit": "无量纲",
+    "scope": "等式可能只在列出的模型假设内成立。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "="
+  },
+  {
+    "id": "common-approx",
+    "kind": "notation",
+    "aliases": [
+      "≈",
+      "≃",
+      "simeq"
+    ],
+    "title": "近似相等",
+    "english": "approximately equal",
+    "definition": "在指定精度或近似条件下将两边视作相等。",
+    "unit": "无量纲",
+    "scope": "近似误差与适用范围由模型决定，不表示精确恒等。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\approx"
+  },
+  {
+    "id": "common-propto",
+    "kind": "notation",
+    "aliases": [
+      "∝"
+    ],
+    "title": "正比",
+    "english": "proportional to",
+    "definition": "y∝xᵃ表示在其他条件固定时y随xᵃ变化；比例常数未在符号中给出。",
+    "unit": "无量纲",
+    "scope": "用比例关系求绝对值还需要归一化。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\propto"
+  },
+  {
+    "id": "common-neq",
+    "kind": "notation",
+    "aliases": [
+      "≠"
+    ],
+    "title": "不相等",
+    "english": "not equal",
+    "definition": "表示两边不是同一个值或不满足相等关系。",
+    "unit": "无量纲",
+    "scope": "不是误差大小的度量。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\ne"
+  },
+  {
+    "id": "common-le",
+    "kind": "notation",
+    "aliases": [
+      "≤"
+    ],
+    "title": "小于或等于",
+    "english": "less than or equal to",
+    "definition": "两边比较包含相等边界。",
+    "unit": "无量纲",
+    "scope": "阈值是否适用仍取决于本处模型条件。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\leq"
+  },
+  {
+    "id": "common-ge",
+    "kind": "notation",
+    "aliases": [
+      "≥"
+    ],
+    "title": "大于或等于",
+    "english": "greater than or equal to",
+    "definition": "两边比较包含相等边界。",
+    "unit": "无量纲",
+    "scope": "阈值是否适用仍取决于本处模型条件。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\geq"
+  },
+  {
+    "id": "common-lt",
+    "kind": "notation",
+    "aliases": [
+      "<"
+    ],
+    "title": "小于",
+    "english": "less than",
+    "definition": "左侧量严格小于右侧量。",
+    "unit": "无量纲",
+    "scope": "比较的量须有相同量纲。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "<"
+  },
+  {
+    "id": "common-gt",
+    "kind": "notation",
+    "aliases": [
+      ">"
+    ],
+    "title": "大于",
+    "english": "greater than",
+    "definition": "左侧量严格大于右侧量。",
+    "unit": "无量纲",
+    "scope": "比较的量须有相同量纲。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": ">"
+  },
+  {
+    "id": "common-ll",
+    "kind": "notation",
+    "aliases": [
+      "≪"
+    ],
+    "title": "远小于",
+    "english": "much less than",
+    "definition": "表示一个尺度比另一个小得足以支持相应近似。",
+    "unit": "无量纲",
+    "scope": "没有普遍固定的倍数，需根据误差要求判断。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\ll"
+  },
+  {
+    "id": "common-gg",
+    "kind": "notation",
+    "aliases": [
+      "≫"
+    ],
+    "title": "远大于",
+    "english": "much greater than",
+    "definition": "表示一个尺度比另一个大得足以支持相应近似。",
+    "unit": "无量纲",
+    "scope": "没有普遍固定的倍数，需根据误差要求判断。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\gg"
+  },
+  {
+    "id": "common-integral",
+    "kind": "notation",
+    "aliases": [
+      "∫"
+    ],
+    "title": "积分",
+    "english": "integral",
+    "definition": "把连续分布按指定变量累加；上下限限定积分范围。",
+    "unit": "由本处量与运算决定",
+    "scope": "结果单位等于被积量单位乘积分变量单位。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\int"
+  },
+  {
+    "id": "common-sum",
+    "kind": "notation",
+    "aliases": [
+      "∑"
+    ],
+    "title": "求和",
+    "english": "summation",
+    "definition": "把索引指定的一组离散项相加。",
+    "unit": "由本处量与运算决定",
+    "scope": "大写Σ也可表示面密度；求和算子与面密度须按公式区分。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\sum"
+  },
+  {
+    "id": "common-partial",
+    "kind": "notation",
+    "aliases": [
+      "∂"
+    ],
+    "title": "偏微分",
+    "english": "partial derivative",
+    "definition": "多变量函数中，保持其他独立变量不变，对指定变量求变化率。",
+    "unit": "由本处量与运算决定",
+    "scope": "求偏导时固定哪些变量由模型指定。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\partial"
+  },
+  {
+    "id": "common-infty",
+    "kind": "notation",
+    "aliases": [
+      "∞"
+    ],
+    "title": "无穷大",
+    "english": "infinity",
+    "definition": "表示没有有限上界的极限，常用作理想分布的积分上限。",
+    "unit": "无量纲",
+    "scope": "并不表示真实天体延伸到无穷；理想模型积分还须收敛。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\infty"
+  },
+  {
+    "id": "common-sqrt",
+    "kind": "notation",
+    "aliases": [
+      "√"
+    ],
+    "title": "平方根",
+    "english": "square root",
+    "definition": "√x是平方等于x的主值，在实数物理模型中通常取非负根。",
+    "unit": "结果量纲是被开方量纲的平方根；不是一律无量纲",
+    "scope": "x<0在实数范围无平方根，可能提示输入超出物理条件。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\sqrt{x}"
+  },
+  {
+    "id": "common-angle-average",
+    "kind": "notation",
+    "aliases": [
+      "⟨",
+      "⟩"
+    ],
+    "title": "平均记号",
+    "english": "average brackets",
+    "definition": "尖括号通常表示对一组样本、方向、时间或概率分布取平均。",
+    "unit": "与被平均量相同（无量纲权重并归一化时）",
+    "scope": "具体权重由本处公式指定；质量加权与光度加权一般不同。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\langle x\\rangle"
+  },
+  {
+    "id": "common-differential",
+    "kind": "notation",
+    "aliases": [
+      "微分"
+    ],
+    "title": "微分记号",
+    "english": "differential",
+    "definition": "dx表示变量x的无穷小变化；dy/dx是y对x的变化率，积分中的dx指出累加变量。",
+    "unit": "由本处量与运算决定",
+    "scope": "微分d不是距离、维数或盘下标。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\mathrm d"
+  },
+  {
+    "id": "common-derivative-dot",
+    "kind": "notation",
+    "aliases": [
+      "时间导数",
+      "˙",
+      "¨",
+      "̇",
+      "̈"
+    ],
+    "title": "时间导数",
+    "english": "time derivative",
+    "definition": "变量上方的点表示对时间求一次导数；两点表示二次时间导数。",
+    "unit": "基本量单位除以时间（两点时除以时间平方）",
+    "scope": "时间是本模型声明的物理时间或归一化时间。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\dot x"
+  },
+  {
+    "id": "common-variance",
+    "kind": "notation",
+    "aliases": [
+      "Var",
+      "方差"
+    ],
+    "title": "方差",
+    "english": "variance",
+    "definition": "随机量与平均值之差的平方的平均，即Var(X)=⟨(X−⟨X⟩)²⟩。",
+    "unit": "由本处量与运算决定",
+    "scope": "单位是X单位的平方，不能把方差与标准差混为一谈。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\operatorname{Var}"
+  },
+  {
+    "id": "common-RMS",
+    "kind": "notation",
+    "aliases": [
+      "RMS",
+      "均方根"
+    ],
+    "title": "均方根",
+    "english": "root mean square",
+    "definition": "先平方、再平均、最后开平方：RMS(X)=√⟨X²⟩。",
+    "unit": "由本处量与运算决定",
+    "scope": "只有均值为零时才等于标准差。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\mathrm{RMS}"
+  },
+  {
+    "id": "common-normalization",
+    "kind": "term",
+    "aliases": [
+      "归一化"
+    ],
+    "title": "归一化",
+    "english": "normalization",
+    "definition": "用给定基准调整分布的整体幅度，例如令总概率为1、总质量固定或某时刻增长因子为1。",
+    "unit": "无量纲",
+    "scope": "归一化约定改变数值标尺，未必改变分布的物理形状。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据"
+  },
+  {
+    "id": "common-dimensionless",
+    "kind": "term",
+    "aliases": [
+      "无量纲"
+    ],
+    "title": "无量纲量",
+    "english": "dimensionless quantity",
+    "definition": "单位相消的量，例如两条长度之比、质量份额或角度的弧度数值。",
+    "unit": "无量纲",
+    "scope": "无量纲不代表没有物理含义，也不表示所有这种量可以互相比较。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据"
+  },
+  {
+    "id": "common-powerlaw",
+    "kind": "term",
+    "aliases": [
+      "幂律"
+    ],
+    "title": "幂律",
+    "english": "power law",
+    "definition": "量之间具有y=A xᵅ形式的关系；在双对数图上表现为斜率α的直线。",
+    "unit": "无量纲",
+    "scope": "仅在声明的区间内成立，外推可能使积分发散。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据"
+  },
+  {
+    "id": "common-logaxis",
+    "kind": "term",
+    "aliases": [
+      "对数坐标",
+      "对数轴"
+    ],
+    "title": "对数坐标",
+    "english": "logarithmic axis",
+    "definition": "相同间距表示相同的倍数变化；例如10、100、1000在log₁₀轴上等距。",
+    "unit": "无量纲",
+    "scope": "普通实数对数坐标不能直接放入零或负数。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据"
+  },
+  {
+    "id": "common-projection",
+    "kind": "term",
+    "aliases": [
+      "投影"
+    ],
+    "title": "投影",
+    "english": "projection",
+    "definition": "把三维结构或向量映射到观测平面或指定方向。",
+    "unit": "由本处量与运算决定",
+    "scope": "投影会丢失沿视线的信息，不保证能唯一反推三维结构。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据"
+  },
+  {
+    "id": "common-synthetic",
+    "kind": "term",
+    "aliases": [
+      "合成样本",
+      "合成数据"
+    ],
+    "title": "合成数据",
+    "english": "synthetic data",
+    "definition": "由明确的模型和采样规则生成、用于教学或测试的数据。",
+    "unit": "由本处量与运算决定",
+    "scope": "本书标为合成的数据不是真实望远镜观测，不能用于测量实际宇宙参数。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据"
+  },
+  {
+    "id": "common-PSF",
+    "kind": "term",
+    "aliases": [
+      "PSF",
+      "点扩散函数"
+    ],
+    "title": "点扩散函数",
+    "english": "point-spread function",
+    "definition": "望远镜和成像系统对理想点源的图像响应；扩展源图像会受到它的卷积模糊。",
+    "unit": "由本处量与运算决定",
+    "scope": "教学高斯PSF不包含真实仪器全部像差、像素和探测效应。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据"
+  },
+  {
+    "id": "common-unit-pc",
+    "kind": "unit",
+    "aliases": [
+      "pc",
+      "秒差距"
+    ],
+    "title": "秒差距",
+    "english": "parsec",
+    "definition": "天文距离单位，1 pc=(648000/π) au，约3.08567758×10¹⁶ m，约3.26光年。",
+    "unit": "长度",
+    "scope": "不能与角秒混同。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-kpc",
+    "kind": "unit",
+    "aliases": [
+      "kpc",
+      "千秒差距"
+    ],
+    "title": "千秒差距",
+    "english": "kiloparsec",
+    "definition": "1 kpc=1000 pc，常用于盘尺度、星系半径和晕内距离。",
+    "unit": "长度",
+    "scope": "坐标若标共动或物理长度，须保留该约定。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-Mpc",
+    "kind": "unit",
+    "aliases": [
+      "Mpc",
+      "兆秒差距"
+    ],
+    "title": "兆秒差距",
+    "english": "megaparsec",
+    "definition": "1 Mpc=10⁶ pc，常用于星系间距离和宇宙大尺度结构。",
+    "unit": "长度",
+    "scope": "h⁻¹ Mpc还含无量纲哈勃参数h，不能当成Mpc直接比较。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-au",
+    "kind": "unit",
+    "aliases": [
+      "au",
+      "AU",
+      "天文单位"
+    ],
+    "title": "天文单位",
+    "english": "astronomical unit",
+    "definition": "精确定义为149597870700 m，常用于太阳系与原行星盘尺度。",
+    "unit": "长度",
+    "scope": "不是随实际地球轨道每年变化的距离。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-cm",
+    "kind": "unit",
+    "aliases": [
+      "cm"
+    ],
+    "title": "厘米",
+    "english": "centimetre",
+    "definition": "1 cm=10⁻² m；气体数密度常以cm⁻³、柱密度以cm⁻²计。",
+    "unit": "长度",
+    "scope": "立方或平方换算须同时处理幂次。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-angstrom",
+    "kind": "unit",
+    "aliases": [
+      "Å",
+      "埃"
+    ],
+    "title": "埃",
+    "english": "angstrom",
+    "definition": "波长单位，1 Å=10⁻¹⁰ m=0.1 nm。",
+    "unit": "长度",
+    "scope": "谱线波长还需区分静止系与观测系。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-nm",
+    "kind": "unit",
+    "aliases": [
+      "nm"
+    ],
+    "title": "纳米",
+    "english": "nanometre",
+    "definition": "长度单位，1 nm=10⁻⁹ m=10 Å。",
+    "unit": "长度",
+    "scope": "常用于紫外和可见光波长。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-yr",
+    "kind": "unit",
+    "aliases": [
+      "yr",
+      "年"
+    ],
+    "title": "年",
+    "english": "Julian year",
+    "definition": "本书时间换算通常采用儒略年，365.25天，等于31557600秒。",
+    "unit": "时间",
+    "scope": "是单位约定，不是任意一年的实际历法长度。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-kyr",
+    "kind": "unit",
+    "aliases": [
+      "kyr"
+    ],
+    "title": "千年",
+    "english": "kiloyear",
+    "definition": "1 kyr=1000 yr。",
+    "unit": "时间",
+    "scope": "按图示的时间零点读取。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-Myr",
+    "kind": "unit",
+    "aliases": [
+      "Myr",
+      "百万年"
+    ],
+    "title": "百万年",
+    "english": "megayear",
+    "definition": "1 Myr=10⁶ yr。",
+    "unit": "时间",
+    "scope": "恒星年龄、源活动时长与宇宙年龄不能混为同一个时间。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-Gyr",
+    "kind": "unit",
+    "aliases": [
+      "Gyr",
+      "十亿年"
+    ],
+    "title": "十亿年",
+    "english": "gigayear",
+    "definition": "1 Gyr=10⁹ yr。",
+    "unit": "时间",
+    "scope": "回溯时间与宇宙年龄的零点不同。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-K",
+    "kind": "unit",
+    "aliases": [
+      "K",
+      "开尔文"
+    ],
+    "title": "开尔文",
+    "english": "kelvin",
+    "definition": "热力学温度的SI单位；温差1 K等于温差1摄氏度。",
+    "unit": "温度",
+    "scope": "绝对零点0 K对应−273.15°C；K也可在公式中作其他变量，局部定义优先。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-mK",
+    "kind": "unit",
+    "aliases": [
+      "mK"
+    ],
+    "title": "毫开尔文",
+    "english": "millikelvin",
+    "definition": "1 mK=10⁻³ K；21 cm差分亮温常采用此单位。",
+    "unit": "温度",
+    "scope": "差分亮温可以为负，表示相对背景的吸收，而非负绝对温度。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-Hz",
+    "kind": "unit",
+    "aliases": [
+      "Hz",
+      "赫兹"
+    ],
+    "title": "赫兹",
+    "english": "hertz",
+    "definition": "频率单位，1 Hz=1 s⁻¹，表示每秒一个周期。",
+    "unit": "时间⁻¹",
+    "scope": "角频率ω=2πν，数值不等同于周期频率ν。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-MHz",
+    "kind": "unit",
+    "aliases": [
+      "MHz"
+    ],
+    "title": "兆赫",
+    "english": "megahertz",
+    "definition": "1 MHz=10⁶ Hz，常用于红移后的21 cm观测频率。",
+    "unit": "时间⁻¹",
+    "scope": "观测频率与静止频率相差1+z。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-eV",
+    "kind": "unit",
+    "aliases": [
+      "eV"
+    ],
+    "title": "电子伏特",
+    "english": "electronvolt",
+    "definition": "能量单位，1 eV精确等于1.602176634×10⁻¹⁹ J。",
+    "unit": "能量",
+    "scope": "不是温度；与K比较需用kB换算。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-keV",
+    "kind": "unit",
+    "aliases": [
+      "keV"
+    ],
+    "title": "千电子伏特",
+    "english": "kiloelectronvolt",
+    "definition": "1 keV=1000 eV。X射线光子能量与热气体的kBT常用此单位。",
+    "unit": "能量",
+    "scope": "标为keV的气体温度实际指kBT。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-erg",
+    "kind": "unit",
+    "aliases": [
+      "erg"
+    ],
+    "title": "尔格",
+    "english": "erg",
+    "definition": "CGS能量单位，1 erg=10⁻⁷ J。",
+    "unit": "能量",
+    "scope": "erg/s是功率而非能量。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-ergs",
+    "kind": "unit",
+    "aliases": [
+      "erg/s",
+      "erg s⁻¹"
+    ],
+    "title": "尔格每秒",
+    "english": "erg per second",
+    "definition": "功率单位，1 erg/s=10⁻⁷ W，常用于星体光度。",
+    "unit": "功率",
+    "scope": "不能与到达地球单位面积的通量混同。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-kms",
+    "kind": "unit",
+    "aliases": [
+      "km/s",
+      "km s⁻¹",
+      "km s−1"
+    ],
+    "title": "千米每秒",
+    "english": "kilometre per second",
+    "definition": "速度单位，1 km/s=1000 m/s。",
+    "unit": "速度",
+    "scope": "色散、圆周速度、视线速度可以共用此单位但含义不同。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-kmskpc",
+    "kind": "unit",
+    "aliases": [
+      "km/s/kpc",
+      "km s⁻¹ kpc⁻¹",
+      "km s−1 kpc−1"
+    ],
+    "title": "千米每秒每千秒差距",
+    "english": "kilometre per second per kiloparsec",
+    "definition": "频率单位，约等于1.0227 Gyr⁻¹，常用于Ω和κ。",
+    "unit": "时间⁻¹",
+    "scope": "这是速度除以长度，不是速度本身。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-kmsGyr",
+    "kind": "unit",
+    "aliases": [
+      "km/s/Gyr",
+      "km s⁻¹ Gyr⁻¹"
+    ],
+    "title": "千米每秒每十亿年",
+    "english": "kilometre per second per gigayear",
+    "definition": "加速度单位，表示每十亿年速度变化多少km/s。",
+    "unit": "加速度",
+    "scope": "不要与km/s的速度读数比较。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-kms2",
+    "kind": "unit",
+    "aliases": [
+      "km²/s²",
+      "km² s⁻²"
+    ],
+    "title": "平方千米每平方秒",
+    "english": "squared velocity",
+    "definition": "速度平方单位，也用于单位质量的能量与引力势。",
+    "unit": "长度² 时间⁻²",
+    "scope": "若要求总能量，通常还需乘质量。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-dyn",
+    "kind": "unit",
+    "aliases": [
+      "dyn/cm²",
+      "dyn cm⁻²"
+    ],
+    "title": "达因每平方厘米",
+    "english": "dyne per square centimetre",
+    "definition": "CGS压强单位；1 dyn/cm²=0.1 Pa。",
+    "unit": "压强",
+    "scope": "用于冲压和气体压强，非力的单位。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-microG",
+    "kind": "unit",
+    "aliases": [
+      "μG"
+    ],
+    "title": "微高斯",
+    "english": "microgauss",
+    "definition": "磁感应强度单位，1 μG=10⁻¹⁰ T。",
+    "unit": "磁场强度",
+    "scope": "磁压公式的常数随SI/CGS单位制不同，不能混用。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-mag",
+    "kind": "unit",
+    "aliases": [
+      "mag",
+      "星等"
+    ],
+    "title": "星等",
+    "english": "magnitude",
+    "definition": "用对数描述亮度；同一零点下m₂−m₁=−2.5 log₁₀(F₂/F₁)，数值越小越亮。",
+    "unit": "对数亮度标度",
+    "scope": "绝对/视星等、AB/Vega系统及波段须分别注明。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-dex",
+    "kind": "unit",
+    "aliases": [
+      "dex"
+    ],
+    "title": "十进对数差",
+    "english": "decimal exponent",
+    "definition": "差1 dex表示两量相差10倍；0.3 dex约为2倍。",
+    "unit": "无量纲对数差",
+    "scope": "每dex的数密度以log₁₀变量为自变量，不能与每自然对数直接混用。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-sr",
+    "kind": "unit",
+    "aliases": [
+      "sr",
+      "球面度"
+    ],
+    "title": "球面度",
+    "english": "steradian",
+    "definition": "立体角的SI单位；完整球面的立体角是4π sr。",
+    "unit": "立体角",
+    "scope": "小天区的面积换算为球面度后才能与体积元搭配。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-arcsec",
+    "kind": "unit",
+    "aliases": [
+      "角秒"
+    ],
+    "title": "角秒",
+    "english": "arcsecond",
+    "definition": "1角秒=1/3600度=π/648000弧度，常用于天体视尺寸。",
+    "unit": "角度",
+    "scope": "要换成物理尺寸还需要角直径距离。",
+    "chapters": [],
+    "source": "MBW 2010 附录E（物理常数、单位及换算）"
+  },
+  {
+    "id": "common-unit-solarM",
+    "kind": "unit",
+    "aliases": [
+      "M☉",
+      "M⊙",
+      "太阳质量"
+    ],
+    "title": "太阳质量",
+    "english": "solar mass",
+    "definition": "以太阳质量作质量尺度；1 M☉约为1.9885×10³⁰ kg。",
+    "unit": "质量",
+    "scope": "该kg数值为近似；恒星质量、晕质量需保留各自质量定义。",
+    "chapters": [],
+    "source": "MBW 2010 附录E；IAU 2015 B3 · https://www.iau.org/static/resolutions/IAU2015_English.pdf"
+  },
+  {
+    "id": "common-unit-solarL",
+    "kind": "unit",
+    "aliases": [
+      "L☉",
+      "L⊙",
+      "太阳光度"
+    ],
+    "title": "太阳光度",
+    "english": "solar luminosity",
+    "definition": "太阳名义总光度单位为3.828×10²⁶ W，用于辐射功率比较。",
+    "unit": "功率",
+    "scope": "特定波段的太阳光度与总光度必须区分。",
+    "chapters": [],
+    "source": "MBW 2010 附录E；IAU 2015 B3 · https://www.iau.org/static/resolutions/IAU2015_English.pdf"
+  },
+  {
+    "id": "common-unit-solarR",
+    "kind": "unit",
+    "aliases": [
+      "R☉",
+      "R⊙",
+      "太阳半径"
+    ],
+    "title": "太阳半径",
+    "english": "solar radius",
+    "definition": "太阳名义半径单位为6.957×10⁸ m。",
+    "unit": "长度",
+    "scope": "是标准换算尺度；不能推断不同波段光球边界完全相同。",
+    "chapters": [],
+    "source": "MBW 2010 附录E；IAU 2015 B3 · https://www.iau.org/static/resolutions/IAU2015_English.pdf"
+  },
+  {
+    "id": "common-abbr-mbw",
+    "kind": "abbreviation",
+    "aliases": [
+      "MBW"
+    ],
+    "title": "教材作者缩写",
+    "english": "Mo, van den Bosch & White",
+    "definition": "本网站所依据的2010年教材Galaxy Formation and Evolution的三位作者姓氏缩写。",
+    "unit": "不适用",
+    "scope": "出处页码指原书印刷页；PDF文件页码比印刷页多22页。",
+    "chapters": [],
+    "source": "Mo, van den Bosch & White, Cambridge University Press, 2010"
+  },
+  {
+    "id": "common-abbr-hubble",
+    "kind": "abbreviation",
+    "aliases": [
+      "HST",
+      "Hubble",
+      "哈勃空间望远镜"
+    ],
+    "title": "哈勃空间望远镜",
+    "english": "Hubble Space Telescope",
+    "definition": "主要在紫外、可见光与近红外开展观测的空间望远镜。正文观测图保留原始发布机构的波段与署名。",
+    "unit": "不适用",
+    "scope": "彩色合成中颜色映射由仪器滤镜决定，不一定等同肉眼颜色。",
+    "chapters": [],
+    "source": "NASA / ESA · https://science.nasa.gov/mission/hubble/"
+  },
+  {
+    "id": "common-abbr-webb",
+    "kind": "abbreviation",
+    "aliases": [
+      "JWST",
+      "Webb",
+      "詹姆斯·韦布空间望远镜"
+    ],
+    "title": "詹姆斯·韦布空间望远镜",
+    "english": "James Webb Space Telescope",
+    "definition": "以红外观测为主的空间望远镜，利用多个滤镜和光谱仪研究恒星、尘埃与遥远星系。",
+    "unit": "不适用",
+    "scope": "红外数据被映射为可见颜色；图像亮度不直接等于质量或温度。",
+    "chapters": [],
+    "source": "NASA / ESA / CSA · https://science.nasa.gov/mission/webb/"
+  },
+  {
+    "id": "common-abbr-nircam",
+    "kind": "abbreviation",
+    "aliases": [
+      "NIRCam"
+    ],
+    "title": "近红外相机",
+    "english": "Near Infrared Camera",
+    "definition": "Webb的近红外成像仪器；不同滤镜采样不同波段的辐射。",
+    "unit": "不适用",
+    "scope": "一幅成像图不能替代光谱或直接给出物体三维位置。",
+    "chapters": [],
+    "source": "ESA / Webb 仪器说明 · https://esawebb.org/about/instruments/nircam/"
+  },
+  {
+    "id": "common-abbr-miri",
+    "kind": "abbreviation",
+    "aliases": [
+      "MIRI"
+    ],
+    "title": "中红外仪器",
+    "english": "Mid-Infrared Instrument",
+    "definition": "Webb的中红外成像与光谱仪器，对温暖尘埃等红外辐射敏感。",
+    "unit": "不适用",
+    "scope": "同一区域在不同波段的外观与强调的辐射过程不同。",
+    "chapters": [],
+    "source": "ESA / Webb 仪器说明 · https://esawebb.org/about/instruments/miri/"
+  },
+  {
+    "id": "common-abbr-chandra",
+    "kind": "abbreviation",
+    "aliases": [
+      "Chandra",
+      "钱德拉"
+    ],
+    "title": "钱德拉X射线天文台",
+    "english": "Chandra X-ray Observatory",
+    "definition": "在X射线波段成像和测谱的空间望远镜，可探测热气体、冲击波和高能源。",
+    "unit": "不适用",
+    "scope": "X射线强度一般依赖温度、密度与成分，不能直接视为总质量图。",
+    "chapters": [],
+    "source": "NASA / CXC · https://chandra.harvard.edu/about/"
+  },
+  {
+    "id": "common-abbr-pseudocolor",
+    "kind": "term",
+    "aliases": [
+      "伪彩色",
+      "假彩色",
+      "代表色"
+    ],
+    "title": "代表色合成",
+    "english": "representative-color composite",
+    "definition": "把望远镜不同波段或测量量映射到可见颜色的显示方法，用于区分结构和辐射成分。",
+    "unit": "不适用",
+    "scope": "颜色映射应以图注为准，不能直接当作肉眼颜色或统一温度色标。",
+    "chapters": [],
+    "source": "本书各观测图的官方发布页与图注"
+  },
+  {
+    "id": "common-op-plus",
+    "kind": "notation",
+    "aliases": [
+      "+"
+    ],
+    "title": "相加",
+    "english": "mathematical notation",
+    "definition": "把同量纲的量相加；也可标记正号。",
+    "unit": "由运算或被索引量决定",
+    "scope": "这是通用数学用法；同符号若在当前模型有物理定义，优先使用模型定义。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "+"
+  },
+  {
+    "id": "common-op-minus",
+    "kind": "notation",
+    "aliases": [
+      "−",
+      "-"
+    ],
+    "title": "相减或负号",
+    "english": "mathematical notation",
+    "definition": "两量之差，或表示相对指定零点的负值；物理意义由坐标和变量定义决定。",
+    "unit": "由运算或被索引量决定",
+    "scope": "这是通用数学用法；同符号若在当前模型有物理定义，优先使用模型定义。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "-"
+  },
+  {
+    "id": "common-op-times",
+    "kind": "notation",
+    "aliases": [
+      "×",
+      "⋅",
+      "·"
+    ],
+    "title": "相乘",
+    "english": "mathematical notation",
+    "definition": "将两个量相乘；量纲也相乘。写在向量之间的点还可表示点积，须按本处公式判断。",
+    "unit": "由运算或被索引量决定",
+    "scope": "这是通用数学用法；同符号若在当前模型有物理定义，优先使用模型定义。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\times"
+  },
+  {
+    "id": "common-op-division",
+    "kind": "notation",
+    "aliases": [
+      "/"
+    ],
+    "title": "相除",
+    "english": "mathematical notation",
+    "definition": "分子除以分母；量纲相除，且分母不能为零。",
+    "unit": "由运算或被索引量决定",
+    "scope": "这是通用数学用法；同符号若在当前模型有物理定义，优先使用模型定义。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "/"
+  },
+  {
+    "id": "common-op-parens",
+    "kind": "notation",
+    "aliases": [
+      "(",
+      ")"
+    ],
+    "title": "圆括号",
+    "english": "mathematical notation",
+    "definition": "将一个表达式组合成整体，或列出函数的自变量；括号内的项按公式先求值。",
+    "unit": "由运算或被索引量决定",
+    "scope": "这是通用数学用法；同符号若在当前模型有物理定义，优先使用模型定义。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "(x)"
+  },
+  {
+    "id": "common-op-squarebrackets",
+    "kind": "notation",
+    "aliases": [
+      "[",
+      "]"
+    ],
+    "title": "方括号",
+    "english": "mathematical notation",
+    "definition": "用于分组、区间或标示元素丰度的对数比；丰度记号如[α/Fe]须使用该术语的专门定义。",
+    "unit": "由运算或被索引量决定",
+    "scope": "这是通用数学用法；同符号若在当前模型有物理定义，优先使用模型定义。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "[x]"
+  },
+  {
+    "id": "common-op-absolute",
+    "kind": "notation",
+    "aliases": [
+      "|"
+    ],
+    "title": "绝对值或取模",
+    "english": "mathematical notation",
+    "definition": "对实数表示不带正负号的大小，对向量表示模长；竖线的成对结构决定它圈定哪个量。",
+    "unit": "由运算或被索引量决定",
+    "scope": "这是通用数学用法；同符号若在当前模型有物理定义，优先使用模型定义。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "|x|"
+  },
+  {
+    "id": "common-op-plusminus",
+    "kind": "notation",
+    "aliases": [
+      "±"
+    ],
+    "title": "加减或误差范围",
+    "english": "mathematical notation",
+    "definition": "表示正负两个分支，或在给出的估计量两侧标记误差大小。",
+    "unit": "由运算或被索引量决定",
+    "scope": "这是通用数学用法；同符号若在当前模型有物理定义，优先使用模型定义。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\pm"
+  },
+  {
+    "id": "common-op-arrow",
+    "kind": "notation",
+    "aliases": [
+      "→"
+    ],
+    "title": "趋于或映射到",
+    "english": "mathematical notation",
+    "definition": "在公式中表示某量趋于一个极限，或把一个对象映射到另一个；具体含义取决于本处表达式。",
+    "unit": "由运算或被索引量决定",
+    "scope": "这是通用数学用法；同符号若在当前模型有物理定义，优先使用模型定义。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "\\to"
+  },
+  {
+    "id": "common-op-index-i",
+    "kind": "notation",
+    "aliases": [
+      "i"
+    ],
+    "title": "索引 i",
+    "english": "mathematical notation",
+    "definition": "离散对象或分量的编号，常随求和符号遍历样本。不是独立物理常数。",
+    "unit": "索引本身无量纲；被索引量保留自己的单位",
+    "scope": "这是通用数学用法；同符号若在当前模型有物理定义，优先使用模型定义。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "i"
+  },
+  {
+    "id": "common-op-index-j",
+    "kind": "notation",
+    "aliases": [
+      "j"
+    ],
+    "title": "索引 j",
+    "english": "mathematical notation",
+    "definition": "与i配合使用的另一组对象或分量编号。若本模型将j用作角动量，则以局部定义为准。",
+    "unit": "索引本身无量纲；被索引量保留自己的单位",
+    "scope": "这是通用数学用法；同符号若在当前模型有物理定义，优先使用模型定义。",
+    "chapters": [],
+    "source": "网页通用数学记号说明（原创）；物理定义另见当前模型的 MBW 2010 章节依据",
+    "tex": "j"
+  },
+  {
+    "id": "common-subscript-note",
+    "kind": "notation",
+    "aliases": [
+      "下标"
+    ],
+    "title": "下标",
+    "english": "subscript",
+    "definition": "字母或数字下标用于区分组分、方向、时刻、能级或样本，例如m为物质、r为径向、0为今天；并无全书统一的一字一义。完整带下标变量的条目会说明本处约定。",
+    "unit": "由被修饰的量决定",
+    "scope": "下标不是独立相乘的变量。d、b、s等必须结合具体模型读取。",
+    "chapters": [],
+    "source": "本书各模型的符号约定（原创释义）"
+  }
+]

@@ -1,0 +1,63 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..'),data=JSON.parse(fs.readFileSync(path.join(root,'dist/glossary.json'),'utf8'));
+const glossary=require('../dist/assets/glossary.js')(data),katex=require('../dist/assets/katex/katex.min.js');let checks=0;
+function check(test,message){assert(test,message);checks++;}
+const ids=new Set();for(const entry of data.entries){check(!ids.has(entry.id),'duplicate '+entry.id);ids.add(entry.id);for(const field of ['title','english','definition','unit','scope','source'])check(typeof entry[field]==='string'&&entry[field].trim().length,entry.id+': '+field);check(entry.aliases.length>0,entry.id+': aliases');check(Object.values(entry).flat().filter(v=>typeof v==='string').every(v=>!/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/.test(v)),entry.id+': control character');if(entry.tex){katex.renderToString(entry.tex,{throwOnError:true,strict:'error',trust:false});checks++;}}
+function meaning(alias,chapter,contexts,pattern){const found=glossary.resolve(alias,{chapter,contexts});check(found.length>0,alias+': missing context');check(found.some(e=>pattern.test(e.title)),alias+': wrong meaning '+found.map(e=>e.title).join(','));}
+meaning('κ',6,['shear-lab','shear'],/会聚/);
+meaning('κ',11,['stellar-response-lab','stability'],/振荡/);
+meaning('b',6,['kaiser-lab','redshift'],/偏置/);
+meaning('b',12,['tidal-shock-lab'],/冲量/);
+meaning('b',16,['absorption-line-lab'],/Doppler/);
+meaning('c',7,['nfw-lab'],/浓度/);
+meaning('c',14,['superluminal-lab'],/光速/);
+meaning('λ',11,['disk-spin-lab'],/自旋/);
+meaning('λ',11,['toomre-lab'],/波长/);
+meaning('λ',10,['leaky-lab'],/负载/);
+meaning('β',13,['anisotropy-lab'],/各向异性/);
+meaning('β',14,['superluminal-lab'],/速度/);
+meaning('𝒜21',16,['spin-21-lab'],/温度归一化/);
+meaning('A21',16,['absorption-line-lab'],/衰减率/);
+meaning('H',16,['absorption-line-lab'],/Voigt/);
+meaning('M',10,['sfh-lab'],/初始形成质量/);
+meaning('ρ/ρ̄',5,['sphere-lab'],/密度比/);
+meaning('ρ',5,['similarity'],/实际质量密度/);
+meaning('δ_L',5,['sphere-lab'],/线性外推/);
+meaning('σ₈',4,['statistics'],/标准差/);
+meaning('ρ_tot',8,['radcool-lab'],/总引力质量密度/);
+meaning('T0',8,['thermal-lab'],/参考温度/);
+meaning('N',8,['buoy-lab'],/振荡频率/);
+meaning('N²',8,['buoy-lab'],/频率平方/);
+meaning('a_b',8,['buoy-lab'],/浮力加速度/);
+meaning('j',11,['disk-spin-lab'],/比角动量之比/);
+meaning('有效产额',11,['chemistry'],/有效产额/);
+meaning('晕排斥',7,['halo-model'],/排斥效应/);
+meaning('vapp',14,['superluminal-lab'],/^表观横向速度$/);
+meaning('βapp',14,['superluminal-lab'],/归一化/);
+meaning('F_cont',16,['transmission-lab'],/连续谱/);
+meaning('b_m',16,['metal-thermometer-lab'],/Doppler/);
+check(glossary.resolve('M)',{chapter:7,contexts:['halo-model']}).length===0,'fragmented transform alias swallowed a mass');
+check(glossary.resolve('jd/md',{chapter:11,contexts:['disk-spin-lab']}).length===1,'duplicate angular-momentum ratio');
+for(const [alias,id]of [['He','supp-element-He'],['He I','supp-element-HeI'],['He II','c16-HeII'],['He III','supp-element-HeIII'],['HeⅡ','c16-HeII']])check(glossary.scan(alias,{chapter:16,contexts:['ionization']}).some(x=>x.entries.some(e=>e.id===id)),alias+': ionization stage boundary');
+check(glossary.normalize('𝒜₂₁')!==glossary.normalize('A21'),'script A collapsed');
+check(glossary.normalize('𝒩')!==glossary.normalize('N'),'script N collapsed');
+check(glossary.normalize('σᵣ')===glossary.normalize('σ_r'),'radial subscript');
+check(glossary.normalize('Ṁ')===glossary.normalize('M˙'),'mass accretion accent');
+check(glossary.normalize('\\widehat\\xi')===glossary.normalize('ξ̂'),'Greek estimator accent');
+check(glossary.normalize('\\bar\\rho')===glossary.normalize('ρ̄'),'Greek mean-density accent');
+check(glossary.scan('NASA 不等于 NFW；Sérsic profile。',{chapter:2,contexts:[]}).some(m=>m.entries.some(e=>e.id==='tools-NASA')),'acronym boundary');
+check(!glossary.scan('concentration',{chapter:7,contexts:['nfw-lab']}).some(m=>m.value==='c'),'letter inside English word');
+const math=require('../dist/assets/inline-math.js')(katex,require('../content/math/inline-vocabulary.json'));
+const tex=s=>math.parts(s).map(p=>p.tex||p.text).join('');
+check(tex('m³·⁵').includes('^{3.5}'),'decimal exponent');
+check(tex('t⁻⁰·⁶').includes('^{-0.6}'),'negative decimal exponent');
+check(tex('ρ∝r⁻γ').includes('^{-\\gamma}'),'symbolic negative exponent');
+check(tex('w=P/(ρc²)').includes('\\rho c^2'),'density times c squared');
+check(tex('H(a,u)=Re[w(u+ia)]').includes('\\operatorname{Re}'),'real-part operator');
+check(!math.has('Sérsic'),'Latin diacritic boundary');
+check(!math.has('N体模型'),'N-body term');
+check(tex('ΣnNbh/ΣnN').includes('\\sum_i'),'occupation sum');
+for(let n=1;n<=16;n++){const file=n===1?'index.html':`chapter-${n}.html`,html=fs.readFileSync(path.join(root,'dist',file),'utf8');check(html.includes('assets/glossary.js'),file+': glossary missing');check(data.entries.some(e=>e.chapters.includes(n)),file+': definitions missing');}
+console.log(`${checks} glossary schema, scientific disambiguation and notation checks passed (${data.entries.length} entries).`);
+
+let fragments=0;for(const entry of data.entries)for(const field of ['definition','unit','scope'])for(const part of math.parts(entry[field]))if(part.tex){katex.renderToString(part.tex,{throwOnError:true,strict:'error',trust:false});fragments++;}console.log(`${fragments} definition math fragments typeset successfully.`);

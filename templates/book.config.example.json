@@ -1,0 +1,10 @@
+{
+  "title": "填写下一本书的正式书名",
+  "language": "zh-CN",
+  "audience": "填写读者和先修背景",
+  "reference": {"title": "填写参考书", "authors": [], "edition": "", "year": null},
+  "pageMap": {"verified": false, "printedToPdfOffset": null, "exceptions": []},
+  "rights": {"sourceFileReadOnly": true, "distributeReferencePdf": false, "code": "MIT", "originalContent": "CC-BY-4.0"},
+  "delivery": {"sourceRepository": "", "website": "", "offlineArchive": true},
+  "sampleChapter": null
+}

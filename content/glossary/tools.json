@@ -1,0 +1,356 @@
+[
+  {
+    "id": "tools-NASA",
+    "kind": "abbreviation",
+    "aliases": [
+      "NASA"
+    ],
+    "title": "美国国家航空航天局",
+    "english": "National Aeronautics and Space Administration",
+    "definition": "美国的民用航天与航空研究机构；参与Hubble、Webb及Chandra等项目。",
+    "unit": "不适用",
+    "scope": "机构署名表明项目或资料贡献，不是物理测量量。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-ESA",
+    "kind": "abbreviation",
+    "aliases": [
+      "ESA"
+    ],
+    "title": "欧洲空间局",
+    "english": "European Space Agency",
+    "definition": "欧洲的政府间航天组织，参与Hubble与Webb等空间天文任务。",
+    "unit": "不适用",
+    "scope": "机构名称不是仪器滤镜或波段。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-CSA",
+    "kind": "abbreviation",
+    "aliases": [
+      "CSA"
+    ],
+    "title": "加拿大航天局",
+    "english": "Canadian Space Agency",
+    "definition": "加拿大的航天机构，参与Webb等国际空间天文项目。",
+    "unit": "不适用",
+    "scope": "保留官方图像的联合署名。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-STScI",
+    "kind": "abbreviation",
+    "aliases": [
+      "STScI"
+    ],
+    "title": "空间望远镜科学研究所",
+    "english": "Space Telescope Science Institute",
+    "definition": "承担Hubble、Webb等任务科学运行、数据归档与研究支持的机构。",
+    "unit": "不适用",
+    "scope": "它是机构名称，不是某一种探测器或波段。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-AURA",
+    "kind": "abbreviation",
+    "aliases": [
+      "AURA"
+    ],
+    "title": "美国天文学大学研究协会",
+    "english": "Association of Universities for Research in Astronomy",
+    "definition": "运营与管理多座天文台和研究机构的大学联盟。",
+    "unit": "不适用",
+    "scope": "图像中出现此缩写通常属于官方署名。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-ESO",
+    "kind": "abbreviation",
+    "aliases": [
+      "ESO"
+    ],
+    "title": "欧洲南方天文台",
+    "english": "European Southern Observatory",
+    "definition": "运营智利地面天文设施的政府间天文组织。",
+    "unit": "不适用",
+    "scope": "其发布图像需按具体望远镜、仪器和波段说明读取。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-CXC",
+    "kind": "abbreviation",
+    "aliases": [
+      "CXC"
+    ],
+    "title": "钱德拉X射线中心",
+    "english": "Chandra X-ray Center",
+    "definition": "负责钱德拉天文台科学与运行支持的中心；常出现在X射线图像署名中。",
+    "unit": "不适用",
+    "scope": "不是谱线名称或X射线能段。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-ACIS",
+    "kind": "abbreviation",
+    "aliases": [
+      "ACIS"
+    ],
+    "title": "先进CCD成像光谱仪",
+    "english": "Advanced CCD Imaging Spectrometer",
+    "definition": "钱德拉的X射线成像与光谱探测仪器，记录光子位置及能量信息。",
+    "unit": "不适用",
+    "scope": "X射线代表色可能映射能段或特定谱线信息，以官方图注为准。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-ACS",
+    "kind": "abbreviation",
+    "aliases": [
+      "ACS"
+    ],
+    "title": "先进巡天相机",
+    "english": "Advanced Camera for Surveys",
+    "definition": "Hubble的成像仪器之一，配合不同滤镜进行高分辨率观测。",
+    "unit": "不适用",
+    "scope": "ACS图像是经滤镜采样的光分布，不能直接视为质量分布。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-WFC",
+    "kind": "abbreviation",
+    "aliases": [
+      "WFC"
+    ],
+    "title": "广域相机",
+    "english": "Wide Field Camera / Wide Field Camera 3",
+    "definition": "WFC表示广域相机或广域通道，WFC3特指Hubble的第三代广域相机；须结合该图实际仪器名称判断。",
+    "unit": "不适用",
+    "scope": "ACS/WFC中的WFC是ACS广域通道，与WFC3不是同一台仪器。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-WFI",
+    "kind": "abbreviation",
+    "aliases": [
+      "WFI"
+    ],
+    "title": "广域成像仪",
+    "english": "Wide Field Imager",
+    "definition": "用于较大天区成像的仪器名称；本书观测图引用的ESO WFI位于La Silla的2.2米望远镜。",
+    "unit": "不适用",
+    "scope": "具体仪器与滤镜采用该图官方说明。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-Spitzer",
+    "kind": "abbreviation",
+    "aliases": [
+      "Spitzer"
+    ],
+    "title": "斯皮策空间望远镜",
+    "english": "Spitzer Space Telescope",
+    "definition": "在红外波段观测宇宙的空间望远镜，其数据可突出尘埃与较冷辐射结构。",
+    "unit": "不适用",
+    "scope": "不同波段的亮度不宜直接比较为质量。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-NGC",
+    "kind": "abbreviation",
+    "aliases": [
+      "NGC"
+    ],
+    "title": "星云和星团新总表",
+    "english": "New General Catalogue",
+    "definition": "天体目录的缩写；后面的数字是目录编号，例如NGC 1300。",
+    "unit": "不适用",
+    "scope": "目录编号没有物理单位，也不直接表示距离、大小或类型。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-HH",
+    "kind": "abbreviation",
+    "aliases": [
+      "HH"
+    ],
+    "title": "赫比格–哈罗天体",
+    "english": "Herbig–Haro object",
+    "definition": "与年轻恒星喷流撞击周围介质产生的激波辐射有关的天体名称；HH 30是本书使用的观测目标。",
+    "unit": "不适用",
+    "scope": "编号不是年龄或喷流速度。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-AI",
+    "kind": "abbreviation",
+    "aliases": [
+      "AI",
+      "人工智能"
+    ],
+    "title": "人工智能",
+    "english": "artificial intelligence",
+    "definition": "利用计算模型生成、分析或解释信息的一类方法；本书用此标记生成插图与伴读功能。",
+    "unit": "不适用",
+    "scope": "生成场景不是真实观测或定量模拟；科学结论以模型和引用来源为准。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-PDF",
+    "kind": "abbreviation",
+    "aliases": [
+      "PDF"
+    ],
+    "title": "便携式文档格式",
+    "english": "Portable Document Format",
+    "definition": "用于固定版面文档的文件格式，本书原始教材以此格式保留在本地。",
+    "unit": "不适用",
+    "scope": "PDF页序与书上印刷页码不同，本项目印刷页需加22才对应文件页序。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-JPEG",
+    "kind": "abbreviation",
+    "aliases": [
+      "JPEG",
+      "JPG"
+    ],
+    "title": "JPEG图像格式",
+    "english": "Joint Photographic Experts Group image format",
+    "definition": "常见的有损压缩位图格式，正文官方观测图以原始发布文件保存。",
+    "unit": "不适用",
+    "scope": "文件格式与图像是否为真实观测无直接因果关系；来源和图注才是依据。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-SVG",
+    "kind": "abbreviation",
+    "aliases": [
+      "SVG"
+    ],
+    "title": "可缩放矢量图形",
+    "english": "Scalable Vector Graphics",
+    "definition": "用几何路径、文字与样式描述图形的格式，本书定量曲线和部分科学图解采用此格式。",
+    "unit": "不适用",
+    "scope": "矢量绘制本身不保证物理模型正确，仍需检查公式、数据和假设。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-CCBY",
+    "kind": "abbreviation",
+    "aliases": [
+      "CC BY",
+      "CC BY 4.0"
+    ],
+    "title": "知识共享署名许可",
+    "english": "Creative Commons Attribution license",
+    "definition": "允许在遵守署名等许可条件下使用作品的授权形式。",
+    "unit": "不适用",
+    "scope": "以具体图像来源列出的版本和完整条款为准；不能据此推断整本教材使用相同许可。",
+    "source": "https://creativecommons.org/licenses/by/4.0/",
+    "chapters": []
+  },
+  {
+    "id": "tools-F475W",
+    "kind": "abbreviation",
+    "aliases": [
+      "F475W"
+    ],
+    "title": "F475W滤镜",
+    "english": "F475W broad-band filter",
+    "definition": "Hubble的宽带光学滤镜名称，名义中心波长在约475 nm附近。",
+    "unit": "不适用",
+    "scope": "滤镜具有有限通带，不能把图中该通道当作单一波长或直接当作温度图。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-F814W",
+    "kind": "abbreviation",
+    "aliases": [
+      "F814W"
+    ],
+    "title": "F814W滤镜",
+    "english": "F814W broad-band filter",
+    "definition": "Hubble的宽带近红端光学滤镜名称，名义中心波长在约814 nm附近。",
+    "unit": "不适用",
+    "scope": "精确透过率与采用的相机有关；代表色映射采用具体图注。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-km",
+    "kind": "unit",
+    "aliases": [
+      "km"
+    ],
+    "title": "千米",
+    "english": "kilometre",
+    "definition": "长度单位，1 km=1000 m。",
+    "unit": "长度",
+    "scope": "km/s是速度，km²/s²可用于单位质量能量，不能只看km判断整个复合单位。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-second",
+    "kind": "unit",
+    "aliases": [
+      "秒",
+      "s（单位）"
+    ],
+    "title": "秒",
+    "english": "second",
+    "definition": "时间的SI单位；s⁻¹表示每秒，km s⁻¹表示千米每秒。",
+    "unit": "时间",
+    "scope": "只有直立排版的单位s采用此义；IMF指数s等局部物理变量使用模型定义。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-arcsec",
+    "kind": "unit",
+    "aliases": [
+      "arcsec"
+    ],
+    "title": "角秒单位",
+    "english": "arcsecond",
+    "definition": "角度单位，1 arcsec=1/3600度。",
+    "unit": "角度",
+    "scope": "与时间秒不同；物理大小还需要角直径距离。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  },
+  {
+    "id": "tools-WFC3",
+    "kind": "abbreviation",
+    "aliases": [
+      "WFC3"
+    ],
+    "title": "第三代广域相机",
+    "english": "Wide Field Camera 3",
+    "definition": "Hubble的第三代广域相机，可在多个紫外、可见与近红外滤镜下成像。",
+    "unit": "不适用",
+    "scope": "WFC3与ACS的WFC通道属于不同仪器。",
+    "source": "本书观测图的官方发布页及原始署名",
+    "chapters": []
+  }
+]

@@ -1,0 +1,905 @@
+{
+  "scope": "Independent Python Decimal/math oracle; no repository module imports.",
+  "references": [
+    {
+      "title": "MBW 2010 chapter12 introduction and §12.1",
+      "printedPages": [
+        544,
+        546
+      ],
+      "pdfPages": [
+        566,
+        568
+      ],
+      "supports": "Differential gravitational acceleration Eq12.1 and point-mass tidal components Eq12.7; Plummer extension is newly derived."
+    },
+    {
+      "title": "MBW 2010 §15.2.1 Galaxy Luminosity Functions",
+      "printedPages": [
+        654,
+        655
+      ],
+      "pdfPages": [
+        676,
+        677
+      ],
+      "supports": "Magnitude-limited sampling and Vmax; the exponential isophotal toy model is not a formula quoted from this section."
+    },
+    {
+      "title": "Renaud et al. (2009), Fully compressive tides in galaxy mergers, §2 Eqs1-2 and Table1",
+      "url": "https://arxiv.org/pdf/0910.0196",
+      "supports": "T=-Hessian(phi), negative eigenvalues compressive, trace=-4piG rho, Plummer radial component."
+    },
+    {
+      "title": "galpy official PlummerPotential documentation",
+      "url": "https://docs.galpy.org/en/v1.11.1/reference/potentialplummer.html",
+      "supports": "Plummer potential with amp=GM."
+    },
+    {
+      "title": "Blanton et al. (2001), The Luminosity Function of Galaxies in SDSS Commissioning Data, §5",
+      "url": "https://arxiv.org/pdf/astro-ph/0012085",
+      "supports": "Isophotal magnitudes integrate profiles to selected isophotes; recovered-light bias depends on SB, not one universal fraction or completeness."
+    }
+  ],
+  "constants": {
+    "G_kpc_km2_s2_per_Msun": 4.30091e-06,
+    "km_s_per_kpc_to_Gyr_minus1": 1.022712165045695,
+    "conversionSquared": 1.0459401725324529,
+    "magPerExponentialScalelength": 1.0857362047581296
+  },
+  "tidalTransition_RoverA": 0.7071067811865476,
+  "radialEigenvalueMaximum_RoverA": 1.224744871391589,
+  "plummerCases": [
+    {
+      "name": "center",
+      "input": {
+        "mass_Msun": 10000000000.0,
+        "scale_a_kpc": 2.0,
+        "RoverA": 0.0,
+        "R_kpc": 0.0
+      },
+      "local": {
+        "lambdaRadial_normalized": -1.0,
+        "lambdaTransverse_normalized": -1.0,
+        "trace_normalized": -3.0,
+        "lambdaRadial_Gyr_minus2": -5623.11818430819,
+        "lambdaTransverse_Gyr_minus2": -5623.11818430819,
+        "trace_Gyr_minus2": -16869.35455292457,
+        "density_Msun_per_kpc3": 298415518.29730374,
+        "poissonTraceResidual_normalized": -1e-79,
+        "regime": "fully compressive"
+      },
+      "finiteProbes": [
+        {
+          "baselineOverA": 0.005,
+          "radialFinite_normalized": -0.9999906250732417,
+          "transverseFinite_normalized": -0.9999906250732417,
+          "radialFinite_Gyr_minus2": -5623.065467987059,
+          "transverseFinite_Gyr_minus2": -5623.065467987059,
+          "radialDifferenceFromLocal_normalized": 9.374926758346553e-06,
+          "transverseDifferenceFromLocal_normalized": 9.374926758346553e-06,
+          "finiteTraceMinusLocalTrace_normalized": 2.8124780275039663e-05
+        },
+        {
+          "baselineOverA": 0.05,
+          "radialFinite_normalized": -0.9990632318881927,
+          "transverseFinite_normalized": -0.9990632318881927,
+          "radialFinite_Gyr_minus2": -5617.850626504206,
+          "transverseFinite_Gyr_minus2": -5617.850626504206,
+          "radialDifferenceFromLocal_normalized": 0.0009367681118073659,
+          "transverseDifferenceFromLocal_normalized": 0.0009367681118073659,
+          "finiteTraceMinusLocalTrace_normalized": 0.0028103043354220977
+        },
+        {
+          "baselineOverA": 0.15,
+          "radialFinite_normalized": -0.9916214392924364,
+          "transverseFinite_normalized": -0.9916214392924364,
+          "radialFinite_Gyr_minus2": -5576.004547235159,
+          "transverseFinite_Gyr_minus2": -5576.004547235159,
+          "radialDifferenceFromLocal_normalized": 0.008378560707563567,
+          "transverseDifferenceFromLocal_normalized": 0.008378560707563567,
+          "finiteTraceMinusLocalTrace_normalized": 0.0251356821226907
+        }
+      ]
+    },
+    {
+      "name": "inner",
+      "input": {
+        "mass_Msun": 10000000000.0,
+        "scale_a_kpc": 2.0,
+        "RoverA": 0.25,
+        "R_kpc": 0.5
+      },
+      "local": {
+        "lambdaRadial_normalized": -0.7519443599742365,
+        "lambdaTransverse_normalized": -0.91307529425443,
+        "trace_normalized": -2.5780949484830966,
+        "lambdaRadial_Gyr_minus2": -4228.272004159113,
+        "lambdaTransverse_Gyr_minus2": -5134.330290764637,
+        "trace_Gyr_minus2": -14496.932585688386,
+        "density_Msun_per_kpc3": 256447846.7570813,
+        "poissonTraceResidual_normalized": -1e-79,
+        "regime": "fully compressive"
+      },
+      "finiteProbes": [
+        {
+          "baselineOverA": 0.005,
+          "radialFinite_normalized": -0.7519407173356167,
+          "transverseFinite_normalized": -0.9130672377669549,
+          "radialFinite_Gyr_minus2": -4228.251521171651,
+          "transverseFinite_Gyr_minus2": -5134.284988183414,
+          "radialDifferenceFromLocal_normalized": 3.642638619699941e-06,
+          "transverseDifferenceFromLocal_normalized": 8.056487475102145e-06,
+          "finiteTraceMinusLocalTrace_normalized": 1.975561356990423e-05
+        },
+        {
+          "baselineOverA": 0.05,
+          "radialFinite_normalized": -0.7515800806538997,
+          "transverseFinite_normalized": -0.9122702315698943,
+          "radialFinite_Gyr_minus2": -4226.22361848876,
+          "transverseFinite_Gyr_minus2": -5129.8033281437165,
+          "radialDifferenceFromLocal_normalized": 0.0003642793203367454,
+          "transverseDifferenceFromLocal_normalized": 0.0008050626845356812,
+          "finiteTraceMinusLocalTrace_normalized": 0.0019744046894081078
+        },
+        {
+          "baselineOverA": 0.15,
+          "radialFinite_normalized": -0.7486648519846838,
+          "transverseFinite_normalized": -0.9058720914403462,
+          "radialFinite_Gyr_minus2": -4209.8309431474745,
+          "transverseFinite_Gyr_minus2": -5093.825830035502,
+          "radialDifferenceFromLocal_normalized": 0.0032795079895527037,
+          "transverseDifferenceFromLocal_normalized": 0.0072032028140838755,
+          "finiteTraceMinusLocalTrace_normalized": 0.017685913617720456
+        }
+      ]
+    },
+    {
+      "name": "crossing_center_baseline",
+      "input": {
+        "mass_Msun": 10000000000.0,
+        "scale_a_kpc": 2.0,
+        "RoverA": 0.02,
+        "R_kpc": 0.04
+      },
+      "local": {
+        "lambdaRadial_normalized": -0.9982014990205667,
+        "lambdaTransverse_normalized": -0.999400299860063,
+        "trace_normalized": -2.9970020987406927,
+        "lambdaRadial_Gyr_minus2": -5613.005000746242,
+        "lambdaTransverse_Gyr_minus2": -5619.745999546178,
+        "trace_Gyr_minus2": -16852.496999838597,
+        "density_Msun_per_kpc3": 298117311.54460365,
+        "poissonTraceResidual_normalized": 0.0,
+        "regime": "fully compressive"
+      },
+      "finiteProbes": [
+        {
+          "baselineOverA": 0.005,
+          "radialFinite_normalized": -0.9981921708916126,
+          "transverseFinite_normalized": -0.9993909343016436,
+          "radialFinite_Gyr_minus2": -5612.952547574695,
+          "transverseFinite_Gyr_minus2": -5619.693335904324,
+          "radialDifferenceFromLocal_normalized": 9.328128954060422e-06,
+          "transverseDifferenceFromLocal_normalized": 9.365558419357104e-06,
+          "finiteTraceMinusLocalTrace_normalized": 2.8059245792774626e-05
+        },
+        {
+          "baselineOverA": 0.05,
+          "radialFinite_normalized": -0.9972694036109931,
+          "transverseFinite_normalized": -0.9984644675688901,
+          "radialFinite_Gyr_minus2": -5607.763718099159,
+          "transverseFinite_Gyr_minus2": -5614.483703972221,
+          "radialDifferenceFromLocal_normalized": 0.0009320954095735889,
+          "transverseDifferenceFromLocal_normalized": 0.0009358322911728593,
+          "finiteTraceMinusLocalTrace_normalized": 0.0028037599919193074
+        },
+        {
+          "baselineOverA": 0.15,
+          "radialFinite_normalized": -0.9898644833748167,
+          "transverseFinite_normalized": -0.9910300884624932,
+          "radialFinite_Gyr_minus2": -5566.124976465763,
+          "transverseFinite_Gyr_minus2": -5572.67931163,
+          "radialDifferenceFromLocal_normalized": 0.00833701564575005,
+          "transverseDifferenceFromLocal_normalized": 0.00837021139756983,
+          "finiteTraceMinusLocalTrace_normalized": 0.02507743844088971
+        }
+      ]
+    },
+    {
+      "name": "inside_transition",
+      "input": {
+        "mass_Msun": 10000000000.0,
+        "scale_a_kpc": 2.0,
+        "RoverA": 0.7070067811865475,
+        "R_kpc": 1.414013562373095
+      },
+      "local": {
+        "lambdaRadial_normalized": -0.00010265698316989536,
+        "lambdaTransverse_normalized": -0.5444080376162979,
+        "trace_normalized": -1.0889187322157656,
+        "lambdaRadial_Gyr_minus2": -0.5772523488088585,
+        "lambdaTransverse_Gyr_minus2": -3061.2707360037416,
+        "trace_Gyr_minus2": -6123.118724356292,
+        "density_Msun_per_kpc3": 108316749.28593686,
+        "poissonTraceResidual_normalized": 0.0,
+        "regime": "fully compressive"
+      },
+      "finiteProbes": [
+        {
+          "baselineOverA": 0.005,
+          "radialFinite_normalized": -0.00010618539839257461,
+          "transverseFinite_normalized": -0.5444046347629845,
+          "radialFinite_Gyr_minus2": -0.597093044609296,
+          "transverseFinite_Gyr_minus2": -3061.251601357397,
+          "radialDifferenceFromLocal_normalized": -3.528415222679246e-06,
+          "transverseDifferenceFromLocal_normalized": 3.402853313302774e-06,
+          "finiteTraceMinusLocalTrace_normalized": 3.2772914039263023e-06
+        },
+        {
+          "baselineOverA": 0.05,
+          "radialFinite_normalized": -0.00045537361193147594,
+          "transverseFinite_normalized": -0.5440679276759263,
+          "radialFinite_Gyr_minus2": -2.5606196379059836,
+          "transverseFinite_Gyr_minus2": -3059.3582576133745,
+          "radialDifferenceFromLocal_normalized": -0.0003527166287615806,
+          "transverseDifferenceFromLocal_normalized": 0.00034010994037152084,
+          "finiteTraceMinusLocalTrace_normalized": 0.00032750325198146107
+        },
+        {
+          "baselineOverA": 0.15,
+          "radialFinite_normalized": -0.0032679926290528176,
+          "transverseFinite_normalized": -0.5413597483428605,
+          "radialFinite_Gyr_minus2": -18.376308778612028,
+          "transverseFinite_Gyr_minus2": -3044.1298451592443,
+          "radialDifferenceFromLocal_normalized": -0.0031653356458829223,
+          "transverseDifferenceFromLocal_normalized": 0.0030482892734373154,
+          "finiteTraceMinusLocalTrace_normalized": 0.0029312429009917085
+        }
+      ]
+    },
+    {
+      "name": "transition_exact",
+      "input": {
+        "mass_Msun": 10000000000.0,
+        "scale_a_kpc": 2.0,
+        "RoverA": 0.7071067811865476,
+        "R_kpc": 1.4142135623730951
+      },
+      "local": {
+        "lambdaRadial_normalized": -1.0886621079036348e-80,
+        "lambdaTransverse_normalized": -0.5443310539518174,
+        "trace_normalized": -1.0886621079036347,
+        "lambdaRadial_Gyr_minus2": -6.121675695520213e-77,
+        "lambdaTransverse_Gyr_minus2": -3060.837847760107,
+        "trace_Gyr_minus2": -6121.675695520214,
+        "density_Msun_per_kpc3": 108291222.39356613,
+        "poissonTraceResidual_normalized": 1e-79,
+        "regime": "boundary, radial eigenvalue zero"
+      },
+      "finiteProbes": [
+        {
+          "baselineOverA": 0.005,
+          "radialFinite_normalized": -3.5280590456799973e-06,
+          "transverseFinite_normalized": -0.5443276519004492,
+          "radialFinite_Gyr_minus2": -0.01983869297507619,
+          "transverseFinite_Gyr_minus2": -3060.818717623194,
+          "radialDifferenceFromLocal_normalized": -3.5280590456799973e-06,
+          "transverseDifferenceFromLocal_normalized": 3.4020513681751636e-06,
+          "finiteTraceMinusLocalTrace_normalized": 3.2760436906703295e-06
+        },
+        {
+          "baselineOverA": 0.05,
+          "radialFinite_normalized": -0.0003526811139575205,
+          "transverseFinite_normalized": -0.5439910241481015,
+          "radialFinite_Gyr_minus2": -1.9831675851566024,
+          "transverseFinite_Gyr_minus2": -3058.9258199876253,
+          "radialDifferenceFromLocal_normalized": -0.0003526811139575205,
+          "transverseDifferenceFromLocal_normalized": 0.0003400298037157988,
+          "finiteTraceMinusLocalTrace_normalized": 0.0003273784934740772
+        },
+        {
+          "baselineOverA": 0.15,
+          "radialFinite_normalized": -0.0031650234780329634,
+          "transverseFinite_normalized": -0.5412834817240204,
+          "radialFinite_Gyr_minus2": -17.79730107308951,
+          "transverseFinite_Gyr_minus2": -3043.7009889479887,
+          "radialDifferenceFromLocal_normalized": -0.0031650234780329634,
+          "transverseDifferenceFromLocal_normalized": 0.003047572227796965,
+          "finiteTraceMinusLocalTrace_normalized": 0.0029301209775609667
+        }
+      ]
+    },
+    {
+      "name": "outside_transition",
+      "input": {
+        "mass_Msun": 10000000000.0,
+        "scale_a_kpc": 2.0,
+        "RoverA": 0.7072067811865476,
+        "R_kpc": 1.4144135623730951
+      },
+      "local": {
+        "lambdaRadial_normalized": 0.00010262311368241649,
+        "lambdaTransverse_normalized": -0.5442540775450841,
+        "trace_normalized": -1.0884055319764858,
+        "lambdaRadial_Gyr_minus2": 0.5770618966779227,
+        "lambdaTransverse_Gyr_minus2": -3060.4050003276425,
+        "trace_Gyr_minus2": -6120.232938758607,
+        "density_Msun_per_kpc3": 108265700.31413855,
+        "poissonTraceResidual_normalized": -1e-79,
+        "regime": "radial stretching, transverse compression"
+      },
+      "finiteProbes": [
+        {
+          "baselineOverA": 0.005,
+          "radialFinite_normalized": 9.909541121694717e-05,
+          "transverseFinite_normalized": -0.5442506762955099,
+          "radialFinite_Gyr_minus2": 0.5572252087955134,
+          "transverseFinite_Gyr_minus2": -3060.385874699312,
+          "radialDifferenceFromLocal_normalized": -3.527702465469318e-06,
+          "transverseDifferenceFromLocal_normalized": 3.4012495742489677e-06,
+          "finiteTraceMinusLocalTrace_normalized": 3.2747966830286178e-06
+        },
+        {
+          "baselineOverA": 0.05,
+          "radialFinite_normalized": -0.0002500224451179341,
+          "transverseFinite_normalized": -0.5439141278629203,
+          "radialFinite_Gyr_minus2": -1.4059057576278515,
+          "transverseFinite_Gyr_minus2": -3058.493423088117,
+          "radialDifferenceFromLocal_normalized": -0.00035264555880035056,
+          "transverseDifferenceFromLocal_normalized": 0.00033994968216385967,
+          "finiteTraceMinusLocalTrace_normalized": 0.0003272538055273687
+        },
+        {
+          "baselineOverA": 0.15,
+          "radialFinite_normalized": -0.003062087831030436,
+          "transverseFinite_normalized": -0.5412072222281743,
+          "radialFinite_Gyr_minus2": -17.21848176461607,
+          "transverseFinite_Gyr_minus2": -3043.2721727901708,
+          "radialDifferenceFromLocal_normalized": -0.003164710944712853,
+          "transverseDifferenceFromLocal_normalized": 0.003046855316909794,
+          "finiteTraceMinusLocalTrace_normalized": 0.0029289996891067355
+        }
+      ]
+    },
+    {
+      "name": "at_scale_radius",
+      "input": {
+        "mass_Msun": 10000000000.0,
+        "scale_a_kpc": 2.0,
+        "RoverA": 1.0,
+        "R_kpc": 2.0
+      },
+      "local": {
+        "lambdaRadial_normalized": 0.1767766952966369,
+        "lambdaTransverse_normalized": -0.3535533905932738,
+        "trace_normalized": -0.5303300858899106,
+        "lambdaRadial_Gyr_minus2": 994.0362498844269,
+        "lambdaTransverse_Gyr_minus2": -1988.0724997688537,
+        "trace_Gyr_minus2": -2982.108749653281,
+        "density_Msun_per_kpc3": 52752909.14983043,
+        "poissonTraceResidual_normalized": 3e-80,
+        "regime": "radial stretching, transverse compression"
+      },
+      "finiteProbes": [
+        {
+          "baselineOverA": 0.005,
+          "radialFinite_normalized": 0.17677489990525028,
+          "transverseFinite_normalized": -0.3535517333182291,
+          "radialFinite_Gyr_minus2": 994.0261541864729,
+          "transverseFinite_Gyr_minus2": -1988.0631807154136,
+          "radialDifferenceFromLocal_normalized": -1.795391386614784e-06,
+          "transverseDifferenceFromLocal_normalized": 1.6572750446736416e-06,
+          "finiteTraceMinusLocalTrace_normalized": 1.5191587027324994e-06
+        },
+        {
+          "baselineOverA": 0.05,
+          "radialFinite_normalized": 0.17659712574089118,
+          "transverseFinite_normalized": -0.3533877271553985,
+          "radialFinite_Gyr_minus2": 993.026509050165,
+          "transverseFinite_Gyr_minus2": -1987.1409546788627,
+          "radialDifferenceFromLocal_normalized": -0.00017956955574571776,
+          "transverseDifferenceFromLocal_normalized": 0.0001656634378752247,
+          "finiteTraceMinusLocalTrace_normalized": 0.00015175732000473165
+        },
+        {
+          "baselineOverA": 0.15,
+          "radialFinite_normalized": 0.17515837383688437,
+          "transverseFinite_normalized": -0.35206706381725633,
+          "radialFinite_Gyr_minus2": 984.9362370560364,
+          "transverseFinite_Gyr_minus2": -1979.714708646806,
+          "radialDifferenceFromLocal_normalized": -0.0016183214597525163,
+          "transverseDifferenceFromLocal_normalized": 0.001486326776017441,
+          "finiteTraceMinusLocalTrace_normalized": 0.0013543320922823655
+        }
+      ]
+    },
+    {
+      "name": "radial_positive_maximum",
+      "input": {
+        "mass_Msun": 10000000000.0,
+        "scale_a_kpc": 2.0,
+        "RoverA": 1.224744871391589,
+        "R_kpc": 2.449489742783178
+      },
+      "local": {
+        "lambdaRadial_normalized": 0.20238577025077628,
+        "lambdaTransverse_normalized": -0.25298221281347033,
+        "trace_normalized": -0.3035786553761644,
+        "lambdaRadial_Gyr_minus2": 1138.0391049423595,
+        "lambdaTransverse_Gyr_minus2": -1422.5488811779494,
+        "trace_Gyr_minus2": -1707.0586574135393,
+        "density_Msun_per_kpc3": 30197527.26269222,
+        "poissonTraceResidual_normalized": 2e-80,
+        "regime": "radial stretching, transverse compression"
+      },
+      "finiteProbes": [
+        {
+          "baselineOverA": 0.005,
+          "radialFinite_normalized": 0.20238501130087436,
+          "transverseFinite_normalized": -0.25298126413313693,
+          "radialFinite_Gyr_minus2": 1138.034837277365,
+          "transverseFinite_Gyr_minus2": -1422.5435466363156,
+          "radialDifferenceFromLocal_normalized": -7.589499019076992e-07,
+          "transverseDifferenceFromLocal_normalized": 9.486803334238543e-07,
+          "finiteTraceMinusLocalTrace_normalized": 1.1384107649400093e-06
+        },
+        {
+          "baselineOverA": 0.05,
+          "radialFinite_normalized": 0.20230984295548696,
+          "transverseFinite_normalized": -0.25288737412137396,
+          "radialFinite_Gyr_minus2": 1137.612156787533,
+          "transverseFinite_Gyr_minus2": -1422.0155920038462,
+          "radialDifferenceFromLocal_normalized": -7.592729528930982e-05,
+          "transverseDifferenceFromLocal_normalized": 9.483869209640902e-05,
+          "finiteTraceMinusLocalTrace_normalized": 0.00011375008890350823
+        },
+        {
+          "baselineOverA": 0.15,
+          "radialFinite_normalized": 0.20170007725943548,
+          "transverseFinite_normalized": -0.2521307929121837,
+          "radialFinite_Gyr_minus2": 1134.1833722138983,
+          "transverseFinite_Gyr_minus2": -1417.7612464485428,
+          "radialDifferenceFromLocal_normalized": -0.000685692991340805,
+          "transverseDifferenceFromLocal_normalized": 0.0008514199012866114,
+          "finiteTraceMinusLocalTrace_normalized": 0.0010171468112324179
+        }
+      ]
+    },
+    {
+      "name": "outer",
+      "input": {
+        "mass_Msun": 10000000000.0,
+        "scale_a_kpc": 2.0,
+        "RoverA": 5.0,
+        "R_kpc": 10.0
+      },
+      "local": {
+        "lambdaRadial_normalized": 0.014215518671258903,
+        "lambdaTransverse_normalized": -0.00754292827454554,
+        "trace_normalized": -0.0008703378778321776,
+        "lambdaRadial_Gyr_minus2": 79.93554153972853,
+        "lambdaTransverse_Gyr_minus2": -42.41477714352942,
+        "trace_Gyr_minus2": -4.894012747330318,
+        "density_Msun_per_kpc3": 86574.10963568825,
+        "poissonTraceResidual_normalized": 1.46e-81,
+        "regime": "radial stretching, transverse compression"
+      },
+      "finiteProbes": [
+        {
+          "baselineOverA": 0.005,
+          "radialFinite_normalized": 0.014215524576243409,
+          "transverseFinite_normalized": -0.007542925554740489,
+          "radialFinite_Gyr_minus2": 79.9355747441543,
+          "transverseFinite_Gyr_minus2": -42.41476184974418,
+          "radialDifferenceFromLocal_normalized": 5.9049845071832974e-09,
+          "transverseDifferenceFromLocal_normalized": 2.719805050976425e-09,
+          "finiteTraceMinusLocalTrace_normalized": 1.1344594609136147e-08
+        },
+        {
+          "baselineOverA": 0.05,
+          "radialFinite_normalized": 0.01421610918602822,
+          "transverseFinite_normalized": -0.007542656302130982,
+          "radialFinite_Gyr_minus2": 79.93886207406598,
+          "transverseFinite_Gyr_minus2": -42.41324781049949,
+          "radialDifferenceFromLocal_normalized": 5.905147693187244e-07,
+          "transverseDifferenceFromLocal_normalized": 2.7197241455815145e-07,
+          "finiteTraceMinusLocalTrace_normalized": 1.1344595984350273e-06
+        },
+        {
+          "baselineOverA": 0.15,
+          "radialFinite_normalized": 0.014220834491213382,
+          "transverseFinite_normalized": -0.007540481111069074,
+          "radialFinite_Gyr_minus2": 79.96543302357908,
+          "transverseFinite_Gyr_minus2": -42.40101645408494,
+          "radialDifferenceFromLocal_normalized": 5.315819954480616e-06,
+          "transverseDifferenceFromLocal_normalized": 2.4471634764654684e-06,
+          "finiteTraceMinusLocalTrace_normalized": 1.0210146907411553e-05
+        }
+      ]
+    },
+    {
+      "name": "far_field",
+      "input": {
+        "mass_Msun": 10000000000.0,
+        "scale_a_kpc": 2.0,
+        "RoverA": 100.0,
+        "R_kpc": 200.0
+      },
+      "local": {
+        "lambdaRadial_normalized": 1.9994001124825024e-06,
+        "lambdaTransverse_normalized": -9.998500187478127e-07,
+        "trace_normalized": -2.9992501312303154e-10,
+        "lambdaRadial_Gyr_minus2": 0.0112428631302082,
+        "lambdaTransverse_Gyr_minus2": -0.005622274822001711,
+        "trace_Gyr_minus2": -1.6865137952209911e-06,
+        "density_Msun_per_kpc3": 0.029834092747145026,
+        "poissonTraceResidual_normalized": -7.6424e-85,
+        "regime": "radial stretching, transverse compression"
+      },
+      "finiteProbes": [
+        {
+          "baselineOverA": 0.005,
+          "radialFinite_normalized": 1.9994001149806283e-06,
+          "transverseFinite_normalized": -9.99850017810547e-07,
+          "radialFinite_Gyr_minus2": 0.011242863144255455,
+          "transverseFinite_Gyr_minus2": -0.005622274816731355,
+          "radialDifferenceFromLocal_normalized": 2.498125658426442e-15,
+          "transverseDifferenceFromLocal_normalized": 9.37265665277308e-16,
+          "finiteTraceMinusLocalTrace_normalized": 4.372656988981058e-15
+        },
+        {
+          "baselineOverA": 0.05,
+          "radialFinite_normalized": 1.9994003622950916e-06,
+          "transverseFinite_normalized": -9.998499250212534e-07,
+          "radialFinite_Gyr_minus2": 0.011242864534933911,
+          "transverseFinite_Gyr_minus2": -0.00562227429496619,
+          "radialDifferenceFromLocal_normalized": 2.49812589013305e-13,
+          "transverseDifferenceFromLocal_normalized": 9.372655927929203e-14,
+          "finiteTraceMinusLocalTrace_normalized": 4.372657075718891e-13
+        },
+        {
+          "baselineOverA": 0.15,
+          "radialFinite_normalized": 1.9994023607974887e-06,
+          "transverseFinite_normalized": -9.998491752093064e-07,
+          "radialFinite_Gyr_minus2": 0.011242875772749083,
+          "transverseFinite_Gyr_minus2": -0.005622270078684996,
+          "radialDifferenceFromLocal_normalized": 2.248314986259977e-12,
+          "transverseDifferenceFromLocal_normalized": 8.435385063547914e-13,
+          "finiteTraceMinusLocalTrace_normalized": 3.93539199896956e-12
+        }
+      ]
+    }
+  ],
+  "finiteProbeZeroShifts": [
+    {
+      "baselineOverA": 0.005,
+      "finiteRadialZero_RoverA": 0.707110218506461,
+      "localRadialZero_RoverA": 0.7071067811865476,
+      "shiftInRoverA": 3.437319913549483e-06
+    },
+    {
+      "baselineOverA": 0.05,
+      "finiteRadialZero_RoverA": 0.7074504664868029,
+      "localRadialZero_RoverA": 0.7071067811865476,
+      "shiftInRoverA": 0.00034368530025533
+    },
+    {
+      "baselineOverA": 0.15,
+      "finiteRadialZero_RoverA": 0.7101965592855687,
+      "localRadialZero_RoverA": 0.7071067811865476,
+      "shiftInRoverA": 0.003089778099021149
+    }
+  ],
+  "surfaceBrightnessCases": [
+    {
+      "name": "default",
+      "input": {
+        "totalApparentMagnitude": 20.0,
+        "angularScaleArcsec": 1.0,
+        "surfaceBrightnessLimit_mag_arcsec2": 25.0,
+        "deltaMuFromCenterForConstruction": null
+      },
+      "expected": {
+        "centralSurfaceBrightness_mag_arcsec2": 21.995449670895287,
+        "xIsophotal": 2.767293119578746,
+        "isophotalRadiusArcsec": 2.767293119578746,
+        "selectedLightFraction": 0.7632939922322407,
+        "lostLightFraction": 0.23670600776775924,
+        "isophotalMagnitude": 20.293270389672415,
+        "magnitudeOffset": 0.29327038967241376,
+        "selectedPositiveArea": true
+      }
+    },
+    {
+      "name": "same_flux_extended",
+      "input": {
+        "totalApparentMagnitude": 20.0,
+        "angularScaleArcsec": 10.0,
+        "surfaceBrightnessLimit_mag_arcsec2": 25.0,
+        "deltaMuFromCenterForConstruction": null
+      },
+      "expected": {
+        "centralSurfaceBrightness_mag_arcsec2": 26.995449670895287,
+        "xIsophotal": 0.0,
+        "isophotalRadiusArcsec": 0.0,
+        "selectedLightFraction": 0.0,
+        "lostLightFraction": 1.0,
+        "isophotalMagnitude": null,
+        "magnitudeOffset": null,
+        "selectedPositiveArea": false
+      }
+    },
+    {
+      "name": "same_flux_compact",
+      "input": {
+        "totalApparentMagnitude": 20.0,
+        "angularScaleArcsec": 0.1,
+        "surfaceBrightnessLimit_mag_arcsec2": 25.0,
+        "deltaMuFromCenterForConstruction": null
+      },
+      "expected": {
+        "centralSurfaceBrightness_mag_arcsec2": 16.995449670895287,
+        "xIsophotal": 7.372463305566837,
+        "isophotalRadiusArcsec": 0.7372463305566838,
+        "selectedLightFraction": 0.9947394261573562,
+        "lostLightFraction": 0.005260573842643779,
+        "isophotalMagnitude": 20.005726671509276,
+        "magnitudeOffset": 0.005726671509274298,
+        "selectedPositiveArea": true
+      }
+    },
+    {
+      "name": "boundary_exact",
+      "input": {
+        "totalApparentMagnitude": 20.0,
+        "angularScaleArcsec": 2.0,
+        "surfaceBrightnessLimit_mag_arcsec2": 23.500599649215193,
+        "deltaMuFromCenterForConstruction": "0"
+      },
+      "expected": {
+        "centralSurfaceBrightness_mag_arcsec2": 23.500599649215193,
+        "xIsophotal": 0.0,
+        "isophotalRadiusArcsec": 0.0,
+        "selectedLightFraction": 0.0,
+        "lostLightFraction": 1.0,
+        "isophotalMagnitude": null,
+        "magnitudeOffset": null,
+        "selectedPositiveArea": false
+      }
+    },
+    {
+      "name": "threshold_brighter_than_center",
+      "input": {
+        "totalApparentMagnitude": 20.0,
+        "angularScaleArcsec": 2.0,
+        "surfaceBrightnessLimit_mag_arcsec2": 23.400599649215195,
+        "deltaMuFromCenterForConstruction": "-0.1"
+      },
+      "expected": {
+        "centralSurfaceBrightness_mag_arcsec2": 23.500599649215193,
+        "xIsophotal": 0.0,
+        "isophotalRadiusArcsec": 0.0,
+        "selectedLightFraction": 0.0,
+        "lostLightFraction": 1.0,
+        "isophotalMagnitude": null,
+        "magnitudeOffset": null,
+        "selectedPositiveArea": false
+      }
+    },
+    {
+      "name": "just_inside_boundary",
+      "input": {
+        "totalApparentMagnitude": 20.0,
+        "angularScaleArcsec": 2.0,
+        "surfaceBrightnessLimit_mag_arcsec2": 23.500599659215194,
+        "deltaMuFromCenterForConstruction": "1e-8"
+      },
+      "expected": {
+        "centralSurfaceBrightness_mag_arcsec2": 23.500599649215193,
+        "xIsophotal": 9.210340371976183e-09,
+        "isophotalRadiusArcsec": 1.8420680743952367e-08,
+        "selectedLightFraction": 4.2415184623388324e-17,
+        "lostLightFraction": 1.0,
+        "isophotalMagnitude": 60.93119659568949,
+        "magnitudeOffset": 40.93119659568949,
+        "selectedPositiveArea": true
+      }
+    },
+    {
+      "name": "deep_isophote",
+      "input": {
+        "totalApparentMagnitude": 20.0,
+        "angularScaleArcsec": 2.0,
+        "surfaceBrightnessLimit_mag_arcsec2": 33.5005996492152,
+        "deltaMuFromCenterForConstruction": "10"
+      },
+      "expected": {
+        "centralSurfaceBrightness_mag_arcsec2": 23.500599649215193,
+        "xIsophotal": 9.210340371976184,
+        "isophotalRadiusArcsec": 18.420680743952367,
+        "selectedLightFraction": 0.9989789659628023,
+        "lostLightFraction": 0.0010210340371976183,
+        "isophotalMagnitude": 20.001109139951705,
+        "magnitudeOffset": 0.001109139951703894,
+        "selectedPositiveArea": true
+      }
+    },
+    {
+      "name": "one_scalelength",
+      "input": {
+        "totalApparentMagnitude": 20.0,
+        "angularScaleArcsec": 2.0,
+        "surfaceBrightnessLimit_mag_arcsec2": 24.586335853973324,
+        "deltaMuFromCenterForConstruction": "1.0857362047581295691278222972915127057359925145091664152861344579146616230221769"
+      },
+      "expected": {
+        "centralSurfaceBrightness_mag_arcsec2": 23.500599649215193,
+        "xIsophotal": 1.0,
+        "isophotalRadiusArcsec": 2.0,
+        "selectedLightFraction": 0.26424111765711533,
+        "lostLightFraction": 0.7357588823428847,
+        "isophotalMagnitude": 21.444999005958014,
+        "magnitudeOffset": 1.4449990059580136,
+        "selectedPositiveArea": true
+      }
+    },
+    {
+      "name": "three_scalelengths",
+      "input": {
+        "totalApparentMagnitude": 20.0,
+        "angularScaleArcsec": 2.0,
+        "surfaceBrightnessLimit_mag_arcsec2": 26.757808263489583,
+        "deltaMuFromCenterForConstruction": "3.2572086142743887073834668918745381172079775435274992458584033737439848690665307"
+      },
+      "expected": {
+        "centralSurfaceBrightness_mag_arcsec2": 23.500599649215193,
+        "xIsophotal": 3.0,
+        "isophotalRadiusArcsec": 6.0,
+        "selectedLightFraction": 0.8008517265285442,
+        "lostLightFraction": 0.19914827347145578,
+        "isophotalMagnitude": 20.24111970951236,
+        "magnitudeOffset": 0.24111970951236195,
+        "selectedPositiveArea": true
+      }
+    }
+  ],
+  "smallXFractionCases": [
+    {
+      "x": 0.0,
+      "f": 0.0,
+      "leadingHalfX2": 0.0,
+      "doubleNaive": 0.0
+    },
+    {
+      "x": 1e-12,
+      "f": 4.999999999996667e-25,
+      "leadingHalfX2": 5e-25,
+      "doubleNaive": 0.0
+    },
+    {
+      "x": 1e-08,
+      "f": 4.999999966666667e-17,
+      "leadingHalfX2": 5e-17,
+      "doubleNaive": 1.1102230246251565e-16
+    },
+    {
+      "x": 0.0001,
+      "f": 4.9996666791663335e-09,
+      "leadingHalfX2": 5e-09,
+      "doubleNaive": 4.999666680660653e-09
+    },
+    {
+      "x": 0.01,
+      "f": 4.966791334026589e-05,
+      "leadingHalfX2": 5e-05,
+      "doubleNaive": 4.9667913340156744e-05
+    },
+    {
+      "x": 1.0,
+      "f": 0.26424111765711533,
+      "leadingHalfX2": 0.5,
+      "doubleNaive": 0.26424111765711533
+    },
+    {
+      "x": 3.0,
+      "f": 0.8008517265285442,
+      "leadingHalfX2": 4.5,
+      "doubleNaive": 0.8008517265285442
+    },
+    {
+      "x": 10.0,
+      "f": 0.9995006007726127,
+      "leadingHalfX2": 50.0,
+      "doubleNaive": 0.9995006007726127
+    }
+  ],
+  "independentChecks": {
+    "poissonTraceMaxAbsResidual_normalized": 1e-79,
+    "cartesianTransverseFiniteVsClosedMaxAbsResidual_normalized": 1.1102230246251565e-16,
+    "areaIntegralChecks": [
+      {
+        "x": 0.001,
+        "directAreaIntegral": 4.996667916333403e-07,
+        "closedFraction": 4.996667916333403e-07,
+        "relativeResidual": 0.0
+      },
+      {
+        "x": 0.01,
+        "directAreaIntegral": 4.9667913340265896e-05,
+        "closedFraction": 4.966791334026589e-05,
+        "relativeResidual": 2.220446049250313e-16
+      },
+      {
+        "x": 0.1,
+        "directAreaIntegral": 0.004678840160444469,
+        "closedFraction": 0.004678840160444469,
+        "relativeResidual": 0.0
+      },
+      {
+        "x": 1,
+        "directAreaIntegral": 0.26424111765711533,
+        "closedFraction": 0.26424111765711533,
+        "relativeResidual": 0.0
+      },
+      {
+        "x": 3,
+        "directAreaIntegral": 0.8008517265285442,
+        "closedFraction": 0.8008517265285442,
+        "relativeResidual": 0.0
+      },
+      {
+        "x": 10,
+        "directAreaIntegral": 0.9995006007726126,
+        "closedFraction": 0.9995006007726127,
+        "relativeResidual": -1.1102230246251565e-16
+      }
+    ],
+    "potentialHessianChecks": [
+      {
+        "RoverA": 0.0,
+        "lambdaR_fromNegativePotentialHessian": -0.9999999999999999,
+        "lambdaT_fromNegativePotentialHessian": -0.9999999999999999,
+        "radialAbsoluteResidual_normalized": 7.5e-17,
+        "transverseAbsoluteResidual_normalized": 7.5e-17
+      },
+      {
+        "RoverA": 0.25,
+        "lambdaR_fromNegativePotentialHessian": -0.7519443599742365,
+        "lambdaT_fromNegativePotentialHessian": -0.9130752942544299,
+        "radialAbsoluteResidual_normalized": 2.914109630349982e-17,
+        "transverseAbsoluteResidual_normalized": 6.445237371207741e-17
+      },
+      {
+        "RoverA": 0.7071067811865476,
+        "lambdaR_fromNegativePotentialHessian": -2.822457316787201e-17,
+        "lambdaT_fromNegativePotentialHessian": -0.5443310539518174,
+        "radialAbsoluteResidual_normalized": -2.822457316787201e-17,
+        "transverseAbsoluteResidual_normalized": 2.7216552697590866e-17
+      },
+      {
+        "RoverA": 1.0,
+        "lambdaR_fromNegativePotentialHessian": 0.17677669529663687,
+        "lambdaT_fromNegativePotentialHessian": -0.35355339059327373,
+        "radialAbsoluteResidual_normalized": -1.4363106492851747e-17,
+        "transverseAbsoluteResidual_normalized": 1.3258252147247766e-17
+      },
+      {
+        "RoverA": 5.0,
+        "lambdaR_fromNegativePotentialHessian": 0.014215518671258903,
+        "lambdaT_fromNegativePotentialHessian": -0.00754292827454554,
+        "radialAbsoluteResidual_normalized": 4.7239862870994553e-20,
+        "transverseAbsoluteResidual_normalized": 2.175844694580444e-20
+      },
+      {
+        "RoverA": 100.0,
+        "lambdaR_fromNegativePotentialHessian": 1.9994001124825024e-06,
+        "lambdaT_fromNegativePotentialHessian": -9.998500187478127e-07,
+        "radialAbsoluteResidual_normalized": 1.998500524868777e-26,
+        "transverseAbsoluteResidual_normalized": 7.498125328075788e-27
+      }
+    ],
+    "potentialHessianMaxAbsResidual_normalized": 7.5e-17
+  },
+  "boundaryConstructionNote": "surfaceBrightnessCases with deltaMuFromCenterForConstruction use exact high-precision delta relative to central SB; their rounded numeric mu limits can differ at the final machine ulp. Exact boundary tests should set muLimit to the same computed mu0; tiny-positive-x tests should test the fraction kernel directly."
+}

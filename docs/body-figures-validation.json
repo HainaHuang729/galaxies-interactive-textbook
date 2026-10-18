@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-10-16T11:58:50.979Z",
+  "figures": 32,
+  "programFigures": 30,
+  "observationGroups": 2,
+  "widths": [
+    1440,
+    390,
+    320
+  ],
+  "themes": [
+    "afterglow",
+    "moon"
+  ],
+  "renders": 192,
+  "scriptAndResourceErrors": [],
+  "textOverflows": 0,
+  "horizontalOverflows": 0,
+  "interactions": [
+    {
+      "id": "body-figure-4-linear-6",
+      "dialogClosed": true,
+      "pagePreserved": true,
+      "focusReturned": true
+    },
+    {
+      "id": "body-figure-2-observing-2",
+      "mode": "1",
+      "visible": 1
+    },
+    {
+      "id": "body-figure-2-observing-2",
+      "dialogClosed": true,
+      "pagePreserved": true,
+      "focusReturned": true
+    },
+    {
+      "id": "body-figure-12-clusters-22",
+      "dialogClosed": true,
+      "pagePreserved": true,
+      "focusReturned": true
+    },
+    {
+      "growthValue": "0.42",
+      "growthReadoutPreserved": true,
+      "hashRestored": true
+    }
+  ]
+}

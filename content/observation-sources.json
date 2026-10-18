@@ -1,0 +1,594 @@
+{
+  "checked_on": "2026-10-17",
+  "kind": "real_observation_assets",
+  "asset_processing": "Fourteen published source JPEGs preserved byte-for-byte in eleven observation groups. No cropping, reprojection, recoloring or image generation applied. The official products can include assigned colors and inferred fields; captions state the distinction.",
+  "policy_sources": [
+    {
+      "url": "https://chandra.harvard.edu/photo/image_use.html",
+      "basis": "Chandra/SAO content may be reused under NASA guidelines with all appropriate acknowledgements; third-party material retains its own terms. Preserve each exact panel credit."
+    },
+    {
+      "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "basis": "NASA guidelines permit factual educational uses including textbooks and websites without explicit permission, with source acknowledgement, subject to third-party exceptions and no implied endorsement."
+    },
+    {
+      "url": "https://esahubble.org/copyright/",
+      "basis": "ESA/Hubble materials are released under CC BY 4.0 with clear, visible, unaltered full credits. The matching 2008 NGC 1275 observation and composite are also published by ESA/Hubble; their pages are listed below."
+    }
+  ],
+  "groups": [
+    {
+      "id": "m51-multiwavelength",
+      "chapter": 2,
+      "target": "M51 / NGC 5194 and companion NGC 5195",
+      "title": "同一座星系，三种波段",
+      "source_page_url": "https://chandra.harvard.edu/photo/2015/iyl/more.html",
+      "release_page_url": "https://chandra.harvard.edu/photo/2015/iyl/",
+      "release_date": "2015-01-22",
+      "caption_zh": "这是同一目标 M51 的真实观测图。可见光显示恒星光和尘埃暗带；紫外图突出高温年轻恒星群，伴星在这一波段较暗；8 微米红外图突出尘埃相关辐射。绿、蓝、红是发布方为不同波段指定的显示色，不是肉眼颜色。",
+      "teaching_question_zh": "对照主星系的旋臂与上方伴星：哪些结构在可见光中明亮，却在紫外图中较暗？为什么不能只凭一幅图判断恒星质量分布？",
+      "registration": {
+        "status": "same_official_release_display_layers",
+        "same_target": true,
+        "same_export_dimensions": true,
+        "visually_matched_orientation_and_field": true,
+        "metadata_evidence": "All three JPEGs carry identical AVM Spatial.ReferenceValue, Spatial.ReferenceDimension, Spatial.ReferencePixel and Spatial.Scale; all were prepared as constituent layers of the same official multiwavelength composite. The galaxy nuclei, companion location and spiral winding occupy the same display positions.",
+        "reference_value_deg": [
+          202.4682856,
+          47.2134616
+        ],
+        "metadata_reference_dimension": [
+          2384,
+          3600
+        ],
+        "metadata_reference_pixel": [
+          1193,
+          1801
+        ],
+        "metadata_scale_deg_per_reference_pixel": [
+          4.44411e-05,
+          4.4441128e-05
+        ],
+        "field_limit_zh": "采用发布方同一多波段合成图的分层导出，保持整幅画面，不另行裁剪。可作同视野形态对照；不同仪器分辨率、曝光、显示拉伸和波段响应不同，亮度不能直接横向定量比较。AVM 参考尺寸与网页 JPEG 的长宽比有小幅差别，不能据此把网页像素当作精密天球坐标。",
+        "recommended_ui": "Three equal full-frame panels or an accessible band toggle; object-fit: contain. Do not stretch the image or infer flux ratios from display RGB."
+      },
+      "images": [
+        {
+          "id": "m51-optical",
+          "original_image_url": "https://chandra.harvard.edu/photo/2015/iyl/iyl_m51_optical.jpg",
+          "width": 600,
+          "height": 864,
+          "band": "Optical V-band; AVM central wavelength 555 nm",
+          "instrument": "Hubble ACS/WFC",
+          "display_color": "Green, assigned by original release",
+          "credit": "Optical: NASA/STScI",
+          "reuse_basis": "NASA/STScI educational outreach image, supplied in the official Chandra release; NASA educational media guidelines and Chandra image-use policy. HubbleSite copyright URL currently redirects to NASA media guidelines.",
+          "alt_zh": "M51 的哈勃可见光观测，以绿色显示，主星系的明亮核、旋臂和尘埃暗带清楚，上方有较亮伴星。",
+          "sha256": "567e2e227fda4e2fef6f22b33fe99686f3bc102567c31815aed58f3afcb87568",
+          "bytes": 516719,
+          "path": "assets/observations/m51-optical.jpg"
+        },
+        {
+          "id": "m51-ultraviolet",
+          "original_image_url": "https://chandra.harvard.edu/photo/2015/iyl/iyl_m51_uv.jpg",
+          "width": 600,
+          "height": 864,
+          "band": "Far-ultraviolet; AVM central wavelength 150 nm",
+          "instrument": "GALEX FUV",
+          "display_color": "Blue, assigned by original release",
+          "credit": "UV: NASA/JPL-Caltech",
+          "reuse_basis": "NASA GALEX educational outreach image supplied in the official Chandra release; NASA educational media guidelines and Chandra image-use policy.",
+          "alt_zh": "M51 的 GALEX 远紫外观测，以蓝色显示，旋臂中的年轻恒星区域呈斑块状，上方伴星很暗。",
+          "sha256": "3e227304c339595e198e5efae4c67037b897b09d28d30e379ca648c2d6fdfa20",
+          "bytes": 160071,
+          "path": "assets/observations/m51-ultraviolet.jpg"
+        },
+        {
+          "id": "m51-infrared",
+          "original_image_url": "https://chandra.harvard.edu/photo/2015/iyl/iyl_m51_ir.jpg",
+          "width": 600,
+          "height": 864,
+          "band": "Mid-infrared; AVM central wavelength 8000 nm = 8 micrometres",
+          "instrument": "Spitzer IRAC",
+          "display_color": "Red, assigned by original release",
+          "credit": "IR: NASA/JPL-Caltech",
+          "reuse_basis": "NASA Spitzer educational outreach image supplied in the official Chandra release; NASA educational media guidelines and Chandra image-use policy.",
+          "alt_zh": "M51 的斯皮策 8 微米红外观测，以红色显示，旋臂呈细碎明亮的尘埃辐射结构。",
+          "sha256": "65f20ea270834815575961b19ba1cc913897e96e062868c116386f9db1b3cbd2",
+          "bytes": 289434,
+          "path": "assets/observations/m51-infrared.jpg"
+        }
+      ]
+    },
+    {
+      "id": "perseus-optical-xray",
+      "chapter": 8,
+      "target": "Perseus galaxy cluster core / NGC 1275 (Perseus A)",
+      "title": "恒星之间，还有一片热气体",
+      "source_page_url": "https://chandra.harvard.edu/photo/2008/perseus/more.html",
+      "release_page_url": "https://chandra.harvard.edu/photo/2008/perseus/",
+      "release_date": "2008-08-20",
+      "additional_official_sources": [
+        "https://esahubble.org/images/heic0817a/",
+        "https://esahubble.org/images/heic0817b/"
+      ],
+      "caption_zh": "英仙座星系团核心的两幅真实观测。哈勃可见光图显示中心星系 NGC 1275、恒星光与细丝；钱德拉 X 射线图显示弥散的高温团内气体，以及中心附近的空腔。紫色是 X 射线的显示色，不能把可见光中较暗的区域理解为空无物质。这里展示的是星系团核心，不是整个星系团。",
+      "teaching_question_zh": "找到两幅图中相同的中心：X 射线弥散发射是否只存在于可见光明亮的恒星区域？空腔意味着没有气体，还是 X 射线发射较弱？",
+      "registration": {
+        "status": "same_official_release_display_layers",
+        "same_target": true,
+        "same_export_dimensions": true,
+        "visually_matched_orientation_and_field": true,
+        "metadata_evidence": "Both JPEGs carry identical AVM Spatial.ReferenceValue, Spatial.ReferenceDimension, Spatial.ReferencePixel, Spatial.Scale and Spatial.CDMatrix. The central source and frame orientation match; the official release explicitly combines the corresponding data into a composite.",
+        "release_reported_field": "3.87 arcmin across (from the main release fast-facts; approximate)",
+        "reference_value_deg": [
+          49.95158,
+          41.5113745
+        ],
+        "metadata_reference_dimension": [
+          4633,
+          3590
+        ],
+        "metadata_reference_pixel": [
+          2317.5,
+          1796
+        ],
+        "metadata_scale_deg_per_reference_pixel": [
+          1.38646e-05,
+          1.3864575e-05
+        ],
+        "metadata_cd_matrix": [
+          -1.3733453283e-05,
+          -2.0482609856e-06,
+          -2.052044958e-06,
+          1.3712442546e-05
+        ],
+        "field_limit_zh": "采用同一发布中合成图的可见光与 X 射线分层导出，整幅保留，中心与朝向一致。主发布给出的视野宽约 3.87 角分，展示中心星系及其周围热气体。发布图、AVM 参考尺寸与网页导出之间存在尺寸舍入差异，因此适于形态教学，不适于按 JPEG 像素精确量角或测光。不同波段的亮度拉伸和角分辨率不同。",
+        "recommended_ui": "Two full-frame side-by-side panels or band toggle; object-fit: contain. Label X-rays as hot intracluster gas and visible light as central galaxy/filaments. Do not label either picture as the entire cluster or as a dark-matter map."
+      },
+      "images": [
+        {
+          "id": "perseus-optical",
+          "original_image_url": "https://chandra.harvard.edu/photo/2008/perseus/perseus_optic.jpg",
+          "width": 720,
+          "height": 564,
+          "band": "Optical B/V/r; AVM central wavelengths 435/550/625 nm",
+          "instrument": "Hubble ACS",
+          "credit": "NASA/ESA/Hubble Heritage (STScI/AURA) & Univ. of Cambridge/IoA/A. Fabian",
+          "reuse_basis": "Official NASA/ESA Hubble observation. NASA educational media guidelines; corresponding observation also available through ESA/Hubble under its CC BY 4.0 reuse policy. Preserve the exact Chandra panel credit above and link both the source and applicable reuse policy.",
+          "alt_zh": "英仙座星系团核心 NGC 1275 的哈勃可见光图，明亮椭圆状星系周围分布红色细丝和前景点源。",
+          "sha256": "7bce76b920c933f6cf3f596a6095572313d439557a76bf35514890fde43a016b",
+          "bytes": 507891,
+          "path": "assets/observations/perseus-optical.jpg"
+        },
+        {
+          "id": "perseus-xray",
+          "original_image_url": "https://chandra.harvard.edu/photo/2008/perseus/perseus_xray.jpg",
+          "width": 720,
+          "height": 564,
+          "band": "X-ray 0.3–7 keV (main release)",
+          "instrument": "Chandra ACIS",
+          "display_color": "Violet, assigned by original release",
+          "credit": "NASA/CXC/IoA/A.Fabian et al",
+          "reuse_basis": "NASA/SAO Chandra outreach material; Chandra image-use policy and NASA educational media guidelines with source acknowledgement.",
+          "alt_zh": "英仙座星系团核心的钱德拉 X 射线图，以紫色显示弥散高温气体，中心点源两侧可见较暗空腔。",
+          "sha256": "01570fa9a6ac659ad598d1ee6e5e6d2ce2392abe4c0540ccbc327c99bc2cb46d",
+          "bytes": 244964,
+          "path": "assets/observations/perseus-xray.jpg"
+        }
+      ]
+    },
+    {
+      "id": "planck-cmb-2013",
+      "chapter": 3,
+      "target": "Planck CMB temperature anisotropy map, 2013 release",
+      "title": "微波背景：整片天空的温度起伏",
+      "source_page_url": "https://www.esa.int/ESA_Multimedia/Images/2013/03/Planck_CMB",
+      "release_page_url": "https://www.esa.int/ESA_Multimedia/Images/2013/03/Planck_CMB",
+      "release_date": "2013-03-21",
+      "caption_zh": "Planck 的微波观测经前景分离后，得到这幅微波背景温度各向异性全天图。橙红与蓝色编码相对较热与较冷的温度起伏；椭圆是把整片天空展开到平面的投影，不是宇宙的外形或边界。",
+      "teaching_question_zh": "把它与热历史节点对照：我们接收到的是不同天球方向的早期辐射，还是同一时刻宇宙的三维俯视图？",
+      "scope_zh": "这是一份处理后的观测产品，不是直接的早期物质密度照片。温度起伏还包含声学、速度及引力等效应，不能把颜色逐像素等同于密度。网页图没有数值色标，不用于读取微开尔文温差、测角或拟合宇宙学参数。2013 年观测作为 2010 年教材主题的补充，不改写实验参数。",
+      "kind_label": "观测数据产品 · 全天投影",
+      "registration": {
+        "status": "single_official_release_product",
+        "processing": "Published JPEG preserved byte-for-byte. No generated pixels, crop, recoloring, registration or derived measurement."
+      },
+      "policy_sources": [
+        {
+          "url": "https://www.esa.int/ESA_Multimedia/Terms_and_conditions_of_use_of_images_and_videos_available_on_the_esa_website",
+          "label": "ESA 教育使用说明",
+          "basis": "Educational use of this ESA/Planck image with full credit under the ESA Standard Licence; no endorsement implied."
+        }
+      ],
+      "images": [
+        {
+          "id": "planck-cmb-2013",
+          "path": "assets/observations/planck-cmb-2013.jpg",
+          "bytes": 2373272,
+          "width": 1920,
+          "height": 960,
+          "sha256": "75a2ecdd593ccaf092ffe7a594c5283fd6d6529ed084d063956deb8859ed4448",
+          "original_image_url": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2013/03/planck_cmb/12583930-4-eng-GB/Planck_CMB.jpg",
+          "fullPath": "assets/observations/planck-cmb-2013.jpg",
+          "label": "Planck · 2013 年温度各向异性图",
+          "alt": "Planck 的微波背景全天温度起伏图：椭圆投影内布满橙红与蓝色斑纹，外围白色区域不代表天体或天空边界。",
+          "alt_zh": "Planck 的微波背景全天温度起伏图：椭圆投影内布满橙红与蓝色斑纹，外围白色区域不代表天体或天空边界。",
+          "description": "Planck；前景分离后的微波背景温度产品",
+          "credit": "ESA and the Planck Collaboration (© ESA)",
+          "band": "Microwave, foreground-separated CMB temperature product",
+          "instrument": "Planck；前景分离后的微波背景温度产品",
+          "display_color": "Orange/red and blue encode relatively warmer and cooler temperature fluctuations, not visible-light colors.",
+          "reuse_basis": "Educational use of this ESA/Planck image with full credit under the ESA Standard Licence; no endorsement implied.",
+          "distribution": "external_reference_only",
+          "distribution_note": "公开源码及离线包不分发此ESA Standard Licence图像；保留官方观测链接。"
+        }
+      ]
+    },
+    {
+      "id": "cosmic-horseshoe",
+      "chapter": 6,
+      "target": "Cosmic Horseshoe / foreground LRG 3-757 and lensed background galaxy",
+      "title": "宇宙马蹄：真实天空中的透镜弧",
+      "source_page_url": "https://esahubble.org/images/potw1151a/",
+      "release_page_url": "https://esahubble.org/images/potw1151a/",
+      "release_date": "2011-12-19",
+      "caption_zh": "画面右侧偏下的红色前景星系外，蓝色背景星系的光被引力偏折，形成近乎闭合的马蹄形透镜弧。这条弧是背景源的像，不能当作环绕前景星系的物质环或恒星轨道。",
+      "teaching_question_zh": "先找到红色透镜星系，再沿蓝色弧追踪背景源的像；它与理想点质量实验中的完全对齐环有什么相似和不同？",
+      "scope_zh": "该图采用发布方的可见光与近红外合成。实际透镜是有延展结构的星系，不能直接用本章点质量模型拟合；有限源大小、透镜质量分布与对齐程度都会影响像。网页图仅供形态对照，不从环半径读取质量，也不凭显示颜色确定年龄。",
+      "kind_label": "真实观测 · 可见光与近红外合成",
+      "registration": {
+        "status": "single_official_release_product",
+        "processing": "Published JPEG preserved byte-for-byte. No generated pixels, crop, recoloring, registration or derived measurement."
+      },
+      "policy_sources": [
+        {
+          "url": "https://esahubble.org/copyright/",
+          "label": "ESA/Hubble · CC BY 4.0",
+          "basis": "Official ESA/Hubble images may be reused under CC BY 4.0 with the full unaltered credit visible and linked."
+        }
+      ],
+      "images": [
+        {
+          "id": "cosmic-horseshoe",
+          "path": "assets/observations/cosmic-horseshoe.jpg",
+          "bytes": 235612,
+          "width": 1280,
+          "height": 1018,
+          "sha256": "5a365f2637d65f76d11f58d0a46f150dbe76db5705027682d6cd6d381553c91c",
+          "original_image_url": "https://cdn.esahubble.org/archives/images/screen/potw1151a.jpg",
+          "fullPath": "assets/observations/cosmic-horseshoe.jpg",
+          "label": "宇宙马蹄 · Hubble WFC3",
+          "alt": "哈勃观测中的宇宙马蹄：画面右侧偏下的红色前景星系被一条蓝色、近乎闭合的背景星系透镜弧包围。",
+          "alt_zh": "哈勃观测中的宇宙马蹄：画面右侧偏下的红色前景星系被一条蓝色、近乎闭合的背景星系透镜弧包围。",
+          "description": "Hubble WFC3；可见光 B/V 与近红外 I 波段合成",
+          "credit": "ESA/Hubble & NASA",
+          "band": "Optical B/V and near-infrared I, Hubble WFC3",
+          "instrument": "Hubble WFC3；可见光 B/V 与近红外 I 波段合成",
+          "display_color": "Published optical/infrared composite; display colors are not direct measurements of age or mass.",
+          "reuse_basis": "Official ESA/Hubble images may be reused under CC BY 4.0 with the full unaltered credit visible and linked."
+        }
+      ]
+    },
+    {
+      "id": "bullet-cluster-composite",
+      "chapter": 7,
+      "target": "1E 0657-56 / Bullet Cluster",
+      "title": "子弹星系团：气体与透镜质量的错位",
+      "source_page_url": "https://chandra.harvard.edu/photo/2006/1e0657/",
+      "release_page_url": "https://chandra.harvard.edu/photo/2006/1e0657/",
+      "release_date": "2006-08-21",
+      "caption_zh": "发布方把三种证据叠加在同一视野：白橙色是光学天体，粉色是 X 射线发射的热气体，蓝色是由背景天体形变重建的投影质量分布。热气体与主要质量集中区的错位，是研究暗物质的重要观测证据。",
+      "teaching_question_zh": "先区分发光气体与重建质量，再比较它们的位置；蓝色层是望远镜直接拍到的暗物质发光吗？",
+      "scope_zh": "蓝色不是暗物质的直接照片，也不是纯暗物质密度的逐像素测量；透镜反演约束视线方向上投影的总质量，并有模型与测量不确定性。这是碰撞中的非平衡星系团，不能把平滑、球对称、平衡的 NFW 图景机械套用到整个系统，也不能用此图直接读出暗物质自相互作用截面。",
+      "kind_label": "多波段观测＋质量反演",
+      "registration": {
+        "status": "single_official_release_product",
+        "processing": "Published JPEG preserved byte-for-byte. No generated pixels, crop, recoloring, registration or derived measurement."
+      },
+      "policy_sources": [
+        {
+          "url": "https://chandra.harvard.edu/photo/image_use.html",
+          "basis": "Chandra/SAO content may be reused under NASA guidelines with all appropriate acknowledgements; third-party material retains its own terms. Preserve each exact panel credit.",
+          "label": "Chandra 图像使用说明"
+        },
+        {
+          "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+          "basis": "NASA guidelines permit factual educational uses including textbooks and websites without explicit permission, with source acknowledgement, subject to third-party exceptions and no implied endorsement.",
+          "label": "NASA 图像政策"
+        }
+      ],
+      "images": [
+        {
+          "id": "bullet-cluster-composite",
+          "path": "assets/observations/bullet-cluster-composite.jpg",
+          "bytes": 484920,
+          "width": 720,
+          "height": 520,
+          "sha256": "7929c07bf960ca90eeb759f59085eb7faa25df6f50bda5edc71b64f5a32e298b",
+          "original_image_url": "https://chandra.harvard.edu/photo/2006/1e0657/1e0657.jpg",
+          "fullPath": "assets/observations/bullet-cluster-composite.jpg",
+          "label": "子弹星系团 · 光学 / X 射线 / 透镜质量",
+          "alt": "子弹星系团合成观测：白橙色光学天体背景上叠加粉色热气体和两侧蓝色透镜质量重建区域，它们的主要集中位置不同。",
+          "alt_zh": "子弹星系团合成观测：白橙色光学天体背景上叠加粉色热气体和两侧蓝色透镜质量重建区域，它们的主要集中位置不同。",
+          "description": "Chandra ACIS + Hubble/Magellan 光学观测 + 引力透镜质量重建",
+          "credit": "X-ray: NASA/CXC/CfA/M.Markevitch et al.; Optical: NASA/STScI; Magellan/U.Arizona/D.Clowe et al.; Lensing Map: NASA/STScI; ESO WFI; Magellan/U.Arizona/D.Clowe et al.",
+          "band": "Optical, X-ray, and reconstructed projected lensing mass",
+          "instrument": "Chandra ACIS + Hubble/Magellan 光学观测 + 引力透镜质量重建",
+          "display_color": "Pink: X-ray emitting hot gas; blue: lensing-derived projected mass; optical: white/orange galaxies.",
+          "reuse_basis": "Chandra/SAO content may be reused under NASA guidelines with all appropriate acknowledgements; third-party material retains its own terms. Preserve each exact panel credit."
+        }
+      ]
+    },
+    {
+      "id": "coma-cluster-field",
+      "chapter": 15,
+      "target": "Coma cluster / Abell 1656, HST ACS field",
+      "title": "后发座星系团：环境中的星系样本",
+      "source_page_url": "https://esahubble.org/images/heic0813a/",
+      "release_page_url": "https://esahubble.org/images/heic0813a/",
+      "release_date": "2008-06-10",
+      "caption_zh": "哈勃拍摄的后发座星系团局部视场中，可见多个平滑、偏暖色的星系，也有形态不同的天体。它为“密集环境”提供直观背景，但一张局部照片本身还不是经过选择函数与成员确认的星系目录。",
+      "teaching_question_zh": "哪些判断可以从形态直接提出，哪些必须加入距离、红移、质量及样本选择后才能比较？",
+      "scope_zh": "这不是整个星系团，也不是质量完备样本；前景恒星和背景星系可能进入视野。不能把所有小光点都判作团成员，不能按本图直接计算红色星系比例、成员数或环境淬火效率。星系颜色也不能独自给出年龄，环境相关不等于唯一因果机制。",
+      "kind_label": "真实观测 · 星系团局部视场",
+      "registration": {
+        "status": "single_official_release_product",
+        "processing": "Published JPEG preserved byte-for-byte. No generated pixels, crop, recoloring, registration or derived measurement."
+      },
+      "policy_sources": [
+        {
+          "url": "https://esahubble.org/copyright/",
+          "label": "ESA/Hubble · CC BY 4.0",
+          "basis": "Official ESA/Hubble images may be reused under CC BY 4.0 with the full unaltered credit visible and linked."
+        }
+      ],
+      "images": [
+        {
+          "id": "coma-cluster-field",
+          "path": "assets/observations/coma-cluster-field.jpg",
+          "bytes": 5884258,
+          "width": 4000,
+          "height": 2840,
+          "sha256": "996bdfb178dc5e9cc25cd0518ec801e2c2c8dbaa0a02378e0424a56915c32045",
+          "original_image_url": "https://cdn.esahubble.org/archives/images/publicationjpg/heic0813a.jpg",
+          "fullPath": "assets/observations/coma-cluster-field.jpg",
+          "label": "后发座星系团局部 · Hubble ACS",
+          "alt": "哈勃后发座星系团局部观测：深色背景中有多座大小不同的暖色平滑星系，以及部分较蓝、扁平或具有旋臂的天体。",
+          "alt_zh": "哈勃后发座星系团局部观测：深色背景中有多座大小不同的暖色平滑星系，以及部分较蓝、扁平或具有旋臂的天体。",
+          "description": "Hubble ACS；F475W（B）与 F814W（I）合成",
+          "credit": "NASA, ESA, and the Hubble Heritage Team (STScI/AURA). Acknowledgment: D. Carter (Liverpool John Moores University) and the Coma HST ACS Treasury Team.",
+          "band": "Hubble ACS F475W and F814W",
+          "instrument": "Hubble ACS；F475W（B）与 F814W（I）合成",
+          "display_color": "Published two-filter optical/near-infrared display composite; not a mass or membership map.",
+          "reuse_basis": "Official ESA/Hubble images may be reused under CC BY 4.0 with the full unaltered credit visible and linked."
+        }
+      ]
+    },
+    {
+      "id": "hh30-webb-disk-jet",
+      "chapter": 9,
+      "target": "HH 30, edge-on protoplanetary disk and outflows",
+      "title": "HH 30：尘埃盘与盘面外的喷流",
+      "source_page_url": "https://esawebb.org/images/potm2501a/",
+      "release_page_url": "https://esawebb.org/images/potm2501a/",
+      "release_date": "2025-02-04",
+      "kind_label": "真实观测 · 红外多波段合成",
+      "caption_zh": "HH 30 的红外观测显示近侧视的尘埃盘、盘面外的细喷流，以及更宽的外流和散射星云。中央暗带遮挡了年轻恒星，亮雾状结构仍可呈现被尘埃散射的星光；画面颜色是不同红外波段的显示编码。",
+      "scope_zh": "本例是年轻恒星的盘与外流系统，不能把图中的亮区直接当成本节电离氢区实验的均匀球。投影、尘埃散射和不同波段分辨率共同影响外观；不能从显示色直接测温、从暗带宽度直接读盘质量，或把亮结认定为行星。2025 年观测是对 2010 年教材主题的补充。",
+      "teaching_question_zh": "先辨认中央暗带，再沿细喷流向上观察：为什么遮挡恒星的尘埃盘周围，仍能看见明亮星云？",
+      "policy_sources": [
+        {
+          "url": "https://esawebb.org/copyright/",
+          "label": "ESA/Webb · CC BY 4.0",
+          "basis": "Official ESA/Webb observation; CC BY 4.0, full unaltered linked credit visible beside the image."
+        }
+      ],
+      "registration": {
+        "status": "single_official_release_product",
+        "processing": "Published JPEG retained byte-for-byte. No cropping, rotation, recoloring, generated pixels, or derived measurements."
+      },
+      "images": [
+        {
+          "id": "hh30-webb-disk-jet",
+          "path": "assets/observations/hh30-webb-disk-jet.jpg",
+          "bytes": 127060,
+          "sha256": "77f9ab3c7ed003fd12683e486f01575d661f87e0ba7cea3269d6ce5b53b1a2c8",
+          "width": 1173,
+          "height": 1173,
+          "original_image_url": "https://cdn.esawebb.org/archives/images/large/potm2501a.jpg",
+          "fullPath": "assets/observations/hh30-webb-disk-jet.jpg",
+          "label": "HH 30 · Webb NIRCam / MIRI",
+          "description": "Webb NIRCam 与 MIRI；近、中红外波段合成",
+          "credit": "ESA/Webb, NASA & CSA, Tazaki et al.",
+          "band": "NIRCam 2.0/4.44 micrometres and MIRI 7.7/12/21 micrometres, as listed in the official release",
+          "instrument": "Webb NIRCam 与 MIRI；近、中红外波段合成",
+          "display_color": "Assigned display colors for several infrared filters; not visible-light colors or a calibrated temperature map.",
+          "reuse_basis": "Official ESA/Webb observation; CC BY 4.0, full unaltered linked credit visible beside the image.",
+          "alt": "HH 30 的 Webb 红外合成图：中央横向暗尘埃带上下有明亮散射星云，一束细喷流向上延伸，更宽的弥散外流向两侧展开。",
+          "alt_zh": "HH 30 的 Webb 红外合成图：中央横向暗尘埃带上下有明亮散射星云，一束细喷流向上延伸，更宽的弥散外流向两侧展开。"
+        }
+      ]
+    },
+    {
+      "id": "tycho-remnant-2019",
+      "chapter": 10,
+      "target": "Tycho supernova remnant / SN 1572, Chandra X-ray-only release layer",
+      "title": "第谷遗迹：超新星之后的高能物质",
+      "source_page_url": "https://chandra.harvard.edu/photo/2019/tycho/more.html",
+      "release_page_url": "https://chandra.harvard.edu/photo/2019/tycho/more.html",
+      "release_date": "2019-10-17",
+      "kind_label": "真实观测 · X 射线显示色",
+      "caption_zh": "Ia 型第谷超新星遗迹的 X 射线图展示爆炸之后被激波加热、具有团块结构的物质。它把恒星反馈的能量与物质回收连接到可观测遗迹；颜色组合了不同能段和选定硅谱线的多普勒信息，并不是一张统一的温度图。",
+      "scope_zh": "第谷是 Ia 型白矮星热核爆炸的遗迹，不能混同于大质量恒星的核心坍缩超新星。本图只作反馈过程的观测补充，不能据亮度或表观半径直接读出能量耦合效率、金属产额或套用 IMF 平均的核心坍缩事件率。红蓝也不能逐点当作同一速度标尺；本图采用纯 X 射线图层。",
+      "teaching_question_zh": "把明亮外缘与内部团块分开观察：能量源的存在，是否足以说明周围气体最终有多少会逃离星系？",
+      "policy_sources": [
+        {
+          "url": "https://chandra.harvard.edu/photo/image_use.html",
+          "basis": "Chandra/SAO content may be reused under NASA guidelines with all appropriate acknowledgements; third-party material retains its own terms. Preserve each exact panel credit.",
+          "label": "Chandra 图像使用说明"
+        }
+      ],
+      "registration": {
+        "status": "single_official_release_product",
+        "processing": "Published JPEG retained byte-for-byte. No cropping, rotation, recoloring, generated pixels, or derived measurements."
+      },
+      "images": [
+        {
+          "id": "tycho-remnant-2019",
+          "path": "assets/observations/tycho-remnant-2019.jpg",
+          "bytes": 329729,
+          "sha256": "1f06f6eb8b202f6548d2ee4c4f3508356b7ba9251311803b83a480c246b01846",
+          "width": 864,
+          "height": 865,
+          "original_image_url": "https://chandra.harvard.edu/photo/2019/tycho/tycho_xray.jpg",
+          "fullPath": "assets/observations/tycho-remnant-2019.jpg",
+          "label": "第谷超新星遗迹 · Chandra X 射线",
+          "description": "Chandra ACIS；发布方 X 射线图层",
+          "credit": "X-ray: NASA/CXC/RIKEN & GSFC/T. Sato et al",
+          "band": "Chandra X-ray broad bands plus selected Doppler-shifted silicon-line bands; optical layer not included",
+          "instrument": "Chandra ACIS；发布方 X 射线图层",
+          "display_color": "Release-specific X-ray energy and selected silicon Doppler encodings; colors cannot all be interpreted as one temperature or velocity scale.",
+          "reuse_basis": "Chandra/SAO content may be reused under NASA guidelines with all appropriate acknowledgements; third-party material retains its own terms. Preserve each exact panel credit.",
+          "alt": "第谷超新星遗迹的 Chandra X 射线图：暗背景中有近圆形的明亮外缘与内部多彩团块，颜色来自发布方的能段及部分谱线编码。",
+          "alt_zh": "第谷超新星遗迹的 Chandra X 射线图：暗背景中有近圆形的明亮外缘与内部多彩团块，颜色来自发布方的能段及部分谱线编码。"
+        }
+      ]
+    },
+    {
+      "id": "ngc1300-stellar-bar",
+      "chapter": 11,
+      "target": "NGC 1300, barred spiral galaxy",
+      "title": "NGC 1300：真实星系中的恒星棒",
+      "source_page_url": "https://esahubble.org/images/opo0501a/",
+      "release_page_url": "https://esahubble.org/images/opo0501a/",
+      "release_date": "2005-01-11",
+      "kind_label": "真实观测 · 棒旋星系",
+      "caption_zh": "明亮恒星棒穿过 NGC 1300 的中心，主要旋臂从棒的两端向外展开；尘埃暗带和斑块状发光区域又给外观增加了层次。这张图为本节轴对称盘与有棒盘的模型对照提供了真实形态参照。",
+      "scope_zh": "恒星光受族群、尘埃消光和投影影响，不能直接等同于质量面密度。程序图中的棒质量份额不是本图的亮度比例；照片本身也不能给出模式速度、稳定性参数或唯一的形成机制。不能由局部轴对称稳定条件推断这根棒必然存在或消失。",
+      "teaching_question_zh": "哪些结构明显偏离轴对称？仅凭这张照片，可以测出局部 Toomre Q 或棒的角动量输运率吗？",
+      "policy_sources": [
+        {
+          "url": "https://esahubble.org/copyright/",
+          "label": "ESA/Hubble · CC BY 4.0",
+          "basis": "Official ESA/Hubble observation; CC BY 4.0, full unaltered linked credit visible beside the image."
+        }
+      ],
+      "registration": {
+        "status": "single_official_release_product",
+        "processing": "Published JPEG retained byte-for-byte. No cropping, rotation, recoloring, generated pixels, or derived measurements."
+      },
+      "images": [
+        {
+          "id": "ngc1300-stellar-bar",
+          "path": "assets/observations/ngc1300-stellar-bar.jpg",
+          "bytes": 3825103,
+          "sha256": "631d0559f5c772c6490f760b2f574e8a81da6bc43e422da589986d9f2d0b839b",
+          "width": 4000,
+          "height": 2282,
+          "original_image_url": "https://cdn.esahubble.org/archives/images/publicationjpg/opo0501a.jpg",
+          "fullPath": "assets/observations/ngc1300-stellar-bar.jpg",
+          "label": "NGC 1300 · Hubble ACS",
+          "description": "Hubble ACS；B、V、H-alpha 与 I 波段合成",
+          "credit": "NASA, ESA, and The Hubble Heritage Team (STScI/AURA)",
+          "band": "Hubble ACS B 435 nm, V 555 nm, H-alpha 658 nm and I 814 nm, official release labels",
+          "instrument": "Hubble ACS；B、V、H-alpha 与 I 波段合成",
+          "display_color": "Published optical/near-infrared display composite, affected by stellar populations and extinction; not a stellar mass map.",
+          "reuse_basis": "Official ESA/Hubble observation; CC BY 4.0, full unaltered linked credit visible beside the image.",
+          "alt": "NGC 1300 的哈勃观测：一条暖色恒星棒横穿明亮中心，两条蓝灰色旋臂从棒两端弯曲伸出，盘中可见尘埃暗带。",
+          "alt_zh": "NGC 1300 的哈勃观测：一条暖色恒星棒横穿明亮中心，两条蓝灰色旋臂从棒两端弯曲伸出，盘中可见尘埃暗带。"
+        }
+      ]
+    },
+    {
+      "id": "eso137-stripping",
+      "chapter": 12,
+      "target": "ESO 137-001 in Abell 3627, Hubble ultraviolet/optical image",
+      "title": "ESO 137-001：冲压剥离的观测线索",
+      "source_page_url": "https://esahubble.org/images/heic1404a/",
+      "release_page_url": "https://esahubble.org/images/heic1404a/",
+      "release_date": "2014-03-04",
+      "kind_label": "真实观测 · 紫外与可见光合成",
+      "caption_zh": "ESO 137-001 在星系团环境中留下不对称、带蓝色亮结的延展结构。这些紫外与可见光线索与冲压剥离及尾迹中的恒星形成有关，可与本节迎风剥离模型比较；周围的大量明亮点源不都属于这座星系。",
+      "scope_zh": "本图并非热团内气体的 X 射线图；蓝色尾迹也不能整体解释成被剥离的既有恒星盘。解释需要多波段与光谱证据，不能从一幅投影照片直接求气体质量、空间速度或冲压强度。冲压与潮汐、断供等机制可能并存，外观不自动证明只有一种机制。",
+      "teaching_question_zh": "比较主体盘与向一侧延伸的尾迹：它们怎样帮助你区分气体受冲压与恒星受潮汐作用？",
+      "policy_sources": [
+        {
+          "url": "https://esahubble.org/copyright/",
+          "label": "ESA/Hubble · CC BY 4.0",
+          "basis": "Official ESA/Hubble observation; CC BY 4.0, full unaltered linked credit visible beside the image."
+        }
+      ],
+      "registration": {
+        "status": "single_official_release_product",
+        "processing": "Published JPEG retained byte-for-byte. No cropping, rotation, recoloring, generated pixels, or derived measurements."
+      },
+      "images": [
+        {
+          "id": "eso137-stripping",
+          "path": "assets/observations/eso137-stripping.jpg",
+          "bytes": 396947,
+          "sha256": "14dd065f5811612f0c0dae8897ec8d6672b79e46ba17983ce2c044698e797fe1",
+          "width": 1280,
+          "height": 875,
+          "original_image_url": "https://cdn.esahubble.org/archives/images/screen/heic1404a.jpg",
+          "fullPath": "assets/observations/eso137-stripping.jpg",
+          "label": "ESO 137-001 · Hubble WFC3 / ACS",
+          "description": "Hubble WFC3 紫外与 ACS 可见光、近红外合成",
+          "credit": "NASA, ESA. Acknowledgements: Ming Sun (UAH), and Serge Meunier",
+          "band": "Hubble WFC3 U 275 nm and ACS g 475 nm / I 814 nm, official release labels",
+          "instrument": "Hubble WFC3 紫外与 ACS 可见光、近红外合成",
+          "display_color": "Published ultraviolet/optical/near-infrared display colors; not an X-ray gas density map.",
+          "reuse_basis": "Official ESA/Hubble observation; CC BY 4.0, full unaltered linked credit visible beside the image.",
+          "alt": "ESO 137-001 的哈勃合成观测：画面中央偏左有星系主体与向右下延展的蓝色斑块和细丝，前景星光及背景天体遍布视野。",
+          "alt_zh": "ESO 137-001 的哈勃合成观测：画面中央偏左有星系主体与向右下延展的蓝色斑块和细丝，前景星光及背景天体遍布视野。"
+        }
+      ]
+    },
+    {
+      "id": "eso38112-stellar-shells",
+      "chapter": 13,
+      "target": "ESO 381-12 / PGC 42871, shell-bearing lenticular early-type galaxy",
+      "title": "恒星壳层：重建形成史的一条线索",
+      "source_page_url": "https://esahubble.org/images/heic1516a/",
+      "release_page_url": "https://esahubble.org/images/heic1516a/",
+      "release_date": "2015-07-09",
+      "kind_label": "真实观测 · 早型星系壳状结构",
+      "caption_zh": "透镜状早型星系 ESO 381-12 的平滑主体外，有不对称的淡弱壳状星光边界。这样的残余形态为过去相互作用提供线索，可与本节“用多种证据检验形成理论”的讨论对照；壳层是恒星分布特征，不是实体球壳或气体泡壁。",
+      "scope_zh": "ESO 381-12 被发布方归类为透镜状早型星系；本例不冒充纯椭圆星系的统计样本。仅凭这幅形态图，不能确定唯一的并合质量比、时间、次数或所有恒星的形成年代。淡弱结构的可见性还受曝光、视场、投影与显示拉伸影响。",
+      "teaching_question_zh": "哪些外层弧状边界偏离了平滑星光分布？为什么看到壳层，仍不能唯一重建并合过程？",
+      "policy_sources": [
+        {
+          "url": "https://esahubble.org/copyright/",
+          "label": "ESA/Hubble · CC BY 4.0",
+          "basis": "Official ESA/Hubble observation; CC BY 4.0, full unaltered linked credit visible beside the image."
+        }
+      ],
+      "registration": {
+        "status": "single_official_release_product",
+        "processing": "Published JPEG retained byte-for-byte. No cropping, rotation, recoloring, generated pixels, or derived measurements."
+      },
+      "images": [
+        {
+          "id": "eso38112-stellar-shells",
+          "path": "assets/observations/eso38112-stellar-shells.jpg",
+          "bytes": 223661,
+          "sha256": "a88cde9320e38c229e3b5fb9a08108f2177c3f1bd07a8a1df4ef572586b08a01",
+          "width": 1280,
+          "height": 1252,
+          "original_image_url": "https://cdn.esahubble.org/archives/images/screen/heic1516a.jpg",
+          "fullPath": "assets/observations/eso38112-stellar-shells.jpg",
+          "label": "ESO 381-12 · Hubble",
+          "description": "Hubble；保留发布方整幅观测合成图",
+          "credit": "NASA, ESA, P. Goudfrooij (STScI)",
+          "band": "Hubble imaging, as published in the official observation release",
+          "instrument": "Hubble；保留发布方整幅观测合成图",
+          "display_color": "Published observation display colors; faint stellar shells rather than solid walls or gas bubble boundaries.",
+          "reuse_basis": "Official ESA/Hubble observation; CC BY 4.0, full unaltered linked credit visible beside the image.",
+          "alt": "哈勃观测中的 ESO 381-12：画面中央的平滑星系被偏心、不对称的淡弱弧状恒星壳层包围，右侧另有较小星系，背景分布许多遥远天体。",
+          "alt_zh": "哈勃观测中的 ESO 381-12：画面中央的平滑星系被偏心、不对称的淡弱弧状恒星壳层包围，右侧另有较小星系，背景分布许多遥远天体。"
+        }
+      ]
+    }
+  ]
+}

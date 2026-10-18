@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/HainaHuang729/galaxies-interactive-textbook",
+  "offlineDownload": "https://github.com/HainaHuang729/galaxies-interactive-textbook/releases/latest/download/galaxies-offline.zip",
+  "sourceDownload": "https://github.com/HainaHuang729/galaxies-interactive-textbook/archive/refs/heads/main.zip",
+  "workflow": "https://github.com/HainaHuang729/galaxies-interactive-textbook/blob/main/docs/BOOK_PRODUCTION_WORKFLOW.md",
+  "release": "0.1.0"
+}

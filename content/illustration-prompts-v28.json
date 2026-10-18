@@ -1,0 +1,22 @@
+[
+  {
+    "id": "ram-pressure-gas",
+    "prompt": "Use case: scientific-educational. Asset: a landscape 3:2 conceptual astronomical illustration for chapter 12 of a Chinese university galaxy formation textbook. Restrained deep graphite-blue, ice blue, soft teal and warm stellar ivory, compatible with a refined scientific book. Scene: one moderately inclined spiral galaxy moving through intracluster gas. A smooth compact stellar disk and warm central bulge remain gravitationally intact. Diffuse blue stripped GAS trails to the right and slightly upwards in one asymmetric broad wake, with a few physically plausible clumps; the stellar disk does not stretch into the gas wake. Show the ram-pressure head/windward gas compression at the left edge, and a single downstream gas wake to the right. Cluster ambient gas is extremely diffuse and fades smoothly, no hard walls, no shells. No gravitational tidal stellar tails, no companion encounter, no explosions, no flames, no planet surfaces. Scientifically motivated editorial illustration, NOT a real observation or a hydrodynamical simulation; no quantitative implications. No text, labels, numbers, axes, arrows, frames, logos or watermark. Keep the galaxy and entire gaseous wake comfortably in frame, legible at mobile size.",
+    "generation_mode": "built-in image_gen",
+    "saved_web_images": [
+      "dist/assets/illustrations/ram-pressure-gas-640.webp",
+      "dist/assets/illustrations/ram-pressure-gas-960.webp",
+      "dist/assets/illustrations/ram-pressure-gas-1536.webp"
+    ]
+  },
+  {
+    "id": "galaxy-group-environment",
+    "prompt": "Use case: scientific-educational. Asset: landscape 3:2 conceptual illustration for chapter 15 on galaxy environments, a refined Chinese university galaxy-formation textbook. Match restrained deep graphite-blue, pale ice blue and warm ivory starlight. A single coherent small galaxy group in three-dimensional space: one larger smooth elliptical galaxy, two distinct smaller inclined disk galaxies with subtle spiral structures, and a few faint compact satellite galaxies. Diverse morphologies coexist in the same group; do not sort by age or align in an evolutionary sequence. Clear separation between members, realistic thin stellar disks, soft diffuse stellar light around the central concentration, a dark sparse background with no foreground planet or huge stars. No glowing cosmic filament ropes or dark matter rendered as visible solid structures. No hard halo boundary, no orbital lines, no evidence-free arrows or collisions. This is a physically plausible editorial concept, NOT an identified real system, measured simulation, or proof that environment causes morphology. No text, labels, numbers, quantitative scales, axes, frames, UI, logos or watermark. Entire group fits with breathing room; detailed yet legible at mobile size.",
+    "generation_mode": "built-in image_gen",
+    "saved_web_images": [
+      "dist/assets/illustrations/galaxy-group-environment-640.webp",
+      "dist/assets/illustrations/galaxy-group-environment-960.webp",
+      "dist/assets/illustrations/galaxy-group-environment-1536.webp"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "states": 134,
+  "reference": "384-node Gauss-Legendre independent integration; RK mass/metal evolution; Bessel I_n and K_n integral representations",
+  "maxRelativeErrors": {
+    "IMF independent quadrature": 9.586360594135117e-12,
+    "SFH independent quadrature": 1.003906039055516e-12,
+    "Dust independent quadrature": 3.016390885391715e-08,
+    "Closed stellar Z quadrature": 1.9229401075093807e-14,
+    "Leaky mass conservation": 0,
+    "Leaky ODE metal solution": 1.7382607455001337e-14,
+    "Exp disk area integral": 1.921527613501303e-13,
+    "Fluid minimum from dispersion": 2.636735236614279e-15,
+    "Fluid wavelength from k": 3.9116548578022054e-16,
+    "Sheet surface density integral": 1.8118839761882553e-14,
+    "Sheet 100pc integral": 1.6346689037358872e-14,
+    "Rotation v squared Bessel integrals": 7.407327781293384e-05
+  },
+  "counts": {
+    "IMF independent quadrature": 12,
+    "SFH independent quadrature": 24,
+    "Dust independent quadrature": 4,
+    "Closed stellar Z quadrature": 2,
+    "Leaky mass conservation": 8,
+    "Leaky ODE metal solution": 8,
+    "Exp disk area integral": 8,
+    "Fluid minimum from dispersion": 8,
+    "Fluid wavelength from k": 8,
+    "Sheet surface density integral": 4,
+    "Sheet 100pc integral": 4,
+    "Rotation v squared Bessel integrals": 1001
+  }
+}

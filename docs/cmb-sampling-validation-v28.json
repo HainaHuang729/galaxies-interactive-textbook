@@ -1,0 +1,206 @@
+{
+  "checks": 332,
+  "independentReferences": 80,
+  "distributions": [
+    {
+      "ell": 2,
+      "nu": 5,
+      "area": 1.0000000000575764,
+      "mean": 0.9999999999865112,
+      "variance": 0.39999999990302587,
+      "sigmaBand": {
+        "lo": 0.3675444679663241,
+        "hi": 1.632455532033676,
+        "coverage": 0.7235965142227538
+      },
+      "central68Interval": {
+        "lo": 0.4131137528004517,
+        "hi": 1.5864826940236454,
+        "coverage": 0.68
+      }
+    },
+    {
+      "ell": 3,
+      "nu": 7,
+      "area": 0.9999999999989645,
+      "mean": 0.9999999999895843,
+      "variance": 0.2857142856253139,
+      "sigmaBand": {
+        "lo": 0.4654775161751512,
+        "hi": 1.5345224838248488,
+        "coverage": 0.7098280538622819
+      },
+      "central68Interval": {
+        "lo": 0.4935286565895557,
+        "hi": 1.5056579552120768,
+        "coverage": 0.68
+      }
+    },
+    {
+      "ell": 10,
+      "nu": 21,
+      "area": 0.9999999999990242,
+      "mean": 0.9999999999949942,
+      "variance": 0.09523809522207154,
+      "sigmaBand": {
+        "lo": 0.6913933000758161,
+        "hi": 1.3086066999241839,
+        "coverage": 0.6907776890971493
+      },
+      "central68Interval": {
+        "lo": 0.697714329160722,
+        "hi": 1.3017240272564488,
+        "coverage": 0.68
+      }
+    },
+    {
+      "ell": 50,
+      "nu": 101,
+      "area": 0.999999999999014,
+      "mean": 0.9999999999976491,
+      "variance": 0.019801980196160585,
+      "sigmaBand": {
+        "lo": 0.8592804910539417,
+        "hi": 1.1407195089460584,
+        "coverage": 0.684303527410419
+      },
+      "central68Interval": {
+        "lo": 0.8604533358435835,
+        "hi": 1.139406715985651,
+        "coverage": 0.68
+      }
+    },
+    {
+      "ell": 100,
+      "nu": 201,
+      "area": 0.9999999999991068,
+      "mean": 0.999999999998226,
+      "variance": 0.009950248755426631,
+      "sigmaBand": {
+        "lo": 0.9002490663892367,
+        "hi": 1.0997509336107634,
+        "coverage": 0.6834962853833166
+      },
+      "central68Interval": {
+        "lo": 0.9009308419830433,
+        "hi": 1.0989973395164676,
+        "coverage": 0.68
+      }
+    }
+  ],
+  "sampling": [
+    {
+      "ell": 2,
+      "count": 100,
+      "bins": 48,
+      "sampleMean": 0.9905087608713842,
+      "sampleVariance": 0.39812882566882224,
+      "theoryVariance": 0.4,
+      "histogramArea": 0.9999999999999999,
+      "xDomain": [
+        0,
+        3.5298221281347035
+      ],
+      "domainTailProbability": 0.0034198923312983576
+    },
+    {
+      "ell": 2,
+      "count": 100,
+      "bins": 60,
+      "sampleMean": 0.9905087608713842,
+      "sampleVariance": 0.39812882566882224,
+      "theoryVariance": 0.4,
+      "histogramArea": 0.9999999999999997,
+      "xDomain": [
+        0,
+        3.5298221281347035
+      ],
+      "domainTailProbability": 0.0034198923312983576
+    },
+    {
+      "ell": 2,
+      "count": 4000,
+      "bins": 48,
+      "sampleMean": 1.0177028636650387,
+      "sampleVariance": 0.4273472129874732,
+      "theoryVariance": 0.4,
+      "histogramArea": 0.9999999999999999,
+      "xDomain": [
+        0,
+        5.2380219031368345
+      ],
+      "domainTailProbability": 0.00008197011604171855
+    },
+    {
+      "ell": 2,
+      "count": 4000,
+      "bins": 60,
+      "sampleMean": 1.0177028636650387,
+      "sampleVariance": 0.4273472129874732,
+      "theoryVariance": 0.4,
+      "histogramArea": 1,
+      "xDomain": [
+        0,
+        5.2380219031368345
+      ],
+      "domainTailProbability": 0.00008197011604171855
+    },
+    {
+      "ell": 100,
+      "count": 100,
+      "bins": 48,
+      "sampleMean": 1.016952182516136,
+      "sampleVariance": 0.00985775261360189,
+      "theoryVariance": 0.009950248756218905,
+      "histogramArea": 1,
+      "xDomain": [
+        0,
+        1.399003734443053
+      ],
+      "domainTailProbability": 0.00016055395041381093
+    },
+    {
+      "ell": 100,
+      "count": 100,
+      "bins": 60,
+      "sampleMean": 1.016952182516136,
+      "sampleVariance": 0.00985775261360189,
+      "theoryVariance": 0.009950248756218905,
+      "histogramArea": 0.9999999999999997,
+      "xDomain": [
+        0,
+        1.399003734443053
+      ],
+      "domainTailProbability": 0.00016055395041381093
+    },
+    {
+      "ell": 100,
+      "count": 4000,
+      "bins": 48,
+      "sampleMean": 1.0012727032460447,
+      "sampleVariance": 0.010162832772742679,
+      "theoryVariance": 0.009950248756218905,
+      "histogramArea": 1.0000000000000002,
+      "xDomain": [
+        0,
+        1.464643807991199
+      ],
+      "domainTailProbability": 0.000019159372535271224
+    },
+    {
+      "ell": 100,
+      "count": 4000,
+      "bins": 60,
+      "sampleMean": 1.0012727032460447,
+      "sampleVariance": 0.010162832772742679,
+      "theoryVariance": 0.009950248756218905,
+      "histogramArea": 0.9999999999999998,
+      "xDomain": [
+        0,
+        1.464643807991199
+      ],
+      "domainTailProbability": 0.000019159372535271224
+    }
+  ],
+  "note": "Finite-sample deviations are checked against statistical sampling scales, not against exact equality with theoretical moments."
+}

@@ -1,0 +1,169 @@
+{
+  "checkedAt": "2026-10-16T16:32:20.545Z",
+  "records": [
+    {
+      "width": 1440,
+      "theme": "afterglow",
+      "rows": [
+        {
+          "tex": "\\kappa",
+          "delta": 0
+        },
+        {
+          "tex": "\\gamma",
+          "delta": -0.002284999999972115
+        },
+        {
+          "tex": "g = \\gamma / ( 1 - \\kappa )",
+          "delta": -0.002284999999972115
+        },
+        {
+          "tex": "g",
+          "delta": -0.002284999999972115
+        },
+        {
+          "tex": "\\kappa",
+          "delta": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "theme": "moon",
+      "rows": [
+        {
+          "tex": "\\kappa",
+          "delta": 0
+        },
+        {
+          "tex": "\\gamma",
+          "delta": -0.002284999999972115
+        },
+        {
+          "tex": "g = \\gamma / ( 1 - \\kappa )",
+          "delta": -0.002284999999972115
+        },
+        {
+          "tex": "g",
+          "delta": -0.002284999999972115
+        },
+        {
+          "tex": "\\kappa",
+          "delta": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "theme": "afterglow",
+      "rows": [
+        {
+          "tex": "\\kappa",
+          "delta": 0
+        },
+        {
+          "tex": "\\gamma",
+          "delta": -0.002284999999972115
+        },
+        {
+          "tex": "g = \\gamma / ( 1 - \\kappa )",
+          "delta": -0.002284999999972115
+        },
+        {
+          "tex": "g",
+          "delta": -0.002284999999972115
+        },
+        {
+          "tex": "\\kappa",
+          "delta": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "theme": "moon",
+      "rows": [
+        {
+          "tex": "\\kappa",
+          "delta": 0
+        },
+        {
+          "tex": "\\gamma",
+          "delta": -0.00029499999999416104
+        },
+        {
+          "tex": "g = \\gamma / ( 1 - \\kappa )",
+          "delta": -0.00029499999999416104
+        },
+        {
+          "tex": "g",
+          "delta": -0.00029499999999416104
+        },
+        {
+          "tex": "\\kappa",
+          "delta": 0
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "theme": "afterglow",
+      "rows": [
+        {
+          "tex": "\\kappa",
+          "delta": 0
+        },
+        {
+          "tex": "\\gamma",
+          "delta": -0.00029499999999416104
+        },
+        {
+          "tex": "g = \\gamma / ( 1 - \\kappa )",
+          "delta": -0.00029500000005100446
+        },
+        {
+          "tex": "g",
+          "delta": -0.00029500000005100446
+        },
+        {
+          "tex": "\\kappa",
+          "delta": 0
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "theme": "moon",
+      "rows": [
+        {
+          "tex": "\\kappa",
+          "delta": 0
+        },
+        {
+          "tex": "\\gamma",
+          "delta": -0.00029499999999416104
+        },
+        {
+          "tex": "g = \\gamma / ( 1 - \\kappa )",
+          "delta": -0.00029500000005100446
+        },
+        {
+          "tex": "g",
+          "delta": -0.00029500000005100446
+        },
+        {
+          "tex": "\\kappa",
+          "delta": 0
+        }
+      ]
+    }
+  ],
+  "longFormulaScroll": true,
+  "keyboardScroll": true,
+  "returnToInlineWhenFits": true,
+  "errors": [],
+  "readingPages": 509,
+  "readingErrors": [],
+  "readingIssues": [],
+  "texChecks": 1505
+}

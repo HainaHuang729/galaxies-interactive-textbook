@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-10-18T03:24:01.224Z",
+  "checks": 4755,
+  "independentShellCases": 30,
+  "independentPhysicalShellReadouts": 7,
+  "independentThermalCases": 27,
+  "independentRk4Cases": 7,
+  "maxSound": 0.052599620691427804,
+  "maxAmplitude": 0.054598150033144235,
+  "minAmplitude": 5.000308096598628e-32,
+  "status": "passed"
+}

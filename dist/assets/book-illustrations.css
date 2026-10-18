@@ -1,0 +1,52 @@
+.chapter-illustration { margin: 26px 0 34px; min-width: 0; }
+.illustration-open { display: block; width: 100%; position: relative; padding: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); text-align: left; }
+.illustration-open > img { display: block; width: 100%; height: auto; }
+.illustration-zoom { position: absolute; right: 14px; bottom: 14px; color: var(--text); background: var(--panel); border: 1px solid var(--line); border-radius: 5px; padding: 5px 9px; font-size: 11px; }
+.illustration-open:hover .illustration-zoom { color: var(--accent); border-color: var(--accent); }
+.chapter-illustration figcaption { padding: 16px 1px 0; }
+.illustration-caption-heading { display: flex; align-items: baseline; flex-wrap: wrap; gap: 5px 14px; justify-content: space-between; }
+.illustration-caption-heading strong { font-size: 14px; font-weight: 500; }
+.illustration-caption-heading > span:not(.inline-math, .inline-math *) { color: var(--muted); font-size: 11px; }
+.chapter-illustration figcaption p { color: var(--muted); font-size: 12px; line-height: 1.9; margin: 7px 0 0; }
+.chapter-illustration .illustration-observe { border-top: 1px solid var(--line); padding-top: 11px; margin-top: 12px; color: var(--text); }
+.illustration-observe > span:not(.inline-math, .inline-math *) { color: var(--accent); margin-right: 12px; }
+.reader-ready .reader-cover.has-illustration { display: grid; grid-template-columns: minmax(0,.9fr) minmax(0,1.2fr); gap: 0 54px; padding-top: clamp(40px,6svh,75px); align-content: center; align-items: start; }
+.reader-cover.has-illustration > :not(.chapter-illustration) { grid-column: 1; }
+.reader-cover.has-illustration > .chapter-label { grid-row: 1; align-self: end; }
+.reader-cover.has-illustration > h1 { grid-row: 2; font-size: clamp(36px,3.9vw,58px); margin-bottom: 24px; }
+.reader-cover.has-illustration > .lede { grid-row: 3; font-size: 18px; line-height: 1.95; margin-bottom: 0; }
+.reader-cover.has-illustration > .chapter-meta { grid-row: 4; flex-wrap: wrap; gap: 12px 20px; margin: 25px 0; }
+.reader-cover.has-illustration > .reader-start { grid-row: 5; justify-self: start; margin-top: 4px; }
+.reader-cover.has-illustration > .reader-key-hint { grid-row: 6; margin-top: 15px; }
+.reader-cover.has-illustration > .chapter-illustration { grid-column: 2; grid-row: 1 / span 6; margin: 0; align-self: center; }
+dialog.illustration-dialog { padding: 28px; width: min(1280px,calc(100vw - 40px)); max-width: none; max-height: 92svh; background: var(--panel); color: var(--text); border-color: var(--line); }
+.illustration-dialog > h2 { font-size: 24px; margin: 0 90px 20px 0; }
+.illustration-dialog > img { display: block; width: 100%; height: auto; max-height: 65svh; object-fit: contain; background: var(--bg); border-radius: 5px; }
+.illustration-dialog > p { font-size: 13px; color: var(--text); margin: 16px 0 0; }
+.illustration-dialog > .illustration-dialog-provenance { font-size: 11px; color: var(--muted); margin-top: 7px; }
+.illustration-dialog-close { position: absolute; right: 20px; top: 20px; background: transparent; color: var(--muted); font-size: 13px; border: 1px solid var(--line); border-radius: 5px; padding: 6px 10px; min-height: 38px; }
+@media(max-width:1100px) {
+ .reader-ready .reader-cover.has-illustration { gap: 0 30px; }
+ .reader-cover.has-illustration > h1 { font-size: 42px; }
+ .reader-cover.has-illustration > .lede { font-size: 17px; }
+}
+@media(max-width:850px) {
+ .reader-ready .reader-cover.has-illustration { display: block; padding-top: 36px; }
+ .reader-cover.has-illustration > .chapter-illustration { margin: 28px 0; }
+ .reader-cover.has-illustration > h1 { font-size: 40px; }
+ .reader-cover.has-illustration > .chapter-meta { margin-top: 24px; }
+}
+@media(max-width:600px) {
+ .reader-cover.has-illustration > h1 { font-size: 34px; }
+ .illustration-caption-heading > span:not(.inline-math, .inline-math *) { font-size: 11px; }
+ .illustration-zoom { right: 10px; bottom: 10px; padding: 6px 9px; }
+ dialog.illustration-dialog { width: calc(100vw - 24px); padding: 20px 14px; }
+ .illustration-dialog > h2 { font-size: 21px; margin-right: 75px; line-height: 1.5; }
+ .illustration-dialog-close { right: 12px; top: 13px; min-height: 44px; }
+}
+@media print {
+ .reader-ready .reader-cover.has-illustration { display: block; }
+ .illustration-zoom { display: none; }
+ .illustration-open { border: 0; }
+ .chapter-illustration { break-inside: avoid; }
+}

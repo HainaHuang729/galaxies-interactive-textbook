@@ -1,0 +1,212 @@
+[
+  {
+    "id": "halo-escape",
+    "chapter": 7,
+    "anchor": "boundaries",
+    "model": "escape",
+    "title": "相同圆速，为什么逃逸门槛不同",
+    "eyebrow": "外边界与势能",
+    "intro": "保留边界内完全相同的NFW密度，比较向外延伸和在边界处截断两种假设。球外物质不改变内区引力，却会改变逃到无穷远所需的能量。",
+    "params": [
+      {
+        "key": "mass",
+        "label": "log₁₀ M₂₀₀c / M☉",
+        "min": 10,
+        "max": 14,
+        "step": 0.1,
+        "value": 12
+      },
+      {
+        "key": "concentration",
+        "label": "集中度 c",
+        "min": 3,
+        "max": 20,
+        "step": 0.5,
+        "value": 10
+      },
+      {
+        "key": "radius",
+        "label": "检查半径 x = r/R₂₀₀c",
+        "min": 0.02,
+        "max": 3,
+        "step": 0.01,
+        "value": 1
+      },
+      {
+        "key": "speed",
+        "label": "指定初速 v₀/V₂₀₀c",
+        "min": 0,
+        "max": 4,
+        "step": 0.02,
+        "value": 1.6
+      }
+    ],
+    "select": {
+      "key": "boundary",
+      "label": "用于能量判断的外边界",
+      "options": [
+        [
+          "full",
+          "向外延伸NFW"
+        ],
+        [
+          "cut",
+          "在R₂₀₀c处截断"
+        ]
+      ]
+    },
+    "values": [
+      "当前半径（kpc）",
+      "内区/所选模型圆速（km/s）",
+      "延伸模型逃逸速度（km/s）",
+      "截断模型逃逸速度（km/s）",
+      "指定初速（km/s）",
+      "所选模型 E/V₂₀₀c²"
+    ],
+    "formulaTex": [
+      "x=r/R_{200\\mathrm c},\\quad g(u)=\\ln(1+u)-\\frac{u}{1+u},\\quad V_{200\\mathrm c}^2=GM_{200\\mathrm c}/R_{200\\mathrm c}",
+      "\\Phi_{\\rm NFW}=-\\frac{V_{200\\mathrm c}^2}{g(c)}\\frac{\\ln(1+cx)}{x}",
+      "\\Phi_{\\rm cut}=-V_{200\\mathrm c}^2\\begin{cases}[\\ln(1+cx)/x-c/(1+c)]/g(c),&x\\le1\\\\1/x,&x\\ge1\\end{cases}",
+      "v_c^2=GM(<r)/r,\\quad v_{\\rm esc}^2=-2\\Phi,\\quad E=v_0^2/2+\\Phi,\\quad \\Phi(\\infty)=0"
+    ],
+    "assumptions": "球对称、静态Newton引力、测试粒子、z=0与H₀=70。M₂₀₀c是边界内质量。未截断NFW质量对数发散，但势的无穷积分收敛；截断模型密度在边界跳变，不代表真实暗晕的硬边缘或已验证稳定的分布函数。E为单位质量能量；E≥0只表示在这套孤立静态势中能到任意远，越过R₂₀₀c不等于逃逸，E=0到无穷远仍需无限时间。本图只检查能量，不积分轨道或计算飞行时间。",
+    "pages": [
+      352,
+      353
+    ],
+    "source": "MBW §7.5.1 式7.138–7.141；势、锐截断与逃逸比较为新增推导。"
+  },
+  {
+    "id": "metal-distribution",
+    "chapter": 10,
+    "anchor": "chemistry",
+    "model": "mdf",
+    "title": "气体越来越富集，恒星留下怎样的分布",
+    "eyebrow": "封闭箱 · 当前恒星样本",
+    "intro": "气体的当前丰度不是全部恒星的丰度。较早形成的恒星保留较低的出生丰度；把它们按已锁定质量累积起来，再与同一封闭箱的平均值核对。",
+    "params": [
+      {
+        "key": "mu",
+        "label": "剩余气体份额 μ",
+        "min": 0.02,
+        "max": 1,
+        "step": 0.01,
+        "value": 0.3
+      },
+      {
+        "key": "yield",
+        "label": "每单位锁定质量的净产额 y",
+        "min": 0.005,
+        "max": 0.03,
+        "step": 0.001,
+        "value": 0.02
+      },
+      {
+        "key": "fraction",
+        "label": "丰度阈值 Zcut/Zg",
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "value": 0.3
+      }
+    ],
+    "select": {
+      "key": "view",
+      "label": "分布的表示",
+      "options": [
+        [
+          "pdf",
+          "质量加权概率密度"
+        ],
+        [
+          "cdf",
+          "当前恒星样本累计份额"
+        ]
+      ]
+    },
+    "values": [
+      "气体当前丰度 Zg",
+      "恒星质量加权平均 ⟨Z★⟩",
+      "恒星丰度中位数",
+      "低于阈值的当前恒星份额",
+      "已锁定恒星 / 初始质量",
+      "新生金属 / 初始总质量"
+    ],
+    "formulaTex": [
+      "Z_g=-y\\ln\\mu,\\quad M_{\\star,\\rm locked}=(1-\\mu)M_0,\\quad Z_0=0",
+      "p_Z(Z)=\\frac{e^{-Z/y}}{y(1-\\mu)},\\quad 0\\le Z\\le Z_g,\\quad 0<\\mu<1",
+      "F_\\star(Z_{\\rm cut})=\\frac{1-\\exp[-\\min(\\max(Z_{\\rm cut},0),Z_g)/y]}{1-\\mu}",
+      "\\langle Z_\\star\\rangle=y\\left[1+\\frac{\\mu\\ln\\mu}{1-\\mu}\\right],\\quad Z_{50}=-y\\ln\\frac{1+\\mu}{2}",
+      "\\mu Z_g+(1-\\mu)\\langle Z_\\star\\rangle=y(1-\\mu)"
+    ],
+    "assumptions": "初始Z₀=0、初始全为气体的封闭单区模型；瞬时回收、均匀混合、恒定净产额。y按永久锁定质量定义。PDF按当前锁定恒星质量归一，表示出生丰度的质量分布，不是每单位光度或可见恒星个数。有限时刻只支持0≤Z≤Zg；端点密度采用左侧值，随后截断。μ=1没有恒星样本，均值、分位数及分布均不定义。演示只改变气体份额，未指定恒星形成史，因此动画进度不是物理时间。",
+    "pages": [
+      489,
+      490
+    ],
+    "source": "MBW §10.4.2 式10.120、10.123–10.126；有限时刻条件归一及分位数为新增推导。"
+  },
+  {
+    "id": "velocity-delay",
+    "chapter": 14,
+    "anchor": "engine",
+    "model": "ring",
+    "title": "把一条轨道映射到速度—延迟图",
+    "eyebrow": "宽线区 · 理想Keplerian薄环",
+    "intro": "同一个轨道方位，同时决定视向速度与回响的额外路径。改变倾角，观察天球投影与速度—延迟图如何一起变化，再检查质量反演中的几何因子。",
+    "params": [
+      {
+        "key": "mass",
+        "label": "log₁₀ MBH / M☉",
+        "min": 6,
+        "max": 9,
+        "step": 0.1,
+        "value": 8
+      },
+      {
+        "key": "radius",
+        "label": "薄环半径 r（光日）",
+        "min": 10,
+        "max": 300,
+        "step": 1,
+        "value": 30
+      },
+      {
+        "key": "inclination",
+        "label": "视线与环法向夹角 i（度）",
+        "min": 0,
+        "max": 85,
+        "step": 1,
+        "value": 45
+      },
+      {
+        "key": "phase",
+        "label": "响应方位 φ（度）",
+        "min": 0,
+        "max": 360,
+        "step": 1,
+        "value": 90
+      }
+    ],
+    "values": [
+      "当前源系时滞 τ（天）",
+      "当前视向速度（km/s，退行为正）",
+      "线型二阶矩 σline（km/s）",
+      "未校正维里乘积（M☉）",
+      "本模型几何因子 f",
+      "圆轨道周期（年）"
+    ],
+    "formulaTex": [
+      "v_K=\\sqrt{GM_{\\rm BH}/r},\\quad \\tau(\\phi)=\\frac rc(1-\\sin i\\cos\\phi),\\quad v_{\\rm los}=v_K\\sin i\\sin\\phi",
+      "\\langle\\tau\\rangle=r/c,\\quad \\sigma_{\\rm line}^2=v_K^2\\sin^2i/2,\\quad p(\\phi)=1/(2\\pi)",
+      "{\\rm VP}=c\\langle\\tau\\rangle\\sigma_{\\rm line}^2/G=M_{\\rm BH}\\sin^2 i/2,\\quad f=2/\\sin^2i\\ (i>0)",
+      "P=2\\pi r/v_K,\\quad \\tau_{\\rm obs}=(1+z)\\tau_{\\rm rest}"
+    ],
+    "assumptions": "点质量Newton势、无限薄圆环、均匀方位响应、遥远观测者及一阶Doppler；忽略径向厚度、湍流、入流/外流、遮蔽和GR。正vlos为退行红移。图中的离散标记为同权方位采样，不是实际云数量，沿方位而非沿延迟或椭圆弧长均匀。σline是响应加权二阶矩，不是FWHM；理想环的边缘分布不是Gaussian或球壳均匀响应。i=0时速度—延迟图退化为单点，σline与VP为0，f及据此反演的质量不定义。时滞为源系、直接连续谱与线响应的到达时间差；轨道扫描进度不是光脉冲传播时间。",
+    "pages": [
+      639,
+      640
+    ],
+    "source": "MBW §14.2.8 的反响质量原理；均匀薄环的几何、二阶矩及f为新增解析推导。"
+  }
+]

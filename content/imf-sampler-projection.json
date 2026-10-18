@@ -1,0 +1,1468 @@
+{
+  "P": {
+    "origin": [
+      425,
+      242.1778408647766
+    ],
+    "scale": 1.3531517554264179,
+    "azimuth": 47,
+    "elevation": 43
+  },
+  "width": 850,
+  "height": 500,
+  "parts": 75,
+  "items": 75,
+  "bins": [
+    {
+      "index": 0,
+      "row": "back",
+      "column": 0,
+      "physical": {
+        "x": -132,
+        "y": -62,
+        "width": 54,
+        "depth": 48,
+        "floorZ": 14,
+        "height": 18
+      },
+      "plane": {
+        "originWorld": [
+          -126,
+          -13.96,
+          18
+        ],
+        "uWorld": [
+          42,
+          0,
+          0
+        ],
+        "vWorld": [
+          0,
+          0,
+          10
+        ],
+        "corners": [
+          [
+            283.56934183992905,
+            107.41763245190026
+          ],
+          [
+            336.14482238201094,
+            140.85425846868543
+          ],
+          [
+            336.14482238201094,
+            128.3362869110469
+          ],
+          [
+            283.56934183992905,
+            94.8996608942617
+          ]
+        ],
+        "origin": [
+          283.56934183992905,
+          107.41763245190026
+        ],
+        "basis": {
+          "u": [
+            52.57548054208189,
+            33.43662601678517
+          ],
+          "v": [
+            0,
+            -12.51797155763856
+          ]
+        },
+        "mapping": "screen = origin + u*basis.u + v*basis.v; 0<=u,v<=1; u is fraction width, v is upward face height"
+      },
+      "barHook": "data-imf-bar-0",
+      "selectionHook": "data-imf-selection-0",
+      "clipId": "imf-readout-0"
+    },
+    {
+      "index": 1,
+      "row": "back",
+      "column": 1,
+      "physical": {
+        "x": -64,
+        "y": -62,
+        "width": 54,
+        "depth": 48,
+        "floorZ": 14,
+        "height": 18
+      },
+      "plane": {
+        "originWorld": [
+          -58,
+          -13.96,
+          18
+        ],
+        "uWorld": [
+          42,
+          0,
+          0
+        ],
+        "vWorld": [
+          0,
+          0,
+          10
+        ],
+        "corners": [
+          [
+            368.6915484318712,
+            161.55312219336196
+          ],
+          [
+            421.26702897395313,
+            194.98974821014716
+          ],
+          [
+            421.26702897395313,
+            182.4717766525086
+          ],
+          [
+            368.6915484318712,
+            149.03515063572343
+          ]
+        ],
+        "origin": [
+          368.6915484318712,
+          161.55312219336196
+        ],
+        "basis": {
+          "u": [
+            52.57548054208195,
+            33.4366260167852
+          ],
+          "v": [
+            0,
+            -12.517971557638532
+          ]
+        },
+        "mapping": "screen = origin + u*basis.u + v*basis.v; 0<=u,v<=1; u is fraction width, v is upward face height"
+      },
+      "barHook": "data-imf-bar-1",
+      "selectionHook": "data-imf-selection-1",
+      "clipId": "imf-readout-1"
+    },
+    {
+      "index": 2,
+      "row": "back",
+      "column": 2,
+      "physical": {
+        "x": 4,
+        "y": -62,
+        "width": 54,
+        "depth": 48,
+        "floorZ": 14,
+        "height": 18
+      },
+      "plane": {
+        "originWorld": [
+          10,
+          -13.96,
+          18
+        ],
+        "uWorld": [
+          42,
+          0,
+          0
+        ],
+        "vWorld": [
+          0,
+          0,
+          10
+        ],
+        "corners": [
+          [
+            453.81375502381337,
+            215.6886119348237
+          ],
+          [
+            506.3892355658953,
+            249.1252379516089
+          ],
+          [
+            506.3892355658953,
+            236.60726639397035
+          ],
+          [
+            453.81375502381337,
+            203.17064037718515
+          ]
+        ],
+        "origin": [
+          453.81375502381337,
+          215.6886119348237
+        ],
+        "basis": {
+          "u": [
+            52.57548054208195,
+            33.4366260167852
+          ],
+          "v": [
+            0,
+            -12.51797155763856
+          ]
+        },
+        "mapping": "screen = origin + u*basis.u + v*basis.v; 0<=u,v<=1; u is fraction width, v is upward face height"
+      },
+      "barHook": "data-imf-bar-2",
+      "selectionHook": "data-imf-selection-2",
+      "clipId": "imf-readout-2"
+    },
+    {
+      "index": 3,
+      "row": "back",
+      "column": 3,
+      "physical": {
+        "x": 72,
+        "y": -62,
+        "width": 54,
+        "depth": 48,
+        "floorZ": 14,
+        "height": 18
+      },
+      "plane": {
+        "originWorld": [
+          78,
+          -13.96,
+          18
+        ],
+        "uWorld": [
+          42,
+          0,
+          0
+        ],
+        "vWorld": [
+          0,
+          0,
+          10
+        ],
+        "corners": [
+          [
+            538.9359616157556,
+            269.8241016762854
+          ],
+          [
+            591.5114421578375,
+            303.26072769307063
+          ],
+          [
+            591.5114421578375,
+            290.74275613543205
+          ],
+          [
+            538.9359616157556,
+            257.3061301186469
+          ]
+        ],
+        "origin": [
+          538.9359616157556,
+          269.8241016762854
+        ],
+        "basis": {
+          "u": [
+            52.57548054208189,
+            33.436626016785226
+          ],
+          "v": [
+            0,
+            -12.517971557638532
+          ]
+        },
+        "mapping": "screen = origin + u*basis.u + v*basis.v; 0<=u,v<=1; u is fraction width, v is upward face height"
+      },
+      "barHook": "data-imf-bar-3",
+      "selectionHook": "data-imf-selection-3",
+      "clipId": "imf-readout-3"
+    },
+    {
+      "index": 4,
+      "row": "front",
+      "column": 0,
+      "physical": {
+        "x": -132,
+        "y": 16,
+        "width": 54,
+        "depth": 48,
+        "floorZ": 14,
+        "height": 18
+      },
+      "plane": {
+        "originWorld": [
+          -126,
+          64.04,
+          18
+        ],
+        "uWorld": [
+          42,
+          0,
+          0
+        ],
+        "vWorld": [
+          0,
+          0,
+          10
+        ],
+        "corners": [
+          [
+            192.51840270227612,
+            174.0080738261245
+          ],
+          [
+            245.09388324435807,
+            207.4446998429097
+          ],
+          [
+            245.09388324435807,
+            194.9267282852711
+          ],
+          [
+            192.51840270227612,
+            161.49010226848594
+          ]
+        ],
+        "origin": [
+          192.51840270227612,
+          174.0080738261245
+        ],
+        "basis": {
+          "u": [
+            52.57548054208195,
+            33.4366260167852
+          ],
+          "v": [
+            0,
+            -12.51797155763856
+          ]
+        },
+        "mapping": "screen = origin + u*basis.u + v*basis.v; 0<=u,v<=1; u is fraction width, v is upward face height"
+      },
+      "barHook": "data-imf-bar-4",
+      "selectionHook": "data-imf-selection-4",
+      "clipId": "imf-readout-4"
+    },
+    {
+      "index": 5,
+      "row": "front",
+      "column": 1,
+      "physical": {
+        "x": -64,
+        "y": 16,
+        "width": 54,
+        "depth": 48,
+        "floorZ": 14,
+        "height": 18
+      },
+      "plane": {
+        "originWorld": [
+          -58,
+          64.04,
+          18
+        ],
+        "uWorld": [
+          42,
+          0,
+          0
+        ],
+        "vWorld": [
+          0,
+          0,
+          10
+        ],
+        "corners": [
+          [
+            277.6406092942183,
+            228.14356356758623
+          ],
+          [
+            330.2160898363002,
+            261.5801895843714
+          ],
+          [
+            330.2160898363002,
+            249.06221802673286
+          ],
+          [
+            277.6406092942183,
+            215.62559200994767
+          ]
+        ],
+        "origin": [
+          277.6406092942183,
+          228.14356356758623
+        ],
+        "basis": {
+          "u": [
+            52.57548054208195,
+            33.43662601678517
+          ],
+          "v": [
+            0,
+            -12.51797155763856
+          ]
+        },
+        "mapping": "screen = origin + u*basis.u + v*basis.v; 0<=u,v<=1; u is fraction width, v is upward face height"
+      },
+      "barHook": "data-imf-bar-5",
+      "selectionHook": "data-imf-selection-5",
+      "clipId": "imf-readout-5"
+    },
+    {
+      "index": 6,
+      "row": "front",
+      "column": 2,
+      "physical": {
+        "x": 4,
+        "y": 16,
+        "width": 54,
+        "depth": 48,
+        "floorZ": 14,
+        "height": 18
+      },
+      "plane": {
+        "originWorld": [
+          10,
+          64.04,
+          18
+        ],
+        "uWorld": [
+          42,
+          0,
+          0
+        ],
+        "vWorld": [
+          0,
+          0,
+          10
+        ],
+        "corners": [
+          [
+            362.76281588616047,
+            282.279053309048
+          ],
+          [
+            415.33829642824236,
+            315.71567932583315
+          ],
+          [
+            415.33829642824236,
+            303.19770776819456
+          ],
+          [
+            362.76281588616047,
+            269.7610817514094
+          ]
+        ],
+        "origin": [
+          362.76281588616047,
+          282.279053309048
+        ],
+        "basis": {
+          "u": [
+            52.57548054208189,
+            33.43662601678517
+          ],
+          "v": [
+            0,
+            -12.517971557638589
+          ]
+        },
+        "mapping": "screen = origin + u*basis.u + v*basis.v; 0<=u,v<=1; u is fraction width, v is upward face height"
+      },
+      "barHook": "data-imf-bar-6",
+      "selectionHook": "data-imf-selection-6",
+      "clipId": "imf-readout-6"
+    },
+    {
+      "index": 7,
+      "row": "front",
+      "column": 3,
+      "physical": {
+        "x": 72,
+        "y": 16,
+        "width": 54,
+        "depth": 48,
+        "floorZ": 14,
+        "height": 18
+      },
+      "plane": {
+        "originWorld": [
+          78,
+          64.04,
+          18
+        ],
+        "uWorld": [
+          42,
+          0,
+          0
+        ],
+        "vWorld": [
+          0,
+          0,
+          10
+        ],
+        "corners": [
+          [
+            447.8850224781026,
+            336.4145430505097
+          ],
+          [
+            500.46050302018455,
+            369.85116906729485
+          ],
+          [
+            500.46050302018455,
+            357.3331975096563
+          ],
+          [
+            447.8850224781026,
+            323.8965714928711
+          ]
+        ],
+        "origin": [
+          447.8850224781026,
+          336.4145430505097
+        ],
+        "basis": {
+          "u": [
+            52.57548054208195,
+            33.43662601678517
+          ],
+          "v": [
+            0,
+            -12.517971557638589
+          ]
+        },
+        "mapping": "screen = origin + u*basis.u + v*basis.v; 0<=u,v<=1; u is fraction width, v is upward face height"
+      },
+      "barHook": "data-imf-bar-7",
+      "selectionHook": "data-imf-selection-7",
+      "clipId": "imf-readout-7"
+    }
+  ],
+  "binOrder": "Back row (-y): bins 0–3 increasing world x, then front row (+y): bins 4–7 increasing world x. Captions must name this order explicitly.",
+  "partsList": [
+    {
+      "name": "base.foot.0",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -142,
+        "y": -79,
+        "w": 14,
+        "d": 14,
+        "r": 3
+      },
+      "z": -18,
+      "h": 7
+    },
+    {
+      "name": "base.foot.1",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 128,
+        "y": -79,
+        "w": 14,
+        "d": 14,
+        "r": 3
+      },
+      "z": -18,
+      "h": 7
+    },
+    {
+      "name": "base.foot.2",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -142,
+        "y": 65,
+        "w": 14,
+        "d": 14,
+        "r": 3
+      },
+      "z": -18,
+      "h": 7
+    },
+    {
+      "name": "base.foot.3",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 128,
+        "y": 65,
+        "w": 14,
+        "d": 14,
+        "r": 3
+      },
+      "z": -18,
+      "h": 7
+    },
+    {
+      "name": "base.plate",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -154,
+        "y": -91,
+        "w": 308,
+        "d": 182,
+        "r": 8
+      },
+      "z": -11,
+      "h": 11
+    },
+    {
+      "name": "base.deck",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -140,
+        "y": -78,
+        "w": 280,
+        "d": 156,
+        "r": 4
+      },
+      "z": 0,
+      "h": 3
+    },
+    {
+      "name": "base.screw.0",
+      "kind": "cylinder",
+      "x": -144,
+      "y": -81,
+      "r": 1.6,
+      "z": 0,
+      "h": 1
+    },
+    {
+      "name": "base.screw.1",
+      "kind": "cylinder",
+      "x": 144,
+      "y": -81,
+      "r": 1.6,
+      "z": 0,
+      "h": 1
+    },
+    {
+      "name": "base.screw.2",
+      "kind": "cylinder",
+      "x": -144,
+      "y": 81,
+      "r": 1.6,
+      "z": 0,
+      "h": 1
+    },
+    {
+      "name": "base.screw.3",
+      "kind": "cylinder",
+      "x": 144,
+      "y": 81,
+      "r": 1.6,
+      "z": 0,
+      "h": 1
+    },
+    {
+      "name": "support.rail.-62.10",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -136,
+        "y": -54,
+        "w": 268,
+        "d": 4,
+        "r": 0.6
+      },
+      "z": 3,
+      "h": 4
+    },
+    {
+      "name": "support.rail.-62.38",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -136,
+        "y": -26,
+        "w": 268,
+        "d": 4,
+        "r": 0.6
+      },
+      "z": 3,
+      "h": 4
+    },
+    {
+      "name": "support.rail.16.10",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -136,
+        "y": 24,
+        "w": 268,
+        "d": 4,
+        "r": 0.6
+      },
+      "z": 3,
+      "h": 4
+    },
+    {
+      "name": "support.rail.16.38",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -136,
+        "y": 52,
+        "w": 268,
+        "d": 4,
+        "r": 0.6
+      },
+      "z": 3,
+      "h": 4
+    },
+    {
+      "name": "base.ruler.-77",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -132,
+        "y": -77,
+        "w": 264,
+        "d": 5,
+        "r": 0.6
+      },
+      "z": 3,
+      "h": 0.7
+    },
+    {
+      "name": "base.ruler.72",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -132,
+        "y": 72,
+        "w": 264,
+        "d": 5,
+        "r": 0.6
+      },
+      "z": 3,
+      "h": 0.7
+    },
+    {
+      "name": "base.plaque",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -39,
+        "y": 81,
+        "w": 78,
+        "d": 7,
+        "r": 1
+      },
+      "z": 0,
+      "h": 0.8
+    },
+    {
+      "name": "base.plaque-rivet.-34",
+      "kind": "cylinder",
+      "x": -34,
+      "y": 84.5,
+      "r": 0.9,
+      "z": 0.8,
+      "h": 0.5
+    },
+    {
+      "name": "base.plaque-rivet.34",
+      "kind": "cylinder",
+      "x": 34,
+      "y": 84.5,
+      "r": 0.9,
+      "z": 0.8,
+      "h": 0.5
+    },
+    {
+      "name": "bin.0.saddle",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -125,
+        "y": -56,
+        "w": 40,
+        "d": 36,
+        "r": 1.2
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "bin.0.floor",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -132,
+        "y": -62,
+        "w": 54,
+        "d": 48,
+        "r": 1
+      },
+      "z": 11,
+      "h": 3
+    },
+    {
+      "name": "bin.0.side.0",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -132,
+        "y": -62,
+        "w": 2,
+        "d": 48,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.0.side.52",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -80,
+        "y": -62,
+        "w": 2,
+        "d": 48,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.0.back",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -130,
+        "y": -62,
+        "w": 50,
+        "d": 2,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.0.front-panel",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -130,
+        "y": -16,
+        "w": 50,
+        "d": 2,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.0.mounting-screw",
+      "kind": "cylinder",
+      "x": -131,
+      "y": -57,
+      "r": 0.7,
+      "z": 32,
+      "h": 0.6
+    },
+    {
+      "name": "bin.1.saddle",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -57,
+        "y": -56,
+        "w": 40,
+        "d": 36,
+        "r": 1.2
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "bin.1.floor",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -64,
+        "y": -62,
+        "w": 54,
+        "d": 48,
+        "r": 1
+      },
+      "z": 11,
+      "h": 3
+    },
+    {
+      "name": "bin.1.side.0",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -64,
+        "y": -62,
+        "w": 2,
+        "d": 48,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.1.side.52",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -12,
+        "y": -62,
+        "w": 2,
+        "d": 48,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.1.back",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -62,
+        "y": -62,
+        "w": 50,
+        "d": 2,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.1.front-panel",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -62,
+        "y": -16,
+        "w": 50,
+        "d": 2,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.1.mounting-screw",
+      "kind": "cylinder",
+      "x": -63,
+      "y": -57,
+      "r": 0.7,
+      "z": 32,
+      "h": 0.6
+    },
+    {
+      "name": "bin.2.saddle",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 11,
+        "y": -56,
+        "w": 40,
+        "d": 36,
+        "r": 1.2
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "bin.2.floor",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 4,
+        "y": -62,
+        "w": 54,
+        "d": 48,
+        "r": 1
+      },
+      "z": 11,
+      "h": 3
+    },
+    {
+      "name": "bin.2.side.0",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 4,
+        "y": -62,
+        "w": 2,
+        "d": 48,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.2.side.52",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 56,
+        "y": -62,
+        "w": 2,
+        "d": 48,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.2.back",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 6,
+        "y": -62,
+        "w": 50,
+        "d": 2,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.2.front-panel",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 6,
+        "y": -16,
+        "w": 50,
+        "d": 2,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.2.mounting-screw",
+      "kind": "cylinder",
+      "x": 5,
+      "y": -57,
+      "r": 0.7,
+      "z": 32,
+      "h": 0.6
+    },
+    {
+      "name": "bin.3.saddle",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 79,
+        "y": -56,
+        "w": 40,
+        "d": 36,
+        "r": 1.2
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "bin.3.floor",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 72,
+        "y": -62,
+        "w": 54,
+        "d": 48,
+        "r": 1
+      },
+      "z": 11,
+      "h": 3
+    },
+    {
+      "name": "bin.3.side.0",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 72,
+        "y": -62,
+        "w": 2,
+        "d": 48,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.3.side.52",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 124,
+        "y": -62,
+        "w": 2,
+        "d": 48,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.3.back",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 74,
+        "y": -62,
+        "w": 50,
+        "d": 2,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.3.front-panel",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 74,
+        "y": -16,
+        "w": 50,
+        "d": 2,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.3.mounting-screw",
+      "kind": "cylinder",
+      "x": 73,
+      "y": -57,
+      "r": 0.7,
+      "z": 32,
+      "h": 0.6
+    },
+    {
+      "name": "bin.4.saddle",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -125,
+        "y": 22,
+        "w": 40,
+        "d": 36,
+        "r": 1.2
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "bin.4.floor",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -132,
+        "y": 16,
+        "w": 54,
+        "d": 48,
+        "r": 1
+      },
+      "z": 11,
+      "h": 3
+    },
+    {
+      "name": "bin.4.side.0",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -132,
+        "y": 16,
+        "w": 2,
+        "d": 48,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.4.side.52",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -80,
+        "y": 16,
+        "w": 2,
+        "d": 48,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.4.back",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -130,
+        "y": 16,
+        "w": 50,
+        "d": 2,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.4.front-panel",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -130,
+        "y": 62,
+        "w": 50,
+        "d": 2,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.4.mounting-screw",
+      "kind": "cylinder",
+      "x": -131,
+      "y": 21,
+      "r": 0.7,
+      "z": 32,
+      "h": 0.6
+    },
+    {
+      "name": "bin.5.saddle",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -57,
+        "y": 22,
+        "w": 40,
+        "d": 36,
+        "r": 1.2
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "bin.5.floor",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -64,
+        "y": 16,
+        "w": 54,
+        "d": 48,
+        "r": 1
+      },
+      "z": 11,
+      "h": 3
+    },
+    {
+      "name": "bin.5.side.0",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -64,
+        "y": 16,
+        "w": 2,
+        "d": 48,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.5.side.52",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -12,
+        "y": 16,
+        "w": 2,
+        "d": 48,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.5.back",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -62,
+        "y": 16,
+        "w": 50,
+        "d": 2,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.5.front-panel",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -62,
+        "y": 62,
+        "w": 50,
+        "d": 2,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.5.mounting-screw",
+      "kind": "cylinder",
+      "x": -63,
+      "y": 21,
+      "r": 0.7,
+      "z": 32,
+      "h": 0.6
+    },
+    {
+      "name": "bin.6.saddle",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 11,
+        "y": 22,
+        "w": 40,
+        "d": 36,
+        "r": 1.2
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "bin.6.floor",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 4,
+        "y": 16,
+        "w": 54,
+        "d": 48,
+        "r": 1
+      },
+      "z": 11,
+      "h": 3
+    },
+    {
+      "name": "bin.6.side.0",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 4,
+        "y": 16,
+        "w": 2,
+        "d": 48,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.6.side.52",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 56,
+        "y": 16,
+        "w": 2,
+        "d": 48,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.6.back",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 6,
+        "y": 16,
+        "w": 50,
+        "d": 2,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.6.front-panel",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 6,
+        "y": 62,
+        "w": 50,
+        "d": 2,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.6.mounting-screw",
+      "kind": "cylinder",
+      "x": 5,
+      "y": 21,
+      "r": 0.7,
+      "z": 32,
+      "h": 0.6
+    },
+    {
+      "name": "bin.7.saddle",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 79,
+        "y": 22,
+        "w": 40,
+        "d": 36,
+        "r": 1.2
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "bin.7.floor",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 72,
+        "y": 16,
+        "w": 54,
+        "d": 48,
+        "r": 1
+      },
+      "z": 11,
+      "h": 3
+    },
+    {
+      "name": "bin.7.side.0",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 72,
+        "y": 16,
+        "w": 2,
+        "d": 48,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.7.side.52",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 124,
+        "y": 16,
+        "w": 2,
+        "d": 48,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.7.back",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 74,
+        "y": 16,
+        "w": 50,
+        "d": 2,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.7.front-panel",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 74,
+        "y": 62,
+        "w": 50,
+        "d": 2,
+        "r": 0.2
+      },
+      "z": 14,
+      "h": 18
+    },
+    {
+      "name": "bin.7.mounting-screw",
+      "kind": "cylinder",
+      "x": 73,
+      "y": 21,
+      "r": 0.7,
+      "z": 32,
+      "h": 0.6
+    }
+  ],
+  "limits": "Statistical partitioning teaching analogy only; never literal stars inside a machine. All eight trays have identical dimensions and remain fixed. Bar ink uses the same linear 0–1 fraction scale on every front panel; it encodes sampled count fraction or sampled mass fraction as declared by runtime. It does not encode stellar radius, tray depth, density or physical accumulated material. Fixed bin edges are equal in log10 mass over [0.1,100] solar masses; parent owns sampling, normalization, quantile selection, readouts and labels."
+}

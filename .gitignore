@@ -1,0 +1,17 @@
+*.pdf
+*.epub
+work/
+*source-extract*
+*chapter-1-source*
+.DS_Store
+node_modules/
+.env
+.env.*
+!.env.example
+release/
+playwright-report/
+test-results/
+__pycache__/
+*.pyc
+
+.openai/

@@ -1,0 +1,30 @@
+{
+  "version": 34,
+  "readingPages": 548,
+  "mathErrors": 0,
+  "mathIssues": 0,
+  "controlPages": 126,
+  "rangeInputs": 347,
+  "combinedEndpointStates": 252,
+  "existingObservedSemanticRegressions": 19,
+  "dictionaryCards": 2005,
+  "glossaryBrowserErrors": 0,
+  "coverage": {
+    "unboundSingleGlyphs": 0,
+    "compoundFragmentsInventoried": 268
+  },
+  "buildFiles": 298,
+  "idempotenceChangedFiles": 0,
+  "inlineVocabularyChecks": 1660,
+  "geometrySolids": 67,
+  "integratedLineCheck": {
+    "afterglow": {
+      "ends": 424,
+      "floating": 0
+    },
+    "moon": {
+      "ends": 424,
+      "floating": 0
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "figureTier": "Figure",
+  "trueSolids": 69,
+  "depthSortedItems": 69,
+  "depthStates": 1,
+  "overlaps": 266,
+  "orderRules": 266,
+  "auditCommand": "node build.mjs --audit",
+  "auditPassed": true,
+  "clearanceProblems": 0,
+  "unsupportedSolids": 0,
+  "sunkPairs": 0,
+  "depthOrderProblems": 0,
+  "standInShapes": 0,
+  "allOtherAuditFailures": 0,
+  "lineChecks": {
+    "dark": {"floatingEnds": 0, "endsChecked": 268, "lineElements": 19},
+    "light": {"floatingEnds": 0, "endsChecked": 268, "lineElements": 19}
+  },
+  "visualChecks": ["dark desktop", "light desktop", "dark 4x", "light 4x", "dark 390px", "light 390px"],
+  "browserConsole": "clean",
+  "interactionBoundary": "Static mechanism; only beam, medium and detector opacity/flow should be animated by the chapter's shared transmission model. No moving material geometry.",
+  "scienceBoundary": "Two independent calibrated incoherent input beams. Weights f and 1-f, optical depths tau and 0.1, independent detector signals f*exp(-tau) and (1-f)*exp(-0.1). External numerical sum, no optical recombination. Color identifies channels, not wavelength. Decorative flow is not a photon Monte Carlo simulation or light-speed display."
+}

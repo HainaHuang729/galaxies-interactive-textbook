@@ -1,0 +1,14 @@
+(function(root,factory){if(typeof module==='object'&&module.exports)module.exports=factory(require('./halo-physics.js'));else root.GasPhysics=factory(root.HaloPhysics);})(typeof globalThis!=='undefined'?globalThis:this,function(H){'use strict';
+const k=1.380649e-16,mp=1.67262192369e-24,me=9.1093837015e-28,c=2.99792458e10,sigmaT=6.6524587321e-25,ar=7.5657e-15,G=6.6743e-8,pc=3.0856775814913673e18,Msun=1.98847e33,yr=31557600,Myr=1e6*yr,Gyr=1e9*yr,gamma=5/3,mu=.5;
+function shock(M,T1,nH1){const m2=M*M,compression=(gamma+1)*m2/((gamma-1)*m2+2),pressure=(2*gamma*m2-(gamma-1))/(gamma+1),temperature=pressure/compression,cs1=Math.sqrt(gamma*k*T1/(mu*mp))/1e5,v1=M*cs1,v2=v1/compression,T2=T1*temperature,M2=Math.sqrt((1+(gamma-1)*m2/2)/(gamma*m2-(gamma-1)/2));return {compression,pressure,temperature,cs1,v1,v2,T1,T2,nH1,nH2:nH1*compression,M2,entropy:pressure/compression**gamma};}
+function cooling(T,nH,L0=1e-22,alpha=-.5){const lambda=L0*(T/1e6)**alpha,loss=nH*nH*lambda,energy=3*nH*k*T,time=energy/loss,rhoTotal=mp*nH/.15,tff=Math.sqrt(3*Math.PI/(32*G*rhoTotal));return {lambda,loss,energy,time,tff,ratio:time/tff};}
+function compton(z,tau=1){const Tcmb=2.725*(1+z),time=3*me*c/(4*sigmaT*ar*Tcmb**4),Hubble=70*1e5/(1e6*pc)*Math.sqrt(.3*(1+z)**3+.7);return {Tcmb,time,hubbleTime:1/Hubble,remaining:Math.exp(-tau)};}
+function nfwHSE(M,eta,x,cN=8){const h=H.halo(M,cN),T200=mu*mp*h.V*h.V*1e10/(2*k),T=eta*T200,b=2*cN/(eta*H.g(cN)),u=cN*x,q=u===0?0:Math.abs(u)<1e-4?u/2-u*u/3+u**3/4:1-Math.log1p(u)/u,logRatio=-b*q/Math.LN10;return {h,T200,T,b,ratio:10**logRatio,logRatio};}
+function buoyancy(a,zH){return {densityRatio:Math.exp(a*zH/gamma),acceleration:Math.expm1(-a*zH/gamma),N2:a/gamma};}
+function coolingRadius(nR,timeGyr,Rkpc=200){const outer=cooling(1e6,nR,1e-22,0),age=timeGyr*Gyr,raw=Math.sqrt(Math.max(0,age/outer.time)),fraction=Math.min(1,raw),R=Rkpc*1e3*pc,Mgas=4*Math.PI*mp*nR*R**3,rate=age<=0?null:raw>=1?0:Mgas/(2*Math.sqrt(age*outer.time));return {outerTime:outer.time,raw,fraction,radius:fraction*Rkpc,mass:Mgas,fractionCooled:fraction,rate};}
+function thermal(alpha,epsilon,tau){const delta=epsilon*Math.exp((1-alpha)*tau),theta=1+delta;return {delta,theta,net:theta**(alpha-1)-1,growth:1-alpha};}
+function thermalNet(alpha,theta){return theta**(alpha-1)-1;}
+function blast(E,nH,tKyr){const rho=mp*nH,t=tKyr*1e3*yr,R=1.15*(E/rho)**.2*t**.4,v=.4*R/t,swept=4*Math.PI*rho*R**3/3;return {R,v,swept,E,t,rho};}
+function wind(L,nH,tMyr){const rho=mp*nH,t=tMyr*Myr,beta=(125/(154*Math.PI))**.2,R=beta*(L/rho)**.2*t**.6,v=.6*R/t,input=L*t,thermal=5/11*input,kinetic=15/77*input,radiated=27/77*input,pressure=7*rho*R*R/(25*t*t);return {R,v,input,thermal,kinetic,radiated,pressure,t,rho,beta};}
+return {k,mp,me,c,sigmaT,ar,G,pc,Msun,yr,Myr,Gyr,gamma,mu,shock,cooling,compton,nfwHSE,buoyancy,coolingRadius,thermal,thermalNet,blast,wind};
+});

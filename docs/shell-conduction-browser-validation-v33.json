@@ -1,0 +1,723 @@
+{
+  "states": [
+    {
+      "id": "shell",
+      "logMass": 9,
+      "outer": 5,
+      "cavity": 0,
+      "radius": 0
+    },
+    {
+      "id": "shell",
+      "logMass": 9,
+      "outer": 5,
+      "cavity": 0,
+      "radius": 3
+    },
+    {
+      "id": "shell",
+      "logMass": 9,
+      "outer": 5,
+      "cavity": 0.9,
+      "radius": 0
+    },
+    {
+      "id": "shell",
+      "logMass": 9,
+      "outer": 5,
+      "cavity": 0.9,
+      "radius": 3
+    },
+    {
+      "id": "shell",
+      "logMass": 9,
+      "outer": 50,
+      "cavity": 0,
+      "radius": 0
+    },
+    {
+      "id": "shell",
+      "logMass": 9,
+      "outer": 50,
+      "cavity": 0,
+      "radius": 3
+    },
+    {
+      "id": "shell",
+      "logMass": 9,
+      "outer": 50,
+      "cavity": 0.9,
+      "radius": 0
+    },
+    {
+      "id": "shell",
+      "logMass": 9,
+      "outer": 50,
+      "cavity": 0.9,
+      "radius": 3
+    },
+    {
+      "id": "shell",
+      "logMass": 12,
+      "outer": 5,
+      "cavity": 0,
+      "radius": 0
+    },
+    {
+      "id": "shell",
+      "logMass": 12,
+      "outer": 5,
+      "cavity": 0,
+      "radius": 3
+    },
+    {
+      "id": "shell",
+      "logMass": 12,
+      "outer": 5,
+      "cavity": 0.9,
+      "radius": 0
+    },
+    {
+      "id": "shell",
+      "logMass": 12,
+      "outer": 5,
+      "cavity": 0.9,
+      "radius": 3
+    },
+    {
+      "id": "shell",
+      "logMass": 12,
+      "outer": 50,
+      "cavity": 0,
+      "radius": 0
+    },
+    {
+      "id": "shell",
+      "logMass": 12,
+      "outer": 50,
+      "cavity": 0,
+      "radius": 3
+    },
+    {
+      "id": "shell",
+      "logMass": 12,
+      "outer": 50,
+      "cavity": 0.9,
+      "radius": 0
+    },
+    {
+      "id": "shell",
+      "logMass": 12,
+      "outer": 50,
+      "cavity": 0.9,
+      "radius": 3
+    },
+    {
+      "id": "shell",
+      "logMass": 11,
+      "outer": 20,
+      "cavity": 0,
+      "radius": 0
+    },
+    {
+      "id": "shell",
+      "logMass": 11,
+      "outer": 20,
+      "cavity": 0,
+      "radius": 0
+    },
+    {
+      "id": "shell",
+      "logMass": 11,
+      "outer": 20,
+      "cavity": 0,
+      "radius": 0.5
+    },
+    {
+      "id": "shell",
+      "logMass": 11,
+      "outer": 20,
+      "cavity": 0,
+      "radius": 1
+    },
+    {
+      "id": "shell",
+      "logMass": 11,
+      "outer": 20,
+      "cavity": 0,
+      "radius": 1.005
+    },
+    {
+      "id": "shell",
+      "logMass": 11,
+      "outer": 20,
+      "cavity": 0.6,
+      "radius": 0
+    },
+    {
+      "id": "shell",
+      "logMass": 11,
+      "outer": 20,
+      "cavity": 0.6,
+      "radius": 0.6
+    },
+    {
+      "id": "shell",
+      "logMass": 11,
+      "outer": 20,
+      "cavity": 0.6,
+      "radius": 0.8
+    },
+    {
+      "id": "shell",
+      "logMass": 11,
+      "outer": 20,
+      "cavity": 0.6,
+      "radius": 1
+    },
+    {
+      "id": "shell",
+      "logMass": 11,
+      "outer": 20,
+      "cavity": 0.6,
+      "radius": 1.005
+    },
+    {
+      "id": "shell",
+      "logMass": 11,
+      "outer": 20,
+      "cavity": 0.9,
+      "radius": 0
+    },
+    {
+      "id": "shell",
+      "logMass": 11,
+      "outer": 20,
+      "cavity": 0.9,
+      "radius": 0.9
+    },
+    {
+      "id": "shell",
+      "logMass": 11,
+      "outer": 20,
+      "cavity": 0.9,
+      "radius": 0.95
+    },
+    {
+      "id": "shell",
+      "logMass": 11,
+      "outer": 20,
+      "cavity": 0.9,
+      "radius": 1
+    },
+    {
+      "id": "shell",
+      "logMass": 11,
+      "outer": 20,
+      "cavity": 0.9,
+      "radius": 1.005
+    },
+    {
+      "id": "thermal",
+      "slope": -1,
+      "diffusion": 0,
+      "wavelength": 0.25,
+      "time": 0,
+      "position": 0
+    },
+    {
+      "id": "thermal",
+      "slope": -1,
+      "diffusion": 0,
+      "wavelength": 0.25,
+      "time": 0,
+      "position": 2
+    },
+    {
+      "id": "thermal",
+      "slope": -1,
+      "diffusion": 0,
+      "wavelength": 0.25,
+      "time": 2,
+      "position": 0
+    },
+    {
+      "id": "thermal",
+      "slope": -1,
+      "diffusion": 0,
+      "wavelength": 0.25,
+      "time": 2,
+      "position": 2
+    },
+    {
+      "id": "thermal",
+      "slope": -1,
+      "diffusion": 0,
+      "wavelength": 4,
+      "time": 0,
+      "position": 0
+    },
+    {
+      "id": "thermal",
+      "slope": -1,
+      "diffusion": 0,
+      "wavelength": 4,
+      "time": 0,
+      "position": 2
+    },
+    {
+      "id": "thermal",
+      "slope": -1,
+      "diffusion": 0,
+      "wavelength": 4,
+      "time": 2,
+      "position": 0
+    },
+    {
+      "id": "thermal",
+      "slope": -1,
+      "diffusion": 0,
+      "wavelength": 4,
+      "time": 2,
+      "position": 2
+    },
+    {
+      "id": "thermal",
+      "slope": -1,
+      "diffusion": 0.05,
+      "wavelength": 0.25,
+      "time": 0,
+      "position": 0
+    },
+    {
+      "id": "thermal",
+      "slope": -1,
+      "diffusion": 0.05,
+      "wavelength": 0.25,
+      "time": 0,
+      "position": 2
+    },
+    {
+      "id": "thermal",
+      "slope": -1,
+      "diffusion": 0.05,
+      "wavelength": 0.25,
+      "time": 2,
+      "position": 0
+    },
+    {
+      "id": "thermal",
+      "slope": -1,
+      "diffusion": 0.05,
+      "wavelength": 0.25,
+      "time": 2,
+      "position": 2
+    },
+    {
+      "id": "thermal",
+      "slope": -1,
+      "diffusion": 0.05,
+      "wavelength": 4,
+      "time": 0,
+      "position": 0
+    },
+    {
+      "id": "thermal",
+      "slope": -1,
+      "diffusion": 0.05,
+      "wavelength": 4,
+      "time": 0,
+      "position": 2
+    },
+    {
+      "id": "thermal",
+      "slope": -1,
+      "diffusion": 0.05,
+      "wavelength": 4,
+      "time": 2,
+      "position": 0
+    },
+    {
+      "id": "thermal",
+      "slope": -1,
+      "diffusion": 0.05,
+      "wavelength": 4,
+      "time": 2,
+      "position": 2
+    },
+    {
+      "id": "thermal",
+      "slope": 2,
+      "diffusion": 0,
+      "wavelength": 0.25,
+      "time": 0,
+      "position": 0
+    },
+    {
+      "id": "thermal",
+      "slope": 2,
+      "diffusion": 0,
+      "wavelength": 0.25,
+      "time": 0,
+      "position": 2
+    },
+    {
+      "id": "thermal",
+      "slope": 2,
+      "diffusion": 0,
+      "wavelength": 0.25,
+      "time": 2,
+      "position": 0
+    },
+    {
+      "id": "thermal",
+      "slope": 2,
+      "diffusion": 0,
+      "wavelength": 0.25,
+      "time": 2,
+      "position": 2
+    },
+    {
+      "id": "thermal",
+      "slope": 2,
+      "diffusion": 0,
+      "wavelength": 4,
+      "time": 0,
+      "position": 0
+    },
+    {
+      "id": "thermal",
+      "slope": 2,
+      "diffusion": 0,
+      "wavelength": 4,
+      "time": 0,
+      "position": 2
+    },
+    {
+      "id": "thermal",
+      "slope": 2,
+      "diffusion": 0,
+      "wavelength": 4,
+      "time": 2,
+      "position": 0
+    },
+    {
+      "id": "thermal",
+      "slope": 2,
+      "diffusion": 0,
+      "wavelength": 4,
+      "time": 2,
+      "position": 2
+    },
+    {
+      "id": "thermal",
+      "slope": 2,
+      "diffusion": 0.05,
+      "wavelength": 0.25,
+      "time": 0,
+      "position": 0
+    },
+    {
+      "id": "thermal",
+      "slope": 2,
+      "diffusion": 0.05,
+      "wavelength": 0.25,
+      "time": 0,
+      "position": 2
+    },
+    {
+      "id": "thermal",
+      "slope": 2,
+      "diffusion": 0.05,
+      "wavelength": 0.25,
+      "time": 2,
+      "position": 0
+    },
+    {
+      "id": "thermal",
+      "slope": 2,
+      "diffusion": 0.05,
+      "wavelength": 0.25,
+      "time": 2,
+      "position": 2
+    },
+    {
+      "id": "thermal",
+      "slope": 2,
+      "diffusion": 0.05,
+      "wavelength": 4,
+      "time": 0,
+      "position": 0
+    },
+    {
+      "id": "thermal",
+      "slope": 2,
+      "diffusion": 0.05,
+      "wavelength": 4,
+      "time": 0,
+      "position": 2
+    },
+    {
+      "id": "thermal",
+      "slope": 2,
+      "diffusion": 0.05,
+      "wavelength": 4,
+      "time": 2,
+      "position": 0
+    },
+    {
+      "id": "thermal",
+      "slope": 2,
+      "diffusion": 0.05,
+      "wavelength": 4,
+      "time": 2,
+      "position": 2
+    },
+    {
+      "id": "thermal",
+      "slope": 0,
+      "diffusion": 0,
+      "wavelength": 1,
+      "time": 1,
+      "position": 0.125
+    },
+    {
+      "id": "thermal",
+      "slope": 0,
+      "diffusion": 0,
+      "wavelength": 1,
+      "time": 1,
+      "position": 0.25
+    },
+    {
+      "id": "thermal",
+      "slope": 0,
+      "diffusion": 0,
+      "wavelength": 1,
+      "time": 1,
+      "position": 0.5
+    },
+    {
+      "id": "thermal",
+      "slope": 0,
+      "diffusion": 0,
+      "wavelength": 1,
+      "time": 1,
+      "position": 0.75
+    },
+    {
+      "id": "thermal",
+      "slope": 1,
+      "diffusion": 0,
+      "wavelength": 1,
+      "time": 1,
+      "position": 0.125
+    },
+    {
+      "id": "thermal",
+      "slope": 1,
+      "diffusion": 0,
+      "wavelength": 1,
+      "time": 1,
+      "position": 0.25
+    },
+    {
+      "id": "thermal",
+      "slope": 1,
+      "diffusion": 0,
+      "wavelength": 1,
+      "time": 1,
+      "position": 0.5
+    },
+    {
+      "id": "thermal",
+      "slope": 1,
+      "diffusion": 0,
+      "wavelength": 1,
+      "time": 1,
+      "position": 0.75
+    }
+  ],
+  "layouts": [
+    {
+      "ch": 5,
+      "theme": "afterglow",
+      "width": 1440,
+      "overflow": false,
+      "katex": 0,
+      "nan": false,
+      "bad": []
+    },
+    {
+      "ch": 5,
+      "theme": "afterglow",
+      "width": 390,
+      "overflow": false,
+      "katex": 0,
+      "nan": false,
+      "bad": []
+    },
+    {
+      "ch": 5,
+      "theme": "afterglow",
+      "width": 320,
+      "overflow": false,
+      "katex": 0,
+      "nan": false,
+      "bad": []
+    },
+    {
+      "ch": 5,
+      "theme": "moon",
+      "width": 1440,
+      "overflow": false,
+      "katex": 0,
+      "nan": false,
+      "bad": []
+    },
+    {
+      "ch": 5,
+      "theme": "moon",
+      "width": 390,
+      "overflow": false,
+      "katex": 0,
+      "nan": false,
+      "bad": []
+    },
+    {
+      "ch": 5,
+      "theme": "moon",
+      "width": 320,
+      "overflow": false,
+      "katex": 0,
+      "nan": false,
+      "bad": []
+    },
+    {
+      "ch": 8,
+      "theme": "afterglow",
+      "width": 1440,
+      "overflow": false,
+      "katex": 0,
+      "nan": false,
+      "bad": []
+    },
+    {
+      "ch": 8,
+      "theme": "afterglow",
+      "width": 390,
+      "overflow": false,
+      "katex": 0,
+      "nan": false,
+      "bad": []
+    },
+    {
+      "ch": 8,
+      "theme": "afterglow",
+      "width": 320,
+      "overflow": false,
+      "katex": 0,
+      "nan": false,
+      "bad": []
+    },
+    {
+      "ch": 8,
+      "theme": "moon",
+      "width": 1440,
+      "overflow": false,
+      "katex": 0,
+      "nan": false,
+      "bad": []
+    },
+    {
+      "ch": 8,
+      "theme": "moon",
+      "width": 390,
+      "overflow": false,
+      "katex": 0,
+      "nan": false,
+      "bad": []
+    },
+    {
+      "ch": 8,
+      "theme": "moon",
+      "width": 320,
+      "overflow": false,
+      "katex": 0,
+      "nan": false,
+      "bad": []
+    }
+  ],
+  "interactions": [
+    "shell exact inner boundary, keyboard endpoints, finite center",
+    "critical controls use native step, no-growth disabled, phase keyboard",
+    "both animations progress and stop off page",
+    "reduced-motion stops running; manual static parameter controls remain usable"
+  ],
+  "semantics": [
+    {
+      "ch": 5,
+      "id": "shell-potential",
+      "tex": "q=a/b",
+      "glyph": "q",
+      "key": "q"
+    },
+    {
+      "ch": 5,
+      "id": "shell-potential",
+      "tex": "g_r=",
+      "glyph": "g",
+      "key": "g"
+    },
+    {
+      "ch": 5,
+      "id": "shell-potential",
+      "tex": "Phi=-",
+      "glyph": "Φ",
+      "key": "Phi"
+    },
+    {
+      "ch": 8,
+      "id": "thermal-conduction",
+      "tex": "c_{p,",
+      "glyph": "c",
+      "key": "cp"
+    },
+    {
+      "ch": 8,
+      "id": "thermal-conduction",
+      "tex": "c_s=",
+      "glyph": "c",
+      "key": "cs"
+    },
+    {
+      "ch": 8,
+      "id": "thermal-conduction",
+      "tex": "sigma t",
+      "glyph": "σ",
+      "key": "sigma"
+    },
+    {
+      "ch": 8,
+      "id": "thermal-conduction",
+      "tex": "chi=",
+      "glyph": "χ",
+      "key": "chi"
+    },
+    {
+      "ch": 8,
+      "id": "thermal-conduction",
+      "tex": "chi=",
+      "glyph": "κ",
+      "key": "kappa"
+    },
+    {
+      "ch": 8,
+      "id": "thermal-conduction",
+      "tex": "tau=t/",
+      "glyph": "τ",
+      "key": "tau"
+    }
+  ],
+  "errors": []
+}

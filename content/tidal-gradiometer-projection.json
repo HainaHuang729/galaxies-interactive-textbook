@@ -1,0 +1,909 @@
+{
+  "P": {
+    "origin": [
+      415,
+      248.54387541546268
+    ],
+    "scale": 1.3317207596218053,
+    "azimuth": 47,
+    "elevation": 39
+  },
+  "width": 830,
+  "height": 490,
+  "parts": 69,
+  "items": 69,
+  "gauges": {
+    "r": {
+      "center": [
+        571.5812838788056,
+        232.18178565364047
+      ],
+      "worldCenter": [
+        87,
+        -43,
+        35.08
+      ],
+      "worldPlaneBasis": {
+        "u": [
+          1,
+          0,
+          0
+        ],
+        "v": [
+          0,
+          1,
+          0
+        ]
+      },
+      "basis": {
+        "u": [
+          1.2319713975030027,
+          0.7229833492818898
+        ],
+        "v": [
+          -1.1488319138616134,
+          0.7753047216387472
+        ]
+      },
+      "radius": 16,
+      "faceRadius": 23,
+      "scaleRadius": 20,
+      "scale": {
+        "min": -1.05,
+        "max": 0.3,
+        "startAngle": -2.356194490192345,
+        "sweep": 4.71238898038469,
+        "angleConvention": "point = center + radius * (sin(angle)*worldX - cos(angle)*worldY); increasing clockwise in xy plane"
+      },
+      "clipId": "tidal-dial-r"
+    },
+    "t": {
+      "center": [
+        472.781739286708,
+        298.8579917145749
+      ],
+      "worldCenter": [
+        87,
+        43,
+        35.08
+      ],
+      "worldPlaneBasis": {
+        "u": [
+          1,
+          0,
+          0
+        ],
+        "v": [
+          0,
+          1,
+          0
+        ]
+      },
+      "basis": {
+        "u": [
+          1.2319713975029458,
+          0.7229833492818898
+        ],
+        "v": [
+          -1.1488319138616134,
+          0.7753047216387472
+        ]
+      },
+      "radius": 16,
+      "faceRadius": 23,
+      "scaleRadius": 20,
+      "scale": {
+        "min": -1.05,
+        "max": 0.3,
+        "startAngle": -2.356194490192345,
+        "sweep": 4.71238898038469,
+        "angleConvention": "point = center + radius * (sin(angle)*worldX - cos(angle)*worldY); increasing clockwise in xy plane"
+      },
+      "clipId": "tidal-dial-t"
+    }
+  },
+  "baseline": {
+    "center": [
+      -65,
+      -10,
+      33.5
+    ],
+    "radial": {
+      "unit": [
+        1,
+        0,
+        0
+      ],
+      "endpoints": [
+        [
+          -116,
+          -10,
+          34
+        ],
+        [
+          -14,
+          -10,
+          34
+        ]
+      ]
+    },
+    "transverse": {
+      "unit": [
+        0,
+        1,
+        0
+      ],
+      "endpoints": [
+        [
+          -65,
+          -61,
+          34
+        ],
+        [
+          -65,
+          41,
+          34
+        ]
+      ]
+    },
+    "fixed": true,
+    "dotProduct": 0
+  },
+  "hooks": [
+    "data-tidal-part",
+    "data-tidal-needle-r",
+    "data-tidal-needle-t"
+  ],
+  "partsList": [
+    {
+      "name": "base.foot.0",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -142,
+        "y": -79,
+        "w": 14,
+        "d": 14,
+        "r": 3
+      },
+      "z": -18,
+      "h": 7
+    },
+    {
+      "name": "base.foot.1",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 128,
+        "y": -79,
+        "w": 14,
+        "d": 14,
+        "r": 3
+      },
+      "z": -18,
+      "h": 7
+    },
+    {
+      "name": "base.foot.2",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -142,
+        "y": 65,
+        "w": 14,
+        "d": 14,
+        "r": 3
+      },
+      "z": -18,
+      "h": 7
+    },
+    {
+      "name": "base.foot.3",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 128,
+        "y": 65,
+        "w": 14,
+        "d": 14,
+        "r": 3
+      },
+      "z": -18,
+      "h": 7
+    },
+    {
+      "name": "base.plate",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -154,
+        "y": -91,
+        "w": 308,
+        "d": 182,
+        "r": 8
+      },
+      "z": -11,
+      "h": 11
+    },
+    {
+      "name": "base.deck",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -140,
+        "y": -78,
+        "w": 280,
+        "d": 156,
+        "r": 4
+      },
+      "z": 0,
+      "h": 3
+    },
+    {
+      "name": "base.screw.0",
+      "kind": "cylinder",
+      "x": -144,
+      "y": -81,
+      "r": 1.6,
+      "z": 0,
+      "h": 1
+    },
+    {
+      "name": "base.screw.1",
+      "kind": "cylinder",
+      "x": 144,
+      "y": -81,
+      "r": 1.6,
+      "z": 0,
+      "h": 1
+    },
+    {
+      "name": "base.screw.2",
+      "kind": "cylinder",
+      "x": -144,
+      "y": 81,
+      "r": 1.6,
+      "z": 0,
+      "h": 1
+    },
+    {
+      "name": "base.screw.3",
+      "kind": "cylinder",
+      "x": 144,
+      "y": 81,
+      "r": 1.6,
+      "z": 0,
+      "h": 1
+    },
+    {
+      "name": "base.plaque",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -39,
+        "y": 80,
+        "w": 78,
+        "d": 7,
+        "r": 1
+      },
+      "z": 0,
+      "h": 0.8
+    },
+    {
+      "name": "base.plaque-rivet.-34",
+      "kind": "cylinder",
+      "x": -34,
+      "y": 83.5,
+      "r": 0.9,
+      "z": 0.8,
+      "h": 0.5
+    },
+    {
+      "name": "base.plaque-rivet.34",
+      "kind": "cylinder",
+      "x": 34,
+      "y": 83.5,
+      "r": 0.9,
+      "z": 0.8,
+      "h": 0.5
+    },
+    {
+      "name": "base.rule.-78",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -132,
+        "y": -78,
+        "w": 264,
+        "d": 5,
+        "r": 0.6
+      },
+      "z": 3,
+      "h": 0.7
+    },
+    {
+      "name": "base.rule.71",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -132,
+        "y": 71,
+        "w": 264,
+        "d": 5,
+        "r": 0.6
+      },
+      "z": 3,
+      "h": 0.7
+    },
+    {
+      "name": "r-minus.plinth",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -128,
+        "y": -22,
+        "w": 24,
+        "d": 24,
+        "r": 1.5
+      },
+      "z": 3,
+      "h": 4
+    },
+    {
+      "name": "r-minus.collar",
+      "kind": "cylinder",
+      "x": -116,
+      "y": -10,
+      "r": 5.5,
+      "z": 7,
+      "h": 3
+    },
+    {
+      "name": "r-minus.post",
+      "kind": "cylinder",
+      "x": -116,
+      "y": -10,
+      "r": 2.8,
+      "z": 10,
+      "h": 15
+    },
+    {
+      "name": "r-minus.seat",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -124,
+        "y": -18,
+        "w": 16,
+        "d": 16,
+        "r": 1
+      },
+      "z": 25,
+      "h": 3
+    },
+    {
+      "name": "r-minus.test-mass",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -122,
+        "y": -16,
+        "w": 12,
+        "d": 12,
+        "r": 0.6
+      },
+      "z": 28,
+      "h": 12
+    },
+    {
+      "name": "r-minus.top-fastener",
+      "kind": "cylinder",
+      "x": -116,
+      "y": -10,
+      "r": 1.2,
+      "z": 40,
+      "h": 0.8
+    },
+    {
+      "name": "r-plus.plinth",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -26,
+        "y": -22,
+        "w": 24,
+        "d": 24,
+        "r": 1.5
+      },
+      "z": 3,
+      "h": 4
+    },
+    {
+      "name": "r-plus.collar",
+      "kind": "cylinder",
+      "x": -14,
+      "y": -10,
+      "r": 5.5,
+      "z": 7,
+      "h": 3
+    },
+    {
+      "name": "r-plus.post",
+      "kind": "cylinder",
+      "x": -14,
+      "y": -10,
+      "r": 2.8,
+      "z": 10,
+      "h": 15
+    },
+    {
+      "name": "r-plus.seat",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -22,
+        "y": -18,
+        "w": 16,
+        "d": 16,
+        "r": 1
+      },
+      "z": 25,
+      "h": 3
+    },
+    {
+      "name": "r-plus.test-mass",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -20,
+        "y": -16,
+        "w": 12,
+        "d": 12,
+        "r": 0.6
+      },
+      "z": 28,
+      "h": 12
+    },
+    {
+      "name": "r-plus.top-fastener",
+      "kind": "cylinder",
+      "x": -14,
+      "y": -10,
+      "r": 1.2,
+      "z": 40,
+      "h": 0.8
+    },
+    {
+      "name": "t-minus.plinth",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -77,
+        "y": -73,
+        "w": 24,
+        "d": 24,
+        "r": 1.5
+      },
+      "z": 3,
+      "h": 4
+    },
+    {
+      "name": "t-minus.collar",
+      "kind": "cylinder",
+      "x": -65,
+      "y": -61,
+      "r": 5.5,
+      "z": 7,
+      "h": 3
+    },
+    {
+      "name": "t-minus.post",
+      "kind": "cylinder",
+      "x": -65,
+      "y": -61,
+      "r": 2.8,
+      "z": 10,
+      "h": 15
+    },
+    {
+      "name": "t-minus.seat",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -73,
+        "y": -69,
+        "w": 16,
+        "d": 16,
+        "r": 1
+      },
+      "z": 25,
+      "h": 3
+    },
+    {
+      "name": "t-minus.test-mass",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -71,
+        "y": -67,
+        "w": 12,
+        "d": 12,
+        "r": 0.6
+      },
+      "z": 28,
+      "h": 12
+    },
+    {
+      "name": "t-minus.top-fastener",
+      "kind": "cylinder",
+      "x": -65,
+      "y": -61,
+      "r": 1.2,
+      "z": 40,
+      "h": 0.8
+    },
+    {
+      "name": "t-plus.plinth",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -77,
+        "y": 29,
+        "w": 24,
+        "d": 24,
+        "r": 1.5
+      },
+      "z": 3,
+      "h": 4
+    },
+    {
+      "name": "t-plus.collar",
+      "kind": "cylinder",
+      "x": -65,
+      "y": 41,
+      "r": 5.5,
+      "z": 7,
+      "h": 3
+    },
+    {
+      "name": "t-plus.post",
+      "kind": "cylinder",
+      "x": -65,
+      "y": 41,
+      "r": 2.8,
+      "z": 10,
+      "h": 15
+    },
+    {
+      "name": "t-plus.seat",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -73,
+        "y": 33,
+        "w": 16,
+        "d": 16,
+        "r": 1
+      },
+      "z": 25,
+      "h": 3
+    },
+    {
+      "name": "t-plus.test-mass",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -71,
+        "y": 35,
+        "w": 12,
+        "d": 12,
+        "r": 0.6
+      },
+      "z": 28,
+      "h": 12
+    },
+    {
+      "name": "t-plus.top-fastener",
+      "kind": "cylinder",
+      "x": -65,
+      "y": 41,
+      "r": 1.2,
+      "z": 40,
+      "h": 0.8
+    },
+    {
+      "name": "hub.base",
+      "kind": "cylinder",
+      "x": -65,
+      "y": -10,
+      "r": 7,
+      "z": 3,
+      "h": 4
+    },
+    {
+      "name": "hub.post",
+      "kind": "cylinder",
+      "x": -65,
+      "y": -10,
+      "r": 3.3,
+      "z": 7,
+      "h": 21
+    },
+    {
+      "name": "hub.body",
+      "kind": "cylinder",
+      "x": -65,
+      "y": -10,
+      "r": 7,
+      "z": 28,
+      "h": 9
+    },
+    {
+      "name": "hub.cap",
+      "kind": "cylinder",
+      "x": -65,
+      "y": -10,
+      "r": 4.5,
+      "z": 37,
+      "h": 2
+    },
+    {
+      "name": "baseline.r-minus",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -110,
+        "y": -11.5,
+        "w": 38,
+        "d": 3,
+        "r": 0
+      },
+      "z": 32,
+      "h": 3
+    },
+    {
+      "name": "baseline.r-plus",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -58,
+        "y": -11.5,
+        "w": 38,
+        "d": 3,
+        "r": 0
+      },
+      "z": 32,
+      "h": 3
+    },
+    {
+      "name": "baseline.t-minus",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -66.5,
+        "y": -55,
+        "w": 3,
+        "d": 38,
+        "r": 0
+      },
+      "z": 32,
+      "h": 3
+    },
+    {
+      "name": "baseline.t-plus",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -66.5,
+        "y": -3,
+        "w": 3,
+        "d": 38,
+        "r": 0
+      },
+      "z": 32,
+      "h": 3
+    },
+    {
+      "name": "dial.r.plinth",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 53,
+        "y": -65,
+        "w": 68,
+        "d": 44,
+        "r": 2
+      },
+      "z": 3,
+      "h": 4
+    },
+    {
+      "name": "dial.r.foot",
+      "kind": "cylinder",
+      "x": 87,
+      "y": -43,
+      "r": 7,
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "dial.r.stem",
+      "kind": "cylinder",
+      "x": 87,
+      "y": -43,
+      "r": 3.8,
+      "z": 11,
+      "h": 14
+    },
+    {
+      "name": "dial.r.case",
+      "kind": "cylinder",
+      "x": 87,
+      "y": -43,
+      "r": 26,
+      "z": 25,
+      "h": 9
+    },
+    {
+      "name": "dial.r.face",
+      "kind": "cylinder",
+      "x": 87,
+      "y": -43,
+      "r": 23,
+      "z": 34,
+      "h": 1
+    },
+    {
+      "name": "dial.r.bezel.back",
+      "kind": "half-annular-prism",
+      "x": 87,
+      "y": -43,
+      "z": 34,
+      "h": 3,
+      "ri": 23,
+      "ro": 26,
+      "from": 2.3911010752322315,
+      "span": 3.141592653589793
+    },
+    {
+      "name": "dial.r.bezel.front",
+      "kind": "half-annular-prism",
+      "x": 87,
+      "y": -43,
+      "z": 34,
+      "h": 3,
+      "ri": 23,
+      "ro": 26,
+      "from": -0.7504915783575616,
+      "span": 3.141592653589793
+    },
+    {
+      "name": "dial.r.crown-lug",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 113,
+        "y": -46,
+        "w": 5,
+        "d": 6,
+        "r": 0.5
+      },
+      "z": 28,
+      "h": 5
+    },
+    {
+      "name": "dial.r.crown",
+      "kind": "cylinder",
+      "x": 115.5,
+      "y": -43,
+      "r": 3,
+      "z": 33,
+      "h": 4
+    },
+    {
+      "name": "dial.r.mount-screw.58",
+      "kind": "cylinder",
+      "x": 58,
+      "y": -43,
+      "r": 1.2,
+      "z": 7,
+      "h": 0.8
+    },
+    {
+      "name": "dial.r.mount-screw.116",
+      "kind": "cylinder",
+      "x": 116,
+      "y": -43,
+      "r": 1.2,
+      "z": 7,
+      "h": 0.8
+    },
+    {
+      "name": "dial.t.plinth",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 53,
+        "y": 21,
+        "w": 68,
+        "d": 44,
+        "r": 2
+      },
+      "z": 3,
+      "h": 4
+    },
+    {
+      "name": "dial.t.foot",
+      "kind": "cylinder",
+      "x": 87,
+      "y": 43,
+      "r": 7,
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "dial.t.stem",
+      "kind": "cylinder",
+      "x": 87,
+      "y": 43,
+      "r": 3.8,
+      "z": 11,
+      "h": 14
+    },
+    {
+      "name": "dial.t.case",
+      "kind": "cylinder",
+      "x": 87,
+      "y": 43,
+      "r": 26,
+      "z": 25,
+      "h": 9
+    },
+    {
+      "name": "dial.t.face",
+      "kind": "cylinder",
+      "x": 87,
+      "y": 43,
+      "r": 23,
+      "z": 34,
+      "h": 1
+    },
+    {
+      "name": "dial.t.bezel.back",
+      "kind": "half-annular-prism",
+      "x": 87,
+      "y": 43,
+      "z": 34,
+      "h": 3,
+      "ri": 23,
+      "ro": 26,
+      "from": 2.3911010752322315,
+      "span": 3.141592653589793
+    },
+    {
+      "name": "dial.t.bezel.front",
+      "kind": "half-annular-prism",
+      "x": 87,
+      "y": 43,
+      "z": 34,
+      "h": 3,
+      "ri": 23,
+      "ro": 26,
+      "from": -0.7504915783575616,
+      "span": 3.141592653589793
+    },
+    {
+      "name": "dial.t.crown-lug",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 113,
+        "y": 40,
+        "w": 5,
+        "d": 6,
+        "r": 0.5
+      },
+      "z": 28,
+      "h": 5
+    },
+    {
+      "name": "dial.t.crown",
+      "kind": "cylinder",
+      "x": 115.5,
+      "y": 43,
+      "r": 3,
+      "z": 33,
+      "h": 4
+    },
+    {
+      "name": "dial.t.mount-screw.58",
+      "kind": "cylinder",
+      "x": 58,
+      "y": 43,
+      "r": 1.2,
+      "z": 7,
+      "h": 0.8
+    },
+    {
+      "name": "dial.t.mount-screw.116",
+      "kind": "cylinder",
+      "x": 116,
+      "y": 43,
+      "r": 1.2,
+      "z": 7,
+      "h": 0.8
+    }
+  ],
+  "limits": "Computational readout teaching rig only. The two physical baselines are fixed and orthogonal. Runtime must read dimensionless Plummer tidal eigenvalues lambda/(GM/a^3) from the same pure model as the chart. No sensing elasticity, dynamics, force calibration, finite-baseline response or measurement noise is simulated. Dial scales are identical; one lit ink tone is reserved for runtime needle readout."
+}

@@ -1,0 +1,691 @@
+[
+  {
+    "id": "v28-cmb-ell",
+    "kind": "symbol",
+    "aliases": [
+      "ℓ",
+      "ell"
+    ],
+    "title": "多极阶数",
+    "english": "multipole order",
+    "definition": "球谐展开的角尺度指标；此抽样实验允许整数2至100。不是天空抽样次数。",
+    "unit": "无量纲",
+    "scope": "仅适用于本新增全天、高斯、各向同性、无掩膜且无仪器噪声的抽样实验。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "cmb-sampling-lab"
+    ],
+    "source": "MBW §6.7.1 pp.302–304；χ²密度与重复抽样为明确假设下的新增统计推导。",
+    "tex": "\\ell"
+  },
+  {
+    "id": "v28-cmb-nu",
+    "kind": "symbol",
+    "aliases": [
+      "ν"
+    ],
+    "title": "独立实自由度",
+    "english": "real degrees of freedom",
+    "definition": "固定多极的全天高斯实场有2ℓ+1个独立实自由度，决定功率估计的χ²分布。不是频率。",
+    "unit": "无量纲",
+    "scope": "仅适用于本新增全天、高斯、各向同性、无掩膜且无仪器噪声的抽样实验。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "cmb-sampling-lab"
+    ],
+    "source": "MBW §6.7.1 pp.302–304；χ²密度与重复抽样为明确假设下的新增统计推导。",
+    "tex": "\\nu"
+  },
+  {
+    "id": "v28-cmb-N",
+    "kind": "symbol",
+    "aliases": [
+      "N"
+    ],
+    "title": "假想天空数",
+    "english": "number of hypothetical skies",
+    "definition": "本实验生成的独立假想全天样本数。增加N使直方图更稳定，不降低单片天空的宇宙方差。",
+    "unit": "无量纲",
+    "scope": "仅适用于本新增全天、高斯、各向同性、无掩膜且无仪器噪声的抽样实验。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "cmb-sampling-lab"
+    ],
+    "source": "MBW §6.7.1 pp.302–304；χ²密度与重复抽样为明确假设下的新增统计推导。",
+    "tex": "N"
+  },
+  {
+    "id": "v28-cmb-R",
+    "kind": "symbol",
+    "aliases": [
+      "R"
+    ],
+    "title": "归一化功率估计比",
+    "english": "normalized power estimate",
+    "definition": "当前假想天空的功率估计Ĉℓ除以固定理论功率Cℓ。理论均值为1、方差为2/ν；不是半径。",
+    "unit": "无量纲",
+    "scope": "仅适用于本新增全天、高斯、各向同性、无掩膜且无仪器噪声的抽样实验。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "cmb-sampling-lab"
+    ],
+    "source": "MBW §6.7.1 pp.302–304；χ²密度与重复抽样为明确假设下的新增统计推导。",
+    "tex": "R"
+  },
+  {
+    "id": "v28-cmb-Ri",
+    "kind": "symbol",
+    "aliases": [
+      "Ri",
+      "Rᵢ"
+    ],
+    "title": "第i片天空的功率估计比",
+    "english": "power ratio of sky i",
+    "definition": "第i次独立天空抽样的Ĉℓ/Cℓ，求样本均值和方差时的单个数据。",
+    "unit": "无量纲",
+    "scope": "仅适用于本新增全天、高斯、各向同性、无掩膜且无仪器噪声的抽样实验。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "cmb-sampling-lab"
+    ],
+    "source": "MBW §6.7.1 pp.302–304；χ²密度与重复抽样为明确假设下的新增统计推导。",
+    "tex": "R_i"
+  },
+  {
+    "id": "v28-cmb-Rbar",
+    "kind": "symbol",
+    "aliases": [
+      "R̄"
+    ],
+    "title": "样本平均功率比",
+    "english": "sample mean",
+    "definition": "已显示的独立假想天空功率估计比的算术平均；不是一片天空的理论功率。",
+    "unit": "无量纲",
+    "scope": "仅适用于本新增全天、高斯、各向同性、无掩膜且无仪器噪声的抽样实验。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "cmb-sampling-lab"
+    ],
+    "source": "MBW §6.7.1 pp.302–304；χ²密度与重复抽样为明确假设下的新增统计推导。",
+    "tex": "\\overline R"
+  },
+  {
+    "id": "v28-cmb-sR",
+    "kind": "symbol",
+    "aliases": [
+      "sR²",
+      "s_R²"
+    ],
+    "title": "无偏样本方差",
+    "english": "unbiased sample variance",
+    "definition": "以N−1为分母，计算各天空R相对样本均值的平方偏差和。不同于单片天空理论方差2/ν。",
+    "unit": "无量纲",
+    "scope": "仅适用于本新增全天、高斯、各向同性、无掩膜且无仪器噪声的抽样实验。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "cmb-sampling-lab"
+    ],
+    "source": "MBW §6.7.1 pp.302–304；χ²密度与重复抽样为明确假设下的新增统计推导。",
+    "tex": "s_R^2"
+  },
+  {
+    "id": "v28-cmb-sigma",
+    "kind": "symbol",
+    "aliases": [
+      "σR",
+      "σ"
+    ],
+    "title": "单片天空理论标准差",
+    "english": "theoretical single-sky standard deviation",
+    "definition": "功率估计比R在独立理想天空间的标准差sqrt(2/ν)。均值±该标准差的覆盖率由χ²分布决定，低多极时不是68%等尾区间。",
+    "unit": "无量纲",
+    "scope": "仅适用于本新增全天、高斯、各向同性、无掩膜且无仪器噪声的抽样实验。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "cmb-sampling-lab"
+    ],
+    "source": "MBW §6.7.1 pp.302–304；χ²密度与重复抽样为明确假设下的新增统计推导。",
+    "tex": "\\sigma_R"
+  },
+  {
+    "id": "v28-cmb-Z",
+    "kind": "symbol",
+    "aliases": [
+      "Zj",
+      "Z"
+    ],
+    "title": "标准正态自由变量",
+    "english": "standard normal variable",
+    "definition": "每个独立实自由度的零均值、单位方差正态变量。平方和除以ν构造R。不是金属丰度。",
+    "unit": "无量纲",
+    "scope": "仅适用于本新增全天、高斯、各向同性、无掩膜且无仪器噪声的抽样实验。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "cmb-sampling-lab"
+    ],
+    "source": "MBW §6.7.1 pp.302–304；χ²密度与重复抽样为明确假设下的新增统计推导。",
+    "tex": "Z_j"
+  },
+  {
+    "id": "v28-cmb-i",
+    "kind": "symbol",
+    "aliases": [
+      "i"
+    ],
+    "title": "天空样本索引",
+    "english": "sky sample index",
+    "definition": "独立假想天空的求和索引，从1至N。",
+    "unit": "无量纲",
+    "scope": "仅适用于本新增全天、高斯、各向同性、无掩膜且无仪器噪声的抽样实验。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "cmb-sampling-lab"
+    ],
+    "source": "MBW §6.7.1 pp.302–304；χ²密度与重复抽样为明确假设下的新增统计推导。",
+    "tex": "i"
+  },
+  {
+    "id": "v28-cmb-j",
+    "kind": "symbol",
+    "aliases": [
+      "j"
+    ],
+    "title": "独立自由度索引",
+    "english": "degree-of-freedom index",
+    "definition": "单片天空内的独立实正态变量索引，从1至ν。",
+    "unit": "无量纲",
+    "scope": "仅适用于本新增全天、高斯、各向同性、无掩膜且无仪器噪声的抽样实验。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "cmb-sampling-lab"
+    ],
+    "source": "MBW §6.7.1 pp.302–304；χ²密度与重复抽样为明确假设下的新增统计推导。",
+    "tex": "j"
+  },
+  {
+    "id": "v28-cmb-gamma",
+    "kind": "symbol",
+    "aliases": [
+      "Γ"
+    ],
+    "title": "Gamma函数",
+    "english": "gamma function",
+    "definition": "Γ(a)=从0到无穷的u^(a−1) exp(−u)积分；在此给χ²概率密度归一。不是电离率。",
+    "unit": "无量纲",
+    "scope": "仅适用于本新增全天、高斯、各向同性、无掩膜且无仪器噪声的抽样实验。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "cmb-sampling-lab"
+    ],
+    "source": "MBW §6.7.1 pp.302–304；χ²密度与重复抽样为明确假设下的新增统计推导。",
+    "tex": "\\Gamma"
+  },
+  {
+    "id": "v28-cmb-p",
+    "kind": "symbol",
+    "aliases": [
+      "p(R)",
+      "p"
+    ],
+    "title": "功率比概率密度",
+    "english": "power-ratio probability density",
+    "definition": "R的连续概率密度；区间概率需要对密度积分，直方图箱概率等于柱高乘箱宽。",
+    "unit": "无量纲",
+    "scope": "仅适用于本新增全天、高斯、各向同性、无掩膜且无仪器噪声的抽样实验。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "cmb-sampling-lab"
+    ],
+    "source": "MBW §6.7.1 pp.302–304；χ²密度与重复抽样为明确假设下的新增统计推导。",
+    "tex": "p"
+  },
+  {
+    "id": "v28-cmb-E",
+    "kind": "symbol",
+    "aliases": [
+      "E"
+    ],
+    "title": "数学期望算符",
+    "english": "expectation operator",
+    "definition": "这里的黑板粗体E表示分布的期望；不是能量。",
+    "unit": "无量纲",
+    "scope": "仅适用于本新增全天、高斯、各向同性、无掩膜且无仪器噪声的抽样实验。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "cmb-sampling-lab"
+    ],
+    "source": "MBW §6.7.1 pp.302–304；χ²密度与重复抽样为明确假设下的新增统计推导。",
+    "tex": "\\mathbb E"
+  },
+  {
+    "id": "v28-cmb-C",
+    "kind": "symbol",
+    "aliases": [
+      "Cℓ"
+    ],
+    "title": "理论角功率",
+    "english": "theoretical angular power",
+    "definition": "固定多极的理论全天高斯角功率谱值；归一化功率比的分母。",
+    "unit": "无量纲（功率Cℓ本身沿用温度平方或其归一化约定）",
+    "scope": "仅适用于本新增全天、高斯、各向同性、无掩膜且无仪器噪声的抽样实验。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "cmb-sampling-lab"
+    ],
+    "source": "MBW §6.7.1 pp.302–304；χ²密度与重复抽样为明确假设下的新增统计推导。",
+    "tex": "C_\\ell"
+  },
+  {
+    "id": "v28-cmb-Chat",
+    "kind": "symbol",
+    "aliases": [
+      "Ĉℓ"
+    ],
+    "title": "单片天空的角功率估计",
+    "english": "estimated angular power",
+    "definition": "单片假想全天天空的角功率估计，受有限2ℓ+1个自由度影响而波动。",
+    "unit": "无量纲（功率Cℓ本身沿用温度平方或其归一化约定）",
+    "scope": "仅适用于本新增全天、高斯、各向同性、无掩膜且无仪器噪声的抽样实验。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "cmb-sampling-lab"
+    ],
+    "source": "MBW §6.7.1 pp.302–304；χ²密度与重复抽样为明确假设下的新增统计推导。",
+    "tex": "\\widehat C_\\ell"
+  },
+  {
+    "id": "v28-tidal-chi",
+    "kind": "symbol",
+    "aliases": [
+      "χ"
+    ],
+    "title": "引力聚焦诊断量",
+    "english": "gravitational focusing parameter",
+    "definition": "GMp/(bV²)，比较引力偏折与直线飞掠假设；χ较大时直线路径不再可靠。不是卡方随机变量。",
+    "unit": "无量纲",
+    "scope": "χ=0.1是教学提示门槛，不是严格相变；与脉冲时间条件及r/b条件分别检查。",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-shock-lab"
+    ],
+    "source": "MBW (2010) 及本次新增模型的明确数学定义；不是新观测测量",
+    "tex": "\\chi"
+  },
+  {
+    "id": "v28-friction-q",
+    "kind": "symbol",
+    "aliases": [
+      "q"
+    ],
+    "title": "当前位置的卫星质量比",
+    "english": "local satellite-to-enclosed-host mass ratio",
+    "definition": "卫星质量除以当前半径内宿主质量Mhost(<r)，随摩擦轨道半径减小而增长；不是初始半径的质量比。",
+    "unit": "无量纲",
+    "scope": "恒定圆速、奇异等温宿主；q较大时轻卫星近似失效，理想r=0终点无有限局部质量比。",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "friction-lab"
+    ],
+    "source": "MBW (2010) 及本次新增模型的明确数学定义；不是新观测测量",
+    "tex": "q"
+  },
+  {
+    "id": "v28-feedback-mach",
+    "kind": "symbol",
+    "aliases": [
+      "ℳ"
+    ],
+    "title": "马赫数",
+    "english": "Mach number",
+    "definition": "模型激波速度除以假设环境声速；不超过1时不是超声激波，接近1时强激波近似不成立。",
+    "unit": "无量纲",
+    "scope": "新增适用条件诊断；不把教学门槛当作精确的流体相界。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "blast-lab",
+      "wind-lab",
+      "blast-diagnostics",
+      "wind-diagnostics"
+    ],
+    "source": "MBW §8.6，尤其式8.178与8.189；声速为理想气体公式。",
+    "tex": "\\mathcal M"
+  },
+  {
+    "id": "v28-feedback-Tenv",
+    "kind": "symbol",
+    "aliases": [
+      "Tenv"
+    ],
+    "title": "环境气体温度",
+    "english": "ambient gas temperature",
+    "definition": "用于声速诊断的未扰动外部温度；此诊断输入不会改变上方忽略外压的自相似解。",
+    "unit": "K",
+    "scope": "新增适用条件诊断；不把教学门槛当作精确的流体相界。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "blast-lab",
+      "wind-lab",
+      "blast-diagnostics",
+      "wind-diagnostics"
+    ],
+    "source": "MBW §8.6，尤其式8.178与8.189；声速为理想气体公式。",
+    "tex": "T_{\\rm env}"
+  },
+  {
+    "id": "v28-feedback-Mej",
+    "kind": "symbol",
+    "aliases": [
+      "Mej"
+    ],
+    "title": "抛射物质量",
+    "english": "ejecta mass",
+    "definition": "用于判断扫掠质量是否远大于爆炸初始抛射质量；不是已扫掠环境质量。",
+    "unit": "M☉",
+    "scope": "新增适用条件诊断；不把教学门槛当作精确的流体相界。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "blast-lab",
+      "wind-lab",
+      "blast-diagnostics",
+      "wind-diagnostics"
+    ],
+    "source": "MBW §8.6，尤其式8.178与8.189；声速为理想气体公式。",
+    "tex": "M_{\\rm ej}"
+  },
+  {
+    "id": "v28-feedback-trad",
+    "kind": "symbol",
+    "aliases": [
+      "trad"
+    ],
+    "title": "辐射损失参考时间",
+    "english": "reference radiative time",
+    "definition": "原书式8.189给出估计损失初始能量1/4时的参考年龄；采用含氦及原书冷却函数，与本页纯氢绝热解的成分不同。",
+    "unit": "yr 或 kyr（按标签）",
+    "scope": "新增适用条件诊断；不把教学门槛当作精确的流体相界。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "blast-lab",
+      "wind-lab",
+      "blast-diagnostics",
+      "wind-diagnostics"
+    ],
+    "source": "MBW §8.6，尤其式8.178与8.189；声速为理想气体公式。",
+    "tex": "t_{\\rm rad}"
+  },
+  {
+    "id": "v28-feedback-E51",
+    "kind": "symbol",
+    "aliases": [
+      "E₅₁",
+      "E51"
+    ],
+    "title": "爆炸能量的归一化值",
+    "english": "explosion energy in units of 10^51 erg",
+    "definition": "爆炸总能量除以10^51 erg；用于原书辐射时间近似的无量纲输入。",
+    "unit": "无量纲",
+    "scope": "新增适用条件诊断；不把教学门槛当作精确的流体相界。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "blast-lab",
+      "wind-lab",
+      "blast-diagnostics",
+      "wind-diagnostics"
+    ],
+    "source": "MBW §8.6，尤其式8.178与8.189；声速为理想气体公式。",
+    "tex": "E_{51}"
+  },
+  {
+    "id": "v28-feedback-nHe",
+    "kind": "symbol",
+    "aliases": [
+      "nHe"
+    ],
+    "title": "氦原子核数密度",
+    "english": "helium nucleus number density",
+    "definition": "辐射参考时间所假设的氦核数密度，原书此式采用nHe=nH/12；不要与上方纯氢介质混用。",
+    "unit": "cm⁻³",
+    "scope": "新增适用条件诊断；不把教学门槛当作精确的流体相界。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "blast-lab",
+      "wind-lab",
+      "blast-diagnostics",
+      "wind-diagnostics"
+    ],
+    "source": "MBW §8.6，尤其式8.178与8.189；声速为理想气体公式。",
+    "tex": "n_{\\rm He}"
+  },
+  {
+    "id": "v28-feedback-cs",
+    "kind": "symbol",
+    "aliases": [
+      "cₛ",
+      "cs"
+    ],
+    "title": "环境声速",
+    "english": "ambient sound speed",
+    "definition": "完全电离纯氢、理想单原子气体中的绝热声速，平方为γkBTenv/(μmp)，此处μ=0.5。",
+    "unit": "km/s（读数）；公式用cgs",
+    "scope": "新增适用条件诊断；不把教学门槛当作精确的流体相界。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "blast-lab",
+      "wind-lab",
+      "blast-diagnostics",
+      "wind-diagnostics"
+    ],
+    "source": "MBW §8.6，尤其式8.178与8.189；声速为理想气体公式。",
+    "tex": "c_s"
+  },
+  {
+    "id": "v28-transfer-f",
+    "kind": "symbol",
+    "aliases": [
+      "f"
+    ],
+    "title": "可调通道入射权重",
+    "english": "variable-channel incident weight",
+    "definition": "归一化总入射信号分配给可调吸收通道的比例；另一通道权重为1−f。",
+    "unit": "无量纲",
+    "scope": "原创独立非相干双通道纯吸收类比，无散射、再发射或光学干涉。",
+    "chapters": [
+      16
+    ],
+    "contexts": [
+      "transfer-bench-lab"
+    ],
+    "source": "MBW pp.690–695 的透射概念；装置为新增原创教学示意。",
+    "tex": "f"
+  },
+  {
+    "id": "v28-transfer-tau",
+    "kind": "symbol",
+    "aliases": [
+      "τ"
+    ],
+    "title": "可调通道吸收光深",
+    "english": "variable-channel optical depth",
+    "definition": "可调纯吸收通道的无量纲光深；独立输出信号为f exp(−τ)。",
+    "unit": "无量纲",
+    "scope": "原创独立非相干双通道纯吸收类比，无散射、再发射或光学干涉。",
+    "chapters": [
+      16
+    ],
+    "contexts": [
+      "transfer-bench-lab"
+    ],
+    "source": "MBW pp.690–695 的透射概念；装置为新增原创教学示意。",
+    "tex": "\\tau"
+  },
+  {
+    "id": "v28-transfer-S1",
+    "kind": "symbol",
+    "aliases": [
+      "S1"
+    ],
+    "title": "可调通道探测信号",
+    "english": "variable-channel detected signal",
+    "definition": "可调通道入射权重f乘以其透射exp(−τ)，以两路入射总信号归一。",
+    "unit": "无量纲",
+    "scope": "原创独立非相干双通道纯吸收类比，无散射、再发射或光学干涉。",
+    "chapters": [
+      16
+    ],
+    "contexts": [
+      "transfer-bench-lab"
+    ],
+    "source": "MBW pp.690–695 的透射概念；装置为新增原创教学示意。",
+    "tex": "S_1"
+  },
+  {
+    "id": "v28-transfer-S2",
+    "kind": "symbol",
+    "aliases": [
+      "S2"
+    ],
+    "title": "固定通道探测信号",
+    "english": "fixed-channel detected signal",
+    "definition": "固定光深0.1通道的探测信号(1−f)exp(−0.1)。",
+    "unit": "无量纲",
+    "scope": "原创独立非相干双通道纯吸收类比，无散射、再发射或光学干涉。",
+    "chapters": [
+      16
+    ],
+    "contexts": [
+      "transfer-bench-lab"
+    ],
+    "source": "MBW pp.690–695 的透射概念；装置为新增原创教学示意。",
+    "tex": "S_2"
+  },
+  {
+    "id": "v28-transfer-F",
+    "kind": "symbol",
+    "aliases": [
+      "F"
+    ],
+    "title": "平均归一化透射",
+    "english": "mean normalized transmission",
+    "definition": "独立两路探测信号S1+S2，对应两类视线的加权平均透射；不是串联屏的乘积。",
+    "unit": "无量纲",
+    "scope": "原创独立非相干双通道纯吸收类比，无散射、再发射或光学干涉。",
+    "chapters": [
+      16
+    ],
+    "contexts": [
+      "transfer-bench-lab"
+    ],
+    "source": "MBW pp.690–695 的透射概念；装置为新增原创教学示意。",
+    "tex": "F"
+  },
+  {
+    "id": "v28-transfer-eff",
+    "kind": "symbol",
+    "aliases": [
+      "τeff"
+    ],
+    "title": "有效光深",
+    "english": "effective optical depth",
+    "definition": "平均归一化透射的负自然对数，小于或等于加权平均光深；非每条视线光深的直接算术平均。",
+    "unit": "无量纲",
+    "scope": "原创独立非相干双通道纯吸收类比，无散射、再发射或光学干涉。",
+    "chapters": [
+      16
+    ],
+    "contexts": [
+      "transfer-bench-lab"
+    ],
+    "source": "MBW pp.690–695 的透射概念；装置为新增原创教学示意。",
+    "tex": "\\tau_{\\rm eff}"
+  },
+  {
+    "id": "v28-census-Ob",
+    "kind": "symbol",
+    "aliases": [
+      "Ωb"
+    ],
+    "title": "额外假设的重子密度参数",
+    "english": "assumed baryon density parameter",
+    "definition": "本页额外采用0.048作为平均宇宙重子预算比较标尺；合成吸收体样本推导的氢氦总密度若超过它，说明不能直接将该样本当作代表性宇宙普查。",
+    "unit": "无量纲",
+    "scope": "原始中性气体公式保持原值；该预算比较需要额外的宇宙学参数和样本代表性假设。",
+    "chapters": [
+      16
+    ],
+    "contexts": [
+      "neutral-census-lab"
+    ],
+    "source": "MBW (2010) 及本次新增模型的明确数学定义；不是新观测测量",
+    "tex": "\\Omega_b"
+  },
+  {
+    "id": "v28-cmb-normal",
+    "kind": "symbol",
+    "aliases": [
+      "\\mathcal N"
+    ],
+    "tex": "\\mathcal N",
+    "title": "正态分布族",
+    "english": "normal distribution",
+    "definition": "这里的花体N(0,1)表示零均值、单位方差的标准正态分布，不是独立假想天空数N。",
+    "unit": "分布符号，无单位",
+    "scope": "独立实高斯自由度的生成约定。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "cmb-sampling-lab"
+    ],
+    "source": "本新增χ²统计实验的分布定义。"
+  }
+]

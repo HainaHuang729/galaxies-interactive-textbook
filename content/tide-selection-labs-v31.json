@@ -1,0 +1,137 @@
+[
+  {
+    "id": "tidal-tensor",
+    "chapter": 12,
+    "anchor": "stripping",
+    "eyebrow": "Anatomy · 潮汐梯度与有限基线",
+    "title": "同一个引力场，可以拉伸，也可以压缩",
+    "intro": "在有有限密度核心的Plummer球势中，分别读取径向和横向的相对加速度梯度。把有限间距双探针的读数与局部潮汐张量比较，观察线性近似何时开始偏离。",
+    "params": [
+      {
+        "key": "mass",
+        "label": "主体系质量 log₁₀ M/M☉",
+        "min": 10,
+        "max": 13,
+        "step": 0.1,
+        "value": 11
+      },
+      {
+        "key": "scale",
+        "label": "Plummer 尺度 a（kpc）",
+        "min": 1,
+        "max": 20,
+        "step": 0.5,
+        "value": 5
+      },
+      {
+        "key": "radius",
+        "label": "检查半径 x = R/a",
+        "min": 0,
+        "max": 5,
+        "step": 0.001,
+        "value": 0.5
+      },
+      {
+        "key": "baseline",
+        "label": "探针全间距 ε = ℓ/a",
+        "min": 0.01,
+        "max": 0.8,
+        "step": 0.01,
+        "value": 0.1
+      }
+    ],
+    "values": [
+      "局部径向 λr（Gyr⁻²）",
+      "局部横向 λt（Gyr⁻²）",
+      "有限探针径向 λr,ℓ（Gyr⁻²）",
+      "有限探针横向 λt,ℓ（Gyr⁻²）",
+      "当地密度 ρ（M☉/kpc³）",
+      "潮汐迹 tr T（Gyr⁻²）"
+    ],
+    "formulaTex": [
+      "\\Phi(R)=-\\frac{GM}{\\sqrt{R^2+a^2}},\\quad A=\\frac{GM}{a^3},\\quad x=\\frac Ra,\\quad\\varepsilon=\\frac\\ell a",
+      "T_{ij}=-\\partial_i\\partial_j\\Phi,\\quad\\delta\\mathbf g=T\\,\\delta\\mathbf r",
+      "\\frac{\\lambda_r}A=\\frac{2x^2-1}{(1+x^2)^{5/2}},\\quad\\frac{\\lambda_t}A=-\\frac1{(1+x^2)^{3/2}}",
+      "\\rho(R)=\\frac{3M}{4\\pi a^3}(1+x^2)^{-5/2},\\quad\\mathrm{tr}\\,T=\\lambda_r+2\\lambda_t=-4\\pi G\\rho",
+      "g_x(X)=-\\frac{GM X}{(X^2+a^2)^{3/2}},\\quad\\lambda_{r,\\ell}=\\frac{g_x(R+\\ell/2)-g_x(R-\\ell/2)}\\ell",
+      "\\frac{\\lambda_{t,\\ell}}A=-\\left(1+x^2+\\frac{\\varepsilon^2}4\\right)^{-3/2},\\quad\\lambda_r=0\\iff R=\\frac a{\\sqrt2}"
+    ],
+    "assumptions": "静态球对称Plummer主势，潮汐张量采用T=−Hessian(Φ)，相对引力加速度为Tδr；正本征值拉伸、负本征值压缩。横向有两个相同本征值，迹不能只加一份横向项。坐标基在检查点沿径向及两个垂直方向；R=0各方向等价。有限探针位于局部基线的两个端点，读数是完整引力的中心差商，不是另一套局部张量；大基线可跨越不同梯度区，不能直接把有限差商判为当地本征值。这里不包含旋转参考系离心项、探针自引力、轨道积分或潮汐半径条件。全方向压缩不等于恒星必然形成或整个星系稳定。仪器构件为教学读出结构，盘面以A归一；不按星系尺度制造，不模拟实际传感器弹性或噪声。",
+    "pages": [
+      544,
+      546
+    ],
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。",
+    "references": [
+      [
+        "Renaud 等 (2009)：压缩潮汐",
+        "https://arxiv.org/abs/0910.0196"
+      ],
+      [
+        "galpy：Plummer球势定义",
+        "https://docs.galpy.org/en/v1.11.1/reference/potentialplummer.html"
+      ]
+    ]
+  },
+  {
+    "id": "isophotal-light",
+    "chapter": 15,
+    "anchor": "luminosities",
+    "eyebrow": "选择效应 · 指数盘光度",
+    "title": "总亮度相同，也可能漏掉不同份额的光",
+    "intro": "把同一波段的总视星等和角尺度放进面朝观测者的指数盘。改变表面亮度阈值，直接比较完整模型与阈值内的记录，并读取遗漏的光与偏暗的等光度线星等。",
+    "params": [
+      {
+        "key": "magnitude",
+        "label": "总视星等 m",
+        "min": 17,
+        "max": 25,
+        "step": 0.1,
+        "value": 20
+      },
+      {
+        "key": "size",
+        "label": "指数角尺度 θd（角秒）",
+        "min": 0.2,
+        "max": 12,
+        "step": 0.1,
+        "value": 3
+      },
+      {
+        "key": "limit",
+        "label": "表面亮度阈值 μlim（mag/arcsec²）",
+        "min": 20,
+        "max": 29,
+        "step": 0.05,
+        "value": 26
+      }
+    ],
+    "values": [
+      "中心表面亮度 μ₀（mag/arcsec²）",
+      "阈值角半径 θiso（角秒）",
+      "记录的总光份额 fiso",
+      "未记录的光份额",
+      "记录光的视星等 miso",
+      "阈值半径 xiso = θiso/θd"
+    ],
+    "formulaTex": [
+      "I(\\theta)=I_0e^{-\\theta/\\theta_d},\\quad F_{\\rm tot}=2\\pi I_0\\theta_d^2",
+      "\\mu_0=m+2.5\\log_{10}\\!\\left[2\\pi\\left(\\frac{\\theta_d}{\\mathrm{arcsec}}\\right)^2\\right]",
+      "\\mu(\\theta)=\\mu_0+\\frac{2.5}{\\ln10}\\frac\\theta{\\theta_d},\\quad x_{\\rm iso}=\\max\\!\\left[0,\\frac{\\mu_{\\rm lim}-\\mu_0}{2.5/\\ln10}\\right]",
+      "f_{\\rm iso}=\\frac{F(<\\theta_{\\rm iso})}{F_{\\rm tot}}=1-(1+x_{\\rm iso})e^{-x_{\\rm iso}},\\quad\\theta_{\\rm iso}=\\theta_d x_{\\rm iso}",
+      "m_{\\rm iso}=m-2.5\\log_{10}f_{\\rm iso}\\quad(f_{\\rm iso}>0)"
+    ],
+    "assumptions": "圆对称、正面朝向、无限延伸指数光度轮廓；星等与表面亮度采用同一波段及零点，θd在表面亮度公式中以角秒计。输入m与θd均为观测者视量，未从距离、红移或恒星族模型推得。记录区域采用理想表面亮度硬阈值，没有PSF、像素噪声、背景误差、尘埃、倾角或真实巡天的检出算法。fiso是模型总光的等光度线份额，不是星系样本完备率或被检出的概率。μlim≤μ₀时只有零面积或没有超过阈值的区域，记录光为零，miso不定义；不能称为无限大测得星等。示意图使用固定显示拉伸，视场自动缩放并标出角范围；像素用于展示，积分来自解析轮廓。阈值扫描不是星系物理演化。",
+    "pages": [
+      654,
+      655
+    ],
+    "source": "MBW §15.2.1 pp.654–655 的光度函数与选择背景，结合第2章表面亮度；等光度线份额推导为原创补充。",
+    "references": [
+      [
+        "Blanton 等 (2001)：等光度线光度的偏差",
+        "https://arxiv.org/abs/astro-ph/0012085"
+      ]
+    ]
+  }
+]

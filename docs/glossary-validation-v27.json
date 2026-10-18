@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-17",
+  "version": "v27",
+  "entries": 1687,
+  "newEntries": 27,
+  "newOrRevisedRecords": 102,
+  "chapters": 16,
+  "readerPages": 514,
+  "semanticClickCases": 19,
+  "thermalStates": 3,
+  "controlPages": 111,
+  "rangeInputs": 285,
+  "endpointStates": 222,
+  "dictionaryCardRendering": {
+    "cards": 1687,
+    "issues": []
+  },
+  "pageLayout": {
+    "width": 320,
+    "pages": 514,
+    "overflow": 0,
+    "katexErrors": 0,
+    "svgMathBoundsIssues": 0
+  },
+  "coverage": {
+    "unboundBaseLetters": 0,
+    "runtimeErrors": []
+  },
+  "inlineBaselines": {
+    "states": 6,
+    "samples": 30,
+    "maxErrorPx": 0.002284999999972115
+  },
+  "cgsMobileCheck": {
+    "states": [
+      {
+        "theme": "afterglow",
+        "width": 320,
+        "unitClicks": 5
+      },
+      {
+        "theme": "moon",
+        "width": 320,
+        "unitClicks": 5
+      }
+    ]
+  },
+  "staticChecks": {
+    "glossary": 15948,
+    "definitionMathFragments": 2689,
+    "inlineMath": 1579,
+    "precisionPhysics": 497,
+    "advancedPhysics": 104991,
+    "bodyFigures": 1194
+  },
+  "runtimeErrors": [],
+  "limits": "匹配覆盖率不独立证明科学正确性；语义按具体模型、原书依据与列出的实际点击回归核对。"
+}

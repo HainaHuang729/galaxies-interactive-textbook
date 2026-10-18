@@ -1,0 +1,1334 @@
+[
+  {
+    "id": "common-Re",
+    "kind": "notation",
+    "aliases": [
+      "Re（取实部）",
+      "取实部"
+    ],
+    "title": "取实部算子",
+    "english": "real-part operator",
+    "definition": "对复数z=x+iy取其实部x；Voigt函数通过复误差函数w的实部得到。",
+    "unit": "与复数自变量相同",
+    "scope": "Re[...]是数学运算，与有效半径Rₑ不同。",
+    "chapters": [],
+    "source": "本书数学运算说明（原创）；物理依据见当前模型",
+    "tex": "\\operatorname{Re}"
+  },
+  {
+    "id": "common-Im",
+    "kind": "notation",
+    "aliases": [
+      "Im（取虚部）",
+      "取虚部"
+    ],
+    "title": "取虚部算子",
+    "english": "imaginary-part operator",
+    "definition": "对复数z=x+iy取其虚部的实数系数y。",
+    "unit": "与复数自变量相同",
+    "scope": "虚部Im(z)是实数y，而不是iy。",
+    "chapters": [],
+    "source": "本书数学运算说明（原创）；物理依据见当前模型",
+    "tex": "\\operatorname{Im}"
+  },
+  {
+    "id": "common-erf",
+    "kind": "notation",
+    "aliases": [
+      "erf",
+      "误差函数"
+    ],
+    "title": "误差函数",
+    "english": "error function",
+    "definition": "erf(x)=(2/√π)∫₀ˣexp(−t²)dt；它来自高斯积分，动力摩擦式中用于统计慢于给定速度的背景粒子。",
+    "unit": "无量纲",
+    "scope": "按本处公式的自变量与模型条件使用。",
+    "chapters": [],
+    "source": "本书数学运算说明（原创）；物理依据见当前模型",
+    "tex": "\\operatorname{erf}"
+  },
+  {
+    "id": "common-erfc",
+    "kind": "notation",
+    "aliases": [
+      "erfc",
+      "互补误差函数"
+    ],
+    "title": "互补误差函数",
+    "english": "complementary error function",
+    "definition": "erfc(x)=1−erf(x)，可表达高斯尾部的累计概率；PS质量函数中的出现依赖其高斯和球坍缩假设。",
+    "unit": "无量纲",
+    "scope": "按本处公式的自变量与模型条件使用。",
+    "chapters": [],
+    "source": "本书数学运算说明（原创）；物理依据见当前模型",
+    "tex": "\\operatorname{erfc}"
+  },
+  {
+    "id": "common-min",
+    "kind": "notation",
+    "aliases": [
+      "min",
+      "最小值"
+    ],
+    "title": "最小值",
+    "english": "minimum",
+    "definition": "从给定集合或函数域中取最小的数值；如minₖω²是对允许波数区间求最低的ω²。",
+    "unit": "与参加比较的量相同",
+    "scope": "按本处公式的自变量与模型条件使用。",
+    "chapters": [],
+    "source": "本书数学运算说明（原创）；物理依据见当前模型",
+    "tex": "\\min"
+  },
+  {
+    "id": "common-max",
+    "kind": "notation",
+    "aliases": [
+      "max",
+      "最大值"
+    ],
+    "title": "最大值",
+    "english": "maximum",
+    "definition": "从给定集合或函数域中取最大的数值。最大值与函数所在横坐标不是同一个量。",
+    "unit": "与参加比较的量相同",
+    "scope": "按本处公式的自变量与模型条件使用。",
+    "chapters": [],
+    "source": "本书数学运算说明（原创）；物理依据见当前模型",
+    "tex": "\\max"
+  },
+  {
+    "id": "common-const",
+    "kind": "notation",
+    "aliases": [
+      "const.",
+      "constant"
+    ],
+    "title": "常数条件",
+    "english": "constant condition",
+    "definition": "表示在当前讨论的过程或积分中保持这个量不变。",
+    "unit": "与在该过程中保持不变的量相同",
+    "scope": "按本处公式的自变量与模型条件使用。",
+    "chapters": [],
+    "source": "本书数学运算说明（原创）；物理依据见当前模型",
+    "tex": "\\mathrm{const.}"
+  },
+  {
+    "id": "common-gammafun",
+    "kind": "notation",
+    "aliases": [
+      "Gamma函数",
+      "Γ函数"
+    ],
+    "title": "伽马函数",
+    "english": "Gamma function",
+    "definition": "Γ(s)=∫₀∞t^(s−1)e^(−t)dt（s>0）；在正整数上Γ(n)=(n−1)!，常用于Sérsic和Schechter分布的积分。",
+    "unit": "无量纲",
+    "scope": "按本处公式的自变量与模型条件使用。",
+    "chapters": [],
+    "source": "本书数学运算说明（原创）；物理依据见当前模型",
+    "tex": "\\Gamma(s)"
+  },
+  {
+    "id": "common-page-ref",
+    "kind": "notation",
+    "aliases": [
+      "p.",
+      "pp.",
+      "印刷页"
+    ],
+    "title": "印刷页码标记",
+    "english": "printed page reference",
+    "definition": "p.表示单页，pp.表示一组页码；本书来源均以教材印刷页为准。",
+    "unit": "不适用",
+    "scope": "这不是压强p或其他物理变量；对应本地PDF文件页序需加22。",
+    "chapters": [],
+    "source": "本书数学运算说明（原创）；物理依据见当前模型"
+  },
+  {
+    "id": "common-delta-change",
+    "kind": "notation",
+    "aliases": [
+      "Δ",
+      "差分"
+    ],
+    "title": "变化量前缀",
+    "english": "finite difference",
+    "definition": "ΔX表示同一个量在两个状态之差；例如Δt为时间间隔、Δv为速度变化。",
+    "unit": "与被比较的量相同",
+    "scope": "Δ²(k)等已定义的统计量和Δh等带下标量采用各自的专门定义，不能仅按前缀判断。",
+    "chapters": [],
+    "source": "本书数学运算说明（原创）；物理依据见当前模型",
+    "tex": "\\Delta"
+  },
+  {
+    "id": "common-charge",
+    "kind": "notation",
+    "aliases": [
+      "元电荷",
+      "e（电荷）"
+    ],
+    "title": "元电荷",
+    "english": "elementary charge",
+    "definition": "单个质子正电荷的大小，SI中精确为1.602176634×10⁻¹⁹ C；Gaussian CGS中约4.80320471257×10⁻¹⁰ statC。电子的电荷为−e。",
+    "unit": "C（SI）；吸收式使用一致的CGS单位",
+    "scope": "吸收截面\\(\\pi e^2/(m_ec)\\)采用Gaussian CGS，必须配套用statC、g、cm/s；SI形式还需\\(1/(4\\pi\\epsilon_0)\\)，不能直接混用SI常数。",
+    "chapters": [],
+    "source": "NIST / SI · https://physics.nist.gov/cuu/Constants/index.html",
+    "tex": "e",
+    "matchTex": false
+  },
+  {
+    "id": "supp16-voigt-H",
+    "kind": "notation",
+    "aliases": [
+      "H(a,u)",
+      "Voigt H",
+      "H"
+    ],
+    "title": "Voigt函数",
+    "english": "Voigt function",
+    "definition": "H(a,u)=Re[w(u+ia)]，表示归一化高斯Doppler核与Lorentz自然展宽核卷积的无量纲形状；谱线φν还需除以√πΔνD。",
+    "unit": "无量纲",
+    "scope": "仅用于Voigt/吸收线的复函数语境；不是哈勃率、归一化前沿时间或粒子索引。",
+    "chapters": [
+      16
+    ],
+    "source": "MBW 2010 §16.3–16.4；Weideman (1994) · https://epubs.siam.org/doi/10.1137/0731077",
+    "contexts": [
+      "absorption-line-lab",
+      "curve-of-growth-lab",
+      "absorption",
+      "absorbers"
+    ],
+    "tex": "H(a,u)"
+  },
+  {
+    "id": "supp16-voigt-w",
+    "kind": "notation",
+    "aliases": [
+      "w(z)",
+      "Faddeeva函数",
+      "w"
+    ],
+    "title": "复误差函数",
+    "english": "Faddeeva function",
+    "definition": "w(z)=exp(−z²) erfc(−iz)。Voigt函数取z=u+ia后该复函数的实部。",
+    "unit": "无量纲",
+    "scope": "仅用于Voigt/吸收线的复函数语境；不是哈勃率、归一化前沿时间或粒子索引。",
+    "chapters": [
+      16
+    ],
+    "source": "MBW 2010 §16.3–16.4；Weideman (1994) · https://epubs.siam.org/doi/10.1137/0731077",
+    "contexts": [
+      "absorption-line-lab",
+      "curve-of-growth-lab",
+      "absorption",
+      "absorbers"
+    ],
+    "tex": "w(z)"
+  },
+  {
+    "id": "supp16-imaginary-i",
+    "kind": "notation",
+    "aliases": [
+      "i",
+      "ia"
+    ],
+    "title": "虚数单位与阻尼虚部",
+    "english": "imaginary unit",
+    "definition": "i²=−1；u+ia的实部u是速度偏移的归一值，虚部系数a是非负阻尼参数。",
+    "unit": "无量纲",
+    "scope": "仅用于Voigt/吸收线的复函数语境；不是哈勃率、归一化前沿时间或粒子索引。",
+    "chapters": [
+      16
+    ],
+    "source": "MBW 2010 §16.3–16.4；Weideman (1994) · https://epubs.siam.org/doi/10.1137/0731077",
+    "contexts": [
+      "absorption-line-lab",
+      "curve-of-growth-lab",
+      "absorption",
+      "absorbers"
+    ],
+    "tex": "i"
+  },
+  {
+    "id": "common-unit-numberdensity",
+    "kind": "notation",
+    "aliases": [
+      "cm⁻³",
+      "cm−3"
+    ],
+    "title": "每立方厘米",
+    "english": "compound physical unit",
+    "definition": "数密度的常用单位；每单位体积内的粒子数。1 cm⁻³=10⁶ m⁻³。",
+    "unit": "长度⁻³",
+    "scope": "整个复合单位一起读取；同量纲的量仍可能有不同物理意义。",
+    "chapters": [],
+    "source": "MBW 2010 附录E pp.776（Useful Numbers）"
+  },
+  {
+    "id": "common-unit-column",
+    "kind": "notation",
+    "aliases": [
+      "cm⁻²",
+      "cm−2"
+    ],
+    "title": "每平方厘米",
+    "english": "compound physical unit",
+    "definition": "柱密度的常用单位；沿视线对体数密度积分。1 cm⁻²=10⁴ m⁻²。",
+    "unit": "长度⁻²",
+    "scope": "整个复合单位一起读取；同量纲的量仍可能有不同物理意义。",
+    "chapters": [],
+    "source": "MBW 2010 附录E pp.776（Useful Numbers）"
+  },
+  {
+    "id": "common-unit-surface",
+    "kind": "notation",
+    "aliases": [
+      "M⊙/pc²",
+      "M☉/pc²",
+      "M⊙ pc⁻²"
+    ],
+    "title": "太阳质量每平方秒差距",
+    "english": "compound physical unit",
+    "definition": "面质量密度单位，通常用于恒星盘或气体盘。",
+    "unit": "质量 长度⁻²",
+    "scope": "整个复合单位一起读取；同量纲的量仍可能有不同物理意义。",
+    "chapters": [],
+    "source": "MBW 2010 附录E pp.776（Useful Numbers）"
+  },
+  {
+    "id": "common-unit-density",
+    "kind": "notation",
+    "aliases": [
+      "M⊙/pc³",
+      "M☉/pc³",
+      "M⊙ pc⁻³"
+    ],
+    "title": "太阳质量每立方秒差距",
+    "english": "compound physical unit",
+    "definition": "体质量密度单位，不能与盘的面密度直接比较。",
+    "unit": "质量 长度⁻³",
+    "scope": "整个复合单位一起读取；同量纲的量仍可能有不同物理意义。",
+    "chapters": [],
+    "source": "MBW 2010 附录E pp.776（Useful Numbers）"
+  },
+  {
+    "id": "common-unit-rate",
+    "kind": "notation",
+    "aliases": [
+      "M⊙/yr",
+      "M☉/yr",
+      "M⊙ yr⁻¹"
+    ],
+    "title": "太阳质量每年",
+    "english": "compound physical unit",
+    "definition": "质量变化率单位，可用于恒星形成率、流入率或流出率，具体物理量由模型确定。",
+    "unit": "质量 时间⁻¹",
+    "scope": "整个复合单位一起读取；同量纲的量仍可能有不同物理意义。",
+    "chapters": [],
+    "source": "MBW 2010 附录E pp.776（Useful Numbers）"
+  },
+  {
+    "id": "common-unit-inversetime",
+    "kind": "notation",
+    "aliases": [
+      "s⁻¹",
+      "s−1"
+    ],
+    "title": "每秒",
+    "english": "compound physical unit",
+    "definition": "速率或频率的单位，表示每秒多少次或单位时间的相对变化。",
+    "unit": "时间⁻¹",
+    "scope": "整个复合单位一起读取；同量纲的量仍可能有不同物理意义。",
+    "chapters": [],
+    "source": "MBW 2010 附录E pp.776（Useful Numbers）"
+  },
+  {
+    "id": "supp-unit-micrometre",
+    "kind": "term",
+    "aliases": [
+      "μm",
+      "µm",
+      "微米"
+    ],
+    "title": "微米",
+    "english": "micrometre",
+    "definition": "长度单位，1 μm=10⁻⁶ m=1000 nm；尘埃光谱的波长在此用微米表示。",
+    "unit": "长度",
+    "scope": "仅用于所列章节与模型；其他语境采用其独立定义。",
+    "chapters": [],
+    "contexts": [],
+    "source": "MBW 2010 附录E p.776"
+  },
+  {
+    "id": "supp-FeH",
+    "kind": "term",
+    "aliases": [
+      "[Fe/H]",
+      "铁丰度"
+    ],
+    "title": "铁相对氢的对数丰度",
+    "english": "logarithmic iron abundance",
+    "definition": "[Fe/H]=log₁₀(nFe/nH)★−log₁₀(nFe/nH)☉，描述相对太阳的铁与氢核数之比；0为太阳比值，−1表示十分之一。",
+    "unit": "dex",
+    "scope": "仅用于所列章节与模型；其他语境采用其独立定义。",
+    "chapters": [],
+    "contexts": [],
+    "source": "MBW 2010 §2.3、§10.4；各化学演化实验的成分约定"
+  },
+  {
+    "id": "supp-Xray",
+    "kind": "term",
+    "aliases": [
+      "X-ray",
+      "X射线",
+      "X 射线"
+    ],
+    "title": "X射线",
+    "english": "X-ray radiation",
+    "definition": "能量高于紫外的一段电磁辐射；热的星系团气体、冲击波和吸积源都可产生X射线。图像须根据能段、温度与成分解释。",
+    "unit": "光子能量通常用keV",
+    "scope": "仅用于所列章节与模型；其他语境采用其独立定义。",
+    "chapters": [],
+    "contexts": [],
+    "source": "MBW 2010 §2.7、§8.7；本书各X射线观测图的官方说明"
+  },
+  {
+    "id": "supp-c4-rhoLambda",
+    "kind": "symbol",
+    "aliases": [
+      "ρΛ"
+    ],
+    "title": "宇宙常数能量的等效质量密度",
+    "english": "mass-equivalent density of a cosmological constant",
+    "definition": "将宇宙常数的真空能量密度除以c²得到的等效质量密度；在ΛCDM背景中随a保持不变。",
+    "unit": "质量/体积",
+    "scope": "仅用于所列章节与模型；其他语境采用其独立定义。",
+    "chapters": [
+      4
+    ],
+    "contexts": [
+      "growth",
+      "growth-lab",
+      "body-figure-4-growth-7"
+    ],
+    "source": "MBW 2010 §4.1.6；网页增长模型",
+    "tex": "\\rho_\\Lambda"
+  },
+  {
+    "id": "supp-c4-rhom",
+    "kind": "symbol",
+    "aliases": [
+      "ρm"
+    ],
+    "title": "物质平均密度",
+    "english": "mean matter density",
+    "definition": "非相对论物质的宇宙平均质量密度，随尺度因子按a⁻³下降。ρΛ/ρm是两种组分当前时刻的比值。",
+    "unit": "质量/体积",
+    "scope": "仅用于所列章节与模型；其他语境采用其独立定义。",
+    "chapters": [
+      4
+    ],
+    "contexts": [
+      "growth",
+      "growth-lab",
+      "body-figure-4-growth-7"
+    ],
+    "source": "MBW 2010 §4.1.6；网页增长模型",
+    "tex": "\\rho_{\\rm m}"
+  },
+  {
+    "id": "supp-c4-shape-s",
+    "kind": "symbol",
+    "aliases": [
+      "s"
+    ],
+    "title": "固定的合成空间形状",
+    "english": "fixed synthetic spatial profile",
+    "definition": "s(x)是增长图中固定不变的空间形状，密度对比度写为δ=0.08D₊(a)s(x)。图用于比较增长振幅；s(x)不是增长率f或随机生成的宇宙实测场。",
+    "unit": "无量纲",
+    "scope": "仅用于所列章节与模型；其他语境采用其独立定义。",
+    "chapters": [
+      4
+    ],
+    "contexts": [
+      "body-figure-4-growth-7"
+    ],
+    "source": "本书第4章增长图的明示合成模型",
+    "tex": "s(x)"
+  },
+  {
+    "id": "supp-c16-me",
+    "kind": "symbol",
+    "aliases": [
+      "me",
+      "mₑ"
+    ],
+    "title": "电子质量",
+    "english": "electron mass",
+    "definition": "电子的静止质量，SI中约\\(9.10938\\times10^{-31}\\,\\mathrm{kg}\\)，Gaussian CGS中约\\(9.10938\\times10^{-28}\\,\\mathrm g\\)。截面公式必须把电荷、质量和光速都置于一致单位制；本实验采用的精确数值写在模型条件中。",
+    "unit": "kg",
+    "scope": "仅用于所列章节与模型；其他语境采用其独立定义。",
+    "chapters": [
+      16
+    ],
+    "contexts": [
+      "absorption-line-lab",
+      "curve-of-growth-lab"
+    ],
+    "source": "NIST / CODATA 2022 · https://physics.nist.gov/cuu/Constants/index.html",
+    "tex": "m_{\\rm e}"
+  },
+  {
+    "id": "supp-c16-h-small",
+    "kind": "symbol",
+    "aliases": [
+      "h"
+    ],
+    "title": "无量纲哈勃参数",
+    "english": "dimensionless Hubble parameter",
+    "definition": "以H₀=100h km s⁻¹ Mpc⁻¹定义。21cm归一化沿用原书Ωb h=0.03的组合约定，不是Planck常数。",
+    "unit": "无量纲",
+    "scope": "仅用于所列章节与模型；其他语境采用其独立定义。",
+    "chapters": [
+      16
+    ],
+    "contexts": [
+      "spin-21-lab",
+      "evolution"
+    ],
+    "source": "MBW 2010 式16.84及本实验固定归一化",
+    "tex": "h"
+  },
+  {
+    "id": "supp-c16-Omegab",
+    "kind": "symbol",
+    "aliases": [
+      "Ωb",
+      "Ω_b"
+    ],
+    "title": "重子密度参数",
+    "english": "baryon density parameter",
+    "definition": "平均重子质量密度与临界密度之比；这里与h组成Ωb h用于书中的21cm温度归一化。",
+    "unit": "无量纲",
+    "scope": "仅用于所列章节与模型；其他语境采用其独立定义。",
+    "chapters": [
+      16
+    ],
+    "contexts": [
+      "spin-21-lab",
+      "evolution"
+    ],
+    "source": "MBW 2010 式16.84及本实验固定归一化",
+    "tex": "\\Omega_{\\rm b}"
+  },
+  {
+    "id": "supp-c16-Omegam",
+    "kind": "symbol",
+    "aliases": [
+      "Ωm",
+      "Ω_m"
+    ],
+    "title": "物质密度参数",
+    "english": "matter density parameter",
+    "definition": "平均非相对论物质密度与临界密度之比，包含重子及非重子暗物质。此处背景归一化采用Ωm=0.3。",
+    "unit": "无量纲",
+    "scope": "仅用于所列章节与模型；其他语境采用其独立定义。",
+    "chapters": [
+      16
+    ],
+    "contexts": [
+      "spin-21-lab",
+      "evolution"
+    ],
+    "source": "MBW 2010 式16.84及本实验固定归一化",
+    "tex": "\\Omega_{\\rm m}"
+  },
+  {
+    "id": "supp-c15-epsilon",
+    "kind": "symbol",
+    "aliases": [
+      "ε"
+    ],
+    "title": "匹配关系与重子预算",
+    "english": "stellar mass relative to the baryon budget",
+    "definition": "这里的ε表示由丰度匹配和M★/L换算后得到的M★/(fb Mhalo)。它不是从气体动力学独立求出的恒星形成效率。",
+    "unit": "无量纲",
+    "scope": "仅用于所列章节与模型；其他语境采用其独立定义。",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "matching-lab",
+      "galaxy-halo"
+    ],
+    "source": "MBW 2010 §15.2；网页丰度匹配模型",
+    "tex": "\\epsilon"
+  },
+  {
+    "id": "supp-c2-O",
+    "kind": "symbol",
+    "aliases": [
+      "O"
+    ],
+    "title": "氧元素与氧发射线标记",
+    "english": "oxygen and oxygen emission lines",
+    "definition": "O是氧的元素符号；本实验的[O III]是二次电离氧（O²⁺）的禁戒发射线，主要使用5007Å线。",
+    "unit": "元素标记",
+    "scope": "仅用于所列章节及语境；其他位置的同字母采用当地定义。",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "spectral-lab"
+    ],
+    "source": "MBW 2010 第2章光谱观测讨论；网页合成光谱的线表",
+    "tex": "\\mathrm O"
+  },
+  {
+    "id": "supp-c4-time-xi",
+    "kind": "symbol",
+    "aliases": [
+      "ξ"
+    ],
+    "title": "无碰撞扰动推导的重标时间",
+    "english": "rescaled time variable",
+    "definition": "在原书§4.1.4中以dξ=dt/a²定义的重标时间；p.171勘误中的ξ⁻¹是它的倒数尺度。",
+    "unit": "时间（a无量纲）",
+    "scope": "仅用于所列章节及语境；其他位置的同字母采用当地定义。",
+    "chapters": [
+      4
+    ],
+    "contexts": [
+      "chapter-references"
+    ],
+    "source": "MBW 2010 p.170 式4.56及p.171作者勘误",
+    "tex": "\\xi"
+  },
+  {
+    "id": "supp-c6-sample-D",
+    "kind": "symbol",
+    "aliases": [
+      "D"
+    ],
+    "title": "数据样本标签",
+    "english": "data sample label",
+    "definition": "成对计数估计器中D代表目标数据样本；DD为数据—数据配对，DR为数据—随机样本配对。",
+    "unit": "样本标签；配对计数无量纲",
+    "scope": "仅用于所列章节及语境；其他位置的同字母采用当地定义。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "galaxies"
+    ],
+    "source": "MBW 2010 §6.1–6.2；本书巡天选择与配对图解",
+    "tex": "D"
+  },
+  {
+    "id": "supp-c6-sample-R",
+    "kind": "symbol",
+    "aliases": [
+      "R"
+    ],
+    "title": "随机参照样本标签",
+    "english": "random reference sample label",
+    "definition": "成对计数中的R表示遵循相同选择函数的随机样本；RR为随机—随机配对。它不是半径R。",
+    "unit": "样本标签；配对计数无量纲",
+    "scope": "仅用于所列章节及语境；其他位置的同字母采用当地定义。",
+    "chapters": [
+      6
+    ],
+    "contexts": [
+      "galaxies"
+    ],
+    "source": "MBW 2010 §6.1–6.2；本书巡天选择图解",
+    "tex": "R"
+  },
+  {
+    "id": "supp-c8-wind-t",
+    "kind": "symbol",
+    "aliases": [
+      "t"
+    ],
+    "title": "恒功率风泡的历时",
+    "english": "elapsed wind-injection time",
+    "definition": "恒定机械功率Lw持续注入时间t时，输入的总机械能为Lw t；不等于全部保留的热能。",
+    "unit": "时间（图示单位）",
+    "scope": "仅用于所列章节及语境；其他位置的同字母采用当地定义。",
+    "chapters": [
+      8
+    ],
+    "contexts": [
+      "practice-question-6"
+    ],
+    "source": "MBW 2010 §8.6.2；恒功率风泡能量账",
+    "tex": "t"
+  },
+  {
+    "id": "supp-c15-stellar-M",
+    "kind": "symbol",
+    "aliases": [
+      "M"
+    ],
+    "title": "恒星质量",
+    "english": "stellar mass",
+    "definition": "在本处质光比M/L中，M是用所声明恒星族模型换算的恒星质量；不是用L★定义的光度尺度。",
+    "unit": "太阳质量",
+    "scope": "仅用于所列章节及语境；其他位置的同字母采用当地定义。",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "luminosities"
+    ],
+    "source": "MBW 2010 §15.1；网页恒星质光比换算",
+    "tex": "M"
+  },
+  {
+    "id": "supp-c15-halo-M",
+    "kind": "symbol",
+    "aliases": [
+      "M"
+    ],
+    "title": "宿主暗晕质量",
+    "english": "host halo mass",
+    "definition": "HOD及星系偏置公式以暗晕质量M为积分或条件变量；勘误修正同一暗晕质量符号的大小写。",
+    "unit": "质量（按晕质量定义）",
+    "scope": "仅用于所列章节及语境；其他位置的同字母采用当地定义。",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "chapter-references"
+    ],
+    "source": "MBW 2010 pp.680–681 式15.80、15.85及作者勘误",
+    "tex": "M"
+  },
+  {
+    "id": "supp-c15-halo-n",
+    "kind": "symbol",
+    "aliases": [
+      "n"
+    ],
+    "title": "暗晕质量函数的数密度",
+    "english": "halo number density",
+    "definition": "dn/dlog₁₀M表示每单位体积、每dex暗晕质量区间内的暗晕数量；与每单位质量dn/dM不同。",
+    "unit": "体积⁻¹（结合对应微分变量）",
+    "scope": "仅用于所列章节及语境；其他位置的同字母采用当地定义。",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "cosmic-sfr-lab"
+    ],
+    "source": "MBW 2010 §15.4；本实验给定的合成暗晕质量函数",
+    "tex": "n"
+  },
+  {
+    "id": "supp-c16-spin-inverse-x",
+    "kind": "symbol",
+    "aliases": [
+      "x"
+    ],
+    "title": "逆温写法的21cm耦合系数",
+    "english": "inverse-temperature coupling coefficient",
+    "definition": "若碰撞与Lyα共同耦合到同一TK，可写1/Ts=(1/Tγ+x/TK)/(1+x)。与本实验温度加权系数的关系是y=x Tγ/TK。",
+    "unit": "无量纲",
+    "scope": "仅用于所列章节及语境；其他位置的同字母采用当地定义。",
+    "chapters": [
+      16
+    ],
+    "contexts": [
+      "spin-21-lab"
+    ],
+    "source": "MBW 2010 §16.6.3；本实验明示Ts与y约定",
+    "tex": "x"
+  },
+  {
+    "id": "supp-appendix-A",
+    "kind": "term",
+    "aliases": [
+      "附录A"
+    ],
+    "title": "附录A：广义相对论基础",
+    "english": "Appendix A: Basics of General Relativity",
+    "definition": "教材p.741开始的附录，介绍时空几何、等效原理、测地线、能量动量张量与Einstein方程。",
+    "unit": "不适用",
+    "scope": "仅用于所列章节及语境；其他位置的同字母采用当地定义。",
+    "chapters": [],
+    "contexts": [],
+    "source": "MBW 2010 附录A pp.741–747"
+  },
+  {
+    "id": "common-limit",
+    "kind": "symbol",
+    "aliases": [
+      "lim",
+      "极限"
+    ],
+    "title": "极限运算",
+    "english": "limit",
+    "definition": "指定自变量趋近某一值时，考察函数趋近的结果。例如a→0的增长归一化描述早期极限，而非直接代入a=0。",
+    "unit": "由函数量纲决定",
+    "scope": "仅用于所列章节及语境；其他位置的同字母采用当地定义。",
+    "chapters": [],
+    "contexts": [],
+    "source": "本书数学运算说明（原创）",
+    "tex": "\\lim"
+  },
+  {
+    "id": "supp-common-Lya",
+    "kind": "term",
+    "aliases": [
+      "Lyα",
+      "Ly-alpha",
+      "莱曼α"
+    ],
+    "title": "氢的莱曼α谱线",
+    "english": "hydrogen Lyman-alpha line",
+    "definition": "中性氢在n=2与n=1能级间的跃迁，静止系波长约1216Å。可表现为发射或吸收；在遥远类星体谱中，沿视线不同红移的吸收构成Lyα森林。",
+    "unit": "谱线标记；波长通常用Å",
+    "scope": "是共振束缚—束缚跃迁，与912Å的Lyman电离边缘不同；观测波长比静止波长大1+z。",
+    "chapters": [],
+    "source": "MBW 2010 §2.10、第16章；NIST 氢原子跃迁汇编 · https://srd.nist.gov/NSRDS/NSRDS-NBS4.pdf"
+  },
+  {
+    "id": "supp-c10-sfh-M",
+    "kind": "symbol",
+    "aliases": [
+      "M"
+    ],
+    "title": "形成史中的初始形成质量尺度",
+    "english": "initial formed stellar-mass scale",
+    "definition": "此处L/M表示相对光响应对应的初始形成质量尺度。形成史模型已归一化总形成质量，未计算真实波段或质量返还后的存活质量。",
+    "unit": "质量标度（本模型归一化）",
+    "scope": "仅用于本实验的L/M说明，不能将其相对光响应当作可观测波段的绝对质光比。",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "sfh-lab"
+    ],
+    "source": "MBW 2010 §10.3；网页形成史卷积的独立归一化约定",
+    "tex": "M"
+  },
+  {
+    "id": "supp-c5-density-ratio",
+    "kind": "symbol",
+    "aliases": [
+      "ρ/ρ̄",
+      "ρ/ρbar"
+    ],
+    "title": "区域与背景的密度比",
+    "english": "density ratio",
+    "definition": "实际质量密度除以同刻背景平均密度，即 ρ/ρ̄=1+δ。均匀背景时等于1，而密度反差δ等于0。",
+    "unit": "无量纲",
+    "chapters": [
+      5
+    ],
+    "source": "MBW (2010) §5.1、§5.4.4 pp.215–220、234–236",
+    "scope": "EdS球坍缩实验中的同一时刻比较；不是线性外推δ_L。",
+    "tex": "\\rho/\\bar\\rho"
+  },
+  {
+    "id": "supp-c5-rho",
+    "kind": "symbol",
+    "aliases": [
+      "ρ"
+    ],
+    "title": "实际质量密度",
+    "english": "mass density",
+    "definition": "当前区域的单位物理体积质量；球坍缩中ρ=3M/(4πr³)，自相似模型中ρ(r)描述径向质量密度分布。",
+    "unit": "质量/体积",
+    "chapters": [
+      5
+    ],
+    "source": "MBW (2010) §5.1、§5.4 pp.215–236",
+    "scope": "ρ有量纲；δ=ρ/ρ̄−1才是无量纲密度反差。",
+    "tex": "\\rho"
+  },
+  {
+    "id": "supp-c5-rhobar",
+    "kind": "symbol",
+    "aliases": [
+      "ρ̄",
+      "ρbar"
+    ],
+    "title": "背景平均质量密度",
+    "english": "background mean mass density",
+    "definition": "与区域密度比较的同一宇宙时刻的背景平均物理质量密度；EdS中随a⁻³下降。",
+    "unit": "质量/体积",
+    "chapters": [
+      5
+    ],
+    "source": "MBW (2010) §5.1 pp.215–220",
+    "scope": "上横线表示空间背景平均，不代表区域内实际密度。",
+    "tex": "\\bar\\rho"
+  },
+  {
+    "id": "supp-c2-inverse-vmax",
+    "kind": "symbol",
+    "aliases": [
+      "1/Vmax",
+      "1/V_max"
+    ],
+    "title": "逆可见体积权重",
+    "english": "inverse accessible-volume weight",
+    "definition": "用最大有效可见体积的倒数为单个源赋予数密度贡献；对同类源的权重求和可估计其数密度。",
+    "unit": "Mpc⁻³",
+    "chapters": [
+      2
+    ],
+    "source": "MBW (2010) §2.3 pp.61–62",
+    "scope": "依赖巡天选择函数；不能自动消除聚类、演化和表面亮度选择偏差。",
+    "contexts": [
+      "population"
+    ],
+    "tex": "1/V_{\\max}"
+  },
+  {
+    "id": "supp-c5-angular-momentum-squared",
+    "kind": "symbol",
+    "aliases": [
+      "L²",
+      "L^2"
+    ],
+    "title": "比角动量平方",
+    "english": "squared specific angular momentum",
+    "definition": "单位质量角动量矢量模长的平方\\(L^2\\)；在球对称势下守恒，径向有效势含\\(L^2/(2r^2)\\)。",
+    "unit": "长度²×速度²（本模型可用GMb）",
+    "chapters": [
+      5
+    ],
+    "source": "MBW (2010) §5.2 pp.220–229",
+    "scope": "不是总角动量的平方；\\(L_z\\)是参考轴分量。",
+    "contexts": [
+      "dynamics",
+      "orbit-lab"
+    ],
+    "tex": "L^2"
+  },
+  {
+    "id": "supp-c4-sigma8",
+    "kind": "symbol",
+    "aliases": [
+      "σ₈",
+      "σ8",
+      "σ_8"
+    ],
+    "title": "八兆秒差距尺度的标准差",
+    "english": "sigma eight",
+    "definition": "以半径8 h⁻¹ Mpc的共动球形top-hat窗口平滑线性密度反差所得的均方根；通常按z=0报告，σ₈²才是方差。",
+    "unit": "无量纲",
+    "chapters": [
+      4
+    ],
+    "source": "MBW (2010) §4.1 线性密度涨落的统计描述",
+    "scope": "本页有限一维平滑实验未计算真实三维σ₈。",
+    "contexts": [
+      "statistics"
+    ],
+    "tex": "\\sigma_8"
+  },
+  {
+    "id": "supp-c3-aeq",
+    "kind": "symbol",
+    "aliases": [
+      "a_eq",
+      "aeq"
+    ],
+    "title": "物质辐射相等时的尺度因子",
+    "english": "scale factor at matter–radiation equality",
+    "definition": "无压物质和辐射密度相等时的尺度因子；取\\(a_0=1\\)时\\(a_{\\rm eq}=\\Omega_{{\\rm r},0}/\\Omega_{{\\rm m},0}\\)，因为两者密度分别随\\(a^{-4}\\)和\\(a^{-3}\\)下降。",
+    "unit": "无量纲",
+    "chapters": [
+      3
+    ],
+    "source": "MBW (2010) §3.2.3 pp.116–118",
+    "scope": "采用本章固定辐射/物质的FLRW模型；相等不意味着原子复合。",
+    "contexts": [
+      "thermal"
+    ],
+    "tex": "a_{\\rm eq}"
+  },
+  {
+    "id": "supp-c8-total-density",
+    "kind": "symbol",
+    "aliases": [
+      "ρtot",
+      "ρ_tot"
+    ],
+    "title": "总引力质量密度",
+    "english": "total gravitating mass density",
+    "definition": "用于均匀无压球自由落体时标的总质量体密度；本页假设纯氢气体且气体质量占总质量0.15，因此\\(\\rho_{\\rm tot}=m_p n_{\\rm H}/0.15\\)。",
+    "unit": "g cm⁻³",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) §8.4.1 pp.385–387，式(8.95)；本页气体占比为教学设定",
+    "scope": "包括产生引力的总物质，不能直接用气体密度替代。",
+    "contexts": [
+      "radiative",
+      "radcool-lab"
+    ],
+    "tex": "\\rho_{\\rm tot}"
+  },
+  {
+    "id": "supp-c8-equilibrium-T0",
+    "kind": "symbol",
+    "aliases": [
+      "T0",
+      "T₀"
+    ],
+    "title": "热平衡参考温度",
+    "english": "equilibrium reference temperature",
+    "definition": "热不稳定性模型中满足\\(\\Gamma=n_{{\\rm H},0}\\Lambda(T_0)\\)的参考平衡温度；\\(\\theta=T/T_0\\)及\\(\\delta\\theta=\\delta T/T_0\\)才是无量纲温度比或相对扰动。",
+    "unit": "K",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) §8.5.1 pp.393–395；本页线性扰动模型",
+    "scope": "参考态固定；T₀不能解释成θ或δθ。",
+    "contexts": [
+      "instability",
+      "thermal-lab"
+    ],
+    "tex": "T_0"
+  },
+  {
+    "id": "supp-c8-brunt-frequency",
+    "kind": "symbol",
+    "aliases": [
+      "N"
+    ],
+    "title": "浮力振荡频率",
+    "english": "Brunt–Väisälä frequency",
+    "definition": "稳定分层时，小位移气团以角频率\\(N\\)振荡，其中\\(N^2=(g/\\gamma)\\,\\mathrm d\\ln K/\\mathrm dz\\)。\\(N^2<0\\)时没有实数恢复振荡频率，对应指数不稳定。",
+    "unit": "时间⁻¹",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) §8.2.2 pp.373–374",
+    "scope": "图中稳定性参数N²有正负号，其单位是时间⁻²；不是再对N²的单位平方。",
+    "contexts": [
+      "convection",
+      "buoy-lab"
+    ],
+    "tex": "N"
+  },
+  {
+    "id": "supp-c8-buoyant-acceleration",
+    "kind": "symbol",
+    "aliases": [
+      "ab",
+      "a_b",
+      "aᵦ"
+    ],
+    "title": "向上为正的浮力加速度",
+    "english": "upward buoyant acceleration",
+    "definition": "气团在环境中的净向上加速度，\\(a_b/g=\\rho_{\\rm env}/\\rho_{\\rm parcel}-1\\)；\\(g\\)为向下重力加速度的正大小。",
+    "unit": "长度/时间²",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) §8.2.2 pp.373–374；本页压力平衡气团模型",
+    "scope": "图上\\(a_b/g\\)无量纲；\\(a_b\\)与熵梯度参数\\(a\\)不同。",
+    "contexts": [
+      "convection",
+      "buoy-lab"
+    ],
+    "tex": "a_b"
+  },
+  {
+    "id": "supp-c8-pressure-gradient",
+    "kind": "symbol",
+    "aliases": [
+      "∇P"
+    ],
+    "title": "压力梯度",
+    "english": "pressure gradient",
+    "definition": "压力沿空间的变化率矢量；静力平衡时∇P=−ρ∇Φ，压力梯度力密度为−∇P。",
+    "unit": "erg cm⁻⁴（CGS）；N m⁻³（SI）",
+    "chapters": [
+      8
+    ],
+    "source": "MBW (2010) §8.2.1 pp.371–373",
+    "scope": "与引力势梯度∇Φ的加速度量纲不同。",
+    "contexts": [
+      "hydrostatic",
+      "hse-lab"
+    ],
+    "tex": "\\nabla P"
+  },
+  {
+    "id": "supp-c11-spin-j-ratio",
+    "kind": "symbol",
+    "aliases": [
+      "j",
+      "jd/md"
+    ],
+    "title": "盘与暗晕的比角动量之比",
+    "english": "disk-to-halo specific-angular-momentum ratio",
+    "definition": "本实验参数\\(j=j_d/m_d=(J_{\\rm disk}/M_{\\rm disk})/(J_{\\rm halo}/M_{\\rm halo})\\)，控制简单模型\\(R_d=j\\lambda R_{\\rm vir}/\\sqrt2\\)。",
+    "unit": "无量纲",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) §11.2.2 pp.505–507；本页SIS盘尺寸近似",
+    "scope": "这是网页参数简写，不是求和索引\\(j\\)，也不是有量纲的盘比角动量\\(j_{\\rm disc}\\)。",
+    "contexts": [
+      "disk-spin-lab"
+    ],
+    "tex": "j_d/m_d"
+  },
+  {
+    "id": "supp-c11-effective-yield",
+    "kind": "term",
+    "aliases": [
+      "有效产额",
+      "y_eff",
+      "yeff"
+    ],
+    "title": "有效产额",
+    "english": "effective yield",
+    "definition": "由当前气体金属丰度\\(Z\\)与当前气体分数定义\\(y_{\\rm eff}=Z/\\ln(1/f_{\\rm gas})\\)。简单原初封闭箱中等于采用同一定义的真实产额；流入、流出等过程可改变它。",
+    "unit": "无量纲（金属质量分数）",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) §11.8.2 p.541，式(11.151)–(11.152)",
+    "scope": "\\(f_{\\rm gas}=M_{\\rm gas}/(M_{\\rm gas}+M_{\\rm locked})\\)，不是第10章漏箱归一量\\(M_g/M_0\\)。",
+    "contexts": [
+      "chemistry"
+    ],
+    "tex": "y_{\\rm eff}"
+  },
+  {
+    "id": "supp-c11-current-gas-fraction",
+    "kind": "symbol",
+    "aliases": [
+      "f_gas",
+      "fgas"
+    ],
+    "title": "当前气体质量分数",
+    "english": "current gas mass fraction",
+    "definition": "当前气体质量占气体与已锁定在恒星/遗迹中质量之和的比例，用于定义有效产额。",
+    "unit": "无量纲",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) §11.8.2 p.541",
+    "scope": "不同于相对初始气体质量\\(M_0\\)的归一化储库\\(M_g/M_0\\)。",
+    "contexts": [
+      "chemistry"
+    ],
+    "tex": "f_{\\rm gas}"
+  },
+  {
+    "id": "supp-c11-solar-neighborhood",
+    "kind": "term",
+    "aliases": [
+      "太阳邻域"
+    ],
+    "title": "太阳邻域",
+    "english": "solar neighborhood",
+    "definition": "银河系太阳附近的局部空间区域，常用于研究恒星运动、气体及化学丰度分布；样本半径由具体观测研究指定。",
+    "unit": "不适用",
+    "chapters": [
+      11
+    ],
+    "source": "MBW (2010) §11.8.1 pp.538–540",
+    "scope": "没有对所有研究通用的固定边界；本地样本不自动代表整个银河盘。"
+  },
+  {
+    "id": "supp-c7-halo-exclusion",
+    "kind": "term",
+    "aliases": [
+      "晕排斥"
+    ],
+    "title": "暗晕排斥效应",
+    "english": "halo exclusion",
+    "definition": "按所声明边界定义的不同宿主暗晕，不能在任意小中心间距上作为可自由重叠的独立对象处理；晕模型需对近距离双晕配对作限制。",
+    "unit": "不适用",
+    "chapters": [
+      7
+    ],
+    "source": "MBW (2010) §7.6 p.365",
+    "scope": "这是对象边界与计数约定的效应，不是暗晕间存在排斥引力。"
+  },
+  {
+    "id": "supp-c14-vapp",
+    "kind": "symbol",
+    "aliases": [
+      "vapp",
+      "v_app"
+    ],
+    "title": "表观横向速度",
+    "english": "apparent transverse velocity",
+    "definition": "由图像横向位移与信号到达时间差推得的速度\\(v_{\\rm app}=\\beta_{\\rm app}c\\)。超光速的表观值源于投影与传播时差，不是物质实际超光速。",
+    "unit": "速度；可用m/s、km/s或若干c报告",
+    "chapters": [
+      14
+    ],
+    "source": "MBW (2010) §14.4 pp.635–636，式(14.58)",
+    "scope": "\\(v_{\\rm app}\\)有量纲；只有\\(v_{\\rm app}/c\\)或\\(\\beta_{\\rm app}\\)是无量纲，并可能大于1。",
+    "contexts": [
+      "superluminal-lab",
+      "engine"
+    ],
+    "tex": "v_{\\rm app}"
+  },
+  {
+    "id": "supp-element-He",
+    "kind": "term",
+    "aliases": [
+      "He",
+      "氦"
+    ],
+    "title": "氦元素",
+    "english": "helium",
+    "definition": "原子序数为2的元素；He单独表示元素时不指定电离态。He I为中性氦，He II为失去一个电子的氦，He III为失去两个电子的氦核。",
+    "unit": "不适用",
+    "chapters": [],
+    "source": "MBW (2010) 第3章§3.4–3.5及第16章电离过程",
+    "scope": "H I / H II中的罗马数字是电离级，不能读成分子个数或把He自动理解为中性。"
+  },
+  {
+    "id": "supp-element-HeI",
+    "kind": "abbreviation",
+    "aliases": [
+      "He I",
+      "HeI",
+      "HeⅠ"
+    ],
+    "title": "中性氦",
+    "english": "neutral helium",
+    "definition": "保留两个电子的氦原子；罗马数字I表示中性态，而非带一个单位电荷。",
+    "unit": "不适用",
+    "chapters": [],
+    "source": "MBW (2010) 第3章§3.5及第16章电离过程",
+    "scope": "按光谱电离级记号使用。"
+  },
+  {
+    "id": "supp-element-HeIII",
+    "kind": "abbreviation",
+    "aliases": [
+      "He III",
+      "HeIII",
+      "HeⅢ"
+    ],
+    "title": "二次电离氦",
+    "english": "doubly ionized helium",
+    "definition": "失去两个电子的氦离子；He II再电离把He II变为He III。",
+    "unit": "不适用",
+    "chapters": [],
+    "source": "MBW (2010) 第16章 pp.714–723",
+    "scope": "罗马数字III表示第三光谱电离级，即电荷+2，不是氦分子。"
+  },
+  {
+    "id": "supp-unit-metre",
+    "aliases": [
+      "米",
+      "m（单位）"
+    ],
+    "title": "米",
+    "english": "metre",
+    "definition": "SI长度基本单位；单位中的m是米，不是恒星质量变量m。",
+    "unit": "长度",
+    "tex": "\\mathrm m",
+    "matchTex": false,
+    "kind": "unit",
+    "chapters": [],
+    "scope": "按当前公式声明的完整单位制使用，不能混用SI与CGS数值。",
+    "source": "MBW (2010) 附录E pp.776；SI/CGS单位换算说明（原创）"
+  },
+  {
+    "id": "supp-unit-gram",
+    "aliases": [
+      "克",
+      "g（单位）"
+    ],
+    "title": "克",
+    "english": "gram",
+    "definition": "CGS质量单位；1g=10⁻³kg。直立单位g与重力加速度变量g不同。",
+    "unit": "质量",
+    "tex": "\\mathrm g",
+    "matchTex": false,
+    "kind": "unit",
+    "chapters": [],
+    "scope": "按当前公式声明的完整单位制使用，不能混用SI与CGS数值。",
+    "source": "MBW (2010) 附录E pp.776；SI/CGS单位换算说明（原创）"
+  },
+  {
+    "id": "supp-unit-cubic-cm",
+    "aliases": [
+      "cm³",
+      "cm^3"
+    ],
+    "title": "立方厘米",
+    "english": "cubic centimetre",
+    "definition": "边长1厘米的立方体体积，1cm³=10⁻⁶m³；立方幂作用于整个厘米单位。",
+    "unit": "体积",
+    "tex": "\\mathrm{cm}^3",
+    "matchTex": true,
+    "kind": "unit",
+    "chapters": [],
+    "scope": "按当前公式声明的完整单位制使用，不能混用SI与CGS数值。",
+    "source": "MBW (2010) 附录E pp.776；SI/CGS单位换算说明（原创）"
+  },
+  {
+    "id": "supp-vacuum-permittivity",
+    "aliases": [
+      "ε₀",
+      "ε0",
+      "ε_0"
+    ],
+    "title": "真空介电常数",
+    "english": "vacuum electric permittivity",
+    "definition": "SI单位制中进入库仑定律和电磁截面的常数；将本页Gaussian CGS的e²项转为SI时，应相应使用e²/(4πε₀)。",
+    "unit": "F m⁻¹",
+    "tex": "\\epsilon_0",
+    "matchTex": true,
+    "kind": "symbol",
+    "chapters": [],
+    "scope": "按当前公式声明的完整单位制使用，不能混用SI与CGS数值。",
+    "source": "MBW (2010) 附录E pp.776；SI/CGS单位换算说明（原创）"
+  },
+  {
+    "id": "supp-c3-recombination-photon",
+    "kind": "symbol",
+    "aliases": [
+      "γ"
+    ],
+    "title": "复合辐射光子",
+    "english": "recombination photon",
+    "definition": "质子与电子结合成中性氢时，通过辐射带走能量的光子记号；示意反应p+e→H+γ保留这一能量通道。",
+    "unit": "粒子种类记号，无单位；光子能量可用eV报告",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "thermal-recombination"
+    ],
+    "tex": "\\gamma",
+    "source": "MBW (2010) §3.5 pp.146–150",
+    "scope": "实际复合涉及激发态、级联跃迁和辐射转移；单个箭头不是完整反应网络。"
+  },
+  {
+    "id": "supp-unit-statC",
+    "kind": "unit",
+    "aliases": [
+      "statC",
+      "静库仑"
+    ],
+    "title": "静库仑",
+    "english": "statcoulomb",
+    "definition": "Gaussian CGS中使用的电荷单位，1 statC约等于3.335640952×10⁻¹⁰ C；本页原子截面所用的元电荷数值以此单位给出。",
+    "unit": "电荷",
+    "chapters": [],
+    "scope": "与g、cm、s配套用于本页CGS截面式；换用SI库仑时必须同时转换电磁方程中的常数因子。",
+    "source": "MBW (2010) 附录E：CGS单位；本页精度模型的常数约定与单位换算说明",
+    "tex": "\\mathrm{statC}"
+  }
+]

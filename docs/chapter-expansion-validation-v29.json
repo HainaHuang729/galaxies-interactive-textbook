@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-10-18T04:11:26.660Z",
+  "checks": 1120,
+  "referenceChecks": 612,
+  "independentReferences": {
+    "nfwRows": 24,
+    "chemicalStates": 24,
+    "ringCases": 10
+  },
+  "maxEllipseResidual": 2.2426505097428162e-14,
+  "maxGeometricDelayError": 5.000000236066171e-9,
+  "scope": "Within explicitly stated spherical, closed-box and Newtonian thin-ring assumptions; no claim of observational calibration."
+}

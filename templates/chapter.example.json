@@ -1,0 +1,15 @@
+{
+  "id": "chapter-example",
+  "number": 1,
+  "title": "待填写的章节标题",
+  "status": "source_review_required",
+  "sources": [{"referenceId": "primary-book", "printedPages": [], "pdfPages": [], "sections": [], "equations": [], "verified": false}],
+  "learningQuestions": [],
+  "prerequisites": [],
+  "narrative": [],
+  "models": [],
+  "figures": [],
+  "symbols": [],
+  "practice": [],
+  "review": {"science": "pending", "independentNumerics": "pending", "browser": "pending"}
+}

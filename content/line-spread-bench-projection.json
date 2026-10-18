@@ -1,0 +1,830 @@
+{
+  "P": {
+    "origin": [
+      420,
+      250.186748056711
+    ],
+    "scale": 1.408850435110305,
+    "azimuth": 48,
+    "elevation": 36
+  },
+  "width": 840,
+  "height": 480,
+  "parts": 64,
+  "items": 64,
+  "detector": {
+    "world": {
+      "x0": 20,
+      "x1": 118,
+      "y0": -20,
+      "y1": 20,
+      "z": 21.15
+    },
+    "points": [
+      [
+        470.33548778337587,
+        218.1436969660351
+      ],
+      [
+        600.1204621305924,
+        286.83164426706406
+      ],
+      [
+        552.4229454810719,
+        317.9686621815338
+      ],
+      [
+        422.6379711338554,
+        249.2807148805048
+      ]
+    ],
+    "origin": [
+      470.33548778337587,
+      218.1436969660351
+    ],
+    "xEnd": [
+      600.1204621305924,
+      286.83164426706406
+    ],
+    "yEnd": [
+      422.6379711338554,
+      249.2807148805048
+    ],
+    "worldToSvg": {
+      "origin": [
+        420,
+        219.69425749448854
+      ],
+      "xUnit": [
+        1.3243364729307814,
+        0.7008974214390662
+      ],
+      "yUnit": [
+        -1.1924379162380205,
+        0.7784254478617356
+      ]
+    }
+  },
+  "slit": {
+    "x": [
+      -73,
+      -69
+    ],
+    "yGap": [
+      -2.5,
+      2.5
+    ],
+    "z": [
+      20,
+      46
+    ],
+    "fixed": true
+  },
+  "hooks": [
+    "data-line-part",
+    "data-line-slit-leaf-far",
+    "data-line-slit-leaf-near",
+    "data-line-detector-panel",
+    "data-line-profile",
+    "data-line-scan-marker"
+  ],
+  "partsList": [
+    {
+      "name": "base.foot.0",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -148,
+        "y": -64,
+        "w": 14,
+        "d": 14,
+        "r": 3
+      },
+      "z": -17,
+      "h": 7
+    },
+    {
+      "name": "base.foot.1",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 134,
+        "y": -64,
+        "w": 14,
+        "d": 14,
+        "r": 3
+      },
+      "z": -17,
+      "h": 7
+    },
+    {
+      "name": "base.foot.2",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -148,
+        "y": 50,
+        "w": 14,
+        "d": 14,
+        "r": 3
+      },
+      "z": -17,
+      "h": 7
+    },
+    {
+      "name": "base.foot.3",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 134,
+        "y": 50,
+        "w": 14,
+        "d": 14,
+        "r": 3
+      },
+      "z": -17,
+      "h": 7
+    },
+    {
+      "name": "base.plate",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -160,
+        "y": -76,
+        "w": 320,
+        "d": 152,
+        "r": 8
+      },
+      "z": -10,
+      "h": 10
+    },
+    {
+      "name": "base.deck",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -146,
+        "y": -63,
+        "w": 292,
+        "d": 126,
+        "r": 4
+      },
+      "z": 0,
+      "h": 3
+    },
+    {
+      "name": "base.fastener.0",
+      "kind": "cylinder",
+      "x": -150,
+      "y": -66,
+      "r": 1.7,
+      "z": 0,
+      "h": 1
+    },
+    {
+      "name": "base.fastener.1",
+      "kind": "cylinder",
+      "x": 150,
+      "y": -66,
+      "r": 1.7,
+      "z": 0,
+      "h": 1
+    },
+    {
+      "name": "base.fastener.2",
+      "kind": "cylinder",
+      "x": -150,
+      "y": 66,
+      "r": 1.7,
+      "z": 0,
+      "h": 1
+    },
+    {
+      "name": "base.fastener.3",
+      "kind": "cylinder",
+      "x": 150,
+      "y": 66,
+      "r": 1.7,
+      "z": 0,
+      "h": 1
+    },
+    {
+      "name": "guide.rail.-39",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -138,
+        "y": -41,
+        "w": 276,
+        "d": 4,
+        "r": 0.6
+      },
+      "z": 3,
+      "h": 4
+    },
+    {
+      "name": "guide.stop.-142.-39",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -142,
+        "y": -44,
+        "w": 4,
+        "d": 10,
+        "r": 0.7
+      },
+      "z": 3,
+      "h": 7
+    },
+    {
+      "name": "guide.stop-bolt.-142.-39",
+      "kind": "cylinder",
+      "x": -140,
+      "y": -39,
+      "r": 1,
+      "z": 10,
+      "h": 0.7
+    },
+    {
+      "name": "guide.stop.138.-39",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 138,
+        "y": -44,
+        "w": 4,
+        "d": 10,
+        "r": 0.7
+      },
+      "z": 3,
+      "h": 7
+    },
+    {
+      "name": "guide.stop-bolt.138.-39",
+      "kind": "cylinder",
+      "x": 140,
+      "y": -39,
+      "r": 1,
+      "z": 10,
+      "h": 0.7
+    },
+    {
+      "name": "guide.rail.39",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -138,
+        "y": 37,
+        "w": 276,
+        "d": 4,
+        "r": 0.6
+      },
+      "z": 3,
+      "h": 4
+    },
+    {
+      "name": "guide.stop.-142.39",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -142,
+        "y": 34,
+        "w": 4,
+        "d": 10,
+        "r": 0.7
+      },
+      "z": 3,
+      "h": 7
+    },
+    {
+      "name": "guide.stop-bolt.-142.39",
+      "kind": "cylinder",
+      "x": -140,
+      "y": 39,
+      "r": 1,
+      "z": 10,
+      "h": 0.7
+    },
+    {
+      "name": "guide.stop.138.39",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 138,
+        "y": 34,
+        "w": 4,
+        "d": 10,
+        "r": 0.7
+      },
+      "z": 3,
+      "h": 7
+    },
+    {
+      "name": "guide.stop-bolt.138.39",
+      "kind": "cylinder",
+      "x": 140,
+      "y": 39,
+      "r": 1,
+      "z": 10,
+      "h": 0.7
+    },
+    {
+      "name": "guide.ruler.-59",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -133,
+        "y": -59,
+        "w": 266,
+        "d": 5,
+        "r": 0.6
+      },
+      "z": 3,
+      "h": 0.7
+    },
+    {
+      "name": "guide.ruler.53",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -133,
+        "y": 53,
+        "w": 266,
+        "d": 5,
+        "r": 0.6
+      },
+      "z": 3,
+      "h": 0.7
+    },
+    {
+      "name": "base.plaque",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -35,
+        "y": 64,
+        "w": 70,
+        "d": 7,
+        "r": 1
+      },
+      "z": 0,
+      "h": 0.7
+    },
+    {
+      "name": "base.plaque-rivet.-30",
+      "kind": "cylinder",
+      "x": -30,
+      "y": 67.5,
+      "r": 0.9,
+      "z": 0.7,
+      "h": 0.5
+    },
+    {
+      "name": "base.plaque-rivet.30",
+      "kind": "cylinder",
+      "x": 30,
+      "y": 67.5,
+      "r": 0.9,
+      "z": 0.7,
+      "h": 0.5
+    },
+    {
+      "name": "source.saddle",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -134,
+        "y": -43,
+        "w": 39,
+        "d": 86,
+        "r": 1.5
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "source.stem",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -124,
+        "y": -8,
+        "w": 18,
+        "d": 16,
+        "r": 1
+      },
+      "z": 11,
+      "h": 7
+    },
+    {
+      "name": "source.case",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -132,
+        "y": -15,
+        "w": 35,
+        "d": 30,
+        "r": 2
+      },
+      "z": 18,
+      "h": 27
+    },
+    {
+      "name": "source.lid",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -132,
+        "y": -15,
+        "w": 35,
+        "d": 30,
+        "r": 2
+      },
+      "z": 45,
+      "h": 2
+    },
+    {
+      "name": "source.exit-window",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -97,
+        "y": -6,
+        "w": 1.5,
+        "d": 12,
+        "r": 0.2
+      },
+      "z": 25,
+      "h": 13
+    },
+    {
+      "name": "source.lid-fastener.0",
+      "kind": "cylinder",
+      "x": -125,
+      "y": 0,
+      "r": 1.2,
+      "z": 47,
+      "h": 0.8
+    },
+    {
+      "name": "source.lid-fastener.1",
+      "kind": "cylinder",
+      "x": -105,
+      "y": 0,
+      "r": 1.2,
+      "z": 47,
+      "h": 0.8
+    },
+    {
+      "name": "slit.saddle",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -81,
+        "y": -43,
+        "w": 20,
+        "d": 86,
+        "r": 1.2
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "slit.bottom",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -77,
+        "y": -22,
+        "w": 12,
+        "d": 44,
+        "r": 0.8
+      },
+      "z": 11,
+      "h": 7
+    },
+    {
+      "name": "slit.top",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -77,
+        "y": -22,
+        "w": 12,
+        "d": 44,
+        "r": 0.8
+      },
+      "z": 48,
+      "h": 4
+    },
+    {
+      "name": "slit.side.-22",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -77,
+        "y": -22,
+        "w": 12,
+        "d": 3,
+        "r": 0.4
+      },
+      "z": 18,
+      "h": 30
+    },
+    {
+      "name": "slit.side.19",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -77,
+        "y": 19,
+        "w": 12,
+        "d": 3,
+        "r": 0.4
+      },
+      "z": 18,
+      "h": 30
+    },
+    {
+      "name": "slit.leaf.far",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -73,
+        "y": -19,
+        "w": 4,
+        "d": 16.5,
+        "r": 0.15
+      },
+      "z": 20,
+      "h": 26
+    },
+    {
+      "name": "slit.leaf.near",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -73,
+        "y": 2.5,
+        "w": 4,
+        "d": 16.5,
+        "r": 0.15
+      },
+      "z": 20,
+      "h": 26
+    },
+    {
+      "name": "slit.top-fastener.-74",
+      "kind": "cylinder",
+      "x": -74,
+      "y": 0,
+      "r": 1,
+      "z": 52,
+      "h": 0.7
+    },
+    {
+      "name": "slit.top-fastener.-68",
+      "kind": "cylinder",
+      "x": -68,
+      "y": 0,
+      "r": 1,
+      "z": 52,
+      "h": 0.7
+    },
+    {
+      "name": "slit.adjust-knob.-15",
+      "kind": "cylinder",
+      "x": -71,
+      "y": -15,
+      "r": 3.2,
+      "z": 52,
+      "h": 3
+    },
+    {
+      "name": "slit.adjust-knob.15",
+      "kind": "cylinder",
+      "x": -71,
+      "y": 15,
+      "r": 3.2,
+      "z": 52,
+      "h": 3
+    },
+    {
+      "name": "optic.saddle",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -44,
+        "y": -43,
+        "w": 25,
+        "d": 86,
+        "r": 1.2
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "optic.stem",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -37,
+        "y": -7,
+        "w": 11,
+        "d": 14,
+        "r": 0.5
+      },
+      "z": 11,
+      "h": 6
+    },
+    {
+      "name": "optic.frame-bottom",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -38,
+        "y": -17,
+        "w": 13,
+        "d": 34,
+        "r": 0.6
+      },
+      "z": 17,
+      "h": 4
+    },
+    {
+      "name": "optic.frame-top",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -38,
+        "y": -17,
+        "w": 13,
+        "d": 34,
+        "r": 0.6
+      },
+      "z": 45,
+      "h": 4
+    },
+    {
+      "name": "optic.frame-side.-17",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -38,
+        "y": -17,
+        "w": 13,
+        "d": 4,
+        "r": 0.5
+      },
+      "z": 21,
+      "h": 24
+    },
+    {
+      "name": "optic.frame-side.13",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": -38,
+        "y": 13,
+        "w": 13,
+        "d": 4,
+        "r": 0.5
+      },
+      "z": 21,
+      "h": 24
+    },
+    {
+      "name": "optic.fastener.-12",
+      "kind": "cylinder",
+      "x": -31.5,
+      "y": -12,
+      "r": 1,
+      "z": 49,
+      "h": 0.7
+    },
+    {
+      "name": "optic.fastener.12",
+      "kind": "cylinder",
+      "x": -31.5,
+      "y": 12,
+      "r": 1,
+      "z": 49,
+      "h": 0.7
+    },
+    {
+      "name": "detector.saddle",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 4,
+        "y": -43,
+        "w": 130,
+        "d": 86,
+        "r": 1.5
+      },
+      "z": 7,
+      "h": 4
+    },
+    {
+      "name": "detector.case",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 9,
+        "y": -30,
+        "w": 120,
+        "d": 60,
+        "r": 2
+      },
+      "z": 11,
+      "h": 9
+    },
+    {
+      "name": "detector.panel",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 14,
+        "y": -25,
+        "w": 110,
+        "d": 50,
+        "r": 1
+      },
+      "z": 20,
+      "h": 1
+    },
+    {
+      "name": "detector.bezel.9.-30",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 9,
+        "y": -30,
+        "w": 120,
+        "d": 5,
+        "r": 0.3
+      },
+      "z": 20,
+      "h": 2
+    },
+    {
+      "name": "detector.bezel.9.25",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 9,
+        "y": 25,
+        "w": 120,
+        "d": 5,
+        "r": 0.3
+      },
+      "z": 20,
+      "h": 2
+    },
+    {
+      "name": "detector.bezel.9.-25",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 9,
+        "y": -25,
+        "w": 5,
+        "d": 50,
+        "r": 0.3
+      },
+      "z": 20,
+      "h": 2
+    },
+    {
+      "name": "detector.bezel.124.-25",
+      "kind": "rounded-prism",
+      "plan": {
+        "x": 124,
+        "y": -25,
+        "w": 5,
+        "d": 50,
+        "r": 0.3
+      },
+      "z": 20,
+      "h": 2
+    },
+    {
+      "name": "detector.fastener.11.5.-27.5",
+      "kind": "cylinder",
+      "x": 11.5,
+      "y": -27.5,
+      "r": 1,
+      "z": 22,
+      "h": 0.7
+    },
+    {
+      "name": "detector.fastener.126.5.-27.5",
+      "kind": "cylinder",
+      "x": 126.5,
+      "y": -27.5,
+      "r": 1,
+      "z": 22,
+      "h": 0.7
+    },
+    {
+      "name": "detector.fastener.11.5.27.5",
+      "kind": "cylinder",
+      "x": 11.5,
+      "y": 27.5,
+      "r": 1,
+      "z": 22,
+      "h": 0.7
+    },
+    {
+      "name": "detector.fastener.126.5.27.5",
+      "kind": "cylinder",
+      "x": 126.5,
+      "y": 27.5,
+      "r": 1,
+      "z": 22,
+      "h": 0.7
+    },
+    {
+      "name": "detector.control.119",
+      "kind": "cylinder",
+      "x": 119,
+      "y": 35,
+      "r": 2.2,
+      "z": 11,
+      "h": 1.5
+    },
+    {
+      "name": "detector.control.127",
+      "kind": "cylinder",
+      "x": 127,
+      "y": 35,
+      "r": 2.2,
+      "z": 11,
+      "h": 1.5
+    }
+  ],
+  "limits": "Teaching registration/readout bench only. Fixed slit opening; changing the Gaussian LOSVD/instrumental widths only changes a synthetic line profile, never the slit geometry. No invented grating ray paths, physical optical dispersion, detector calibration or full telescope engineering. Detector plane units are arbitrary display coordinates; the runtime must use the same pure line model as the data chart."
+}

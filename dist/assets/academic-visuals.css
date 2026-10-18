@@ -1,0 +1,53 @@
+/* Shared editorial rhythm; all colors inherit the selected book theme. */
+:root { --visual-radius:8px; --visual-caption:13px; }
+.illustration-open,.bf-image-panel > button,.lab-chart-frame { border-radius:var(--visual-radius); }
+.chapter-illustration figcaption { padding-top:18px; }
+.chapter-illustration figcaption p,.bf-readout,.bf-image-panel figcaption { font-size:var(--visual-caption); line-height:1.9; }
+.illustration-caption-heading strong { font-size:14px; letter-spacing:.02em; }
+.chapter-illustration .illustration-observe { margin-top:14px; padding-top:12px; }
+.chapter-illustration .illustration-source { font-size:11px; line-height:1.9; margin-top:12px; }
+.illustration-source a { color:var(--muted); text-decoration:underline; text-underline-offset:3px; }
+.illustration-source a:hover { color:var(--accent); }
+.illustration-source span:not(.inline-math, .inline-math *) { display:inline; margin-left:5px; }
+.body-illustration { max-width:940px; margin:0 auto; width:100%; }
+.illustration-body-heading { margin-bottom:22px; }
+.illustration-body-heading > .small-label { color:var(--muted); font-size:11px; letter-spacing:.14em; }
+.illustration-body-heading h3 { font:400 clamp(24px,2.5vw,34px)/1.5 var(--serif); margin:8px 0 0; }
+.body-illustration .illustration-open img { max-height:46svh; object-fit:contain; background:var(--legacy-0b1119,#0b1119); }
+.formula.typeset-math { padding:16px 20px; border:1px solid var(--line); border-left:2px solid var(--accent); border-radius:var(--visual-radius); background:var(--subtle); margin-block:20px; }
+.formula.typeset-math .math-line { padding-block:.6em; }
+.scientific-chart-action,.bf-expand { border-radius:var(--visual-radius); }
+.scientific-chart-dialog,.illustration-dialog,.body-figure-dialog { border-radius:var(--visual-radius); border:1px solid var(--line); }
+.scientific-coordinate,.scientific-dialog-note { font-size:var(--visual-caption); line-height:1.9; }
+.lab-model-note,.model-assumptions p,.bf-assumptions p { line-height:1.9; }
+.bf-source,.lab-chart-source,.illustration-dialog-provenance { letter-spacing:.01em; }
+@media(max-width:600px) {
+ .illustration-body-heading { margin-bottom:18px; }
+ .body-illustration .illustration-open img { max-height:none; }
+ .formula.typeset-math { padding:12px 13px; }
+ .illustration-caption-heading { gap:8px 12px; }
+ .chapter-illustration figcaption { padding-top:14px; }
+}
+@media print { .body-illustration .illustration-open img { max-height:none; } }
+
+/* Source photos use the same editorial framing while retaining source pixels. */
+.bf-image-credit { display:block; margin-top:8px; font-size:11px; line-height:1.8; overflow-wrap:anywhere; }
+.bf-image-credit a { color:var(--muted); text-decoration:underline; text-underline-offset:3px; }
+.bf-image-credit a:hover { color:var(--accent); }
+.bf-image-panel figcaption > strong,.bf-image-panel figcaption > span:not(.inline-math, .inline-math *) { display:block; }
+.bf-image-panel figcaption > strong { color:var(--text); margin-bottom:5px; font-size:13px; font-weight:500; }
+.bf-image-panel figcaption > br { display:none; }
+.bf-dialog-credit { font:12px/1.9 var(--sans); }
+.bf-dialog-credit > strong,.bf-dialog-credit > span:not(.inline-math, .inline-math *) { display:block; }
+@media(max-width:600px) { .bf-heading { flex-wrap:wrap; gap:8px; } .bf-kind { white-space:normal; padding-top:0; } }
+
+.bf-images-single .bf-image-panel img { height:auto; max-height:46svh; }
+@media(max-width:600px) { .bf-images-single .bf-image-panel img { max-height:none; } }
+
+.bf-image-zoom { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 14px; }
+.bf-image-zoom button { border:1px solid var(--line); border-radius:5px; min-height:40px; padding:7px 12px; color:var(--muted); background:var(--panel); font:12px var(--sans); }
+.bf-image-zoom button[aria-pressed="true"] { color:var(--text); background:var(--soft); border-color:var(--accent); }
+.bf-image-viewport { max-height:60svh; overflow:auto; overscroll-behavior:contain; background:var(--bg); scrollbar-width:thin; }
+.bf-image-viewport > img { display:block; width:100%; height:auto; max-height:60svh; object-fit:contain; }
+.bf-image-viewport.is-zoomed > img { max-width:none; max-height:none; }
+.bf-image-viewport:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }

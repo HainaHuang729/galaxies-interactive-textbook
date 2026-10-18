@@ -1,0 +1,1383 @@
+{
+  "model": "uniformly responding razor-thin circular Newtonian Keplerian ring; distant observer",
+  "source": {
+    "book": "Mo, van den Bosch & White (2010), Galaxy Formation and Evolution",
+    "section": "14.2.8",
+    "printedPages": [
+      639,
+      640
+    ],
+    "pdfPages": [
+      661,
+      662
+    ],
+    "localExtract": "work/chapter-14-source.txt",
+    "status": "Book supplies broad reverberation-mass principle. Ring geometry, analytic moments and tests are original derivations."
+  },
+  "constants": {
+    "G_cgs": 6.6743e-8,
+    "c_cm_s": 29979245800,
+    "Msun_g": 1.98847e+33,
+    "day_s": 86400,
+    "JulianYear_s": 31557600,
+    "lightDay_cm": 2590206837120000
+  },
+  "parameterLimits": {
+    "log10Mass_Msun": [
+      6,
+      9
+    ],
+    "radius_lightDay": [
+      10,
+      300
+    ],
+    "inclination_deg": [
+      0,
+      85
+    ],
+    "phase_deg": [
+      0,
+      360
+    ]
+  },
+  "coordinates": {
+    "position": "r(cos(phi),sin(phi),0)",
+    "velocity": "vK(-sin(phi),cos(phi),0)",
+    "observerUnit": "(sin(i),0,cos(i))",
+    "positiveVlos": "receding/redshift, -dot(v,n)",
+    "referenceDelay": "line echo arrival minus direct central-continuum arrival; source rest frame; observer distance D >> r"
+  },
+  "massConversionCoefficient_Msun_per_day_km2_s2": 0.19516847945156146,
+  "cases": [
+    {
+      "input": {
+        "log10Mass_Msun": 8,
+        "radius_lightDay": 30,
+        "inclination_deg": 0
+      },
+      "derived": {
+        "radius_cm": 77706205113600000,
+        "radius_pc": 0.025182866019347067,
+        "vK_km_s": 4132.706215162366,
+        "vK_over_c": 0.013785224093804139,
+        "meanDelay_day": 30,
+        "minDelay_day": 30,
+        "maxDelay_day": 30,
+        "lineSigma_km_s": 0,
+        "virialProduct_Msun": 0,
+        "virialFactor": null,
+        "correctedMass_Msun": null,
+        "period_day": 13673.739210384558,
+        "period_JulianYear": 37.436657660190434,
+        "radius_over_Schwarzschild": 2631.1302244992153,
+        "specificEnergy_cm2_s2": -85396303304208210,
+        "specificAngularMomentum_cm2_s": 3.2113691682965632e+25
+      },
+      "phases": [
+        {
+          "phase_deg": 0,
+          "positionOverR": [
+            1,
+            0,
+            0
+          ],
+          "velocityOverVK": [
+            0,
+            1,
+            0
+          ],
+          "delay_day": 30,
+          "vlos_km_s": 0
+        },
+        {
+          "phase_deg": 30,
+          "positionOverR": [
+            0.8660254037844387,
+            0.49999999999999994,
+            0
+          ],
+          "velocityOverVK": [
+            -0.49999999999999994,
+            0.8660254037844387,
+            0
+          ],
+          "delay_day": 30,
+          "vlos_km_s": 0
+        },
+        {
+          "phase_deg": 45,
+          "positionOverR": [
+            0.7071067811865476,
+            0.7071067811865475,
+            0
+          ],
+          "velocityOverVK": [
+            -0.7071067811865475,
+            0.7071067811865476,
+            0
+          ],
+          "delay_day": 30,
+          "vlos_km_s": 0
+        },
+        {
+          "phase_deg": 90,
+          "positionOverR": [
+            6.123233995736766e-17,
+            1,
+            0
+          ],
+          "velocityOverVK": [
+            -1,
+            6.123233995736766e-17,
+            0
+          ],
+          "delay_day": 30,
+          "vlos_km_s": 0
+        },
+        {
+          "phase_deg": 180,
+          "positionOverR": [
+            -1,
+            1.2246467991473532e-16,
+            0
+          ],
+          "velocityOverVK": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ],
+          "delay_day": 30,
+          "vlos_km_s": 0
+        },
+        {
+          "phase_deg": 270,
+          "positionOverR": [
+            -1.8369701987210297e-16,
+            -1,
+            0
+          ],
+          "velocityOverVK": [
+            1,
+            -1.8369701987210297e-16,
+            0
+          ],
+          "delay_day": 30,
+          "vlos_km_s": 0
+        },
+        {
+          "phase_deg": 360,
+          "positionOverR": [
+            1,
+            -2.4492935982947064e-16,
+            0
+          ],
+          "velocityOverVK": [
+            2.4492935982947064e-16,
+            1,
+            0
+          ],
+          "delay_day": 30,
+          "vlos_km_s": 0
+        }
+      ]
+    },
+    {
+      "input": {
+        "log10Mass_Msun": 8,
+        "radius_lightDay": 30,
+        "inclination_deg": 1
+      },
+      "derived": {
+        "radius_cm": 77706205113600000,
+        "radius_pc": 0.025182866019347067,
+        "vK_km_s": 4132.706215162366,
+        "vK_over_c": 0.013785224093804139,
+        "meanDelay_day": 30,
+        "minDelay_day": 29.476427806881496,
+        "maxDelay_day": 30.523572193118504,
+        "lineSigma_km_s": 51.00054933136979,
+        "virialProduct_Msun": 15229.32452260675,
+        "virialFactor": 6566.279407307776,
+        "correctedMass_Msun": 100000000.00000003,
+        "period_day": 13673.739210384558,
+        "period_JulianYear": 37.436657660190434,
+        "radius_over_Schwarzschild": 2631.1302244992153,
+        "specificEnergy_cm2_s2": -85396303304208210,
+        "specificAngularMomentum_cm2_s": 3.2113691682965632e+25
+      },
+      "phases": [
+        {
+          "phase_deg": 0,
+          "positionOverR": [
+            1,
+            0,
+            0
+          ],
+          "velocityOverVK": [
+            0,
+            1,
+            0
+          ],
+          "delay_day": 29.476427806881496,
+          "vlos_km_s": 0
+        },
+        {
+          "phase_deg": 30,
+          "positionOverR": [
+            0.8660254037844387,
+            0.49999999999999994,
+            0
+          ],
+          "velocityOverVK": [
+            -0.49999999999999994,
+            0.8660254037844387,
+            0
+          ],
+          "delay_day": 29.54657318004424,
+          "vlos_km_s": 36.062834276450616
+        },
+        {
+          "phase_deg": 45,
+          "positionOverR": [
+            0.7071067811865476,
+            0.7071067811865475,
+            0
+          ],
+          "velocityOverVK": [
+            -0.7071067811865475,
+            0.7071067811865476,
+            0
+          ],
+          "delay_day": 29.62977855180519,
+          "vlos_km_s": 51.00054933136979
+        },
+        {
+          "phase_deg": 90,
+          "positionOverR": [
+            6.123233995736766e-17,
+            1,
+            0
+          ],
+          "velocityOverVK": [
+            -1,
+            6.123233995736766e-17,
+            0
+          ],
+          "delay_day": 30,
+          "vlos_km_s": 72.12566855290125
+        },
+        {
+          "phase_deg": 180,
+          "positionOverR": [
+            -1,
+            1.2246467991473532e-16,
+            0
+          ],
+          "velocityOverVK": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ],
+          "delay_day": 30.523572193118504,
+          "vlos_km_s": 8.832846912967342e-15
+        },
+        {
+          "phase_deg": 270,
+          "positionOverR": [
+            -1.8369701987210297e-16,
+            -1,
+            0
+          ],
+          "velocityOverVK": [
+            1,
+            -1.8369701987210297e-16,
+            0
+          ],
+          "delay_day": 30,
+          "vlos_km_s": -72.12566855290125
+        },
+        {
+          "phase_deg": 360,
+          "positionOverR": [
+            1,
+            -2.4492935982947064e-16,
+            0
+          ],
+          "velocityOverVK": [
+            2.4492935982947064e-16,
+            1,
+            0
+          ],
+          "delay_day": 29.476427806881496,
+          "vlos_km_s": -1.7665693825934684e-14
+        }
+      ]
+    },
+    {
+      "input": {
+        "log10Mass_Msun": 8,
+        "radius_lightDay": 30,
+        "inclination_deg": 30
+      },
+      "derived": {
+        "radius_cm": 77706205113600000,
+        "radius_pc": 0.025182866019347067,
+        "vK_km_s": 4132.706215162366,
+        "vK_over_c": 0.013785224093804139,
+        "meanDelay_day": 30,
+        "minDelay_day": 15,
+        "maxDelay_day": 45,
+        "lineSigma_km_s": 1461.1322946965495,
+        "virialProduct_Msun": 12499999.999999996,
+        "virialFactor": 8.000000000000002,
+        "correctedMass_Msun": 99999999.99999999,
+        "period_day": 13673.739210384558,
+        "period_JulianYear": 37.436657660190434,
+        "radius_over_Schwarzschild": 2631.1302244992153,
+        "specificEnergy_cm2_s2": -85396303304208210,
+        "specificAngularMomentum_cm2_s": 3.2113691682965632e+25
+      },
+      "phases": [
+        {
+          "phase_deg": 0,
+          "positionOverR": [
+            1,
+            0,
+            0
+          ],
+          "velocityOverVK": [
+            0,
+            1,
+            0
+          ],
+          "delay_day": 15,
+          "vlos_km_s": 0
+        },
+        {
+          "phase_deg": 30,
+          "positionOverR": [
+            0.8660254037844387,
+            0.49999999999999994,
+            0
+          ],
+          "velocityOverVK": [
+            -0.49999999999999994,
+            0.8660254037844387,
+            0
+          ],
+          "delay_day": 17.00961894323342,
+          "vlos_km_s": 1033.176553790591
+        },
+        {
+          "phase_deg": 45,
+          "positionOverR": [
+            0.7071067811865476,
+            0.7071067811865475,
+            0
+          ],
+          "velocityOverVK": [
+            -0.7071067811865475,
+            0.7071067811865476,
+            0
+          ],
+          "delay_day": 19.393398282201787,
+          "vlos_km_s": 1461.1322946965495
+        },
+        {
+          "phase_deg": 90,
+          "positionOverR": [
+            6.123233995736766e-17,
+            1,
+            0
+          ],
+          "velocityOverVK": [
+            -1,
+            6.123233995736766e-17,
+            0
+          ],
+          "delay_day": 30,
+          "vlos_km_s": 2066.3531075811825
+        },
+        {
+          "phase_deg": 180,
+          "positionOverR": [
+            -1,
+            1.2246467991473532e-16,
+            0
+          ],
+          "velocityOverVK": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ],
+          "delay_day": 45,
+          "vlos_km_s": 2.5305527191074813e-13
+        },
+        {
+          "phase_deg": 270,
+          "positionOverR": [
+            -1.8369701987210297e-16,
+            -1,
+            0
+          ],
+          "velocityOverVK": [
+            1,
+            -1.8369701987210297e-16,
+            0
+          ],
+          "delay_day": 30,
+          "vlos_km_s": -2066.3531075811825
+        },
+        {
+          "phase_deg": 360,
+          "positionOverR": [
+            1,
+            -2.4492935982947064e-16,
+            0
+          ],
+          "velocityOverVK": [
+            2.4492935982947064e-16,
+            1,
+            0
+          ],
+          "delay_day": 15,
+          "vlos_km_s": -5.061105438214963e-13
+        }
+      ]
+    },
+    {
+      "input": {
+        "log10Mass_Msun": 8,
+        "radius_lightDay": 30,
+        "inclination_deg": 45
+      },
+      "derived": {
+        "radius_cm": 77706205113600000,
+        "radius_pc": 0.025182866019347067,
+        "vK_km_s": 4132.706215162366,
+        "vK_over_c": 0.013785224093804139,
+        "meanDelay_day": 30,
+        "minDelay_day": 8.786796564403577,
+        "maxDelay_day": 51.21320343559643,
+        "lineSigma_km_s": 2066.3531075811825,
+        "virialProduct_Msun": 24999999.999999996,
+        "virialFactor": 4.000000000000001,
+        "correctedMass_Msun": 100000000,
+        "period_day": 13673.739210384558,
+        "period_JulianYear": 37.436657660190434,
+        "radius_over_Schwarzschild": 2631.1302244992153,
+        "specificEnergy_cm2_s2": -85396303304208210,
+        "specificAngularMomentum_cm2_s": 3.2113691682965632e+25
+      },
+      "phases": [
+        {
+          "phase_deg": 0,
+          "positionOverR": [
+            1,
+            0,
+            0
+          ],
+          "velocityOverVK": [
+            0,
+            1,
+            0
+          ],
+          "delay_day": 8.786796564403577,
+          "vlos_km_s": 0
+        },
+        {
+          "phase_deg": 30,
+          "positionOverR": [
+            0.8660254037844387,
+            0.49999999999999994,
+            0
+          ],
+          "velocityOverVK": [
+            -0.49999999999999994,
+            0.8660254037844387,
+            0
+          ],
+          "delay_day": 11.628826929126166,
+          "vlos_km_s": 1461.1322946965497
+        },
+        {
+          "phase_deg": 45,
+          "positionOverR": [
+            0.7071067811865476,
+            0.7071067811865475,
+            0
+          ],
+          "velocityOverVK": [
+            -0.7071067811865475,
+            0.7071067811865476,
+            0
+          ],
+          "delay_day": 15,
+          "vlos_km_s": 2066.3531075811825
+        },
+        {
+          "phase_deg": 90,
+          "positionOverR": [
+            6.123233995736766e-17,
+            1,
+            0
+          ],
+          "velocityOverVK": [
+            -1,
+            6.123233995736766e-17,
+            0
+          ],
+          "delay_day": 30,
+          "vlos_km_s": 2922.2645893931
+        },
+        {
+          "phase_deg": 180,
+          "positionOverR": [
+            -1,
+            1.2246467991473532e-16,
+            0
+          ],
+          "velocityOverVK": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ],
+          "delay_day": 51.21320343559643,
+          "vlos_km_s": 3.578741975661914e-13
+        },
+        {
+          "phase_deg": 270,
+          "positionOverR": [
+            -1.8369701987210297e-16,
+            -1,
+            0
+          ],
+          "velocityOverVK": [
+            1,
+            -1.8369701987210297e-16,
+            0
+          ],
+          "delay_day": 30.000000000000007,
+          "vlos_km_s": -2922.2645893931
+        },
+        {
+          "phase_deg": 360,
+          "positionOverR": [
+            1,
+            -2.4492935982947064e-16,
+            0
+          ],
+          "velocityOverVK": [
+            2.4492935982947064e-16,
+            1,
+            0
+          ],
+          "delay_day": 8.786796564403577,
+          "vlos_km_s": -7.157483951323828e-13
+        }
+      ]
+    },
+    {
+      "input": {
+        "log10Mass_Msun": 8,
+        "radius_lightDay": 30,
+        "inclination_deg": 60
+      },
+      "derived": {
+        "radius_cm": 77706205113600000,
+        "radius_pc": 0.025182866019347067,
+        "vK_km_s": 4132.706215162366,
+        "vK_over_c": 0.013785224093804139,
+        "meanDelay_day": 30,
+        "minDelay_day": 4.019237886466842,
+        "maxDelay_day": 55.98076211353316,
+        "lineSigma_km_s": 2530.7553709941258,
+        "virialProduct_Msun": 37500000,
+        "virialFactor": 2.666666666666667,
+        "correctedMass_Msun": 100000000.00000001,
+        "period_day": 13673.739210384558,
+        "period_JulianYear": 37.436657660190434,
+        "radius_over_Schwarzschild": 2631.1302244992153,
+        "specificEnergy_cm2_s2": -85396303304208210,
+        "specificAngularMomentum_cm2_s": 3.2113691682965632e+25
+      },
+      "phases": [
+        {
+          "phase_deg": 0,
+          "positionOverR": [
+            1,
+            0,
+            0
+          ],
+          "velocityOverVK": [
+            0,
+            1,
+            0
+          ],
+          "delay_day": 4.019237886466842,
+          "vlos_km_s": 0
+        },
+        {
+          "phase_deg": 30,
+          "positionOverR": [
+            0.8660254037844387,
+            0.49999999999999994,
+            0
+          ],
+          "velocityOverVK": [
+            -0.49999999999999994,
+            0.8660254037844387,
+            0
+          ],
+          "delay_day": 7.5,
+          "vlos_km_s": 1789.5142843542233
+        },
+        {
+          "phase_deg": 45,
+          "positionOverR": [
+            0.7071067811865476,
+            0.7071067811865475,
+            0
+          ],
+          "velocityOverVK": [
+            -0.7071067811865475,
+            0.7071067811865476,
+            0
+          ],
+          "delay_day": 11.628826929126163,
+          "vlos_km_s": 2530.7553709941258
+        },
+        {
+          "phase_deg": 90,
+          "positionOverR": [
+            6.123233995736766e-17,
+            1,
+            0
+          ],
+          "velocityOverVK": [
+            -1,
+            6.123233995736766e-17,
+            0
+          ],
+          "delay_day": 30,
+          "vlos_km_s": 3579.028568708447
+        },
+        {
+          "phase_deg": 180,
+          "positionOverR": [
+            -1,
+            1.2246467991473532e-16,
+            0
+          ],
+          "velocityOverVK": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ],
+          "delay_day": 55.98076211353316,
+          "vlos_km_s": 4.3830458807257325e-13
+        },
+        {
+          "phase_deg": 270,
+          "positionOverR": [
+            -1.8369701987210297e-16,
+            -1,
+            0
+          ],
+          "velocityOverVK": [
+            1,
+            -1.8369701987210297e-16,
+            0
+          ],
+          "delay_day": 30.000000000000007,
+          "vlos_km_s": -3579.028568708447
+        },
+        {
+          "phase_deg": 360,
+          "positionOverR": [
+            1,
+            -2.4492935982947064e-16,
+            0
+          ],
+          "velocityOverVK": [
+            2.4492935982947064e-16,
+            1,
+            0
+          ],
+          "delay_day": 4.019237886466842,
+          "vlos_km_s": -8.766091761451465e-13
+        }
+      ]
+    },
+    {
+      "input": {
+        "log10Mass_Msun": 8,
+        "radius_lightDay": 30,
+        "inclination_deg": 85
+      },
+      "derived": {
+        "radius_cm": 77706205113600000,
+        "radius_pc": 0.025182866019347067,
+        "vK_km_s": 4132.706215162366,
+        "vK_over_c": 0.013785224093804139,
+        "meanDelay_day": 30,
+        "minDelay_day": 0.11415905724763364,
+        "maxDelay_day": 59.88584094275237,
+        "lineSigma_km_s": 2911.1444903746574,
+        "virialProduct_Msun": 49620193.82530521,
+        "virialFactor": 2.0153085324911046,
+        "correctedMass_Msun": 100000000.00000001,
+        "period_day": 13673.739210384558,
+        "period_JulianYear": 37.436657660190434,
+        "radius_over_Schwarzschild": 2631.1302244992153,
+        "specificEnergy_cm2_s2": -85396303304208210,
+        "specificAngularMomentum_cm2_s": 3.2113691682965632e+25
+      },
+      "phases": [
+        {
+          "phase_deg": 0,
+          "positionOverR": [
+            1,
+            0,
+            0
+          ],
+          "velocityOverVK": [
+            0,
+            1,
+            0
+          ],
+          "delay_day": 0.11415905724763364,
+          "vlos_km_s": 0
+        },
+        {
+          "phase_deg": 30,
+          "positionOverR": [
+            0.8660254037844387,
+            0.49999999999999994,
+            0
+          ],
+          "velocityOverVK": [
+            -0.49999999999999994,
+            0.8660254037844387,
+            0
+          ],
+          "delay_day": 4.118102530115371,
+          "vlos_km_s": 2058.4900101577764
+        },
+        {
+          "phase_deg": 45,
+          "positionOverR": [
+            0.7071067811865476,
+            0.7071067811865475,
+            0
+          ],
+          "velocityOverVK": [
+            -0.7071067811865475,
+            0.7071067811865476,
+            0
+          ],
+          "delay_day": 8.867519207917239,
+          "vlos_km_s": 2911.144490374658
+        },
+        {
+          "phase_deg": 90,
+          "positionOverR": [
+            6.123233995736766e-17,
+            1,
+            0
+          ],
+          "velocityOverVK": [
+            -1,
+            6.123233995736766e-17,
+            0
+          ],
+          "delay_day": 29.999999999999996,
+          "vlos_km_s": 4116.980020315554
+        },
+        {
+          "phase_deg": 180,
+          "positionOverR": [
+            -1,
+            1.2246467991473532e-16,
+            0
+          ],
+          "velocityOverVK": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ],
+          "delay_day": 59.88584094275237,
+          "vlos_km_s": 5.041846404033048e-13
+        },
+        {
+          "phase_deg": 270,
+          "positionOverR": [
+            -1.8369701987210297e-16,
+            -1,
+            0
+          ],
+          "velocityOverVK": [
+            1,
+            -1.8369701987210297e-16,
+            0
+          ],
+          "delay_day": 30.000000000000007,
+          "vlos_km_s": -4116.980020315554
+        },
+        {
+          "phase_deg": 360,
+          "positionOverR": [
+            1,
+            -2.4492935982947064e-16,
+            0
+          ],
+          "velocityOverVK": [
+            2.4492935982947064e-16,
+            1,
+            0
+          ],
+          "delay_day": 0.11415905724763364,
+          "vlos_km_s": -1.0083692808066096e-12
+        }
+      ]
+    },
+    {
+      "input": {
+        "log10Mass_Msun": 6,
+        "radius_lightDay": 10,
+        "inclination_deg": 85
+      },
+      "derived": {
+        "radius_cm": 25902068371200000,
+        "radius_pc": 0.00839428867311569,
+        "vK_km_s": 715.8057137416894,
+        "vK_over_c": 0.00238767085241914,
+        "meanDelay_day": 10,
+        "minDelay_day": 0.03805301908254455,
+        "maxDelay_day": 19.961946980917457,
+        "lineSigma_km_s": 504.2250165503113,
+        "virialProduct_Msun": 496201.93825305195,
+        "virialFactor": 2.0153085324911046,
+        "correctedMass_Msun": 999999.9999999999,
+        "period_day": 26315.12337981422,
+        "period_JulianYear": 72.04688125890273,
+        "radius_over_Schwarzschild": 87704.34081664051,
+        "specificEnergy_cm2_s2": -2561889099126246.5,
+        "specificAngularMomentum_cm2_s": 1.8540848537832852e+24
+      },
+      "phases": [
+        {
+          "phase_deg": 0,
+          "positionOverR": [
+            1,
+            0,
+            0
+          ],
+          "velocityOverVK": [
+            0,
+            1,
+            0
+          ],
+          "delay_day": 0.03805301908254455,
+          "vlos_km_s": 0
+        },
+        {
+          "phase_deg": 30,
+          "positionOverR": [
+            0.8660254037844387,
+            0.49999999999999994,
+            0
+          ],
+          "velocityOverVK": [
+            -0.49999999999999994,
+            0.8660254037844387,
+            0
+          ],
+          "delay_day": 1.3727008433717902,
+          "vlos_km_s": 356.54092844662426
+        },
+        {
+          "phase_deg": 45,
+          "positionOverR": [
+            0.7071067811865476,
+            0.7071067811865475,
+            0
+          ],
+          "velocityOverVK": [
+            -0.7071067811865475,
+            0.7071067811865476,
+            0
+          ],
+          "delay_day": 2.955839735972413,
+          "vlos_km_s": 504.2250165503113
+        },
+        {
+          "phase_deg": 90,
+          "positionOverR": [
+            6.123233995736766e-17,
+            1,
+            0
+          ],
+          "velocityOverVK": [
+            -1,
+            6.123233995736766e-17,
+            0
+          ],
+          "delay_day": 9.999999999999998,
+          "vlos_km_s": 713.0818568932486
+        },
+        {
+          "phase_deg": 180,
+          "positionOverR": [
+            -1,
+            1.2246467991473532e-16,
+            0
+          ],
+          "velocityOverVK": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ],
+          "delay_day": 19.961946980917457,
+          "vlos_km_s": 8.73273413574368e-14
+        },
+        {
+          "phase_deg": 270,
+          "positionOverR": [
+            -1.8369701987210297e-16,
+            -1,
+            0
+          ],
+          "velocityOverVK": [
+            1,
+            -1.8369701987210297e-16,
+            0
+          ],
+          "delay_day": 10.000000000000002,
+          "vlos_km_s": -713.0818568932486
+        },
+        {
+          "phase_deg": 360,
+          "positionOverR": [
+            1,
+            -2.4492935982947064e-16,
+            0
+          ],
+          "velocityOverVK": [
+            2.4492935982947064e-16,
+            1,
+            0
+          ],
+          "delay_day": 0.03805301908254455,
+          "vlos_km_s": -1.746546827148736e-13
+        }
+      ]
+    },
+    {
+      "input": {
+        "log10Mass_Msun": 6,
+        "radius_lightDay": 300,
+        "inclination_deg": 85
+      },
+      "derived": {
+        "radius_cm": 777062051136000000,
+        "radius_pc": 0.25182866019347067,
+        "vK_km_s": 130.68764540246963,
+        "vK_over_c": 0.0004359270619225172,
+        "meanDelay_day": 300,
+        "minDelay_day": 1.1415905724763364,
+        "maxDelay_day": 598.8584094275236,
+        "lineSigma_km_s": 92.05847187434041,
+        "virialProduct_Msun": 496201.9382530521,
+        "virialFactor": 2.0153085324911046,
+        "correctedMass_Msun": 1000000.0000000002,
+        "period_day": 4324016.00359675,
+        "period_JulianYear": 11838.510619019165,
+        "radius_over_Schwarzschild": 2631130.2244992154,
+        "specificEnergy_cm2_s2": -85396303304208.2,
+        "specificAngularMomentum_cm2_s": 1.015524097945773e+25
+      },
+      "phases": [
+        {
+          "phase_deg": 0,
+          "positionOverR": [
+            1,
+            0,
+            0
+          ],
+          "velocityOverVK": [
+            0,
+            1,
+            0
+          ],
+          "delay_day": 1.1415905724763364,
+          "vlos_km_s": 0
+        },
+        {
+          "phase_deg": 30,
+          "positionOverR": [
+            0.8660254037844387,
+            0.49999999999999994,
+            0
+          ],
+          "velocityOverVK": [
+            -0.49999999999999994,
+            0.8660254037844387,
+            0
+          ],
+          "delay_day": 41.18102530115371,
+          "vlos_km_s": 65.09516972801715
+        },
+        {
+          "phase_deg": 45,
+          "positionOverR": [
+            0.7071067811865476,
+            0.7071067811865475,
+            0
+          ],
+          "velocityOverVK": [
+            -0.7071067811865475,
+            0.7071067811865476,
+            0
+          ],
+          "delay_day": 88.67519207917239,
+          "vlos_km_s": 92.05847187434041
+        },
+        {
+          "phase_deg": 90,
+          "positionOverR": [
+            6.123233995736766e-17,
+            1,
+            0
+          ],
+          "velocityOverVK": [
+            -1,
+            6.123233995736766e-17,
+            0
+          ],
+          "delay_day": 299.99999999999994,
+          "vlos_km_s": 130.19033945603434
+        },
+        {
+          "phase_deg": 180,
+          "positionOverR": [
+            -1,
+            1.2246467991473532e-16,
+            0
+          ],
+          "velocityOverVK": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ],
+          "delay_day": 598.8584094275236,
+          "vlos_km_s": 1.5943718249473982e-14
+        },
+        {
+          "phase_deg": 270,
+          "positionOverR": [
+            -1.8369701987210297e-16,
+            -1,
+            0
+          ],
+          "velocityOverVK": [
+            1,
+            -1.8369701987210297e-16,
+            0
+          ],
+          "delay_day": 300.00000000000006,
+          "vlos_km_s": -130.19033945603434
+        },
+        {
+          "phase_deg": 360,
+          "positionOverR": [
+            1,
+            -2.4492935982947064e-16,
+            0
+          ],
+          "velocityOverVK": [
+            2.4492935982947064e-16,
+            1,
+            0
+          ],
+          "delay_day": 1.1415905724763364,
+          "vlos_km_s": -3.1887436498947964e-14
+        }
+      ]
+    },
+    {
+      "input": {
+        "log10Mass_Msun": 9,
+        "radius_lightDay": 10,
+        "inclination_deg": 85
+      },
+      "derived": {
+        "radius_cm": 25902068371200000,
+        "radius_pc": 0.00839428867311569,
+        "vK_km_s": 22635.76417586226,
+        "vK_over_c": 0.07550478196440238,
+        "meanDelay_day": 10,
+        "minDelay_day": 0.03805301908254455,
+        "maxDelay_day": 19.961946980917457,
+        "lineSigma_km_s": 15944.995055350806,
+        "virialProduct_Msun": 496201938.2530519,
+        "virialFactor": 2.0153085324911046,
+        "correctedMass_Msun": 999999999.9999996,
+        "period_day": 832.1572678856112,
+        "period_JulianYear": 2.2783224308983194,
+        "radius_over_Schwarzschild": 87.70434081664051,
+        "specificEnergy_cm2_s2": -2561889099126246400,
+        "specificAngularMomentum_cm2_s": 5.863131113175439e+25
+      },
+      "phases": [
+        {
+          "phase_deg": 0,
+          "positionOverR": [
+            1,
+            0,
+            0
+          ],
+          "velocityOverVK": [
+            0,
+            1,
+            0
+          ],
+          "delay_day": 0.03805301908254455,
+          "vlos_km_s": 0
+        },
+        {
+          "phase_deg": 30,
+          "positionOverR": [
+            0.8660254037844387,
+            0.49999999999999994,
+            0
+          ],
+          "velocityOverVK": [
+            -0.49999999999999994,
+            0.8660254037844387,
+            0
+          ],
+          "delay_day": 1.3727008433717902,
+          "vlos_km_s": 11274.814129624525
+        },
+        {
+          "phase_deg": 45,
+          "positionOverR": [
+            0.7071067811865476,
+            0.7071067811865475,
+            0
+          ],
+          "velocityOverVK": [
+            -0.7071067811865475,
+            0.7071067811865476,
+            0
+          ],
+          "delay_day": 2.955839735972413,
+          "vlos_km_s": 15944.995055350808
+        },
+        {
+          "phase_deg": 90,
+          "positionOverR": [
+            6.123233995736766e-17,
+            1,
+            0
+          ],
+          "velocityOverVK": [
+            -1,
+            6.123233995736766e-17,
+            0
+          ],
+          "delay_day": 9.999999999999998,
+          "vlos_km_s": 22549.628259249053
+        },
+        {
+          "phase_deg": 180,
+          "positionOverR": [
+            -1,
+            1.2246467991473532e-16,
+            0
+          ],
+          "velocityOverVK": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ],
+          "delay_day": 19.961946980917457,
+          "vlos_km_s": 2.7615330069652056e-12
+        },
+        {
+          "phase_deg": 270,
+          "positionOverR": [
+            -1.8369701987210297e-16,
+            -1,
+            0
+          ],
+          "velocityOverVK": [
+            1,
+            -1.8369701987210297e-16,
+            0
+          ],
+          "delay_day": 10.000000000000002,
+          "vlos_km_s": -22549.628259249053
+        },
+        {
+          "phase_deg": 360,
+          "positionOverR": [
+            1,
+            -2.4492935982947064e-16,
+            0
+          ],
+          "velocityOverVK": [
+            2.4492935982947064e-16,
+            1,
+            0
+          ],
+          "delay_day": 0.03805301908254455,
+          "vlos_km_s": -5.523066013930411e-12
+        }
+      ]
+    },
+    {
+      "input": {
+        "log10Mass_Msun": 9,
+        "radius_lightDay": 300,
+        "inclination_deg": 85
+      },
+      "derived": {
+        "radius_cm": 777062051136000000,
+        "radius_pc": 0.25182866019347067,
+        "vK_km_s": 4132.706215162366,
+        "vK_over_c": 0.013785224093804139,
+        "meanDelay_day": 300,
+        "minDelay_day": 1.1415905724763364,
+        "maxDelay_day": 598.8584094275236,
+        "lineSigma_km_s": 2911.1444903746574,
+        "virialProduct_Msun": 496201938.25305206,
+        "virialFactor": 2.0153085324911046,
+        "correctedMass_Msun": 1000000000,
+        "period_day": 136737.39210384557,
+        "period_JulianYear": 374.3665766019044,
+        "radius_over_Schwarzschild": 2631.1302244992153,
+        "specificEnergy_cm2_s2": -85396303304208210,
+        "specificAngularMomentum_cm2_s": 3.211369168296563e+26
+      },
+      "phases": [
+        {
+          "phase_deg": 0,
+          "positionOverR": [
+            1,
+            0,
+            0
+          ],
+          "velocityOverVK": [
+            0,
+            1,
+            0
+          ],
+          "delay_day": 1.1415905724763364,
+          "vlos_km_s": 0
+        },
+        {
+          "phase_deg": 30,
+          "positionOverR": [
+            0.8660254037844387,
+            0.49999999999999994,
+            0
+          ],
+          "velocityOverVK": [
+            -0.49999999999999994,
+            0.8660254037844387,
+            0
+          ],
+          "delay_day": 41.18102530115371,
+          "vlos_km_s": 2058.4900101577764
+        },
+        {
+          "phase_deg": 45,
+          "positionOverR": [
+            0.7071067811865476,
+            0.7071067811865475,
+            0
+          ],
+          "velocityOverVK": [
+            -0.7071067811865475,
+            0.7071067811865476,
+            0
+          ],
+          "delay_day": 88.67519207917239,
+          "vlos_km_s": 2911.144490374658
+        },
+        {
+          "phase_deg": 90,
+          "positionOverR": [
+            6.123233995736766e-17,
+            1,
+            0
+          ],
+          "velocityOverVK": [
+            -1,
+            6.123233995736766e-17,
+            0
+          ],
+          "delay_day": 299.99999999999994,
+          "vlos_km_s": 4116.980020315554
+        },
+        {
+          "phase_deg": 180,
+          "positionOverR": [
+            -1,
+            1.2246467991473532e-16,
+            0
+          ],
+          "velocityOverVK": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ],
+          "delay_day": 598.8584094275236,
+          "vlos_km_s": 5.041846404033048e-13
+        },
+        {
+          "phase_deg": 270,
+          "positionOverR": [
+            -1.8369701987210297e-16,
+            -1,
+            0
+          ],
+          "velocityOverVK": [
+            1,
+            -1.8369701987210297e-16,
+            0
+          ],
+          "delay_day": 300.00000000000006,
+          "vlos_km_s": -4116.980020315554
+        },
+        {
+          "phase_deg": 360,
+          "positionOverR": [
+            1,
+            -2.4492935982947064e-16,
+            0
+          ],
+          "velocityOverVK": [
+            2.4492935982947064e-16,
+            1,
+            0
+          ],
+          "delay_day": 1.1415905724763364,
+          "vlos_km_s": -1.0083692808066096e-12
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "uniformPhaseSamplesPerCase": 65536,
+    "cases": 10,
+    "maxMeanDelayRelativeError": 1.2656542480726785e-14,
+    "maxLineVarianceRelativeError": 1.2434497875801753e-14,
+    "maxEllipseResidual": 1.887379141862766e-14,
+    "maxCircularEnergyRelativeError": 1.2212453270876722e-15,
+    "maxAngularMomentumRelativeError": 4.440892098500626e-16,
+    "maxFarObserverDelayRelativeError": 1.0118572646433677e-12
+  }
+}

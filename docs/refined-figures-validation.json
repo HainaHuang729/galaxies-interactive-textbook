@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-10-16T11:54:42.508Z",
+  "checks": [
+    "EdS toggle yields D(1)=1 and recalculated density pixels",
+    "Keyboard probe reads all three same-position values without turning page",
+    "Density pixels and colorbar repaint in light theme; zero is neutral paper",
+    "Enlarged view uses selected model and complete assumptions",
+    "All new density images load; spatial maps and orbital axes retain physical aspect ratios"
+  ],
+  "errors": []
+}

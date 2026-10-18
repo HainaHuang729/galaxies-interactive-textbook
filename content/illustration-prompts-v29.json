@@ -1,0 +1,22 @@
+[
+  {
+    "id": "hii-ionized-cloud",
+    "prompt": "Use case: scientific-educational. Create a landscape 3:2 editorial astronomy illustration for a rigorous Chinese university textbook on galaxy formation, chapter 9 about star formation and an idealized H II ionization region. Match a refined dark graphite-blue, pale ice-blue, soft muted rose emission and warm ivory starlight palette. One small young association including several hot blue-white massive stars sits slightly left of center within a diffuse, irregular, glowing hydrogen nebula. The gas is clumpy and continuous rather than an empty cavity; much fainter ionized gas is still present around the stars. At the right and lower edges, dusty neutral cloud filaments partially obscure background light and have softly illuminated interfaces. No single perfectly spherical luminous wall. Show that the stars illuminate and ionize a surrounding cloud; do not show an explosion, a shockwave, a jet, a hard transparent ball, or gas completely evacuated from the interior. No unrelated foreground planet, no giant diffraction spikes. This is a scientifically motivated conceptual rendering, not an identified object, observational image, radiation-hydrodynamic simulation, temperature map or quantitative density field. No text, labels, diagrams, graphs, arrows, axes, scales, borders, logos or watermark. Maintain breathing room and a clear young-star/gas/dust distinction, detailed but legible at phone size.",
+    "generation_mode": "built-in image_gen",
+    "saved_web_images": [
+      "dist/assets/illustrations/hii-ionized-cloud-640.webp",
+      "dist/assets/illustrations/hii-ionized-cloud-960.webp",
+      "dist/assets/illustrations/hii-ionized-cloud-1536.webp"
+    ]
+  },
+  {
+    "id": "agb-mass-return",
+    "prompt": "Use case: scientific-educational. Create a landscape 3:2 editorial astrophysical concept illustration for chapter 10 of a rigorous Chinese galaxy formation textbook, explaining a cool asymptotic giant branch star returning material to its surroundings through a dusty stellar wind. Refined dark graphite-blue background, warm ivory and subdued reddish-orange starlight, low-saturation teal ambient shadows; match a cohesive scientific book illustration style. A single cool red giant star is seen as a small warm central stellar source, embedded in an extended, softly illuminated, somewhat clumpy gas-and-dust circumstellar envelope. Dust begins away from the stellar photosphere, leaving a small dust-free inner region while gas continues through it. The envelope fades outward smoothly, with subtle broad radial structure and mild asymmetry, not a rigid shell, a perfectly geometric set of detached concentric rings, a fiery blast, or a planetary nebula with a hot blue-white central dwarf. No companion star, no inferred binary spiral, no accretion disk or collimated jets, no planets. Convey slow mass loss from an evolved star, not a supernova, not that the entire shell is freshly synthesized metals. The star and dusty envelope are an uncalibrated artistic concept, not a resolved observation or measured mass-loss simulation; no claim about actual size, temperature, composition or wind speed. No text, numbers, labels, axes, arrows, frames, UI, logos or watermark. Landscape composition, full envelope comfortably in frame, physically plausible and legible at small size.",
+    "generation_mode": "built-in image_gen",
+    "saved_web_images": [
+      "dist/assets/illustrations/agb-mass-return-640.webp",
+      "dist/assets/illustrations/agb-mass-return-960.webp",
+      "dist/assets/illustrations/agb-mass-return-1536.webp"
+    ]
+  }
+]

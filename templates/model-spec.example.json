@@ -1,0 +1,17 @@
+{
+  "id": "replace-with-model-name",
+  "question": "填写一个可通过操作参数回答的物理问题",
+  "sources": [],
+  "assumptions": [],
+  "parameters": [{"key": "replace_me", "label": "待定义", "unit": "待定义", "min": null, "max": null, "default": null, "boundsJustification": "待论证"}],
+  "equationsTex": [],
+  "constants": [],
+  "initialConditions": [],
+  "boundaryConditions": [],
+  "outputs": [],
+  "chartDomains": [],
+  "normalization": "待定义；注明是否随参数变化",
+  "invalidStatePolicy": "无解/不适用/数值零分开表示",
+  "animation": {"quantityAdvanced": null, "pauseOffscreen": true, "reducedMotion": "manual-static"},
+  "independentValidation": {"method": "必须区别于实现路径", "fixtures": [], "invariants": [], "limits": [], "tolerances": []}
+}

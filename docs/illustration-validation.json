@@ -1,0 +1,343 @@
+{
+  "checks": [
+    {
+      "id": "galaxy-diversity",
+      "width": 1440,
+      "theme": "afterglow",
+      "source": "galaxy-diversity-960.webp",
+      "pages": "1 / 16"
+    },
+    {
+      "id": "galaxy-diversity",
+      "width": 1440,
+      "theme": "moon",
+      "source": "galaxy-diversity-960.webp",
+      "pages": "1 / 16"
+    },
+    {
+      "id": "cosmic-web",
+      "width": 1440,
+      "theme": "afterglow",
+      "source": "cosmic-web-960.webp",
+      "pages": "1 / 30"
+    },
+    {
+      "id": "cosmic-web",
+      "width": 1440,
+      "theme": "moon",
+      "source": "cosmic-web-960.webp",
+      "pages": "1 / 30"
+    },
+    {
+      "id": "halo-cooling",
+      "width": 1440,
+      "theme": "afterglow",
+      "source": "halo-cooling-960.webp",
+      "pages": "1 / 36"
+    },
+    {
+      "id": "halo-cooling",
+      "width": 1440,
+      "theme": "moon",
+      "source": "halo-cooling-960.webp",
+      "pages": "1 / 36"
+    },
+    {
+      "id": "molecular-cloud",
+      "width": 1440,
+      "theme": "afterglow",
+      "source": "molecular-cloud-960.webp",
+      "pages": "1 / 29"
+    },
+    {
+      "id": "molecular-cloud",
+      "width": 1440,
+      "theme": "moon",
+      "source": "molecular-cloud-960.webp",
+      "pages": "1 / 29"
+    },
+    {
+      "id": "disk-anatomy",
+      "width": 1440,
+      "theme": "afterglow",
+      "source": "disk-anatomy-960.webp",
+      "pages": "1 / 31"
+    },
+    {
+      "id": "disk-anatomy",
+      "width": 1440,
+      "theme": "moon",
+      "source": "disk-anatomy-960.webp",
+      "pages": "1 / 31"
+    },
+    {
+      "id": "tidal-encounter",
+      "width": 1440,
+      "theme": "afterglow",
+      "source": "tidal-encounter-960.webp",
+      "pages": "1 / 27"
+    },
+    {
+      "id": "tidal-encounter",
+      "width": 1440,
+      "theme": "moon",
+      "source": "tidal-encounter-960.webp",
+      "pages": "1 / 27"
+    },
+    {
+      "id": "active-nucleus",
+      "width": 1440,
+      "theme": "afterglow",
+      "source": "active-nucleus-960.webp",
+      "pages": "1 / 28"
+    },
+    {
+      "id": "active-nucleus",
+      "width": 1440,
+      "theme": "moon",
+      "source": "active-nucleus-960.webp",
+      "pages": "1 / 28"
+    },
+    {
+      "id": "intergalactic-medium",
+      "width": 1440,
+      "theme": "afterglow",
+      "source": "intergalactic-medium-960.webp",
+      "pages": "1 / 41"
+    },
+    {
+      "id": "intergalactic-medium",
+      "width": 1440,
+      "theme": "moon",
+      "source": "intergalactic-medium-960.webp",
+      "pages": "1 / 41"
+    },
+    {
+      "id": "galaxy-diversity",
+      "width": 390,
+      "theme": "afterglow",
+      "source": "galaxy-diversity-640.webp",
+      "pages": "1 / 16"
+    },
+    {
+      "id": "galaxy-diversity",
+      "width": 390,
+      "theme": "moon",
+      "source": "galaxy-diversity-640.webp",
+      "pages": "1 / 16"
+    },
+    {
+      "id": "cosmic-web",
+      "width": 390,
+      "theme": "afterglow",
+      "source": "cosmic-web-640.webp",
+      "pages": "1 / 30"
+    },
+    {
+      "id": "cosmic-web",
+      "width": 390,
+      "theme": "moon",
+      "source": "cosmic-web-640.webp",
+      "pages": "1 / 30"
+    },
+    {
+      "id": "halo-cooling",
+      "width": 390,
+      "theme": "afterglow",
+      "source": "halo-cooling-640.webp",
+      "pages": "1 / 36"
+    },
+    {
+      "id": "halo-cooling",
+      "width": 390,
+      "theme": "moon",
+      "source": "halo-cooling-640.webp",
+      "pages": "1 / 36"
+    },
+    {
+      "id": "molecular-cloud",
+      "width": 390,
+      "theme": "afterglow",
+      "source": "molecular-cloud-640.webp",
+      "pages": "1 / 29"
+    },
+    {
+      "id": "molecular-cloud",
+      "width": 390,
+      "theme": "moon",
+      "source": "molecular-cloud-640.webp",
+      "pages": "1 / 29"
+    },
+    {
+      "id": "disk-anatomy",
+      "width": 390,
+      "theme": "afterglow",
+      "source": "disk-anatomy-640.webp",
+      "pages": "1 / 31"
+    },
+    {
+      "id": "disk-anatomy",
+      "width": 390,
+      "theme": "moon",
+      "source": "disk-anatomy-640.webp",
+      "pages": "1 / 31"
+    },
+    {
+      "id": "tidal-encounter",
+      "width": 390,
+      "theme": "afterglow",
+      "source": "tidal-encounter-640.webp",
+      "pages": "1 / 27"
+    },
+    {
+      "id": "tidal-encounter",
+      "width": 390,
+      "theme": "moon",
+      "source": "tidal-encounter-640.webp",
+      "pages": "1 / 27"
+    },
+    {
+      "id": "active-nucleus",
+      "width": 390,
+      "theme": "afterglow",
+      "source": "active-nucleus-640.webp",
+      "pages": "1 / 28"
+    },
+    {
+      "id": "active-nucleus",
+      "width": 390,
+      "theme": "moon",
+      "source": "active-nucleus-640.webp",
+      "pages": "1 / 28"
+    },
+    {
+      "id": "intergalactic-medium",
+      "width": 390,
+      "theme": "afterglow",
+      "source": "intergalactic-medium-640.webp",
+      "pages": "1 / 41"
+    },
+    {
+      "id": "intergalactic-medium",
+      "width": 390,
+      "theme": "moon",
+      "source": "intergalactic-medium-640.webp",
+      "pages": "1 / 41"
+    },
+    {
+      "id": "galaxy-diversity",
+      "width": 320,
+      "theme": "afterglow",
+      "source": "galaxy-diversity-640.webp",
+      "pages": "1 / 16"
+    },
+    {
+      "id": "galaxy-diversity",
+      "width": 320,
+      "theme": "moon",
+      "source": "galaxy-diversity-640.webp",
+      "pages": "1 / 16"
+    },
+    {
+      "id": "cosmic-web",
+      "width": 320,
+      "theme": "afterglow",
+      "source": "cosmic-web-640.webp",
+      "pages": "1 / 30"
+    },
+    {
+      "id": "cosmic-web",
+      "width": 320,
+      "theme": "moon",
+      "source": "cosmic-web-640.webp",
+      "pages": "1 / 30"
+    },
+    {
+      "id": "halo-cooling",
+      "width": 320,
+      "theme": "afterglow",
+      "source": "halo-cooling-640.webp",
+      "pages": "1 / 36"
+    },
+    {
+      "id": "halo-cooling",
+      "width": 320,
+      "theme": "moon",
+      "source": "halo-cooling-640.webp",
+      "pages": "1 / 36"
+    },
+    {
+      "id": "molecular-cloud",
+      "width": 320,
+      "theme": "afterglow",
+      "source": "molecular-cloud-640.webp",
+      "pages": "1 / 29"
+    },
+    {
+      "id": "molecular-cloud",
+      "width": 320,
+      "theme": "moon",
+      "source": "molecular-cloud-640.webp",
+      "pages": "1 / 29"
+    },
+    {
+      "id": "disk-anatomy",
+      "width": 320,
+      "theme": "afterglow",
+      "source": "disk-anatomy-640.webp",
+      "pages": "1 / 31"
+    },
+    {
+      "id": "disk-anatomy",
+      "width": 320,
+      "theme": "moon",
+      "source": "disk-anatomy-640.webp",
+      "pages": "1 / 31"
+    },
+    {
+      "id": "tidal-encounter",
+      "width": 320,
+      "theme": "afterglow",
+      "source": "tidal-encounter-640.webp",
+      "pages": "1 / 27"
+    },
+    {
+      "id": "tidal-encounter",
+      "width": 320,
+      "theme": "moon",
+      "source": "tidal-encounter-640.webp",
+      "pages": "1 / 27"
+    },
+    {
+      "id": "active-nucleus",
+      "width": 320,
+      "theme": "afterglow",
+      "source": "active-nucleus-640.webp",
+      "pages": "1 / 28"
+    },
+    {
+      "id": "active-nucleus",
+      "width": 320,
+      "theme": "moon",
+      "source": "active-nucleus-640.webp",
+      "pages": "1 / 28"
+    },
+    {
+      "id": "intergalactic-medium",
+      "width": 320,
+      "theme": "afterglow",
+      "source": "intergalactic-medium-640.webp",
+      "pages": "1 / 41"
+    },
+    {
+      "id": "intergalactic-medium",
+      "width": 320,
+      "theme": "moon",
+      "source": "intergalactic-medium-640.webp",
+      "pages": "1 / 41"
+    }
+  ],
+  "errors": [],
+  "unillustratedChapterChecks": 8,
+  "growthPagePreserved": true
+}

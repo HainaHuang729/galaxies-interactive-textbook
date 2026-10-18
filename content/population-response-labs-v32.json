@@ -1,0 +1,183 @@
+[
+  {
+    "id": "imf-sampling",
+    "chapter": 9,
+    "anchor": "mass-function",
+    "eyebrow": "Anatomy · 质量分布与有限抽样",
+    "title": "同一批恒星，按数目和按质量会看到不同的分布",
+    "intro": "从同一个单幂律初生质量分布抽取固定数量的恒星。用八个等对数质量箱比较样本与总体期望，再在数目份额和初生质量份额之间切换。",
+    "params": [
+      {
+        "key": "slope",
+        "label": "IMF 幂律斜率 α",
+        "min": 1,
+        "max": 3.2,
+        "step": 0.05,
+        "value": 2.35
+      },
+      {
+        "key": "count",
+        "label": "固定抽样恒星数 N",
+        "min": 20,
+        "max": 2000,
+        "step": 20,
+        "value": 200
+      },
+      {
+        "key": "seed",
+        "label": "可复现的样本种子 s",
+        "min": 0,
+        "max": 999,
+        "step": 1,
+        "value": 42
+      },
+      {
+        "key": "quantile",
+        "label": "按数目定义的分位位置 u",
+        "min": 0,
+        "max": 1,
+        "step": 1e-9,
+        "value": 0.5
+      }
+    ],
+    "select": {
+      "key": "measure",
+      "label": "箱面与图表的统计方式",
+      "options": [
+        [
+          "number",
+          "恒星数目"
+        ],
+        [
+          "mass",
+          "初生质量份额"
+        ]
+      ]
+    },
+    "values": [
+      "当前分位质量 m(u)（M☉）",
+      "实际样本总质量（M☉）",
+      "样本中 m>20M☉ 的数量",
+      "总体 m>20M☉ 数目份额",
+      "总体 m>20M☉ 初生质量份额",
+      "N 次至少抽到一个的概率"
+    ],
+    "formulaTex": [
+      "m_l=0.1M_\\odot,\\quad m_u=100M_\\odot,\\quad p(m)=\\frac{m^{-\\alpha}}{J(1-\\alpha;m_l,m_u)}",
+      "J(q;a,b)=\\begin{cases}(b^q-a^q)/q,&q\\ne0\\\\\\ln(b/a),&q=0\\end{cases}",
+      "P_j=\\frac{J(1-\\alpha;b_j,b_{j+1})}{J(1-\\alpha;m_l,m_u)},\\quad f_{M,j}=\\frac{J(2-\\alpha;b_j,b_{j+1})}{J(2-\\alpha;m_l,m_u)}",
+      "u=\\int_{m_l}^{m(u)}p(m)\\,dm,\\quad\\mathbb E[n_j]=NP_j,\\quad f_{M,j}^{\\rm sample}=\\frac{\\sum_{k\\in j}m_k}{\\sum_{k=1}^Nm_k}",
+      "p_{20}=\\int_{20M_\\odot}^{m_u}p(m)\\,dm,\\quad P_{\\ge1}=1-(1-p_{20})^N"
+    ],
+    "assumptions": "本实验采用0.1–100M☉之间的单幂律教学IMF，α=2.35使用Salpeter式斜率，但把同一幂律延伸到低质量端不代表真实IMF普适成立。质量积分在α=2、数目积分在α=1处分别采用对数极限。固定的是N，不是样本总质量；种子仅用于可复现的伪随机独立抽样，不代表真实星团数据。20M☉只是本页指定阈值，不是电离、超新星或任何反馈机制的普适硬边界。图中虚线连接各箱总体期望供比较，不是连续概率密度或误差带；样本质量份额不能用样本数目份额代替。分位u按数目CDF定义，扫描u只改变检查标记，不重新抽样。仪器为分样统计类比，箱面柱表示归一化份额，不是实际恒星堆积、恒星半径或质量体积。 原书式9.33按单位形成质量归一，本实验p(m)按数量概率归一，积分为1；两种约定不可直接混用。有限样本的质量比是随机比值，不构成偏离理论的显著性结论。",
+    "pages": [
+      440,
+      442
+    ],
+    "source": "MBW §9.6 p.440 式9.33及脚注（质量/数目归一约定），§9.6.1 pp.441–442 式9.39；固定N抽样及分样台为原创教学补充。",
+    "references": [
+      [
+        "Salpeter (1955) · 原始论文",
+        "https://articles.adsabs.harvard.edu/pdf/1955ApJ...121..161S"
+      ]
+    ]
+  },
+  {
+    "id": "response-memory",
+    "chapter": 10,
+    "anchor": "synthesis",
+    "eyebrow": "形成史卷积 · 归一化响应核",
+    "title": "同一次形成爆发，可以留下不同长度的记忆",
+    "intro": "给持续形成的背景叠加一次有限时长爆发。比较两个不同记忆时间的归一化响应，并核对爆发额外质量与累计响应之间的关系。",
+    "params": [
+      {
+        "key": "amplitude",
+        "label": "额外爆发强度 B（相对背景）",
+        "min": 0,
+        "max": 9,
+        "step": 0.1,
+        "value": 9
+      },
+      {
+        "key": "duration",
+        "label": "爆发持续 D（Myr）",
+        "min": 3,
+        "max": 100,
+        "step": 1,
+        "value": 20
+      },
+      {
+        "key": "short",
+        "label": "短响应时间 tₛ（Myr）",
+        "min": 1,
+        "max": 20,
+        "step": 1,
+        "value": 5
+      },
+      {
+        "key": "long",
+        "label": "长响应时间 tₗ（Myr）",
+        "min": 20,
+        "max": 200,
+        "step": 5,
+        "value": 100
+      },
+      {
+        "key": "time",
+        "label": "相对爆发起点 t（Myr）",
+        "min": -20,
+        "max": 500,
+        "step": 0.1,
+        "value": 10
+      }
+    ],
+    "values": [
+      "瞬时形成率 ψ（M☉/yr）",
+      "短记忆指示率 ψ̂s（M☉/yr）",
+      "长记忆指示率 ψ̂l（M☉/yr）",
+      "短 / 长指示率",
+      "爆发已额外形成质量（M☉）",
+      "短核累计额外响应（M☉）",
+      "长核累计额外响应（M☉）"
+    ],
+    "formulaTex": [
+      "\\psi_0=1M_\\odot\\,\\mathrm{yr}^{-1},\\quad\\psi(t)=\\begin{cases}\\psi_0(1+B),&0\\le t<D\\\\\\psi_0,&\\text{其他时刻}\\end{cases}",
+      "K_i(\\tau)=\\frac{e^{-\\tau/t_i}}{t_i}\\ (\\tau\\ge0),\\quad\\int_0^\\infty K_i(\\tau)\\,d\\tau=1,\\quad i\\in\\{s,l\\}",
+      "\\widehat\\psi_i(t)=\\int_0^\\infty\\psi(t-\\tau)K_i(\\tau)\\,d\\tau,\\quad t_i\\frac{d\\widehat\\psi_i}{dt}+\\widehat\\psi_i=\\psi",
+      "k_i(t)=\\begin{cases}0,&t<0\\\\1-e^{-t/t_i},&0\\le t<D\\\\(1-e^{-D/t_i})e^{-(t-D)/t_i},&t\\ge D\\end{cases},\\quad\\widehat\\psi_i=\\psi_0(1+Bk_i)",
+      "\\eta_t=10^6\\,\\mathrm{yr}\\,\\mathrm{Myr}^{-1}\\quad\\text{（下式时间以Myr、形成率以太阳质量/年计）}",
+      "M_{\\rm burst}(t)=\\eta_t\\psi_0B\\min[\\max(t,0),D],\\quad C_i(t)=\\eta_t\\int_0^{\\max(t,0)}[\\widehat\\psi_i(t')-\\psi_0]\\,dt'",
+      "M_{\\rm burst}-C_i=\\eta_t t_i(\\widehat\\psi_i-\\psi_0),\\quad C_i(\\infty)=\\eta_t\\psi_0BD"
+    ],
+    "assumptions": "两个核是归一化指数教学响应，不是实际Hα、紫外或任一观测波段的恒星族合成标定。背景ψ₀在爆发前已持续足够久，所以t<0两指示率均等于ψ₀；未把背景误当作从t=0才开始。ψ在t=0和D采用右连续定义，图中竖线只连接跃变两侧，不表示中间稳态。形成率以M☉/yr表示，界面时间以Myr表示，质量积分在代码中乘10⁶ yr/Myr；公式显式使用ηt=10⁶ yr/Myr。局部视窗会随当前检查时间扩展，可能省略更晚的长尾；可切换完整视窗查看。C是爆发额外响应的时间积分，虽有质量单位，但不是新的一份恒星质量或实际储存的气体。两个响应时间相同时两条曲线重合；B=0时无额外质量或响应。动效压缩模型时间，不是具体星系的观测或预测。",
+    "pages": [
+      471,
+      483
+    ],
+    "source": "MBW §10.3.2 p.471 式10.77–10.78：形成史与共生星族光谱卷积；§10.3.8 pp.482–483：真实诊断的条件。指数教学核为新增近似。",
+    "references": [
+      [
+        "Bruzual & Charlot (2003) · §2.3 式1",
+        "https://arxiv.org/pdf/astro-ph/0309134"
+      ],
+      [
+        "GALAXEV · 作者模型说明",
+        "https://www2.iap.fr/users/charlot/bc2003/index.html"
+      ]
+    ],
+    "select": {
+      "key": "measure",
+      "label": "时间轴视窗",
+      "options": [
+        [
+          "focus",
+          "爆发附近（随检查时间扩展）"
+        ],
+        [
+          "full",
+          "完整响应与长尾"
+        ]
+      ]
+    }
+  }
+]

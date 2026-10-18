@@ -1,0 +1,1210 @@
+{
+  "source": "MBW (2010), Chapter 10 section 10.4.2, pp.489–490, equations 10.120,10.123–10.126. Conditional normalization/truncation and mean are derived from those equations.",
+  "method": "256-node Gauss-Legendre independent numerical integration in locked stellar mass f=M_star/M0 and dimensionless birth metallicity t=(Z-Z0)/yield.",
+  "summary": {
+    "states": 24,
+    "max_pdf_area_absolute_error": 2.886579864025407e-15,
+    "max_pdf_vs_mass_mean_relative_error": 5.8442297385087704e-15,
+    "max_metal_budget_relative_error": 3.186226792610462e-15,
+    "max_current_closed_mean_relative_error": 1.368737343920046e-14
+  },
+  "states": [
+    {
+      "mu": 1,
+      "yield": 0.005,
+      "Z0": 0,
+      "locked_mass_over_M0": 0,
+      "gas_Z": -0.0,
+      "sample_defined": false,
+      "mean_Z": null,
+      "median_Z": null,
+      "cdf": null,
+      "pdf": null,
+      "reason": "No locked stellar mass; conditional distribution is undefined.",
+      "current_closed_mean_value": "无恒星样本（趋近极限0）"
+    },
+    {
+      "mu": 1,
+      "yield": 0.02,
+      "Z0": 0,
+      "locked_mass_over_M0": 0,
+      "gas_Z": -0.0,
+      "sample_defined": false,
+      "mean_Z": null,
+      "median_Z": null,
+      "cdf": null,
+      "pdf": null,
+      "reason": "No locked stellar mass; conditional distribution is undefined.",
+      "current_closed_mean_value": "无恒星样本（趋近极限0）"
+    },
+    {
+      "mu": 1,
+      "yield": 0.03,
+      "Z0": 0,
+      "locked_mass_over_M0": 0,
+      "gas_Z": -0.0,
+      "sample_defined": false,
+      "mean_Z": null,
+      "median_Z": null,
+      "cdf": null,
+      "pdf": null,
+      "reason": "No locked stellar mass; conditional distribution is undefined.",
+      "current_closed_mean_value": "无恒星样本（趋近极限0）"
+    },
+    {
+      "mu": 0.999999999999,
+      "yield": 0.005,
+      "Z0": 0,
+      "locked_mass_over_M0": 9.999778782798785e-13,
+      "gas_Z": 4.999889391401893e-15,
+      "sample_defined": true,
+      "mean_Z": 2.49994469570053e-15,
+      "mean_Z_from_pdf_integral": 2.4999446957005295e-15,
+      "median_Z": 2.4999446957003212e-15,
+      "q10_Z": 4.999889391399643e-16,
+      "q90_Z": 4.499900452261478e-15,
+      "pdf_area": 1.0,
+      "total_metal_budget": 4.999889391399393e-15,
+      "new_metal_yield_budget": 4.999889391399393e-15,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 200004424441900.56
+        },
+        {
+          "Z_cut": 1.2499723478504732e-15,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.25000000000009376,
+          "cdf_from_numerical_pdf_integral": 0.25000000000009376,
+          "pdf_at_cut": 200004424441850.53
+        },
+        {
+          "Z_cut": 2.4999446957009464e-15,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.500000000000125,
+          "cdf_from_numerical_pdf_integral": 0.5000000000001251,
+          "pdf_at_cut": 200004424441800.53
+        },
+        {
+          "Z_cut": 4.999889391401893e-15,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 200004424441700.56
+        },
+        {
+          "Z_cut": 5.999867269682271e-15,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 2.49994469570053e-15,
+      "current_closed_mean_relative_error": 0.0
+    },
+    {
+      "mu": 0.999999999999,
+      "yield": 0.02,
+      "Z0": 0,
+      "locked_mass_over_M0": 9.999778782798785e-13,
+      "gas_Z": 1.999955756560757e-14,
+      "sample_defined": true,
+      "mean_Z": 9.99977878280212e-15,
+      "mean_Z_from_pdf_integral": 9.999778782802118e-15,
+      "median_Z": 9.999778782801285e-15,
+      "q10_Z": 1.999955756559857e-15,
+      "q90_Z": 1.7999601809045913e-14,
+      "pdf_area": 1.0,
+      "total_metal_budget": 1.999955756559757e-14,
+      "new_metal_yield_budget": 1.999955756559757e-14,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 50001106110475.14
+        },
+        {
+          "Z_cut": 4.999889391401893e-15,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.25000000000009376,
+          "cdf_from_numerical_pdf_integral": 0.25000000000009376,
+          "pdf_at_cut": 50001106110462.63
+        },
+        {
+          "Z_cut": 9.999778782803786e-15,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.500000000000125,
+          "cdf_from_numerical_pdf_integral": 0.5000000000001251,
+          "pdf_at_cut": 50001106110450.13
+        },
+        {
+          "Z_cut": 1.999955756560757e-14,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 50001106110425.14
+        },
+        {
+          "Z_cut": 2.3999469078729085e-14,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 9.99977878280212e-15,
+      "current_closed_mean_relative_error": 0.0
+    },
+    {
+      "mu": 0.999999999999,
+      "yield": 0.03,
+      "Z0": 0,
+      "locked_mass_over_M0": 9.999778782798785e-13,
+      "gas_Z": 2.9999336348411354e-14,
+      "sample_defined": true,
+      "mean_Z": 1.4999668174203178e-14,
+      "mean_Z_from_pdf_integral": 1.4999668174203175e-14,
+      "median_Z": 1.4999668174201928e-14,
+      "q10_Z": 2.9999336348397855e-15,
+      "q90_Z": 2.699940271356887e-14,
+      "pdf_area": 1.0,
+      "total_metal_budget": 2.999933634839636e-14,
+      "new_metal_yield_budget": 2.999933634839635e-14,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 33334070740316.76
+        },
+        {
+          "Z_cut": 7.499834087102838e-15,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.25000000000009376,
+          "cdf_from_numerical_pdf_integral": 0.25000000000009376,
+          "pdf_at_cut": 33334070740308.43
+        },
+        {
+          "Z_cut": 1.4999668174205677e-14,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.500000000000125,
+          "cdf_from_numerical_pdf_integral": 0.5000000000001251,
+          "pdf_at_cut": 33334070740300.094
+        },
+        {
+          "Z_cut": 2.9999336348411354e-14,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 33334070740283.43
+        },
+        {
+          "Z_cut": 3.5999203618093626e-14,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 1.4999668174203178e-14,
+      "current_closed_mean_relative_error": 0.0
+    },
+    {
+      "mu": 0.999999,
+      "yield": 0.005,
+      "Z0": 0,
+      "locked_mass_over_M0": 1.0000000000287557e-06,
+      "gas_Z": 5.000002500145446e-09,
+      "sample_defined": true,
+      "mean_Z": 2.5000008334056397e-09,
+      "mean_Z_from_pdf_integral": 2.5000008334056393e-09,
+      "median_Z": 2.5000006250720973e-09,
+      "q10_Z": 5.000000250143795e-10,
+      "q90_Z": 4.500002025130615e-09,
+      "pdf_area": 1.0,
+      "total_metal_budget": 5.000000000143779e-09,
+      "new_metal_yield_budget": 5.000000000143778e-09,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 199999999.99424887
+        },
+        {
+          "Z_cut": 1.2500006250363614e-09,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.2500000937500547,
+          "cdf_from_numerical_pdf_integral": 0.2500000937500547,
+          "pdf_at_cut": 199999949.99423012
+        },
+        {
+          "Z_cut": 2.500001250072723e-09,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.5000001250000625,
+          "cdf_from_numerical_pdf_integral": 0.5000001250000625,
+          "pdf_at_cut": 199999899.9942239
+        },
+        {
+          "Z_cut": 5.000002500145446e-09,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 199999799.99424887
+        },
+        {
+          "Z_cut": 6.000003000174534e-09,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 2.5000008334056393e-09,
+      "current_closed_mean_relative_error": 1.654360673604649e-16
+    },
+    {
+      "mu": 0.999999,
+      "yield": 0.02,
+      "Z0": 0,
+      "locked_mass_over_M0": 1.0000000000287557e-06,
+      "gas_Z": 2.0000010000581783e-08,
+      "sample_defined": true,
+      "mean_Z": 1.0000003333622559e-08,
+      "mean_Z_from_pdf_integral": 1.0000003333622557e-08,
+      "median_Z": 1.000000250028839e-08,
+      "q10_Z": 2.000000100057518e-09,
+      "q90_Z": 1.800000810052246e-08,
+      "pdf_area": 1.0,
+      "total_metal_budget": 2.0000000000575116e-08,
+      "new_metal_yield_budget": 2.0000000000575113e-08,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 49999999.99856222
+        },
+        {
+          "Z_cut": 5.000002500145446e-09,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.2500000937500547,
+          "cdf_from_numerical_pdf_integral": 0.2500000937500547,
+          "pdf_at_cut": 49999987.49855753
+        },
+        {
+          "Z_cut": 1.0000005000290891e-08,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.5000001250000625,
+          "cdf_from_numerical_pdf_integral": 0.5000001250000625,
+          "pdf_at_cut": 49999974.99855597
+        },
+        {
+          "Z_cut": 2.0000010000581783e-08,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 49999949.99856222
+        },
+        {
+          "Z_cut": 2.4000012000698137e-08,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 1.0000003333622557e-08,
+      "current_closed_mean_relative_error": 1.654360673604649e-16
+    },
+    {
+      "mu": 0.999999,
+      "yield": 0.03,
+      "Z0": 0,
+      "locked_mass_over_M0": 1.0000000000287557e-06,
+      "gas_Z": 3.0000015000872674e-08,
+      "sample_defined": true,
+      "mean_Z": 1.5000005000433833e-08,
+      "mean_Z_from_pdf_integral": 1.5000005000433837e-08,
+      "median_Z": 1.5000003750432585e-08,
+      "q10_Z": 3.000000150086277e-09,
+      "q90_Z": 2.700001215078369e-08,
+      "pdf_area": 1.0,
+      "total_metal_budget": 3.000000000086267e-08,
+      "new_metal_yield_budget": 3.000000000086267e-08,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 33333333.332374815
+        },
+        {
+          "Z_cut": 7.500003750218169e-09,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.2500000937500547,
+          "cdf_from_numerical_pdf_integral": 0.2500000937500547,
+          "pdf_at_cut": 33333324.999038357
+        },
+        {
+          "Z_cut": 1.5000007500436337e-08,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.5000001250000625,
+          "cdf_from_numerical_pdf_integral": 0.5000001250000625,
+          "pdf_at_cut": 33333316.665703982
+        },
+        {
+          "Z_cut": 3.0000015000872674e-08,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 33333299.99904148
+        },
+        {
+          "Z_cut": 3.600001800104721e-08,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 1.5000005000433833e-08,
+      "current_closed_mean_relative_error": 0.0
+    },
+    {
+      "mu": 0.99,
+      "yield": 0.005,
+      "Z0": 0,
+      "locked_mass_over_M0": 0.010000000000000009,
+      "gas_Z": 5.0251679267507256e-05,
+      "sample_defined": true,
+      "mean_Z": 2.508375251678663e-05,
+      "mean_Z_from_pdf_integral": 2.508375251678664e-05,
+      "median_Z": 2.5062709117721433e-05,
+      "q10_Z": 5.002501667917672e-06,
+      "q90_Z": 4.5203723260745356e-05,
+      "pdf_area": 1.0,
+      "total_metal_budget": 5.000000000000005e-05,
+      "new_metal_yield_budget": 5.000000000000004e-05,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 19999.99999999998
+        },
+        {
+          "Z_cut": 1.2562919816876814e-05,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.2509430066318895,
+          "cdf_from_numerical_pdf_integral": 0.2509430066318895,
+          "pdf_at_cut": 19949.811398673606
+        },
+        {
+          "Z_cut": 2.5125839633753628e-05,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.5012562893380045,
+          "cdf_from_numerical_pdf_integral": 0.5012562893380046,
+          "pdf_at_cut": 19899.748742132382
+        },
+        {
+          "Z_cut": 5.0251679267507256e-05,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 19799.99999999998
+        },
+        {
+          "Z_cut": 6.0302015121008706e-05,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 2.5083752516786294e-05,
+      "current_closed_mean_relative_error": 1.3372203656060978e-14
+    },
+    {
+      "mu": 0.99,
+      "yield": 0.02,
+      "Z0": 0,
+      "locked_mass_over_M0": 0.010000000000000009,
+      "gas_Z": 0.00020100671707002903,
+      "sample_defined": true,
+      "mean_Z": 0.00010033501006714652,
+      "mean_Z_from_pdf_integral": 0.00010033501006714656,
+      "median_Z": 0.00010025083647088573,
+      "q10_Z": 2.001000667167069e-05,
+      "q90_Z": 0.00018081489304298142,
+      "pdf_area": 1.0,
+      "total_metal_budget": 0.0002000000000000002,
+      "new_metal_yield_budget": 0.00020000000000000017,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 4999.999999999995
+        },
+        {
+          "Z_cut": 5.0251679267507256e-05,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.2509430066318895,
+          "cdf_from_numerical_pdf_integral": 0.2509430066318895,
+          "pdf_at_cut": 4987.4528496684015
+        },
+        {
+          "Z_cut": 0.00010050335853501451,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.5012562893380045,
+          "cdf_from_numerical_pdf_integral": 0.5012562893380046,
+          "pdf_at_cut": 4974.9371855330955
+        },
+        {
+          "Z_cut": 0.00020100671707002903,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 4949.999999999995
+        },
+        {
+          "Z_cut": 0.00024120806048403483,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 0.00010033501006714518,
+      "current_closed_mean_relative_error": 1.3372203656060978e-14
+    },
+    {
+      "mu": 0.99,
+      "yield": 0.03,
+      "Z0": 0,
+      "locked_mass_over_M0": 0.010000000000000009,
+      "gas_Z": 0.0003015100756050435,
+      "sample_defined": true,
+      "mean_Z": 0.0001505025151007198,
+      "mean_Z_from_pdf_integral": 0.00015050251510071984,
+      "median_Z": 0.0001503762547063286,
+      "q10_Z": 3.001501000750603e-05,
+      "q90_Z": 0.00027122233956447213,
+      "pdf_area": 1.0,
+      "total_metal_budget": 0.00030000000000000024,
+      "new_metal_yield_budget": 0.00030000000000000024,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 3333.3333333333308
+        },
+        {
+          "Z_cut": 7.537751890126087e-05,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.2509430066318895,
+          "cdf_from_numerical_pdf_integral": 0.2509430066318895,
+          "pdf_at_cut": 3324.968566445601
+        },
+        {
+          "Z_cut": 0.00015075503780252175,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.5012562893380045,
+          "cdf_from_numerical_pdf_integral": 0.5012562893380046,
+          "pdf_at_cut": 3316.624790355397
+        },
+        {
+          "Z_cut": 0.0003015100756050435,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 3299.9999999999973
+        },
+        {
+          "Z_cut": 0.0003618120907260522,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 0.00015050251510071775,
+      "current_closed_mean_relative_error": 1.368737343920046e-14
+    },
+    {
+      "mu": 0.9,
+      "yield": 0.005,
+      "Z0": 0,
+      "locked_mass_over_M0": 0.09999999999999998,
+      "gas_Z": 0.0005268025782891315,
+      "sample_defined": true,
+      "mean_Z": 0.0002587767953978164,
+      "mean_Z_from_pdf_integral": 0.0002587767953978164,
+      "median_Z": 0.0002564664719377526,
+      "q10_Z": 5.02516792675072e-05,
+      "q90_Z": 0.0004715533973562065,
+      "pdf_area": 1.0,
+      "total_metal_budget": 0.0004999999999999999,
+      "new_metal_yield_budget": 0.0004999999999999999,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 2000.0000000000005
+        },
+        {
+          "Z_cut": 0.00013170064457228287,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.2599625357470324,
+          "cdf_from_numerical_pdf_integral": 0.2599625357470324,
+          "pdf_at_cut": 1948.007492850594
+        },
+        {
+          "Z_cut": 0.00026340128914456573,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.5131670194948621,
+          "cdf_from_numerical_pdf_integral": 0.513167019494862,
+          "pdf_at_cut": 1897.3665961010279
+        },
+        {
+          "Z_cut": 0.0005268025782891315,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 1800.0000000000005
+        },
+        {
+          "Z_cut": 0.0006321630939469578,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 0.000258776795397816,
+      "current_closed_mean_relative_error": 1.6758877793795464e-15
+    },
+    {
+      "mu": 0.9,
+      "yield": 0.02,
+      "Z0": 0,
+      "locked_mass_over_M0": 0.09999999999999998,
+      "gas_Z": 0.002107210313156526,
+      "sample_defined": true,
+      "mean_Z": 0.0010351071815912656,
+      "mean_Z_from_pdf_integral": 0.0010351071815912656,
+      "median_Z": 0.0010258658877510104,
+      "q10_Z": 0.0002010067170700288,
+      "q90_Z": 0.001886213589424826,
+      "pdf_area": 1.0,
+      "total_metal_budget": 0.0019999999999999996,
+      "new_metal_yield_budget": 0.0019999999999999996,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 500.0000000000001
+        },
+        {
+          "Z_cut": 0.0005268025782891315,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.2599625357470324,
+          "cdf_from_numerical_pdf_integral": 0.2599625357470324,
+          "pdf_at_cut": 487.0018732126485
+        },
+        {
+          "Z_cut": 0.001053605156578263,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.5131670194948621,
+          "cdf_from_numerical_pdf_integral": 0.513167019494862,
+          "pdf_at_cut": 474.34164902525697
+        },
+        {
+          "Z_cut": 0.002107210313156526,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 450.0000000000001
+        },
+        {
+          "Z_cut": 0.002528652375787831,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 0.001035107181591264,
+      "current_closed_mean_relative_error": 1.6758877793795464e-15
+    },
+    {
+      "mu": 0.9,
+      "yield": 0.03,
+      "Z0": 0,
+      "locked_mass_over_M0": 0.09999999999999998,
+      "gas_Z": 0.0031608154697347884,
+      "sample_defined": true,
+      "mean_Z": 0.0015526607723868981,
+      "mean_Z_from_pdf_integral": 0.0015526607723868983,
+      "median_Z": 0.0015387988316265156,
+      "q10_Z": 0.0003015100756050432,
+      "q90_Z": 0.002829320384137239,
+      "pdf_area": 1.0,
+      "total_metal_budget": 0.002999999999999999,
+      "new_metal_yield_budget": 0.002999999999999999,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 333.3333333333334
+        },
+        {
+          "Z_cut": 0.0007902038674336971,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.2599625357470324,
+          "cdf_from_numerical_pdf_integral": 0.2599625357470324,
+          "pdf_at_cut": 324.667915475099
+        },
+        {
+          "Z_cut": 0.0015804077348673942,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.513167019494862,
+          "cdf_from_numerical_pdf_integral": 0.513167019494862,
+          "pdf_at_cut": 316.227766016838
+        },
+        {
+          "Z_cut": 0.0031608154697347884,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 300.0000000000001
+        },
+        {
+          "Z_cut": 0.003792978563681746,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 0.0015526607723868957,
+      "current_closed_mean_relative_error": 1.5362304644312512e-15
+    },
+    {
+      "mu": 0.3,
+      "yield": 0.005,
+      "Z0": 0,
+      "locked_mass_over_M0": 0.7,
+      "gas_Z": 0.00601986402162968,
+      "sample_defined": true,
+      "mean_Z": 0.002420058276444424,
+      "mean_Z_from_pdf_integral": 0.0024200582764444204,
+      "median_Z": 0.0021539145804622714,
+      "q10_Z": 0.0003628534641741771,
+      "q90_Z": 0.004971261366719335,
+      "pdf_area": 1.0000000000000004,
+      "total_metal_budget": 0.0035000000000000005,
+      "new_metal_yield_budget": 0.0034999999999999996,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 285.7142857142857
+        },
+        {
+          "Z_cut": 0.00150496600540742,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.3713102792967354,
+          "cdf_from_numerical_pdf_integral": 0.3713102792967353,
+          "pdf_at_cut": 211.45222985493868
+        },
+        {
+          "Z_cut": 0.00300993201081484,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.646110632135477,
+          "cdf_from_numerical_pdf_integral": 0.646110632135477,
+          "pdf_at_cut": 156.49215928719036
+        },
+        {
+          "Z_cut": 0.00601986402162968,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0000000000000004,
+          "pdf_at_cut": 85.71428571428574
+        },
+        {
+          "Z_cut": 0.0072238368259556155,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0000000000000004,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 0.002420058276444423,
+      "current_closed_mean_relative_error": 3.584053104963823e-16
+    },
+    {
+      "mu": 0.3,
+      "yield": 0.02,
+      "Z0": 0,
+      "locked_mass_over_M0": 0.7,
+      "gas_Z": 0.02407945608651872,
+      "sample_defined": true,
+      "mean_Z": 0.009680233105777696,
+      "mean_Z_from_pdf_integral": 0.009680233105777682,
+      "median_Z": 0.008615658321849086,
+      "q10_Z": 0.0014514138566967085,
+      "q90_Z": 0.01988504546687734,
+      "pdf_area": 1.0000000000000004,
+      "total_metal_budget": 0.014000000000000002,
+      "new_metal_yield_budget": 0.013999999999999999,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 71.42857142857143
+        },
+        {
+          "Z_cut": 0.00601986402162968,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.3713102792967354,
+          "cdf_from_numerical_pdf_integral": 0.3713102792967353,
+          "pdf_at_cut": 52.86305746373467
+        },
+        {
+          "Z_cut": 0.01203972804325936,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.646110632135477,
+          "cdf_from_numerical_pdf_integral": 0.646110632135477,
+          "pdf_at_cut": 39.12303982179759
+        },
+        {
+          "Z_cut": 0.02407945608651872,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0000000000000004,
+          "pdf_at_cut": 21.428571428571434
+        },
+        {
+          "Z_cut": 0.028895347303822462,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0000000000000004,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 0.009680233105777692,
+      "current_closed_mean_relative_error": 3.584053104963823e-16
+    },
+    {
+      "mu": 0.3,
+      "yield": 0.03,
+      "Z0": 0,
+      "locked_mass_over_M0": 0.7,
+      "gas_Z": 0.036119184129778076,
+      "sample_defined": true,
+      "mean_Z": 0.014520349658666547,
+      "mean_Z_from_pdf_integral": 0.01452034965866652,
+      "median_Z": 0.012923487482773626,
+      "q10_Z": 0.0021771207850450626,
+      "q90_Z": 0.029827568200316006,
+      "pdf_area": 1.0000000000000004,
+      "total_metal_budget": 0.021000000000000005,
+      "new_metal_yield_budget": 0.020999999999999998,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 47.61904761904763
+        },
+        {
+          "Z_cut": 0.009029796032444519,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.3713102792967354,
+          "cdf_from_numerical_pdf_integral": 0.3713102792967353,
+          "pdf_at_cut": 35.24203830915644
+        },
+        {
+          "Z_cut": 0.018059592064889038,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.646110632135477,
+          "cdf_from_numerical_pdf_integral": 0.646110632135477,
+          "pdf_at_cut": 26.08202654786506
+        },
+        {
+          "Z_cut": 0.036119184129778076,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0000000000000004,
+          "pdf_at_cut": 14.28571428571429
+        },
+        {
+          "Z_cut": 0.04334302095573369,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0000000000000004,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 0.014520349658666536,
+      "current_closed_mean_relative_error": 7.168106209927645e-16
+    },
+    {
+      "mu": 0.1,
+      "yield": 0.005,
+      "Z0": 0,
+      "locked_mass_over_M0": 0.9,
+      "gas_Z": 0.01151292546497023,
+      "sample_defined": true,
+      "mean_Z": 0.003720786059447758,
+      "mean_Z_from_pdf_integral": 0.0037207860594477464,
+      "median_Z": 0.0029891850037781025,
+      "q10_Z": 0.0004715533973562067,
+      "q90_Z": 0.008303656034108256,
+      "pdf_area": 1.000000000000001,
+      "total_metal_budget": 0.004500000000000006,
+      "new_metal_yield_budget": 0.0045000000000000005,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 222.2222222222222
+        },
+        {
+          "Z_cut": 0.0028782313662425573,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.4862874164551677,
+          "cdf_from_numerical_pdf_integral": 0.4862874164551678,
+          "pdf_at_cut": 124.96473893118866
+        },
+        {
+          "Z_cut": 0.005756462732485115,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.7597469266479578,
+          "cdf_from_numerical_pdf_integral": 0.7597469266479581,
+          "pdf_at_cut": 70.27283689263064
+        },
+        {
+          "Z_cut": 0.01151292546497023,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.000000000000001,
+          "pdf_at_cut": 22.222222222222214
+        },
+        {
+          "Z_cut": 0.013815510557964275,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.000000000000001,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 0.0037207860594477525,
+      "current_closed_mean_relative_error": 1.5152312459914445e-15
+    },
+    {
+      "mu": 0.1,
+      "yield": 0.02,
+      "Z0": 0,
+      "locked_mass_over_M0": 0.9,
+      "gas_Z": 0.04605170185988092,
+      "sample_defined": true,
+      "mean_Z": 0.014883144237791033,
+      "mean_Z_from_pdf_integral": 0.014883144237790986,
+      "median_Z": 0.01195674001511241,
+      "q10_Z": 0.0018862135894248267,
+      "q90_Z": 0.03321462413643302,
+      "pdf_area": 1.000000000000001,
+      "total_metal_budget": 0.018000000000000023,
+      "new_metal_yield_budget": 0.018000000000000002,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 55.55555555555555
+        },
+        {
+          "Z_cut": 0.01151292546497023,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.4862874164551677,
+          "cdf_from_numerical_pdf_integral": 0.4862874164551678,
+          "pdf_at_cut": 31.241184732797166
+        },
+        {
+          "Z_cut": 0.02302585092994046,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.7597469266479578,
+          "cdf_from_numerical_pdf_integral": 0.7597469266479581,
+          "pdf_at_cut": 17.56820922315766
+        },
+        {
+          "Z_cut": 0.04605170185988092,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.000000000000001,
+          "pdf_at_cut": 5.555555555555554
+        },
+        {
+          "Z_cut": 0.0552620422318571,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.000000000000001,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 0.01488314423779101,
+      "current_closed_mean_relative_error": 1.5152312459914445e-15
+    },
+    {
+      "mu": 0.1,
+      "yield": 0.03,
+      "Z0": 0,
+      "locked_mass_over_M0": 0.9,
+      "gas_Z": 0.06907755278982138,
+      "sample_defined": true,
+      "mean_Z": 0.022324716356686553,
+      "mean_Z_from_pdf_integral": 0.022324716356686473,
+      "median_Z": 0.017935110022668614,
+      "q10_Z": 0.00282932038413724,
+      "q90_Z": 0.04982193620464953,
+      "pdf_area": 1.000000000000001,
+      "total_metal_budget": 0.027000000000000034,
+      "new_metal_yield_budget": 0.027,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 37.03703703703704
+        },
+        {
+          "Z_cut": 0.017269388197455344,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.4862874164551677,
+          "cdf_from_numerical_pdf_integral": 0.4862874164551678,
+          "pdf_at_cut": 20.827456488531446
+        },
+        {
+          "Z_cut": 0.03453877639491069,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.7597469266479578,
+          "cdf_from_numerical_pdf_integral": 0.7597469266479581,
+          "pdf_at_cut": 11.712139482105107
+        },
+        {
+          "Z_cut": 0.06907755278982138,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.000000000000001,
+          "pdf_at_cut": 3.703703703703703
+        },
+        {
+          "Z_cut": 0.08289306334778565,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.000000000000001,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 0.022324716356686515,
+      "current_closed_mean_relative_error": 1.7094916621441934e-15
+    },
+    {
+      "mu": 0.02,
+      "yield": 0.005,
+      "Z0": 0,
+      "locked_mass_over_M0": 0.98,
+      "gas_Z": 0.019560115027140727,
+      "sample_defined": true,
+      "mean_Z": 0.00460081397903796,
+      "mean_Z_from_pdf_integral": 0.004600813979037933,
+      "median_Z": 0.003366722766318828,
+      "q10_Z": 0.000515703794597567,
+      "q90_Z": 0.010685353272582361,
+      "pdf_area": 1.0000000000000029,
+      "total_metal_budget": 0.0049000000000000155,
+      "new_metal_yield_budget": 0.0049,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 204.08163265306123
+        },
+        {
+          "Z_cut": 0.004890028756785182,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.6366731537666944,
+          "cdf_from_numerical_pdf_integral": 0.6366731537666946,
+          "pdf_at_cut": 76.74700189972233
+        },
+        {
+          "Z_cut": 0.009780057513570363,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.8761006569007046,
+          "cdf_from_numerical_pdf_integral": 0.8761006569007052,
+          "pdf_at_cut": 28.861501272920325
+        },
+        {
+          "Z_cut": 0.019560115027140727,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0000000000000029,
+          "pdf_at_cut": 4.081632653061229
+        },
+        {
+          "Z_cut": 0.02347213803256887,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0000000000000029,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 0.004600813979037944,
+      "current_closed_mean_relative_error": 3.3934237191341245e-15
+    },
+    {
+      "mu": 0.02,
+      "yield": 0.02,
+      "Z0": 0,
+      "locked_mass_over_M0": 0.98,
+      "gas_Z": 0.0782404601085629,
+      "sample_defined": true,
+      "mean_Z": 0.01840325591615184,
+      "mean_Z_from_pdf_integral": 0.01840325591615173,
+      "median_Z": 0.013466891065275313,
+      "q10_Z": 0.002062815178390268,
+      "q90_Z": 0.042741413090329444,
+      "pdf_area": 1.0000000000000029,
+      "total_metal_budget": 0.019600000000000062,
+      "new_metal_yield_budget": 0.0196,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 51.02040816326531
+        },
+        {
+          "Z_cut": 0.019560115027140727,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.6366731537666944,
+          "cdf_from_numerical_pdf_integral": 0.6366731537666946,
+          "pdf_at_cut": 19.186750474930584
+        },
+        {
+          "Z_cut": 0.03912023005428145,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.8761006569007046,
+          "cdf_from_numerical_pdf_integral": 0.8761006569007052,
+          "pdf_at_cut": 7.215375318230081
+        },
+        {
+          "Z_cut": 0.0782404601085629,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0000000000000029,
+          "pdf_at_cut": 1.0204081632653073
+        },
+        {
+          "Z_cut": 0.09388855213027548,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0000000000000029,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 0.018403255916151776,
+      "current_closed_mean_relative_error": 3.3934237191341245e-15
+    },
+    {
+      "mu": 0.02,
+      "yield": 0.03,
+      "Z0": 0,
+      "locked_mass_over_M0": 0.98,
+      "gas_Z": 0.11736069016284435,
+      "sample_defined": true,
+      "mean_Z": 0.02760488387422775,
+      "mean_Z_from_pdf_integral": 0.027604883874227597,
+      "median_Z": 0.02020033659791297,
+      "q10_Z": 0.0030942227675854017,
+      "q90_Z": 0.06411211963549417,
+      "pdf_area": 1.0000000000000029,
+      "total_metal_budget": 0.02940000000000008,
+      "new_metal_yield_budget": 0.0294,
+      "threshold_checks": [
+        {
+          "Z_cut": 0.0,
+          "Z_cut_over_current_gas_Z": 0,
+          "cdf": 0.0,
+          "cdf_from_numerical_pdf_integral": 0,
+          "pdf_at_cut": 34.013605442176875
+        },
+        {
+          "Z_cut": 0.029340172540711088,
+          "Z_cut_over_current_gas_Z": 0.25,
+          "cdf": 0.6366731537666944,
+          "cdf_from_numerical_pdf_integral": 0.6366731537666946,
+          "pdf_at_cut": 12.791166983287056
+        },
+        {
+          "Z_cut": 0.058680345081422176,
+          "Z_cut_over_current_gas_Z": 0.5,
+          "cdf": 0.8761006569007046,
+          "cdf_from_numerical_pdf_integral": 0.8761006569007052,
+          "pdf_at_cut": 4.810250212153387
+        },
+        {
+          "Z_cut": 0.11736069016284435,
+          "Z_cut_over_current_gas_Z": 1,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0000000000000029,
+          "pdf_at_cut": 0.6802721088435382
+        },
+        {
+          "Z_cut": 0.1408328281954132,
+          "Z_cut_over_current_gas_Z": 1.2,
+          "cdf": 1.0,
+          "cdf_from_numerical_pdf_integral": 1.0000000000000029,
+          "pdf_at_cut": 0
+        }
+      ],
+      "current_closed_mean_value": 0.027604883874227666,
+      "current_closed_mean_relative_error": 3.016376639230334e-15
+    }
+  ]
+}

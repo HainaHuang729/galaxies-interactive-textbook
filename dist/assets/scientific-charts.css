@@ -1,0 +1,35 @@
+.scientific-chart-unit { min-width:0; width:100%; margin:18px 0; }
+svg.chart.scientific-plot { display:block; width:100%; height:340px; overflow:visible; border:0; background:transparent; }
+svg.chart.scientific-plot text { font-family:var(--sans); font-size:11px; fill:var(--muted); }
+svg.chart.scientific-plot .scientific-axis-label { font-size:12px; fill:var(--text); }
+.scientific-plot .scientific-plot-area { fill:var(--subtle); }
+.scientific-plot .domain { stroke:var(--muted); stroke-width:.75; }
+.scientific-plot .tick line { stroke:var(--line); stroke-width:.75; }
+.scientific-plot .grid line { stroke:var(--line); stroke-width:.65; stroke-dasharray:2 4; opacity:.85; }
+.scientific-plot path:not(.domain) { stroke-linejoin:round; stroke-linecap:round; }
+.scientific-plot:focus-visible { outline:2px solid var(--accent); outline-offset:5px; border-radius:4px; }
+.scientific-plot .scientific-probe { pointer-events:none; }
+.scientific-probe path { fill:none; stroke:var(--muted); stroke-width:.8; stroke-dasharray:3 4; }
+.scientific-probe circle { fill:var(--panel); stroke:var(--text); stroke-width:1; }
+.scientific-chart-tools { display:flex; justify-content:flex-end; flex-wrap:wrap; gap:8px 16px; margin-top:12px; }
+.scientific-chart-action { min-height:38px; padding:6px 10px; border:1px solid var(--line); border-radius:5px; color:var(--text); background:transparent; font:12px var(--sans); }
+.scientific-chart-action:hover { border-color:var(--accent); color:var(--accent); }
+.scientific-coordinate { display:block; margin:12px 0 0; min-height:1.8em; color:var(--muted); font-size:12px; line-height:1.8; font-variant-numeric:tabular-nums; }
+.reader-ready .lab .readout-row strong { font-variant-numeric:tabular-nums; letter-spacing:0; }
+.reader-ready .lab .readout-row span:not(.inline-math, .inline-math *) { line-height:1.7; }
+.reader-ready .lab .experiment-result { font-size:14px; line-height:1.95; max-width:78em; }
+.reader-ready .lab input[type="range"] { min-height:36px; }
+.advanced-stage { grid-template-columns:minmax(0,.7fr) minmax(0,1.55fr); align-items:start; gap:28px; }
+.advanced-stage .scientific-chart-unit { margin:0; }
+.advanced-stage.plot-only { grid-template-columns:minmax(0,1fr); }
+.advanced-scene p { font-size:12px; line-height:1.8; }
+.advanced-legend { font-size:12px; gap:12px 22px; }
+.advanced-legend span:not(.inline-math, .inline-math *):before { width:22px; height:0; border-top:2px var(--legend-style,solid) var(--legend-color); background:none; }
+dialog.scientific-chart-dialog { width:min(1200px,calc(100vw - 28px)); max-width:none; max-height:92svh; padding:28px; background:var(--panel); border:1px solid var(--line); color:var(--text); }
+.scientific-chart-dialog h2 { margin:0 80px 24px 0; font:400 24px/1.6 var(--serif); }
+.scientific-dialog-close { position:absolute; top:18px; right:18px; min-height:42px; padding:8px 12px; border:1px solid var(--line); border-radius:5px; background:var(--bg); color:var(--text); }
+.scientific-dialog-stage svg { display:block; width:100%; height:auto; max-height:65svh; }
+.scientific-dialog-note { color:var(--muted); font-size:13px; line-height:1.8; margin:20px 0 0; }
+@media(max-width:920px){.advanced-stage{grid-template-columns:minmax(0,1fr);gap:22px}.advanced-stage .scientific-chart-unit{order:0}.advanced-stage .advanced-scene{order:1}.advanced-scene canvas{max-height:240px}}
+@media(max-width:600px){svg.chart.scientific-plot{height:310px}.scientific-chart-action{min-height:44px}.reader-ready .lab .experiment-result{font-size:13px}.scientific-chart-dialog{padding:22px 14px}.scientific-chart-dialog h2{font-size:20px}.scientific-dialog-stage svg{max-height:70svh}}
+@media print{.scientific-chart-tools,.scientific-coordinate{display:none}svg.chart.scientific-plot{break-inside:avoid}}

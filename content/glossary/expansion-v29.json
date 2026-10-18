@@ -1,0 +1,1006 @@
+[
+  {
+    "id": "v29-halo-x",
+    "kind": "symbol",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "halo-escape-lab"
+    ],
+    "title": "归一化检查半径",
+    "english": "normalized check radius",
+    "tex": "x",
+    "aliases": [
+      "x"
+    ],
+    "definition": "r/R200c；不是位置的某一个笛卡尔分量。",
+    "unit": "无量纲",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §7.5.1 pp.352–353；势与锐截断比较为新增推导。"
+  },
+  {
+    "id": "v29-halo-r",
+    "kind": "symbol",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "halo-escape-lab"
+    ],
+    "title": "检查点的球心距离",
+    "english": "distance from halo center",
+    "tex": "r",
+    "aliases": [
+      "r"
+    ],
+    "definition": "球对称势中检查点距球心的物理半径。",
+    "unit": "kpc",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §7.5.1 pp.352–353；势与锐截断比较为新增推导。"
+  },
+  {
+    "id": "v29-halo-M",
+    "kind": "symbol",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "halo-escape-lab"
+    ],
+    "title": "边界内暗晕质量",
+    "english": "enclosed halo mass at 200 critical",
+    "tex": "M_{200\\rm c}",
+    "aliases": [
+      "M₂₀₀c",
+      "M200c"
+    ],
+    "definition": "平均包围密度为当前临界密度200倍的边界内质量；不是未截断NFW的无限总质量。",
+    "unit": "M☉",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §7.5.1 pp.352–353；势与锐截断比较为新增推导。"
+  },
+  {
+    "id": "v29-halo-R",
+    "kind": "symbol",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "halo-escape-lab"
+    ],
+    "title": "200倍临界密度边界半径",
+    "english": "radius at 200 critical",
+    "tex": "R_{200\\rm c}",
+    "aliases": [
+      "R₂₀₀c",
+      "R200c"
+    ],
+    "definition": "用M200c=(4π/3)200ρcrit R200c³定义的参考边界；不是实际物质必须停止的位置。",
+    "unit": "kpc",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §7.5.1 pp.352–353；势与锐截断比较为新增推导。"
+  },
+  {
+    "id": "v29-halo-V",
+    "kind": "symbol",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "halo-escape-lab"
+    ],
+    "title": "参考圆速",
+    "english": "reference circular speed",
+    "tex": "V_{200\\rm c}",
+    "aliases": [
+      "V₂₀₀c",
+      "V200c"
+    ],
+    "definition": "sqrt(G M200c/R200c)，用来归一化指定初速和单位质量能量。",
+    "unit": "km/s",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §7.5.1 pp.352–353；势与锐截断比较为新增推导。"
+  },
+  {
+    "id": "v29-halo-c",
+    "kind": "symbol",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "halo-escape-lab"
+    ],
+    "title": "NFW集中度",
+    "english": "NFW concentration",
+    "tex": "c",
+    "aliases": [
+      "c"
+    ],
+    "definition": "c=R200c/rs；此处是暗晕集中度，不是光速。",
+    "unit": "无量纲",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §7.5.1 pp.352–353；势与锐截断比较为新增推导。"
+  },
+  {
+    "id": "v29-halo-g",
+    "kind": "symbol",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "halo-escape-lab"
+    ],
+    "title": "NFW包围质量函数",
+    "english": "NFW mass function",
+    "tex": "g",
+    "aliases": [
+      "g"
+    ],
+    "definition": "g(u)=ln(1+u)−u/(1+u)，用于把包围质量归一到边界内质量。不是加速度。",
+    "unit": "无量纲",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §7.5.1 pp.352–353；势与锐截断比较为新增推导。"
+  },
+  {
+    "id": "v29-halo-u",
+    "kind": "symbol",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "halo-escape-lab"
+    ],
+    "title": "质量函数的哑变量",
+    "english": "dummy mass-function argument",
+    "tex": "u",
+    "aliases": [
+      "u"
+    ],
+    "definition": "g(u)中的函数自变量，代入c或cx；不是速度。",
+    "unit": "无量纲",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §7.5.1 pp.352–353；势与锐截断比较为新增推导。"
+  },
+  {
+    "id": "v29-halo-Phi",
+    "kind": "symbol",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "halo-escape-lab"
+    ],
+    "title": "单位质量引力势",
+    "english": "specific gravitational potential",
+    "tex": "\\Phi",
+    "aliases": [
+      "Φ"
+    ],
+    "definition": "以无穷远为零的引力势，单位是速度平方。球外质量也可贡献势，虽不改变内区径向力。",
+    "unit": "(km/s)²",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §7.5.1 pp.352–353；势与锐截断比较为新增推导。"
+  },
+  {
+    "id": "v29-halo-PhiN",
+    "kind": "symbol",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "halo-escape-lab"
+    ],
+    "title": "延伸NFW势",
+    "english": "untruncated NFW potential",
+    "tex": "\\Phi_{\\rm NFW}",
+    "aliases": [
+      "ΦNFW"
+    ],
+    "definition": "NFW密度向无穷延伸时、零点在无穷远的单位质量势；质量虽发散，势积分有限。",
+    "unit": "(km/s)²",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §7.5.1 pp.352–353；势与锐截断比较为新增推导。"
+  },
+  {
+    "id": "v29-halo-PhiCut",
+    "kind": "symbol",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "halo-escape-lab"
+    ],
+    "title": "边界外截断势",
+    "english": "truncated halo potential",
+    "tex": "\\Phi_{\\rm cut}",
+    "aliases": [
+      "Φcut"
+    ],
+    "definition": "保留边界内密度、边界外无新增质量的比较势；边界外是相同M200c的Kepler势。",
+    "unit": "(km/s)²",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §7.5.1 pp.352–353；势与锐截断比较为新增推导。"
+  },
+  {
+    "id": "v29-halo-E",
+    "kind": "symbol",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "halo-escape-lab"
+    ],
+    "title": "单位质量总能量",
+    "english": "specific total energy",
+    "tex": "E",
+    "aliases": [
+      "E"
+    ],
+    "definition": "v0²/2+Φ。负值为此静态孤立势中的束缚能量；非负不提供实际飞行时间。",
+    "unit": "(km/s)²",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §7.5.1 pp.352–353；势与锐截断比较为新增推导。"
+  },
+  {
+    "id": "v29-halo-v0",
+    "kind": "symbol",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "halo-escape-lab"
+    ],
+    "title": "指定初速",
+    "english": "specified initial speed",
+    "tex": "v_0",
+    "aliases": [
+      "v₀",
+      "v0"
+    ],
+    "definition": "在当前检查半径指定的测试粒子速率；本图据能量分类，不积分轨道。",
+    "unit": "km/s",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §7.5.1 pp.352–353；势与锐截断比较为新增推导。"
+  },
+  {
+    "id": "v29-halo-vc",
+    "kind": "symbol",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "halo-escape-lab"
+    ],
+    "title": "局部圆轨道速率",
+    "english": "local circular speed",
+    "tex": "v_c",
+    "aliases": [
+      "vc"
+    ],
+    "definition": "sqrt(GM(<r)/r)，只由局部包围质量决定。内区两种外边界假设给相同圆速。",
+    "unit": "km/s",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §7.5.1 pp.352–353；势与锐截断比较为新增推导。"
+  },
+  {
+    "id": "v29-halo-ve",
+    "kind": "symbol",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "halo-escape-lab"
+    ],
+    "title": "逃逸速率",
+    "english": "escape speed",
+    "tex": "v_{\\rm esc}",
+    "aliases": [
+      "vesc"
+    ],
+    "definition": "sqrt(−2Φ)，依赖从当前半径到无穷远的完整势差，不能一般用sqrt(2GM(<r)/r)替代。",
+    "unit": "km/s",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §7.5.1 pp.352–353；势与锐截断比较为新增推导。"
+  },
+  {
+    "id": "v29-halo-v",
+    "kind": "symbol",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "halo-escape-lab"
+    ],
+    "title": "测试粒子速率",
+    "english": "test-particle speed",
+    "tex": "v",
+    "aliases": [
+      "v"
+    ],
+    "definition": "此能量比较中输入的速率，与圆速和逃逸速率分别比较。",
+    "unit": "km/s",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §7.5.1 pp.352–353；势与锐截断比较为新增推导。"
+  },
+  {
+    "id": "v29-halo-G",
+    "kind": "symbol",
+    "chapters": [
+      7
+    ],
+    "contexts": [
+      "halo-escape-lab"
+    ],
+    "title": "Newton引力常数",
+    "english": "Newton gravitational constant",
+    "tex": "G",
+    "aliases": [
+      "G"
+    ],
+    "definition": "该暗晕实验沿用HaloPhysics的G=4.30091×10⁻⁶ kpc (km/s)²/M☉。",
+    "unit": "kpc (km/s)²/M☉",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §7.5.1 pp.352–353；势与锐截断比较为新增推导。"
+  },
+  {
+    "id": "v29-mdf-mu",
+    "kind": "symbol",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "metal-distribution-lab"
+    ],
+    "title": "剩余气体质量份额",
+    "english": "remaining gas fraction",
+    "tex": "\\mu",
+    "aliases": [
+      "μ"
+    ],
+    "definition": "Mg/M0；初始总质量不变。μ=1时没有已锁定恒星样本。",
+    "unit": "无量纲",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §10.4.2 pp.489–490；当前恒星样本的条件归一和分位数为新增推导。"
+  },
+  {
+    "id": "v29-mdf-y",
+    "kind": "symbol",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "metal-distribution-lab"
+    ],
+    "title": "每单位锁定质量的净产额",
+    "english": "net yield per locked mass",
+    "tex": "y",
+    "aliases": [
+      "y"
+    ],
+    "definition": "新合成并返回气体的金属质量除以永久锁定恒星质量；不是全部返还物质。",
+    "unit": "无量纲",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §10.4.2 pp.489–490；当前恒星样本的条件归一和分位数为新增推导。"
+  },
+  {
+    "id": "v29-mdf-Z",
+    "kind": "symbol",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "metal-distribution-lab"
+    ],
+    "title": "恒星出生金属丰度",
+    "english": "stellar birth metallicity",
+    "tex": "Z",
+    "aliases": [
+      "Z"
+    ],
+    "definition": "重于氦的元素在出生气体中的质量分数。这里是恒星保留的出生丰度变量，分布不超过当前Zg。",
+    "unit": "无量纲",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §10.4.2 pp.489–490；当前恒星样本的条件归一和分位数为新增推导。"
+  },
+  {
+    "id": "v29-mdf-Zg",
+    "kind": "symbol",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "metal-distribution-lab"
+    ],
+    "title": "当前气体金属丰度",
+    "english": "current gas metallicity",
+    "tex": "Z_g",
+    "aliases": [
+      "Zg"
+    ],
+    "definition": "−y ln μ；当前MDF的右端截断，不能把它当成所有恒星的平均丰度。",
+    "unit": "无量纲",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §10.4.2 pp.489–490；当前恒星样本的条件归一和分位数为新增推导。"
+  },
+  {
+    "id": "v29-mdf-Zcut",
+    "kind": "symbol",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "metal-distribution-lab"
+    ],
+    "title": "出生丰度阈值",
+    "english": "birth-metallicity threshold",
+    "tex": "Z_{\\rm cut}",
+    "aliases": [
+      "Zcut"
+    ],
+    "definition": "选择多少当前已锁定恒星质量出生在该丰度以下的阈值。",
+    "unit": "无量纲",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §10.4.2 pp.489–490；当前恒星样本的条件归一和分位数为新增推导。"
+  },
+  {
+    "id": "v29-mdf-Zstar",
+    "kind": "symbol",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "metal-distribution-lab"
+    ],
+    "title": "恒星出生丰度变量",
+    "english": "stellar metallicity variable",
+    "tex": "Z_\\star",
+    "aliases": [
+      "Z★"
+    ],
+    "definition": "当前恒星样本的出生金属质量分数；其质量加权均值不同于当前气体Zg。",
+    "unit": "无量纲",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §10.4.2 pp.489–490；当前恒星样本的条件归一和分位数为新增推导。"
+  },
+  {
+    "id": "v29-mdf-mean",
+    "kind": "symbol",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "metal-distribution-lab"
+    ],
+    "title": "恒星质量加权平均丰度",
+    "english": "mass-weighted mean stellar metallicity",
+    "tex": "\\langle Z_\\star\\rangle",
+    "aliases": [
+      "⟨Z★⟩"
+    ],
+    "definition": "对当前已锁定恒星质量归一的出生丰度均值，μ=1时不定义。",
+    "unit": "无量纲",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §10.4.2 pp.489–490；当前恒星样本的条件归一和分位数为新增推导。"
+  },
+  {
+    "id": "v29-mdf-median",
+    "kind": "symbol",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "metal-distribution-lab"
+    ],
+    "title": "恒星丰度中位数",
+    "english": "median stellar metallicity",
+    "tex": "Z_{50}",
+    "aliases": [
+      "Z50"
+    ],
+    "definition": "当前锁定恒星质量一半位于此出生丰度以下；μ=1时无样本。",
+    "unit": "无量纲",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §10.4.2 pp.489–490；当前恒星样本的条件归一和分位数为新增推导。"
+  },
+  {
+    "id": "v29-mdf-Z0",
+    "kind": "symbol",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "metal-distribution-lab"
+    ],
+    "title": "初始金属丰度",
+    "english": "initial metallicity",
+    "tex": "Z_0",
+    "aliases": [
+      "Z₀",
+      "Z0"
+    ],
+    "definition": "本实验固定为0的初始气体金属质量分数。",
+    "unit": "无量纲",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §10.4.2 pp.489–490；当前恒星样本的条件归一和分位数为新增推导。"
+  },
+  {
+    "id": "v29-mdf-p",
+    "kind": "symbol",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "metal-distribution-lab"
+    ],
+    "title": "当前样本金属丰度密度",
+    "english": "current-sample metallicity density",
+    "tex": "p_Z",
+    "aliases": [
+      "pZ"
+    ],
+    "definition": "按当前锁定恒星质量归一、每单位Z的概率密度。区间概率需要积分，不能把密度值当成份额。",
+    "unit": "每单位Z",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §10.4.2 pp.489–490；当前恒星样本的条件归一和分位数为新增推导。"
+  },
+  {
+    "id": "v29-mdf-F",
+    "kind": "symbol",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "metal-distribution-lab"
+    ],
+    "title": "当前样本累计质量份额",
+    "english": "current stellar cumulative mass fraction",
+    "tex": "F_\\star",
+    "aliases": [
+      "F★"
+    ],
+    "definition": "当前锁定恒星中出生丰度低于阈值的质量占比，已除以1−μ。不是光通量。",
+    "unit": "无量纲",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §10.4.2 pp.489–490；当前恒星样本的条件归一和分位数为新增推导。"
+  },
+  {
+    "id": "v29-mdf-M0",
+    "kind": "symbol",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "metal-distribution-lab"
+    ],
+    "title": "初始气体及总质量",
+    "english": "initial gas and total mass",
+    "tex": "M_0",
+    "aliases": [
+      "M₀",
+      "M0"
+    ],
+    "definition": "模型初始全为气体，封闭系统总质量始终等于M0。",
+    "unit": "质量单位由归一化选取",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §10.4.2 pp.489–490；当前恒星样本的条件归一和分位数为新增推导。"
+  },
+  {
+    "id": "v29-mdf-Mstar",
+    "kind": "symbol",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "metal-distribution-lab"
+    ],
+    "title": "永久锁定恒星质量",
+    "english": "permanently locked stellar mass",
+    "tex": "M_{\\star,\\rm locked}",
+    "aliases": [
+      "Mstarlocked"
+    ],
+    "definition": "当前永久锁定在长寿命恒星和遗迹中的质量(1−μ)M0，是MDF归一化的权重。",
+    "unit": "同M0",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §10.4.2 pp.489–490；当前恒星样本的条件归一和分位数为新增推导。"
+  },
+  {
+    "id": "v29-ring-M",
+    "kind": "symbol",
+    "chapters": [
+      14
+    ],
+    "contexts": [
+      "velocity-delay-lab"
+    ],
+    "title": "中心黑洞质量",
+    "english": "central black hole mass",
+    "tex": "M_{\\rm BH}",
+    "aliases": [
+      "MBH"
+    ],
+    "definition": "输入的点质量，决定Newtonian圆轨道速率；不是未校正维里乘积。",
+    "unit": "M☉",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §14.2.8 pp.639–640；均匀薄环几何与二阶矩为新增推导。"
+  },
+  {
+    "id": "v29-ring-r",
+    "kind": "symbol",
+    "chapters": [
+      14
+    ],
+    "contexts": [
+      "velocity-delay-lab"
+    ],
+    "title": "理想薄环半径",
+    "english": "ideal ring radius",
+    "tex": "r",
+    "aliases": [
+      "r"
+    ],
+    "definition": "所有响应点距中心的相同物理距离，控件以光日给出。",
+    "unit": "光日；公式可用cm",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §14.2.8 pp.639–640；均匀薄环几何与二阶矩为新增推导。"
+  },
+  {
+    "id": "v29-ring-c",
+    "kind": "symbol",
+    "chapters": [
+      14
+    ],
+    "contexts": [
+      "velocity-delay-lab"
+    ],
+    "title": "真空光速",
+    "english": "speed of light",
+    "tex": "c",
+    "aliases": [
+      "c"
+    ],
+    "definition": "2.99792458×10¹⁰ cm/s，用于光行时间与路径差；不是暗晕集中度。",
+    "unit": "cm/s",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §14.2.8 pp.639–640；均匀薄环几何与二阶矩为新增推导。"
+  },
+  {
+    "id": "v29-ring-G",
+    "kind": "symbol",
+    "chapters": [
+      14
+    ],
+    "contexts": [
+      "velocity-delay-lab"
+    ],
+    "title": "Newton引力常数",
+    "english": "Newton gravitational constant",
+    "tex": "G",
+    "aliases": [
+      "G"
+    ],
+    "definition": "该反响模型采用6.6743×10⁻⁸ cm³ g⁻¹ s⁻²，并与太阳质量和光日做一致换算。",
+    "unit": "cm³ g⁻¹ s⁻²",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §14.2.8 pp.639–640；均匀薄环几何与二阶矩为新增推导。"
+  },
+  {
+    "id": "v29-ring-i",
+    "kind": "symbol",
+    "chapters": [
+      14
+    ],
+    "contexts": [
+      "velocity-delay-lab"
+    ],
+    "title": "圆环倾角",
+    "english": "ring inclination",
+    "tex": "i",
+    "aliases": [
+      "i"
+    ],
+    "definition": "遥远观测者视线与环法向的夹角，i=0为正面朝向。",
+    "unit": "度（控件）；公式用弧度",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §14.2.8 pp.639–640；均匀薄环几何与二阶矩为新增推导。"
+  },
+  {
+    "id": "v29-ring-phi",
+    "kind": "symbol",
+    "chapters": [
+      14
+    ],
+    "contexts": [
+      "velocity-delay-lab"
+    ],
+    "title": "响应点轨道方位",
+    "english": "responding orbital phase",
+    "tex": "\\phi",
+    "aliases": [
+      "φ"
+    ],
+    "definition": "盘内位置r(cosφ,sinφ,0)的方位，与视线速度及时滞用同一约定。",
+    "unit": "度（控件）；公式用弧度",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §14.2.8 pp.639–640；均匀薄环几何与二阶矩为新增推导。"
+  },
+  {
+    "id": "v29-ring-vK",
+    "kind": "symbol",
+    "chapters": [
+      14
+    ],
+    "contexts": [
+      "velocity-delay-lab"
+    ],
+    "title": "圆轨道速率",
+    "english": "Keplerian circular speed",
+    "tex": "v_{\\rm K}",
+    "aliases": [
+      "vK"
+    ],
+    "definition": "sqrt(GMBH/r)，所有环方位有相同速率，视向分量则随方位变化。",
+    "unit": "km/s",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §14.2.8 pp.639–640；均匀薄环几何与二阶矩为新增推导。"
+  },
+  {
+    "id": "v29-ring-vlos",
+    "kind": "symbol",
+    "chapters": [
+      14
+    ],
+    "contexts": [
+      "velocity-delay-lab"
+    ],
+    "title": "有符号视向速度",
+    "english": "signed line-of-sight velocity",
+    "tex": "v_{\\rm los}",
+    "aliases": [
+      "vlos"
+    ],
+    "definition": "vK sin i sinφ，正号约定为退行红移，负号为接近蓝移。",
+    "unit": "km/s",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §14.2.8 pp.639–640；均匀薄环几何与二阶矩为新增推导。"
+  },
+  {
+    "id": "v29-ring-tau",
+    "kind": "symbol",
+    "chapters": [
+      14
+    ],
+    "contexts": [
+      "velocity-delay-lab"
+    ],
+    "title": "源系响应时滞",
+    "english": "rest-frame response delay",
+    "tex": "\\tau",
+    "aliases": [
+      "τ"
+    ],
+    "definition": "宽线回响与直接中心连续谱的到达时间差，r/c(1−sin i cosφ)；不是轨道时间或单程r/c。",
+    "unit": "天",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §14.2.8 pp.639–640；均匀薄环几何与二阶矩为新增推导。"
+  },
+  {
+    "id": "v29-ring-sigma",
+    "kind": "symbol",
+    "chapters": [
+      14
+    ],
+    "contexts": [
+      "velocity-delay-lab"
+    ],
+    "title": "线型二阶矩宽度",
+    "english": "line-dispersion second moment",
+    "tex": "\\sigma_{\\rm line}",
+    "aliases": [
+      "σline"
+    ],
+    "definition": "均匀方位响应的有符号视向速度标准差vK sin i/√2，不是FWHM。",
+    "unit": "km/s",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §14.2.8 pp.639–640；均匀薄环几何与二阶矩为新增推导。"
+  },
+  {
+    "id": "v29-ring-VP",
+    "kind": "symbol",
+    "chapters": [
+      14
+    ],
+    "contexts": [
+      "velocity-delay-lab"
+    ],
+    "title": "未校正维里乘积",
+    "english": "uncorrected virial product",
+    "tex": "\\mathrm{VP}",
+    "aliases": [
+      "VP"
+    ],
+    "definition": "c⟨τ⟩σline²/G=M sin²i/2；尚未乘几何因子，正面投影可为0而输入质量非0。",
+    "unit": "M☉",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §14.2.8 pp.639–640；均匀薄环几何与二阶矩为新增推导。"
+  },
+  {
+    "id": "v29-ring-f",
+    "kind": "symbol",
+    "chapters": [
+      14
+    ],
+    "contexts": [
+      "velocity-delay-lab"
+    ],
+    "title": "薄环专属几何因子",
+    "english": "ring-specific virial factor",
+    "tex": "f",
+    "aliases": [
+      "f"
+    ],
+    "definition": "此均匀响应纯圆薄环且采用σline时，f=2/sin²i；i=0不定义。不能套给任意宽线区。",
+    "unit": "无量纲",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §14.2.8 pp.639–640；均匀薄环几何与二阶矩为新增推导。"
+  },
+  {
+    "id": "v29-ring-P",
+    "kind": "symbol",
+    "chapters": [
+      14
+    ],
+    "contexts": [
+      "velocity-delay-lab"
+    ],
+    "title": "圆轨道周期",
+    "english": "circular orbital period",
+    "tex": "P",
+    "aliases": [
+      "P"
+    ],
+    "definition": "2πr/vK，是物质转一周的时间；不是光行延迟或概率密度。",
+    "unit": "年",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §14.2.8 pp.639–640；均匀薄环几何与二阶矩为新增推导。"
+  },
+  {
+    "id": "v29-ring-p",
+    "kind": "symbol",
+    "chapters": [
+      14
+    ],
+    "contexts": [
+      "velocity-delay-lab"
+    ],
+    "title": "方位响应权重密度",
+    "english": "orbital response weight density",
+    "tex": "p",
+    "aliases": [
+      "p"
+    ],
+    "definition": "本实验对φ均匀响应，p(φ)=1/(2π)；不是对延迟或椭圆弧长均匀。",
+    "unit": "每弧度",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §14.2.8 pp.639–640；均匀薄环几何与二阶矩为新增推导。"
+  },
+  {
+    "id": "v29-ring-z",
+    "kind": "symbol",
+    "chapters": [
+      14
+    ],
+    "contexts": [
+      "velocity-delay-lab"
+    ],
+    "title": "宇宙学红移",
+    "english": "cosmological redshift",
+    "tex": "z",
+    "aliases": [
+      "z"
+    ],
+    "definition": "用于τobs=(1+z)τrest；本实验图表直接使用源系时滞，不额外指定z。",
+    "unit": "无量纲",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §14.2.8 pp.639–640；均匀薄环几何与二阶矩为新增推导。"
+  },
+  {
+    "id": "v29-ring-rest",
+    "kind": "symbol",
+    "chapters": [
+      14
+    ],
+    "contexts": [
+      "velocity-delay-lab"
+    ],
+    "title": "源静止系响应时滞",
+    "english": "rest-frame response delay",
+    "tex": "\\tau_{\\rm rest}",
+    "aliases": [
+      "τrest"
+    ],
+    "definition": "已除去宇宙学时间膨胀因子的时滞，是反响质量公式需要的时间。",
+    "unit": "天",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §14.2.8 pp.639–640；均匀薄环几何与二阶矩为新增推导。"
+  },
+  {
+    "id": "v29-ring-obs",
+    "kind": "symbol",
+    "chapters": [
+      14
+    ],
+    "contexts": [
+      "velocity-delay-lab"
+    ],
+    "title": "观测者系响应时滞",
+    "english": "observed response delay",
+    "tex": "\\tau_{\\rm obs}",
+    "aliases": [
+      "τobs"
+    ],
+    "definition": "包含(1+z)时间膨胀的观测时滞，不能不经转换直接放入源系反演。",
+    "unit": "天",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §14.2.8 pp.639–640；均匀薄环几何与二阶矩为新增推导。"
+  },
+  {
+    "id": "v29-ring-rS",
+    "kind": "symbol",
+    "chapters": [
+      14
+    ],
+    "contexts": [
+      "velocity-delay-lab"
+    ],
+    "title": "Schwarzschild半径",
+    "english": "Schwarzschild radius",
+    "tex": "r_{\\rm S}",
+    "aliases": [
+      "rS"
+    ],
+    "definition": "2GMBH/c²，用于提示Newtonian弱场近似程度；不是NFW尺度半径rs。",
+    "unit": "与r相同长度单位",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §14.2.8 pp.639–640；均匀薄环几何与二阶矩为新增推导。"
+  },
+  {
+    "id": "v29-CDF",
+    "kind": "term",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "metal-distribution-lab"
+    ],
+    "title": "累计分布函数",
+    "english": "cumulative distribution function",
+    "aliases": [
+      "CDF"
+    ],
+    "definition": "从分布下界积分到当前阈值的累计份额；在此按当前恒星锁定质量归一。",
+    "unit": "无量纲",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §10.4.2 pp.489–490；当前恒星样本的条件归一和分位数为新增推导。"
+  },
+  {
+    "id": "v29-PDF",
+    "kind": "term",
+    "chapters": [
+      10
+    ],
+    "contexts": [
+      "metal-distribution-lab"
+    ],
+    "title": "概率密度函数",
+    "english": "probability density function",
+    "aliases": [
+      "PDF"
+    ],
+    "definition": "对丰度Z积分得到份额的密度；这里不是PDF文档格式。",
+    "unit": "无量纲",
+    "scope": "只按本实验的模型和约定使用。",
+    "source": "MBW §10.4.2 pp.489–490；当前恒星样本的条件归一和分位数为新增推导。"
+  }
+]

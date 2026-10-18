@@ -1,0 +1,63 @@
+/* Uses the book's two existing semantic palettes, including KaTeX baselines. */
+.glossary-term{display:inline!important;font:inherit!important;letter-spacing:inherit!important;float:none!important;margin:0!important;padding:0!important;cursor:help;text-decoration-line:underline;text-decoration-style:dotted;text-decoration-color:color-mix(in srgb,var(--muted) 65%,transparent);text-underline-offset:.24em;text-decoration-thickness:1px;border-radius:2px}
+.glossary-symbol{cursor:help;border-radius:2px}
+.glossary-term:hover,.glossary-symbol:hover{color:var(--gold);background:color-mix(in srgb,var(--gold) 10%,transparent)}
+.glossary-term:focus-visible,.glossary-symbol:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.glossary-symbol[role=button]{pointer-events:auto}
+.glossary-math-root .katex-html *{pointer-events:none}
+.glossary-math-root .katex-html [data-glossary-ids]{pointer-events:auto}
+.glossary-page-open{margin-left:18px;padding:2px 0;background:transparent;border-bottom:1px dotted var(--line);color:var(--muted);font-size:11px;line-height:1.5}
+.glossary-page-open:hover{color:var(--accent)}
+.glossary-control-help{display:inline-flex;align-items:center;min-height:28px;padding:2px 8px;margin:5px 8px 5px 0;border:1px dotted var(--line);border-radius:4px;background:transparent;color:var(--muted);font:11px/1.5 var(--sans)}
+.glossary-control-help:hover{color:var(--accent);border-color:var(--accent)}
+.glossary-dialog{position:fixed;inset:0 0 0 auto;width:min(590px,100%);max-width:100%;height:100dvh;max-height:100dvh;margin:0;padding:0;border:0;border-left:1px solid var(--line);border-radius:0;background:var(--panel);color:var(--text);box-shadow:-20px 0 70px var(--legacy-0003,#0003);overflow:hidden;flex-direction:column;font:15px/1.85 var(--sans)}
+.glossary-dialog[open]{display:flex}
+.glossary-dialog::backdrop{background:var(--legacy-0006,#0006);backdrop-filter:blur(2px)}
+.glossary-dialog-head{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding:27px 30px 18px;border-bottom:1px solid var(--line)}
+.glossary-place{font-size:12px;color:var(--muted);margin:0 0 9px}
+.glossary-dialog-head h2{font:400 26px/1.4 var(--serif);margin:0;overflow-wrap:anywhere}
+.glossary-close{flex:none;background:transparent;color:var(--muted);font-size:13px;min-height:38px;padding:4px 0 4px 14px}
+.glossary-dialog-tools{display:flex;justify-content:space-between;gap:15px;padding:12px 30px;font-size:12px;border-bottom:1px solid var(--line)}
+.glossary-dialog-tools button{background:transparent;color:var(--accent);padding:0;font-size:inherit}
+.glossary-dialog-tools a{color:var(--muted)}
+.glossary-results{padding:0 30px 30px;overflow-y:auto;overscroll-behavior:contain;flex:1;min-height:0}
+.glossary-card{padding:24px 0;border-bottom:1px solid var(--line)}
+.glossary-card:last-child{border:0}
+.glossary-identity{display:flex;gap:20px;align-items:center;justify-content:space-between;margin-bottom:13px}
+.glossary-entry-symbol{display:inline-block;min-width:26px;color:var(--accent);font:400 20px/1.5 Georgia,serif;max-width:100%;overflow-wrap:anywhere}
+.glossary-entry-symbol .katex{font-size:1.15em}
+.glossary-scope{color:var(--muted);font-size:11px;text-align:right}
+.glossary-card h3{font:400 24px/1.4 var(--serif);margin:0 0 4px;color:var(--text)}
+.glossary-english{font-size:13px;color:var(--muted);margin:0 0 23px;overflow-wrap:anywhere}
+.glossary-expression-note{font-size:12px;color:var(--accent);padding:10px 12px;border-left:2px solid var(--accent);background:var(--subtle)}
+.glossary-card dl{margin:0}
+.glossary-card dt{font-size:11px;color:var(--muted);margin:16px 0 4px}
+.glossary-card dd{font-size:14px;color:var(--text);margin:0;line-height:1.9;overflow-wrap:anywhere}
+.glossary-card .glossary-source{font-size:11px;color:var(--muted);line-height:1.8;margin:20px 0 0;overflow-wrap:anywhere}
+.glossary-source a{color:var(--accent);border-bottom:1px dotted currentColor}
+.glossary-other-meanings{margin-top:19px;padding-top:15px;border-top:1px solid var(--line)}
+.glossary-other-meanings summary{font-size:12px;color:var(--muted)}
+.glossary-other{display:block;padding:8px 0;background:transparent;text-align:left;font-size:12px;color:var(--accent);line-height:1.6}
+.glossary-search-area{padding:18px 30px 0}
+.glossary-search-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(100px,.65fr);gap:12px}
+.glossary-search-row label{font-size:11px;color:var(--muted);display:block;min-width:0}
+.glossary-search-row input,.glossary-search-row select{display:block;width:100%;min-width:0;border:1px solid var(--line);border-radius:5px;background:var(--bg);color:var(--text);min-height:42px;padding:7px 10px;margin-top:5px;font:13px var(--sans)}
+.glossary-search-count{font-size:11px;color:var(--muted);margin:12px 0}
+.glossary-search-result{display:flex;width:100%;align-items:center;gap:18px;padding:15px 0;border-bottom:1px solid var(--line);background:transparent;text-align:left;line-height:1.6}
+.glossary-search-result:hover{background:var(--soft)}
+.glossary-search-result>.glossary-entry-symbol{min-width:60px;max-width:100px;font-size:17px;flex:none}
+.glossary-result-text{min-width:0;display:block}
+.glossary-result-text strong{display:block;font-size:14px;font-weight:500}
+.glossary-result-text>span:not(.inline-math, .inline-math *){display:block;color:var(--muted);font-size:11px;overflow-wrap:anywhere}
+.glossary-load-more{display:block;background:transparent;color:var(--accent);padding:15px 0;font-size:13px}
+.glossary-index-page{max-width:970px;margin:auto;padding:55px 32px 90px}
+.glossary-index-page h1{font-size:42px;margin-bottom:18px}
+.glossary-index-page>.lede{max-width:40em;font-size:17px}
+.glossary-index-controls{max-width:720px;margin-top:32px}
+.glossary-index-results{max-width:800px}
+.glossary-index-results .glossary-search-result>.glossary-entry-symbol{min-width:100px;max-width:150px}
+.canvas-math-overlay:has([data-glossary-ids]){overflow:visible}
+.canvas-math-overlay [data-glossary-ids]{pointer-events:auto}
+.glossary-canvas-overlay{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:2}
+.glossary-canvas-hit{position:absolute;display:block;pointer-events:auto;border-bottom:1px dotted color-mix(in srgb,var(--muted) 50%,transparent)}
+@media(max-width:600px){.glossary-dialog-head{padding:20px 20px 14px}.glossary-dialog-tools{padding:11px 20px}.glossary-results{padding:0 20px 25px}.glossary-search-area{padding:14px 20px 0}.glossary-dialog-head h2{font-size:23px}.glossary-search-row{grid-template-columns:minmax(0,1fr)}.glossary-page-open{margin-left:10px;font-size:10px}.glossary-index-page{padding:35px 20px 70px}.glossary-index-page h1{font-size:32px}.glossary-index-results .glossary-search-result>.glossary-entry-symbol{min-width:65px;max-width:90px}.bookbar nav .glossary-nav-open{padding:5px 7px;font-size:11px;white-space:nowrap}}

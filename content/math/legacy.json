@@ -1,0 +1,292 @@
+{
+  "index.html": [
+    [
+      "f_{\\mathrm{gas}}=\\frac{M_{\\mathrm{cold}}}{M_{\\mathrm{cold}}+M_\\star}"
+    ],
+    [
+      "\\dot H=-\\frac H{t_{\\mathrm{cool}}}",
+      "\\dot C=\\frac H{t_{\\mathrm{cool}}}-\\frac{(1-R+\\eta)C}{t_{\\mathrm{dep}}}",
+      "\\dot S=\\frac{(1-R)C}{t_{\\mathrm{dep}}},\\quad\\dot E=\\frac{\\eta C}{t_{\\mathrm{dep}}}"
+    ],
+    [
+      "\\bar\\rho=\\frac{3M}{4\\pi R^3}",
+      "t_{\\mathrm{dyn}}=\\sqrt{\\frac{3\\pi}{16G\\bar\\rho}},\\quad t_{\\mathrm{ff}}=\\frac{t_{\\mathrm{dyn}}}{\\sqrt2}",
+      "t_{\\mathrm{SF}}=\\frac{M_{\\mathrm{cold}}}\\psi,\\quad t_{\\mathrm H}=\\frac1{H_0}"
+    ]
+  ],
+  "chapter-2.html": [
+    [
+      "f=\\frac L{4\\pi d^2},\\quad\\theta_e=\\frac{R_e}d",
+      "m-M=5\\log_{10}\\left(\\frac d{\\mathrm{Mpc}}\\right)+25",
+      "\\langle\\mu\\rangle_e=m+2.5\\log_{10}\\left[2\\pi\\left(\\frac{\\theta_e}{\\mathrm{arcsec}}\\right)^2\\right]"
+    ],
+    [
+      "\\lambda_{\\mathrm{obs}}=(1+z)\\lambda_0",
+      "\\sigma_\\lambda=\\frac{\\lambda_{\\mathrm{obs}}}c\\sqrt{\\sigma^2+\\sigma_{\\mathrm{inst}}^2}",
+      "\\sigma_{\\mathrm{inst}}=\\frac c{2.355\\mathcal R},\\quad\\mathcal R=1000"
+    ],
+    [
+      "\\sigma_{\\mathrm{eff}}^2=\\sigma_{\\mathrm{src}}^2+\\sigma_{\\mathrm{PSF}}^2",
+      "I(x)=\\frac12\\left[G_\\sigma(x-d/2)+G_\\sigma(x+d/2)\\right]",
+      "\\text{two continuous peaks}\\ \\Longleftrightarrow\\ d>2\\sigma_{\\mathrm{eff}}",
+      "F_j=\\frac14\\sum_{s=\\pm1}\\left[\\operatorname{erf}\\frac{x_{j+1}-sd/2}{\\sqrt2\\sigma_{\\mathrm{eff}}}-\\operatorname{erf}\\frac{x_j-sd/2}{\\sqrt2\\sigma_{\\mathrm{eff}}}\\right]"
+    ],
+    [
+      "I(R)=I_e\\exp\\!\\left\\{-b_n\\left[\\left(\\frac R{R_e}\\right)^{1/n}-1\\right]\\right\\}",
+      "L(<R)=2\\pi\\int_0^RI(r)r\\,dr"
+    ],
+    [
+      "\\phi(L)\\,dL=\\phi_\\star\\left(\\frac L{L_\\star}\\right)^\\alpha e^{-L/L_\\star}\\frac{dL}{L_\\star}"
+    ]
+  ],
+  "chapter-3.html": [
+    [
+      "d(t)=a(t)\\chi,\\quad H(t)=\\frac{\\dot a}a,\\quad v_{\\mathrm{rec}}=Hd",
+      "1+z=\\frac{\\lambda_0}{\\lambda_e}=\\frac{a_0}{a_e}=\\frac1{a_e}"
+    ],
+    [
+      "E^2(a)=\\Omega_{r,0}a^{-4}+\\Omega_{m,0}a^{-3}+\\Omega_{\\Lambda,0}",
+      "H(a)=H_0E(a),\\quad\\Omega_{r,0}+\\Omega_{m,0}+\\Omega_{\\Lambda,0}=1",
+      "q(a)=\\Omega_r(a)+\\frac12\\Omega_m(a)-\\Omega_\\Lambda(a)",
+      "t(a)=\\frac1{H_0}\\int_0^a\\frac{da'}{a'E(a')}"
+    ],
+    [
+      "D_C=\\frac c{H_0}\\int_0^z\\frac{dz'}{E(z')}",
+      "D_L=(1+z)D_C,\\quad D_A=\\frac{D_C}{1+z}",
+      "D_L=(1+z)^2D_A,\\quad\\theta=\\frac D{D_A}",
+      "t_{\\mathrm{lookback}}=t_0-t(z)"
+    ],
+    [
+      "sa^3=\\mathrm{const.},\\quad s\\propto g_{\\star s}T^3",
+      "T\\propto g_{\\star s}^{-1/3}a^{-1}"
+    ],
+    [
+      "N=\\ln\\frac a{a_i},\\quad\\frac\\rho{\\rho_i}=e^{-3(1+w)N}",
+      "\\frac{(aH)^{-1}}{(a_iH_i)^{-1}}=e^{(1+3w)N/2}",
+      "\\ddot a>0\\ \\Longleftrightarrow\\ \\rho+\\frac{3P}{c^2}<0\\ \\Longleftrightarrow\\ w<-\\frac13"
+    ]
+  ],
+  "chapter-4.html": [
+    [
+      "\\ddot\\delta_k+(c_s^2k_{\\mathrm{phys}}^2-4\\pi G\\bar\\rho)\\delta_k=0",
+      "\\lambda_{\\mathrm J}=c_s\\sqrt{\\frac\\pi{G\\bar\\rho}},\\quad\\tau=\\sqrt{4\\pi G\\bar\\rho}\\,t",
+      "\\frac{d^2\\delta}{d\\tau^2}+\\left[\\left(\\frac{\\lambda_{\\mathrm J}}\\lambda\\right)^2-1\\right]\\delta=0"
+    ],
+    [
+      "\\ddot D_++2H\\dot D_+-4\\pi G\\bar\\rho_mD_+=0",
+      "E(a)=\\frac{H(a)}{H_0}=\\sqrt{\\Omega_{m,0}a^{-3}+1-\\Omega_{m,0}}",
+      "D_+(a)=\\frac{5\\Omega_{m,0}}2E(a)\\int_0^a\\frac{da'}{a'^3E^3(a')},\\quad \\lim_{a\\to0}\\frac{D_+(a)}a=1",
+      "\\widehat D(a)=\\frac{D_+(a)}{D_+(1)},\\qquad f(a)=\\frac{d\\ln D_+}{d\\ln a}=\\frac{d\\ln\\widehat D}{d\\ln a}",
+      "\\Omega_m(a)=\\frac{\\Omega_{m,0}}{\\Omega_{m,0}+(1-\\Omega_{m,0})a^3},\\qquad z=a^{-1}-1"
+    ],
+    [
+      "x(q)=q-\\frac s{2\\pi}\\sin(2\\pi q)",
+      "J=\\frac{dx}{dq}=1-s\\cos(2\\pi q)",
+      "\\frac\\rho{\\bar\\rho}=\\frac1J,\\quad\\delta_{\\mathrm{linear}}\\simeq s\\cos(2\\pi q)"
+    ],
+    [
+      "q=\\frac{k/(h\\,\\mathrm{Mpc}^{-1})}\\Gamma,\\quad\\Gamma=\\Omega_{m,0}h",
+      "T(q)=\\frac{\\ln(1+2.34q)}{2.34q}\\left[1+3.89q+(16.1q)^2+(5.46q)^3+(6.71q)^4\\right]^{-1/4}",
+      "P(k,t)=P_i(k)T^2(k)D^2(t)"
+    ],
+    [
+      "\\Delta^2(k)=\\frac{k^3P(k)}{2\\pi^2}",
+      "\\sigma^2(R)=\\int\\Delta^2(k)|W(kR)|^2\\,d\\ln k",
+      "W_{\\mathrm{TH}}(x)=3\\frac{\\sin x-x\\cos x}{x^3}"
+    ],
+    [
+      "W(kR)=e^{-(kR)^2/2}",
+      "\\delta_R(x)=\\sum_na_nW(k_nR)\\cos(k_nx+\\phi_n)",
+      "\\sigma_R^2=\\frac12\\sum_na_n^2W^2(k_nR)"
+    ]
+  ],
+  "chapter-5.html": [
+    [
+      "\\ddot r=-\\frac{GM}{r^2}",
+      "\\frac r{r_{\\mathrm{ta}}}=\\frac{1-\\cos\\theta}2,\\quad\\frac t{t_{\\mathrm{ta}}}=\\frac{\\theta-\\sin\\theta}\\pi",
+      "1+\\delta=\\frac92\\frac{(\\theta-\\sin\\theta)^2}{(1-\\cos\\theta)^3}",
+      "\\delta_L=\\frac35\\left[\\frac{3(\\theta-\\sin\\theta)}4\\right]^{2/3}"
+    ],
+    [
+      "E=\\left(\\frac{Q_i}2-1\\right)|W_i|",
+      "2K_f+W_f=0,\\quad W\\propto-\\frac1R",
+      "\\frac{R_f}{R_i}=\\frac1{2-Q_i}\\quad(Q_i<2)"
+    ],
+    [
+      "\\Phi(r)=-\\frac{GM}{\\sqrt{r^2+b^2}}",
+      "E=\\frac{v^2}2+\\Phi,\\quad L=|\\boldsymbol r\\times\\boldsymbol v|",
+      "v_c^2(r)=\\frac{GMr^2}{(r^2+b^2)^{3/2}}"
+    ],
+    [
+      "\\frac{d(\\nu\\sigma_r^2)}{dr}+\\frac{2\\beta\\nu\\sigma_r^2}r=-\\nu\\frac{GM(<r)}{r^2}",
+      "\\beta=1-\\frac{\\sigma_\\theta^2+\\sigma_\\phi^2}{2\\sigma_r^2}",
+      "v_c^2=(\\gamma-2\\beta)\\sigma_r^2,\\quad M(<r)=\\frac{rv_c^2}G"
+    ],
+    [
+      "t_{\\mathrm{relax}}\\simeq\\frac{N}{10\\ln N}\\,t_{\\mathrm{cross}}"
+    ],
+    [
+      "H(J)=J-\\frac s2(J-1)^2",
+      "\\dot J=0,\\quad\\Omega(J)=\\dot\\theta=1-s(J-1)",
+      "\\theta(t)=\\theta_0+\\Omega(J)t",
+      "x=\\sqrt{2J}\\cos\\theta,\\quad p=-\\sqrt{2J}\\sin\\theta"
+    ]
+  ],
+  "chapter-6.html": [
+    [
+      "\\xi(r)=\\langle\\delta(\\boldsymbol x)\\delta(\\boldsymbol x+\\boldsymbol r)\\rangle",
+      "\\xi(r)=\\int\\Delta^2(k)\\frac{\\sin(kr)}{kr}\\,d\\ln k",
+      "RR_{\\mathrm{2D}}=\\frac{N(N-1)}2\\frac{\\pi(r_2^2-r_1^2)}{L^2}",
+      "\\hat\\xi=\\frac{DD}{RR}-1"
+    ],
+    [
+      "v_r\\simeq cz-H_0r",
+      "\\delta=-\\frac{\\boldsymbol\\nabla\\cdot\\boldsymbol v}{Haf}",
+      "\\delta_g=b\\delta_m,\\quad\\beta_K=\\frac fb"
+    ],
+    [
+      "s_\\parallel=r_\\parallel+\\frac{v_\\parallel}{H_0}",
+      "v_\\parallel=-AH_0r_\\parallel+\\sigma_v\\varepsilon,\\quad\\varepsilon\\sim\\mathcal N(0,1)"
+    ],
+    [
+      "\\delta_g^s=(b+f\\mu^2)\\delta_m",
+      "\\frac{P^s}{P^r}=(1+\\beta_K\\mu^2)^2,\\quad\\beta_K=\\frac fb",
+      "\\frac{P_0^s}{P^r}=1+\\frac{2\\beta_K}3+\\frac{\\beta_K^2}5"
+    ],
+    [
+      "\\hat\\xi_{\\mathrm{LS}}=\\frac{DD-2DR+RR}{RR}"
+    ],
+    [
+      "\\delta_g=b\\delta_m,\\quad P_g=b^2P_m,\\quad\\xi_g=b^2\\xi_m"
+    ],
+    [
+      "\\beta=\\theta-\\frac{\\theta_{\\mathrm E}^2}\\theta",
+      "\\theta_{\\mathrm E}^2=\\frac{4GM}{c^2}\\frac{d_{\\mathrm{LS}}}{d_Ld_S}",
+      "\\theta_\\pm=\\frac{\\beta\\pm\\sqrt{\\beta^2+4\\theta_{\\mathrm E}^2}}2",
+      "\\mu_{\\mathrm{finite}}=\\int d^2\\boldsymbol\\beta\\ I_{\\mathrm{normalized}}(\\boldsymbol\\beta)\\,\\mu_{\\mathrm{point}}(|\\boldsymbol\\beta|)"
+    ],
+    [
+      "a=\\frac1{1-\\kappa-\\gamma},\\quad b=\\frac1{1-\\kappa+\\gamma}",
+      "\\frac ab=\\frac{1+g}{1-g},\\quad\\mu=\\frac1{(1-\\kappa)^2-\\gamma^2}"
+    ],
+    [
+      "\\hat C_\\ell=\\frac{\\sum_m|a_{\\ell m}|^2}{2\\ell+1}",
+      "(2\\ell+1)\\frac{\\hat C_\\ell}{C_\\ell}\\sim\\chi^2_{2\\ell+1}",
+      "\\frac{\\sigma(\\hat C_\\ell)}{C_\\ell}=\\sqrt{\\frac2{2\\ell+1}}"
+    ]
+  ],
+  "chapter-7.html": [
+    [
+      "g(x)=\\ln(1+x)-\\frac x{1+x}",
+      "R_{200c}^3=\\frac{3M_{200c}}{4\\pi\\cdot200\\rho_{\\mathrm{crit}}},\\quad r_s=\\frac{R_{200c}}c",
+      "M(<r)=M_{200c}\\frac{g(r/r_s)}{g(c)},\\quad v_c^2=\\frac{GM(<r)}r"
+    ],
+    [
+      "\\delta_R(x)=\\sum_jA_j\\cos(k_jx+\\phi_j)e^{-k_j^2R^2/2}"
+    ],
+    [
+      "\\sigma(M)=\\delta_c\\left(\\frac M{10^{13}M_\\odot}\\right)^{-\\alpha},\\quad\\delta_c=1.686",
+      "\\nu=\\frac{\\delta_c}{D\\sigma(M)},\\quad f_{\\mathrm{PS}}(\\nu)=\\sqrt{\\frac2\\pi}\\nu e^{-\\nu^2/2}",
+      "\\frac{dF_{\\mathrm{mass}}}{d\\ln M}=-\\frac{dF(>M)}{d\\ln M}=\\alpha f_{\\mathrm{PS}}(\\nu)",
+      "\\frac{dn}{d\\ln M}=\\frac{\\bar\\rho_0}M\\alpha f_{\\mathrm{PS}}(\\nu),\\quad F(>M)=\\operatorname{erfc}\\frac\\nu{\\sqrt2}"
+    ],
+    [
+      "\\delta_{i+1}-\\delta_i\\sim\\mathcal N(0,\\Delta S),\\quad\\Delta S=\\frac{16}{256}",
+      "f(S;B)=\\frac{B}{\\sqrt{2\\pi S^3}}e^{-B^2/(2S)}",
+      "F(\\le S)=\\operatorname{erfc}\\frac B{\\sqrt{2S}}"
+    ],
+    [
+      "f(\\Delta S\\mid\\Delta\\omega)=\\frac{\\Delta\\omega}{\\sqrt{2\\pi\\Delta S^3}}e^{-\\Delta\\omega^2/(2\\Delta S)}",
+      "\\Delta S=S(M_1)-S(M_0)>0,\\quad\\Delta\\omega=\\omega_1-\\omega_0>0",
+      "F(\\le\\Delta S)=\\operatorname{erfc}\\frac{\\Delta\\omega}{\\sqrt{2\\Delta S}}"
+    ],
+    [
+      "b_{\\mathrm E}=1+\\frac{\\nu^2-1}{\\delta_c},\\quad\\delta_c=1.686",
+      "\\delta_h=b_{\\mathrm E}\\delta,\\quad\\xi_{hh}\\simeq b_{\\mathrm E}^2\\xi_{mm}"
+    ],
+    [
+      "\\lambda=\\frac{J|E|^{1/2}}{GM^{5/2}}",
+      "\\lambda'=\\frac J{\\sqrt2MV_hr_h}"
+    ],
+    [
+      "\\bar\\rho(<r)=\\frac{3M(<r)}{4\\pi r^3}",
+      "\\frac{g(c_{200m})}{c_{200m}^3}=\\Omega_m\\frac{g(c_{200c})}{c_{200c}^3}",
+      "\\frac{M_{200m}}{M_{200c}}=\\frac{g(c_{200m})}{g(c_{200c})}"
+    ],
+    [
+      "DD(r)=DD_{1h}(r)+DD_{2h}(r)",
+      "P(k)=P_{1h}(k)+P_{2h}(k)",
+      "P_{1h}=\\bar\\rho^{-2}\\int M^2n(M)|\\tilde u(k\\mid M)|^2\\,dM",
+      "P_{2h}\\simeq P_{\\mathrm{lin}}(k)\\left[\\bar\\rho^{-1}\\int Mn(M)b(M)\\tilde u(k\\mid M)\\,dM\\right]^2"
+    ],
+    [
+      "\\int Mn(M)\\,dM=\\bar\\rho",
+      "\\bar\\rho^{-1}\\int Mn(M)b(M)\\,dM=1"
+    ]
+  ],
+  "chapter-8.html": [
+    [
+      "\\chi=\\frac{\\rho_2}{\\rho_1}=\\frac{(\\gamma+1)\\mathcal M_1^2}{(\\gamma-1)\\mathcal M_1^2+2}",
+      "\\frac{P_2}{P_1}=\\frac{2\\gamma\\mathcal M_1^2-(\\gamma-1)}{\\gamma+1}",
+      "\\frac{T_2}{T_1}=\\frac{P_2/P_1}\\chi,\\quad v_2=\\frac{v_1}\\chi",
+      "K=\\frac P{\\rho^\\gamma},\\quad\\gamma=\\frac53"
+    ],
+    [
+      "\\Lambda(T)=10^{-22}\\left(\\frac T{10^6\\,\\mathrm K}\\right)^\\alpha\\mathrm{erg\\,cm^3\\,s^{-1}}",
+      "u=3n_{\\mathrm H}k_{\\mathrm B}T,\\quad\\mathcal C=n_{\\mathrm H}^2\\Lambda",
+      "t_{\\mathrm{cool}}=\\frac u{\\mathcal C}=\\frac{3k_{\\mathrm B}T}{n_{\\mathrm H}\\Lambda}",
+      "t_{\\mathrm{ff}}=\\sqrt{\\frac{3\\pi}{32G\\rho_{\\mathrm{tot}}}},\\quad\\rho_{\\mathrm{tot}}=\\frac{m_pn_{\\mathrm H}}{0.15}"
+    ],
+    [
+      "T_\\gamma=2.725(1+z)\\,\\mathrm K",
+      "t_{\\mathrm{Comp}}=\\frac{3m_ec}{4\\sigma_{\\mathrm T}a_rT_\\gamma^4}",
+      "\\frac{T-T_\\gamma}{T_{\\mathrm{init}}-T_\\gamma}=e^{-t/t_{\\mathrm{Comp}}}"
+    ],
+    [
+      "\\frac{\\rho_{\\mathrm{gas}}}{\\rho_0}=\\exp\\!\\left[-b\\left(1-\\frac{\\ln(1+x)}x\\right)\\right]",
+      "x=\\frac r{r_s},\\quad b=\\frac{4\\pi G\\rho_sr_s^2\\mu m_p}{k_{\\mathrm B}T}",
+      "T_{200c}=\\frac{\\mu m_pV_{200c}^2}{2k_{\\mathrm B}},\\quad b=\\frac{2c}{\\eta g(c)}"
+    ],
+    [
+      "K_{\\mathrm{env}}(z)=K_0e^{az/H},\\quad K_{\\mathrm{parcel}}=K_0",
+      "\\frac{\\rho_{\\mathrm{parcel}}}{\\rho_{\\mathrm{env}}}=e^{a\\Delta z/(\\gamma H)}",
+      "\\frac{a_b}g=\\frac{\\rho_{\\mathrm{env}}}{\\rho_{\\mathrm{parcel}}}-1=e^{-a\\Delta z/(\\gamma H)}-1",
+      "N^2=\\frac g\\gamma\\frac{d\\ln K}{dz}"
+    ],
+    [
+      "R=200\\,\\mathrm{kpc},\\quad T=10^6\\,\\mathrm K,\\quad\\Lambda=10^{-22}\\,\\mathrm{erg\\,cm^3\\,s^{-1}}",
+      "n_{\\mathrm H}(r)=n_{\\mathrm H}(R)\\left(\\frac rR\\right)^{-2},\\quad t_{\\mathrm{cool}}(r)=t_R\\left(\\frac rR\\right)^2",
+      "\\frac{r_{\\mathrm{cool}}}R=\\min\\left[1,\\sqrt{\\frac t{t_R}}\\right]",
+      "\\frac{M_{\\mathrm{cool}}}{M_{\\mathrm{gas}}}=\\frac{r_{\\mathrm{cool}}}R,\\quad M_{\\mathrm{gas}}=4\\pi m_pn_{\\mathrm H}(R)R^3"
+    ],
+    [
+      "\\theta=\\frac T{T_0},\\quad n_{\\mathrm H}=\\frac{n_{\\mathrm H,0}}\\theta\\quad(P=\\mathrm{const.})",
+      "\\Gamma=n_{\\mathrm H,0}\\Lambda(T_0),\\quad\\frac\\ell\\Gamma=\\theta^{\\alpha-1}-1",
+      "\\frac{d\\theta}{d\\tau}=-(\\theta^{\\alpha-1}-1),\\quad\\tau=\\frac{t\\Gamma}{5k_{\\mathrm B}T_0}",
+      "\\delta\\theta(\\tau)=\\delta\\theta(0)e^{(1-\\alpha)\\tau}\\quad\\text{(linear)}"
+    ],
+    [
+      "R=1.15\\left(\\frac E{\\rho_0}\\right)^{1/5}t^{2/5}",
+      "v_{\\mathrm{sh}}=\\frac25\\frac Rt,\\quad\\rho_0=m_pn_{\\mathrm H}",
+      "M_{\\mathrm{swept}}=\\frac{4\\pi}3\\rho_0R^3"
+    ],
+    [
+      "R=\\left(\\frac{125}{154\\pi}\\right)^{1/5}\\left(\\frac{L_w}{\\rho_0}\\right)^{1/5}t^{3/5}",
+      "v=\\frac35\\frac Rt,\\quad E_{\\mathrm{th}}=\\frac5{11}L_wt",
+      "E_{\\mathrm{kin}}=\\frac{15}{77}L_wt,\\quad E_{\\mathrm{rad}}=\\frac{27}{77}L_wt"
+    ],
+    [
+      "L_X\\simeq\\int n_en_{\\mathrm H}\\Lambda_X(T,Z)\\,dV",
+      "\\langle n^2\\rangle=\\langle n\\rangle^2+\\operatorname{Var}(n)\\ge\\langle n\\rangle^2"
+    ]
+  ],
+  "rotation.html": [
+    [
+      "\\Sigma(R)=\\frac{M_d}{2\\pi R_d^2}e^{-R/R_d}",
+      "v_d^2(R)=\\frac{GM_d}{2R_d}\\left(\\frac R{R_d}\\right)^2[I_0(y)K_0(y)-I_1(y)K_1(y)],\\quad y=\\frac R{2R_d}",
+      "g(x)=\\ln(1+x)-\\frac x{1+x}",
+      "M_h(<r)=M_{200c}\\frac{g(r/r_s)}{g(c_{200c})}",
+      "v_c^2=v_d^2+\\frac{GM_h(<r)}r,\\quad P_{\\mathrm{orb}}=\\frac{2\\pi r}{v_c}"
+    ]
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "measure": [
+    {
+      "media": "no-preference",
+      "before": {
+        "width": 98,
+        "height": 20,
+        "lines": 2
+      },
+      "after": {
+        "width": 98,
+        "height": 20,
+        "lines": 2
+      },
+      "font": "12px",
+      "transition": "0s"
+    },
+    {
+      "media": "reduce",
+      "before": {
+        "width": 98,
+        "height": 20,
+        "lines": 2
+      },
+      "after": {
+        "width": 98,
+        "height": 20,
+        "lines": 2
+      },
+      "font": "12px",
+      "transition": "0s"
+    }
+  ],
+  "interaction": [
+    "both live points visible; true-plane pointer picks k=1.5; persistence and reset",
+    "quantitative plot pointer picks k=2",
+    "real 0/7/16 second aperture scan contact sheet; stopped at completion"
+  ],
+  "ink": [
+    {
+      "theme": "afterglow",
+      "panel": 0,
+      "file": "ink-afterglow-0.png"
+    },
+    {
+      "theme": "afterglow",
+      "panel": 1,
+      "file": "ink-afterglow-1.png"
+    },
+    {
+      "theme": "moon",
+      "panel": 0,
+      "file": "ink-moon-0.png"
+    },
+    {
+      "theme": "moon",
+      "panel": 1,
+      "file": "ink-moon-1.png"
+    }
+  ]
+}

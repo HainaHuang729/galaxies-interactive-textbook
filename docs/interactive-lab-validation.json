@@ -1,0 +1,1134 @@
+{
+  "checkedAt": "2026-10-16T14:59:26.718Z",
+  "scope": {
+    "chapters": 16,
+    "chapterInteractiveUnits": 112,
+    "chapterLabContainers": 105,
+    "independentRotationUnits": 1,
+    "totalInteractiveUnits": 113,
+    "bodyFiguresSeparate": 32
+  },
+  "browser": {
+    "widths": [
+      1440,
+      390,
+      320
+    ],
+    "themes": [
+      "afterglow",
+      "moon"
+    ],
+    "chapterRenderStates": 672,
+    "rotationRenderStates": 6,
+    "chartSvgsInChapterInventory": 102,
+    "controlEndpointResponses": 222,
+    "endpointScope": "First range control in each applicable chapter unit, min/max/restore. Numerical model endpoints separately tested.",
+    "renderIssues": [],
+    "failedEndpoints": [],
+    "errors": [],
+    "specialInteractionChecks": [
+      "keyboard-coordinate-probe-preserves-reader",
+      "zoom-escape-focus-and-reader-isolation",
+      "svg-export-styles-parameters-and-local-clips",
+      "toomre-extreme-minimum-visible",
+      "reset-restores-defaults",
+      "21cm-finite-opacity-readout-and-persistence",
+      "narrow-finite-lens-image-endpoints",
+      "play-pause-stops-time",
+      "reduced-motion-parameter-step",
+      "independent-rotation-scenarios-comparison-series-and-responsive-themes"
+    ]
+  },
+  "visualReview": {
+    "desktopUnitsInReviewedContactSheets": 112,
+    "additionalViews": [
+      "chapter 4 desktop",
+      "chapter 11 desktop",
+      "chapter 16 mobile",
+      "rotation 320px"
+    ]
+  },
+  "inventory": [
+    {
+      "chapter": 1,
+      "units": [
+        {
+          "target": "opening-experiment",
+          "title": "旋转支撑的盘星系几何示意 · 非观测图像",
+          "labs": [],
+          "plots": 0,
+          "canvases": 1
+        },
+        {
+          "target": "baryon-lab",
+          "title": "让同一团气体走向不同结局",
+          "labs": [
+            "baryon-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "clocks-experiment-2",
+          "title": "给一个假想系统拨动时钟",
+          "labs": [
+            ""
+          ],
+          "plots": 1,
+          "canvases": 0
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "units": [
+        {
+          "target": "opening-experiment",
+          "title": "开篇实验",
+          "labs": [],
+          "plots": 0,
+          "canvases": 2
+        },
+        {
+          "target": "spectral-lab",
+          "title": "移动谱线，辨认红移",
+          "labs": [
+            "spectral-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "resolution-lab",
+          "title": "两个光源，何时混在一起",
+          "labs": [
+            "resolution-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "profile-lab",
+          "title": "半径里，究竟装了多少光",
+          "labs": [
+            "profile-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "survey-lab",
+          "title": "谁能进入你的巡天名单",
+          "labs": [
+            "survey-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "units": [
+        {
+          "target": "opening-experiment",
+          "title": "开篇实验",
+          "labs": [],
+          "plots": 0,
+          "canvases": 1
+        },
+        {
+          "target": "components-lab",
+          "title": "在三种组分之间，移动时间",
+          "labs": [
+            "components-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "distance-lab",
+          "title": "沿着一束光，回看宇宙",
+          "labs": [
+            "distance-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "thermal",
+          "title": "冷却的宇宙，留下不同的遗迹",
+          "labs": [],
+          "plots": 0,
+          "canvases": 1
+        },
+        {
+          "target": "inflation-lab",
+          "title": "同一把共动尺，谁在变大",
+          "labs": [
+            "inflation-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "units": [
+        {
+          "target": "opening-experiment",
+          "title": "开篇实验",
+          "labs": [],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "jeans-lab",
+          "title": "改变波长，选择振荡还是增长",
+          "labs": [
+            "jeans-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "growth-lab",
+          "title": "给同一粒种子，不同的膨胀背景",
+          "labs": [
+            "growth-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "sheet-lab",
+          "title": "同样的质量，挤进更窄的空间",
+          "labs": [
+            "sheet-lab"
+          ],
+          "plots": 0,
+          "canvases": 1
+        },
+        {
+          "target": "transfer-lab",
+          "title": "把早期的谱，传递到物质分布",
+          "labs": [
+            "transfer-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "smoothing-lab",
+          "title": "换一把平滑尺，会抹去哪种起伏",
+          "labs": [
+            "smoothing-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "units": [
+        {
+          "target": "sphere-lab",
+          "title": "一片过密区域的转身",
+          "labs": [],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "virial-lab",
+          "title": "初始运动能量，怎样改变维里估算",
+          "labs": [
+            "virial-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "orbit-lab",
+          "title": "改变速度，改写一条轨道",
+          "labs": [
+            "orbit-lab"
+          ],
+          "plots": 0,
+          "canvases": 1
+        },
+        {
+          "target": "jeans-lab",
+          "title": "给随机运动一个方向",
+          "labs": [
+            "jeans-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "relax-lab",
+          "title": "把粒子数增加几个数量级",
+          "labs": [
+            "relax-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "mix-lab",
+          "title": "让相邻轨道慢慢错开",
+          "labs": [
+            "mix-lab"
+          ],
+          "plots": 0,
+          "canvases": 1
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "units": [
+        {
+          "target": "pair-lab",
+          "title": "这一片星系，聚在一起了吗",
+          "labs": [],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "rsd-lab",
+          "title": "把速度，误读成距离",
+          "labs": [
+            "rsd-lab"
+          ],
+          "plots": 0,
+          "canvases": 1
+        },
+        {
+          "target": "kaiser-lab",
+          "title": "看向不同方向，聚集功率为何不同",
+          "labs": [
+            "kaiser-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "bias-lab",
+          "title": "相同物质场，星系起伏可以更强",
+          "labs": [
+            "bias-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "lens-lab",
+          "title": "移动光源，让一对像连成环",
+          "labs": [
+            "lens-lab"
+          ],
+          "plots": 0,
+          "canvases": 1
+        },
+        {
+          "target": "shear-lab",
+          "title": "相同轴比，不同放大率",
+          "labs": [
+            "shear-lab"
+          ],
+          "plots": 0,
+          "canvases": 1
+        },
+        {
+          "target": "cmb-lab",
+          "title": "同一理论，另一片天空",
+          "labs": [
+            "cmb-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "units": [
+        {
+          "target": "nfw-lab",
+          "title": "一座暗晕，质量藏在哪里",
+          "labs": [
+            "nfw-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "peak-lab",
+          "title": "同一片起伏，有多少个峰",
+          "labs": [
+            "peak-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "ps-lab",
+          "title": "高质量端，为何如此稀少",
+          "labs": [
+            "ps-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "walk-lab",
+          "title": "第一次越过门槛，才给它归属",
+          "labs": [
+            "walk-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "prog-lab",
+          "title": "回望更早，质量分散到哪些祖先",
+          "labs": [
+            "prog-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "hbias-lab",
+          "title": "从峰显著度，预测线性暗晕偏置",
+          "labs": [
+            "hbias-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "boundary-lab",
+          "title": "换一条边界，还是同一座暗晕",
+          "labs": [
+            "boundary-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "hpair-lab",
+          "title": "一对标记，在同一座晕里吗",
+          "labs": [
+            "hpair-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "units": [
+        {
+          "target": "shock-lab",
+          "title": "穿过激波，气体变慢、变密、变热",
+          "labs": [
+            "shock-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "radcool-lab",
+          "title": "同样的温度，密度决定冷得多快",
+          "labs": [
+            "radcool-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "compton-lab",
+          "title": "另一只时钟，不随气体密度改变",
+          "labs": [
+            "compton-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "hse-lab",
+          "title": "同一暗晕，热气体可以更平坦",
+          "labs": [
+            "hse-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "buoy-lab",
+          "title": "抬高一团气体，它会回来吗",
+          "labs": [
+            "buoy-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "cradius-lab",
+          "title": "冷却半径，是一条时标等值线",
+          "labs": [
+            "cradius-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "thermal-lab",
+          "title": "冷一点，为什么可能继续变冷",
+          "labs": [
+            "thermal-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "blast-lab",
+          "title": "一次爆炸，能量固定的扩张",
+          "labs": [
+            "blast-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "wind-lab",
+          "title": "持续注能，泡里保留多少能量",
+          "labs": [
+            "wind-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "units": [
+        {
+          "target": "jeans-lab",
+          "title": "一团冷气体，何时压不住引力",
+          "labs": [
+            "jeans-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "cloud-lab",
+          "title": "速度弥散，是支持还是坍缩线索",
+          "labs": [
+            "cloud-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "magnetic-lab",
+          "title": "磁通与质量，要一起比较",
+          "labs": [
+            "magnetic-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "efficiency-lab",
+          "title": "一个自由落体时间，并不会吃完所有气体",
+          "labs": [
+            "efficiency-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "hii-lab",
+          "title": "一颗热星，能维持多大的电离区",
+          "labs": [
+            "hii-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "ks-lab",
+          "title": "从气体面密度，到经验形成率",
+          "labs": [
+            "ks-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "imf-lab",
+          "title": "相同形成质量，恒星个数可以不同",
+          "labs": [
+            "imf-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "units": [
+        {
+          "target": "lifetime-lab",
+          "title": "用主序寿命，读一群恒星的年龄",
+          "labs": [
+            "lifetime-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "ssp-lab",
+          "title": "一场形成之后，哪些主序星仍在发光",
+          "labs": [
+            "ssp-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "sfh-lab",
+          "title": "光更年轻，还是恒星质量更年轻",
+          "labs": [
+            "sfh-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "dust-lab",
+          "title": "同一束光，被尘埃怎样改写",
+          "labs": [
+            "dust-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "closed-lab",
+          "title": "封闭箱里，气体越少越富金属",
+          "labs": [
+            "closed-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "leaky-lab",
+          "title": "同样的产额，外流为何降低有效产额",
+          "labs": [
+            "leaky-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "inflow-lab",
+          "title": "流入补回的，是哪一部分气体",
+          "labs": [
+            "inflow-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "units": [
+        {
+          "target": "disk-profile-lab",
+          "title": "一张指数盘，质量怎样累积",
+          "labs": [
+            "disk-profile-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "epicycle-lab",
+          "title": "圆周频率之外，还有径向振荡",
+          "labs": [
+            "epicycle-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "disk-spin-lab",
+          "title": "角动量保留，决定怎样的盘尺度",
+          "labs": [
+            "disk-spin-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "sheet-lab",
+          "title": "薄盘的厚度，也有自己的约定",
+          "labs": [
+            "sheet-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "toomre-lab",
+          "title": "压力、转动和自引力，怎样竞争",
+          "labs": [
+            "toomre-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "stellar-response-lab",
+          "title": "恒星不是流体，稳定条件怎样改变",
+          "labs": [
+            "stellar-response-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "winding-lab",
+          "title": "把物质线交给差动转动",
+          "labs": [
+            "winding-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "units": [
+        {
+          "target": "tidal-shock-lab",
+          "title": "一次飞掠，留下多少加热",
+          "labs": [
+            "tidal-shock-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "heat-end-lab",
+          "title": "注入能量，终态却更冷",
+          "labs": [
+            "heat-end-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "tidal-radius-lab",
+          "title": "潮汐半径，是近似边界",
+          "labs": [
+            "tidal-radius-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "drag-lab",
+          "title": "慢的和快的卫星，阻力不同",
+          "labs": [
+            "drag-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "friction-lab",
+          "title": "把局部阻力，积成轨道衰减",
+          "labs": [
+            "friction-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "ram-lab",
+          "title": "冲压，能越过盘的恢复力吗",
+          "labs": [
+            "ram-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "starvation-lab",
+          "title": "补给切断之后，星形成还能持续多久",
+          "labs": [
+            "starvation-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        }
+      ]
+    },
+    {
+      "chapter": 13,
+      "units": [
+        {
+          "target": "projection-lab",
+          "title": "同一座扁球，可以看起来多圆",
+          "labs": [
+            "projection-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "anisotropy-lab",
+          "title": "同一视向弥散，可以需要不同的质量",
+          "labs": [
+            "anisotropy-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "bh-resolution-lab",
+          "title": "黑洞影响半径，望远镜能分辨吗",
+          "labs": [
+            "bh-resolution-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "dry-merger-lab",
+          "title": "质量增加，尺寸增长可以更快",
+          "labs": [
+            "dry-merger-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "phase-proxy-lab",
+          "title": "高密度，必须连同速度一起比较",
+          "labs": [
+            "phase-proxy-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "fundamental-plane-lab",
+          "title": "基本平面的倾斜，能怎样产生",
+          "labs": [
+            "fundamental-plane-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "frosting-lab",
+          "title": "少量年轻恒星，可以占据很多光",
+          "labs": [
+            "frosting-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        }
+      ]
+    },
+    {
+      "chapter": 14,
+      "units": [
+        {
+          "target": "eddington-lab",
+          "title": "辐射压力，给出什么光度标尺",
+          "labs": [
+            "eddington-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "thin-disk-lab",
+          "title": "一张吸积盘，内侧并非越近越亮",
+          "labs": [
+            "thin-disk-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "superluminal-lab",
+          "title": "超过光速的，是表观横向位移",
+          "labs": [
+            "superluminal-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "beaming-lab",
+          "title": "相同喷流，朝向改变亮度",
+          "labs": [
+            "beaming-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "reverb-lab",
+          "title": "一次光变，怎样量出看不见的半径",
+          "labs": [
+            "reverb-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "torus-lab",
+          "title": "从极轴看，和从赤道看",
+          "labs": [
+            "torus-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "bh-growth-lab",
+          "title": "从种子开始，增长需要多少个e折",
+          "labs": [
+            "bh-growth-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "agn-feedback-lab",
+          "title": "能量充足，为什么仍不保证淬火",
+          "labs": [
+            "agn-feedback-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        }
+      ]
+    },
+    {
+      "chapter": 15,
+      "units": [
+        {
+          "target": "luminosity-lab",
+          "title": "多数星系，和多数星光，来自同一端吗",
+          "labs": [
+            "luminosity-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "counts-lab",
+          "title": "更深一等，为什么能看到更多",
+          "labs": [
+            "counts-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "matching-lab",
+          "title": "按数量排队，把星系配给暗晕",
+          "labs": [
+            "matching-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "central-lab",
+          "title": "同一条关系，两端可以有不同斜率",
+          "labs": [
+            "central-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "cosmic-sfr-lab",
+          "title": "一条宇宙形成率，来自哪些暗晕",
+          "labs": [
+            "cosmic-sfr-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "environment-lab",
+          "title": "环境相关，可能来自样本组成",
+          "labs": [
+            "environment-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "occupation-lab",
+          "title": "平均数量相同，星系对却可以不同",
+          "labs": [
+            "occupation-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "occupation-bias-lab",
+          "title": "大尺度偏倚，怎样由占据加权",
+          "labs": [
+            "occupation-bias-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        }
+      ]
+    },
+    {
+      "chapter": 16,
+      "units": [
+        {
+          "target": "transmission-lab",
+          "title": "一片黑暗，究竟意味着多少中性氢",
+          "labs": [
+            "transmission-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "photo-equilibrium-lab",
+          "title": "少量中性氢，怎样留在强辐射中",
+          "labs": [
+            "photo-equilibrium-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "ion-bubble-lab",
+          "title": "关灯后，锐边界等效体积怎样变化",
+          "labs": [
+            "ion-bubble-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "causal-front-lab",
+          "title": "有限光速，怎样推迟电离前沿",
+          "labs": [
+            "causal-front-lab"
+          ],
+          "plots": 1,
+          "canvases": 1
+        },
+        {
+          "target": "spin-21-lab",
+          "title": "21厘米信号，何时吸收、何时发射",
+          "labs": [
+            "spin-21-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "absorption-line-lab",
+          "title": "从Doppler核心，到真实Voigt阻尼翼",
+          "labs": [
+            "absorption-line-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "incidence-lab",
+          "title": "发生率不变，为何每单位红移仍改变",
+          "labs": [
+            "incidence-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "curve-of-growth-lab",
+          "title": "把同一条线，推过三个生长区间",
+          "labs": [
+            "curve-of-growth-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "forest-lab",
+          "title": "从密度起伏，到一片吸收森林",
+          "labs": [
+            "forest-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "lyman-limit-lab",
+          "title": "912Å的边缘，标记什么柱密度",
+          "labs": [
+            "lyman-limit-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "neutral-census-lab",
+          "title": "用吸收目录，数一份中性气体质量",
+          "labs": [
+            "neutral-census-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        },
+        {
+          "target": "metal-thermometer-lab",
+          "title": "两种元素的线宽，能分开温度与湍流吗",
+          "labs": [
+            "metal-thermometer-lab"
+          ],
+          "plots": 1,
+          "canvases": 0
+        }
+      ]
+    }
+  ],
+  "modelTestCommands": [
+    "node scripts/check-lensing-image.cjs",
+    "node scripts/check-late-science.cjs",
+    "node scripts/check-advanced-physics.cjs",
+    "node scripts/check-precision-physics.cjs"
+  ],
+  "limitations": "Consistency within the documented teaching assumptions; not observational calibration or a complete research simulation."
+}

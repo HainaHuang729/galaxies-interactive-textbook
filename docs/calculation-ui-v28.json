@@ -1,0 +1,252 @@
+{
+  "records": [
+    "virial pole and endpoint",
+    "drawn sample probe, pinned curves, readout snapshots, manual scan takeover",
+    "CMB histogram normalization, chi-square coverage, bins, fixed batch domain, off-page and reduced motion",
+    "absorption sum, zero channel, large optical depth, off-page animation stop",
+    "feedback diagnostics and limits"
+  ],
+  "layout": [
+    {
+      "theme": "afterglow",
+      "width": 1440,
+      "c": 6,
+      "id": "cmb-sampling-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 1440,
+      "c": 16,
+      "id": "transfer-bench-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 1440,
+      "c": 8,
+      "id": "blast-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 1440,
+      "c": 12,
+      "id": "illustration-ram-pressure-gas"
+    },
+    {
+      "theme": "afterglow",
+      "width": 1440,
+      "c": 15,
+      "id": "illustration-galaxy-group-environment"
+    },
+    {
+      "theme": "afterglow",
+      "width": 768,
+      "c": 6,
+      "id": "cmb-sampling-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 768,
+      "c": 16,
+      "id": "transfer-bench-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 768,
+      "c": 8,
+      "id": "blast-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 768,
+      "c": 12,
+      "id": "illustration-ram-pressure-gas"
+    },
+    {
+      "theme": "afterglow",
+      "width": 768,
+      "c": 15,
+      "id": "illustration-galaxy-group-environment"
+    },
+    {
+      "theme": "afterglow",
+      "width": 390,
+      "c": 6,
+      "id": "cmb-sampling-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 390,
+      "c": 16,
+      "id": "transfer-bench-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 390,
+      "c": 8,
+      "id": "blast-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 390,
+      "c": 12,
+      "id": "illustration-ram-pressure-gas"
+    },
+    {
+      "theme": "afterglow",
+      "width": 390,
+      "c": 15,
+      "id": "illustration-galaxy-group-environment"
+    },
+    {
+      "theme": "afterglow",
+      "width": 320,
+      "c": 6,
+      "id": "cmb-sampling-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 320,
+      "c": 16,
+      "id": "transfer-bench-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 320,
+      "c": 8,
+      "id": "blast-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 320,
+      "c": 12,
+      "id": "illustration-ram-pressure-gas"
+    },
+    {
+      "theme": "afterglow",
+      "width": 320,
+      "c": 15,
+      "id": "illustration-galaxy-group-environment"
+    },
+    {
+      "theme": "moon",
+      "width": 1440,
+      "c": 6,
+      "id": "cmb-sampling-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 1440,
+      "c": 16,
+      "id": "transfer-bench-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 1440,
+      "c": 8,
+      "id": "blast-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 1440,
+      "c": 12,
+      "id": "illustration-ram-pressure-gas"
+    },
+    {
+      "theme": "moon",
+      "width": 1440,
+      "c": 15,
+      "id": "illustration-galaxy-group-environment"
+    },
+    {
+      "theme": "moon",
+      "width": 768,
+      "c": 6,
+      "id": "cmb-sampling-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 768,
+      "c": 16,
+      "id": "transfer-bench-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 768,
+      "c": 8,
+      "id": "blast-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 768,
+      "c": 12,
+      "id": "illustration-ram-pressure-gas"
+    },
+    {
+      "theme": "moon",
+      "width": 768,
+      "c": 15,
+      "id": "illustration-galaxy-group-environment"
+    },
+    {
+      "theme": "moon",
+      "width": 390,
+      "c": 6,
+      "id": "cmb-sampling-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 390,
+      "c": 16,
+      "id": "transfer-bench-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 390,
+      "c": 8,
+      "id": "blast-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 390,
+      "c": 12,
+      "id": "illustration-ram-pressure-gas"
+    },
+    {
+      "theme": "moon",
+      "width": 390,
+      "c": 15,
+      "id": "illustration-galaxy-group-environment"
+    },
+    {
+      "theme": "moon",
+      "width": 320,
+      "c": 6,
+      "id": "cmb-sampling-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 320,
+      "c": 16,
+      "id": "transfer-bench-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 320,
+      "c": 8,
+      "id": "blast-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 320,
+      "c": 12,
+      "id": "illustration-ram-pressure-gas"
+    },
+    {
+      "theme": "moon",
+      "width": 320,
+      "c": 15,
+      "id": "illustration-galaxy-group-environment"
+    }
+  ],
+  "errors": []
+}

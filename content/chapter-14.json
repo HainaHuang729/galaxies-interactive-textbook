@@ -1,0 +1,569 @@
+{
+  "scope": "原创交互导读，覆盖本章主节与精选定量模型；不复刻原书全文、原图或全部推导。各实验的背景与近似分别声明，不组成一套统一研究模拟。伴读生成可复制的参数化问题，未提供在线模型回答。",
+  "number": 14,
+  "title": "活动星系",
+  "headline": "一个很小的中心，\n照亮整座星系",
+  "lede": "从吸积能量到喷流时钟，从遮蔽取向到增长预算。让每个活动核现象回到自己的尺度、守恒与观测条件。",
+  "pages": [
+    618,
+    651
+  ],
+  "labs": [
+    {
+      "id": "eddington",
+      "model": "eddington",
+      "title": "辐射压力，给出什么光度标尺",
+      "intro": "比较黑洞质量、辐射效率与Eddington比，分清供应率和保留增长率。",
+      "params": [
+        {
+          "key": "mass",
+          "label": "log₁₀ MBH / M☉",
+          "min": 6,
+          "max": 9,
+          "step": 0.1,
+          "value": 8,
+          "digits": 2
+        },
+        {
+          "key": "eps",
+          "label": "辐射效率 ε",
+          "min": 0.06,
+          "max": 0.3,
+          "step": 0.01,
+          "value": 0.1,
+          "digits": 2
+        },
+        {
+          "key": "lambda",
+          "label": "L / LEdd",
+          "min": 0.01,
+          "max": 2,
+          "step": 0.01,
+          "value": 0.3,
+          "digits": 2
+        }
+      ],
+      "values": [
+        "LEdd（erg/s）",
+        "供应 Ṁin（M☉/yr）",
+        "Schwarzschild半径（pc）"
+      ],
+      "pages": [
+        623,
+        624
+      ],
+      "formula": "LEdd=4πGMBHmpc/σT<br>Ṁin=L/(εc²)，rS=2GMBH/c²",
+      "assumptions": "完全电离纯氢、电子散射、球对称各向同性稳态参照。Eddington光度不是所有几何的硬上限；保留到黑洞的质量率还乘(1−ε)。",
+      "scene": true,
+      "ref": "MBW (2010) pp.623–624",
+      "formulaTex": [
+        "L_{\\mathrm{Edd}}=\\frac{4\\pi GM_{\\mathrm{BH}}m_pc}{\\sigma_{\\mathrm T}}",
+        "\\dot M_{\\mathrm{in}}=\\frac L{\\epsilon c^2},\\quad r_{\\mathrm S}=\\frac{2GM_{\\mathrm{BH}}}{c^2}"
+      ]
+    },
+    {
+      "id": "thin-disk",
+      "model": "thinDisk",
+      "title": "一张吸积盘，内侧并非越近越亮",
+      "intro": "改变质量、供应率和内边界，计算零力矩Newtonian薄盘的有效温度。",
+      "params": [
+        {
+          "key": "mass",
+          "label": "log₁₀ MBH / M☉",
+          "min": 6,
+          "max": 9,
+          "step": 0.1,
+          "value": 8,
+          "digits": 2
+        },
+        {
+          "key": "mdot",
+          "label": "供应 Ṁ（M☉/yr）",
+          "min": 0.01,
+          "max": 5,
+          "step": 0.01,
+          "value": 1,
+          "digits": 2
+        },
+        {
+          "key": "rin",
+          "label": "Rin / rS",
+          "min": 3,
+          "max": 9,
+          "step": 0.25,
+          "value": 3,
+          "digits": 2
+        }
+      ],
+      "values": [
+        "最高 Teff（K）",
+        "两面总光度（erg/s）",
+        "半光半径 / rS"
+      ],
+      "pages": [
+        625,
+        626
+      ],
+      "formula": "Fone face=3GMṀ[1−√(Rin/R)]/(8πR³)<br>Teff=(F/σSB)¹ᐟ⁴<br>L=∫4πRFdR=GMṀ/(2Rin)<br>Rhalf=4Rin",
+      "assumptions": "光学厚、几何薄、零内边界力矩、局部辐射，未加入GR、自旋和色修正。按式14.14对两面独立积分，得到上述总光与半光半径；与该页附近文字不一致，这不是作者勘误清单中的修正。",
+      "scene": true,
+      "ref": "MBW (2010) pp.625–626",
+      "formulaTex": [
+        "F_{\\text{one face}}(R)=\\frac{3GM\\dot M}{8\\pi R^3}\\left(1-\\sqrt{\\frac{R_{\\mathrm{in}}}R}\\right)",
+        "T_{\\mathrm{eff}}=\\left(\\frac F{\\sigma_{\\mathrm{SB}}}\\right)^{1/4}",
+        "L=\\int_{R_{\\mathrm{in}}}^\\infty4\\pi RF\\,dR=\\frac{GM\\dot M}{2R_{\\mathrm{in}}}",
+        "R_{1/2}=4R_{\\mathrm{in}}"
+      ]
+    },
+    {
+      "id": "superluminal",
+      "model": "superluminal",
+      "title": "超过光速的，是表观横向位移",
+      "intro": "改变喷流速度与视线角，比较发射时间差和到达时间差。",
+      "params": [
+        {
+          "key": "beta",
+          "label": "真实速度 β=v/c",
+          "min": 0.1,
+          "max": 0.999,
+          "step": 0.001,
+          "value": 0.99,
+          "digits": 3
+        },
+        {
+          "key": "angle",
+          "label": "视线夹角（度）",
+          "min": 0,
+          "max": 90,
+          "step": 0.5,
+          "value": 5,
+          "digits": 2
+        }
+      ],
+      "values": [
+        "vapp / c",
+        "Δtarrival / Δtemit",
+        "Lorentz γ"
+      ],
+      "pages": [
+        635,
+        636
+      ],
+      "formula": "βapp=βsinθ/(1−βcosθ)<br>Δtarrival=Δtemit(1−βcosθ)",
+      "assumptions": "静止源参考系中的直线运动团块；不含宇宙红移，观测时间差还乘(1+z)。真实物质速度始终小于c，表观横向速度来自传播时间。",
+      "scene": false,
+      "ref": "MBW (2010) pp.635–636",
+      "formulaTex": [
+        "\\beta_{\\mathrm{app}}=\\frac{\\beta\\sin\\theta}{1-\\beta\\cos\\theta}",
+        "\\Delta t_{\\mathrm{arrival}}=\\Delta t_{\\mathrm{emit}}(1-\\beta\\cos\\theta)"
+      ]
+    },
+    {
+      "id": "beaming",
+      "model": "beaming",
+      "title": "相同喷流，朝向改变亮度",
+      "intro": "固定本征幂律谱，查看离散团块的Doppler增亮和喷流/反喷流亮度比。",
+      "params": [
+        {
+          "key": "beta",
+          "label": "真实速度 β",
+          "min": 0.1,
+          "max": 0.99,
+          "step": 0.01,
+          "value": 0.9,
+          "digits": 2
+        },
+        {
+          "key": "angle",
+          "label": "视线夹角（度）",
+          "min": 0,
+          "max": 90,
+          "step": 1,
+          "value": 20,
+          "digits": 2
+        },
+        {
+          "key": "alpha",
+          "label": "F′ν∝ν⁻ᵅ 的 α",
+          "min": 0,
+          "max": 1.5,
+          "step": 0.1,
+          "value": 0.7,
+          "digits": 2
+        }
+      ],
+      "values": [
+        "Doppler D",
+        "Fν / F′ν",
+        "喷流/反喷流亮度比"
+      ],
+      "pages": [
+        636,
+        637
+      ],
+      "formula": "D=[γ(1−βcosθ)]⁻¹<br>Fν/F′ν=D^(3+α)<br>Rjet=[(1+βcosθ)/(1−βcosθ)]^(3+α)",
+      "assumptions": "采用离散团块的几何指数3；连续稳态流指数不同。图用对数纵轴，未模拟喷流加速、产生或辐射输运。",
+      "scene": false,
+      "ref": "MBW (2010) pp.636–637",
+      "formulaTex": [
+        "\\mathcal D=\\frac1{\\gamma(1-\\beta\\cos\\theta)}",
+        "\\frac{F_\\nu}{F'_\\nu}=\\mathcal D^{3+\\alpha}",
+        "R_{\\mathrm{jet}}=\\left(\\frac{1+\\beta\\cos\\theta}{1-\\beta\\cos\\theta}\\right)^{3+\\alpha}"
+      ]
+    },
+    {
+      "id": "reverb",
+      "model": "reverb",
+      "title": "一次光变，怎样量出看不见的半径",
+      "intro": "用平均延迟估计发射线区尺度，再把线宽与几何系数放入质量预算。",
+      "params": [
+        {
+          "key": "lag",
+          "label": "平均延迟（天）",
+          "min": 1,
+          "max": 100,
+          "step": 1,
+          "value": 20,
+          "digits": 2
+        },
+        {
+          "key": "v",
+          "label": "线宽 Δv（km/s）",
+          "min": 1000,
+          "max": 10000,
+          "step": 100,
+          "value": 3000,
+          "digits": 2
+        },
+        {
+          "key": "factor",
+          "label": "几何因子 f",
+          "min": 0.5,
+          "max": 5,
+          "step": 0.1,
+          "value": 1,
+          "digits": 2
+        }
+      ],
+      "values": [
+        "特征半径（pc）",
+        "维里乘积（M☉）",
+        "f校准质量（M☉）"
+      ],
+      "pages": [
+        639,
+        640
+      ],
+      "formula": "r=cτ，Mvir=cτΔv²/G<br>MBH=fMvir<br>理想均匀薄壳：响应延迟0–2τ",
+      "assumptions": "薄壳单位面积top-hat为新增几何示例，不是实际光变数据。平均延迟不等于最大延迟，质量依赖线宽定义与几何f；忽略红移、复杂传递函数和动力学。",
+      "scene": false,
+      "ref": "MBW (2010) pp.639–640",
+      "formulaTex": [
+        "r=c\\tau,\\quad M_{\\mathrm{vir}}=\\frac{c\\tau\\,\\Delta v^2}G",
+        "M_{\\mathrm{BH}}=fM_{\\mathrm{vir}},\\quad 0\\le t_{\\mathrm{delay}}\\le2\\tau"
+      ]
+    },
+    {
+      "id": "bh-growth",
+      "model": "bhGrowth",
+      "title": "从种子开始，增长需要多少个e折",
+      "intro": "把辐射损失、Eddington比与占空比分开，沿指定解析增长推进时间。",
+      "params": [
+        {
+          "key": "seed",
+          "label": "log₁₀ 种子质量 / M☉",
+          "min": 2,
+          "max": 5,
+          "step": 0.1,
+          "value": 3,
+          "digits": 2
+        },
+        {
+          "key": "lambda",
+          "label": "Eddington比",
+          "min": 0.1,
+          "max": 1,
+          "step": 0.05,
+          "value": 1,
+          "digits": 2
+        },
+        {
+          "key": "eps",
+          "label": "辐射效率 ε",
+          "min": 0.05,
+          "max": 0.3,
+          "step": 0.01,
+          "value": 0.1,
+          "digits": 2
+        },
+        {
+          "key": "duty",
+          "label": "占空比",
+          "min": 0.1,
+          "max": 1,
+          "step": 0.05,
+          "value": 1,
+          "digits": 2
+        },
+        {
+          "key": "time",
+          "label": "持续时间（Gyr）",
+          "min": 0,
+          "max": 1,
+          "step": 0.01,
+          "value": 0.5,
+          "digits": 2
+        }
+      ],
+      "values": [
+        "有效e折时间（Myr）",
+        "解析外推质量（M☉）",
+        "已过e折数"
+      ],
+      "pages": [
+        640,
+        644
+      ],
+      "formula": "tE=σTc/(4πGmp)<br>M=Mseed exp[(1−ε)λ duty t/(εtE)]",
+      "assumptions": "计入(1−ε)保留质量的扩展形式，燃料无限且各参数恒定。未解决种子形成、角动量输运、反馈与供给；极大外推质量提示假设必须失效，不是可实现预言。",
+      "scene": true,
+      "ref": "MBW (2010) pp.640–644",
+      "sweep": "time",
+      "formulaTex": [
+        "t_{\\mathrm E}=\\frac{\\sigma_{\\mathrm T}c}{4\\pi Gm_p}",
+        "M(t)=M_{\\mathrm{seed}}\\exp\\!\\left[\\frac{(1-\\epsilon)\\lambda f_{\\mathrm{duty}}t}{\\epsilon t_{\\mathrm E}}\\right]"
+      ]
+    },
+    {
+      "id": "torus",
+      "model": "torus",
+      "title": "从极轴看，和从赤道看",
+      "intro": "改变环带开口与视线方向，比较几何可见性和各向同性方向的可见比例。",
+      "params": [
+        {
+          "key": "opening",
+          "label": "从极轴起的半张角（度）",
+          "min": 10,
+          "max": 80,
+          "step": 1,
+          "value": 45,
+          "digits": 2
+        },
+        {
+          "key": "i",
+          "label": "视线/极轴夹角 i（度）",
+          "min": 0,
+          "max": 90,
+          "step": 1,
+          "value": 30,
+          "digits": 2
+        }
+      ],
+      "values": [
+        "随机方向未遮蔽比例（%）",
+        "当前视线 i（度）",
+        "广线区几何可见性"
+      ],
+      "pages": [
+        637,
+        639
+      ],
+      "formula": "i<θ₀时极向开口可见<br>Punobscured=1−cosθ₀",
+      "assumptions": "轴对称不透明环带的理想统一图式，方向均匀于cos i。示意不是望远镜成像，不包含真实环带辐射输运；取向无法解释全部分类、射电响度或吸积状态。",
+      "scene": true,
+      "ref": "MBW (2010) pp.637–639",
+      "formulaTex": [
+        "i<\\theta_0\\ \\Longrightarrow\\ \\text{unobscured broad-line sightline}",
+        "P_{\\mathrm{unobscured}}=1-\\cos\\theta_0"
+      ]
+    },
+    {
+      "id": "agn-feedback",
+      "model": "agnFeedback",
+      "title": "能量充足，为什么仍不保证淬火",
+      "intro": "把释放能量、耦合比例和指定束缚能尺度分别列账。",
+      "params": [
+        {
+          "key": "q",
+          "label": "MBH / Mgal",
+          "min": 0.0001,
+          "max": 0.005,
+          "step": 0.0001,
+          "value": 0.001,
+          "digits": 4
+        },
+        {
+          "key": "eps",
+          "label": "释放效率 ε",
+          "min": 0.05,
+          "max": 0.2,
+          "step": 0.01,
+          "value": 0.1,
+          "digits": 2
+        },
+        {
+          "key": "coupling",
+          "label": "能量耦合比例",
+          "min": 0,
+          "max": 0.1,
+          "step": 0.001,
+          "value": 0.01,
+          "digits": 3
+        },
+        {
+          "key": "sigma",
+          "label": "星系 σ（km/s）",
+          "min": 100,
+          "max": 350,
+          "step": 10,
+          "value": 300,
+          "digits": 2
+        }
+      ],
+      "values": [
+        "可用能量 / 束缚标度",
+        "耦合能量 / 束缚标度",
+        "达到1所需耦合比例"
+      ],
+      "pages": [
+        648,
+        651
+      ],
+      "formula": "Eavailable/(Mgalσ²)=ε(MBH/Mgal)(c/σ)²<br>Ecoupled=ηcoup Eavailable",
+      "assumptions": "Mgalσ²仅为明确指定的束缚标度，质量指星系参照质量。足够能量不保证逃逸或淬火；冷却、方向、时序、动量和不同反馈通道影响真实耦合。",
+      "scene": false,
+      "ref": "MBW (2010) pp.648–651",
+      "formulaTex": [
+        "\\frac{E_{\\mathrm{available}}}{M_{\\mathrm{gal}}\\sigma^2}=\\epsilon\\frac{M_{\\mathrm{BH}}}{M_{\\mathrm{gal}}}\\left(\\frac c\\sigma\\right)^2",
+        "E_{\\mathrm{coupled}}=\\eta_{\\mathrm{coup}}E_{\\mathrm{available}}"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "population",
+      "num": "14.1",
+      "title": "活动核的名字，也反映选择方法",
+      "pages": [
+        619,
+        623
+      ],
+      "paragraphs": [
+        "Seyfert、LINER、射电源、类星体与blazar的分类同时使用光谱、光度、射电性质和视线信息。不同波段样本有不同选择偏差，名称不等于一组互斥的单一物理原因。",
+        "活动核可以包含热吸积盘与非热辐射。不能把全部连续谱都称作非热，也不能仅凭亮度认定吸积几何。"
+      ],
+      "labs": []
+    },
+    {
+      "id": "engine",
+      "num": "14.2",
+      "title": "同一中心引擎，产生多种观测信号",
+      "pages": [
+        623,
+        640
+      ],
+      "paragraphs": [
+        "引力势能通过吸积释放，辐射效率和供给率决定光度。薄盘、辐射低效流与喷流使用的近似不同，单温黑体不能替代完整活动核谱。",
+        "同步辐射、逆Compton与自由—自由过程各有适用条件；允许线和禁线对密度及电离敏感，广线区、窄线区与遮蔽区也不是同一尺度。喷流的相对论运动改变到达时间与亮度，但本页不求解其MHD产生。",
+        "统一图式把取向与遮蔽连接起来，偏振和反响等方法提供互补证据。书中2010年的黑洞检验在此作为历史理论框架，不作为当前观测证据的完整清单。"
+      ],
+      "labs": [
+        "eddington",
+        "thin-disk",
+        "superluminal",
+        "beaming",
+        "reverb",
+        "torus"
+      ]
+    },
+    {
+      "id": "evolution",
+      "num": "14.3",
+      "title": "增长既需要燃料，也需要失去角动量",
+      "pages": [
+        640,
+        648
+      ],
+      "paragraphs": [
+        "种子质量、辐射效率和占空比共同影响能否在给定时间增长。更大的供给率不能绕过角动量输运，合并力矩也不是唯一供给途径。Bondi球吸积只是对特殊边界条件的近似。",
+        "活动核光度函数、选择函数和积分辐射能可以约束增长史，却依赖遮蔽、效率与族群假设。占空比不同于黑洞占有率；本页没有虚构观测光度函数或给出当前种子形成定论。"
+      ],
+      "labs": [
+        "bh-growth"
+      ]
+    },
+    {
+      "id": "feedback",
+      "num": "14.4",
+      "title": "反馈，要把供应与耦合分开",
+      "pages": [
+        648,
+        651
+      ],
+      "paragraphs": [
+        "辐射可以光电离、Compton加热并传递动量；喷流和风则可通过机械作用改变气体。不同通道的冷却损失和几何耦合不同，释放能量不等于均匀沉积能量。",
+        "单次吸收的动量预算与能量预算也不同。气泡的膨胀可联读第8章，但不能据此宣布任何足够亮的活动核都能停止全部恒星形成。"
+      ],
+      "labs": [
+        "agn-feedback"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Ṁin是否全部增加黑洞质量？",
+      "options": [
+        "是",
+        "否，辐射损失后保留率为(1−ε)Ṁin"
+      ],
+      "answer": 1,
+      "why": "供应与保留质量的定义不同。"
+    },
+    {
+      "q": "本页零力矩薄盘两面总光度是多少？",
+      "options": [
+        "GMṀ/(2Rin)",
+        "GMṀ/Rin"
+      ],
+      "answer": 0,
+      "why": "对式14.14两面面积积分得到前者。"
+    },
+    {
+      "q": "表观超光速意味着物质超过c吗？",
+      "options": [
+        "意味着",
+        "不意味着"
+      ],
+      "answer": 1,
+      "why": "到达时间差缩短会放大表观横向速度。"
+    },
+    {
+      "q": "薄球壳平均延迟τ对应最大延迟多少？",
+      "options": [
+        "τ",
+        "2τ"
+      ],
+      "answer": 1,
+      "why": "近侧与远侧分别给0和2r/c。"
+    },
+    {
+      "q": "各向同性方向应均匀抽样什么？",
+      "options": [
+        "i",
+        "cos i"
+      ],
+      "answer": 1,
+      "why": "立体角测度决定方向概率。"
+    },
+    {
+      "q": "耦合能量超过指定束缚标度，能保证淬火吗？",
+      "options": [
+        "不能",
+        "能"
+      ],
+      "answer": 0,
+      "why": "还涉及冷却、动量、几何与气体供应。"
+    }
+  ],
+  "errata": "薄盘实验独立积分式14.14，采用两面L=GMṀ/(2Rin)、Rhalf=4Rin；明确标注这是对附近文字内部矛盾的处理，未冒称作者勘误。"
+}

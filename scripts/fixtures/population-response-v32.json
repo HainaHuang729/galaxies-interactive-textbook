@@ -1,0 +1,2572 @@
+{
+  "scope": "Independent Python Decimal80/math oracle, no repository module imports.",
+  "references": [
+    {
+      "title": "MBW 2010 §9.6 and §9.6.1",
+      "printedPages": [
+        440,
+        441,
+        442
+      ],
+      "pdfPages": [
+        462,
+        463,
+        464
+      ],
+      "supports": "IMF normalization conventions, logarithmic Jacobian, Salpeter slope and low-mass departures."
+    },
+    {
+      "title": "MBW 2010 §10.3.2 Spectral Synthesis Eq10.77–10.78",
+      "printedPages": [
+        471
+      ],
+      "pdfPages": [
+        493
+      ],
+      "supports": "Convolution of star formation history and coeval-population luminosity per initial mass."
+    },
+    {
+      "title": "MBW 2010 §10.3.8 Star-Formation Diagnostics",
+      "printedPages": [
+        482,
+        483
+      ],
+      "pdfPages": [
+        504,
+        505
+      ],
+      "supports": "UV/Halpha calibration relies on stellar populations, IMF, timescales and obscuration; not identical to chosen normalized teaching kernels."
+    },
+    {
+      "title": "Salpeter (1955), The Luminosity Function and Stellar Evolution, original paper",
+      "url": "https://articles.adsabs.harvard.edu/pdf/1955ApJ...121..161S",
+      "supports": "Original mass-function inference and logarithmic slope−1.35, equivalent to linear-mass slope−2.35; not an observation proving a single power law across0.1–100Msun."
+    },
+    {
+      "title": "Bruzual & Charlot (2003), §2.3 Eq1",
+      "url": "https://arxiv.org/pdf/astro-ph/0309134",
+      "supports": "Linear superposition/convolution of SSP spectra with arbitrary SFH, assuming time-independent IMF."
+    },
+    {
+      "title": "GALAXEV author-maintained official model page",
+      "url": "https://www2.iap.fr/users/charlot/bc2003/index.html",
+      "supports": "SSP models and software for arbitrary star-formation histories; physical SPS is distinct from an arbitrary normalized exponential kernel."
+    }
+  ],
+  "imfTheoryCases": [
+    {
+      "alpha": 1,
+      "Jnumber": 6.907755278982137,
+      "Jmass": 99.9,
+      "meanInitialMass_Msun": 14.462006247378286,
+      "numberTailProbabilityAbove20": 0.2329900014453396,
+      "initialMassTailFractionAbove20": 0.8008008008008008,
+      "bins": [
+        {
+          "lo_Msun": 0.1,
+          "hi_Msun": 0.23713737056616552,
+          "numberFraction": 0.125,
+          "initialMassFraction": 0.001372746452113769
+        },
+        {
+          "lo_Msun": 0.23713737056616552,
+          "hi_Msun": 0.5623413251903491,
+          "numberFraction": 0.125,
+          "initialMassFraction": 0.0032552948410829183
+        },
+        {
+          "lo_Msun": 0.5623413251903491,
+          "hi_Msun": 1.333521432163324,
+          "numberFraction": 0.125,
+          "initialMassFraction": 0.007719520590320069
+        },
+        {
+          "lo_Msun": 1.333521432163324,
+          "hi_Msun": 3.1622776601683795,
+          "numberFraction": 0.125,
+          "initialMassFraction": 0.01830586814819875
+        },
+        {
+          "lo_Msun": 3.1622776601683795,
+          "hi_Msun": 7.498942093324558,
+          "numberFraction": 0.125,
+          "initialMassFraction": 0.043410054385947736
+        },
+        {
+          "lo_Msun": 7.498942093324558,
+          "hi_Msun": 17.78279410038923,
+          "numberFraction": 0.125,
+          "initialMassFraction": 0.10294146153217888
+        },
+        {
+          "lo_Msun": 17.78279410038923,
+          "hi_Msun": 42.169650342858226,
+          "numberFraction": 0.125,
+          "initialMassFraction": 0.24411267509978976
+        },
+        {
+          "lo_Msun": 42.169650342858226,
+          "hi_Msun": 100,
+          "numberFraction": 0.125,
+          "initialMassFraction": 0.5788823789503681
+        }
+      ],
+      "quantiles": [
+        {
+          "U": 0,
+          "mass_Msun": 0.1,
+          "cdfBack": 0,
+          "cdfAbsoluteResidual": 0
+        },
+        {
+          "U": 1.1641532182693481e-10,
+          "mass_Msun": 0.10000000008041686,
+          "cdfBack": 1.1641532182693481e-10,
+          "cdfAbsoluteResidual": 3.01986509e-81
+        },
+        {
+          "U": 0.000001,
+          "mass_Msun": 0.10000069077791376,
+          "cdfBack": 0.000001,
+          "cdfAbsoluteResidual": 7.367e-82
+        },
+        {
+          "U": 0.1,
+          "mass_Msun": 0.19952623149688797,
+          "cdfBack": 0.1,
+          "cdfAbsoluteResidual": 0
+        },
+        {
+          "U": 0.5,
+          "mass_Msun": 3.1622776601683795,
+          "cdfBack": 0.5,
+          "cdfAbsoluteResidual": 0
+        },
+        {
+          "U": 0.9,
+          "mass_Msun": 50.11872336272723,
+          "cdfBack": 0.9,
+          "cdfAbsoluteResidual": 1e-80
+        },
+        {
+          "U": 0.999999,
+          "mass_Msun": 99.99930922685795,
+          "cdfBack": 0.999999,
+          "cdfAbsoluteResidual": 0
+        },
+        {
+          "U": 0.9999999998835847,
+          "mass_Msun": 99.99999991958315,
+          "cdfBack": 0.9999999998835847,
+          "cdfAbsoluteResidual": 0
+        },
+        {
+          "U": 1,
+          "mass_Msun": 100,
+          "cdfBack": 1,
+          "cdfAbsoluteResidual": 0
+        }
+      ],
+      "populationExpectations": [
+        {
+          "N": 20,
+          "probabilityAtLeastOneAbove20": 0.9950338422951934,
+          "expectedTailCount": 4.659800028906792,
+          "expectedTotalInitialMass_Msun": 289.24012494756573
+        },
+        {
+          "N": 200,
+          "probabilityAtLeastOneAbove20": 1,
+          "expectedTailCount": 46.59800028906792,
+          "expectedTotalInitialMass_Msun": 2892.401249475657
+        },
+        {
+          "N": 2000,
+          "probabilityAtLeastOneAbove20": 1,
+          "expectedTailCount": 465.9800028906792,
+          "expectedTotalInitialMass_Msun": 28924.01249475657
+        }
+      ]
+    },
+    {
+      "alpha": 2,
+      "Jnumber": 9.99,
+      "Jmass": 6.907755278982137,
+      "meanInitialMass_Msun": 0.6914669948931068,
+      "numberTailProbabilityAbove20": 0.004004004004004004,
+      "initialMassTailFractionAbove20": 0.2329900014453396,
+      "bins": [
+        {
+          "lo_Msun": 0.1,
+          "hi_Msun": 0.23713737056616552,
+          "numberFraction": 0.5788823789503681,
+          "initialMassFraction": 0.125
+        },
+        {
+          "lo_Msun": 0.23713737056616552,
+          "hi_Msun": 0.5623413251903491,
+          "numberFraction": 0.24411267509978976,
+          "initialMassFraction": 0.125
+        },
+        {
+          "lo_Msun": 0.5623413251903491,
+          "hi_Msun": 1.333521432163324,
+          "numberFraction": 0.10294146153217888,
+          "initialMassFraction": 0.125
+        },
+        {
+          "lo_Msun": 1.333521432163324,
+          "hi_Msun": 3.1622776601683795,
+          "numberFraction": 0.043410054385947736,
+          "initialMassFraction": 0.125
+        },
+        {
+          "lo_Msun": 3.1622776601683795,
+          "hi_Msun": 7.498942093324558,
+          "numberFraction": 0.01830586814819875,
+          "initialMassFraction": 0.125
+        },
+        {
+          "lo_Msun": 7.498942093324558,
+          "hi_Msun": 17.78279410038923,
+          "numberFraction": 0.007719520590320069,
+          "initialMassFraction": 0.125
+        },
+        {
+          "lo_Msun": 17.78279410038923,
+          "hi_Msun": 42.169650342858226,
+          "numberFraction": 0.0032552948410829183,
+          "initialMassFraction": 0.125
+        },
+        {
+          "lo_Msun": 42.169650342858226,
+          "hi_Msun": 100,
+          "numberFraction": 0.001372746452113769,
+          "initialMassFraction": 0.125
+        }
+      ],
+      "quantiles": [
+        {
+          "U": 0,
+          "mass_Msun": 0.1,
+          "cdfBack": 0,
+          "cdfAbsoluteResidual": 0
+        },
+        {
+          "U": 1.1641532182693481e-10,
+          "mass_Msun": 0.1000000000116299,
+          "cdfBack": 1.1641532182693481e-10,
+          "cdfAbsoluteResidual": 3.003003003e-80
+        },
+        {
+          "U": 0.000001,
+          "mass_Msun": 0.1000000999000998,
+          "cdfBack": 0.000001,
+          "cdfAbsoluteResidual": 4.004004e-80
+        },
+        {
+          "U": 0.1,
+          "mass_Msun": 0.11109876680368848,
+          "cdfBack": 0.1,
+          "cdfAbsoluteResidual": 4e-80
+        },
+        {
+          "U": 0.5,
+          "mass_Msun": 0.1998001998001998,
+          "cdfBack": 0.5,
+          "cdfAbsoluteResidual": 1e-80
+        },
+        {
+          "U": 0.9,
+          "mass_Msun": 0.9910802775024777,
+          "cdfBack": 0.9,
+          "cdfAbsoluteResidual": 0
+        },
+        {
+          "U": 0.999999,
+          "mass_Msun": 99.9001997004992,
+          "cdfBack": 0.999999,
+          "cdfAbsoluteResidual": 0
+        },
+        {
+          "U": 0.9999999998835847,
+          "mass_Msun": 99.9999883701107,
+          "cdfBack": 0.9999999998835847,
+          "cdfAbsoluteResidual": 0
+        },
+        {
+          "U": 1,
+          "mass_Msun": 100,
+          "cdfBack": 1,
+          "cdfAbsoluteResidual": 0
+        }
+      ],
+      "populationExpectations": [
+        {
+          "N": 20,
+          "probabilityAtLeastOneAbove20": 0.07710594076995655,
+          "expectedTailCount": 0.08008008008008008,
+          "expectedTotalInitialMass_Msun": 13.829339897862136
+        },
+        {
+          "N": 200,
+          "probabilityAtLeastOneAbove20": 0.5517518519389224,
+          "expectedTailCount": 0.8008008008008008,
+          "expectedTotalInitialMass_Msun": 138.29339897862135
+        },
+        {
+          "N": 2000,
+          "probabilityAtLeastOneAbove20": 0.9996725198056292,
+          "expectedTailCount": 8.008008008008009,
+          "expectedTotalInitialMass_Msun": 1382.9339897862137
+        }
+      ]
+    },
+    {
+      "alpha": 2.35,
+      "Jnumber": 16.5816415728655,
+      "Jmass": 5.82627116306129,
+      "meanInitialMass_Msun": 0.35136877959028534,
+      "numberTailProbabilityAbove20": 0.0006936622706301906,
+      "initialMassTailFractionAbove20": 0.07401676572099586,
+      "bins": [
+        {
+          "lo_Msun": 0.1,
+          "hi_Msun": 0.23713737056616552,
+          "numberFraction": 0.6883518770676077,
+          "initialMassFraction": 0.28634047515532496
+        },
+        {
+          "lo_Msun": 0.23713737056616552,
+          "hi_Msun": 0.5623413251903491,
+          "numberFraction": 0.21456580039739154,
+          "initialMassFraction": 0.21165705121983547
+        },
+        {
+          "lo_Msun": 0.5623413251903491,
+          "hi_Msun": 1.333521432163324,
+          "numberFraction": 0.06688219242794556,
+          "initialMassFraction": 0.1564525843116488
+        },
+        {
+          "lo_Msun": 1.333521432163324,
+          "hi_Msun": 3.1622776601683795,
+          "numberFraction": 0.02084781291186198,
+          "initialMassFraction": 0.1156465659741728
+        },
+        {
+          "lo_Msun": 3.1622776601683795,
+          "hi_Msun": 7.498942093324558,
+          "numberFraction": 0.006498460762575059,
+          "initialMassFraction": 0.0854835877621417
+        },
+        {
+          "lo_Msun": 7.498942093324558,
+          "hi_Msun": 17.78279410038923,
+          "numberFraction": 0.00202563177544152,
+          "initialMassFraction": 0.06318772818831252
+        },
+        {
+          "lo_Msun": 17.78279410038923,
+          "hi_Msun": 42.169650342858226,
+          "numberFraction": 0.0006314086119145004,
+          "initialMassFraction": 0.046707082588879296
+        },
+        {
+          "lo_Msun": 42.169650342858226,
+          "hi_Msun": 100,
+          "numberFraction": 0.00019681604526217405,
+          "initialMassFraction": 0.03452492479968446
+        }
+      ],
+      "quantiles": [
+        {
+          "U": 0,
+          "mass_Msun": 0.1,
+          "cdfBack": 0,
+          "cdfAbsoluteResidual": 0
+        },
+        {
+          "U": 1.1641532182693481e-10,
+          "mass_Msun": 0.1000000000086226,
+          "cdfBack": 1.1641532182693481e-10,
+          "cdfAbsoluteResidual": 1.5438114465e-79
+        },
+        {
+          "U": 0.000001,
+          "mass_Msun": 0.10000007406753668,
+          "cdfBack": 0.000001,
+          "cdfAbsoluteResidual": 5.8321e-81
+        },
+        {
+          "U": 0.1,
+          "mass_Msun": 0.10811631918544733,
+          "cdfBack": 0.1,
+          "cdfAbsoluteResidual": 3e-80
+        },
+        {
+          "U": 0.5,
+          "mass_Msun": 0.16709232873387472,
+          "cdfBack": 0.5,
+          "cdfAbsoluteResidual": 1e-80
+        },
+        {
+          "U": 0.9,
+          "mass_Msun": 0.5501521323603323,
+          "cdfBack": 0.9,
+          "cdfAbsoluteResidual": 2e-80
+        },
+        {
+          "U": 0.999999,
+          "mass_Msun": 99.17698206207383,
+          "cdfBack": 0.999999,
+          "cdfAbsoluteResidual": 5e-80
+        },
+        {
+          "U": 0.9999999998835847,
+          "mass_Msun": 99.99990325307448,
+          "cdfBack": 0.9999999998835847,
+          "cdfAbsoluteResidual": 2e-80
+        },
+        {
+          "U": 1,
+          "mass_Msun": 100,
+          "cdfBack": 1,
+          "cdfAbsoluteResidual": 0
+        }
+      ],
+      "populationExpectations": [
+        {
+          "N": 20,
+          "probabilityAtLeastOneAbove20": 0.013782202992785313,
+          "expectedTailCount": 0.013873245412603813,
+          "expectedTotalInitialMass_Msun": 7.027375591805707
+        },
+        {
+          "N": 200,
+          "probabilityAtLeastOneAbove20": 0.12958101658041507,
+          "expectedTailCount": 0.13873245412603813,
+          "expectedTotalInitialMass_Msun": 70.27375591805706
+        },
+        {
+          "N": 2000,
+          "probabilityAtLeastOneAbove20": 0.7503776070667657,
+          "expectedTailCount": 1.3873245412603812,
+          "expectedTotalInitialMass_Msun": 702.7375591805707
+        }
+      ]
+    },
+    {
+      "alpha": 3.2,
+      "Jnumber": 72.04058156154287,
+      "Jmass": 13.204125710754667,
+      "meanInitialMass_Msun": 0.18328732812178425,
+      "numberTailProbabilityAbove20": 0.000008413124009569576,
+      "initialMassTailFractionAbove20": 0.0014820457377948723,
+      "bins": [
+        {
+          "lo_Msun": 0.1,
+          "hi_Msun": 0.23713737056616552,
+          "numberFraction": 0.850376647995513,
+          "initialMassFraction": 0.6453487150345133
+        },
+        {
+          "lo_Msun": 0.23713737056616552,
+          "hi_Msun": 0.5623413251903491,
+          "numberFraction": 0.12723638618409516,
+          "initialMassFraction": 0.22897836481892853
+        },
+        {
+          "lo_Msun": 0.5623413251903491,
+          "hi_Msun": 1.333521432163324,
+          "numberFraction": 0.01903756177612443,
+          "initialMassFraction": 0.08124458968256613
+        },
+        {
+          "lo_Msun": 1.333521432163324,
+          "hi_Msun": 3.1622776601683795,
+          "numberFraction": 0.0028484678734537845,
+          "initialMassFraction": 0.028826668222162465
+        },
+        {
+          "lo_Msun": 3.1622776601683795,
+          "hi_Msun": 7.498942093324558,
+          "numberFraction": 0.0004261979197501039,
+          "initialMassFraction": 0.010228087852217271
+        },
+        {
+          "lo_Msun": 7.498942093324558,
+          "hi_Msun": 17.78279410038923,
+          "numberFraction": 0.00006376925240833793,
+          "initialMassFraction": 0.0036290625162239713
+        },
+        {
+          "lo_Msun": 17.78279410038923,
+          "hi_Msun": 42.169650342858226,
+          "numberFraction": 0.000009541382921584104,
+          "initialMassFraction": 0.0012876399711219547
+        },
+        {
+          "lo_Msun": 42.169650342858226,
+          "hi_Msun": 100,
+          "numberFraction": 0.0000014276157335724614,
+          "initialMassFraction": 0.000456871902266404
+        }
+      ],
+      "quantiles": [
+        {
+          "U": 0,
+          "mass_Msun": 0.1,
+          "cdfBack": 0,
+          "cdfAbsoluteResidual": 0
+        },
+        {
+          "U": 1.1641532182693481e-10,
+          "mass_Msun": 0.1000000000052916,
+          "cdfBack": 1.1641532182693481e-10,
+          "cdfAbsoluteResidual": 5.938872173e-80
+        },
+        {
+          "U": 0.000001,
+          "mass_Msun": 0.10000004545456709,
+          "cdfBack": 0.000001,
+          "cdfAbsoluteResidual": 2.750981e-80
+        },
+        {
+          "U": 0.1,
+          "mass_Msun": 0.10490564391662524,
+          "cdfBack": 0.1,
+          "cdfAbsoluteResidual": 1.2e-79
+        },
+        {
+          "U": 0.5,
+          "mass_Msun": 0.13703508282580593,
+          "cdfBack": 0.5,
+          "cdfAbsoluteResidual": 4e-80
+        },
+        {
+          "U": 0.9,
+          "mass_Msun": 0.28480329418277095,
+          "cdfBack": 0.9,
+          "cdfAbsoluteResidual": 1e-80
+        },
+        {
+          "U": 0.999999,
+          "mass_Msun": 48.19867876432744,
+          "cdfBack": 0.999999,
+          "cdfAbsoluteResidual": 3e-80
+        },
+        {
+          "U": 0.9999999998835847,
+          "mass_Msun": 99.97894084211177,
+          "cdfBack": 0.9999999998835847,
+          "cdfAbsoluteResidual": 0
+        },
+        {
+          "U": 1,
+          "mass_Msun": 100,
+          "cdfBack": 1,
+          "cdfAbsoluteResidual": 0
+        }
+      ],
+      "populationExpectations": [
+        {
+          "N": 20,
+          "probabilityAtLeastOneAbove20": 0.00016824903254565772,
+          "expectedTailCount": 0.00016826248019139153,
+          "expectedTotalInitialMass_Msun": 3.665746562435685
+        },
+        {
+          "N": 200,
+          "probabilityAtLeastOneAbove20": 0.0016812170486553903,
+          "expectedTailCount": 0.0016826248019139152,
+          "expectedTotalInitialMass_Msun": 36.65746562435685
+        },
+        {
+          "N": 2000,
+          "probabilityAtLeastOneAbove20": 0.016685546961157698,
+          "expectedTailCount": 0.016826248019139154,
+          "expectedTotalInitialMass_Msun": 366.5746562435685
+        }
+      ]
+    }
+  ],
+  "deterministicSampleCases": [
+    {
+      "alpha": 1,
+      "seed": 0,
+      "N": 20,
+      "firstStatesUnsigned": [
+        1359758873,
+        3761132862,
+        2075758394,
+        25405621,
+        3862129951,
+        4186559031,
+        3122997712,
+        4244368831,
+        2831543865,
+        3042595768,
+        445164014,
+        4179142836
+      ],
+      "firstUniforms": [
+        0.3165935337310657,
+        0.8757069852435961,
+        0.48330016306135803,
+        0.005915207206271589,
+        0.8992222024826333,
+        0.974759233999066,
+        0.7271295675309375,
+        0.9882191269425675,
+        0.659270180738531,
+        0.7084095311583951,
+        0.10364782402757555,
+        0.9730325165437534
+      ],
+      "allInitialMasses_Msun": [
+        0.890800805753245,
+        42.37609716496188,
+        2.8177372231837134,
+        0.10417070937898236,
+        49.8501658400326,
+        83.99969361528574,
+        15.184087668937075,
+        92.18438885347814,
+        9.501901897234,
+        13.342235238335284,
+        0.20461782881300677,
+        83.00371864811744
+      ],
+      "numberCountsByBin": [
+        5,
+        0,
+        3,
+        3,
+        0,
+        3,
+        0,
+        6
+      ],
+      "massByBin_Msun": [
+        0.7442080176556153,
+        0,
+        2.1978575853607705,
+        7.173426175949267,
+        0,
+        38.02822480450636,
+        0,
+        427.56604216494924
+      ],
+      "sampleTotalInitialMass_Msun": 475.7097587484213,
+      "sampleMeanInitialMass_Msun": 23.785487937421063,
+      "sampleMaxInitialMass_Msun": 92.18438885347814,
+      "sampleTailCountAbove20": 6,
+      "sampleTailMassFractionAbove20": 0.8987960290952686
+    },
+    {
+      "alpha": 1,
+      "seed": 42,
+      "N": 20,
+      "firstStatesUnsigned": [
+        1369506609,
+        1227121042,
+        1742610489,
+        3639831413,
+        103786203,
+        2892188545,
+        1735534600,
+        1813258001,
+        289363370,
+        2328323471,
+        2829082676,
+        812711559
+      ],
+      "firstUniforms": [
+        0.3188631053781137,
+        0.2857113821664825,
+        0.4057331219082698,
+        0.8474642907967791,
+        0.024164608563296497,
+        0.673390120617114,
+        0.4040856381179765,
+        0.4221820275997743,
+        0.06737265980336815,
+        0.5421050525037572,
+        0.6586971405195072,
+        0.18922415550332516
+      ],
+      "allInitialMasses_Msun": [
+        0.904876513697058,
+        0.7196712384120466,
+        1.6489191649478163,
+        34.86525712451057,
+        0.11816635128635954,
+        10.475393885265628,
+        1.630260155812738,
+        1.8473368046181737,
+        0.15926413214581228,
+        4.22975446469341,
+        9.46436370854584,
+        0.3695493702305097
+      ],
+      "numberCountsByBin": [
+        4,
+        2,
+        3,
+        5,
+        1,
+        2,
+        3,
+        0
+      ],
+      "massByBin_Msun": [
+        0.5015254595808936,
+        0.7170902635167213,
+        2.5984511268982415,
+        10.040844072188086,
+        4.22975446469341,
+        19.939757593811468,
+        90.71346528948413,
+        0
+      ],
+      "sampleTotalInitialMass_Msun": 128.74088827017295,
+      "sampleMeanInitialMass_Msun": 6.437044413508647,
+      "sampleMaxInitialMass_Msun": 37.478537190709645,
+      "sampleTailCountAbove20": 2,
+      "sampleTailMassFractionAbove20": 0.5619333165031535
+    },
+    {
+      "alpha": 1,
+      "seed": 999,
+      "N": 20,
+      "firstStatesUnsigned": [
+        1592581856,
+        1663513464,
+        742804060,
+        1153082266,
+        167023678,
+        4111477095,
+        4155154009,
+        677142857,
+        718765331,
+        1809484425,
+        1811762764,
+        2225161622
+      ],
+      "firstUniforms": [
+        0.37080185872036964,
+        0.3873169106664136,
+        0.17294754751492292,
+        0.26847288629505783,
+        0.038888230570591986,
+        0.9572778585134074,
+        0.9674471825128421,
+        0.15765960735734552,
+        0.16735059476923198,
+        0.4213034234708175,
+        0.4218338906066492,
+        0.5180858128005639
+      ],
+      "allInitialMasses_Msun": [
+        1.2954050213315698,
+        1.4519468939235485,
+        0.3302498602774895,
+        0.6388790673901299,
+        0.13081715253344445,
+        74.44466424615017,
+        79.8622510863034,
+        0.29715211250045787,
+        0.3177252896629991,
+        1.8361589353376957,
+        1.8428995832130164,
+        3.583087702243109
+      ],
+      "numberCountsByBin": [
+        1,
+        5,
+        5,
+        4,
+        2,
+        0,
+        0,
+        3
+      ],
+      "massByBin_Msun": [
+        0.13081715253344445,
+        1.5507771156991437,
+        4.9531668289670385,
+        7.611885215816668,
+        10.015905633789691,
+        0,
+        0,
+        214.09482006641485
+      ],
+      "sampleTotalInitialMass_Msun": 238.35737201322084,
+      "sampleMeanInitialMass_Msun": 11.917868600661043,
+      "sampleMaxInitialMass_Msun": 79.8622510863034,
+      "sampleTailCountAbove20": 3,
+      "sampleTailMassFractionAbove20": 0.8982093495079304
+    },
+    {
+      "alpha": 2,
+      "seed": 0,
+      "N": 20,
+      "firstStatesUnsigned": [
+        1359758873,
+        3761132862,
+        2075758394,
+        25405621,
+        3862129951,
+        4186559031,
+        3122997712,
+        4244368831,
+        2831543865,
+        3042595768,
+        445164014,
+        4179142836
+      ],
+      "firstUniforms": [
+        0.3165935337310657,
+        0.8757069852435961,
+        0.48330016306135803,
+        0.005915207206271589,
+        0.8992222024826333,
+        0.974759233999066,
+        0.7271295675309375,
+        0.9882191269425675,
+        0.659270180738531,
+        0.7084095311583951,
+        0.10364782402757555,
+        0.9730325165437534
+      ],
+      "allInitialMasses_Msun": [
+        0.14625804785472904,
+        0.7989216364005333,
+        0.193355105428225,
+        0.10059444193085243,
+        0.9835064036645642,
+        3.814533529419691,
+        0.3655003328817129,
+        7.831410295742518,
+        0.2929209019637654,
+        0.3421155789468062,
+        0.11155039361170557,
+        3.579031972687418
+      ],
+      "numberCountsByBin": [
+        11,
+        3,
+        2,
+        1,
+        2,
+        1,
+        0,
+        0
+      ],
+      "massByBin_Msun": [
+        1.5037629304367224,
+        1.0005368137922845,
+        1.7824280400650976,
+        2.4752374645697777,
+        7.3935655021071085,
+        7.831410295742518,
+        0,
+        0
+      ],
+      "sampleTotalInitialMass_Msun": 21.986941046713508,
+      "sampleMeanInitialMass_Msun": 1.0993470523356754,
+      "sampleMaxInitialMass_Msun": 7.831410295742518,
+      "sampleTailCountAbove20": 0,
+      "sampleTailMassFractionAbove20": 0
+    },
+    {
+      "alpha": 2,
+      "seed": 42,
+      "N": 20,
+      "firstStatesUnsigned": [
+        1369506609,
+        1227121042,
+        1742610489,
+        3639831413,
+        103786203,
+        2892188545,
+        1735534600,
+        1813258001,
+        289363370,
+        2328323471,
+        2829082676,
+        812711559
+      ],
+      "firstUniforms": [
+        0.3188631053781137,
+        0.2857113821664825,
+        0.4057331219082698,
+        0.8474642907967791,
+        0.024164608563296497,
+        0.673390120617114,
+        0.4040856381179765,
+        0.4221820275997743,
+        0.06737265980336815,
+        0.5421050525037572,
+        0.6586971405195072,
+        0.18922415550332516
+      ],
+      "allInitialMasses_Msun": [
+        0.1467446695784211,
+        0.13994345432162375,
+        0.1681597539794457,
+        0.6519619963652679,
+        0.10247376211107302,
+        0.3055457132034354,
+        0.1676956337940935,
+        0.17293852603327248,
+        0.10721621836339548,
+        0.21813245557713026,
+        0.29243053221572385,
+        0.12330987346495668
+      ],
+      "numberCountsByBin": [
+        15,
+        3,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "massByBin_Msun": [
+        2.1933740038633633,
+        1.0043906989333293,
+        1.3516033005357766,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sampleTotalInitialMass_Msun": 4.549368003332469,
+      "sampleMeanInitialMass_Msun": 0.22746840016662345,
+      "sampleMaxInitialMass_Msun": 0.6996413041705087,
+      "sampleTailCountAbove20": 0,
+      "sampleTailMassFractionAbove20": 0
+    },
+    {
+      "alpha": 2,
+      "seed": 999,
+      "N": 20,
+      "firstStatesUnsigned": [
+        1592581856,
+        1663513464,
+        742804060,
+        1153082266,
+        167023678,
+        4111477095,
+        4155154009,
+        677142857,
+        718765331,
+        1809484425,
+        1811762764,
+        2225161622
+      ],
+      "firstUniforms": [
+        0.37080185872036964,
+        0.3873169106664136,
+        0.17294754751492292,
+        0.26847288629505783,
+        0.038888230570591986,
+        0.9572778585134074,
+        0.9674471825128421,
+        0.15765960735734552,
+        0.16735059476923198,
+        0.4213034234708175,
+        0.4218338906066492,
+        0.5180858128005639
+      ],
+      "allInitialMasses_Msun": [
+        0.15883883900229895,
+        0.16311340260674578,
+        0.1208860366183873,
+        0.13665018187088016,
+        0.10404196179135997,
+        2.289407723347045,
+        2.9832700005641786,
+        0.11869463642430468,
+        0.12007443330180609,
+        0.17267641608332945,
+        0.1728345727918536,
+        0.2072829816620986
+      ],
+      "numberCountsByBin": [
+        16,
+        1,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "massByBin_Msun": [
+        2.348054647456771,
+        0.2513811000078754,
+        1.3264752822716295,
+        5.272677723911224,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sampleTotalInitialMass_Msun": 9.198588753647499,
+      "sampleMeanInitialMass_Msun": 0.459929437682375,
+      "sampleMaxInitialMass_Msun": 2.9832700005641786,
+      "sampleTailCountAbove20": 0,
+      "sampleTailMassFractionAbove20": 0
+    },
+    {
+      "alpha": 2.35,
+      "seed": 0,
+      "N": 20,
+      "firstStatesUnsigned": [
+        1359758873,
+        3761132862,
+        2075758394,
+        25405621,
+        3862129951,
+        4186559031,
+        3122997712,
+        4244368831,
+        2831543865,
+        3042595768,
+        445164014,
+        4179142836
+      ],
+      "firstUniforms": [
+        0.3165935337310657,
+        0.8757069852435961,
+        0.48330016306135803,
+        0.005915207206271589,
+        0.8992222024826333,
+        0.974759233999066,
+        0.7271295675309375,
+        0.9882191269425675,
+        0.659270180738531,
+        0.7084095311583951,
+        0.10364782402757555,
+        0.9730325165437534
+      ],
+      "allInitialMasses_Msun": [
+        0.13257042726029716,
+        0.46835834644178415,
+        0.16307569529832489,
+        0.10044039214868149,
+        0.5470065425514049,
+        1.5223776765786217,
+        0.26165776187676426,
+        2.669078262781181,
+        0.22197669763449684,
+        0.24911194658050256,
+        0.10844203642452141,
+        1.4497982530581472
+      ],
+      "numberCountsByBin": [
+        12,
+        4,
+        1,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "massByBin_Msun": [
+        1.6015318750048972,
+        1.5261345974504559,
+        1.0948444559539297,
+        5.64125419241795,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sampleTotalInitialMass_Msun": 9.863765120827232,
+      "sampleMeanInitialMass_Msun": 0.49318825604136163,
+      "sampleMaxInitialMass_Msun": 2.669078262781181,
+      "sampleTailCountAbove20": 0,
+      "sampleTailMassFractionAbove20": 0
+    },
+    {
+      "alpha": 2.35,
+      "seed": 42,
+      "N": 20,
+      "firstStatesUnsigned": [
+        1369506609,
+        1227121042,
+        1742610489,
+        3639831413,
+        103786203,
+        2892188545,
+        1735534600,
+        1813258001,
+        289363370,
+        2328323471,
+        2829082676,
+        812711559
+      ],
+      "firstUniforms": [
+        0.3188631053781137,
+        0.2857113821664825,
+        0.4057331219082698,
+        0.8474642907967791,
+        0.024164608563296497,
+        0.673390120617114,
+        0.4040856381179765,
+        0.4221820275997743,
+        0.06737265980336815,
+        0.5421050525037572,
+        0.6586971405195072,
+        0.18922415550332516
+      ],
+      "allInitialMasses_Msun": [
+        0.13289745019609556,
+        0.12830105084425933,
+        0.14702849700417608,
+        0.4024859513792515,
+        0.10182830181728347,
+        0.2290441348636133,
+        0.14672733799175158,
+        0.15011708718326933,
+        0.1053019325330281,
+        0.17834075950898917,
+        0.22170063988368996,
+        0.11680843263325213
+      ],
+      "numberCountsByBin": [
+        17,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "massByBin_Msun": [
+        2.4280213168226408,
+        1.1098435963919093,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sampleTotalInitialMass_Msun": 3.53786491321455,
+      "sampleMeanInitialMass_Msun": 0.1768932456607275,
+      "sampleMaxInitialMass_Msun": 0.42422607814746566,
+      "sampleTailCountAbove20": 0,
+      "sampleTailMassFractionAbove20": 0
+    },
+    {
+      "alpha": 2.35,
+      "seed": 999,
+      "N": 20,
+      "firstStatesUnsigned": [
+        1592581856,
+        1663513464,
+        742804060,
+        1153082266,
+        167023678,
+        4111477095,
+        4155154009,
+        677142857,
+        718765331,
+        1809484425,
+        1811762764,
+        2225161622
+      ],
+      "firstUniforms": [
+        0.37080185872036964,
+        0.3873169106664136,
+        0.17294754751492292,
+        0.26847288629505783,
+        0.038888230570591986,
+        0.9572778585134074,
+        0.9674471825128421,
+        0.15765960735734552,
+        0.16735059476923198,
+        0.4213034234708175,
+        0.4218338906066492,
+        0.5180858128005639
+      ],
+      "allInitialMasses_Msun": [
+        0.1409384370472108,
+        0.14374240841121608,
+        0.11510140668005672,
+        0.12605484165639738,
+        0.10298142980249175,
+        1.032022811741131,
+        1.2616394596942737,
+        0.11355048253834131,
+        0.11452785952743176,
+        0.1499482541951638,
+        0.15005013559923364,
+        0.17171428603126884
+      ],
+      "numberCountsByBin": [
+        17,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "massByBin_Msun": [
+        2.3171009100481155,
+        0,
+        2.9779626652472686,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sampleTotalInitialMass_Msun": 5.2950635752953845,
+      "sampleMeanInitialMass_Msun": 0.2647531787647692,
+      "sampleMaxInitialMass_Msun": 1.2616394596942737,
+      "sampleTailCountAbove20": 0,
+      "sampleTailMassFractionAbove20": 0
+    },
+    {
+      "alpha": 3.2,
+      "seed": 0,
+      "N": 20,
+      "firstStatesUnsigned": [
+        1359758873,
+        3761132862,
+        2075758394,
+        25405621,
+        3862129951,
+        4186559031,
+        3122997712,
+        4244368831,
+        2831543865,
+        3042595768,
+        445164014,
+        4179142836
+      ],
+      "firstUniforms": [
+        0.3165935337310657,
+        0.8757069852435961,
+        0.48330016306135803,
+        0.005915207206271589,
+        0.8992222024826333,
+        0.974759233999066,
+        0.7271295675309375,
+        0.9882191269425675,
+        0.659270180738531,
+        0.7084095311583951,
+        0.10364782402757555,
+        0.9730325165437534
+      ],
+      "allInitialMasses_Msun": [
+        0.1188901426318722,
+        0.2579970718680956,
+        0.1350038549756753,
+        0.10027003529698919,
+        0.2838020505654604,
+        0.532494487951809,
+        0.18046096957921792,
+        0.7528931595025915,
+        0.16313259631612026,
+        0.17509942993801395,
+        0.10509948684943234,
+        0.5167167797392351
+      ],
+      "numberCountsByBin": [
+        14,
+        5,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "massByBin_Msun": [
+        1.7780663586875334,
+        2.025732043212297,
+        0.7528931595025915,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sampleTotalInitialMass_Msun": 4.556691561402422,
+      "sampleMeanInitialMass_Msun": 0.22783457807012109,
+      "sampleMaxInitialMass_Msun": 0.7528931595025915,
+      "sampleTailCountAbove20": 0,
+      "sampleTailMassFractionAbove20": 0
+    },
+    {
+      "alpha": 3.2,
+      "seed": 42,
+      "N": 20,
+      "firstStatesUnsigned": [
+        1369506609,
+        1227121042,
+        1742610489,
+        3639831413,
+        103786203,
+        2892188545,
+        1735534600,
+        1813258001,
+        289363370,
+        2328323471,
+        2829082676,
+        812711559
+      ],
+      "firstUniforms": [
+        0.3188631053781137,
+        0.2857113821664825,
+        0.4057331219082698,
+        0.8474642907967791,
+        0.024164608563296497,
+        0.673390120617114,
+        0.4040856381179765,
+        0.4221820275997743,
+        0.06737265980336815,
+        0.5421050525037572,
+        0.6586971405195072,
+        0.18922415550332516
+      ],
+      "allInitialMasses_Msun": [
+        0.11907004560364738,
+        0.11652550992473595,
+        0.12668804563342073,
+        0.23506852681681617,
+        0.1011180842163143,
+        0.1663013070753366,
+        0.12652872285634634,
+        0.12831480286153626,
+        0.10322122823046097,
+        0.14262553336959358,
+        0.16300804110094438,
+        0.11000406021689134
+      ],
+      "numberCountsByBin": [
+        19,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "massByBin_Msun": [
+        2.5241801964799264,
+        0.24278535072851265,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sampleTotalInitialMass_Msun": 2.7669655472084393,
+      "sampleMeanInitialMass_Msun": 0.13834827736042196,
+      "sampleMaxInitialMass_Msun": 0.24278535072851265,
+      "sampleTailCountAbove20": 0,
+      "sampleTailMassFractionAbove20": 0
+    },
+    {
+      "alpha": 3.2,
+      "seed": 999,
+      "N": 20,
+      "firstStatesUnsigned": [
+        1592581856,
+        1663513464,
+        742804060,
+        1153082266,
+        167023678,
+        4111477095,
+        4155154009,
+        677142857,
+        718765331,
+        1809484425,
+        1811762764,
+        2225161622
+      ],
+      "firstUniforms": [
+        0.37080185872036964,
+        0.3873169106664136,
+        0.17294754751492292,
+        0.26847288629505783,
+        0.038888230570591986,
+        0.9572778585134074,
+        0.9674471825128421,
+        0.15765960735734552,
+        0.16735059476923198,
+        0.4213034234708175,
+        0.4218338906066492,
+        0.5180858128005639
+      ],
+      "allInitialMasses_Msun": [
+        0.12344122684959462,
+        0.12494271132439246,
+        0.10901467519705373,
+        0.11526923841092404,
+        0.10181928558730224,
+        0.4192077829640542,
+        0.4743453252028722,
+        0.10811084236328133,
+        0.10868098010770523,
+        0.12822621460614764,
+        0.12827967734085025,
+        0.13934924599993267
+      ],
+      "numberCountsByBin": [
+        17,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "massByBin_Msun": [
+        2.048606337329879,
+        1.2192066087419433,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sampleTotalInitialMass_Msun": 3.2678129460718224,
+      "sampleMeanInitialMass_Msun": 0.16339064730359112,
+      "sampleMaxInitialMass_Msun": 0.4743453252028722,
+      "sampleTailCountAbove20": 0,
+      "sampleTailMassFractionAbove20": 0
+    },
+    {
+      "alpha": 2.35,
+      "seed": 42,
+      "N": 200,
+      "firstStatesUnsigned": [
+        1369506609,
+        1227121042,
+        1742610489,
+        3639831413,
+        103786203,
+        2892188545,
+        1735534600,
+        1813258001,
+        289363370,
+        2328323471,
+        2829082676,
+        812711559
+      ],
+      "firstUniforms": [
+        0.3188631053781137,
+        0.2857113821664825,
+        0.4057331219082698,
+        0.8474642907967791,
+        0.024164608563296497,
+        0.673390120617114,
+        0.4040856381179765,
+        0.4221820275997743,
+        0.06737265980336815,
+        0.5421050525037572,
+        0.6586971405195072,
+        0.18922415550332516
+      ],
+      "numberCountsByBin": [
+        126,
+        51,
+        16,
+        5,
+        2,
+        0,
+        0,
+        0
+      ],
+      "massByBin_Msun": [
+        18.052905662680114,
+        17.12238841957711,
+        11.869872166338453,
+        9.606561654500991,
+        7.265063672314498,
+        0,
+        0,
+        0
+      ],
+      "sampleTotalInitialMass_Msun": 63.91679157541117,
+      "sampleMeanInitialMass_Msun": 0.31958395787705585,
+      "sampleMaxInitialMass_Msun": 4.065338122763728,
+      "sampleTailCountAbove20": 0,
+      "sampleTailMassFractionAbove20": 0,
+      "allInitialMasses_Msun": []
+    },
+    {
+      "alpha": 2.35,
+      "seed": 42,
+      "N": 2000,
+      "firstStatesUnsigned": [
+        1369506609,
+        1227121042,
+        1742610489,
+        3639831413,
+        103786203,
+        2892188545,
+        1735534600,
+        1813258001,
+        289363370,
+        2328323471,
+        2829082676,
+        812711559
+      ],
+      "firstUniforms": [
+        0.3188631053781137,
+        0.2857113821664825,
+        0.4057331219082698,
+        0.8474642907967791,
+        0.024164608563296497,
+        0.673390120617114,
+        0.4040856381179765,
+        0.4221820275997743,
+        0.06737265980336815,
+        0.5421050525037572,
+        0.6586971405195072,
+        0.18922415550332516
+      ],
+      "numberCountsByBin": [
+        1361,
+        472,
+        114,
+        40,
+        6,
+        4,
+        1,
+        2
+      ],
+      "massByBin_Msun": [
+        200.2104910724849,
+        161.7599204175531,
+        91.5783453359195,
+        78.56504586273142,
+        30.196054004814314,
+        56.675234026978764,
+        22.85471717997576,
+        121.63087059736391
+      ],
+      "sampleTotalInitialMass_Msun": 763.4706784978216,
+      "sampleMeanInitialMass_Msun": 0.38173533924891084,
+      "sampleMaxInitialMass_Msun": 68.7286390553224,
+      "sampleTailCountAbove20": 3,
+      "sampleTailMassFractionAbove20": 0.1892483782895559,
+      "allInitialMasses_Msun": []
+    }
+  ],
+  "responseCases": [
+    {
+      "name": "default",
+      "input": {
+        "duration_Myr": 20,
+        "burstExtraFactor": 4,
+        "shortMemory_Myr": 5,
+        "longMemory_Myr": 100,
+        "time_Myr": -20
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "default",
+      "input": {
+        "duration_Myr": 20,
+        "burstExtraFactor": 4,
+        "shortMemory_Myr": 5,
+        "longMemory_Myr": 100,
+        "time_Myr": 0
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 5,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 5,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "default",
+      "input": {
+        "duration_Myr": 20,
+        "burstExtraFactor": 4,
+        "shortMemory_Myr": 5,
+        "longMemory_Myr": 100,
+        "time_Myr": 1e-8
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 5,
+        "filteredSFR_Msun_yr": 1.000000008,
+        "filteredExcessSFR_Msun_yr": 7.999999992e-9,
+        "burstExcessMassFormed_Msun": 0.04,
+        "cumulativeExcessFilteredResponse_Msun": 3.9999999973333336e-11,
+        "actualMinusCumulativeResponse_Msun": 0.03999999996,
+        "memoryIdentityRHS_Msun": 0.03999999996,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 5,
+        "filteredSFR_Msun_yr": 1.0000000004,
+        "filteredExcessSFR_Msun_yr": 3.9999999998e-10,
+        "burstExcessMassFormed_Msun": 0.04,
+        "cumulativeExcessFilteredResponse_Msun": 1.999999999933333e-12,
+        "actualMinusCumulativeResponse_Msun": 0.039999999998,
+        "memoryIdentityRHS_Msun": 0.039999999998,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "default",
+      "input": {
+        "duration_Myr": 20,
+        "burstExtraFactor": 4,
+        "shortMemory_Myr": 5,
+        "longMemory_Myr": 100,
+        "time_Myr": 5
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 5,
+        "filteredSFR_Msun_yr": 3.5284822353142307,
+        "filteredExcessSFR_Msun_yr": 2.5284822353142307,
+        "burstExcessMassFormed_Msun": 20000000,
+        "cumulativeExcessFilteredResponse_Msun": 7357588.823428847,
+        "actualMinusCumulativeResponse_Msun": 12642411.176571153,
+        "memoryIdentityRHS_Msun": 12642411.176571153,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 5,
+        "filteredSFR_Msun_yr": 1.195082301997144,
+        "filteredExcessSFR_Msun_yr": 0.19508230199714396,
+        "burstExcessMassFormed_Msun": 20000000,
+        "cumulativeExcessFilteredResponse_Msun": 491769.8002856036,
+        "actualMinusCumulativeResponse_Msun": 19508230.199714396,
+        "memoryIdentityRHS_Msun": 19508230.199714396,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "default",
+      "input": {
+        "duration_Myr": 20,
+        "burstExtraFactor": 4,
+        "shortMemory_Myr": 5,
+        "longMemory_Myr": 100,
+        "time_Myr": 20
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 4.926737444445063,
+        "filteredExcessSFR_Msun_yr": 3.926737444445063,
+        "burstExcessMassFormed_Msun": 80000000,
+        "cumulativeExcessFilteredResponse_Msun": 60366312.777774684,
+        "actualMinusCumulativeResponse_Msun": 19633687.222225316,
+        "memoryIdentityRHS_Msun": 19633687.222225316,
+        "identityResidual_Msun": -2e-72
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1.7250769876880725,
+        "filteredExcessSFR_Msun_yr": 0.7250769876880726,
+        "burstExcessMassFormed_Msun": 80000000,
+        "cumulativeExcessFilteredResponse_Msun": 7492301.231192743,
+        "actualMinusCumulativeResponse_Msun": 72507698.76880726,
+        "memoryIdentityRHS_Msun": 72507698.76880726,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "default",
+      "input": {
+        "duration_Myr": 20,
+        "burstExtraFactor": 4,
+        "shortMemory_Myr": 5,
+        "longMemory_Myr": 100,
+        "time_Myr": 20.000001
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 4.926736659097653,
+        "filteredExcessSFR_Msun_yr": 3.926736659097653,
+        "burstExcessMassFormed_Msun": 80000000,
+        "cumulativeExcessFilteredResponse_Msun": 60366316.70451173,
+        "actualMinusCumulativeResponse_Msun": 19633683.295488264,
+        "memoryIdentityRHS_Msun": 19633683.295488264,
+        "identityResidual_Msun": 1e-72
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1.7250769804373027,
+        "filteredExcessSFR_Msun_yr": 0.7250769804373027,
+        "burstExcessMassFormed_Msun": 80000000,
+        "cumulativeExcessFilteredResponse_Msun": 7492301.956269727,
+        "actualMinusCumulativeResponse_Msun": 72507698.04373027,
+        "memoryIdentityRHS_Msun": 72507698.04373027,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "default",
+      "input": {
+        "duration_Myr": 20,
+        "burstExtraFactor": 4,
+        "shortMemory_Myr": 5,
+        "longMemory_Myr": 100,
+        "time_Myr": 100
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1.0000004418960844,
+        "filteredExcessSFR_Msun_yr": 4.4189608438728225e-7,
+        "burstExcessMassFormed_Msun": 80000000,
+        "cumulativeExcessFilteredResponse_Msun": 79999997.79051958,
+        "actualMinusCumulativeResponse_Msun": 2.2094804219364113,
+        "memoryIdentityRHS_Msun": 2.2094804219364113,
+        "identityResidual_Msun": 1.0670386e-72
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1.3257980917831171,
+        "filteredExcessSFR_Msun_yr": 0.3257980917831171,
+        "burstExcessMassFormed_Msun": 80000000,
+        "cumulativeExcessFilteredResponse_Msun": 47420190.821688294,
+        "actualMinusCumulativeResponse_Msun": 32579809.17831171,
+        "memoryIdentityRHS_Msun": 32579809.17831171,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "default",
+      "input": {
+        "duration_Myr": 20,
+        "burstExtraFactor": 4,
+        "shortMemory_Myr": 5,
+        "longMemory_Myr": 100,
+        "time_Myr": 500
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 7.975567611898411e-42,
+        "burstExcessMassFormed_Msun": 80000000,
+        "cumulativeExcessFilteredResponse_Msun": 80000000,
+        "actualMinusCumulativeResponse_Msun": 3.987783805949205e-35,
+        "memoryIdentityRHS_Msun": 3.987783805949205e-35,
+        "identityResidual_Msun": -1.9445752121533673e-72
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1.0059672001997382,
+        "filteredExcessSFR_Msun_yr": 0.005967200199738247,
+        "burstExcessMassFormed_Msun": 80000000,
+        "cumulativeExcessFilteredResponse_Msun": 79403279.98002617,
+        "actualMinusCumulativeResponse_Msun": 596720.0199738247,
+        "memoryIdentityRHS_Msun": 596720.0199738247,
+        "identityResidual_Msun": 6e-73
+      }
+    },
+    {
+      "name": "no_burst",
+      "input": {
+        "duration_Myr": 20,
+        "burstExtraFactor": 0,
+        "shortMemory_Myr": 5,
+        "longMemory_Myr": 100,
+        "time_Myr": -20
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "no_burst",
+      "input": {
+        "duration_Myr": 20,
+        "burstExtraFactor": 0,
+        "shortMemory_Myr": 5,
+        "longMemory_Myr": 100,
+        "time_Myr": 0
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "no_burst",
+      "input": {
+        "duration_Myr": 20,
+        "burstExtraFactor": 0,
+        "shortMemory_Myr": 5,
+        "longMemory_Myr": 100,
+        "time_Myr": 20
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "no_burst",
+      "input": {
+        "duration_Myr": 20,
+        "burstExtraFactor": 0,
+        "shortMemory_Myr": 5,
+        "longMemory_Myr": 100,
+        "time_Myr": 500
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "equal_timescales",
+      "input": {
+        "duration_Myr": 30,
+        "burstExtraFactor": 4,
+        "shortMemory_Myr": 20,
+        "longMemory_Myr": 20,
+        "time_Myr": 0
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 5,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 5,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "equal_timescales",
+      "input": {
+        "duration_Myr": 30,
+        "burstExtraFactor": 4,
+        "shortMemory_Myr": 20,
+        "longMemory_Myr": 20,
+        "time_Myr": 10
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 5,
+        "filteredSFR_Msun_yr": 2.5738773611494663,
+        "filteredExcessSFR_Msun_yr": 1.5738773611494663,
+        "burstExcessMassFormed_Msun": 40000000,
+        "cumulativeExcessFilteredResponse_Msun": 8522452.777010674,
+        "actualMinusCumulativeResponse_Msun": 31477547.222989324,
+        "memoryIdentityRHS_Msun": 31477547.222989324,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 5,
+        "filteredSFR_Msun_yr": 2.5738773611494663,
+        "filteredExcessSFR_Msun_yr": 1.5738773611494663,
+        "burstExcessMassFormed_Msun": 40000000,
+        "cumulativeExcessFilteredResponse_Msun": 8522452.777010674,
+        "actualMinusCumulativeResponse_Msun": 31477547.222989324,
+        "memoryIdentityRHS_Msun": 31477547.222989324,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "equal_timescales",
+      "input": {
+        "duration_Myr": 30,
+        "burstExtraFactor": 4,
+        "shortMemory_Myr": 20,
+        "longMemory_Myr": 20,
+        "time_Myr": 30
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 4.10747935940628,
+        "filteredExcessSFR_Msun_yr": 3.107479359406281,
+        "burstExcessMassFormed_Msun": 120000000,
+        "cumulativeExcessFilteredResponse_Msun": 57850412.81187439,
+        "actualMinusCumulativeResponse_Msun": 62149587.18812561,
+        "memoryIdentityRHS_Msun": 62149587.18812561,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 4.10747935940628,
+        "filteredExcessSFR_Msun_yr": 3.107479359406281,
+        "burstExcessMassFormed_Msun": 120000000,
+        "cumulativeExcessFilteredResponse_Msun": 57850412.81187439,
+        "actualMinusCumulativeResponse_Msun": 62149587.18812561,
+        "memoryIdentityRHS_Msun": 62149587.18812561,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "equal_timescales",
+      "input": {
+        "duration_Myr": 30,
+        "burstExtraFactor": 4,
+        "shortMemory_Myr": 20,
+        "longMemory_Myr": 20,
+        "time_Myr": 100
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1.0938377456929322,
+        "filteredExcessSFR_Msun_yr": 0.09383774569293213,
+        "burstExcessMassFormed_Msun": 120000000,
+        "cumulativeExcessFilteredResponse_Msun": 118123245.08614136,
+        "actualMinusCumulativeResponse_Msun": 1876754.9138586428,
+        "memoryIdentityRHS_Msun": 1876754.9138586428,
+        "identityResidual_Msun": 2.6e-72
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1.0938377456929322,
+        "filteredExcessSFR_Msun_yr": 0.09383774569293213,
+        "burstExcessMassFormed_Msun": 120000000,
+        "cumulativeExcessFilteredResponse_Msun": 118123245.08614136,
+        "actualMinusCumulativeResponse_Msun": 1876754.9138586428,
+        "memoryIdentityRHS_Msun": 1876754.9138586428,
+        "identityResidual_Msun": 2.6e-72
+      }
+    },
+    {
+      "name": "equal_timescales",
+      "input": {
+        "duration_Myr": 30,
+        "burstExtraFactor": 4,
+        "shortMemory_Myr": 20,
+        "longMemory_Myr": 20,
+        "time_Myr": 500
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1.000000000193414,
+        "filteredExcessSFR_Msun_yr": 1.9341400945645526e-10,
+        "burstExcessMassFormed_Msun": 120000000,
+        "cumulativeExcessFilteredResponse_Msun": 119999999.99613172,
+        "actualMinusCumulativeResponse_Msun": 0.003868280189129105,
+        "memoryIdentityRHS_Msun": 0.003868280189129105,
+        "identityResidual_Msun": 3.1098741044e-72
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1.000000000193414,
+        "filteredExcessSFR_Msun_yr": 1.9341400945645526e-10,
+        "burstExcessMassFormed_Msun": 120000000,
+        "cumulativeExcessFilteredResponse_Msun": 119999999.99613172,
+        "actualMinusCumulativeResponse_Msun": 0.003868280189129105,
+        "memoryIdentityRHS_Msun": 0.003868280189129105,
+        "identityResidual_Msun": 3.1098741044e-72
+      }
+    },
+    {
+      "name": "shortest_burst_slowest_kernel",
+      "input": {
+        "duration_Myr": 3,
+        "burstExtraFactor": 9,
+        "shortMemory_Myr": 1,
+        "longMemory_Myr": 200,
+        "time_Myr": 0
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 10,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 10,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "shortest_burst_slowest_kernel",
+      "input": {
+        "duration_Myr": 3,
+        "burstExtraFactor": 9,
+        "shortMemory_Myr": 1,
+        "longMemory_Myr": 200,
+        "time_Myr": 1
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 10,
+        "filteredSFR_Msun_yr": 6.689085029457019,
+        "filteredExcessSFR_Msun_yr": 5.689085029457019,
+        "burstExcessMassFormed_Msun": 9000000,
+        "cumulativeExcessFilteredResponse_Msun": 3310914.970542981,
+        "actualMinusCumulativeResponse_Msun": 5689085.029457019,
+        "memoryIdentityRHS_Msun": 5689085.029457019,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 10,
+        "filteredSFR_Msun_yr": 1.0448876872658592,
+        "filteredExcessSFR_Msun_yr": 0.04488768726585918,
+        "burstExcessMassFormed_Msun": 9000000,
+        "cumulativeExcessFilteredResponse_Msun": 22462.546828164035,
+        "actualMinusCumulativeResponse_Msun": 8977537.453171836,
+        "memoryIdentityRHS_Msun": 8977537.453171836,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "shortest_burst_slowest_kernel",
+      "input": {
+        "duration_Myr": 3,
+        "burstExtraFactor": 9,
+        "shortMemory_Myr": 1,
+        "longMemory_Myr": 200,
+        "time_Myr": 3
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 9.551916384689225,
+        "filteredExcessSFR_Msun_yr": 8.551916384689225,
+        "burstExcessMassFormed_Msun": 27000000,
+        "cumulativeExcessFilteredResponse_Msun": 18448083.615310777,
+        "actualMinusCumulativeResponse_Msun": 8551916.384689225,
+        "memoryIdentityRHS_Msun": 8551916.384689225,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1.133992543572436,
+        "filteredExcessSFR_Msun_yr": 0.13399254357243603,
+        "burstExcessMassFormed_Msun": 27000000,
+        "cumulativeExcessFilteredResponse_Msun": 201491.28551279067,
+        "actualMinusCumulativeResponse_Msun": 26798508.71448721,
+        "memoryIdentityRHS_Msun": 26798508.71448721,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "shortest_burst_slowest_kernel",
+      "input": {
+        "duration_Myr": 3,
+        "burstExtraFactor": 9,
+        "shortMemory_Myr": 1,
+        "longMemory_Myr": 200,
+        "time_Myr": 4
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 4.1460742205443735,
+        "filteredExcessSFR_Msun_yr": 3.1460742205443735,
+        "burstExcessMassFormed_Msun": 27000000,
+        "cumulativeExcessFilteredResponse_Msun": 23853925.77945563,
+        "actualMinusCumulativeResponse_Msun": 3146074.220544373,
+        "memoryIdentityRHS_Msun": 3146074.220544373,
+        "identityResidual_Msun": -1e-73
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1.1333242529733432,
+        "filteredExcessSFR_Msun_yr": 0.1333242529733431,
+        "burstExcessMassFormed_Msun": 27000000,
+        "cumulativeExcessFilteredResponse_Msun": 335149.40533137997,
+        "actualMinusCumulativeResponse_Msun": 26664850.59466862,
+        "memoryIdentityRHS_Msun": 26664850.59466862,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "shortest_burst_slowest_kernel",
+      "input": {
+        "duration_Myr": 3,
+        "burstExtraFactor": 9,
+        "shortMemory_Myr": 1,
+        "longMemory_Myr": 200,
+        "time_Myr": 500
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 1.2237872946563927e-215,
+        "burstExcessMassFormed_Msun": 27000000,
+        "cumulativeExcessFilteredResponse_Msun": 27000000,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 1.2237872946563927e-209,
+        "identityResidual_Msun": -1.2237872946563927e-209
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1.0111650029936576,
+        "filteredExcessSFR_Msun_yr": 0.011165002993657674,
+        "burstExcessMassFormed_Msun": 27000000,
+        "cumulativeExcessFilteredResponse_Msun": 24766999.401268464,
+        "actualMinusCumulativeResponse_Msun": 2233000.5987315346,
+        "memoryIdentityRHS_Msun": 2233000.5987315346,
+        "identityResidual_Msun": -2e-73
+      }
+    },
+    {
+      "name": "long_burst_extremes",
+      "input": {
+        "duration_Myr": 100,
+        "burstExtraFactor": 9,
+        "shortMemory_Myr": 1,
+        "longMemory_Myr": 200,
+        "time_Myr": -20
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "long_burst_extremes",
+      "input": {
+        "duration_Myr": 100,
+        "burstExtraFactor": 9,
+        "shortMemory_Myr": 1,
+        "longMemory_Myr": 200,
+        "time_Myr": 0
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 10,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 10,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "long_burst_extremes",
+      "input": {
+        "duration_Myr": 100,
+        "burstExtraFactor": 9,
+        "shortMemory_Myr": 1,
+        "longMemory_Myr": 200,
+        "time_Myr": 1
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 10,
+        "filteredSFR_Msun_yr": 6.689085029457019,
+        "filteredExcessSFR_Msun_yr": 5.689085029457019,
+        "burstExcessMassFormed_Msun": 9000000,
+        "cumulativeExcessFilteredResponse_Msun": 3310914.970542981,
+        "actualMinusCumulativeResponse_Msun": 5689085.029457019,
+        "memoryIdentityRHS_Msun": 5689085.029457019,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 10,
+        "filteredSFR_Msun_yr": 1.0448876872658592,
+        "filteredExcessSFR_Msun_yr": 0.04488768726585918,
+        "burstExcessMassFormed_Msun": 9000000,
+        "cumulativeExcessFilteredResponse_Msun": 22462.546828164035,
+        "actualMinusCumulativeResponse_Msun": 8977537.453171836,
+        "memoryIdentityRHS_Msun": 8977537.453171836,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "long_burst_extremes",
+      "input": {
+        "duration_Myr": 100,
+        "burstExtraFactor": 9,
+        "shortMemory_Myr": 1,
+        "longMemory_Myr": 200,
+        "time_Myr": 100
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 10,
+        "filteredExcessSFR_Msun_yr": 9,
+        "burstExcessMassFormed_Msun": 900000000,
+        "cumulativeExcessFilteredResponse_Msun": 891000000,
+        "actualMinusCumulativeResponse_Msun": 9000000,
+        "memoryIdentityRHS_Msun": 9000000,
+        "identityResidual_Msun": 3e-73
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 4.541224062586299,
+        "filteredExcessSFR_Msun_yr": 3.5412240625862994,
+        "burstExcessMassFormed_Msun": 900000000,
+        "cumulativeExcessFilteredResponse_Msun": 191755187.48274016,
+        "actualMinusCumulativeResponse_Msun": 708244812.5172598,
+        "memoryIdentityRHS_Msun": 708244812.5172598,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "long_burst_extremes",
+      "input": {
+        "duration_Myr": 100,
+        "burstExtraFactor": 9,
+        "shortMemory_Myr": 1,
+        "longMemory_Myr": 200,
+        "time_Myr": 101
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 4.310914970542981,
+        "filteredExcessSFR_Msun_yr": 3.310914970542981,
+        "burstExcessMassFormed_Msun": 900000000,
+        "cumulativeExcessFilteredResponse_Msun": 896689085.029457,
+        "actualMinusCumulativeResponse_Msun": 3310914.970542981,
+        "memoryIdentityRHS_Msun": 3310914.970542981,
+        "identityResidual_Msun": -6e-73
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 4.523562133890776,
+        "filteredExcessSFR_Msun_yr": 3.523562133890776,
+        "burstExcessMassFormed_Msun": 900000000,
+        "cumulativeExcessFilteredResponse_Msun": 195287573.22184482,
+        "actualMinusCumulativeResponse_Msun": 704712426.7781552,
+        "memoryIdentityRHS_Msun": 704712426.7781552,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "long_burst_extremes",
+      "input": {
+        "duration_Myr": 100,
+        "burstExtraFactor": 9,
+        "shortMemory_Myr": 1,
+        "longMemory_Myr": 200,
+        "time_Myr": 500
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 1.723652637042605e-173,
+        "burstExcessMassFormed_Msun": 900000000,
+        "cumulativeExcessFilteredResponse_Msun": 900000000,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 1.723652637042605e-167,
+        "identityResidual_Msun": -1.723652637042605e-167
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1.479252561514425,
+        "filteredExcessSFR_Msun_yr": 0.4792525615144251,
+        "burstExcessMassFormed_Msun": 900000000,
+        "cumulativeExcessFilteredResponse_Msun": 804149487.697115,
+        "actualMinusCumulativeResponse_Msun": 95850512.30288501,
+        "memoryIdentityRHS_Msun": 95850512.30288501,
+        "identityResidual_Msun": 6e-72
+      }
+    },
+    {
+      "name": "zero_duration_limit_validation_only",
+      "input": {
+        "duration_Myr": 0,
+        "burstExtraFactor": 9,
+        "shortMemory_Myr": 1,
+        "longMemory_Myr": 200,
+        "time_Myr": -20
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "zero_duration_limit_validation_only",
+      "input": {
+        "duration_Myr": 0,
+        "burstExtraFactor": 9,
+        "shortMemory_Myr": 1,
+        "longMemory_Myr": 200,
+        "time_Myr": 0
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "zero_duration_limit_validation_only",
+      "input": {
+        "duration_Myr": 0,
+        "burstExtraFactor": 9,
+        "shortMemory_Myr": 1,
+        "longMemory_Myr": 200,
+        "time_Myr": 1
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      }
+    },
+    {
+      "name": "zero_duration_limit_validation_only",
+      "input": {
+        "duration_Myr": 0,
+        "burstExtraFactor": 9,
+        "shortMemory_Myr": 1,
+        "longMemory_Myr": 200,
+        "time_Myr": 500
+      },
+      "short": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      },
+      "long": {
+        "instantTrueSFR_Msun_yr": 1,
+        "filteredSFR_Msun_yr": 1,
+        "filteredExcessSFR_Msun_yr": 0,
+        "burstExcessMassFormed_Msun": 0,
+        "cumulativeExcessFilteredResponse_Msun": 0,
+        "actualMinusCumulativeResponse_Msun": 0,
+        "memoryIdentityRHS_Msun": 0,
+        "identityResidual_Msun": 0
+      }
+    }
+  ],
+  "imfLimitContinuityCases": [
+    {
+      "alpha": 1,
+      "Jnumber": 6.907755278982137,
+      "Jmass": 99.9,
+      "median_Msun": 3.1622776601683795
+    },
+    {
+      "alpha": 1.00000001,
+      "Jnumber": 6.907755199453667,
+      "Jmass": 99.8999963915273,
+      "median_Msun": 3.162277471550053
+    },
+    {
+      "alpha": 1.99999999,
+      "Jnumber": 9.989999869180975,
+      "Jmass": 6.90775535851061,
+      "median_Msun": 0.19980020116932434
+    },
+    {
+      "alpha": 2,
+      "Jnumber": 9.99,
+      "Jmass": 6.907755278982137,
+      "median_Msun": 0.1998001998001998
+    },
+    {
+      "alpha": 2.00000001,
+      "Jnumber": 9.990000130819027,
+      "Jmass": 6.907755199453667,
+      "median_Msun": 0.1998001984310753
+    }
+  ]
+}

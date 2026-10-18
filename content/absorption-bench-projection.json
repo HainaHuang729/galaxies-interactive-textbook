@@ -1,0 +1,38 @@
+{
+  "P": {
+    "origin": [
+      410,
+      248.41305737425535
+    ],
+    "scale": 1.5264441943814184,
+    "azimuth": 48,
+    "elevation": 31
+  },
+  "width": 820,
+  "height": 470,
+  "parts": 69,
+  "items": 69,
+  "channels": {
+    "variable": {
+      "y": -30,
+      "z": 25,
+      "source": -90,
+      "cell": [
+        -11,
+        11
+      ],
+      "detector": 90
+    },
+    "fixed": {
+      "y": 30,
+      "z": 25,
+      "source": -90,
+      "cell": [
+        -11,
+        11
+      ],
+      "detector": 90
+    }
+  },
+  "limits": "Independent calibrated incoherent beams; pure absorption; schematic cells and detectors; no telescope engineering, photon statistics or encoded speed of light."
+}

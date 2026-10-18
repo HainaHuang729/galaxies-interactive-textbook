@@ -1,0 +1,14 @@
+{
+  "id": "chapter-experiment-symbol-role",
+  "kind": "symbol",
+  "chapters": [1],
+  "contexts": ["replace-with-experiment-id"],
+  "title": "本语境的物理名称",
+  "english": "Physical name in this context",
+  "tex": "a",
+  "aliases": ["a"],
+  "definition": "填写真实定义，勿凭同一字母合并不同物理量。",
+  "unit": "填写单位或无量纲",
+  "scope": "填写成立条件、下标角色与同字母区别。",
+  "source": "填写已核实的书目、章、页码与公式号。"
+}

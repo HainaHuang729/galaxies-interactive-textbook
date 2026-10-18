@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-10-17T03:44:49.625Z",
+  "readerPages": 536,
+  "mathErrors": 0,
+  "mathIssues": 0,
+  "glossary": {
+    "entries": 1847,
+    "newScopedDefinitions": 41,
+    "semanticCases": 19,
+    "controlPages": 120,
+    "rangeInputs": 320,
+    "endpointStates": 240,
+    "unknownUnboundIndependentGlyphs": 0,
+    "scope": "Automated standalone letter coverage excludes composite fragments, which are inventoried separately; not an exhaustive proof for every prose word."
+  },
+  "anatomy": {
+    "parts": 69,
+    "staticAuditFailures": 0,
+    "staticLineFloatingEnds": 0,
+    "staticLineEndsPerTheme": 358,
+    "liveLineFloatingEnds": 0,
+    "liveLineEndsEachPose": 360,
+    "liveLinePoses": [
+      0,
+      1.225
+    ],
+    "liveThemes": [
+      "afterglow",
+      "moon"
+    ],
+    "notes": "11 geometry PNGs, 10 final integrated PNGs and 4 runtime line-check PNGs inspected; 4x closeups in both themes. Needles are data ink on calibrated planes; physical solids remain fixed.",
+    "motionFrames": {
+      "frames": [
+        {
+          "radius": 0.039,
+          "radial": -0.9931771347469076,
+          "transverse": -0.9977228300177718,
+          "pressed": "true"
+        },
+        {
+          "radius": 0.163,
+          "radial": -0.8867808867245646,
+          "transverse": -0.96143024865709,
+          "pressed": "true"
+        },
+        {
+          "radius": 0.344,
+          "radial": -0.5771390095882276,
+          "transverse": -0.8455543769216641,
+          "pressed": "true"
+        }
+      ],
+      "stopped": true
+    }
+  },
+  "rebuild": {
+    "files": 283,
+    "changed": 0
+  },
+  "formulas": {
+    "blocks": 127,
+    "expressions": 374
+  }
+}

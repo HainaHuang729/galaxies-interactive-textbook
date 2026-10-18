@@ -1,0 +1,261 @@
+{
+  "generated_at": "2026-10-16",
+  "provenance": "AI 科教示意 · 非观测数据",
+  "images": [
+    {
+      "id": "halo-shapes",
+      "chapter": 7,
+      "prompt": "Use case: scientific-educational. Asset for a Chinese galaxy formation textbook. Restrained, highly detailed editorial astronomical illustration in deep graphite blue, cool gas blue and warm stellar light; landscape 3:2. No text, numbers, diagrams, arrows, scale bars, labels, telescope logos, watermark, or UI. Clearly conceptual, not a named observed object. Keep important subject fully visible with space around it. Two comparable 3D model volumes side by side: left a smooth spherical density halo, right a triaxial elongated diffuse halo with a few distinct compact substructure clumps inside. Matter represented by diffuse luminous particles and fine density clouds, NOT visible stars or galaxies or solid glass shells. Same overall framing and comparable apparent size, no asserted mass or subhalo statistics.",
+      "width": 1536,
+      "height": 1024,
+      "original_filename": "exec-107467e5-dea1-4713-b0e2-d337e592426e.png",
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "files": [
+        {
+          "path": "assets/illustrations/halo-shapes-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 50848
+        },
+        {
+          "path": "assets/illustrations/halo-shapes-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 111918
+        },
+        {
+          "path": "assets/illustrations/halo-shapes-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 246466
+        }
+      ],
+      "publication_status": "retired_after_science_review",
+      "retirement_reason": "2026-10-16：正文改用明确公式/几何图解；生成场景不再用于解释物理。"
+    },
+    {
+      "id": "barred-disk",
+      "chapter": 11,
+      "prompt": "Use case: scientific-educational. Asset for a Chinese galaxy formation textbook. Restrained, highly detailed editorial astronomical illustration in deep graphite blue, cool gas blue and warm stellar light; landscape 3:2. No text, numbers, diagrams, arrows, scale bars, labels, telescope logos, watermark, or UI. Clearly conceptual, not a named observed object. Keep important subject fully visible with space around it. A single generic barred spiral galaxy, nearly face-on, a clearly elongated warm stellar central bar smoothly joining the surrounding disk and two outer spiral arms. Fine dust lanes along the bar and patchy blue star-forming regions in arms. Show the entire stellar disk. The image illustrates morphology only, do not draw angular momentum arrows or resonance rings.",
+      "width": 1536,
+      "height": 1024,
+      "original_filename": "exec-453fead1-0839-4269-b7b2-fe5675d1e588.png",
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "files": [
+        {
+          "path": "assets/illustrations/barred-disk-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 45706
+        },
+        {
+          "path": "assets/illustrations/barred-disk-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 99914
+        },
+        {
+          "path": "assets/illustrations/barred-disk-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 232552
+        }
+      ],
+      "publication_status": "retired_after_science_review",
+      "retirement_reason": "2026-10-16：正文改用明确公式/几何图解；生成场景不再用于解释物理。"
+    },
+    {
+      "id": "environment-tides",
+      "chapter": 12,
+      "prompt": "Use case: scientific-educational. Asset for a Chinese galaxy formation textbook. Restrained, highly detailed editorial astronomical illustration in deep graphite blue, cool gas blue and warm stellar light; landscape 3:2. No text, numbers, diagrams, arrows, scale bars, labels, telescope logos, watermark, or UI. Clearly conceptual, not a named observed object. Keep important subject fully visible with space around it. A moderately inclined disk galaxy undergoing a distant gravitational tidal encounter with a smaller companion. Clearly show the main galaxy's extended stellar tidal distortion and a diffuse stellar bridge toward the companion. No surrounding intracluster wind, no one-sided blue gas wake, no explosion, no direct hard collision. Keep both galaxy centers visible.",
+      "width": 1536,
+      "height": 1024,
+      "original_filename": "exec-1d281ac7-ae02-4660-b7b4-46365c761f86.png",
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "files": [
+        {
+          "path": "assets/illustrations/environment-tides-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 39510
+        },
+        {
+          "path": "assets/illustrations/environment-tides-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 86076
+        },
+        {
+          "path": "assets/illustrations/environment-tides-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 198384
+        }
+      ],
+      "publication_status": "retired_after_science_review",
+      "retirement_reason": "2026-10-16：正文改用明确公式/几何图解；生成场景不再用于解释物理。"
+    },
+    {
+      "id": "environment-ram",
+      "chapter": 12,
+      "prompt": "Use case: scientific-educational. Asset for a Chinese galaxy formation textbook. Restrained, highly detailed editorial astronomical illustration in deep graphite blue, cool gas blue and warm stellar light; landscape 3:2. No text, numbers, diagrams, arrows, scale bars, labels, telescope logos, watermark, or UI. Clearly conceptual, not a named observed object. Keep important subject fully visible with space around it. One disk galaxy moving through diffuse intracluster gas, with its stellar disk remaining relatively compact while diffuse gas is stripped into a long one-sided wake behind it. Make the old stellar disk warm colored and intact, the stripped gaseous tail cool blue with a few compact star-forming knots. No companion tugging the galaxy, no pair of symmetric stellar tails, no explosion.",
+      "width": 1536,
+      "height": 1024,
+      "original_filename": "exec-7e65d028-0b50-45a5-b21b-18fa3b4c3542.png",
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "files": [
+        {
+          "path": "assets/illustrations/environment-ram-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 32960
+        },
+        {
+          "path": "assets/illustrations/environment-ram-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 65930
+        },
+        {
+          "path": "assets/illustrations/environment-ram-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 137606
+        }
+      ],
+      "publication_status": "retired_after_science_review",
+      "retirement_reason": "2026-10-16：正文改用明确公式/几何图解；生成场景不再用于解释物理。"
+    },
+    {
+      "id": "environment-starvation",
+      "chapter": 12,
+      "prompt": "Use case: scientific-educational. Asset for a Chinese galaxy formation textbook. Restrained, highly detailed editorial astronomical illustration in deep graphite blue, cool gas blue and warm stellar light; landscape 3:2. No text, numbers, diagrams, arrows, scale bars, labels, telescope logos, watermark, or UI. Clearly conceptual, not a named observed object. Keep important subject fully visible with space around it. One generic disk galaxy inside a very faint diffuse gaseous reservoir that is depleted and broken up in its outskirts. Central stellar disk and modest inner gas remain intact, while the extended diffuse supply reservoir is sparse and detached from incoming filaments. Quiet conceptual wide view showing lack of fresh supply; no dramatic one-sided ram-pressure tail, no companion, no sudden explosion, no claim about a measured evolutionary time.",
+      "width": 1536,
+      "height": 1024,
+      "original_filename": "exec-c88e3721-9180-45ca-af9d-bfa24d5261f7.png",
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "files": [
+        {
+          "path": "assets/illustrations/environment-starvation-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 23230
+        },
+        {
+          "path": "assets/illustrations/environment-starvation-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 50884
+        },
+        {
+          "path": "assets/illustrations/environment-starvation-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 122082
+        }
+      ],
+      "publication_status": "retired_after_science_review",
+      "retirement_reason": "2026-10-16：正文改用明确公式/几何图解；生成场景不再用于解释物理。"
+    },
+    {
+      "id": "halo-cooling-v2",
+      "chapter": 8,
+      "prompt": "Use case: scientific-educational. Asset for a Chinese galaxy formation textbook. Restrained, highly detailed editorial astronomical illustration in deep graphite blue, cool gas blue and warm stellar light; landscape 3:2. No text, numbers, diagrams, arrows, scale bars, labels, telescope logos, watermark, or UI. Clearly conceptual, not a named observed object. Keep important subject fully visible with space around it. A small central disk galaxy inside a much larger, softly fading diffuse hot gas halo. The halo's density changes continuously from inner to outer regions; use a few faint approaching cool gas filaments and a compact central disk. Absolutely no hard outer edge, spherical shell, bubble wall, slice plane, cutaway wall, glass orb or luminous round boundary. The gas halo fades gradually into the background; its extent is a schematic spatial distribution, not a surface. No physically solid structure except the depicted galaxy light.",
+      "width": 1536,
+      "height": 1024,
+      "original_filename": "exec-09bc0251-5829-4003-a955-f926091dce01.png",
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "files": [
+        {
+          "path": "assets/illustrations/halo-cooling-v2-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 21692
+        },
+        {
+          "path": "assets/illustrations/halo-cooling-v2-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 45122
+        },
+        {
+          "path": "assets/illustrations/halo-cooling-v2-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 102786
+        }
+      ],
+      "publication_status": "active_concept_cover"
+    },
+    {
+      "id": "intergalactic-medium-v2",
+      "chapter": 16,
+      "prompt": "Use case: scientific-educational. Asset for a Chinese galaxy formation textbook. Restrained, highly detailed editorial astronomical illustration in deep graphite blue, cool gas blue and warm stellar light; landscape 3:2. No text, numbers, diagrams, arrows, scale bars, labels, telescope logos, watermark, or UI. Clearly conceptual, not a named observed object. Keep important subject fully visible with space around it. A small bright distant quasar located near the upper-right of the composition, with several separated translucent foreground gas filaments diagonally between that source and the empty lower-left foreground. Depth perspective through a sparse cosmic field. Do NOT draw any ray, beam, connection line, jet, lensing arc or light trail between quasar and foreground. Leave the lower-left mostly empty for a later interface sightline marker. It illustrates the foreground absorbing matter and background source, not a visible beam.",
+      "width": 1536,
+      "height": 1024,
+      "original_filename": "exec-451f12ba-28bf-4c82-b2a7-9185c8a2846b.png",
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "files": [
+        {
+          "path": "assets/illustrations/intergalactic-medium-v2-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 32402
+        },
+        {
+          "path": "assets/illustrations/intergalactic-medium-v2-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 64878
+        },
+        {
+          "path": "assets/illustrations/intergalactic-medium-v2-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 137552
+        }
+      ],
+      "publication_status": "retired_after_science_review",
+      "retirement_reason": "2026-10-16：正文改用明确公式/几何图解；生成场景不再用于解释物理。"
+    },
+    {
+      "id": "protostar-flow-v2",
+      "chapter": 9,
+      "prompt": "Use case: scientific-educational. Asset type: illustration inside a Chinese undergraduate textbook, on protostars, NOT active galactic nuclei. Create a restrained editorial astronomical illustration of a single nearby low-mass young star forming in a dusty cloud, its clearly resolved bright spherical orange-white stellar photosphere visible above the small surrounding protoplanetary disk. The central object is visibly a round star with a surface, never a dark hole or tiny point buried in luminous concentric rings. A cool dusty flat disk is seen obliquely with irregular faint dark dust texture, no bright hot orange concentric accretion rings. A pair of modest short blue-gray bipolar outflows emerges perpendicular to the disk, with knotted lobes, not laser beams. The envelope gradually fades outward into a dark cloud. Scientific editorial art in graphite blue and warm starlight, landscape 3:2. No text, axes, numbers, arrows, labels, watermarks, black holes, toroidal donut, giant jets or galaxy-scale structures. Conceptual scene rather than a claimed observation; relative scales are illustrative.",
+      "width": 1536,
+      "height": 1024,
+      "original_filename": "exec-e1eccfed-c973-4be3-b49f-c22c6d36e910.png",
+      "generator": "ImageGen（内置工具）",
+      "mode": "built-in",
+      "files": [
+        {
+          "path": "assets/illustrations/protostar-flow-v2-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 18082
+        },
+        {
+          "path": "assets/illustrations/protostar-flow-v2-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 32556
+        },
+        {
+          "path": "assets/illustrations/protostar-flow-v2-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 62668
+        }
+      ],
+      "publication_status": "retired_after_science_review",
+      "retirement_reason": "2026-10-16：正文改用明确公式/几何图解；生成场景不再用于解释物理。"
+    }
+  ]
+}

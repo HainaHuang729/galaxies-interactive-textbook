@@ -1,0 +1,41 @@
+{
+  "entries": 1660,
+  "uniqueAliases": 2487,
+  "kinds": {
+    "term": 536,
+    "symbol": 860,
+    "unit": 55,
+    "notation": 100,
+    "abbreviation": 109
+  },
+  "chapters": 16,
+  "readerPages": 514,
+  "mathPageIssues": 0,
+  "mathPageErrors": [],
+  "contextualGlyphAudit": {
+    "chapters": 16,
+    "pages": 514,
+    "unmatchedPhysicalLetters": 0,
+    "exclusions": [
+      "ordinary words inside TeX text",
+      "pure numerals",
+      "subscript descriptors; checked through complete variable and index definitions",
+      "action labels; provided by adjacent controls and page index"
+    ],
+    "errors": []
+  },
+  "openingStates": 96,
+  "interactionStates": 6,
+  "scientificUICases": 6,
+  "dynamicParameterPreserved": true,
+  "controlHelpStates": 8,
+  "presetActionPreserved": true,
+  "baselineStates": 6,
+  "baselineMaximumErrorPx": 0.002284999999972115,
+  "glossarySchemaAndScienceChecks": 15605,
+  "definitionMathFragments": 2663,
+  "inlineMathChecks": 1520,
+  "precisionPhysicsChecks": 497,
+  "advancedPhysicsChecks": 104991,
+  "buildIdempotent": true
+}

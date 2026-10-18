@@ -1,0 +1,9 @@
+{
+  "checkedAt": "2026-10-18T04:11:27.145Z",
+  "checks": 1057,
+  "independentChecks": 280,
+  "states": 200,
+  "maxPoissonResidual": 6.624954653910116e-16,
+  "maxProbeIntegralError": 1.93256521896501e-12,
+  "scope": "Static Newtonian Plummer host, local tensor versus finite central differences; noiseless face-on exponential isophotal photometry. No orbital evolution or survey completeness prediction."
+}

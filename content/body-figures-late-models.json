@@ -1,0 +1,23 @@
+{
+  "rendered": 65,
+  "orbit": [
+    {
+      "energyDrift": 0.00006606920032700692,
+      "minLz": -0.14782933343433022,
+      "maxLz": 0.14748190477862122
+    },
+    {
+      "energyDrift": 0.0000014479812126544367,
+      "minLz": 0.8023674471719717,
+      "maxLz": 0.9499990501014738
+    }
+  ],
+  "invariants": [
+    "Box orbit Lz changes sign; tube Lz positive; |ΔE| < 3e−4.",
+    "Both histogram marginals count the exact same 96 samples.",
+    "Occupation examples have equal means and exactly 4 versus 12 unordered pairs.",
+    "Forest density positive and transmission in (0,1].",
+    "Disk vertical profile integrates to unity (<1e−8 truncation error).",
+    "Thin-shell delays span 0–2r/c and average r/c."
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "checkedAt": "2026-10-17T04:59:08.364Z",
+  "math": {
+    "pages": 540,
+    "errors": [],
+    "issues": []
+  },
+  "glossary": {
+    "semanticCases": [
+      {
+        "ch": 2,
+        "target": "profile-lab-model",
+        "glyph": "R",
+        "id": "c2-sersic-radius"
+      },
+      {
+        "ch": 4,
+        "target": "sheet-lab-model",
+        "glyph": "q",
+        "id": "c4-q-initial"
+      },
+      {
+        "ch": 4,
+        "target": "statistics",
+        "glyph": "R",
+        "id": "c4-R-window"
+      },
+      {
+        "ch": 4,
+        "target": "statistics",
+        "glyph": "k",
+        "id": "c4-k"
+      },
+      {
+        "ch": 5,
+        "target": "sphere-lab",
+        "glyph": "δ",
+        "id": "c5-deltaL"
+      },
+      {
+        "ch": 6,
+        "target": "cmb-lab",
+        "glyph": "C",
+        "id": "c6-Clhat"
+      },
+      {
+        "ch": 8,
+        "target": "radcool-lab-model",
+        "glyph": "K",
+        "id": "common-unit-K"
+      },
+      {
+        "ch": 8,
+        "target": "radcool-lab-model",
+        "glyph": "ρ",
+        "id": "supp-c8-total-density"
+      },
+      {
+        "ch": 8,
+        "target": "thermal-lab-model",
+        "glyph": "0",
+        "id": "supp-c8-equilibrium-T0"
+      },
+      {
+        "ch": 11,
+        "target": "disk-spin-lab",
+        "glyph": "j",
+        "id": "supp-c11-spin-j-ratio"
+      },
+      {
+        "ch": 11,
+        "target": "toomre-lab-model",
+        "glyph": "min",
+        "id": "common-min"
+      },
+      {
+        "ch": 13,
+        "target": "fundamental-plane-lab-model",
+        "glyph": "e",
+        "id": "c13-fp-Ie"
+      },
+      {
+        "ch": 8,
+        "target": "buoy-lab",
+        "id": "supp-c8-buoyant-acceleration",
+        "click": true
+      },
+      {
+        "ch": 14,
+        "target": "agn-feedback-lab",
+        "id": "c14-fb-Ecoup",
+        "click": true
+      },
+      {
+        "ch": 15,
+        "target": "occupation-bias-lab",
+        "id": "c15-bias-ni",
+        "click": true
+      },
+      {
+        "ch": 15,
+        "target": "occupation-bias-lab",
+        "id": "c15-bias-Ni",
+        "click": true
+      },
+      {
+        "ch": 16,
+        "target": "transmission-lab",
+        "id": "c16-trans-cont",
+        "click": true
+      },
+      {
+        "ch": 16,
+        "target": "metal-thermometer-lab",
+        "id": "c16-metal-bm",
+        "click": true
+      },
+      {
+        "ch": 16,
+        "target": "neutral-census-lab",
+        "id": "supp-element-He",
+        "click": true
+      }
+    ],
+    "chapters": [
+      {
+        "chapter": 1,
+        "pages": 18,
+        "controlPages": 3,
+        "rangeInputs": 10,
+        "endpointStates": 6
+      },
+      {
+        "chapter": 2,
+        "pages": 33,
+        "controlPages": 5,
+        "rangeInputs": 12,
+        "endpointStates": 10
+      },
+      {
+        "chapter": 3,
+        "pages": 23,
+        "controlPages": 4,
+        "rangeInputs": 7,
+        "endpointStates": 8
+      },
+      {
+        "chapter": 4,
+        "pages": 32,
+        "controlPages": 6,
+        "rangeInputs": 10,
+        "endpointStates": 12
+      },
+      {
+        "chapter": 5,
+        "pages": 31,
+        "controlPages": 6,
+        "rangeInputs": 11,
+        "endpointStates": 12
+      },
+      {
+        "chapter": 6,
+        "pages": 34,
+        "controlPages": 8,
+        "rangeInputs": 20,
+        "endpointStates": 16
+      },
+      {
+        "chapter": 7,
+        "pages": 43,
+        "controlPages": 9,
+        "rangeInputs": 23,
+        "endpointStates": 18
+      },
+      {
+        "chapter": 8,
+        "pages": 38,
+        "controlPages": 9,
+        "rangeInputs": 26,
+        "endpointStates": 18
+      },
+      {
+        "chapter": 9,
+        "pages": 35,
+        "controlPages": 8,
+        "rangeInputs": 23,
+        "endpointStates": 16
+      },
+      {
+        "chapter": 10,
+        "pages": 35,
+        "controlPages": 9,
+        "rangeInputs": 25,
+        "endpointStates": 18
+      },
+      {
+        "chapter": 11,
+        "pages": 36,
+        "controlPages": 8,
+        "rangeInputs": 21,
+        "endpointStates": 16
+      },
+      {
+        "chapter": 12,
+        "pages": 33,
+        "controlPages": 8,
+        "rangeInputs": 23,
+        "endpointStates": 16
+      },
+      {
+        "chapter": 13,
+        "pages": 33,
+        "controlPages": 8,
+        "rangeInputs": 24,
+        "endpointStates": 16
+      },
+      {
+        "chapter": 14,
+        "pages": 33,
+        "controlPages": 9,
+        "rangeInputs": 29,
+        "endpointStates": 18
+      },
+      {
+        "chapter": 15,
+        "pages": 37,
+        "controlPages": 9,
+        "rangeInputs": 22,
+        "endpointStates": 18
+      },
+      {
+        "chapter": 16,
+        "pages": 46,
+        "controlPages": 13,
+        "rangeInputs": 43,
+        "endpointStates": 26
+      }
+    ],
+    "errors": [],
+    "dictionaryCards": 1894
+  },
+  "detail": {
+    "motion": [
+      {
+        "u": 0.008175,
+        "m": 0.1006098419321791,
+        "total": "63.91679157541107"
+      },
+      {
+        "u": 0.51856875,
+        "m": 0.17184183947856685,
+        "total": "63.91679157541107"
+      },
+      {
+        "u": 0.99980625,
+        "m": 42.507738561325176,
+        "total": "63.91679157541107"
+      }
+    ],
+    "focus": [
+      -20,
+      45
+    ],
+    "full": [
+      -20,
+      500
+    ],
+    "identicalRates": true,
+    "errors": []
+  },
+  "build": {
+    "files": 288,
+    "idempotent": true
+  },
+  "singleGlyphCoverage": {
+    "unknown": 0,
+    "compositeFragments": 260,
+    "errors": [],
+    "note": "Composite fragments are inventoried separately; this scan does not prove every prose term or compound is exhaustively explained."
+  },
+  "viewReference": {
+    "domain": [
+      -20,
+      45
+    ],
+    "overflow": false,
+    "pin": "false",
+    "bad": false
+  }
+}

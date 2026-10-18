@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-17T03:48:36.183Z",
+  "checks": 422,
+  "states": 24,
+  "layouts": 12,
+  "errors": [],
+  "shots": [
+    "final-tidal-tensor-afterglow-1440.png",
+    "final-tidal-tensor-afterglow-390.png",
+    "final-tidal-tensor-moon-1440.png",
+    "final-tidal-tensor-moon-390.png",
+    "final-isophotal-light-afterglow-1440.png",
+    "final-isophotal-light-afterglow-390.png",
+    "final-isophotal-light-moon-1440.png",
+    "final-isophotal-light-moon-390.png",
+    "final-live-dials-4x-afterglow.png",
+    "final-live-dials-4x-moon.png"
+  ],
+  "coverage": "Both labs; all range corner combinations; normalized/physical chart nodes and readings; gauge plane projection; fixed geometry; no-area image; real formula definition clicks; keyboard/chart selection; scan stop/reduced motion; 320/390px and both themes."
+}

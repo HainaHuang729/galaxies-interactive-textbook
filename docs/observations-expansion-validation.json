@@ -1,0 +1,276 @@
+{
+  "checkedAt": "2026-10-16T16:23:08.553Z",
+  "observations": {
+    "groups": 6,
+    "states": [
+      {
+        "chapter": 2,
+        "id": "body-figure-2-observing-2",
+        "width": 1440,
+        "theme": "afterglow",
+        "credits": 3
+      },
+      {
+        "chapter": 2,
+        "id": "body-figure-2-observing-2",
+        "width": 1440,
+        "theme": "moon",
+        "credits": 3
+      },
+      {
+        "chapter": 2,
+        "id": "body-figure-2-observing-2",
+        "width": 768,
+        "theme": "afterglow",
+        "credits": 3
+      },
+      {
+        "chapter": 2,
+        "id": "body-figure-2-observing-2",
+        "width": 768,
+        "theme": "moon",
+        "credits": 3
+      },
+      {
+        "chapter": 2,
+        "id": "body-figure-2-observing-2",
+        "width": 320,
+        "theme": "afterglow",
+        "credits": 3
+      },
+      {
+        "chapter": 2,
+        "id": "body-figure-2-observing-2",
+        "width": 320,
+        "theme": "moon",
+        "credits": 3
+      },
+      {
+        "chapter": 8,
+        "id": "body-figure-8-observations-15",
+        "width": 1440,
+        "theme": "afterglow",
+        "credits": 2
+      },
+      {
+        "chapter": 8,
+        "id": "body-figure-8-observations-15",
+        "width": 1440,
+        "theme": "moon",
+        "credits": 2
+      },
+      {
+        "chapter": 8,
+        "id": "body-figure-8-observations-15",
+        "width": 768,
+        "theme": "afterglow",
+        "credits": 2
+      },
+      {
+        "chapter": 8,
+        "id": "body-figure-8-observations-15",
+        "width": 768,
+        "theme": "moon",
+        "credits": 2
+      },
+      {
+        "chapter": 8,
+        "id": "body-figure-8-observations-15",
+        "width": 320,
+        "theme": "afterglow",
+        "credits": 2
+      },
+      {
+        "chapter": 8,
+        "id": "body-figure-8-observations-15",
+        "width": 320,
+        "theme": "moon",
+        "credits": 2
+      },
+      {
+        "chapter": 3,
+        "id": "body-figure-3-planck-cmb-2013",
+        "width": 1440,
+        "theme": "afterglow",
+        "credits": 1
+      },
+      {
+        "chapter": 3,
+        "id": "body-figure-3-planck-cmb-2013",
+        "width": 1440,
+        "theme": "moon",
+        "credits": 1
+      },
+      {
+        "chapter": 3,
+        "id": "body-figure-3-planck-cmb-2013",
+        "width": 768,
+        "theme": "afterglow",
+        "credits": 1
+      },
+      {
+        "chapter": 3,
+        "id": "body-figure-3-planck-cmb-2013",
+        "width": 768,
+        "theme": "moon",
+        "credits": 1
+      },
+      {
+        "chapter": 3,
+        "id": "body-figure-3-planck-cmb-2013",
+        "width": 320,
+        "theme": "afterglow",
+        "credits": 1
+      },
+      {
+        "chapter": 3,
+        "id": "body-figure-3-planck-cmb-2013",
+        "width": 320,
+        "theme": "moon",
+        "credits": 1
+      },
+      {
+        "chapter": 6,
+        "id": "body-figure-6-cosmic-horseshoe",
+        "width": 1440,
+        "theme": "afterglow",
+        "credits": 1
+      },
+      {
+        "chapter": 6,
+        "id": "body-figure-6-cosmic-horseshoe",
+        "width": 1440,
+        "theme": "moon",
+        "credits": 1
+      },
+      {
+        "chapter": 6,
+        "id": "body-figure-6-cosmic-horseshoe",
+        "width": 768,
+        "theme": "afterglow",
+        "credits": 1
+      },
+      {
+        "chapter": 6,
+        "id": "body-figure-6-cosmic-horseshoe",
+        "width": 768,
+        "theme": "moon",
+        "credits": 1
+      },
+      {
+        "chapter": 6,
+        "id": "body-figure-6-cosmic-horseshoe",
+        "width": 320,
+        "theme": "afterglow",
+        "credits": 1
+      },
+      {
+        "chapter": 6,
+        "id": "body-figure-6-cosmic-horseshoe",
+        "width": 320,
+        "theme": "moon",
+        "credits": 1
+      },
+      {
+        "chapter": 7,
+        "id": "body-figure-7-bullet-cluster-composite",
+        "width": 1440,
+        "theme": "afterglow",
+        "credits": 1
+      },
+      {
+        "chapter": 7,
+        "id": "body-figure-7-bullet-cluster-composite",
+        "width": 1440,
+        "theme": "moon",
+        "credits": 1
+      },
+      {
+        "chapter": 7,
+        "id": "body-figure-7-bullet-cluster-composite",
+        "width": 768,
+        "theme": "afterglow",
+        "credits": 1
+      },
+      {
+        "chapter": 7,
+        "id": "body-figure-7-bullet-cluster-composite",
+        "width": 768,
+        "theme": "moon",
+        "credits": 1
+      },
+      {
+        "chapter": 7,
+        "id": "body-figure-7-bullet-cluster-composite",
+        "width": 320,
+        "theme": "afterglow",
+        "credits": 1
+      },
+      {
+        "chapter": 7,
+        "id": "body-figure-7-bullet-cluster-composite",
+        "width": 320,
+        "theme": "moon",
+        "credits": 1
+      },
+      {
+        "chapter": 15,
+        "id": "body-figure-15-coma-cluster-field",
+        "width": 1440,
+        "theme": "afterglow",
+        "credits": 1
+      },
+      {
+        "chapter": 15,
+        "id": "body-figure-15-coma-cluster-field",
+        "width": 1440,
+        "theme": "moon",
+        "credits": 1
+      },
+      {
+        "chapter": 15,
+        "id": "body-figure-15-coma-cluster-field",
+        "width": 768,
+        "theme": "afterglow",
+        "credits": 1
+      },
+      {
+        "chapter": 15,
+        "id": "body-figure-15-coma-cluster-field",
+        "width": 768,
+        "theme": "moon",
+        "credits": 1
+      },
+      {
+        "chapter": 15,
+        "id": "body-figure-15-coma-cluster-field",
+        "width": 320,
+        "theme": "afterglow",
+        "credits": 1
+      },
+      {
+        "chapter": 15,
+        "id": "body-figure-15-coma-cluster-field",
+        "width": 320,
+        "theme": "moon",
+        "credits": 1
+      }
+    ],
+    "errors": []
+  },
+  "readingPages": 509,
+  "readingIssues": [],
+  "readingErrors": [],
+  "bodyFigureChecks": 1189,
+  "texChecks": 1505,
+  "originalJpegs": 9,
+  "zoomFactors": [
+    2,
+    4
+  ],
+  "keyboardPanning": true,
+  "escapeAndFocusReturn": true,
+  "literalFilterNames": true,
+  "sourceManifestAndCreditsMatch": true,
+  "rebuildIdempotent": true
+}

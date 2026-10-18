@@ -1,0 +1,228 @@
+{
+  "checkedAt": "2026-10-16T16:48:19.233Z",
+  "newObservationGroups": 5,
+  "newDisplayStates": [
+    {
+      "chapter": 9,
+      "id": "body-figure-9-hh30-webb-disk-jet",
+      "width": 1440,
+      "theme": "afterglow",
+      "credits": 1
+    },
+    {
+      "chapter": 9,
+      "id": "body-figure-9-hh30-webb-disk-jet",
+      "width": 1440,
+      "theme": "moon",
+      "credits": 1
+    },
+    {
+      "chapter": 9,
+      "id": "body-figure-9-hh30-webb-disk-jet",
+      "width": 768,
+      "theme": "afterglow",
+      "credits": 1
+    },
+    {
+      "chapter": 9,
+      "id": "body-figure-9-hh30-webb-disk-jet",
+      "width": 768,
+      "theme": "moon",
+      "credits": 1
+    },
+    {
+      "chapter": 9,
+      "id": "body-figure-9-hh30-webb-disk-jet",
+      "width": 320,
+      "theme": "afterglow",
+      "credits": 1
+    },
+    {
+      "chapter": 9,
+      "id": "body-figure-9-hh30-webb-disk-jet",
+      "width": 320,
+      "theme": "moon",
+      "credits": 1
+    },
+    {
+      "chapter": 10,
+      "id": "body-figure-10-tycho-remnant-2019",
+      "width": 1440,
+      "theme": "afterglow",
+      "credits": 1
+    },
+    {
+      "chapter": 10,
+      "id": "body-figure-10-tycho-remnant-2019",
+      "width": 1440,
+      "theme": "moon",
+      "credits": 1
+    },
+    {
+      "chapter": 10,
+      "id": "body-figure-10-tycho-remnant-2019",
+      "width": 768,
+      "theme": "afterglow",
+      "credits": 1
+    },
+    {
+      "chapter": 10,
+      "id": "body-figure-10-tycho-remnant-2019",
+      "width": 768,
+      "theme": "moon",
+      "credits": 1
+    },
+    {
+      "chapter": 10,
+      "id": "body-figure-10-tycho-remnant-2019",
+      "width": 320,
+      "theme": "afterglow",
+      "credits": 1
+    },
+    {
+      "chapter": 10,
+      "id": "body-figure-10-tycho-remnant-2019",
+      "width": 320,
+      "theme": "moon",
+      "credits": 1
+    },
+    {
+      "chapter": 11,
+      "id": "body-figure-11-ngc1300-stellar-bar",
+      "width": 1440,
+      "theme": "afterglow",
+      "credits": 1
+    },
+    {
+      "chapter": 11,
+      "id": "body-figure-11-ngc1300-stellar-bar",
+      "width": 1440,
+      "theme": "moon",
+      "credits": 1
+    },
+    {
+      "chapter": 11,
+      "id": "body-figure-11-ngc1300-stellar-bar",
+      "width": 768,
+      "theme": "afterglow",
+      "credits": 1
+    },
+    {
+      "chapter": 11,
+      "id": "body-figure-11-ngc1300-stellar-bar",
+      "width": 768,
+      "theme": "moon",
+      "credits": 1
+    },
+    {
+      "chapter": 11,
+      "id": "body-figure-11-ngc1300-stellar-bar",
+      "width": 320,
+      "theme": "afterglow",
+      "credits": 1
+    },
+    {
+      "chapter": 11,
+      "id": "body-figure-11-ngc1300-stellar-bar",
+      "width": 320,
+      "theme": "moon",
+      "credits": 1
+    },
+    {
+      "chapter": 12,
+      "id": "body-figure-12-eso137-stripping",
+      "width": 1440,
+      "theme": "afterglow",
+      "credits": 1
+    },
+    {
+      "chapter": 12,
+      "id": "body-figure-12-eso137-stripping",
+      "width": 1440,
+      "theme": "moon",
+      "credits": 1
+    },
+    {
+      "chapter": 12,
+      "id": "body-figure-12-eso137-stripping",
+      "width": 768,
+      "theme": "afterglow",
+      "credits": 1
+    },
+    {
+      "chapter": 12,
+      "id": "body-figure-12-eso137-stripping",
+      "width": 768,
+      "theme": "moon",
+      "credits": 1
+    },
+    {
+      "chapter": 12,
+      "id": "body-figure-12-eso137-stripping",
+      "width": 320,
+      "theme": "afterglow",
+      "credits": 1
+    },
+    {
+      "chapter": 12,
+      "id": "body-figure-12-eso137-stripping",
+      "width": 320,
+      "theme": "moon",
+      "credits": 1
+    },
+    {
+      "chapter": 13,
+      "id": "body-figure-13-eso38112-stellar-shells",
+      "width": 1440,
+      "theme": "afterglow",
+      "credits": 1
+    },
+    {
+      "chapter": 13,
+      "id": "body-figure-13-eso38112-stellar-shells",
+      "width": 1440,
+      "theme": "moon",
+      "credits": 1
+    },
+    {
+      "chapter": 13,
+      "id": "body-figure-13-eso38112-stellar-shells",
+      "width": 768,
+      "theme": "afterglow",
+      "credits": 1
+    },
+    {
+      "chapter": 13,
+      "id": "body-figure-13-eso38112-stellar-shells",
+      "width": 768,
+      "theme": "moon",
+      "credits": 1
+    },
+    {
+      "chapter": 13,
+      "id": "body-figure-13-eso38112-stellar-shells",
+      "width": 320,
+      "theme": "afterglow",
+      "credits": 1
+    },
+    {
+      "chapter": 13,
+      "id": "body-figure-13-eso38112-stellar-shells",
+      "width": 320,
+      "theme": "moon",
+      "credits": 1
+    }
+  ],
+  "errors": [],
+  "allObservationGroups": 11,
+  "originalJpegs": 14,
+  "bodyFigureChecks": 1194,
+  "texChecks": 1505,
+  "readingPages": 514,
+  "readingErrors": [],
+  "readingIssues": [],
+  "baselineStates": 6,
+  "longMathScroll": true,
+  "sourceCreditsAndHashesMatch": true,
+  "rebuildIdempotent": true
+}

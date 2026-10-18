@@ -1,0 +1,56 @@
+{
+  "id": "cmb-sampling-lab",
+  "chapter": 6,
+  "insertAfter": "cmb-lab",
+  "title": "同一个理论，可以抽到怎样的天空",
+  "eyebrow": "宇宙方差 · 可复现的独立天空抽样",
+  "intro": "固定理论功率，反复生成假想天空。在低多极处，功率估计的分布明显偏斜；增加天空次数让直方图更接近理论曲线，却不会改变单片天空的宇宙方差。",
+  "module": "cmb-sampling-physics.js",
+  "global": "CmbSamplingPhysics",
+  "call": "simulate({ell, count, seed, bins: 60})",
+  "params": [
+    {"key": "ell", "label": "多极", "tex": "\\ell", "min": 2, "max": 100, "step": 1, "value": 2},
+    {"key": "count", "label": "假想天空数", "tex": "N", "min": 100, "max": 4000, "step": 100, "value": 1000},
+    {"key": "seed", "label": "抽样种子", "min": 1, "max": 9999, "step": 1, "value": 1}
+  ],
+  "formulaTex": [
+    "\\nu=2\\ell+1,\\qquad R=\\frac{\\widehat C_\\ell}{C_\\ell}=\\frac1\\nu\\sum_{j=1}^{\\nu}Z_j^2,\\quad Z_j\\sim\\mathcal N(0,1)",
+    "p(R)=\\frac{(\\nu/2)^{\\nu/2}}{\\Gamma(\\nu/2)}R^{\\nu/2-1}e^{-\\nu R/2},\\qquad R\\ge0",
+    "\\mathbb E[R]=1,\\quad\\operatorname{Var}(R)=\\frac2\\nu,\\quad\\sigma_R=\\sqrt{\\frac2\\nu}",
+    "s_R^2=\\frac{1}{N-1}\\sum_{i=1}^{N}(R_i-\\overline R)^2"
+  ],
+  "chart": {
+    "xLabel": "功率估计比 R = Ĉℓ / Cℓ",
+    "yLabel": "概率密度 p(R)",
+    "histogram": "result.histogram: {lo, hi, center, count, density}",
+    "theory": "result.theory: {x, y}",
+    "xDomain": "result.xDomain；按整批样本确定，动画期间固定",
+    "yDomain": "全批直方图与理论曲线的最大密度乘1.12；动画期间固定",
+    "legend": ["抽样直方图 · 面积归一为1", "χ²理论概率密度", "理论均值1", "均值±理论标准差"],
+    "probe": "直方图应读箱区间、样本数与概率密度；不要把柱高直接称为概率。概率为柱高乘箱宽。理论曲线在同一R处求pdf。"
+  },
+  "readouts": [
+    {"label": "独立实自由度", "value": "result.nu", "tex": "\\nu"},
+    {"label": "样本均值", "value": "result.sampleMean", "tex": "\\overline R"},
+    {"label": "无偏样本方差", "value": "result.sampleVariance", "tex": "s_R^2"},
+    {"label": "单片天空的理论标准差", "value": "result.theoreticalSD", "tex": "\\sigma_R"},
+    {"label": "均值±σ的理论覆盖率", "value": "100*result.sigmaBandCoverage", "unit": "%"},
+    {"label": "中心68%区间", "value": "result.central68Interval.lo ... result.central68Interval.hi"}
+  ],
+  "caption": "假设全天、高斯、统计各向同性、无噪声且无掩膜；各次天空独立。每个多极有ν=2ℓ+1个独立实高斯自由度。理论均值固定为1，方差为2/ν；有限抽样的均值与方差会波动。直方图面积归一为1，柱高表示概率密度。均值±1个理论标准差的覆盖率由χ²分布计算，不将它称为低ℓ下的68%等尾区间；另列16%与84%分位给出中心68%区间。这是新增统计实验，不是实际CMB观测。",
+  "batchAnimation": {
+    "api": "prefixSummary(result, visibleCount)",
+    "behavior": "预先计算完整result并锁定整批x/y图域，逐批显示同一samples前缀；完成后与result完全一致。空前缀时均值和方差为null，不显示为0。",
+    "normalization": "非空前缀直方图以已显示样本数归一，面积始终为1。动画早期的窄箱密度可以超过最终图域：可预先取所有计划前缀的最大柱高锁定y域，或只用已满100个样本的前缀启动显示；必须说明/处理溢出，不能把隐藏柱高读成0。",
+    "accessibility": "仅由用户触发播放，离开可见页暂停，支持暂停/重播；prefers-reduced-motion时直接展示全批。"
+  },
+  "scienceNotes": [
+    "N是假想天空数，ν是每个多极的独立实自由度，二者不要混用。",
+    "单片天空的σR与样本均值的标准误σR/√N不同；增加N不会降低单片天空的宇宙方差。",
+    "样本方差使用N−1分母的无偏估计；populationSecondCentralMoment另提供N分母的描述性二阶矩。",
+    "抽样由Box–Muller正态变量逐个求平方和构造，未将χ²分布替换为高斯近似。",
+    "直方图范围包含所有生成样本；理论分布仍延伸到无穷，domainTailProbability是图域以外的理论概率而不是漏计的样本。",
+    "均值±σ覆盖率与中心68%区间从正则化不完全Gamma函数分别计算。"
+  ],
+  "source": "MBW (2010) §6.7.1，pp.302–304：全天功率估计与宇宙方差背景。χ²概率密度、等尾分位及重复抽样为基于该高斯场假设的新增统计推导，不复刻原书图。"
+}

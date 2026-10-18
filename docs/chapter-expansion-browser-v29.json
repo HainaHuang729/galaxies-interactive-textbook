@@ -1,0 +1,416 @@
+{
+  "checks": [
+    "same local circular speed, different escape outcome; direct radius selection",
+    "pinned reference preserves parameters and probe reads actual curve node",
+    "MDF conditional mean, empty sample and direct threshold selection",
+    "face-on degeneracy, receding sign and orbit/velocity-delay phase selection",
+    "phase motion pauses, stops off-page and respects reduced motion",
+    "gas-fraction demonstration, manual takeover and readout comparison"
+  ],
+  "corners": [
+    {
+      "id": "halo-escape",
+      "mask": 0
+    },
+    {
+      "id": "halo-escape",
+      "mask": 1
+    },
+    {
+      "id": "halo-escape",
+      "mask": 2
+    },
+    {
+      "id": "halo-escape",
+      "mask": 3
+    },
+    {
+      "id": "halo-escape",
+      "mask": 4
+    },
+    {
+      "id": "halo-escape",
+      "mask": 5
+    },
+    {
+      "id": "halo-escape",
+      "mask": 6
+    },
+    {
+      "id": "halo-escape",
+      "mask": 7
+    },
+    {
+      "id": "halo-escape",
+      "mask": 8
+    },
+    {
+      "id": "halo-escape",
+      "mask": 9
+    },
+    {
+      "id": "halo-escape",
+      "mask": 10
+    },
+    {
+      "id": "halo-escape",
+      "mask": 11
+    },
+    {
+      "id": "halo-escape",
+      "mask": 12
+    },
+    {
+      "id": "halo-escape",
+      "mask": 13
+    },
+    {
+      "id": "halo-escape",
+      "mask": 14
+    },
+    {
+      "id": "halo-escape",
+      "mask": 15
+    },
+    {
+      "id": "metal-distribution",
+      "mask": 0
+    },
+    {
+      "id": "metal-distribution",
+      "mask": 1
+    },
+    {
+      "id": "metal-distribution",
+      "mask": 2
+    },
+    {
+      "id": "metal-distribution",
+      "mask": 3
+    },
+    {
+      "id": "metal-distribution",
+      "mask": 4
+    },
+    {
+      "id": "metal-distribution",
+      "mask": 5
+    },
+    {
+      "id": "metal-distribution",
+      "mask": 6
+    },
+    {
+      "id": "metal-distribution",
+      "mask": 7
+    },
+    {
+      "id": "velocity-delay",
+      "mask": 0
+    },
+    {
+      "id": "velocity-delay",
+      "mask": 1
+    },
+    {
+      "id": "velocity-delay",
+      "mask": 2
+    },
+    {
+      "id": "velocity-delay",
+      "mask": 3
+    },
+    {
+      "id": "velocity-delay",
+      "mask": 4
+    },
+    {
+      "id": "velocity-delay",
+      "mask": 5
+    },
+    {
+      "id": "velocity-delay",
+      "mask": 6
+    },
+    {
+      "id": "velocity-delay",
+      "mask": 7
+    },
+    {
+      "id": "velocity-delay",
+      "mask": 8
+    },
+    {
+      "id": "velocity-delay",
+      "mask": 9
+    },
+    {
+      "id": "velocity-delay",
+      "mask": 10
+    },
+    {
+      "id": "velocity-delay",
+      "mask": 11
+    },
+    {
+      "id": "velocity-delay",
+      "mask": 12
+    },
+    {
+      "id": "velocity-delay",
+      "mask": 13
+    },
+    {
+      "id": "velocity-delay",
+      "mask": 14
+    },
+    {
+      "id": "velocity-delay",
+      "mask": 15
+    }
+  ],
+  "layouts": [
+    {
+      "theme": "afterglow",
+      "width": 1440,
+      "ch": 7,
+      "id": "halo-escape-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 1440,
+      "ch": 10,
+      "id": "metal-distribution-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 1440,
+      "ch": 14,
+      "id": "velocity-delay-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 1440,
+      "ch": 9,
+      "id": "illustration-hii-ionized-cloud"
+    },
+    {
+      "theme": "afterglow",
+      "width": 1440,
+      "ch": 10,
+      "id": "illustration-agb-mass-return"
+    },
+    {
+      "theme": "afterglow",
+      "width": 768,
+      "ch": 7,
+      "id": "halo-escape-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 768,
+      "ch": 10,
+      "id": "metal-distribution-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 768,
+      "ch": 14,
+      "id": "velocity-delay-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 768,
+      "ch": 9,
+      "id": "illustration-hii-ionized-cloud"
+    },
+    {
+      "theme": "afterglow",
+      "width": 768,
+      "ch": 10,
+      "id": "illustration-agb-mass-return"
+    },
+    {
+      "theme": "afterglow",
+      "width": 390,
+      "ch": 7,
+      "id": "halo-escape-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 390,
+      "ch": 10,
+      "id": "metal-distribution-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 390,
+      "ch": 14,
+      "id": "velocity-delay-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 390,
+      "ch": 9,
+      "id": "illustration-hii-ionized-cloud"
+    },
+    {
+      "theme": "afterglow",
+      "width": 390,
+      "ch": 10,
+      "id": "illustration-agb-mass-return"
+    },
+    {
+      "theme": "afterglow",
+      "width": 320,
+      "ch": 7,
+      "id": "halo-escape-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 320,
+      "ch": 10,
+      "id": "metal-distribution-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 320,
+      "ch": 14,
+      "id": "velocity-delay-lab"
+    },
+    {
+      "theme": "afterglow",
+      "width": 320,
+      "ch": 9,
+      "id": "illustration-hii-ionized-cloud"
+    },
+    {
+      "theme": "afterglow",
+      "width": 320,
+      "ch": 10,
+      "id": "illustration-agb-mass-return"
+    },
+    {
+      "theme": "moon",
+      "width": 1440,
+      "ch": 7,
+      "id": "halo-escape-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 1440,
+      "ch": 10,
+      "id": "metal-distribution-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 1440,
+      "ch": 14,
+      "id": "velocity-delay-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 1440,
+      "ch": 9,
+      "id": "illustration-hii-ionized-cloud"
+    },
+    {
+      "theme": "moon",
+      "width": 1440,
+      "ch": 10,
+      "id": "illustration-agb-mass-return"
+    },
+    {
+      "theme": "moon",
+      "width": 768,
+      "ch": 7,
+      "id": "halo-escape-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 768,
+      "ch": 10,
+      "id": "metal-distribution-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 768,
+      "ch": 14,
+      "id": "velocity-delay-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 768,
+      "ch": 9,
+      "id": "illustration-hii-ionized-cloud"
+    },
+    {
+      "theme": "moon",
+      "width": 768,
+      "ch": 10,
+      "id": "illustration-agb-mass-return"
+    },
+    {
+      "theme": "moon",
+      "width": 390,
+      "ch": 7,
+      "id": "halo-escape-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 390,
+      "ch": 10,
+      "id": "metal-distribution-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 390,
+      "ch": 14,
+      "id": "velocity-delay-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 390,
+      "ch": 9,
+      "id": "illustration-hii-ionized-cloud"
+    },
+    {
+      "theme": "moon",
+      "width": 390,
+      "ch": 10,
+      "id": "illustration-agb-mass-return"
+    },
+    {
+      "theme": "moon",
+      "width": 320,
+      "ch": 7,
+      "id": "halo-escape-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 320,
+      "ch": 10,
+      "id": "metal-distribution-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 320,
+      "ch": 14,
+      "id": "velocity-delay-lab"
+    },
+    {
+      "theme": "moon",
+      "width": 320,
+      "ch": 9,
+      "id": "illustration-hii-ionized-cloud"
+    },
+    {
+      "theme": "moon",
+      "width": 320,
+      "ch": 10,
+      "id": "illustration-agb-mass-return"
+    }
+  ],
+  "errors": [],
+  "checkedAt": "2026-10-17T02:33:26.313Z"
+}

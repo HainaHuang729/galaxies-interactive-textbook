@@ -1,0 +1,1259 @@
+{
+  "book": "Mo, van den Bosch & White, Galaxy Formation and Evolution, Cambridge University Press, 2010",
+  "pdf_page_offset": 22,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "导论",
+      "printed_start_page": 1,
+      "status": "draft_complete"
+    },
+    {
+      "number": 2,
+      "title": "观测事实",
+      "printed_start_page": 25,
+      "status": "draft_complete",
+      "printed_end_page": 99,
+      "path": "chapter-2.html",
+      "scope": "Original introductory treatment of sections 2.1–2.10 with five teaching experiments; not a full reproduction of every derivation. Anatomy review adds targeted experiments without a fixed count cap.",
+      "experiment_count": 5
+    },
+    {
+      "number": 3,
+      "title": "宇宙学背景",
+      "printed_start_page": 100,
+      "status": "draft_complete",
+      "printed_end_page": 161,
+      "path": "chapter-3.html",
+      "scope": "Original introductory treatment of sections 3.1–3.6, four numerical experiments and a thermal-history explorer. Not a reproduction of all particle-physics derivations.",
+      "experiment_count": 4
+    },
+    {
+      "number": 4,
+      "title": "宇宙学扰动",
+      "printed_start_page": 162,
+      "status": "draft_complete",
+      "printed_end_page": 214,
+      "path": "chapter-4.html",
+      "scope": "Original introductory treatment of sections 4.1–4.5 with six teaching experiments. Does not reproduce the full relativistic derivations. Anatomy review adds targeted experiments without a fixed count cap."
+    },
+    {
+      "number": 5,
+      "title": "引力坍缩与无碰撞动力学",
+      "printed_start_page": 215,
+      "status": "draft_complete",
+      "printed_end_page": 261,
+      "path": "chapter-5.html",
+      "scope": "Original introductory treatment of sections 5.1–5.6 with six teaching experiments; not a reproduction of every derivation or a self-consistent N-body simulation. Anatomy review adds targeted experiments without a fixed count cap.",
+      "experiment_count": 7
+    },
+    {
+      "number": 6,
+      "title": "探测宇宙密度场",
+      "printed_start_page": 262,
+      "status": "draft_complete",
+      "printed_end_page": 318,
+      "path": "chapter-6.html",
+      "scope": "Original introductory treatment of sections 6.1–6.7 with seven teaching experiments; no reproduction of full survey/lensing/CMB pipelines. Anatomy review adds targeted experiments without a fixed count cap.",
+      "experiment_count": 8
+    },
+    {
+      "number": 7,
+      "title": "暗物质晕的形成与结构",
+      "printed_start_page": 319,
+      "status": "draft_complete",
+      "printed_end_page": 365,
+      "path": "chapter-7.html",
+      "scope": "Original introductory treatment of sections 7.1–7.6 with eight teaching experiments. Includes NFW/200c normalization corrected using author errata; toy power-law variance, sharp-k discrete walk and labelled 2D pairs are explicitly scoped. No full N-body, calibrated CDM abundance or self-consistent merger-tree claim.",
+      "experiment_count": 9
+    },
+    {
+      "number": 8,
+      "title": "气体晕的形成与演化",
+      "printed_start_page": 366,
+      "status": "draft_complete",
+      "printed_end_page": 416,
+      "path": "chapter-8.html",
+      "scope": "Original introductory treatment of sections 8.1–8.8 with nine independent teaching experiments. Pure ionized hydrogen gas, explicit power-law cooling and ideal analytic limits; not a unified fluid simulation, atomic database, nonlinear multiphase calculation or current observational release.",
+      "experiment_count": 10
+    },
+    {
+      "number": 9,
+      "title": "恒星形成",
+      "printed_start_page": 417,
+      "status": "draft_complete",
+      "printed_end_page": 448,
+      "path": "chapter-9.html",
+      "scope": "原创交互导读，覆盖本章主节与精选定量模型；不复刻原书全文、原图或全部推导。各实验的背景与近似分别声明，不组成一套统一研究模拟。伴读生成可复制的参数化问题，未提供在线模型回答。",
+      "experiment_count": 8
+    },
+    {
+      "number": 10,
+      "title": "恒星族与化学演化",
+      "printed_start_page": 449,
+      "status": "draft_complete",
+      "printed_end_page": 494,
+      "path": "chapter-10.html",
+      "scope": "原创交互导读，覆盖本章主节与精选定量模型；不复刻原书全文、原图或全部推导。各实验的背景与近似分别声明，不组成一套统一研究模拟。伴读生成可复制的参数化问题，未提供在线模型回答。",
+      "experiment_count": 9
+    },
+    {
+      "number": 11,
+      "title": "盘星系",
+      "printed_start_page": 495,
+      "status": "draft_complete",
+      "printed_end_page": 543,
+      "path": "chapter-11.html",
+      "scope": "原创交互导读，覆盖本章主节与精选定量模型；不复刻原书全文、原图或全部推导。各实验的背景与近似分别声明，不组成一套统一研究模拟。伴读生成可复制的参数化问题，未提供在线模型回答。",
+      "experiment_count": 8
+    },
+    {
+      "number": 12,
+      "title": "星系相互作用与转化",
+      "printed_start_page": 544,
+      "status": "draft_complete",
+      "printed_end_page": 573,
+      "path": "chapter-12.html",
+      "scope": "原创交互导读，覆盖本章主节与精选定量模型；不复刻原书全文、原图或全部推导。各实验的背景与近似分别声明，不组成一套统一研究模拟。伴读生成可复制的参数化问题，未提供在线模型回答。",
+      "experiment_count": 8
+    },
+    {
+      "number": 13,
+      "title": "椭圆星系",
+      "printed_start_page": 574,
+      "status": "draft_complete",
+      "printed_end_page": 617,
+      "path": "chapter-13.html",
+      "scope": "原创交互导读，覆盖本章主节与精选定量模型；不复刻原书全文、原图或全部推导。各实验的背景与近似分别声明，不组成一套统一研究模拟。伴读生成可复制的参数化问题，未提供在线模型回答。",
+      "experiment_count": 8
+    },
+    {
+      "number": 14,
+      "title": "活动星系",
+      "printed_start_page": 618,
+      "status": "draft_complete",
+      "printed_end_page": 651,
+      "path": "chapter-14.html",
+      "scope": "原创交互导读，覆盖本章主节与精选定量模型；不复刻原书全文、原图或全部推导。各实验的背景与近似分别声明，不组成一套统一研究模拟。伴读生成可复制的参数化问题，未提供在线模型回答。",
+      "experiment_count": 9
+    },
+    {
+      "number": 15,
+      "title": "星系统计性质",
+      "printed_start_page": 652,
+      "status": "draft_complete",
+      "printed_end_page": 688,
+      "path": "chapter-15.html",
+      "scope": "原创交互导读，覆盖本章主节与精选定量模型；不复刻原书全文、原图或全部推导。各实验的背景与近似分别声明，不组成一套统一研究模拟。伴读生成可复制的参数化问题，未提供在线模型回答。",
+      "experiment_count": 9
+    },
+    {
+      "number": 16,
+      "title": "星系际介质",
+      "printed_start_page": 689,
+      "status": "draft_complete",
+      "printed_end_page": 740,
+      "path": "chapter-16.html",
+      "scope": "原创交互导读，覆盖本章主节与精选定量模型；不复刻原书全文、原图或全部推导。各实验的背景与近似分别声明，不组成一套统一研究模拟。伴读生成可复制的参数化问题，未提供在线模型回答。",
+      "experiment_count": 13
+    }
+  ],
+  "models": {
+    "morphology": "Original geometric illustration; not observation or dynamical calculation.",
+    "gas_cycle": "Original 4-reservoir teaching model; initial hot gas 1e10 Msun, R=.4, constant cooling/depletion/loading; no inflow, reaccretion, AGN. Based on qualitative processes in sections 1.2.4–1.2.6.",
+    "clocks": "Section 1.3 pp.14–15; G=4.30091e-6 kpc (km/s)^2 Msun^-1; H0=70 km/s/Mpc. Cooling time supplied, not calculated from plasma physics.",
+    "rotation": "Sections 11.1.2 pp.498–500 and 7.5.1 pp.351–353; thin exponential disk plus NFW halo, M200c at z=0, fixed axisymmetric potential.",
+    "photometry": "MBW 2.1.1 pp.26–29: near-distance Euclidean flux, apparent magnitude, angular half-light radius and mean surface brightness. No PSF, noise, extinction, cosmological dimming or K corrections.",
+    "spectroscopy": "MBW 2.1.2 pp.29–32. Three synthetic Gaussian lines; SDSS vacuum reference wavelengths (nm): Hbeta 486.268, OIII 500.824, Halpha 656.461. Instrument R=1000, Gaussian velocity broadening; line intensities and continuum are artificial.",
+    "sersic": "MBW pp.42–43,49–50. Integer n=1..6, b_n solved numerically from half-light constraint, circular profile with fixed total luminosity. No PSF or dust; image finite, enclosed fraction integrated to infinity.",
+    "survey": "MBW pp.61–63. Seeded 1400-object artificial catalogue: M uniform [-23,-14], uniform spatial density over d=10..100 Mpc. Flux and volume cuts; not an observed luminosity function.",
+    "cosmology_expansion": "MBW 3.1 pp.102–112: flat 2D comoving grid, a0=1, ideal comoving observers and fixed-size galaxy symbols. Redshift z=1/a_emit−1. Animation sweeps a uniformly, not cosmic time.",
+    "cosmology_background": "MBW 3.2 pp.113–120: flat matter+radiation+Lambda model; H0 50..90, Omega_m0 .1.. .9, fixed Omega_r0=.00009, closure Omega_Lambda0=1−Omega_m0−Omega_r0. Ideal radiation, no changes in species or massive neutrinos. Adaptive Simpson quadrature in sqrt(a).",
+    "cosmology_distance": "MBW 3.1.6 and 3.2.5–6 pp.110–112,119–124: flat comoving/luminosity/angular distances and lookback time for z=.01..10. Transparent propagation and photon conservation. No K corrections, extinction, lensing or source evolution.",
+    "cosmology_thermal": "MBW 3.3–3.5 pp.124–152: qualitative original diagrams and approximate textbook milestones, no reaction-network simulation.",
+    "cosmology_inflation": "MBW 3.6 pp.152–161: single constant-w fluid, flat spacetime, (aH)^-1 ratio=exp[(1+3w)N/2]. Not a particle horizon or complete inflation/reheating model.",
+    "perturbation_field": "MBW 4.4 pp.202–209: 16 nonredundant integer Fourier modes in a 2D periodic box. Fixed amplitudes, variable phases, zero mean, RMS A<=.05. Not a strict Gaussian field realization or observation.",
+    "jeans": "MBW 4.1.3 pp.166–167: static background, constant density and sound speed, tau=sqrt(4piG rho)t, lambda/lambdaJ .4..2, tau<=3, delta0=.01, initial derivative zero. Exact cos/cosh, no cosmic expansion.",
+    "growth": "MBW 4.1.6(a) pp.172–173: subhorizon pressureless growing mode in flat matter+Lambda, no radiation. Numerical Eq4.72 integral, early D/a→1 or optional D(1)=1. a=.05..1, Omega_m0=.1..1.",
+    "zeldovich": "MBW 4.1.8 pp.177–178: plane symmetric map x=q−s sin(2piq)/(2pi), J=1−s cos(2piq), density=1/J. s<=.9 before crossing, 2400 equal-mass markers per panel, no virialization or N-body solver.",
+    "transfer": "MBW 4.3 pp.196–202, BBKS Eq4.245 p200: q=(k/[h Mpc^-1])/Gamma, low baryon CDM fit without BAO. Gamma=.1.. .4; arbitrary power amplitude k^n T^2, n=.8..1.2, no data fit.",
+    "spherical_collapse": "MBW 5.1 pp.215–220: EdS pressureless uniform spherical top-hat parameter solution; theta/pi .2..1.9. Mass markers scaled by analytic radius. Playback uniform physical time. No shell-crossing evolution or virialization solver. Virial radius/density stated separately with assumptions.",
+    "plummer_orbit": "MBW 5.4.5 pp.236–239 and p243 Eq5.165: fixed Plummer potential G=M=b=1, r0=2, vr0=0, vt0/vc=.3..1.5. Leapfrog dt=.005, duration60, no particle feedback. Finite orbit window and automatic plot extent.",
+    "spherical_jeans": "MBW 5.4.3 and 5.4.7 pp.233–234,240–241: steady spherical tracer nu~r^-gamma, constant sigma_r and beta. vc^2=(gamma−2beta)*sigma_r^2. Local scale-free moment constraint, not projected data inference or validated global distribution function.",
+    "two_body_relaxation": "MBW 5.4.1 Eq5.98 pp.230–232: t_relax~N/(10 ln N)t_cross; equal-mass weak-encounter order-of-magnitude estimate; N=1e2..1e12, t_cross=1..100 Myr.",
+    "phase_mixing": "MBW 5.5.1 pp.249–250 concept; new integrable teaching Hamiltonian H=J−s/2*(J−1)^2, theta_dot=1−s*(J−1), J=.8..1.2, initial theta=−.18...18. 768 equal-area samples, canonical x,p view; conserved area .144, reversible shear, no self-consistent galaxy or coarse-grained entropy calculation.",
+    "pair_statistics": "MBW 6.1.2 pp264–266 and 6.5.1 pp284–285. Fixed-N=600 synthetic 2D periodic box L100, 8 Gaussian mixture centres, minimum-image pair bins r<30, analytic RR=N(N−1)/2*pi*(r2^2−r1^2)/L^2. Not 3D clustering or observed catalogue.",
+    "redshift_mapping": "MBW 6.2–6.3 pp270–278. a1 H0=70, plane-parallel low-z s_parallel=r_parallel+v_parallel/H0. 300 fixed Gaussian points; assigned v=−A H0r+sigma*epsilon. Coordinate interpolation only, no self-consistent evolution or Kaiser field solver.",
+    "point_mass_lens": "MBW 6.6.2 pp295–297 with author distance errata. Physical angular-diameter dL1000,dS1600,dLS1000 Mpc; point mass 1e10..1e12 Msun. Inverse ray mapping of Gaussian source sigma0.09 arcsec, fixed view±4.3 arcsec, surface brightness conserved. Readouts use centre point-source limit; no integrated pixel magnification, noise, PSF or wave optics.",
+    "local_shear": "MBW 6.6.1 pp294–295. Local constant Jacobian on a known circular source; kappa0.. .4, reduced shear g0.. .4, gamma=g*(1−kappa), positive parity. No source population, mass reconstruction or PSF effects.",
+    "cmb_variance": "MBW 6.7.1 pp302–304 and supplementary WMAP three-year temperature Eq34–35. Ideal full-sky Gaussian modes: Chat/Cl=chi-square(2ell+1)/(2ell+1), ell2..100. Normalized ratios, not observed acoustic spectrum or temperature map; mean±SD is not a strict 68% interval at low ell.",
+    "gaussian_resolution": "New teaching model following Ch2 observation context: two equal Gaussian sources sigma_src=.25 arcsec; Gaussian PSF sigma=.3..2; separation .5..6 arcsec. sigma_eff quadrature, continuous bimodality iff d>2sigma_eff. Normalized total flux1. Not Airy/Rayleigh or noisy deblending.",
+    "gaussian_smoothing": "Ch4.4: 8-mode 1D periodic box L100, zero mean, initial RMS.08, Gaussian W=exp[−k²R²/2], variance sum a²W²/2. Separate realization from opening 2D field, no sigma8.",
+    "virial_energy": "Ch5.4.4: isolated homologous system, same mass/structure coefficient, energy conservation, negligible surface term and assumed final virial equilibrium. Rf/Ri=1/(2−Qi) only Qi<2; no relaxation solver.",
+    "linear_bias": "Ch6.1.2/6.2.2: deterministic constant positive b, delta_g=b delta_m, Pg/Pm=xi_g/xi_m=b², single mode amplitude.08, no shot noise or stochastic/scale-dependent bias.",
+    "kaiser": "Ch6.3.1 Eq6.83–6.88: linear plane-parallel Ps/Pr=(1+(f/b)mu²)²; monopole1+2beta/3+beta²/5. Independent f teaching parameter, shared b with bias experiment; no FoG/wide-angle/nonlinear correction."
+  },
+  "errata": "https://people.umass.edu/hjmo/book/errata.pdf",
+  "pdf_included": false,
+  "ai_tutor": "Contextual question export; no embedded answering service.",
+  "spectral_line_source": "https://classic.sdss.org/dr7/algorithms/linestable.php",
+  "chapter_2_errata": [
+    "p.82 Eq.(2.46): add 1/M before sum",
+    "p.94 following Eq.(2.59): divide curvature relation RHS by c^2"
+  ],
+  "chapter_3_errata": [
+    "p.104: corrected embedding metric and hyperboloid signs; original expressions not used here",
+    "p.142 Eq.(3.210): 16.4 eta → 16.4; approximation not used here"
+  ],
+  "chapter_4_errata": [
+    "p.171 section4.1.5: xi → xi^-1; faulty expression not used",
+    "p.192: Eq4.205 reference → Eq4.206; faulty reference not used",
+    "p.205 Eq4.264 remove two factors2; Eq4.266 delta_G^2 → delta_G; neither probability formula used",
+    "p.207 Eq4.272: top-hat denominator (kR)^2 → (kR)^3; corrected expression shown"
+  ],
+  "chapter_5_errata": [
+    "p216 Lagrangian radius: cube root required; original incorrect expression not used",
+    "p243 Eq5.162 second incomplete beta third argument chi→1−chi; this expression not used",
+    "p244 Eq5.167 potential variable Phi_tilde→Psi_tilde; this expression not used",
+    "p249 punctuation correction after df/dt=0"
+  ],
+  "chapter_6_errata": [
+    "p264 Eq6.14 missing six disconnected terms; expression not used",
+    "p266 Eq6.26 and p270 Eq6.58: x+x_prime→x−x_prime in smoothing kernels; erroneous form not used",
+    "p269 Eq6.44 corrected fourth cumulant; original expression not used",
+    "p290 Eq6.163 nnu^2/nu^2→1/nu^2; p291 Eq6.165 1/nu^2→nnu^2/nu^2; neither Limber expression used",
+    "pp294–299: use physical angular-diameter d in thin-lens geometrical formulas, including Eq6.209; corrected convention applied",
+    "p301 Eq6.234 missing1/c^2 and Eq6.235 missing1/c^4; neither cosmic-shear spectrum expression used"
+  ],
+  "cmb_supplement": "https://lambda.gsfc.nasa.gov/product/wmap/dr2/pub_papers/threeyear/temperature/wmap_3yr_temp.pdf",
+  "interactive_policy": "Choose experiment count by physical learning objectives; no fixed five-experiment cap. Review assumptions, model/readout consistency, keyboard/mobile access and animation lifecycle.",
+  "anatomy_review": {
+    "chapters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "new_experiments": [
+      "resolution-lab",
+      "smoothing-lab",
+      "virial-lab",
+      "bias-lab",
+      "kaiser-lab"
+    ],
+    "instrument": "Anatomy-based 63-solid resolution teaching bench; independent Gaussian double-source model, not a traced real telescope",
+    "geometry_audit": "scripts/build-anatomy.mjs --audit; true shapes, 5 depth states, 21 motion states",
+    "index": "experiments.html"
+  },
+  "chapter_7_models": {
+    "printed_pages": "319–365",
+    "pdf_ordinals": "341–387",
+    "errata": "https://people.umass.edu/hjmo/book/errata.pdf",
+    "experiments": [
+      {
+        "anchor": "nfw-lab",
+        "title": "NFW球壳探针",
+        "scope": "球内质量、圆周速度与剖切投影。"
+      },
+      {
+        "anchor": "peak-lab",
+        "title": "平滑场的密度峰",
+        "scope": "区分平滑尺度与高度筛选。"
+      },
+      {
+        "anchor": "ps-lab",
+        "title": "Press–Schechter质量函数",
+        "scope": "幂律方差教学模型中的质量份额。"
+      },
+      {
+        "anchor": "walk-lab",
+        "title": "首次越障",
+        "scope": "独立增量与连续理论的边界。"
+      },
+      {
+        "anchor": "prog-lab",
+        "title": "条件祖先质量份额",
+        "scope": "区分质量加权与祖先数。"
+      },
+      {
+        "anchor": "hbias-lab",
+        "title": "峰背景分裂偏置",
+        "scope": "从ν预测同一时刻的平均响应。"
+      },
+      {
+        "anchor": "boundary-lab",
+        "title": "200c与200m边界",
+        "scope": "固定剖面，只变质量定义。"
+      },
+      {
+        "anchor": "hpair-lab",
+        "title": "单晕与双晕配对",
+        "scope": "验证同宿主与跨宿主的配对相加。"
+      }
+    ],
+    "constants": {
+      "H0_km_s_Mpc": 70,
+      "G_kpc_km2_s2_Msun": 0.00000430091,
+      "delta_c": 1.686
+    },
+    "normalization": "z=0 NFW M200c/c200c. Reference-density conversion shares fixed rs and rho_s. PS has declared sigma(M)=delta_c (M/1e13 Msun)^(-alpha), direct D input and rho_m0=.3 rho_crit0; no h factors.",
+    "tutor": "Exports current parameters, assumptions and section/page references; no online answer service."
+  },
+  "chapter_8_models": {
+    "printed_pages": "366–416",
+    "pdf_ordinals": "388–438",
+    "errata": "https://people.umass.edu/hjmo/book/errata.pdf",
+    "experiments": [
+      {
+        "anchor": "shock-lab",
+        "title": "平面激波跃迁",
+        "scope": "同一组跃迁解驱动密度、速度与温度。"
+      },
+      {
+        "anchor": "radcool-lab",
+        "title": "辐射冷却时标",
+        "scope": "简化Λ函数下的冷却与自由落体时标。"
+      },
+      {
+        "anchor": "compton-lab",
+        "title": "Compton交换",
+        "scope": "观察密度独立的CMB能量交换时标。"
+      },
+      {
+        "anchor": "hse-lab",
+        "title": "NFW等温气体平衡",
+        "scope": "压力梯度如何托住气体。"
+      },
+      {
+        "anchor": "buoy-lab",
+        "title": "浮力与熵梯度",
+        "scope": "比较绝热气团与等压环境。"
+      },
+      {
+        "anchor": "cradius-lab",
+        "title": "冷却半径诊断",
+        "scope": "区分时标等值线与物质轨迹。"
+      },
+      {
+        "anchor": "thermal-lab",
+        "title": "局部热稳定性",
+        "scope": "明确加热律后判断小扰动响应。"
+      },
+      {
+        "anchor": "blast-lab",
+        "title": "瞬时爆炸",
+        "scope": "能量守恒Sedov相似扩张。"
+      },
+      {
+        "anchor": "wind-lab",
+        "title": "恒功率风泡",
+        "scope": "热泡、薄壳与辐射的能量账。"
+      }
+    ],
+    "composition": "Fully ionized pure hydrogen: gamma=5/3, mu=.5, n_total=2 nH, electron/proton temperatures equal. Differs from primordial-helium coefficients in book.",
+    "cooling": "Explicit toy Lambda=1e-22 (T/1e6K)^alpha erg cm3/s. Isochoric instantaneous time uses internal energy. Cooling-radius r^-2 gas is a separate initial profile, not the NFW HSE solution.",
+    "thermal": "Constant per-H heating and isobaric perturbations; small linear solution only.",
+    "feedback": "Sedov uses instant fixed E; wind uses constant L with adiabatic hot bubble and radiative cold thin shell. Energy bookkeeping is explicit.",
+    "tutor": "Current-parameter question exports, assumptions and source pages; no online answer service."
+  },
+  "chapter_10_models": {
+    "pages": [
+      449,
+      494
+    ],
+    "experiments": [
+      {
+        "id": "lifetime",
+        "model": "lifetime",
+        "pages": [
+          462,
+          463
+        ],
+        "scope": "原书式10.72的近太阳丰度寿命拟合，0.08–100M☉内求转折。显示L∝m³·⁵只是独立教学标度，不是该拟合自带精确光度。未加入旋转、双星或完整演化轨迹。",
+        "references": []
+      },
+      {
+        "id": "ssp",
+        "model": "ssp",
+        "pages": [
+          470,
+          474
+        ],
+        "scope": "仅主序星加权模型，遗漏巨星、AGB、双星、遗迹光、金属丰度与真实恒星谱。因此晚期光度不能代替SPS数据库；离开主序的质量也不等于已经全部回到气体。",
+        "references": []
+      },
+      {
+        "id": "sfh",
+        "model": "sfh",
+        "pages": [
+          471,
+          474
+        ],
+        "scope": "总形成质量归一化为1，两个指数函数都是明确指定的教学形状。曲线权重各自面积归一，光响应不对应实际滤镜；不能从此推断观测年龄精度。 响应核在年龄为0时定义为1，未指定实际波段或太阳光度单位。",
+        "references": []
+      },
+      {
+        "id": "dust",
+        "model": "dust",
+        "pages": [
+          476,
+          484
+        ],
+        "scope": "单温黑体不是星族光谱。积分直达光损失只涵盖0.15–2.5μm；消光包含吸收和散射出视线，模型未分离两者，因此该损失不等于被吸收能量，也未计算红外再辐射。B/V用0.44/0.55μm窄带近似；真实衰减还依赖混合几何、散射和尘埃性质。 A_B表示B波段消光，不是AB星等系统；E(B−V)=A_B−A_V。",
+        "references": []
+      },
+      {
+        "id": "closed",
+        "model": "closed",
+        "pages": [
+          486,
+          490
+        ],
+        "scope": "初始Z=0、瞬时回收与均匀混合，无流入流出。y按永久锁定质量定义，非每单位总形成质量；金属质量分数Z不是直接的[Fe/H]。 μ=1时没有已锁定恒星，恒星平均金属丰度不定义；0仅是从有恒星侧趋近的极限。",
+        "references": []
+      },
+      {
+        "id": "leaky",
+        "model": "leaky",
+        "pages": [
+          490,
+          491
+        ],
+        "scope": "外流与星际气体同丰度、无流入；μ指初始质量归一化，不能用Mg/(Mg+Mlocked)偷换。没有选择性富金属风。",
+        "references": []
+      },
+      {
+        "id": "inflow",
+        "model": "inflow",
+        "pages": [
+          490,
+          492
+        ],
+        "scope": "按作者p490勘误；原初流入、Zinit=0、y=0.02，Ψ/Mgas与R固定。真实延迟回收、Ia时间分布、径向流与不均匀混合未求解。",
+        "references": []
+      }
+    ],
+    "errata": "已纳入p475年龄—金属丰度解释及p490流入率勘误；所有简化星谱与响应核都与真实SPS库区分。"
+  },
+  "chapter_11_models": {
+    "pages": [
+      495,
+      543
+    ],
+    "experiments": [
+      {
+        "id": "disk-profile",
+        "model": "expDisk",
+        "pages": [
+          496,
+          501
+        ],
+        "scope": "轴对称指数表面密度，质量积分是二维盘积分；不能将球内质量公式当作薄盘引力。真实指数盘旋转用保留的Bessel函数样板，并按式11.30勘误采用正号。",
+        "references": []
+      },
+      {
+        "id": "disk-spin",
+        "model": "spin",
+        "pages": [
+          506,
+          507
+        ],
+        "scope": "奇异等温暗晕、忽略盘自引力和核球，角动量/质量比例输入独立。真实NFW浓度、收缩与交换会改变Vobs与Vvir的对应，不能把这个极限当作唯一形成理论。",
+        "references": []
+      },
+      {
+        "id": "epicycle",
+        "model": "epicycle",
+        "pages": [
+          504,
+          505
+        ],
+        "scope": "近圆、小振幅epicycle近似。平坦、Kepler、固体转动分别给κ/Ω=√2、1、2。图中没有指定棒模式速度，频率组合本身不表示该半径已经发生共振。",
+        "references": []
+      },
+      {
+        "id": "toomre",
+        "model": "toomre",
+        "pages": [
+          523,
+          525
+        ],
+        "scope": "薄流体盘、局部轴对称WKB。恒星盘Q的分母为3.36而非π，不能把它放进同一流体色散式。λ*=λcrit Q²/2对应ω²最小值：Q<1时为最快增长波长，Q=1时为中性边界，Q>1时仍是稳定振荡、没有增长模式。λcrit/2只在Q=1的初发边界与λ*相同；实际空间尺度还必须满足局部WKB适用条件。",
+        "references": []
+      },
+      {
+        "id": "sheet",
+        "model": "sheet",
+        "pages": [
+          498,
+          498
+        ],
+        "scope": "使用z₀定义，明确与原书zd的因子2；剖面对z积分为Σ。局部平面、等温、单组分、自引力，忽略气体、暗晕和多年龄组分，不能直接断言真实厚盘的唯一起源。",
+        "references": []
+      },
+      {
+        "id": "winding",
+        "model": "winding",
+        "pages": [
+          531,
+          534
+        ],
+        "scope": "Vc=200km/s，R=3–15kpc；真实单位换算进入角度。图是两条物质线，不是恒星被锁在长期稳定密度波上，未求解旋臂增长、自引力或棒驱动。",
+        "references": []
+      },
+      {
+        "id": "stellar-response",
+        "model": "stellarResponse",
+        "pages": [
+          524,
+          525
+        ],
+        "scope": "无限薄、局部WKB、轴对称、小扰动，恒星为Schwarzschild速度分布；流体对照取cs=σR但并非将恒星热化。F(0,χ)由缩放I0计算，阈值来自寻峰3.35828≈3.36，不是把流体分母π直接替换进原色散式。未求全局棒、厚度、多成分耦合或复数增长率。",
+        "references": []
+      }
+    ],
+    "errata": "指数盘旋转曲线使用式11.30正号勘误；等温层明确z₀=2zd；流体盘区分ω²最小波长与最快增长波长：仅Q<1存在增长，Q=1为中性边界。"
+  },
+  "chapter_9_models": {
+    "pages": [
+      417,
+      448
+    ],
+    "experiments": [
+      {
+        "id": "jeans",
+        "model": "jeans",
+        "pages": [
+          419,
+          420
+        ],
+        "scope": "均匀分子气体、等温声速、热支持，μ=2.33含氦。n为总粒子密度，非nH或nH₂。忽略湍流、磁场、边界压力与有限云结构；Jeans条件不是每个GMC必然成星的保证。",
+        "references": []
+      },
+      {
+        "id": "cloud",
+        "model": "cloud",
+        "pages": [
+          419,
+          420
+        ],
+        "scope": "孤立均匀球、无表面项，σ为总一维支持速度，未再加一次热声速。αvir=1为维里平衡关系，αvir=2才是此模型零总能量边界；真实受压、磁化和非平衡云不必照此分类。",
+        "references": []
+      },
+      {
+        "id": "magnetic",
+        "model": "magnetic",
+        "pages": [
+          425,
+          426
+        ],
+        "scope": "这是常用理想质量—磁通临界约定，几何系数与原书均匀球估算不完全相同。磁通冻结、场方向、非理想扩散和湍流都影响结论；不把MΦ与MJ直接相加成精确支撑质量。",
+        "references": []
+      },
+      {
+        "id": "efficiency",
+        "model": "efficiency",
+        "pages": [
+          425,
+          428
+        ],
+        "scope": "固定由初始密度计算的tff，形成质量全部锁定，忽略回流、补给、反馈与密度变化。这是效率的定义性动力学类比，不解释真实εff的唯一来源。",
+        "references": []
+      },
+      {
+        "id": "ks",
+        "model": "ks",
+        "pages": [
+          434,
+          439
+        ],
+        "scope": "归一化参考教材讨论的全局Kennicutt关系，气体约定不加额外氦修正；N=1.4为参考，改变N是教学比较而非重新拟合数据。未计算散布、分子比例或局部阈值。",
+        "references": []
+      },
+      {
+        "id": "imf",
+        "model": "imf",
+        "pages": [
+          440,
+          445
+        ],
+        "scope": "Salpeter单幂律在全质量区间的延伸是教学假设，并非实测低质量IMF。按质量与按个数的份额不同；简化8M☉前身阈值不能替代超新星类型或遗迹模型。",
+        "references": []
+      },
+      {
+        "id": "hii",
+        "model": "stromgren",
+        "pages": [
+          432,
+          433
+        ],
+        "scope": "纯氢、T=10⁴K、case-B αB=2.6×10⁻¹³cm³/s、恒定Q和密度。作为大质量星电离反馈的新增局部推导，不包括气体压力膨胀、尘埃、逃逸与辐射流体耦合。",
+        "references": []
+      }
+    ],
+    "errata": "采用明确的分子或纯氢成分约定；不同实验的n定义在控件旁分别列出。"
+  },
+  "chapter_12_models": {
+    "pages": [
+      544,
+      573
+    ],
+    "experiments": [
+      {
+        "id": "tidal-shock",
+        "model": "tidalShock",
+        "pages": [
+          546,
+          547
+        ],
+        "scope": "球对称目标、直线远距离飞掠，b≥5rrms；内部速度标度固定20km/s，仅用来检查脉冲条件。tenc/tint不远小于1时需要绝热响应，图中加热只能视为公式外推。几何示意不积分真实轨道。 同时显示聚焦参数χ=GMp/(bV²)与r_rms/b；χ或r_rms/b不小会破坏直线/远距离近似。0.1及遭遇时标比0.3仅作网页质量提示，不是精确分界。",
+        "references": []
+      },
+      {
+        "id": "heat-end",
+        "model": "heatEnd",
+        "pages": [
+          547,
+          548
+        ],
+        "scope": "同源、质量不流失、初态与终态维里平衡且无外部交换。给出能量守恒终点，不将插值动画当作弛豫轨迹；h≥1时没有这类束缚终态。",
+        "references": []
+      },
+      {
+        "id": "tidal-radius",
+        "model": "tidalRadius",
+        "pages": [
+          548,
+          549
+        ],
+        "scope": "点质量宿主、圆轨道、理想共转潮汐边界。球形尺度不是严格逃逸面，外侧物质不立即全部消失；偏心轨道、延展质量与真实流结构需要进一步求解。",
+        "references": []
+      },
+      {
+        "id": "drag",
+        "model": "drag",
+        "pages": [
+          556,
+          557
+        ],
+        "scope": "均匀、各向同性Maxwell背景，试验体质量远大于单粒子。零速处按解析极限返回0。加速度始终反向于运动；v/|a|是局部时标，并非完整轨道衰减时间。",
+        "references": []
+      },
+      {
+        "id": "friction",
+        "model": "friction",
+        "pages": [
+          557,
+          560
+        ],
+        "scope": "奇异等温宿主、圆轨道、恒定卫星质量。大质量比、失质量、宿主核结构及轨道偏心都会破坏模型；r=0仅为理想吸收端点，不描绘奇点内部。 质量比使用当前r(t)：M/Mhost(<r)=GM/(Vc²r)；半径趋零时此比不定义，不能把理想吸收端点当成轻卫星近似仍成立。",
+        "references": []
+      },
+      {
+        "id": "ram",
+        "model": "ram",
+        "pages": [
+          571,
+          572
+        ],
+        "scope": "面密度中心值500/50M☉pc⁻²，尺度3/5kpc，均显式指定；纯氢团际气体、薄盘垂直迎风局部恢复力。零压力保留全部气体。未计算倾角、压缩或实际剥离速度，更不等于立即淬火。",
+        "references": []
+      },
+      {
+        "id": "starvation",
+        "model": "starvation",
+        "pages": [
+          572,
+          573
+        ],
+        "scope": "本章定性机制的新增单区解析类比，回流瞬时、井混合、参数不随时间变化。切断的是补给，非立刻移除全部冷气体；红色卫星不能凭颜色唯一归因于窒息。",
+        "references": []
+      }
+    ],
+    "errata": "潮汐与摩擦实验分别说明有效域；盘增厚以定性机制解释，未沿用p567局部系数与固定面密度标度之间的不一致。"
+  },
+  "chapter_13_models": {
+    "pages": [
+      574,
+      617
+    ],
+    "experiments": [
+      {
+        "id": "projection",
+        "model": "spheroid",
+        "pages": [
+          575,
+          577
+        ],
+        "scope": "解析高斯教学模型，非实际Sérsic拟合；投影改变轴比与中心亮度，积分总光仍为L。一个视角通常不能唯一恢复三维结构。",
+        "references": []
+      },
+      {
+        "id": "anisotropy",
+        "model": "anisotropy",
+        "pages": [
+          579,
+          581
+        ],
+        "scope": "对数球势、无限尺度无关标记分布、常β与σr，γ>max(1,2β)。由Jeans与投影方程独立推得；二阶矩解不自动保证完整分布函数非负。已采用作者对p580视线分量文字的勘误。",
+        "references": []
+      },
+      {
+        "id": "bh-resolution",
+        "model": "bhResolution",
+        "pages": [
+          582,
+          584
+        ],
+        "scope": "低红移欧氏角换算。分辨影响半径是测量质量的重要条件之一，不能替代轨道模型、PSF处理与谱线信噪比；无当前具体天体质量断言。",
+        "references": []
+      },
+      {
+        "id": "dry-merger",
+        "model": "dryMerger",
+        "pages": [
+          596,
+          597
+        ],
+        "scope": "无气体、无失质量、结构同源、零轨道能，不向暗晕输运额外能量。这是终态比较，未计算并合过程、时间或全部椭圆星系尺寸。",
+        "references": []
+      },
+      {
+        "id": "phase-proxy",
+        "model": "phaseProxy",
+        "pages": [
+          598,
+          599
+        ],
+        "scope": "各向同性速度标度的代理；Qref是人为参照，不是实测前身。无碰撞混合不能提高最大粗粒化相空间密度，但本页代理比值不独自证明任何具体形成通道可行或不可行。",
+        "references": []
+      },
+      {
+        "id": "fundamental-plane",
+        "model": "fplane",
+        "pages": [
+          602,
+          606
+        ],
+        "scope": "L=2πIeRe²，结构同源；归一化人为指定，未拟合数据。星族、暗物质和结构非同源都能影响倾斜，单一示例不能唯一解释观测平面。",
+        "references": []
+      },
+      {
+        "id": "frosting",
+        "model": "frosting",
+        "pages": [
+          606,
+          610
+        ],
+        "scope": "q为显式教学输入，没有虚构SSP谱库。光度加权年龄不同于谱线拟合的SSP等效年龄；颜色必须用通量组合，不能线性平均星等。",
+        "references": []
+      }
+    ],
+    "errata": "采用p580视线速度分量的作者勘误；高斯投影与尺度无关Jeans模型为明确标注的解析教学延伸。"
+  },
+  "chapter_14_models": {
+    "pages": [
+      618,
+      651
+    ],
+    "experiments": [
+      {
+        "id": "eddington",
+        "model": "eddington",
+        "pages": [
+          623,
+          624
+        ],
+        "scope": "完全电离纯氢、电子散射、球对称各向同性稳态参照。Eddington光度不是所有几何的硬上限；保留到黑洞的质量率还乘(1−ε)。",
+        "references": []
+      },
+      {
+        "id": "thin-disk",
+        "model": "thinDisk",
+        "pages": [
+          625,
+          626
+        ],
+        "scope": "光学厚、几何薄、零内边界力矩、局部辐射，未加入GR、自旋和色修正。按式14.14对两面独立积分，得到上述总光与半光半径；与该页附近文字不一致，这不是作者勘误清单中的修正。",
+        "references": []
+      },
+      {
+        "id": "superluminal",
+        "model": "superluminal",
+        "pages": [
+          635,
+          636
+        ],
+        "scope": "静止源参考系中的直线运动团块；不含宇宙红移，观测时间差还乘(1+z)。真实物质速度始终小于c，表观横向速度来自传播时间。",
+        "references": []
+      },
+      {
+        "id": "beaming",
+        "model": "beaming",
+        "pages": [
+          636,
+          637
+        ],
+        "scope": "采用离散团块的几何指数3；连续稳态流指数不同。图用对数纵轴，未模拟喷流加速、产生或辐射输运。",
+        "references": []
+      },
+      {
+        "id": "reverb",
+        "model": "reverb",
+        "pages": [
+          639,
+          640
+        ],
+        "scope": "薄壳单位面积top-hat为新增几何示例，不是实际光变数据。平均延迟不等于最大延迟，质量依赖线宽定义与几何f；忽略红移、复杂传递函数和动力学。",
+        "references": []
+      },
+      {
+        "id": "bh-growth",
+        "model": "bhGrowth",
+        "pages": [
+          640,
+          644
+        ],
+        "scope": "计入(1−ε)保留质量的扩展形式，燃料无限且各参数恒定。未解决种子形成、角动量输运、反馈与供给；极大外推质量提示假设必须失效，不是可实现预言。",
+        "references": []
+      },
+      {
+        "id": "torus",
+        "model": "torus",
+        "pages": [
+          637,
+          639
+        ],
+        "scope": "轴对称不透明环带的理想统一图式，方向均匀于cos i。示意不是望远镜成像，不包含真实环带辐射输运；取向无法解释全部分类、射电响度或吸积状态。",
+        "references": []
+      },
+      {
+        "id": "agn-feedback",
+        "model": "agnFeedback",
+        "pages": [
+          648,
+          651
+        ],
+        "scope": "Mgalσ²仅为明确指定的束缚标度，质量指星系参照质量。足够能量不保证逃逸或淬火；冷却、方向、时序、动量和不同反馈通道影响真实耦合。",
+        "references": []
+      }
+    ],
+    "errata": "薄盘实验独立积分式14.14，采用两面L=GMṀ/(2Rin)、Rhalf=4Rin；明确标注这是对附近文字内部矛盾的处理，未冒称作者勘误。"
+  },
+  "chapter_15_models": {
+    "pages": [
+      652,
+      688
+    ],
+    "experiments": [
+      {
+        "id": "luminosity",
+        "model": "luminosity",
+        "pages": [
+          654,
+          658
+        ],
+        "scope": "Schechter形式参照第2章式2.34及本章讨论；积分固定0.001–31.6L*。向零光度延伸时，数量要求α>−1，光度要求α>−2；有限截断不是消除了数学发散。",
+        "references": []
+      },
+      {
+        "id": "counts",
+        "model": "counts",
+        "pages": [
+          658,
+          662
+        ],
+        "scope": "均匀Euclidean空间、固定本征光度、完整通量选择，无K修正、宇宙学体积或演化。100sr⁻¹是人为归一化；密度与光度共同改变计数，不能单靠它恢复唯一星形成史。",
+        "references": []
+      },
+      {
+        "id": "matching",
+        "model": "matching",
+        "pages": [
+          663,
+          665
+        ],
+        "scope": "合成暗晕每dex∝M⁻⁰·⁹，M=10¹⁰–10¹⁵M☉；星系Schechter的L*=10¹⁰L☉，L=10⁶–10¹¹·⁵L☉。两分布分别归一至同数量，单调、一晕一星系，无散布、无卫星。ε*>1时显式判无效，不裁成1。",
+        "references": []
+      },
+      {
+        "id": "central",
+        "model": "central",
+        "pages": [
+          665,
+          670
+        ],
+        "scope": "原书式15.38形式的指定关系，不是最新拟合。中心条件概率归一为1，卫星条件光度函数的积分则是期望数量；本实验没有把两者混成一个概率，也没有规定中心必定最亮。",
+        "references": []
+      },
+      {
+        "id": "cosmic-sfr",
+        "model": "cosmicSFR",
+        "pages": [
+          670,
+          674
+        ],
+        "scope": "质量单位M☉，nlog单位Mpc⁻³dex⁻¹；只在阈值至10¹⁵M☉积分。函数与时期因子为明确教学设定，无观测点、无校准，不宣称所有卫星SFR为0或独立预测真实峰值。",
+        "references": []
+      },
+      {
+        "id": "environment",
+        "model": "environment",
+        "pages": [
+          674,
+          678
+        ],
+        "scope": "所有概率均为合成设定，不是巡天测量。只说明组成差异足以产生相关性；控制质量后仍可能存在中心/卫星、组装史及直接环境作用，不能由该例否定因果。",
+        "references": []
+      },
+      {
+        "id": "occupation",
+        "model": "occupation",
+        "pages": [
+          679,
+          682
+        ],
+        "scope": "离散合成分布，不是Poisson；没有规定中心/卫星的条件独立。无序不同星系对除以2，避免把有序对和无序对混用；自配对不计入。",
+        "references": []
+      },
+      {
+        "id": "occupation-bias",
+        "model": "bias",
+        "pages": [
+          680,
+          684
+        ],
+        "scope": "合成数量密度n=(0.01,0.001,0.00005)Mpc⁻³，bh=(0.8,1.5,3)。只适用确定性线性大尺度，不求一晕内部剖面；全零占据时偏倚不定义。已核对作者对式15.80、15.85中质量符号的勘误。",
+        "references": []
+      }
+    ],
+    "errata": "核对p659式15.16的dm dz及p680–681式15.80、15.85中的M符号勘误；所有数值样本标为合成设定，不冒充当前巡天结果。"
+  },
+  "chapter_16_models": {
+    "pages": [
+      689,
+      740
+    ],
+    "experiments": [
+      {
+        "id": "transmission",
+        "model": "transmission",
+        "pages": [
+          690,
+          695
+        ],
+        "scope": "两类合成吸收屏，其余单元τ=0.1。Gunn–Peterson共振吸收很容易饱和，黑槽只约束透射上限，不能直接证明xHI=1；本页不由τ唯一反演中性份额或当前再电离红移。",
+        "references": []
+      },
+      {
+        "id": "photo-equilibrium",
+        "model": "photo",
+        "pages": [
+          695,
+          704
+        ],
+        "scope": "选择本章式16.34的复合近似；C为有效密度团块因子，非电离体积填充率。忽略碰撞电离、He、屏蔽和辐射输运；低温高电离近似nHI∝n²/Γ仅在x≪1时成立。",
+        "references": []
+      },
+      {
+        "id": "ion-bubble",
+        "model": "ionBubble",
+        "pages": [
+          704,
+          707
+        ],
+        "scope": "静态均匀纯氢、case-B α=2.6×10⁻¹³。关灯后的指数项是假设全电离锐边界体积的线性闭合，非局部真实自由复合和因果前沿退缩；固定体元自由复合为xe=1/(1+Δt/trec)。无有限c、膨胀或流体，R>ct时报告失效。新增有限c实验只处理恒定光源，未将延迟时间公式错误延伸到关灯过程。",
+        "references": []
+      },
+      {
+        "id": "spin-21",
+        "model": "spin21",
+        "pages": [
+          707,
+          709
+        ],
+        "scope": "采用原书式16.83的有限光深辐射转移，τ归一化由式16.84推得，保留该式的高红移、均匀密度与Ωbh=0.03、Ωm=0.3约定，无速度梯度。读数与实线采用有限光深，第二条曲线为光学薄近似。采用书中y而非逆温x约定，合并碰撞和Lyα且假设Tα=TK；y为独立输入，不求密度和辐射场对耦合的演化。这不是完整21cm功率谱或当前观测拟合。",
+        "references": []
+      },
+      {
+        "id": "absorption-line",
+        "model": "line",
+        "pages": [
+          710,
+          714
+        ],
+        "scope": "真实Voigt卷积，H(a,u)=Re[w(u+ia)]。采用NIST未分辨Lyα参数λ=1215.67Å、f=0.4162、A=6.265×10⁸s⁻¹；48项Weideman有理展开加远翼渐近，EW用对数速度积分与解析尾补偿。画幅不等于EW积分范围。忽略碰撞展宽、多云、仪器LSF、连续谱误差，速度—波长换算仍用窄线近似。 显示范围取控件下限和三倍阻尼翼特征宽度的较大值，保证调高柱密度后仍能看到翼；它不等于EW积分范围。 截面式采用Gaussian CGS，本实验数值约定：元电荷为\\(4.80320471257\\times10^{-10}\\,\\mathrm{statC}\\)、电子质量为\\(9.1093837015\\times10^{-28}\\,\\mathrm g\\)、光速为\\(2.99792458\\times10^{10}\\,\\mathrm{cm\\,s^{-1}}\\)；若用SI常数，e²项须带1/(4πε₀)，不可直接混代。",
+        "references": [
+          {
+            "title": "Weideman (1994)：复误差函数数值展开",
+            "url": "https://epubs.siam.org/doi/10.1137/0731077"
+          },
+          {
+            "title": "NIST：氢跃迁参数汇编",
+            "url": "https://srd.nist.gov/NSRDS/NSRDS-NBS4.pdf"
+          }
+        ]
+      },
+      {
+        "id": "forest",
+        "model": "forest",
+        "pages": [
+          714,
+          732
+        ],
+        "scope": "正密度函数显式合成，再除以0–100视线窗口的积分均值，使⟨Δ⟩=1；ρ̄指该窗口平均密度，坐标为任意长度。无热展宽、奇异速度、激波、自屏蔽或仪器响应；低密度光电离近似不能用于全部LLS/DLA或当作流体模拟。",
+        "references": []
+      },
+      {
+        "id": "incidence",
+        "model": "incidence",
+        "pages": [
+          709,
+          710
+        ],
+        "scope": "H₀=70km/s/Mpc、忽略辐射。X无量纲；截面是物理面积，数量为共动密度。无演化意味着dN/dX恒定而非dN/dz恒定。",
+        "references": []
+      },
+      {
+        "id": "lyman-limit",
+        "model": "lymanLimit",
+        "pages": [
+          732,
+          734
+        ],
+        "scope": "纯氢独立屏，非边缘长波段束缚—自由光深设0，不含线吸收或再发射。DLA惯例阈值2×10²⁰cm⁻²，属于更高柱密度LLS子集；此图未计算Lyα阻尼翼。",
+        "references": []
+      },
+      {
+        "id": "neutral-census",
+        "model": "census",
+        "pages": [
+          733,
+          738
+        ],
+        "scope": "合成等柱密度目录，不是巡天数据。用吸收距离X而非红移z；ρcrit为当前临界密度，1.3只是声明的He修正。未含分子、电离成分、选择完备性和尘埃偏差。 预算提醒额外采用Ωb=0.048作为教学参照；若含氦估计超过这个预算，只说明指定合成目录/路径组合不能代表该参考宇宙总体，不否定局部高柱密度系统。",
+        "references": []
+      },
+      {
+        "id": "metal-thermometer",
+        "model": "metal",
+        "pages": [
+          738,
+          740
+        ],
+        "scope": "依据本章热宽度式16.98的新增反演示例，结合末节多相金属吸收讨论。假设两线共空间、同温、同湍流；负温度或负湍流平方不钳成0，而是报告模型不相容。不能仅由线深推金属丰度。",
+        "references": []
+      },
+      {
+        "id": "curve-of-growth",
+        "model": "growthCurve",
+        "pages": [
+          712,
+          714
+        ],
+        "scope": "与上方同一原子常数和Voigt函数，对完整对称速度域积分并补尾；对照仅去掉自然宽度，不改归一。不是三段拼接拟合，也未用仪器分辨率直接替换物理等效宽度。新增数值实现的出处与原书物理依据分别列出。",
+        "references": [
+          {
+            "title": "Weideman (1994)：复误差函数数值展开",
+            "url": "https://epubs.siam.org/doi/10.1137/0731077"
+          },
+          {
+            "title": "NIST：氢跃迁参数汇编",
+            "url": "https://srd.nist.gov/NSRDS/NSRDS-NBS4.pdf"
+          }
+        ]
+      },
+      {
+        "id": "causal-front",
+        "model": "causalFront",
+        "pages": [
+          704,
+          707
+        ],
+        "scope": "在原书电离增长背景上增加Shapiro等(2006)均匀介质、恒定源的R型前沿特例，case-B α=2.6×10⁻¹³cm³/s。用单调隐式方程求根，未把超光速半径裁成ct；无关灯、膨胀、前沿厚度和流体响应，后期R型假设亦会失效。画布外圈为同一时刻的非相对论半径，内圈为因果半径。",
+        "references": [
+          {
+            "title": "Shapiro等(2006)：Relativistic Ionization Fronts §III.2",
+            "url": "https://arxiv.org/html/astro-ph/0507677"
+          }
+        ]
+      }
+    ],
+    "errata": "原书第16章完整范围为pp689–740；附录A从p741开始。本页区分X与z、Doppler与Voigt、静态泡与全球再电离；历史观测未冒充当前约束。 本轮加入真实Voigt与有限c恒定源扩展，原书、原子参数和数值/论文方法分别引用。"
+  },
+  "precision_review": {
+    "date": "2026-10-16",
+    "scope": "16章、旋转页、原110项实验与图解和配套控件；新增3项。通过只代表声明模型内的一致性。",
+    "report": "model-audit.html",
+    "latex": {
+      "renderer": "KaTeX 0.19.0",
+      "blocks": 133,
+      "expressions": 408,
+      "output": "HTML + MathML",
+      "fonts": "self-hosted",
+      "inline_scope": [
+        "正文符号",
+        "参数与读数名称",
+        "运行时说明",
+        "图例",
+        "SVG坐标",
+        "Canvas注记",
+        "来源与伴读展示"
+      ],
+      "inline_source": "content/math/inline-vocabulary.json"
+    },
+    "upgrades": [
+      "Gaussian像素CDF积分",
+      "有限Gaussian源透镜通量",
+      "恒星无碰撞零频响应",
+      "Voigt/Faddeeva与独立EW积分",
+      "有限c恒定源前沿"
+    ],
+    "precision_tests": "scripts/check-precision-physics.cjs",
+    "anatomy": {
+      "solids": 63,
+      "geometry_problems": 0,
+      "floating_line_ends": 0,
+      "line_ends_checked": 136
+    },
+    "reference_methods": [
+      "65-digit mpmath complex erfc/Bessel values",
+      "independent image-plane flux quadrature",
+      "photon balance and limiting cases"
+    ],
+    "external_references": [
+      {
+        "title": "Weideman 1994",
+        "url": "https://epubs.siam.org/doi/10.1137/0731077"
+      },
+      {
+        "title": "NIST hydrogen data",
+        "url": "https://srd.nist.gov/NSRDS/NSRDS-NBS4.pdf"
+      },
+      {
+        "title": "Shapiro et al. 2006",
+        "url": "https://arxiv.org/html/astro-ph/0507677"
+      }
+    ]
+  },
+  "detail_review": {
+    "date": "2026-10-16",
+    "chapters": 16,
+    "guided_experiments": 27,
+    "guide_source": "content/lab-guides.json",
+    "report": "model-audit.html#teaching-review",
+    "growth_reference": {
+      "Omega_m0": 0.3,
+      "a": 0.5,
+      "D_plus": 0.476585,
+      "D_hat": 0.611806,
+      "D_plus_over_a": 0.95317,
+      "f": 0.869285
+    },
+    "scope": "全书页面、导航、图表和精选教学细节复查；不表示逐句重新校勘全书或所有实验均已有分级推导。"
+  },
+  "additional_experiments_v28": [
+    {
+      "chapter": 6,
+      "id": "cmb-sampling-lab",
+      "source": "MBW (2010) §6.7.1，pp.302–304：全天功率估计与宇宙方差背景。χ²概率密度、等尾分位及重复抽样为基于该高斯场假设的新增统计推导，不复刻原书图。"
+    },
+    {
+      "chapter": 16,
+      "id": "transfer-bench-lab",
+      "source": "MBW pp.690–695；独立双通道为原创教学类比"
+    }
+  ],
+  "additional_experiments_v29": [
+    {
+      "chapter": 7,
+      "id": "halo-escape-lab",
+      "source": "MBW §7.5.1 式7.138–7.141；势、锐截断与逃逸比较为新增推导。",
+      "assumptions": "球对称、静态Newton引力、测试粒子、z=0与H₀=70。M₂₀₀c是边界内质量。未截断NFW质量对数发散，但势的无穷积分收敛；截断模型密度在边界跳变，不代表真实暗晕的硬边缘或已验证稳定的分布函数。E为单位质量能量；E≥0只表示在这套孤立静态势中能到任意远，越过R₂₀₀c不等于逃逸，E=0到无穷远仍需无限时间。本图只检查能量，不积分轨道或计算飞行时间。"
+    },
+    {
+      "chapter": 10,
+      "id": "metal-distribution-lab",
+      "source": "MBW §10.4.2 式10.120、10.123–10.126；有限时刻条件归一及分位数为新增推导。",
+      "assumptions": "初始Z₀=0、初始全为气体的封闭单区模型；瞬时回收、均匀混合、恒定净产额。y按永久锁定质量定义。PDF按当前锁定恒星质量归一，表示出生丰度的质量分布，不是每单位光度或可见恒星个数。有限时刻只支持0≤Z≤Zg；端点密度采用左侧值，随后截断。μ=1没有恒星样本，均值、分位数及分布均不定义。演示只改变气体份额，未指定恒星形成史，因此动画进度不是物理时间。"
+    },
+    {
+      "chapter": 14,
+      "id": "velocity-delay-lab",
+      "source": "MBW §14.2.8 的反响质量原理；均匀薄环的几何、二阶矩及f为新增解析推导。",
+      "assumptions": "点质量Newton势、无限薄圆环、均匀方位响应、遥远观测者及一阶Doppler；忽略径向厚度、湍流、入流/外流、遮蔽和GR。正vlos为退行红移。图中的离散标记为同权方位采样，不是实际云数量，沿方位而非沿延迟或椭圆弧长均匀。σline是响应加权二阶矩，不是FWHM；理想环的边缘分布不是Gaussian或球壳均匀响应。i=0时速度—延迟图退化为单点，σline与VP为0，f及据此反演的质量不定义。时滞为源系、直接连续谱与线响应的到达时间差；轨道扫描进度不是光脉冲传播时间。"
+    }
+  ],
+  "additional_experiments_v30": [
+    {
+      "chapter": 11,
+      "id": "beam-smearing-lab",
+      "source": "MBW §11.1.2 pp.499–501 的盘运动与有限分辨率背景；PSF与孔径卷积为网页新增教学推导。",
+      "assumptions": "一维局部模型；光度面密度恒定、速度梯度线性、本征线型高斯、平移不变的高斯PSF，随后在均匀权重矩形孔径中提取。v 为相对孔径中心平均速度 v₀ 的偏移。二阶矩的方差相加在此精确；有限孔径时线型一般不是高斯，不能把 2.355σeff 自动称为真实FWHM。没有仪器谱向展宽、噪声、亮度梯度、盘边缘或完整二维投影。w=0 是单位通量归一的无限小孔径极限，不能据此推断实际光子数。b=0 是理想无空间模糊极限。"
+    },
+    {
+      "chapter": 13,
+      "id": "line-spread-lab",
+      "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。",
+      "assumptions": "三种独立高斯卷积：静止恒星模板吸收缺额、光度加权LOSVD、仪器LSF。谱线坐标是一阶Doppler速度；这里不处理宇宙学红移、混线、非高斯LOSVD、噪声或多条谱线拟合。ℛ 以仪器线扩展函数的FWHM定义。Wv 是速度坐标中的缺额积分，固定为20 km/s，当前参数保证通量非负；不是以波长为单位的等效宽度。校准系数 k 只影响反演，不改变已经生成的观测谱线。负反演方差表示这套输入与校准不相容，不截断成零；恰为零是模型的形式边界，不能作为真实观测的零弥散证据。Anatomy装置只示意谱向扫描读数，结构位置与扫描动效不编码真实光速或完整望远镜光学。"
+    }
+  ],
+  "additional_experiments_v31": [
+    {
+      "chapter": 12,
+      "id": "tidal-tensor-lab",
+      "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。",
+      "assumptions": "静态球对称Plummer主势，潮汐张量采用T=−Hessian(Φ)，相对引力加速度为Tδr；正本征值拉伸、负本征值压缩。横向有两个相同本征值，迹不能只加一份横向项。坐标基在检查点沿径向及两个垂直方向；R=0各方向等价。有限探针位于局部基线的两个端点，读数是完整引力的中心差商，不是另一套局部张量；大基线可跨越不同梯度区，不能直接把有限差商判为当地本征值。这里不包含旋转参考系离心项、探针自引力、轨道积分或潮汐半径条件。全方向压缩不等于恒星必然形成或整个星系稳定。仪器构件为教学读出结构，盘面以A归一；不按星系尺度制造，不模拟实际传感器弹性或噪声。"
+    },
+    {
+      "chapter": 15,
+      "id": "isophotal-light-lab",
+      "source": "MBW §15.2.1 pp.654–655 的光度函数与选择背景，结合第2章表面亮度；等光度线份额推导为原创补充。",
+      "assumptions": "圆对称、正面朝向、无限延伸指数光度轮廓；星等与表面亮度采用同一波段及零点，θd在表面亮度公式中以角秒计。输入m与θd均为观测者视量，未从距离、红移或恒星族模型推得。记录区域采用理想表面亮度硬阈值，没有PSF、像素噪声、背景误差、尘埃、倾角或真实巡天的检出算法。fiso是模型总光的等光度线份额，不是星系样本完备率或被检出的概率。μlim≤μ₀时只有零面积或没有超过阈值的区域，记录光为零，miso不定义；不能称为无限大测得星等。示意图使用固定显示拉伸，视场自动缩放并标出角范围；像素用于展示，积分来自解析轮廓。阈值扫描不是星系物理演化。"
+    }
+  ],
+  "additional_experiments_v32": [
+    {
+      "chapter": 9,
+      "id": "imf-sampling-lab",
+      "source": "MBW §9.6 p.440 式9.33及脚注（质量/数目归一约定），§9.6.1 pp.441–442 式9.39；固定N抽样及分样台为原创教学补充。",
+      "assumptions": "本实验采用0.1–100M☉之间的单幂律教学IMF，α=2.35使用Salpeter式斜率，但把同一幂律延伸到低质量端不代表真实IMF普适成立。质量积分在α=2、数目积分在α=1处分别采用对数极限。固定的是N，不是样本总质量；种子仅用于可复现的伪随机独立抽样，不代表真实星团数据。20M☉只是本页指定阈值，不是电离、超新星或任何反馈机制的普适硬边界。图中虚线连接各箱总体期望供比较，不是连续概率密度或误差带；样本质量份额不能用样本数目份额代替。分位u按数目CDF定义，扫描u只改变检查标记，不重新抽样。仪器为分样统计类比，箱面柱表示归一化份额，不是实际恒星堆积、恒星半径或质量体积。 原书式9.33按单位形成质量归一，本实验p(m)按数量概率归一，积分为1；两种约定不可直接混用。有限样本的质量比是随机比值，不构成偏离理论的显著性结论。"
+    },
+    {
+      "chapter": 10,
+      "id": "response-memory-lab",
+      "source": "MBW §10.3.2 p.471 式10.77–10.78：形成史与共生星族光谱卷积；§10.3.8 pp.482–483：真实诊断的条件。指数教学核为新增近似。",
+      "assumptions": "两个核是归一化指数教学响应，不是实际Hα、紫外或任一观测波段的恒星族合成标定。背景ψ₀在爆发前已持续足够久，所以t<0两指示率均等于ψ₀；未把背景误当作从t=0才开始。ψ在t=0和D采用右连续定义，图中竖线只连接跃变两侧，不表示中间稳态。形成率以M☉/yr表示，界面时间以Myr表示，质量积分在代码中乘10⁶ yr/Myr；公式显式使用ηt=10⁶ yr/Myr。局部视窗会随当前检查时间扩展，可能省略更晚的长尾；可切换完整视窗查看。C是爆发额外响应的时间积分，虽有质量单位，但不是新的一份恒星质量或实际储存的气体。两个响应时间相同时两条曲线重合；B=0时无额外质量或响应。动效压缩模型时间，不是具体星系的观测或预测。"
+    }
+  ],
+  "additional_experiments_v33": [
+    {
+      "chapter": 5,
+      "id": "shell-potential-lab",
+      "source": "MBW §5.1.1 pp.215–216 式5.1–5.2；§5.4.2 p.232 式5.104–5.105：Poisson方程和球壳势积分。均匀有限厚壳为新增解析例。",
+      "assumptions": "牛顿引力、严格球对称、静态给定密度；a以内和b以外密度为零。q=0退化为均匀实心球，中心用有限极限。势零点在无穷远；无其他背景势或宇宙学常数。球壳是教学剖面，不宣称自洽动力学平衡；半径扫描不是壳层坍缩或试验粒子轨道。图为球心截面，不是投影表面密度图；填色只标物质所在区域，尺寸按b归一。箭头长短按共同的GM/b²标度表示当地加速度，空腔内为零。外层质量在当前位置的净力为零，却给出负势；势贡献的内/外划分随检查半径改变，不能把单个贡献对检查半径的导数误当成固定那组质量的力。逃逸速度取测试粒子到无穷远最终静止的能量条件，粒子必须先穿过壳体，不能只看空腔内的零加速度。"
+    },
+    {
+      "chapter": 8,
+      "id": "thermal-conduction-lab",
+      "source": "MBW §8.5.1 pp.393–395 式8.135，§8.5.3 p.397 式8.145、8.149；常数热扩散的单模线性解为新增教学推导。",
+      "assumptions": "均匀静止理想单原子气体，固定组成；本实验独立取μ=0.6，不沿用本章纯电离氢实验的μ=0.5。冷却按n²、加热按n且每粒子Γ不变；α<1的结论依赖此加热约定，不是任意冷却函数的普适判据。χ为常数、各向同性的指定热扩散率，不是Spitzer电导率或实际磁化气体标定。线性、等压极限，只演化一个无限/周期均匀介质的Fourier模式；未求解声波完整色散关系、重力、浮力、湍流或非线性多相形成。规定初始振幅0.1%，整个控件范围内温度扰动不超过5.5%，温密关系只在一阶等压，忽略二阶项。选定尺度使声穿越时间与模式变化时间之比小于0.06。λcrit定义含2π，是本页增长率为零的临界波长；α<1且d=0时临界波长为0，所有有限波长增长；α≥1时没有增长波段，α=1且d=0为中性。两屏仅是计算读出装置，共用当前自动缩放的纵轴；比较不同参数组的绝对振幅请看数值。动效推进模型时间，不是观测录像或冷云成形预测。"
+    }
+  ],
+  "additional_experiments_v34": [
+    {
+      "chapter": 2,
+      "id": "aperture-noise-lab",
+      "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。",
+      "assumptions": "连续像面、孤立且精确居中的圆对称高斯点源、均匀稳定天空，源和背景均为独立Poisson计数。S是已探测到的全点源电子率，B是每平方角秒的已探测天空电子率，不再乘增益或效率。背景在独立、不重叠且无源污染的区域测量，面积固定为100πθFWHM²；改变孔径时该背景区不变，改变像宽时重新定义此教学区域。忽略像素化、读出噪声、暗电流、平场误差、混叠源、PSF翼和定位误差；不模拟具体望远镜。Nsrc、Nsky和σN显示期望值或理论标准差，没有伪造随机观测。孔径扫描只改变提取区域，不演示点源在变亮；曝光参数另控制累计期望量。高斯点源不是延展星系；本实验的最优孔径只最大化未校正孔径计数的信噪比，不能用其缺失光份额代替星系总光度。最佳半径在0.05至3倍像面FWHM内数值求得，按钮选最近允许步长，解析最优点仍按求解值绘制。两个仪器屏面是计算读出示意：左侧光份额0至1，右侧信噪比按当前最大值归一，纵轴不同，不凭屏幕高度比较两种量。"
+    },
+    {
+      "chapter": 3,
+      "id": "redshift-drift-lab",
+      "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。",
+      "assumptions": "平直、均匀的晚期FLRW宇宙，只含无压物质与宇宙学常数，ΩΛ,0=1−Ωm,0；在本页0≤z≤5范围有意忽略辐射，不直接复用其他实验含辐射的背景模型。源与观测者固定在共动坐标，忽略本动加速度、引力势变化、仪器漂移及实际观测误差。点源自身红移是z，Δz是同一源相隔Δt₀两次观测的变化，绝不能混用。Δv只是以cΔz/(1+z)定义的光谱速度单位，不是源的真实本动速度或总退行速度。所有曲线采用首次观测时刻的一阶时间展开，等待1至30年远短于哈勃时间；动效推进观测基线，不演示星系在几十年内可见移动。z=0的漂移严格为零；仅0<Ωm,0<2/3时有另一个正红移零点，不存在时显示空缺说明而非0。q₀<0表示当下加速，不表示任意z处的漂移都为正。图给出理想理论信号，不宣称可由当前仪器达到。 独立固定共动距离积分并结合二阶导数界验证：本页30年内一阶Δv的保守绝对误差小于7.55×10⁻⁶cm/s；零点附近不以相对误差作保证。"
+    }
+  ]
+}

@@ -1,0 +1,732 @@
+[
+  {
+    "id": "v30-beam-smearing-sigma0",
+    "kind": "symbol",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "beam-smearing-lab"
+    ],
+    "title": "本征随机运动弥散",
+    "english": "intrinsic velocity dispersion",
+    "tex": "\\sigma_0",
+    "aliases": [
+      "σ₀",
+      "σ0",
+      "本征速度弥散"
+    ],
+    "definition": "局部本征高斯视向速度分布的标准差，不包含未分辨速度梯度、PSF与孔径混合。",
+    "unit": "km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §11.1.2 pp.499–501 的盘运动与有限分辨率背景；PSF与孔径卷积为网页新增教学推导。"
+  },
+  {
+    "id": "v30-beam-smearing-sigmaeff",
+    "kind": "symbol",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "beam-smearing-lab"
+    ],
+    "title": "混合线型二阶矩宽度",
+    "english": "effective second moment width",
+    "tex": "\\sigma_{\\rm eff}",
+    "aliases": [
+      "σeff",
+      "σeff²"
+    ],
+    "definition": "实际混合分布的标准差。有限孔径下分布通常不是高斯，2.355倍此量不一定等于真实半高全宽。",
+    "unit": "km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §11.1.2 pp.499–501 的盘运动与有限分辨率背景；PSF与孔径卷积为网页新增教学推导。"
+  },
+  {
+    "id": "v30-beam-smearing-sigmapsf",
+    "kind": "symbol",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "beam-smearing-lab"
+    ],
+    "title": "空间模糊引入的速度宽度",
+    "english": "PSF velocity contribution",
+    "tex": "\\sigma_{\\rm PSF}",
+    "aliases": [
+      "σPSF"
+    ],
+    "definition": "|g|s；由空间高斯PSF对线性速度梯度取样产生。是速度宽度，不是PSF本身的空间宽度s。",
+    "unit": "km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §11.1.2 pp.499–501 的盘运动与有限分辨率背景；PSF与孔径卷积为网页新增教学推导。"
+  },
+  {
+    "id": "v30-beam-smearing-sigmaap",
+    "kind": "symbol",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "beam-smearing-lab"
+    ],
+    "title": "有限孔径的速度宽度贡献",
+    "english": "aperture velocity contribution",
+    "tex": "\\sigma_{\\rm ap}",
+    "aliases": [
+      "σap"
+    ],
+    "definition": "|g|w/√12；均匀观测坐标矩形提取孔径的速度标准差贡献。",
+    "unit": "km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §11.1.2 pp.499–501 的盘运动与有限分辨率背景；PSF与孔径卷积为网页新增教学推导。"
+  },
+  {
+    "id": "v30-beam-smearing-g",
+    "kind": "symbol",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "beam-smearing-lab"
+    ],
+    "title": "局部视向速度梯度",
+    "english": "local line of sight velocity gradient",
+    "tex": "g",
+    "aliases": [
+      "g",
+      "速度梯度"
+    ],
+    "definition": "dv/dx。改变符号交换空间的接近与退行方向；对称均匀模型的积分线型保持不变，不是引力加速度。",
+    "unit": "km/s/kpc",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §11.1.2 pp.499–501 的盘运动与有限分辨率背景；PSF与孔径卷积为网页新增教学推导。"
+  },
+  {
+    "id": "v30-beam-smearing-x",
+    "kind": "symbol",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "beam-smearing-lab"
+    ],
+    "title": "盘上的局部取样位置",
+    "english": "local spatial coordinate",
+    "tex": "x",
+    "aliases": [
+      "x"
+    ],
+    "definition": "孔径中心附近沿指定盘上方向的位置，中心为0；不是速度坐标或宇宙学尺度因子。",
+    "unit": "kpc",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §11.1.2 pp.499–501 的盘运动与有限分辨率背景；PSF与孔径卷积为网页新增教学推导。"
+  },
+  {
+    "id": "v30-beam-smearing-v",
+    "kind": "symbol",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "beam-smearing-lab"
+    ],
+    "title": "相对中心的视向速度",
+    "english": "relative line of sight velocity",
+    "tex": "v",
+    "aliases": [
+      "v"
+    ],
+    "definition": "线型公式中减去孔径中心平均速度v₀后的视向速度偏移；空间关系v(x)=v₀+gx中的v(x)为未减均值的速度。",
+    "unit": "km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §11.1.2 pp.499–501 的盘运动与有限分辨率背景；PSF与孔径卷积为网页新增教学推导。"
+  },
+  {
+    "id": "v30-beam-smearing-v0",
+    "kind": "symbol",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "beam-smearing-lab"
+    ],
+    "title": "孔径中心平均视向速度",
+    "english": "central mean line of sight velocity",
+    "tex": "v_0",
+    "aliases": [
+      "v₀",
+      "v0"
+    ],
+    "definition": "x=0处的局部平均视向速度；线型绘图已将其减去，因此均值为0。",
+    "unit": "km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §11.1.2 pp.499–501 的盘运动与有限分辨率背景；PSF与孔径卷积为网页新增教学推导。"
+  },
+  {
+    "id": "v30-beam-smearing-s",
+    "kind": "symbol",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "beam-smearing-lab"
+    ],
+    "title": "PSF空间标准差",
+    "english": "spatial PSF standard deviation",
+    "tex": "s",
+    "aliases": [
+      "s"
+    ],
+    "definition": "高斯空间点扩散函数的标准差，s=b/(2√(2ln2))；这里不是秒，也不是速度标准差。",
+    "unit": "kpc",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §11.1.2 pp.499–501 的盘运动与有限分辨率背景；PSF与孔径卷积为网页新增教学推导。"
+  },
+  {
+    "id": "v30-beam-smearing-b",
+    "kind": "symbol",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "beam-smearing-lab"
+    ],
+    "title": "PSF空间半高全宽",
+    "english": "spatial PSF FWHM",
+    "tex": "b",
+    "aliases": [
+      "b"
+    ],
+    "definition": "空间高斯PSF的半高全宽；不是吸收线Doppler参数或碰撞冲量参数。b=0为理想无空间模糊极限。",
+    "unit": "kpc",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §11.1.2 pp.499–501 的盘运动与有限分辨率背景；PSF与孔径卷积为网页新增教学推导。"
+  },
+  {
+    "id": "v30-beam-smearing-w",
+    "kind": "symbol",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "beam-smearing-lab"
+    ],
+    "title": "提取孔径宽度",
+    "english": "extraction aperture width",
+    "tex": "w",
+    "aliases": [
+      "w"
+    ],
+    "definition": "对PSF模糊后的观测位置采用均匀权重提取的空间宽度；w=0表示归一化无限小孔径极限，不表示有限通量。",
+    "unit": "kpc",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §11.1.2 pp.499–501 的盘运动与有限分辨率背景；PSF与孔径卷积为网页新增教学推导。"
+  },
+  {
+    "id": "v30-beam-smearing-a",
+    "kind": "symbol",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "beam-smearing-lab"
+    ],
+    "title": "孔径混合速度半宽",
+    "english": "aperture velocity half width",
+    "tex": "a",
+    "aliases": [
+      "a"
+    ],
+    "definition": "|g|w/2；矩形孔径对应的均匀速度区间半宽，不是宇宙学尺度因子。",
+    "unit": "km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §11.1.2 pp.499–501 的盘运动与有限分辨率背景；PSF与孔径卷积为网页新增教学推导。"
+  },
+  {
+    "id": "v30-beam-smearing-sv",
+    "kind": "symbol",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "beam-smearing-lab"
+    ],
+    "title": "高斯核心速度宽度",
+    "english": "Gaussian core velocity width",
+    "tex": "s_v",
+    "aliases": [
+      "sv",
+      "sᵥ"
+    ],
+    "definition": "本征高斯与空间PSF速度混合后、有限孔径积分前的标准差，平方为σ₀²+(gs)²。",
+    "unit": "km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §11.1.2 pp.499–501 的盘运动与有限分辨率背景；PSF与孔径卷积为网页新增教学推导。"
+  },
+  {
+    "id": "v30-beam-smearing-p",
+    "kind": "symbol",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "beam-smearing-lab"
+    ],
+    "title": "单位速度的线型密度",
+    "english": "normalized line profile density",
+    "tex": "p",
+    "aliases": [
+      "p",
+      "p(v)"
+    ],
+    "definition": "归一化概率密度，积分为1。纵轴高度不是有限速度区间的概率，也不是压强。",
+    "unit": "每 km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §11.1.2 pp.499–501 的盘运动与有限分辨率背景；PSF与孔径卷积为网页新增教学推导。"
+  },
+  {
+    "id": "v30-beam-smearing-Phi",
+    "kind": "symbol",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "beam-smearing-lab"
+    ],
+    "title": "标准正态累计分布函数",
+    "english": "standard normal cumulative distribution",
+    "tex": "\\Phi",
+    "aliases": [
+      "Φ"
+    ],
+    "definition": "均值0、标准差1的高斯分布的累计概率；输入为无量纲速度比，不是引力势。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §11.1.2 pp.499–501 的盘运动与有限分辨率背景；PSF与孔径卷积为网页新增教学推导。"
+  },
+  {
+    "id": "v30-beam-smearing-PSF",
+    "kind": "term",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "beam-smearing-lab"
+    ],
+    "title": "点扩散函数",
+    "english": "point spread function",
+    "aliases": [
+      "PSF",
+      "点扩散函数"
+    ],
+    "definition": "本实验为空间一维、平移不变的高斯核；不是仪器在谱向的LSF。",
+    "unit": "不适用",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §11.1.2 pp.499–501 的盘运动与有限分辨率背景；PSF与孔径卷积为网页新增教学推导。"
+  },
+  {
+    "id": "v30-beam-smearing-beam-smearing",
+    "kind": "term",
+    "chapters": [
+      11
+    ],
+    "contexts": [
+      "beam-smearing-lab"
+    ],
+    "title": "未分辨速度混合",
+    "english": "beam smearing",
+    "aliases": [
+      "空间混合",
+      "未分辨的旋转"
+    ],
+    "definition": "空间分辨率与提取孔径混合不同平均视向速度的光，使线型变宽；均匀线性模型不降低观测平均速度梯度。",
+    "unit": "不适用",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §11.1.2 pp.499–501 的盘运动与有限分辨率背景；PSF与孔径卷积为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-stars",
+    "kind": "symbol",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "恒星视向速度弥散",
+    "english": "stellar line of sight dispersion",
+    "tex": "\\sigma_\\star",
+    "aliases": [
+      "σ★",
+      "σstar"
+    ],
+    "definition": "光度加权LOSVD的高斯标准差，不包括静止模板线形和仪器线扩展函数。",
+    "unit": "km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-template",
+    "kind": "symbol",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "静止模板的本征吸收线宽",
+    "english": "rest frame template absorption width",
+    "tex": "\\sigma_{\\rm tpl}",
+    "aliases": [
+      "σtpl"
+    ],
+    "definition": "理想静止恒星模板的高斯吸收缺额宽度；不是pPXF中已经含仪器分辨率的模板数据集宽度。这里单独假设模板未经过仪器。",
+    "unit": "km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-inst",
+    "kind": "symbol",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "真实仪器线扩展宽度",
+    "english": "true instrument line spread width",
+    "tex": "\\sigma_{\\rm inst}",
+    "aliases": [
+      "σinst"
+    ],
+    "definition": "高斯仪器LSF的标准差，c/(2√(2ln2)ℛ)。与空间PSF宽度不同。",
+    "unit": "km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-pre",
+    "kind": "symbol",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "仪器之前的线宽",
+    "english": "pre instrument absorption width",
+    "tex": "\\sigma_{\\rm pre}",
+    "aliases": [
+      "σpre"
+    ],
+    "definition": "模板与恒星LOSVD卷积后的标准差；平方为σ★²+σtpl²。",
+    "unit": "km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-obs",
+    "kind": "symbol",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "观测合成总线宽",
+    "english": "observed synthetic line width",
+    "tex": "\\sigma_{\\rm obs}",
+    "aliases": [
+      "σobs"
+    ],
+    "definition": "本实验无噪声合成吸收缺额的高斯标准差，包含模板、恒星和仪器三项；不是恒星弥散本身。",
+    "unit": "km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-cal",
+    "kind": "symbol",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "反演采用的仪器宽度",
+    "english": "adopted calibrated instrument width",
+    "tex": "\\sigma_{\\rm cal}",
+    "aliases": [
+      "σcal"
+    ],
+    "definition": "kσinst。只用于反演，改变它不改变已经生成的观测谱线。",
+    "unit": "km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-rec",
+    "kind": "symbol",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "反演的恒星速度弥散",
+    "english": "recovered stellar velocity dispersion",
+    "tex": "\\sigma_{\\rm rec}",
+    "aliases": [
+      "σrec"
+    ],
+    "definition": "减去已知模板方差及采用的仪器方差后的平方根。方差为负时无实数解，不能钳为0；边界恰为0不是真实观测零弥散的证明。",
+    "unit": "km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-R",
+    "kind": "symbol",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "光谱分辨本领",
+    "english": "spectral resolving power",
+    "tex": "\\mathcal R",
+    "aliases": [
+      "ℛ",
+      "光谱分辨本领"
+    ],
+    "definition": "λ/ΔλFWHM，宽度指仪器LSF的半高全宽。不是星系半径或气体回收率。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-k",
+    "kind": "symbol",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "仪器宽度校准比例",
+    "english": "instrument width calibration ratio",
+    "tex": "k",
+    "aliases": [
+      "k"
+    ],
+    "definition": "反演采用的仪器标准差除以其真实值；k=1为正确校准。不是波数或Boltzmann常数。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-c",
+    "kind": "symbol",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "真空光速",
+    "english": "speed of light",
+    "tex": "c",
+    "aliases": [
+      "c"
+    ],
+    "definition": "固定为299792.458 km/s，用于一阶Doppler速度与仪器分辨本领的换算；不是暗晕浓度。",
+    "unit": "km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-Wv",
+    "kind": "symbol",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "速度等效宽度",
+    "english": "velocity equivalent width",
+    "tex": "W_v",
+    "aliases": [
+      "Wv"
+    ],
+    "definition": "对速度积分的连续谱归一化吸收缺额∫[1−F(v)]dv，固定20 km/s；不是以埃计的波长等效宽度。归一化卷积保持该面积。",
+    "unit": "km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-F",
+    "kind": "symbol",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "连续谱归一化通量",
+    "english": "continuum normalized flux",
+    "tex": "F",
+    "aliases": [
+      "F",
+      "F(v)"
+    ],
+    "definition": "连续谱为1，吸收线使其下降；与缺额1−F区分。不是力或具有物理通量单位的绝对通量。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-u",
+    "kind": "symbol",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "归一化读数位置",
+    "english": "normalized sample position",
+    "tex": "u",
+    "aliases": [
+      "u"
+    ],
+    "definition": "v/σobs；扫描时改变读取位置，不改变谱线模型。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-v",
+    "kind": "symbol",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "谱线速度偏移",
+    "english": "spectral velocity offset",
+    "tex": "v",
+    "aliases": [
+      "v"
+    ],
+    "definition": "相对于孤立线中心的一阶Doppler速度坐标。不是波长、光传播速度或某颗恒星轨道速度。",
+    "unit": "km/s",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-lambda",
+    "kind": "symbol",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "谱线中心参考波长",
+    "english": "central reference wavelength",
+    "tex": "\\lambda",
+    "aliases": [
+      "λ"
+    ],
+    "definition": "定义光谱分辨本领所用的局部参考波长；本页在速度坐标工作，未指定元素跃迁。",
+    "unit": "任意统一波长单位",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-deltaLambda",
+    "kind": "symbol",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "仪器波长半高全宽",
+    "english": "instrument FWHM in wavelength",
+    "tex": "\\Delta\\lambda_{\\rm FWHM}",
+    "aliases": [
+      "ΔλFWHM"
+    ],
+    "definition": "仪器LSF在波长坐标的半高全宽，不是标准差。与λ使用同一单位。",
+    "unit": "任意统一波长单位",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-LOSVD",
+    "kind": "term",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "视向速度分布",
+    "english": "line of sight velocity distribution",
+    "aliases": [
+      "LOSVD",
+      "视向速度分布"
+    ],
+    "definition": "这里采用高斯光度加权恒星速度分布；真实星系可有非高斯高阶矩。",
+    "unit": "不适用",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-LSF",
+    "kind": "term",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "线扩展函数",
+    "english": "line spread function",
+    "aliases": [
+      "LSF",
+      "线扩展函数"
+    ],
+    "definition": "仪器对单色输入的谱向响应核。本页为归一化高斯；不是空间点扩散函数。",
+    "unit": "不适用",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  },
+  {
+    "id": "v30-line-spread-FWHM",
+    "kind": "term",
+    "chapters": [
+      13
+    ],
+    "contexts": [
+      "line-spread-lab"
+    ],
+    "title": "半高全宽",
+    "english": "full width at half maximum",
+    "aliases": [
+      "FWHM",
+      "半高全宽"
+    ],
+    "definition": "高斯轮廓在峰值一半处的全宽，等于2√(2ln2)倍标准差。吸收线以连续谱下的缺额峰值定义半高。",
+    "unit": "不适用",
+    "scope": "仅按本实验的局部定义使用；模型页与图表采用相同含义。",
+    "source": "MBW §13.1.1 pp.575–576，LOSVD及吸收线观测；高斯卷积与校准反演为网页新增教学推导。"
+  }
+]

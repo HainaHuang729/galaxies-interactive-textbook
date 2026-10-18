@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-17T03:24:00.599Z",
+  "checks": 356,
+  "states": 48,
+  "layouts": 12,
+  "errors": [],
+  "shots": [
+    "integrated-beam-smearing-afterglow-1440.png",
+    "integrated-beam-smearing-afterglow-390.png",
+    "integrated-beam-smearing-moon-1440.png",
+    "integrated-beam-smearing-moon-390.png",
+    "integrated-line-spread-afterglow-1440.png",
+    "integrated-line-spread-afterglow-390.png",
+    "integrated-line-spread-moon-1440.png",
+    "integrated-line-spread-moon-390.png",
+    "integrated-detector-4x-afterglow.png",
+    "integrated-detector-4x-moon.png"
+  ],
+  "coverage": "Both new labs, all combined range corners, actual chart nodes/readouts, local symbol meanings, keyboard/chart selection, zero/negative inversion, offscreen stop, reduced motion and 320/390px layouts."
+}

@@ -1,0 +1,827 @@
+[
+  {
+    "id": "v31-tidal-tensor-M",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "主体系总质量",
+    "english": "host total mass",
+    "tex": "M",
+    "aliases": [
+      "M"
+    ],
+    "definition": "Plummer球势的有限总质量，不是检查半径内的包围质量。",
+    "unit": "M☉",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-a",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "Plummer核心尺度",
+    "english": "Plummer scale radius",
+    "tex": "a",
+    "aliases": [
+      "a"
+    ],
+    "definition": "指定Plummer势的长度尺度；不是宇宙学尺度因子或加速度。",
+    "unit": "kpc",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-R",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "检查点的球心距离",
+    "english": "host centric check radius",
+    "tex": "R",
+    "aliases": [
+      "R"
+    ],
+    "definition": "距主体系中心的非负球半径。中心处各方向等价，所谓径向可任选一轴。",
+    "unit": "kpc",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-x",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "归一化检查半径",
+    "english": "normalized check radius",
+    "tex": "x",
+    "aliases": [
+      "x"
+    ],
+    "definition": "R/a；并非有限探针端点的有符号坐标X。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-A",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "潮汐梯度归一化尺度",
+    "english": "tidal gradient normalization",
+    "tex": "A",
+    "aliases": [
+      "A"
+    ],
+    "definition": "GM/a³，用作图及盘面梯度的单位；本页G已转换到kpc、M☉、Gyr一致的单位。",
+    "unit": "Gyr⁻²",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-G",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "Newton引力常数",
+    "english": "Newton gravitational constant",
+    "tex": "G",
+    "aliases": [
+      "G"
+    ],
+    "definition": "数值采用4.30091×10⁻⁶ kpc(km/s)²/M☉，再乘1.022712165045695的平方转换为kpc³/(M☉ Gyr²)。速度转时间的因子必须平方。",
+    "unit": "kpc³/(M☉ Gyr²)",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-Phi",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "Plummer引力势",
+    "english": "Plummer gravitational potential",
+    "tex": "\\Phi",
+    "aliases": [
+      "Φ"
+    ],
+    "definition": "以无穷远为零的静态球对称势，−GM/√(R²+a²)。不是标准正态累计分布函数。",
+    "unit": "kpc²/Gyr²",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-T",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "引力潮汐张量",
+    "english": "gravitational tidal tensor",
+    "tex": "T",
+    "aliases": [
+      "T",
+      "潮汐张量"
+    ],
+    "definition": "Tij=−∂i∂jΦ；在共同平动、非旋转局部坐标中给出相对引力加速度的一阶变化。未加入离心项，不是温度。",
+    "unit": "Gyr⁻²",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-Tij",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "潮汐张量分量",
+    "english": "tidal tensor component",
+    "tex": "T_{ij}",
+    "aliases": [
+      "Tij"
+    ],
+    "definition": "潮汐张量的i行j列分量；不是把所有元素相加后的总引力。",
+    "unit": "Gyr⁻²",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-i",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "张量分量指标",
+    "english": "tensor component index",
+    "tex": "i",
+    "aliases": [
+      "i"
+    ],
+    "definition": "局部笛卡尔基的分量指标，取三个空间方向之一，不是倾角。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-j",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "张量分量指标",
+    "english": "tensor component index",
+    "tex": "j",
+    "aliases": [
+      "j"
+    ],
+    "definition": "局部笛卡尔基的另一分量指标，取三个空间方向之一，不是比角动量。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-lambda",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "潮汐张量本征值",
+    "english": "tidal tensor eigenvalue",
+    "tex": "\\lambda",
+    "aliases": [
+      "λ"
+    ],
+    "definition": "本实验采用T=−Hessian(Φ)约定；正值表示局部相对拉伸，负值表示相对压缩。不是光的波长。",
+    "unit": "Gyr⁻²",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-r",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "局部径向本征值",
+    "english": "radial tidal eigenvalue",
+    "tex": "\\lambda_r",
+    "aliases": [
+      "λr"
+    ],
+    "definition": "沿当地球心径向的局部本征值；在R=a/√2为0。盘面与实线显示当地量，不能用有限基线的零点替代。",
+    "unit": "Gyr⁻²",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-t",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "局部横向本征值",
+    "english": "transverse tidal eigenvalue",
+    "tex": "\\lambda_t",
+    "aliases": [
+      "λt"
+    ],
+    "definition": "任一垂直于径向方向的局部本征值；球对称下有两个相等横向分量。因此迹为λr+2λt。",
+    "unit": "Gyr⁻²",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-rl",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "有限径向探针差商",
+    "english": "finite radial baseline gradient",
+    "tex": "\\lambda_{r,\\ell}",
+    "aliases": [
+      "λr,ℓ"
+    ],
+    "definition": "两端完整径向引力加速度之差除以全基线ℓ。它平均了基线上的梯度，过渡位置可与当地λr=0不同。",
+    "unit": "Gyr⁻²",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-tl",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "有限横向探针差商",
+    "english": "finite transverse baseline gradient",
+    "tex": "\\lambda_{t,\\ell}",
+    "aliases": [
+      "λt,ℓ"
+    ],
+    "definition": "检查点横向两端引力加速度差除以全间距ℓ；有限基线下不等于当地横向本征值。",
+    "unit": "Gyr⁻²",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-ell",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "探针的全基线长度",
+    "english": "full probe baseline",
+    "tex": "\\ell",
+    "aliases": [
+      "ℓ"
+    ],
+    "definition": "两个测点之间的完整距离，而不是中心到单端的半长。端点位于±ℓ/2。",
+    "unit": "kpc",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-epsilon",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "相对探针全间距",
+    "english": "relative full probe separation",
+    "tex": "\\varepsilon",
+    "aliases": [
+      "ε",
+      "ϵ"
+    ],
+    "definition": "ℓ/a；不是恒星形成效率或能量。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-rho",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "Plummer当地质量密度",
+    "english": "local Plummer mass density",
+    "tex": "\\rho",
+    "aliases": [
+      "ρ"
+    ],
+    "definition": "检查半径R的三维质量密度，不是表面密度或全主体系平均密度。",
+    "unit": "M☉/kpc³",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-X",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "有符号的径向轴坐标",
+    "english": "signed radial axis coordinate",
+    "tex": "X",
+    "aliases": [
+      "X"
+    ],
+    "definition": "用于端点引力函数gx(X)的有符号笛卡尔坐标；当基线跨中心时可为负，不能先取绝对值。",
+    "unit": "kpc",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-gx",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "径向轴上的引力加速度分量",
+    "english": "signed radial axis acceleration",
+    "tex": "g_x",
+    "aliases": [
+      "gx"
+    ],
+    "definition": "沿有符号X轴的完整引力加速度，−GMX/(X²+a²)^(3/2)。",
+    "unit": "kpc/Gyr²",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-dg",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "局部相对引力加速度",
+    "english": "relative gravitational acceleration",
+    "tex": "\\delta\\mathbf g",
+    "aliases": [
+      "δg"
+    ],
+    "definition": "两个相邻位置引力加速度的向量差；线性近似为Tδr。",
+    "unit": "kpc/Gyr²",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-dr",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "局部位移向量",
+    "english": "local displacement vector",
+    "tex": "\\delta\\mathbf r",
+    "aliases": [
+      "δr"
+    ],
+    "definition": "相邻测点相对检查点的无穷小位移向量。它与有限全基线ℓ并非同一个量。",
+    "unit": "kpc",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-tr",
+    "kind": "symbol",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "潮汐张量的迹",
+    "english": "trace of tidal tensor",
+    "tex": "\\mathrm{tr}",
+    "aliases": [
+      "tr",
+      "潮汐迹"
+    ],
+    "definition": "三个本征值之和。球对称中等于λr+2λt，按本页号约定为−4πGρ；迹负不能单独保证三个本征值均负。",
+    "unit": "Gyr⁻²",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-tidal-tensor-plummer",
+    "kind": "term",
+    "chapters": [
+      12
+    ],
+    "contexts": [
+      "tidal-tensor-lab"
+    ],
+    "title": "Plummer球势",
+    "english": "Plummer potential",
+    "aliases": [
+      "Plummer",
+      "Plummer球势"
+    ],
+    "definition": "有限中心密度、有限总质量的球对称解析模型。本页主势不随时间演化，不是对真实星系逐个拟合的质量分布。",
+    "unit": "不适用",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW 第12章 p.544 式12.1、§12.1 p.546 式12.7；Plummer张量与有限探针比较为原创补充推导。"
+  },
+  {
+    "id": "v31-isophotal-light-m",
+    "kind": "symbol",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "isophotal-light-lab"
+    ],
+    "title": "完整模型总视星等",
+    "english": "total apparent magnitude",
+    "tex": "m",
+    "aliases": [
+      "m"
+    ],
+    "definition": "同一波段无限延伸指数盘全部光的视星等；它是输入的观测者视量，不是绝对星等或质量。",
+    "unit": "mag",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW §15.2.1 pp.654–655 的光度函数与选择背景，结合第2章表面亮度；等光度线份额推导为原创补充。"
+  },
+  {
+    "id": "v31-isophotal-light-miso",
+    "kind": "symbol",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "isophotal-light-lab"
+    ],
+    "title": "记录光的等光度线视星等",
+    "english": "isophotal apparent magnitude",
+    "tex": "m_{\\rm iso}",
+    "aliases": [
+      "miso"
+    ],
+    "definition": "只对超过指定表面亮度阈值的区域积分后得到的视星等。记录光为零时不定义，不是测得的无限大星等。",
+    "unit": "mag",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW §15.2.1 pp.654–655 的光度函数与选择背景，结合第2章表面亮度；等光度线份额推导为原创补充。"
+  },
+  {
+    "id": "v31-isophotal-light-mu0",
+    "kind": "symbol",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "isophotal-light-lab"
+    ],
+    "title": "中心表面亮度",
+    "english": "central surface brightness",
+    "tex": "\\mu_0",
+    "aliases": [
+      "μ₀",
+      "μ0"
+    ],
+    "definition": "同一波段的中心光度每平方角秒所对应的星等。数字越大表示每单位角面积越暗；不是距离模数。",
+    "unit": "mag/arcsec²",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW §15.2.1 pp.654–655 的光度函数与选择背景，结合第2章表面亮度；等光度线份额推导为原创补充。"
+  },
+  {
+    "id": "v31-isophotal-light-mulim",
+    "kind": "symbol",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "isophotal-light-lab"
+    ],
+    "title": "表面亮度记录阈值",
+    "english": "surface brightness isophotal threshold",
+    "tex": "\\mu_{\\rm lim}",
+    "aliases": [
+      "μlim"
+    ],
+    "definition": "本模型仅保留μ(θ)<μlim的区域；更大的阈值数字允许记录更暗的外围。不是总星等限制。",
+    "unit": "mag/arcsec²",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW §15.2.1 pp.654–655 的光度函数与选择背景，结合第2章表面亮度；等光度线份额推导为原创补充。"
+  },
+  {
+    "id": "v31-isophotal-light-mu",
+    "kind": "symbol",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "isophotal-light-lab"
+    ],
+    "title": "半径处的表面亮度",
+    "english": "radial surface brightness",
+    "tex": "\\mu",
+    "aliases": [
+      "μ"
+    ],
+    "definition": "指数盘在指定角半径处、每平方角秒的同波段星等表面亮度；不是质量分数或平均分子量。",
+    "unit": "mag/arcsec²",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW §15.2.1 pp.654–655 的光度函数与选择背景，结合第2章表面亮度；等光度线份额推导为原创补充。"
+  },
+  {
+    "id": "v31-isophotal-light-thetad",
+    "kind": "symbol",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "isophotal-light-lab"
+    ],
+    "title": "指数盘角尺度",
+    "english": "exponential angular scale length",
+    "tex": "\\theta_d",
+    "aliases": [
+      "θd"
+    ],
+    "definition": "指数光度轮廓下降e倍的角半径，不是半光半径。表面亮度换算公式中使用角秒数值。",
+    "unit": "角秒",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW §15.2.1 pp.654–655 的光度函数与选择背景，结合第2章表面亮度；等光度线份额推导为原创补充。"
+  },
+  {
+    "id": "v31-isophotal-light-thetaiso",
+    "kind": "symbol",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "isophotal-light-lab"
+    ],
+    "title": "阈值角半径",
+    "english": "isophotal angular radius",
+    "tex": "\\theta_{\\rm iso}",
+    "aliases": [
+      "θiso"
+    ],
+    "definition": "从盘心到μ=μlim等光度线的角半径；无正面积记录区域时定义为0，用于几何边界而非检出尺寸测量。",
+    "unit": "角秒",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW §15.2.1 pp.654–655 的光度函数与选择背景，结合第2章表面亮度；等光度线份额推导为原创补充。"
+  },
+  {
+    "id": "v31-isophotal-light-theta",
+    "kind": "symbol",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "isophotal-light-lab"
+    ],
+    "title": "指数盘角半径",
+    "english": "angular radius",
+    "tex": "\\theta",
+    "aliases": [
+      "θ"
+    ],
+    "definition": "相对于盘中心的角距离，和θd用相同角单位。",
+    "unit": "角秒",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW §15.2.1 pp.654–655 的光度函数与选择背景，结合第2章表面亮度；等光度线份额推导为原创补充。"
+  },
+  {
+    "id": "v31-isophotal-light-xiso",
+    "kind": "symbol",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "isophotal-light-lab"
+    ],
+    "title": "归一化阈值半径",
+    "english": "normalized isophotal radius",
+    "tex": "x_{\\rm iso}",
+    "aliases": [
+      "xiso"
+    ],
+    "definition": "θiso/θd；当μlim≤μ₀时置0，此时选中光面积为0。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW §15.2.1 pp.654–655 的光度函数与选择背景，结合第2章表面亮度；等光度线份额推导为原创补充。"
+  },
+  {
+    "id": "v31-isophotal-light-x",
+    "kind": "symbol",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "isophotal-light-lab"
+    ],
+    "title": "归一化积分角半径",
+    "english": "normalized aperture radius",
+    "tex": "x",
+    "aliases": [
+      "x"
+    ],
+    "definition": "累计光曲线中的θ/θd。不是距离、红移或笛卡尔位置分量。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW §15.2.1 pp.654–655 的光度函数与选择背景，结合第2章表面亮度；等光度线份额推导为原创补充。"
+  },
+  {
+    "id": "v31-isophotal-light-fiso",
+    "kind": "symbol",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "isophotal-light-lab"
+    ],
+    "title": "理想阈值记录光份额",
+    "english": "isophotal recovered light fraction",
+    "tex": "f_{\\rm iso}",
+    "aliases": [
+      "fiso"
+    ],
+    "definition": "阈值内的光除以完整模型全部光；不是星系样本完备率、检出概率或恒星质量份额。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW §15.2.1 pp.654–655 的光度函数与选择背景，结合第2章表面亮度；等光度线份额推导为原创补充。"
+  },
+  {
+    "id": "v31-isophotal-light-I",
+    "kind": "symbol",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "isophotal-light-lab"
+    ],
+    "title": "光度面分布",
+    "english": "angular light profile",
+    "tex": "I",
+    "aliases": [
+      "I"
+    ],
+    "definition": "每单位角面积的线性光度量，与表面亮度星等μ以同一零点换算。不是辐射转移中的频率特定强度模型。",
+    "unit": "同波段通量/角面积",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW §15.2.1 pp.654–655 的光度函数与选择背景，结合第2章表面亮度；等光度线份额推导为原创补充。"
+  },
+  {
+    "id": "v31-isophotal-light-I0",
+    "kind": "symbol",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "isophotal-light-lab"
+    ],
+    "title": "中心线性光度面密度",
+    "english": "central angular intensity",
+    "tex": "I_0",
+    "aliases": [
+      "I₀",
+      "I0"
+    ],
+    "definition": "正面指数盘θ=0处的线性光度面分布；与完整总通量和角尺度满足Ftot=2πI₀θd²。",
+    "unit": "同波段通量/角面积",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW §15.2.1 pp.654–655 的光度函数与选择背景，结合第2章表面亮度；等光度线份额推导为原创补充。"
+  },
+  {
+    "id": "v31-isophotal-light-F",
+    "kind": "symbol",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "isophotal-light-lab"
+    ],
+    "title": "角孔径内积分光",
+    "english": "integrated aperture flux",
+    "tex": "F",
+    "aliases": [
+      "F"
+    ],
+    "definition": "F(<θ)表示角半径θ内的积分光；不是恒星形成率或归一化吸收线的连续谱通量。",
+    "unit": "同波段通量",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW §15.2.1 pp.654–655 的光度函数与选择背景，结合第2章表面亮度；等光度线份额推导为原创补充。"
+  },
+  {
+    "id": "v31-isophotal-light-Ftot",
+    "kind": "symbol",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "isophotal-light-lab"
+    ],
+    "title": "完整指数盘总通量",
+    "english": "total exponential disk flux",
+    "tex": "F_{\\rm tot}",
+    "aliases": [
+      "Ftot"
+    ],
+    "definition": "对理想指数盘从0到无限角半径积分的全部通量。m为该量对应的总视星等。",
+    "unit": "同波段通量",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW §15.2.1 pp.654–655 的光度函数与选择背景，结合第2章表面亮度；等光度线份额推导为原创补充。"
+  },
+  {
+    "id": "v31-isophotal-light-isophote",
+    "kind": "term",
+    "chapters": [
+      15
+    ],
+    "contexts": [
+      "isophotal-light-lab"
+    ],
+    "title": "等光度线",
+    "english": "isophote",
+    "aliases": [
+      "等光度线",
+      "等光度线星等"
+    ],
+    "definition": "图像中表面亮度相同的轮廓。本实验以硬阈值定义记录区域，未采用真实巡天含噪检出算法。",
+    "unit": "不适用",
+    "scope": "仅按本实验的局部模型和约定解释，模型页、图表及读数保持相同含义。",
+    "source": "MBW §15.2.1 pp.654–655 的光度函数与选择背景，结合第2章表面亮度；等光度线份额推导为原创补充。"
+  }
+]

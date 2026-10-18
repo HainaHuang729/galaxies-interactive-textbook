@@ -1,0 +1,1112 @@
+[
+  {
+    "id": "v34-aperture-noise-S",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "点源总探测计数率",
+    "english": "total detected source count rate",
+    "tex": "S",
+    "aliases": [
+      "S"
+    ],
+    "definition": "全点源积分后的已探测电子率，不是光度、能量通量或每单位面积的亮度；孔径只接收其f份额。",
+    "unit": "电子/s",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-B",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "天空探测计数率面密度",
+    "english": "detected sky count rate per angular area",
+    "tex": "B",
+    "aliases": [
+      "B"
+    ],
+    "definition": "单位平方角秒均匀天空背景的已探测电子率，不是B波段或磁场。",
+    "unit": "电子/s/arcsec²",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-I",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "高斯点源的计数率角面密度",
+    "english": "Gaussian image intensity",
+    "tex": "I(R)",
+    "aliases": [
+      "I"
+    ],
+    "definition": "二维圆高斯的面分布，积分整个像面得到S。不能直接把径向曲线的面积当总计数，须乘环面积2πR dR。",
+    "unit": "电子/s/arcsec²",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-R",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "像面上的积分角半径",
+    "english": "image-plane angular radial coordinate",
+    "tex": "R",
+    "aliases": [
+      "R"
+    ],
+    "definition": "高斯强度分布中的角距离；小写r是测光孔径的外半径，不是本征物理尺度。",
+    "unit": "arcsec",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-r",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "圆形测光孔径的角半径",
+    "english": "angular aperture radius",
+    "tex": "r",
+    "aliases": [
+      "r"
+    ],
+    "definition": "从点源中心到测光圆边缘的角距离；不是望远镜主镜口径或天体物理半径。",
+    "unit": "arcsec",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-theta",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "点像全宽半高",
+    "english": "image full width at half maximum",
+    "tex": "\\theta_{\\rm FWHM}",
+    "aliases": [
+      "θFWHM",
+      "θ_FWHM"
+    ],
+    "definition": "高斯点像一维剖面的全宽半高，等于2sqrt(2ln2)σθ。不是滤光片的波长带宽，也不是半宽。",
+    "unit": "arcsec",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-sigmaTheta",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "高斯点像的单轴宽度",
+    "english": "Gaussian angular standard deviation",
+    "tex": "\\sigma_\\theta",
+    "aliases": [
+      "σθ"
+    ],
+    "definition": "圆高斯每个直角角坐标的标准差；不是二维半光半径或噪声σN。",
+    "unit": "arcsec",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-k",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "孔径半径相对于像宽的比例",
+    "english": "aperture radius in FWHM units",
+    "tex": "k",
+    "aliases": [
+      "k"
+    ],
+    "definition": "k=r/θFWHM，输入范围0.05至3。不是波数或玻尔兹曼常数。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-f",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "孔径内的点源光份额",
+    "english": "encircled signal fraction",
+    "tex": "f(r)",
+    "aliases": [
+      "f"
+    ],
+    "definition": "二维高斯在半径r内的积分，1−exp(−4ln2 k²)。只用于此高斯点源，不等于延展星系光度份额。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-A",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "测光孔径角面积",
+    "english": "aperture angular area",
+    "tex": "A",
+    "aliases": [
+      "A"
+    ],
+    "definition": "πr²，决定孔径内均匀天空期望计数。不表示振幅。",
+    "unit": "arcsec²",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-Asky",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "独立空白背景区的角面积",
+    "english": "independent background-region area",
+    "tex": "A_{\\rm sky}",
+    "aliases": [
+      "Asky",
+      "A_sky"
+    ],
+    "definition": "固定为100πθFWHM²，与源孔径不重叠且无源污染；其算术均值用于估计天空。改变孔径时此区不变，改变像宽时随之重定义。",
+    "unit": "arcsec²",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-a",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "孔径与背景区的面积比",
+    "english": "aperture-to-background area ratio",
+    "tex": "a",
+    "aliases": [
+      "a"
+    ],
+    "definition": "A/Asky=k²/100，用它缩放空白背景区计数；不是宇宙尺度因子。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-t",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "本次曝光时间",
+    "english": "exposure duration",
+    "tex": "t",
+    "aliases": [
+      "t"
+    ],
+    "definition": "源和天空计数均与此成正比；忽略饱和与读出噪声时SNR随sqrt(t)增加。",
+    "unit": "s",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-Nsrc",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "孔径内的期望源电子计数",
+    "english": "expected source counts in aperture",
+    "tex": "N_{\\rm src}",
+    "aliases": [
+      "Nsrc",
+      "N_src"
+    ],
+    "definition": "St f(r)，为理论均值。不是已减背景后某次随机观测的值。",
+    "unit": "电子",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-Nsky",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "孔径内的期望天空电子计数",
+    "english": "expected sky counts in aperture",
+    "tex": "N_{\\rm sky}",
+    "aliases": [
+      "Nsky",
+      "N_sky"
+    ],
+    "definition": "BtA，在扣背景后均值被消去，但其散粒方差仍存在。",
+    "unit": "电子",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-Nap",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "孔径中的随机总计数",
+    "english": "random total aperture counts",
+    "tex": "N_{\\rm ap}",
+    "aliases": [
+      "Nap",
+      "N_ap"
+    ],
+    "definition": "源与天空电子计数之和，均值Nsrc+Nsky。计数服从独立Poisson模型，图上显示均值及理论方差。",
+    "unit": "电子",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-Nbg",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "独立空白区的随机背景计数",
+    "english": "random independent background counts",
+    "tex": "N_{\\rm bg}",
+    "aliases": [
+      "Nbg",
+      "N_bg"
+    ],
+    "definition": "独立空白背景区总电子计数，均值BtAsky；乘面积比a后才是孔径内天空估计。",
+    "unit": "电子",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-Nest",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "扣背景后的净计数估计量",
+    "english": "background-subtracted count estimator",
+    "tex": "N_{\\rm est}",
+    "aliases": [
+      "Nest",
+      "N_est"
+    ],
+    "definition": "Nap−aNbg，其均值为Nsrc；有限背景区使方差额外增加Nsky a。",
+    "unit": "电子",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-sigmaN",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "净计数估计量的理论标准差",
+    "english": "net-count standard deviation",
+    "tex": "\\sigma_N",
+    "aliases": [
+      "σN"
+    ],
+    "definition": "净计数方差的平方根；源、孔径内天空、独立天空均值估计三项方差相加，不能先相加标准差。",
+    "unit": "电子",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-sigma",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "带下标的标准差",
+    "english": "standard deviation symbol",
+    "tex": "\\sigma",
+    "aliases": [
+      "σ"
+    ],
+    "definition": "本页σθ是高斯像宽、σN是净计数噪声，两者单位与对象不同；请结合完整下标。",
+    "unit": "见下标",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-thetaBase",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "点像角宽符号",
+    "english": "angular-width symbol",
+    "tex": "\\theta",
+    "aliases": [
+      "θ"
+    ],
+    "definition": "本页用于带FWHM下标的点像宽度或σθ下标；不是光谱波长带宽。",
+    "unit": "arcsec",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-N",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "计数符号",
+    "english": "electron count symbol",
+    "tex": "N",
+    "aliases": [
+      "N"
+    ],
+    "definition": "由完整下标区分源、天空、总孔径和背景区域等计数，不能互换。",
+    "unit": "电子",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-kopt",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "本页范围内的最佳孔径",
+    "english": "maximum-SNR aperture in allowed range",
+    "tex": "k_{\\rm opt}",
+    "aliases": [
+      "kopt"
+    ],
+    "definition": "在0.05≤k≤3内最大化有限背景区SNR的孔径比例，数值求解；按钮选最近步长，不将最优解四舍五入后用于曲线。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-second",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "秒",
+    "english": "second",
+    "tex": "\\mathrm s",
+    "aliases": [
+      "s"
+    ],
+    "definition": "本页计数率与曝光中的s表示秒，不是增长率或源计数率S。",
+    "unit": "s",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-arg",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "使信噪比最大的自变量",
+    "english": "argument of maximum",
+    "tex": "\\arg",
+    "aliases": [
+      "arg"
+    ],
+    "definition": "arg max选择使函数最大的孔径比例k；max是函数的最大值，两者不同。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-expectation",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "随机量的期望值",
+    "english": "statistical expectation",
+    "tex": "\\mathbb E",
+    "aliases": [
+      "𝔼"
+    ],
+    "definition": "本测光实验表示多次独立计数的平均期望，不是能量或第3章的无量纲膨胀率E(z)。",
+    "unit": "与被平均量相同",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-SNR",
+    "kind": "symbol",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "信噪比",
+    "english": "signal-to-noise ratio",
+    "tex": "\\mathrm{SNR}",
+    "aliases": [
+      "SNR",
+      "信噪比"
+    ],
+    "definition": "期望源计数Nsrc除以扣背景后估计量的标准差σN。未加入实际观测系统误差。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-redshift-drift-z",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "首次观测的宇宙学红移",
+    "english": "initial cosmological redshift",
+    "tex": "z",
+    "aliases": [
+      "z"
+    ],
+    "definition": "同一共动源在首次观测时的红移，范围0至5；红移变化Δz及漂移率ż是另外两个量。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-zdot",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "相对观测者时间的红移漂移率",
+    "english": "redshift drift rate",
+    "tex": "\\dot z",
+    "aliases": [
+      "ż"
+    ],
+    "definition": "dz/dt₀=(1+z)H₀−H(z)。正值表示同一源随后红移变大；不是z本身或本动速度。",
+    "unit": "yr⁻¹",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-deltaZ",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "两次观测的红移差",
+    "english": "redshift change between observations",
+    "tex": "\\Delta z",
+    "aliases": [
+      "Δz"
+    ],
+    "definition": "一阶近似żΔt₀，不等于首次观测红移z；在漂移零点附近应比较绝对误差。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-deltaV",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "光谱速度单位的漂移",
+    "english": "spectroscopic velocity drift",
+    "tex": "\\Delta v",
+    "aliases": [
+      "Δv"
+    ],
+    "definition": "定义为cΔz/(1+z)，读数用cm/s；不是星系真实本动速度变化或总退行速度。",
+    "unit": "cm/s",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-c",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "真空光速",
+    "english": "speed of light in vacuum",
+    "tex": "c",
+    "aliases": [
+      "c"
+    ],
+    "definition": "计算时取299792.458km/s，再乘10⁵换成cm/s。不是浓度参数或热容。",
+    "unit": "cm/s",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-v",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "光谱漂移的速度符号",
+    "english": "spectroscopic velocity symbol",
+    "tex": "v",
+    "aliases": [
+      "v"
+    ],
+    "definition": "只以Δv组合出现在本页，不用于推断真实空间速度或位移。",
+    "unit": "cm/s",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-a",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "宇宙尺度因子",
+    "english": "cosmic scale factor",
+    "tex": "a",
+    "aliases": [
+      "a"
+    ],
+    "definition": "共动距离乘它得到适当距离；红移关系使用观测端与发射端两时刻的尺度因子之比。不是第2章的面积比。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-t0",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "观测者的宇宙时间",
+    "english": "observer cosmic time",
+    "tex": "t_0",
+    "aliases": [
+      "t₀",
+      "t0"
+    ],
+    "definition": "本页观察端时间，ż对它求导；下标0标示本次首次观测处的当前值。",
+    "unit": "yr",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-te",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "发射端的宇宙时间",
+    "english": "emitter cosmic time",
+    "tex": "t_e",
+    "aliases": [
+      "te"
+    ],
+    "definition": "给定共动源所发光的发射时刻。两次发射的间隔在一阶为Δt₀/(1+z)。",
+    "unit": "yr",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-deltaT0",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "观测者两次接收的间隔",
+    "english": "observer time baseline",
+    "tex": "\\Delta t_0",
+    "aliases": [
+      "Δt₀",
+      "Δt0"
+    ],
+    "definition": "观察端等待1至30年；不是发射端间隔，也不是宇宙回望时间。",
+    "unit": "yr",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-deltaTe",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "两次相应发射的间隔",
+    "english": "corresponding emission-time interval",
+    "tex": "\\Delta t_e",
+    "aliases": [
+      "Δte"
+    ],
+    "definition": "一阶为Δt₀/(1+z)，两行时间示意用同一年的线性刻度。",
+    "unit": "yr",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-t",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "宇宙时间符号",
+    "english": "cosmic time symbol",
+    "tex": "t",
+    "aliases": [
+      "t"
+    ],
+    "definition": "结合0、e下标区分观测端与发射端；本页几十年变化用首次观测处的一阶导数。",
+    "unit": "yr",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-H0",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "首次观测处当前哈勃参数",
+    "english": "current Hubble parameter",
+    "tex": "H_0",
+    "aliases": [
+      "H₀",
+      "H0"
+    ],
+    "definition": "输入单位km/s/Mpc，计算漂移前除以每Mpc的千米数换成s⁻¹；不是无量纲h。",
+    "unit": "km/s/Mpc",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-H",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "给定红移处的哈勃参数",
+    "english": "Hubble parameter at redshift",
+    "tex": "H(z)",
+    "aliases": [
+      "H"
+    ],
+    "definition": "H₀E(z)，是发射时刻的宇宙膨胀率；不是本次观测几十年里H₀的直接差。",
+    "unit": "km/s/Mpc",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-E",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "无量纲膨胀率",
+    "english": "dimensionless expansion rate",
+    "tex": "E(z)",
+    "aliases": [
+      "E"
+    ],
+    "definition": "H(z)/H₀，由本页物质和Λ背景给出；不是能量或统计期望算子。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-matter",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "当前物质密度参数",
+    "english": "current matter density parameter",
+    "tex": "\\Omega_{m,0}",
+    "aliases": [
+      "Ωm,0"
+    ],
+    "definition": "物质密度除以当前临界密度，本页取0.05至1。包含全部无压物质，不只重子。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-Lambda",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "当前宇宙学常数密度参数",
+    "english": "current cosmological-constant density parameter",
+    "tex": "\\Omega_{\\Lambda,0}",
+    "aliases": [
+      "ΩΛ,0"
+    ],
+    "definition": "为保持平直并忽略辐射，本页取1−Ωm,0；不是冷却函数。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-Omega",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "宇宙学密度参数符号",
+    "english": "cosmological density parameter symbol",
+    "tex": "\\Omega",
+    "aliases": [
+      "Ω"
+    ],
+    "definition": "完整下标m,0或Λ,0分别表示当前物质和宇宙学常数密度参数；本页无曲率或辐射项。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-LambdaBase",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "宇宙学常数",
+    "english": "cosmological constant",
+    "tex": "\\Lambda",
+    "aliases": [
+      "Λ"
+    ],
+    "definition": "本页代表真空能宇宙学常数，物态方程w=−1；不是热冷却系数。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-q0",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "当前减速参数",
+    "english": "current deceleration parameter",
+    "tex": "q_0",
+    "aliases": [
+      "q₀",
+      "q0"
+    ],
+    "definition": "本页平直物质+Λ给出1.5Ωm,0−1，负值为当下加速。不是整个历史的常数，也不是漂移零点红移。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-q",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "减速参数符号",
+    "english": "deceleration-parameter symbol",
+    "tex": "q",
+    "aliases": [
+      "q"
+    ],
+    "definition": "本页仅使用当前q₀；不是球壳空腔比例。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-zero",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "正的非零漂移零点",
+    "english": "positive nonzero redshift-drift root",
+    "tex": "z_\\star",
+    "aliases": [
+      "z⋆"
+    ],
+    "definition": "仅0<Ωm,0<2/3时存在的正根；不是所有模型都有，也不是宇宙加速转变红移。超出0至5时显示域外，不能夹到5。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-Delta",
+    "kind": "symbol",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "两次观测量之差",
+    "english": "finite observational difference",
+    "tex": "\\Delta",
+    "aliases": [
+      "Δ"
+    ],
+    "definition": "与z、v、t结合分别表示红移差、光谱速度漂移、时间间隔。不是拉普拉斯算子。",
+    "unit": "无量纲",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-aperture-noise-PSF",
+    "kind": "term",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "点扩散函数",
+    "english": "point-spread function",
+    "aliases": [
+      "PSF",
+      "点扩散函数"
+    ],
+    "definition": "点源在像面上的归一化二维分布；本页理想化为圆高斯，真实大气或仪器常有不同翼部。",
+    "unit": "术语",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-FWHM",
+    "kind": "term",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "全宽半高",
+    "english": "full width at half maximum",
+    "aliases": [
+      "FWHM",
+      "全宽半高"
+    ],
+    "definition": "此实验特指高斯点像一维剖面的角宽，不是光谱线或滤光片带宽。",
+    "unit": "术语",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-aperture-noise-Poisson",
+    "kind": "term",
+    "chapters": [
+      2
+    ],
+    "contexts": [
+      "aperture-noise-lab"
+    ],
+    "title": "泊松计数噪声",
+    "english": "Poisson counting noise",
+    "aliases": [
+      "Poisson",
+      "泊松"
+    ],
+    "definition": "独立离散电子计数的方差等于其期望计数值；量纲完整写法含单电子计数单位。这里以电子数的数值使用。",
+    "unit": "术语",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §2.1.1 pp.26、29（成像与通量）；§2.1.3(a) p.32（点像与视宁度）。高斯点源、有限背景区的Poisson误差传播及孔径最优化为网页新增教学推导。"
+  },
+  {
+    "id": "v34-redshift-drift-FLRW",
+    "kind": "term",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "均匀各向同性宇宙模型",
+    "english": "Friedmann–Lemaître–Robertson–Walker model",
+    "aliases": [
+      "FLRW"
+    ],
+    "definition": "本页使用平直、物质+宇宙学常数的背景；共动源没有额外本动加速度。",
+    "unit": "术语",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  },
+  {
+    "id": "v34-redshift-drift-drift",
+    "kind": "term",
+    "chapters": [
+      3
+    ],
+    "contexts": [
+      "redshift-drift-lab"
+    ],
+    "title": "红移漂移",
+    "english": "redshift drift",
+    "aliases": [
+      "红移漂移"
+    ],
+    "definition": "同一共动源随观察者时间的红移变化，不是比较不同源的红移。由两端的膨胀率差共同决定。",
+    "unit": "术语",
+    "scope": "仅按本实验的模型和约定解释；公式页、图表与读数沿用此含义。",
+    "source": "MBW §3.1.2–3.1.3 p.106 式3.20–3.22（波峰间隔与红移），§3.1.6 p.112（减速参数），§3.2.3(a) p.116（E(z)与q₀）。漂移关系由红移关系求导，参照Loeb (1998)；晚期平直物质+Λ为本页独立教学模型。"
+  }
+]
