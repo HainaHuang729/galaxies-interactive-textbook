@@ -14,7 +14,10 @@ files += [ROOT / name for name in ['start.py', 'LICENSE', 'LICENSE-CONTENT.md', 
 for p in files:
     if p.name == 'planck-cmb-2013.jpg':
         raise SystemExit('Run export-public.py first: external-only media must be absent.')
-readme = '''GALAXIES · 星系形成与演化 — 离线阅读包
+version = json.loads((ROOT / 'package.json').read_text())['version']
+readme = f'''GALAXIES · 星系形成与演化 — 离线阅读包
+
+下载版本：v{version}
 
 欢迎所有人下载与学习。
 运行 python3 start.py（Windows: py start.py），自动打开浏览器。
@@ -24,6 +27,7 @@ Ctrl+C停止。端口冲突可加 --port 8766。不要直接双击HTML。
 原教材PDF与原文未包含。Planck观测图仅提供官方链接；其他媒体许可与完整署名见THIRD_PARTY_NOTICES.md。
 代码MIT，原创学习内容CC BY 4.0，第三方素材按各自许可。
 源码与制作下一本书的流程：https://github.com/HainaHuang729/galaxies-interactive-textbook
+制作技能、安装与调用说明：https://github.com/HainaHuang729/interactive-textbook-skill#readme
 '''
 with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED) as z:
     for p in sorted(files):

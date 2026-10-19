@@ -1,6 +1,6 @@
 {
   "name": "galaxies-interactive-textbook",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "description": "An open-source Chinese interactive textbook of galaxy formation and evolution",
   "license": "MIT",

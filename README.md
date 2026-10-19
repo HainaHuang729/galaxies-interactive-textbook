@@ -4,13 +4,13 @@
 
 一部中文交互教材：从星系观测、宇宙学与引力动力学，到恒星形成、星系演化和星系际介质。以 Mo、van den Bosch 与 White 的 *Galaxy Formation and Evolution*（2010）为知识参考，原创编写导读、图解与教学模型。
 
-[在线阅读](https://galaxies-observatory.xiaoxuesheng729.chatgpt.site/) · [下载离线阅读包](https://github.com/HainaHuang729/galaxies-interactive-textbook/releases/latest/download/galaxies-offline.zip) · [下载源码 ZIP](https://github.com/HainaHuang729/galaxies-interactive-textbook/archive/refs/heads/main.zip) · [制作下一本书](docs/BOOK_PRODUCTION_WORKFLOW.md) · [参与贡献](CONTRIBUTING.md)
+[在线阅读](https://galaxies-observatory.xiaoxuesheng729.chatgpt.site/) · [下载离线阅读包](https://github.com/HainaHuang729/galaxies-interactive-textbook/releases/latest/download/galaxies-offline.zip) · [下载源码 ZIP](https://github.com/HainaHuang729/galaxies-interactive-textbook/releases/latest/download/galaxies-source.zip) · [制作下一本书](docs/BOOK_PRODUCTION_WORKFLOW.md) · [参与贡献](CONTRIBUTING.md)
 
 ## 这是什么
 
 - 16章原创交互导读初版，包含可调物理实验、定量图表、观察图景、练习与学习记录。
 - 统一的深色“宇宙余辉”与浅色“月白星图”；分页阅读与可收起的顶部左侧目录。
-- LaTeX/KaTeX公式、图表取样和SVG导出；按章节与实验语境区分符号释义，目前2005条。
+- LaTeX/KaTeX公式、图表取样和SVG导出；按章节与实验语境区分符号释义，目前2019条。
 - 公式、曲线、读数和可视化共用计算模型；显式列出单位、初边值、近似与适用范围。
 - 程序科学图解、Anatomy仪器示意、官方观测与AI概念插图分别标注。AI插图不充当观测数据或定量曲线。
 - 伴读功能生成包含当前参数、出处与假设的问题，供复制到AI对话；**没有内置在线模型回答服务，不需要API密钥**。
@@ -18,6 +18,8 @@
 这是原创学习辅助项目，**不含原教材PDF、扫描页或提取正文，也不代表原书作者或出版社的官方版本**。各章是导读与精选可解模型，不宣称覆盖原书全部推导或达到研究级模拟精度。
 
 ## 下载后运行
+
+当前下载版本为 **v0.1.2**；离线阅读包与源码包对应同一次提交，包含全书v36复核内容及独立技能仓库的新入口。[发布说明与SHA-256校验值](https://github.com/HainaHuang729/galaxies-interactive-textbook/releases/latest)。
 
 阅读只需要Python 3.9+和现代浏览器。离线包已包含JavaScript、图像与数学字库，不需要安装Node或联网下载依赖。
 
@@ -85,7 +87,7 @@ v0.2.0已纳入本次全书复核的[问题与检查方法](skills/interactive-t
 $interactive-textbook 把《书名》制作成中文交互教材。参考资料在……，面向……读者；先核对来源并完成一个样板章。
 ```
 
-[下载独立技能ZIP（v0.2.0）](https://github.com/HainaHuang729/galaxies-interactive-textbook/releases/download/skill-v0.2.0/interactive-textbook-skill.zip)。其他使用者可以把仓库中的 `skills/interactive-textbook/` 整个文件夹放入其Codex技能目录，保留 `SKILL.md`、`agents/`、`references/`、`assets/`、`scripts/` 的相对结构。若有同名技能，先比较后更新。结构化作者源初始化助手只创建骨架，不包含原书、已核实模型或自动生成的完整网站。
+[下载独立技能ZIP（v0.2.0）](https://github.com/HainaHuang729/interactive-textbook-skill/releases/download/v0.2.0/interactive-textbook-skill.zip)。其他使用者可以把仓库中的 `skills/interactive-textbook/` 整个文件夹放入其Codex技能目录，保留 `SKILL.md`、`agents/`、`references/`、`assets/`、`scripts/` 的相对结构。若有同名技能，先比较后更新。结构化作者源初始化助手只创建骨架，不包含原书、已核实模型或自动生成的完整网站。
 
 ## 项目结构
 
