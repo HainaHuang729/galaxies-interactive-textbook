@@ -88,7 +88,7 @@
       const rest = children.slice(lastIntro + 1);
       if (rest.length) {
         const experiment = rest.find(el => el.matches('.lab,[id$="-lab"]')) || rest[0];
-        const title = titleOf(experiment) || clean(experiment.querySelector('.scene-caption')) || '开篇实验';
+        const title = titleOf(experiment) || clean(experiment.querySelector('.scene-caption')) || ({2:'把同一座星系放远一些',3:'膨胀怎样拉长光的波长',4:'密度起伏：振幅与相位'}[chapter] || '开篇实验');
         if (!experiment.querySelector('h2,h3')) rest.unshift(heading(title));
         const target = experiment.id || 'opening-experiment';
         const page = addPage(group, rest, title, 'experiment', target);

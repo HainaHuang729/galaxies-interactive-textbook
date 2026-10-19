@@ -2,6 +2,8 @@
    explicitly by each experiment; presentation never changes the numerical data. */
 (() => {
  'use strict';
+ const readingLabels={"4":{"density-slice":["密度反差 δ"],"jeans-chart":["扰动振幅 δ/δ₀"],"growth-chart":["纯物质参照（EdS）","当前膨胀背景的增长"],"smoothing-chart":["原始密度场","平滑后的密度场"]},"5":{"sphere-chart":["质量壳半径"],"virial-chart":["假定平衡后的半径比"],"jeans-chart":["所需圆周速度"],"relax-chart":["弛豫时间 / 穿越时间"]},"6":{"pair-chart":["估计的二维相关函数 ξ"],"kaiser-chart":["红移空间 / 实空间功率"],"bias-chart":["物质密度场","星系密度响应"],"cmb-chart":["单次合成天空的功率 / 理论功率"]},"7":{"nfw-chart":["NFW圆周速度"],"peak-chart":["原始密度场","平滑密度场","峰高阈值"],"ps-chart":["每单位对数质量的质量份额"],"walk-chart":["随机轨迹 1","随机轨迹 2","随机轨迹 3","随机轨迹 4","随机轨迹 5","随机轨迹 6","随机轨迹 7","随机轨迹 8","随机轨迹 9","随机轨迹 10","随机轨迹 11","随机轨迹 12","坍缩屏障"],"prog-chart":["条件首次穿越概率密度"],"hbias-chart":["欧拉晕偏倚","无偏参照 b=1"],"boundary-chart":["包围平均密度","200倍临界密度","200倍平均物质密度"]},"8":{"shock-chart":["激波压缩比","强激波极限 4"],"radcool-chart":["辐射冷却时间","均匀球自由落体时间"],"compton-chart":["Compton冷却时间","哈勃时间 1/H"],"hse-chart":["归一化气体密度的对数"],"buoy-chart":["浮力加速度","零加速度参照"],"cradius-chart":["冷却诊断半径","外边界 200 kpc"],"thermal-chart":["净冷却函数","热平衡零点"],"blast-chart":["瞬时爆炸激波半径"],"wind-chart":["持续星风激波半径"]}};
+ function seriesLabel(node,index,label){return label||readingLabels[document.body.dataset.chapter]?.[node.id]?.[index]||`曲线 ${index+1}`;}
  const frames=new WeakMap(),units=new WeakMap(),references=new WeakMap();let serial=0,dialog;
  const font='12px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif';
  const measure=document.createElement('canvas').getContext('2d');measure.font=font;
@@ -50,14 +52,54 @@
   const layer=d3.select(node).append('g').attr('class','scientific-reference-layer').attr('clip-path',`url(#${info.clip})`);
   ref.series.forEach(c=>layer.append('path').attr('d',d3.line().defined(p=>Number.isFinite(p.x)&&Number.isFinite(p.y)&&(!info.y.base||p.y>0)).x(p=>info.x(p.x)).y(p=>info.y(p.y))(c.data)).attr('fill','none').attr('stroke','var(--muted)').attr('stroke-width',1.4).attr('stroke-dasharray','2 5').attr('opacity',.7));
  }
- function setSeries(node,series){if(typeof node==='string')node=document.getElementById(node);const info=frames.get(node);if(!info)return;info.series=series.map((s,i)=>({label:s.label||`曲线 ${i+1}`,data:s.data.filter(p=>Number.isFinite(p.x)&&Number.isFinite(p.y)).map(p=>({x:p.x,y:p.y}))}));queueMicrotask(()=>enhance(node));}
- function addSeries(node,data,label){if(typeof node==='string')node=document.getElementById(node);const info=frames.get(node);if(!info)return;info.series.push({label:label||`曲线 ${info.series.length+1}`,data:data.filter(p=>Number.isFinite(p.x)&&Number.isFinite(p.y))});return info.series.length-1;}
+ function setSeries(node,series){if(typeof node==='string')node=document.getElementById(node);const info=frames.get(node);if(!info)return;info.series=series.map((s,i)=>({label:seriesLabel(node,i,s.label),source:s.data,data:s.data.filter(p=>Number.isFinite(p.x)&&Number.isFinite(p.y)).map(p=>({x:p.x,y:p.y}))}));queueMicrotask(()=>enhance(node));}
+ function addSeries(node,data,label){if(typeof node==='string')node=document.getElementById(node);const info=frames.get(node);if(!info)return;info.series.push({label:seriesLabel(node,info.series.length,label),source:data,data:data.filter(p=>Number.isFinite(p.x)&&Number.isFinite(p.y))});return info.series.length-1;}
  // Insert the analytical current state into the actual line, not just a parallel readout array.
  function includeSample(node,index,x,y){
   if(typeof node==='string')node=document.getElementById(node);const info=frames.get(node),curve=info?.series[index];
   if(!curve||!Number.isFinite(x)||!Number.isFinite(y))return;
   const at=curve.data.findIndex(p=>p.x===x);if(at>=0)curve.data[at]={x,y};else curve.data.push({x,y});curve.data.sort((a,b)=>a.x-b.x);
   const path=node.querySelector(`path[data-plot-series="${index}"]`);if(path)d3.select(path).datum(curve.data).attr('d',d3.line().defined(p=>Number.isFinite(p.y)&&(!info.y.base||p.y>0)).x(p=>info.x(p.x)).y(p=>info.y(p.y)));
+ }
+ function legendEntries(node){
+  const info=frames.get(node);if(!info)return [];
+  const paths=[...node.querySelectorAll('path[d]')].filter(p=>!p.matches('.domain')&&!p.closest('defs,.grid,.scientific-probe,.scientific-reference-layer,.scientific-x-axis,.scientific-y-axis'));
+  const used=new Set(),entries=info.series.map((series,index)=>{
+   let shape=node.querySelector(`[data-plot-series="${index}"]`)||paths.find(p=>p.__data__===series.source);
+   if(!shape){
+    const d=d3.line().defined(p=>Number.isFinite(p.y)&&(!info.y.base||p.y>0)).x(p=>info.x(p.x)).y(p=>info.y(p.y))(series.data);
+    shape=paths.find(p=>!used.has(p)&&p.getAttribute('d')===d)||paths.find(p=>!used.has(p)&&Array.isArray(p.__data__)&&p.__data__.length===series.data.length&&p.__data__.every((v,i)=>v.x===series.data[i].x&&v.y===series.data[i].y));
+   }
+   if(!shape&&series.data.length===1){const p=series.data[0];shape=[...node.querySelectorAll('circle')].find(c=>!c.closest('.scientific-probe')&&Math.abs(+c.getAttribute('cx')-info.x(p.x))<.1&&Math.abs(+c.getAttribute('cy')-info.y(p.y))<.1);}
+   if(shape)used.add(shape);
+   const style=shape&&getComputedStyle(shape),point=shape?.tagName.toLowerCase()==='circle',bar=shape?.tagName.toLowerCase()==='rect';
+   return {label:series.label,index,matched:!!shape,point,bar,color:style?(point||bar?style.fill:style.stroke):'var(--muted)',dash:style?.strokeDasharray||'none'};
+  });
+  const ref=node.querySelector('.scientific-reference-layer path');
+  if(ref){const style=getComputedStyle(ref);entries.push({label:'已固定的参照曲线',matched:true,color:style.stroke,dash:style.strokeDasharray});}
+  return entries;
+ }
+ function legendKey(entry){
+  const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 30 16');svg.setAttribute('aria-hidden','true');svg.classList.add('scientific-legend-key');
+  const key=document.createElementNS(svg.namespaceURI,entry.bar?'rect':entry.point?'circle':'line');
+  if(entry.point){key.setAttribute('cx','15');key.setAttribute('cy','8');key.setAttribute('r','4');key.setAttribute('fill',entry.color);}
+  else if(entry.bar){for(const [k,v]of Object.entries({x:5,y:3,width:20,height:10,fill:entry.color}))key.setAttribute(k,v);}
+  else{for(const [k,v]of Object.entries({x1:2,x2:28,y1:8,y2:8,stroke:entry.color,'stroke-width':2,'stroke-dasharray':entry.dash}))key.setAttribute(k,v);}
+  svg.append(key);return svg;
+ }
+ function updateLegend(node,unit){
+  const info=frames.get(node),entries=legendEntries(node),curves=entries.filter(e=>e.index!==undefined);
+  let legend=document.getElementById(node.id.replace(/-chart$/,'-legend'));
+  if(!legend||!legend.classList.contains('advanced-legend'))legend=unit.querySelector('.scientific-legend');
+  if(!legend){legend=document.createElement('div');unit.querySelector('.scientific-chart-tools').before(legend);}
+  legend.classList.add('scientific-legend');legend.setAttribute('aria-label','曲线图例');
+  // Avoid rebuilding KaTeX and accessibility nodes when only geometry has changed.
+  const signature=JSON.stringify(curves);if(legend.dataset.legendSignature!==signature||legend.querySelectorAll(':scope > [data-legend-series]').length!==curves.length){
+   legend.replaceChildren(...curves.map(entry=>{const item=document.createElement('span');item.dataset.legendSeries=entry.index;item.dataset.legendLabel=entry.label;item.dataset.legendMatched=String(entry.matched);item.append(legendKey(entry),document.createTextNode(entry.label));return item;}));legend.dataset.legendSignature=signature;
+  }
+  info.legend=legend;legend.hidden=!curves.length;
+  let reference=unit.querySelector('.scientific-legend-reference');const pinned=entries.find(e=>e.index===undefined);
+  if(pinned){if(!reference){reference=document.createElement('div');reference.className='scientific-legend-reference';unit.append(reference);}reference.replaceChildren(legendKey(pinned),document.createTextNode(pinned.label));}else reference?.remove();
  }
  function snapshot(node){
   const clone=node.cloneNode(true),prefix=`plot-export-${++serial}-`,from=[node,...node.querySelectorAll('*')],to=[clone,...clone.querySelectorAll('*')],ids=new Map();
@@ -66,7 +108,14 @@
   clone.querySelectorAll('.scientific-probe').forEach(el=>el.remove());
   for(const el of [clone,...clone.querySelectorAll('*')])for(const attr of [...el.attributes]){let value=attr.value;for(const [old,next]of ids)value=value.replaceAll(`url(#${old})`,`url(#${next})`).replaceAll(`url("#${old}")`,`url(#${next})`);el.setAttribute(attr.name,value);}
   clone.removeAttribute('tabindex');clone.removeAttribute('aria-describedby');clone.removeAttribute('style');clone.setAttribute('xmlns','http://www.w3.org/2000/svg');clone.setAttribute('role','img');clone.style.background=getComputedStyle(document.documentElement).getPropertyValue('--panel');
-  const vb=node.viewBox.baseVal;clone.setAttribute('width',vb.width);clone.setAttribute('height',vb.height);return clone;
+  const vb=node.viewBox.baseVal;let height=vb.height;
+  for(const entry of legendEntries(node)){
+   const size=window.BookMath?BookMath.measure(entry.label,vb.width-72,12):{height:18};height+=Math.max(24,size.height+8);
+   const group=document.createElementNS(clone.namespaceURI,'g');group.setAttribute('transform',`translate(16,${height-14})`);
+   const key=legendKey(entry).firstChild;key.setAttribute('transform','translate(0,-8)');group.append(key);clone.append(group);
+   if(window.BookMath)BookMath.svgText(clone,entry.label,54,height-11,vb.width-72,'start',12);else{const text=document.createElementNS(clone.namespaceURI,'text');text.setAttribute('x','54');text.setAttribute('y',height-11);text.textContent=entry.label;clone.append(text);}
+  }
+  height+=12;clone.setAttribute('viewBox',`0 0 ${vb.width} ${height}`);clone.setAttribute('width',vb.width);clone.setAttribute('height',height);return clone;
  }
  function open(node){
   if(!dialog){dialog=document.createElement('dialog');dialog.className='scientific-chart-dialog';dialog.id='scientific-chart-dialog';dialog.setAttribute('aria-labelledby','scientific-dialog-title');dialog.innerHTML='<button class="scientific-dialog-close" type="button">关闭 ×</button><h2 id="scientific-dialog-title"></h2><div class="scientific-dialog-stage"></div><p class="scientific-dialog-note">当前参数下的实际图表。坐标定义、单位与模型范围沿用实验页面。</p>';dialog.querySelector('button').onclick=()=>dialog.close();dialog.addEventListener('click',event=>{if(event.target!==dialog)return;const b=dialog.getBoundingClientRect();if(event.clientX<b.left||event.clientX>b.right||event.clientY<b.top||event.clientY>b.bottom)dialog.close();});document.body.append(dialog);}
@@ -82,7 +131,9 @@
   let unit=units.get(node);
   if(!unit){unit=document.createElement('div');unit.className='scientific-chart-unit';node.before(unit);unit.append(node);const tools=document.createElement('div');tools.className='scientific-chart-tools';const zoom=document.createElement('button'),save=document.createElement('button');zoom.type=save.type='button';zoom.className=save.className='scientific-chart-action';zoom.textContent='放大图表';zoom.setAttribute('aria-haspopup','dialog');zoom.addEventListener('click',()=>open(node));save.textContent='导出 SVG';save.addEventListener('click',()=>download(node));tools.append(zoom,save);unit.append(tools);units.set(node,unit);}
   const info=frames.get(node);if(!info)return;
+  window.BookCurveExplorer?.update(node);
   referenceLayer(node);
+  updateLegend(node,unit);
   if(info.series.length&&!unit.querySelector('.scientific-reference-action')){
    const pin=document.createElement('button');pin.type='button';pin.className='scientific-chart-action scientific-reference-action';pin.textContent='固定当前曲线';pin.setAttribute('aria-pressed','false');
    pin.onclick=()=>{if(references.has(node)){references.delete(node);}else{const current=frames.get(node),controls=[...(node.closest('.lab,.extension-lab')?.querySelectorAll('input[type=range],select')||[])],parameters=controls.map(el=>{const label=document.querySelector(`label[for="${CSS.escape(el.id)}"]`)?.cloneNode(true);label?.querySelectorAll('input,output,select').forEach(n=>n.remove());label?.querySelectorAll('.inline-math').forEach(n=>n.replaceWith(document.createTextNode(n.dataset.inlineRaw||'')));return (label?.textContent.trim()||el.id)+'='+el.value;}).join('；');references.set(node,{xLabel:current.xLabel,yLabel:current.yLabel,parameters,series:structuredClone(current.series)});}enhance(node);};unit.querySelector('.scientific-chart-tools').append(pin);

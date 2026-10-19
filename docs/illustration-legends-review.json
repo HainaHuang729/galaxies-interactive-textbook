@@ -1,0 +1,315 @@
+{
+  "task": "illustration-legends-review",
+  "date": "2026-10-19",
+  "reviewer": "illustration worker (Lead scope: illustrations only)",
+  "scope": "全书19幅插画：16幅既有AI概念图+3幅新增原创代码SVG；逐幅结构化图例、箭头/显示色语义、读图线索；builder与放大弹窗来源显示",
+  "summary": {
+    "illustrations": 19,
+    "chaptersCovered": 16,
+    "aiConceptImages": 16,
+    "originalCodeSvg": 3,
+    "legendItems": 85,
+    "imagesWithLegendNote": 19,
+    "imagesWithReadCue": 19,
+    "existingWebpUnchanged": true,
+    "chapterCoverage": {
+      "1": [
+        "galaxy-diversity"
+      ],
+      "2": [
+        "edge-on-dust"
+      ],
+      "3": [
+        "light-through-expansion"
+      ],
+      "4": [
+        "cosmic-web"
+      ],
+      "5": [
+        "stellar-stream"
+      ],
+      "6": [
+        "redshift-space-distortion"
+      ],
+      "7": [
+        "halo-mass-boundary"
+      ],
+      "8": [
+        "halo-cooling-v2"
+      ],
+      "9": [
+        "molecular-cloud",
+        "hii-ionized-cloud"
+      ],
+      "10": [
+        "stellar-populations",
+        "agb-mass-return"
+      ],
+      "11": [
+        "disk-anatomy"
+      ],
+      "12": [
+        "tidal-encounter",
+        "ram-pressure-gas"
+      ],
+      "13": [
+        "elliptical-light"
+      ],
+      "14": [
+        "radio-jets-lobes"
+      ],
+      "15": [
+        "galaxy-group-environment"
+      ],
+      "16": [
+        "patchy-reionization"
+      ]
+    }
+  },
+  "method": [
+    "读 skills/interactive-textbook/SKILL.md 与 visuals-and-interaction/references、scientific-review、math-and-symbols",
+    "读 content/illustrations.json 全部16幅现有条目的alt/caption/cue/regions/prompt，再写图例",
+    "读第3/6/7章正文与41幅正文图清单（content/body-figures.json、dist章节HTML），选择不与既有图解重复的构图",
+    "三个新增SVG由本地脚本生成静态矢量，使用SVG代码画线、箭头、虚线圆、面块与少量图内标签；外部图例承担完整解释",
+    "图例经builder渲染为HTML：内联SVG点/线/虚线/面块/箭头/虚线圆图标；13px中文；320px单列",
+    "静态检查：manifest/subSVG/HTML沙箱构建/文本重叠/引用解析；浏览器视觉验收留给主agent"
+  ],
+  "figureReviews": [
+    {
+      "id": "galaxy-diversity",
+      "chapter": 1,
+      "production": "AI 概念示意（ImageGen，既有位图）",
+      "page": "index.html",
+      "legendItems": 4,
+      "review": "图例区分盘/旋臂、暖色核球、暗尘埃带与不规则团块；note明确颜色不对应年龄、温度、密度或质量刻度；读图线索要求先比较盘与旋臂再谈轮廓，不把形态读成年龄序列。与alt/caption/cue一致。"
+    },
+    {
+      "id": "edge-on-dust",
+      "chapter": 2,
+      "production": "AI 概念示意（ImageGen，既有位图）",
+      "page": "chapter-2.html",
+      "legendItems": 4,
+      "review": "图例映射侧视恒星盘、核球、盘面尘埃带与近侧视几何；明确暗带不能直接读尘埃质量或消光，二维投影不能唯一恢复盘厚。既有物理依据与参考资料行保留。"
+    },
+    {
+      "id": "light-through-expansion",
+      "chapter": 3,
+      "production": "原创代码几何示意（本项目SVG）",
+      "page": "chapter-3.html",
+      "anchor": "geometry",
+      "legendItems": 6,
+      "review": "构图为膨胀中的光路：观测者在取景中心而非宇宙中心，三座共动星系的光路波长向观测者变宽；金色波长尺标出λₑ/λ₀，底部并置共动距离D_C与光行距离c(t₀−tₑ)。1+z=a₀/aₑ与本章公式一致；明确路径、波峰间距与距离比例均为示意，不是观测或模拟。与3-distance-4（共动/物理分面、三种距离定义）和3-distance-5（共形视界）不重复。"
+    },
+    {
+      "id": "cosmic-web",
+      "chapter": 4,
+      "production": "AI 概念示意（ImageGen，既有位图）",
+      "page": "chapter-4.html",
+      "legendItems": 4,
+      "review": "图例映射细丝/节点/空洞/星系亮点；note明确颜色不对应实测密度、温度或暗物质分布，也未标定尺度与增长时间；不把蓝色细丝说成直接观测到的暗物质。"
+    },
+    {
+      "id": "stellar-stream",
+      "chapter": 5,
+      "production": "AI 概念示意（ImageGen，既有位图）",
+      "page": "chapter-5.html",
+      "legendItems": 4,
+      "review": "图例区分宿主、恒星晕、潮汐恒星流与残余团块；note说明弧带是大量恒星的空间分布，不是单颗恒星轨道或相空间图；不表示固定表面亮度刻度。"
+    },
+    {
+      "id": "redshift-space-distortion",
+      "chapter": 6,
+      "production": "原创代码几何示意（本项目SVG）",
+      "page": "chapter-6.html",
+      "anchor": "redshift",
+      "legendItems": 8,
+      "review": "上下两格使用同一批星系示踪点：上格r∥为真实空间，下格s∥=r∥+v∥/H₀为红移空间；横向位置不变，外围相干内流沿视线压扁，核心随机视向速度沿视线拉长。蓝色/金色只编码视向速度方向，箭头只示意方向与相对大小；采用本章平行视线、低红移近似，位移按任意单位，不冒充km/s或Mpc测量。不是新的模拟，也不是真实星系目录。与6-lensing-10、6-galaxies-11不重复。"
+    },
+    {
+      "id": "halo-mass-boundary",
+      "chapter": 7,
+      "production": "原创代码几何示意（本项目SVG）",
+      "page": "chapter-7.html",
+      "anchor": "boundaries",
+      "legendItems": 7,
+      "review": "左图粒子抽样表示NFW径向密度，rₛ与R₂₀₀c都为虚线定义；R₂₀₀c按平均密度200ρcrit定义，密度穿过边界继续下降，没有物理边缘。右图归一化ρ(r/rs)与M(<r)/M₂₀₀c使用本章NFW公式和示例c=4，只说明形状；虚线表示同一剖面外推，不表示新增物质；NFW总质量在无穷远发散，M₂₀₀c只计定义半径内的质量。明确不是观测、不是模拟，也不对应某个具体暗晕。与7-structure-13（三轴等密度面）和7-progenitors-12（并合树）不重复。"
+    },
+    {
+      "id": "halo-cooling-v2",
+      "chapter": 8,
+      "production": "AI 概念示意（ImageGen，既有位图）",
+      "page": "chapter-8.html",
+      "legendItems": 4,
+      "review": "图例区分中央盘星系、蓝色弥散热气体晕、少量冷气体细丝与“无实体外边界”；note明确颜色不表示温度或密度，晕向背景连续淡出，不能把淡出位置当固定半径。"
+    },
+    {
+      "id": "molecular-cloud",
+      "chapter": 9,
+      "production": "AI 概念示意（ImageGen，既有位图）",
+      "page": "chapter-9.html",
+      "legendItems": 4,
+      "review": "图例映射分子云主体、尘埃暗丝、局部亮核与电离腔；note说明亮度不能读密度/温度/尘埃质量，暗丝不是空洞，亮核不等于一个星团或单颗恒星。"
+    },
+    {
+      "id": "hii-ionized-cloud",
+      "chapter": 9,
+      "production": "AI 概念示意（ImageGen，既有位图）",
+      "page": "chapter-9.html",
+      "legendItems": 4,
+      "review": "图例映射年轻热星、电离气体、尘埃遮挡与电离界面；note明确颜色不测温度/密度/电离份额，电离区内部仍有气体，复杂结构不是均匀球模型的计算输出。既有regions按钮保留。"
+    },
+    {
+      "id": "stellar-populations",
+      "chapter": 10,
+      "production": "AI 概念示意（ImageGen，既有位图）",
+      "page": "chapter-10.html",
+      "legendItems": 4,
+      "review": "图例区分蓝白亮星、残余云气、致密年老星团与暖色较亮成员；note说明两场未按相同质量或光度归一，颜色不能单独确定年龄或星族比例。"
+    },
+    {
+      "id": "agb-mass-return",
+      "chapter": 10,
+      "production": "AI 概念示意（ImageGen，既有位图）",
+      "page": "chapter-10.html",
+      "legendItems": 4,
+      "review": "图例区分冷晚期恒星、含尘星风包层、内区无尘气体与向外流动方向；note说明不是超新星/行星状星云，不表示真实温度、质量、速度或产额，整层包层不能都算新合成金属。既有regions按钮保留。"
+    },
+    {
+      "id": "disk-anatomy",
+      "chapter": 11,
+      "production": "AI 概念示意（ImageGen，既有位图）",
+      "page": "chapter-11.html",
+      "legendItems": 4,
+      "review": "图例映射核球、宽薄恒星盘、盘面尘埃带与蓝色斑块；note说明颜色不表示温度/年龄/质量，旋臂只是盘内图案，图中不画可见暗物质。"
+    },
+    {
+      "id": "tidal-encounter",
+      "chapter": 12,
+      "production": "AI 概念示意（ImageGen，既有位图）",
+      "page": "chapter-12.html",
+      "legendItems": 4,
+      "review": "图例区分两个星系中心、星光桥、弯曲潮汐尾与形变盘面；note说明不是按本节参数积分得到的轨道结果，颜色不编码年龄、质量或固定温度/密度刻度。"
+    },
+    {
+      "id": "ram-pressure-gas",
+      "chapter": 12,
+      "production": "AI 概念示意（ImageGen，既有位图）",
+      "page": "chapter-12.html",
+      "legendItems": 4,
+      "review": "图例映射恒星主体、下游气体尾迹、迎风方向与环境气体；note明确蓝色只用于区分被剥离气体，不编码温度/密度/波段，静态图不测剥离速率。既有regions按钮保留。"
+    },
+    {
+      "id": "elliptical-light",
+      "chapter": 13,
+      "production": "AI 概念示意（ImageGen，既有位图）",
+      "page": "chapter-13.html",
+      "legendItems": 4,
+      "review": "图例区分中央亮核、连续淡出包层、背景小点与“无盘/无旋臂”；note明确明暗与颜色不对应表面亮度数据或固定温度/密度刻度，不能由投影外形确定三维形状或轨道各向异性。"
+    },
+    {
+      "id": "radio-jets-lobes",
+      "chapter": 14,
+      "production": "AI 概念示意（ImageGen，既有位图）",
+      "page": "chapter-14.html",
+      "legendItems": 4,
+      "review": "图例把蓝色明确解释为射电等离子体的多波段编码、暖色为宿主恒星光，并标出准直喷流与共同轴线；note说明不是肉眼可见颜色、不是固定温度/密度刻度、无速度或能量标尺。"
+    },
+    {
+      "id": "galaxy-group-environment",
+      "chapter": 15,
+      "production": "AI 概念示意（ImageGen，既有位图）",
+      "page": "chapter-15.html",
+      "legendItems": 4,
+      "review": "图例映射中央平滑成员、盘星系成员、较暗小成员与共同环境；note明确成员距离/质量/年龄未定量，颜色与大小不是固定温度/密度/质量刻度，不证明环境导致形态或淬火。既有regions按钮保留。"
+    },
+    {
+      "id": "patchy-reionization",
+      "chapter": 16,
+      "production": "AI 概念示意（ImageGen，既有位图）",
+      "page": "chapter-16.html",
+      "legendItems": 4,
+      "review": "图例明确暖色=电离、蓝灰=中性，二者都含气体；小亮点是光源位置而非单颗恒星，边界是状态过渡而非实体球壳。note说明颜色不代表温度/密度/可见光亮度，也没有指定红移。"
+    }
+  ],
+  "crossFigureConsistency": {
+    "legendStructure": "每幅均为kind+note+items+read；每项均有图标、色块、对象名与一句物理/读图含义",
+    "sourceLabels": "AI概念图为“AI 科教示意/AI 科学示意 · 非观测数据”；新增SVG为“原创几何示意 · 非观测数据 · 无定量标尺”；弹窗再显示manifest generator",
+    "iconTypes": [
+      "dot",
+      "line",
+      "dashed",
+      "area",
+      "arrow",
+      "ring"
+    ],
+    "colorRule": "AI概念图颜色只用于区分对象，note明确不是固定温度/密度/年龄刻度；代码SVG颜色为几何编码",
+    "interaction": "既有4幅regions按钮未改；未为凑数新增交互"
+  },
+  "builderAndDialog": {
+    "script": "scripts/build-illustrations.cjs",
+    "supportsSvg": true,
+    "oldWebpSrcsetPreserved": true,
+    "creditsPreserved": true,
+    "legendInCaption": true,
+    "legendInDialog": true,
+    "provenanceFromManifest": true,
+    "hardcodedImageGenRemoved": true,
+    "sandboxEvidence": "work/illustration-legends/build-test/dist；22页/19图/0错误/幂等"
+  },
+  "checksActuallyRun": [
+    "node scripts/check-illustration-legends.cjs -> 19幅/16章/85项图例/13px/0 errors 0 warnings",
+    "python validate-svg.py -> 3个SVG XML合法、viewBox正确、无script/image/外部href、类样式与文本边界通过",
+    "python check-text-overlap.py -> 3个SVG近似标签重叠0",
+    "python render-preview.py -> 离线Pillow粗渲染，仅用于作者自查，不作为浏览器证据",
+    "node test-builder-sandbox.cjs -> 沙箱22页构建2次；19图安装；svg无srcset；webp srcset/full-src保留；regions保留；正文锚点顺序正确；无插图页不变；幂等；0错误",
+    "python parse-generated-html.py -> 生成的HTML中19个figure及其图例/note/read/来源齐全",
+    "node --check builder/checker/book-illustrations.js -> 通过",
+    "node final-manifest-audit.cjs -> 文件bytes匹配、svg url(#)引用可解析、19章覆盖"
+  ],
+  "browserVerification": {
+    "status": "not_run_by_this_worker",
+    "owner": "main agent",
+    "reason": "workspace-write sandbox限制且分工要求主agent跑Playwright并看图",
+    "requested": [
+      "桌面1440与320px：第3/6/7章正文插图、图注、图例换行与横向溢出",
+      "两主题：图例图标/文字对比度，SVG在img与dialog中的字体fallback与虚线渲染",
+      "点击放大：标题+图注+图例+来源（原创SVG代码绘制/ImageGen）与Esc/焦点返回",
+      "既有4幅regions按钮与图例同时存在时的排版"
+    ]
+  },
+  "notRun": [
+    "真实dist整书build",
+    "node scripts/build-illustrations.cjs 对真实dist运行",
+    "Playwright/浏览器截图",
+    "提交/推送/部署"
+  ],
+  "limitations": [
+    "AI概念图的图例是文本语义核对（alt/caption/cue/prompt），未重新用像素级视觉模型指认小物体；颜色语义仍为非定量",
+    "三幅SVG是原创示意：光源路径、波峰间距、速度位移、粒子抽样与距离比例未按实际尺度；第7章示例c=4只说明NFW形状",
+    "静态检查不能验证浏览器字体fallback、虚线视觉密度与320px实际换行；需主agent截图确认",
+    "真实dist尚未重建，因此真实章节页面当前还未显示新图例与新图；整书build后才生效"
+  ],
+  "fileHashes": {
+    "content/illustrations.json": "37a2af81fe6c5df7ab7a496b8d105bc26557a26148e8f37a277440952289bb12",
+    "scripts/build-illustrations.cjs": "e4e6beef20ca96ba0d88021c9c36e80ea638d4f2b9f196caffcbb17f9545a4cf",
+    "scripts/check-illustration-legends.cjs": "24a085bc11c912c7e6c5307090a09287293b746989abc122dda577c4f217cfd6",
+    "dist/assets/book-illustrations.js": "368b3ab56b36541992dbdcc3f25277079721541564d27836f7d5df10d698fba6",
+    "dist/assets/book-illustrations.css": "89b5db1926b5d91c56e42a5948d4d01636019a08bc54c8618832d8ed51930db8",
+    "dist/assets/illustrations/light-through-expansion.svg": "d5b7088131d0c0a3505fbf18b0c734226aedf87ae2d824ef9313baf2236c1caa",
+    "dist/assets/illustrations/redshift-space-distortion.svg": "9ab03a79d7cc1d54581583178b5ace0bf709b81c76eef5ed073d0a0a6e1eedf5",
+    "dist/assets/illustrations/halo-mass-boundary.svg": "4255bb5ceb7ea951f5cc4ea7de411189ed0ce1ea7aa93e48c121bb2fdc4d51b1"
+  },
+  "status": "accepted_by_root",
+  "evidenceFiles": [
+    "scripts/check-illustration-legends.cjs",
+    "docs/illustration-legends-progress.json",
+    "work/illustration-legends/svg-static-validation.json",
+    "work/illustration-legends/build-test/dist（沙箱构建，非交付）"
+  ],
+  "rootAcceptance": {
+    "date": "2026-10-19",
+    "status": "accepted",
+    "report": "docs/book-legends-validation.json",
+    "note": "Root integrated the real build, completed 114 artwork layouts and 19 dialogs, corrected wording, added a readable SVG pan viewport and swatch contrast backing. Earlier worker hashes are historical; final hashes are in the root report."
+  }
+}

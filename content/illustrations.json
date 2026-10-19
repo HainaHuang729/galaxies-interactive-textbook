@@ -37,7 +37,39 @@
           "height": 1024,
           "bytes": 270924
         }
-      ]
+      ],
+      "format": "webp",
+      "legend": {
+        "kind": "ai-concept",
+        "note": "AI 概念示意：颜色与明暗只用于区分对象，不对应固定年龄、温度、密度或质量刻度。",
+        "items": [
+          {
+            "icon": "area",
+            "color": "#e5bf83",
+            "label": "暖色核心与核球",
+            "meaning": "表示较集中的恒星分布示意；颜色不表示质量、年龄或温度。"
+          },
+          {
+            "icon": "line",
+            "color": "#84bcd5",
+            "label": "蓝色盘与旋臂",
+            "meaning": "表示盘内恒星与旋臂结构；旋臂图案不等于盘的全部质量。"
+          },
+          {
+            "icon": "area",
+            "color": "#5a6a72",
+            "label": "暗色尘埃带",
+            "meaning": "表示遮挡背景星光的尘埃；不能由暗带直接测量尘埃质量或消光。"
+          },
+          {
+            "icon": "dot",
+            "color": "#b0b9e0",
+            "label": "不规则团块",
+            "meaning": "表示不规则星系中斑驳的恒星分布；不是单个星团或单颗恒星。"
+          }
+        ],
+        "read": "先看三者有没有薄盘或旋臂，再比较核球集中度与轮廓规则性；不要把这幅对照读成年龄或演化顺序。"
+      }
     },
     {
       "id": "cosmic-web",
@@ -74,7 +106,39 @@
           "height": 1024,
           "bytes": 388106
         }
-      ]
+      ],
+      "format": "webp",
+      "legend": {
+        "kind": "ai-concept",
+        "note": "AI 概念示意：颜色与亮度不对应实测密度、温度或暗物质分布；图中没有标定尺度、红移或增长时间。",
+        "items": [
+          {
+            "icon": "line",
+            "color": "#84bcd5",
+            "label": "蓝色细丝",
+            "meaning": "表示物质分布的纤维结构示意；不是可见光直接观测到的暗物质。"
+          },
+          {
+            "icon": "dot",
+            "color": "#e5bf83",
+            "label": "暖色节点",
+            "meaning": "表示细丝交汇处的高密度区域；不能当作单个星系或定量的晕质量。"
+          },
+          {
+            "icon": "area",
+            "color": "#5a6a72",
+            "label": "暗色空洞",
+            "meaning": "表示低密度区域，但不是完全空无一物。"
+          },
+          {
+            "icon": "dot",
+            "color": "#f1ece2",
+            "label": "小亮点",
+            "meaning": "表示细丝中的星系示踪点；不是可分辨的单颗恒星。"
+          }
+        ],
+        "read": "先找低密度空洞，再沿蓝色细丝追到金色节点；节点数量和大小都没有定量含义。"
+      }
     },
     {
       "id": "halo-cooling-v2",
@@ -112,7 +176,39 @@
           "bytes": 102786
         }
       ],
-      "supersedes": "halo-cooling"
+      "supersedes": "halo-cooling",
+      "format": "webp",
+      "legend": {
+        "kind": "ai-concept",
+        "note": "AI 概念示意：蓝色与暖色不表示温度、密度或冷却率；热晕没有画出实体外壳。",
+        "items": [
+          {
+            "icon": "area",
+            "color": "#e5bf83",
+            "label": "中央盘星系",
+            "meaning": "表示恒星主体；它只是晕中的发光部分，不等于整个气体晕。"
+          },
+          {
+            "icon": "area",
+            "color": "#84bcd5",
+            "label": "弥散热气体晕",
+            "meaning": "用连续淡出的蓝色表示弥散气体分布；越向外越淡是示意，不是测量。"
+          },
+          {
+            "icon": "line",
+            "color": "#b0b9e0",
+            "label": "冷气体细丝",
+            "meaning": "少量细丝表示较冷气体的可能通道；静态图不能判断实际流入或冷却。"
+          },
+          {
+            "icon": "dashed",
+            "color": "#8fa4a7",
+            "label": "无实体外边界",
+            "meaning": "图中没有描出的边缘，晕向背景连续淡出；淡出位置不是固定半径。"
+          }
+        ],
+        "read": "先找中央盘星系，再沿蓝色晕向外看它如何连续淡出；不要停在某一圈并把那里当作边界。"
+      }
     },
     {
       "id": "molecular-cloud",
@@ -149,7 +245,39 @@
           "height": 1024,
           "bytes": 218092
         }
-      ]
+      ],
+      "format": "webp",
+      "legend": {
+        "kind": "ai-concept",
+        "note": "AI 概念示意：亮度与颜色不能读密度、温度或尘埃质量；云体与亮核的边界只是示意。",
+        "items": [
+          {
+            "icon": "area",
+            "color": "#84bcd5",
+            "label": "分子云主体",
+            "meaning": "连续而非均匀的冷云；颜色只帮助区分气体，不是温度或密度图。"
+          },
+          {
+            "icon": "line",
+            "color": "#5a6a72",
+            "label": "尘埃暗丝",
+            "meaning": "暗色丝状结构表示尘埃遮挡；不是被掏空的通道。"
+          },
+          {
+            "icon": "dot",
+            "color": "#e5bf83",
+            "label": "局部亮核",
+            "meaning": "表示局部恒星形成区；一个亮核不等于一个星团或一颗恒星。"
+          },
+          {
+            "icon": "area",
+            "color": "#d7a2b4",
+            "label": "电离腔",
+            "meaning": "年轻星团照亮的小腔，表示局部反馈；不代表整个云被吹空。"
+          }
+        ],
+        "read": "先沿暗尘埃丝找到局部亮核，再比较弥散云、致密丝与亮核的尺度差；不要从亮度推密度。"
+      }
     },
     {
       "id": "disk-anatomy",
@@ -186,7 +314,39 @@
           "height": 1024,
           "bytes": 285232
         }
-      ]
+      ],
+      "format": "webp",
+      "legend": {
+        "kind": "ai-concept",
+        "note": "AI 概念示意：颜色与明暗不表示温度、年龄或质量；图中没有画出可见的暗物质。",
+        "items": [
+          {
+            "icon": "area",
+            "color": "#e5bf83",
+            "label": "中央核球",
+            "meaning": "表示中央集中的恒星分布；不是超大质量黑洞或吸积盘。"
+          },
+          {
+            "icon": "area",
+            "color": "#84bcd5",
+            "label": "薄恒星盘",
+            "meaning": "表示盘的主要恒星分布；旋臂只是盘内图案。"
+          },
+          {
+            "icon": "line",
+            "color": "#5a6a72",
+            "label": "盘面尘埃带",
+            "meaning": "表示盘面尘埃遮挡；不能由暗带直接读尘埃质量或消光。"
+          },
+          {
+            "icon": "dot",
+            "color": "#84bcd5",
+            "label": "蓝色斑块",
+            "meaning": "表示局部年轻星族或恒星形成区示意；不是单颗恒星。"
+          }
+        ],
+        "read": "从核球向外找薄盘与盘面尘埃带，比较盘厚与盘半径；旋臂只是盘内结构，不代表盘的总质量。"
+      }
     },
     {
       "id": "tidal-encounter",
@@ -223,7 +383,39 @@
           "height": 1024,
           "bytes": 221652
         }
-      ]
+      ],
+      "format": "webp",
+      "legend": {
+        "kind": "ai-concept",
+        "note": "AI 概念示意：不是按本节实验参数积分得到的轨道结果；颜色不编码年龄、质量或固定温度/密度刻度。",
+        "items": [
+          {
+            "icon": "dot",
+            "color": "#e5bf83",
+            "label": "两个星系中心",
+            "meaning": "两个仍可辨认的恒星集中区；不是黑洞或碰撞点。"
+          },
+          {
+            "icon": "line",
+            "color": "#84bcd5",
+            "label": "星光桥",
+            "meaning": "两星系之间的潮汐物质连接示意；不是物理桥梁或气体管道。"
+          },
+          {
+            "icon": "line",
+            "color": "#b0b9e0",
+            "label": "弯曲潮汐尾",
+            "meaning": "被潮汐拉出的恒星分布；弧线不是单颗恒星的轨道。"
+          },
+          {
+            "icon": "area",
+            "color": "#5a6a72",
+            "label": "形变盘面",
+            "meaning": "受扰动后不对称的盘；静态图不能读出相遇阶段或时间。"
+          }
+        ],
+        "read": "先找两个仍可辨认的中心，再追踪桥与外侧潮汐尾；这是引潮形变示意，不是碰撞爆炸。"
+      }
     },
     {
       "id": "stellar-populations",
@@ -260,7 +452,39 @@
           "height": 1024,
           "bytes": 322992
         }
-      ]
+      ],
+      "format": "webp",
+      "legend": {
+        "kind": "ai-concept",
+        "note": "AI 概念对照示意：两场未按相同质量或光度归一；颜色与亮度不能单独确定年龄或星族比例，也不对应固定温度/密度刻度。",
+        "items": [
+          {
+            "icon": "dot",
+            "color": "#84bcd5",
+            "label": "蓝白亮星",
+            "meaning": "表示年轻大质量恒星的示意；不是精确温度或年龄标签。"
+          },
+          {
+            "icon": "area",
+            "color": "#84bcd5",
+            "label": "残余云气",
+            "meaning": "年轻星协附近的少量尘埃与气体，只出现在左场。"
+          },
+          {
+            "icon": "dot",
+            "color": "#e5bf83",
+            "label": "致密年老星团",
+            "meaning": "右场密集星点表示球状星团的恒星分布；没有实体边缘。"
+          },
+          {
+            "icon": "dot",
+            "color": "#d7a2b4",
+            "label": "暖色较亮成员",
+            "meaning": "星团中少数较亮成员（如红巨星）的示意；不能按颜色数星族。"
+          }
+        ],
+        "read": "比较两侧恒星的疏密、亮星颜色和左场残余云气；不要把对照图读成等质量比较或年龄序列。"
+      }
     },
     {
       "id": "elliptical-light",
@@ -297,7 +521,39 @@
           "height": 1024,
           "bytes": 238980
         }
-      ]
+      ],
+      "format": "webp",
+      "legend": {
+        "kind": "ai-concept",
+        "note": "AI 概念示意：明暗与颜色不对应表面亮度数据，也不表示固定温度或密度刻度；不能由投影外形确定三维形状、轨道各向异性或动力学支撑。",
+        "items": [
+          {
+            "icon": "area",
+            "color": "#e5bf83",
+            "label": "中央亮核",
+            "meaning": "平滑且中心集中的星光；不是黑洞或活动星系核。"
+          },
+          {
+            "icon": "area",
+            "color": "#b0b9e0",
+            "label": "连续淡出的包层",
+            "meaning": "向外的低表面亮度星光；淡出是连续示意，不是固定边界。"
+          },
+          {
+            "icon": "dot",
+            "color": "#8fa4a7",
+            "label": "背景小点",
+            "meaning": "稀疏小点只作星场背景；不指认具体天体。"
+          },
+          {
+            "icon": "dashed",
+            "color": "#8fa4a7",
+            "label": "无盘与无旋臂",
+            "meaning": "图中不画薄盘、尘埃环或旋臂，用来与盘星系区分。"
+          }
+        ],
+        "read": "从中心向外追踪连续变淡的星光，比较各方向的平滑程度；不要用椭圆外形直接推断三维结构。"
+      }
     },
     {
       "id": "edge-on-dust",
@@ -342,7 +598,39 @@
         }
       ],
       "width": 1536,
-      "height": 1024
+      "height": 1024,
+      "format": "webp",
+      "legend": {
+        "kind": "ai-concept",
+        "note": "AI 概念示意：颜色为说明结构而选取，不表示固定温度、密度或消光刻度；不能据此测量恒星年龄、尘埃质量或消光。",
+        "items": [
+          {
+            "icon": "area",
+            "color": "#84bcd5",
+            "label": "侧视恒星盘",
+            "meaning": "薄而延展的盘；盘外缘连续淡出，不是一条几何线。"
+          },
+          {
+            "icon": "area",
+            "color": "#e5bf83",
+            "label": "中央核球",
+            "meaning": "盘中央较集中的恒星分布；不是黑洞。"
+          },
+          {
+            "icon": "line",
+            "color": "#5a6a72",
+            "label": "盘面尘埃带",
+            "meaning": "不规则暗带遮挡其后的星光；不能直接读尘埃质量或消光。"
+          },
+          {
+            "icon": "dashed",
+            "color": "#b0b9e0",
+            "label": "近侧视几何",
+            "meaning": "标出盘面与视线的接近平行关系；二维投影不能唯一恢复盘厚。"
+          }
+        ],
+        "read": "先找贯穿盘面的暗带，再比较盘与核球的厚度；记住这是近侧视投影，不能直接量三维高度。"
+      }
     },
     {
       "id": "stellar-stream",
@@ -387,7 +675,39 @@
         }
       ],
       "width": 1536,
-      "height": 1024
+      "height": 1024,
+      "format": "webp",
+      "legend": {
+        "kind": "ai-concept",
+        "note": "AI 概念示意：不是某个轨道积分的结果；颜色不表示固定温度、密度或表面亮度刻度；弧带代表大量恒星的空间分布，不是单颗恒星轨迹。",
+        "items": [
+          {
+            "icon": "area",
+            "color": "#e5bf83",
+            "label": "宿主星系",
+            "meaning": "中央平滑恒星主体；不是恒星流的一部分。"
+          },
+          {
+            "icon": "area",
+            "color": "#84bcd5",
+            "label": "恒星晕",
+            "meaning": "宿主外围低表面亮度的弥散星光；不是暗物质实体。"
+          },
+          {
+            "icon": "line",
+            "color": "#b0b9e0",
+            "label": "潮汐恒星流",
+            "meaning": "长弧由大量分散恒星组成，表面亮度很低；不是单颗恒星的轨道。"
+          },
+          {
+            "icon": "dot",
+            "color": "#f1ece2",
+            "label": "残余团块",
+            "meaning": "沿流的小型团块示意，可能来自被剥离的卫星系统；不能据此确定质量。"
+          }
+        ],
+        "read": "先找明亮宿主，再沿外侧追踪低亮度弧带，比较流与宿主的表面亮度；不要把它读成相空间图。"
+      }
     },
     {
       "id": "radio-jets-lobes",
@@ -432,7 +752,39 @@
         }
       ],
       "width": 1536,
-      "height": 1024
+      "height": 1024,
+      "format": "webp",
+      "legend": {
+        "kind": "ai-concept",
+        "note": "AI 概念多波段合成：蓝色明确编码射电等离子体，暖色表示宿主恒星光；不是肉眼可见颜色，也不是固定温度或密度刻度，没有速度或能量标尺。",
+        "items": [
+          {
+            "icon": "area",
+            "color": "#e5bf83",
+            "label": "椭圆宿主",
+            "meaning": "暖色恒星主体；不是喷流的一部分。"
+          },
+          {
+            "icon": "arrow",
+            "color": "#84bcd5",
+            "label": "准直喷流",
+            "meaning": "从中心沿共同轴线向两侧延伸的窄喷流；长度不表示速度。"
+          },
+          {
+            "icon": "area",
+            "color": "#84bcd5",
+            "label": "弥散射电瓣",
+            "meaning": "喷流末端较宽的低亮度射电等离子体；蓝色不表示温度。"
+          },
+          {
+            "icon": "dashed",
+            "color": "#b0b9e0",
+            "label": "共同轴线",
+            "meaning": "两喷流大致共线；不是所有活动星系核都具备强喷流。"
+          }
+        ],
+        "read": "从中央宿主沿细喷流找到两端弥散瓣，检查两喷流是否大致共线；亮度与尺寸不能用来估算反馈效率。"
+      }
     },
     {
       "id": "patchy-reionization",
@@ -477,7 +829,39 @@
         }
       ],
       "width": 1536,
-      "height": 1024
+      "height": 1024,
+      "format": "webp",
+      "legend": {
+        "kind": "ai-concept",
+        "note": "AI 概念示意：暖色=电离、蓝灰=中性，只编码气体状态；两者都含气体，不是空洞。颜色不代表温度、密度或可见光亮度，也没有指定红移。",
+        "items": [
+          {
+            "icon": "area",
+            "color": "#d7a2b4",
+            "label": "电离区",
+            "meaning": "被光源电离的气体；边缘不规则且可相互重叠。"
+          },
+          {
+            "icon": "area",
+            "color": "#8fa4a7",
+            "label": "中性气体",
+            "meaning": "仍连通的中性气体走廊；不是未观测区域或真空。"
+          },
+          {
+            "icon": "dot",
+            "color": "#f1ece2",
+            "label": "聚集光源",
+            "meaning": "小亮点表示电离光源的位置；不是可分辨的单颗恒星。"
+          },
+          {
+            "icon": "dashed",
+            "color": "#e5bf83",
+            "label": "电离区边界",
+            "meaning": "表示气体状态过渡的示意；不是实体球壳或冲击波。"
+          }
+        ],
+        "read": "先看暖色电离区的大小与重叠，再找仍连通的中性气体走廊；注意两类区域都有气体纹理。"
+      }
     },
     {
       "id": "ram-pressure-gas",
@@ -548,7 +932,39 @@
           "bytes": 100366
         }
       ],
-      "prompt": "Use case: scientific-educational. Asset: a landscape 3:2 conceptual astronomical illustration for chapter 12 of a Chinese university galaxy formation textbook. Restrained deep graphite-blue, ice blue, soft teal and warm stellar ivory, compatible with a refined scientific book. Scene: one moderately inclined spiral galaxy moving through intracluster gas. A smooth compact stellar disk and warm central bulge remain gravitationally intact. Diffuse blue stripped GAS trails to the right and slightly upwards in one asymmetric broad wake, with a few physically plausible clumps; the stellar disk does not stretch into the gas wake. Show the ram-pressure head/windward gas compression at the left edge, and a single downstream gas wake to the right. Cluster ambient gas is extremely diffuse and fades smoothly, no hard walls, no shells. No gravitational tidal stellar tails, no companion encounter, no explosions, no flames, no planet surfaces. Scientifically motivated editorial illustration, NOT a real observation or a hydrodynamical simulation; no quantitative implications. No text, labels, numbers, axes, arrows, frames, logos or watermark. Keep the galaxy and entire gaseous wake comfortably in frame, legible at mobile size."
+      "prompt": "Use case: scientific-educational. Asset: a landscape 3:2 conceptual astronomical illustration for chapter 12 of a Chinese university galaxy formation textbook. Restrained deep graphite-blue, ice blue, soft teal and warm stellar ivory, compatible with a refined scientific book. Scene: one moderately inclined spiral galaxy moving through intracluster gas. A smooth compact stellar disk and warm central bulge remain gravitationally intact. Diffuse blue stripped GAS trails to the right and slightly upwards in one asymmetric broad wake, with a few physically plausible clumps; the stellar disk does not stretch into the gas wake. Show the ram-pressure head/windward gas compression at the left edge, and a single downstream gas wake to the right. Cluster ambient gas is extremely diffuse and fades smoothly, no hard walls, no shells. No gravitational tidal stellar tails, no companion encounter, no explosions, no flames, no planet surfaces. Scientifically motivated editorial illustration, NOT a real observation or a hydrodynamical simulation; no quantitative implications. No text, labels, numbers, axes, arrows, frames, logos or watermark. Keep the galaxy and entire gaseous wake comfortably in frame, legible at mobile size.",
+      "format": "webp",
+      "legend": {
+        "kind": "ai-concept",
+        "note": "AI 概念示意：蓝色只用于区分被剥离气体，不编码温度、密度或真实波段；静态图不测量剥离速率或剩余气体质量。",
+        "items": [
+          {
+            "icon": "area",
+            "color": "#e5bf83",
+            "label": "恒星主体",
+            "meaning": "相对紧凑的恒星盘与核球；冲压直接作用于气体，不应读成恒星潮汐尾。"
+          },
+          {
+            "icon": "area",
+            "color": "#84bcd5",
+            "label": "下游气体尾迹",
+            "meaning": "沿迎风方向下游延伸的不对称气体；形状只解释机制。"
+          },
+          {
+            "icon": "arrow",
+            "color": "#84bcd5",
+            "label": "迎风方向",
+            "meaning": "左侧为设定的迎风侧；箭头表示相对运动方向，不是气体流线。"
+          },
+          {
+            "icon": "area",
+            "color": "#8fa4a7",
+            "label": "周围环境气体",
+            "meaning": "极稀薄的团簇内气体，向背景平滑淡出，没有硬壁。"
+          }
+        ],
+        "read": "先确认左侧迎风方向，再比较紧凑的恒星主体与右上方蓝色尾迹；不要把蓝色尾迹读成恒星潮汐结构。"
+      }
     },
     {
       "id": "galaxy-group-environment",
@@ -619,7 +1035,39 @@
           "bytes": 151550
         }
       ],
-      "prompt": "Use case: scientific-educational. Asset: landscape 3:2 conceptual illustration for chapter 15 on galaxy environments, a refined Chinese university galaxy-formation textbook. Match restrained deep graphite-blue, pale ice blue and warm ivory starlight. A single coherent small galaxy group in three-dimensional space: one larger smooth elliptical galaxy, two distinct smaller inclined disk galaxies with subtle spiral structures, and a few faint compact satellite galaxies. Diverse morphologies coexist in the same group; do not sort by age or align in an evolutionary sequence. Clear separation between members, realistic thin stellar disks, soft diffuse stellar light around the central concentration, a dark sparse background with no foreground planet or huge stars. No glowing cosmic filament ropes or dark matter rendered as visible solid structures. No hard halo boundary, no orbital lines, no evidence-free arrows or collisions. This is a physically plausible editorial concept, NOT an identified real system, measured simulation, or proof that environment causes morphology. No text, labels, numbers, quantitative scales, axes, frames, UI, logos or watermark. Entire group fits with breathing room; detailed yet legible at mobile size."
+      "prompt": "Use case: scientific-educational. Asset: landscape 3:2 conceptual illustration for chapter 15 on galaxy environments, a refined Chinese university galaxy-formation textbook. Match restrained deep graphite-blue, pale ice blue and warm ivory starlight. A single coherent small galaxy group in three-dimensional space: one larger smooth elliptical galaxy, two distinct smaller inclined disk galaxies with subtle spiral structures, and a few faint compact satellite galaxies. Diverse morphologies coexist in the same group; do not sort by age or align in an evolutionary sequence. Clear separation between members, realistic thin stellar disks, soft diffuse stellar light around the central concentration, a dark sparse background with no foreground planet or huge stars. No glowing cosmic filament ropes or dark matter rendered as visible solid structures. No hard halo boundary, no orbital lines, no evidence-free arrows or collisions. This is a physically plausible editorial concept, NOT an identified real system, measured simulation, or proof that environment causes morphology. No text, labels, numbers, quantitative scales, axes, frames, UI, logos or watermark. Entire group fits with breathing room; detailed yet legible at mobile size.",
+      "format": "webp",
+      "legend": {
+        "kind": "ai-concept",
+        "note": "AI 概念示意：成员距离、质量与星族年龄均未定量标定；颜色与大小是区分手段，不表示固定温度、密度或质量刻度；不证明环境对形态或淬火的因果关系。",
+        "items": [
+          {
+            "icon": "area",
+            "color": "#e5bf83",
+            "label": "中央平滑成员",
+            "meaning": "平滑且中心集中的恒星分布；外观不能确定三维轨道或形成历史。"
+          },
+          {
+            "icon": "area",
+            "color": "#84bcd5",
+            "label": "盘星系成员",
+            "meaning": "同一群环境中仍保留盘结构的星系；盘的方向只是投影。"
+          },
+          {
+            "icon": "dot",
+            "color": "#8fa4a7",
+            "label": "较暗小成员",
+            "meaning": "稀疏小点表示较暗的群成员；不指认具体天体或质量。"
+          },
+          {
+            "icon": "area",
+            "color": "#5a6a72",
+            "label": "共同环境",
+            "meaning": "同一三维空间中的群环境示意；不是暗物质或热气体的密度图。"
+          }
+        ],
+        "read": "先找同一环境中的形态多样性，再注意成员间距与亮度都未定量；不要把这幅静态排列读成演化序列。"
+      }
     },
     {
       "id": "hii-ionized-cloud",
@@ -695,7 +1143,39 @@
           "height": 1024,
           "bytes": 259994
         }
-      ]
+      ],
+      "format": "webp",
+      "legend": {
+        "kind": "ai-concept",
+        "note": "AI 概念示意：颜色与亮度不测温度、密度或电离份额；图中复杂结构不是均匀球模型的计算输出。",
+        "items": [
+          {
+            "icon": "dot",
+            "color": "#84bcd5",
+            "label": "年轻热星",
+            "meaning": "蓝白小点表示热的大质量恒星；不是精确温度标签。"
+          },
+          {
+            "icon": "area",
+            "color": "#d7a2b4",
+            "label": "电离气体",
+            "meaning": "不规则的淡粉发光气体；内部仍有气体，不是抽空的空心球。"
+          },
+          {
+            "icon": "line",
+            "color": "#5a6a72",
+            "label": "尘埃与遮挡",
+            "meaning": "暗带提示尘埃遮挡背景光；不能仅凭颜色测分子气体质量。"
+          },
+          {
+            "icon": "dashed",
+            "color": "#d7a2b4",
+            "label": "电离界面",
+            "meaning": "气体与尘埃的交界被照亮；不是模型要求的薄壳。"
+          }
+        ],
+        "read": "先找年轻星协，再比较较透明的发光气体与遮挡背景光的尘埃；不要把亮边或暗带直接读成密度边界。"
+      }
     },
     {
       "id": "agb-mass-return",
@@ -771,7 +1251,264 @@
           "height": 1024,
           "bytes": 206710
         }
-      ]
+      ],
+      "format": "webp",
+      "legend": {
+        "kind": "ai-concept",
+        "note": "AI 概念示意：不表示真实温度、质量、速度或产额；整层包层不能都算作新合成金属。",
+        "items": [
+          {
+            "icon": "dot",
+            "color": "#d7a2b4",
+            "label": "冷的晚期恒星",
+            "meaning": "中央暖红色小源表示正在失质量的 AGB 星；不是已暴露热核的行星状星云。"
+          },
+          {
+            "icon": "area",
+            "color": "#d7a2b4",
+            "label": "含尘星风包层",
+            "meaning": "向外渐淡的团块状气体与尘埃；尘埃离开光球一段距离后才形成。"
+          },
+          {
+            "icon": "dashed",
+            "color": "#e5bf83",
+            "label": "内区无尘气体",
+            "meaning": "靠近恒星的内区仍有气体；不能当作真空。"
+          },
+          {
+            "icon": "arrow",
+            "color": "#f1ece2",
+            "label": "向外流动方向",
+            "meaning": "表示缓慢星风的方向；不是爆炸或喷流。"
+          }
+        ],
+        "read": "先区分中央冷星与更远的尘埃，再核对“返回的总质量”与“新合成金属”两本账；不要把整层星风都算成净产额。"
+      }
+    },
+    {
+      "id": "light-through-expansion",
+      "chapter": 3,
+      "anchor": "geometry",
+      "title": "膨胀中的光：红移与距离几何",
+      "caption": "原创几何示意：同一批共动星系发出的光在膨胀空间中传播，波峰间距由源到观测者逐渐变宽，红移来自尺度因子的增大；底部对比共动距离与光行距离。图中路径、波峰间距与距离比例均为示意，不按实际尺度绘制。",
+      "provenance": "原创几何示意 · 非观测数据 · 无定量标尺",
+      "generator": "原创SVG代码绘制（本项目）",
+      "mode": "code-svg",
+      "format": "svg",
+      "placement": "body",
+      "page": "chapter-3.html",
+      "cue": "先沿一条波线从源看到观测者，比较波峰间距；再读底部共动距离与光行距离的括号，并确认观测者只是取景中心。",
+      "alt": "原创几何示意：观测者左侧三座共动星系，波纹状光路从远到近连接观测者，波峰间距向观测者变宽；底部比较共动距离与光行距离。",
+      "book_reference": "MBW（2010）§3.1–3.2，pp.102–124",
+      "width": 1200,
+      "height": 800,
+      "files": [
+        {
+          "path": "assets/illustrations/light-through-expansion.svg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 39053
+        }
+      ],
+      "legend": {
+        "kind": "code-geometry",
+        "note": "原创代码几何示意，不是观测或数值模拟；波峰间距、路径与距离比例均为示意，未按实际尺度绘制。颜色只区分对象，不是温度或密度刻度。",
+        "items": [
+          {
+            "icon": "dot",
+            "color": "#f1ece2",
+            "label": "观测者（取景中心）",
+            "meaning": "视线的接收端；图中位置只是取景中心，不代表宇宙中心。"
+          },
+          {
+            "icon": "line",
+            "color": "#84bcd5",
+            "label": "光的传播路径与波峰",
+            "meaning": "波纹中心线连接源与观测者；波峰间距向观测者变宽，表示波长被膨胀拉长（幅度示意）。"
+          },
+          {
+            "icon": "dot",
+            "color": "#e5bf83",
+            "label": "共动星系",
+            "meaning": "三座共动星系代表固定共动坐标上的位置；近/远标签只表示视向距离次序。"
+          },
+          {
+            "icon": "line",
+            "color": "#e5bf83",
+            "label": "共动距离 D_C",
+            "meaning": "采用今天 a₀=1 的归一，表示源与观测者的共动间隔；不是把光行时间乘以 c 得到的距离。"
+          },
+          {
+            "icon": "dashed",
+            "color": "#b0b9e0",
+            "label": "光行距离 c(t₀−tₑ)",
+            "meaning": "将光行时间乘以 c 得到的时间距离；不是今天同一时刻的空间间隔。在图示的持续膨胀背景中，它短于今天归一后的共动距离（比例示意）。"
+          },
+          {
+            "icon": "area",
+            "color": "#2a3d4a",
+            "label": "共动坐标网格",
+            "meaning": "等间距网格只是示意，用来标出固定共动位置；画面边框不是宇宙边缘。"
+          }
+        ],
+        "read": "先沿一条波线从源看到观测者，注意波峰间距如何变宽；再读底部两种距离的括号，最后确认观测者只是取景中心。"
+      }
+    },
+    {
+      "id": "redshift-space-distortion",
+      "chapter": 6,
+      "anchor": "redshift",
+      "title": "速度把位置写歪：真实空间与红移空间",
+      "caption": "原创几何示意：上下两格是同一批星系。上格用真实视向位置 r∥，下格把视向速度换算成位移 s∥ = r∥ + v∥/H₀，横向位置不变；外围相干内流沿视线压扁，核心随机速度沿视线拉长。速度与位移为示意，未按实际 km/s 或 Mpc 标定。",
+      "provenance": "原创几何示意 · 非观测数据 · 无定量标尺",
+      "generator": "原创SVG代码绘制（本项目）",
+      "mode": "code-svg",
+      "format": "svg",
+      "placement": "body",
+      "page": "chapter-6.html",
+      "cue": "先找同一批点的横向位置，再沿视线比较它们在上下两格的间距；区分蓝色（朝向观测者）与金色（远离观测者）的视向速度。",
+      "alt": "原创几何示意：上下两格为同一批星系的真实空间与红移空间；下格外围沿视线压扁、核心沿视线拉长，蓝金点标出朝向或远离观测者的视向速度。",
+      "book_reference": "MBW（2010）§6.2–6.3，pp.270–278",
+      "width": 1200,
+      "height": 800,
+      "files": [
+        {
+          "path": "assets/illustrations/redshift-space-distortion.svg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 26055
+        }
+      ],
+      "legend": {
+        "kind": "code-geometry",
+        "note": "原创代码几何示意，不是观测或数值模拟；采用本章的平行视线、低红移近似，速度与位移按任意单位示意，未标定 km/s 或 Mpc。颜色只编码视向速度方向，不编码温度、密度或年龄。",
+        "items": [
+          {
+            "icon": "dot",
+            "color": "#b0b9e0",
+            "label": "星系示踪点",
+            "meaning": "上下两格是同一批点；不是恒星、气体或暗物质粒子。"
+          },
+          {
+            "icon": "area",
+            "color": "#2a3d4a",
+            "label": "上格：真实空间 r∥",
+            "meaning": "按真实视向位置排列；箭头标出视向速度方向。"
+          },
+          {
+            "icon": "area",
+            "color": "#2a3d4a",
+            "label": "下格：红移空间 s∥",
+            "meaning": "同一批点按 s∥ = r∥ + v∥/H₀ 平移后的位置；横向位置不变。"
+          },
+          {
+            "icon": "arrow",
+            "color": "#84bcd5",
+            "label": "朝向观测者的视向速度",
+            "meaning": "蓝点与蓝箭头表示 v∥<0；箭头长度只示意大小，不是实际速度。"
+          },
+          {
+            "icon": "arrow",
+            "color": "#e5bf83",
+            "label": "远离观测者的视向速度",
+            "meaning": "金点与金箭头表示 v∥>0。"
+          },
+          {
+            "icon": "dashed",
+            "color": "#b0b9e0",
+            "label": "团簇中心位置",
+            "meaning": "仅作位置参考；不是物理边界。"
+          },
+          {
+            "icon": "area",
+            "color": "#8fa4a7",
+            "label": "外围：相干内流 → 压扁",
+            "meaning": "下格中沿视线被压扁；这是坐标位移，不是星系被物理压缩。"
+          },
+          {
+            "icon": "area",
+            "color": "#8fa4a7",
+            "label": "核心：随机速度 → 手指",
+            "meaning": "下格中沿视线被拉长（上帝手指）；不是真实空间中的长条结构。"
+          }
+        ],
+        "read": "先在上格找核心与外围，再沿水平视线比较它们在红移空间中的位置移动；横向位置不变，所以差别只能来自视向速度。"
+      }
+    },
+    {
+      "id": "halo-mass-boundary",
+      "chapter": 7,
+      "anchor": "boundaries",
+      "title": "暗晕的质量半径，不是密度的硬边界",
+      "caption": "原创几何示意：左侧用粒子抽样表示球对称 NFW 暗晕的径向密度，虚线 rₛ 是尺度半径，虚线 R₂₀₀c 是按平均密度定义的质量半径；密度穿过 R₂₀₀c 继续下降，没有物理边缘。右侧用本章 NFW 公式在示例浓度 c=4 下画出密度剖面与包围质量，仅说明形状，不代表某个具体暗晕，也不是观测或模拟。",
+      "provenance": "原创几何示意 · 非观测数据 · 无定量标尺",
+      "generator": "原创SVG代码绘制（本项目）",
+      "mode": "code-svg",
+      "format": "svg",
+      "placement": "body",
+      "page": "chapter-7.html",
+      "cue": "先看左侧密度如何从中心向外连续变淡，再看 R₂₀₀c 圈内外的粒子是否突然消失；最后对照右图：R₂₀₀c 处密度不为零，而 M₂₀₀c 是该半径内的质量。",
+      "alt": "原创几何示意：左侧暗晕粒子截面中密度向中心集中并向 R₂₀₀c 外连续变淡；右侧密度剖面与包围质量曲线标出 rₛ、R₂₀₀c 和 M₂₀₀c。",
+      "book_reference": "MBW（2010）§7.5，pp.354–362",
+      "width": 1200,
+      "height": 800,
+      "files": [
+        {
+          "path": "assets/illustrations/halo-mass-boundary.svg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 105222
+        }
+      ],
+      "legend": {
+        "kind": "code-geometry",
+        "note": "原创代码几何示意，不是观测或数值模拟；右图使用本章 NFW 公式与示例浓度 c=4，只说明形状，不代表某个具体暗晕。NFW 向无穷远延伸时总质量发散，M₂₀₀c 只计定义半径内的质量。颜色不是温度或密度刻度。",
+        "items": [
+          {
+            "icon": "dot",
+            "color": "#84bcd5",
+            "label": "暗晕物质抽样点",
+            "meaning": "按径向密度抽样的投影示意；不是模拟粒子，也不是可见发光物质。"
+          },
+          {
+            "icon": "dashed",
+            "color": "#e5bf83",
+            "label": "R₂₀₀c（质量定义半径）",
+            "meaning": "球内平均密度为 200ρcrit 的半径；它是质量定义，不是密度为零的边缘。"
+          },
+          {
+            "icon": "dashed",
+            "color": "#b0b9e0",
+            "label": "rₛ（尺度半径）",
+            "meaning": "NFW 中局部密度斜率约为 −2 的半径；本图示例 c=R₂₀₀c/rₛ=4。"
+          },
+          {
+            "icon": "line",
+            "color": "#84bcd5",
+            "label": "径向密度剖面",
+            "meaning": "右图 ρ(r) 的归一化形状；穿过 R₂₀₀c 时密度仍为正。"
+          },
+          {
+            "icon": "arrow",
+            "color": "#f1ece2",
+            "label": "半径 r 的方向",
+            "meaning": "只表示由中心向外的径向坐标；不是物质流动方向。"
+          },
+          {
+            "icon": "line",
+            "color": "#e5bf83",
+            "label": "包围质量 M(<r)",
+            "meaning": "实线到 R₂₀₀c；虚线是同一剖面向外的延伸，不代表新增物质或实际边界。"
+          },
+          {
+            "icon": "area",
+            "color": "#e5bf83",
+            "label": "边界外的延伸区域",
+            "meaning": "R₂₀₀c 外仍有稀疏抽样与外推曲线；没有画成实体球壳。"
+          }
+        ],
+        "read": "先找中心与 rₛ，再找 R₂₀₀c；比较边界两侧的粒子密度是否突变，然后在右图确认 ρ(R₂₀₀c)>0 与 M₂₀₀c 分别对应什么。"
+      }
     }
   ],
   "retired": [
@@ -852,5 +1589,6 @@
       "supersedes": "intergalactic-medium",
       "retired_reason": "2026-10-16科学复核：实体感或尺度/前景关系无法可靠读出；正文已有确定性结构图。"
     }
-  ]
+  ],
+  "legend_updated_at": "2026-10-19"
 }

@@ -1,0 +1,98 @@
+{
+  "task": "experiment-figure-review-20261019",
+  "date": "2026-10-19",
+  "status": "已验收：两项修改已实现，静态/科学/构建/公共回归与 root 浏览器完整运行全部通过",
+  "acceptance": {
+    "browser": {"checks": 207, "labs": 2, "layouts": 12, "interactions": 11, "screenshots": 20, "errors": 0, "consoleErrors": 0},
+    "report": "TEMP/galaxies-experiment-figures-20261019/experiment-figure-browser-report.json",
+    "visual": "root 查看 320px moon 完整 Canvas 与 13 曲线局部图、1440 主图及 390 afterglow / 320 moon 视口片段；Jeans Canvas 标签完整，13 两曲线与参考虚线可辨。",
+    "existing_suites": "root 末轮复跑静态 15421、41 组正文图 1193、上一轮 19 组 redesign 5364、完整 npm test、check:public 594 files / errors=[] 全通过。",
+    "test_only_fixes": "浏览器阶段仅修测试：未定义 ok、拖动 thumb/安全区、截图 bbox 稳定 + document clip、条长比容限 0.02px、键盘读数顺序、__renderedText/parseNumber、γ=3 三位小数 2e−6、图例直接子项、layouts.push 位置、仅 favicon route 204。生产代码未改。"
+  },
+  "scope": {
+    "experiments": 126,
+    "base_inventory": "TEMP/galaxies-figure-quality-20261018/inventory.json",
+    "unchanged": "上一轮已验收的 41 组正文图与 19 组 redesign 未重做；本轮不改架构、不加依赖、不改模型数值范围",
+    "figure_surfaces": {
+      "experiments_with_chart": 114,
+      "experiments_with_scene_canvas": 44,
+      "no_chart_no_scene": ["1:opening-experiment", "1:clocks-experiment-2", "3:opening-experiment", "4:opening-experiment", "16:transfer-bench-lab"],
+      "note": "由 dist 作者源静态提取；chart 与 scene 可同时存在。"
+    }
+  },
+  "method": {
+    "inventory": "复用既有 126 实验 inventory，并用作者源静态提取图表、canvas、控件、读数与说明文本；第 9–16 章 63 个模型用纯函数在默认/最小/最大/内部点检查参数是否真的改变曲线、读数或场景。",
+    "model_audit": "63 个生成章模型 × 全部参数 × 5 个取样点：未发现死滑块、默认/端点 NaN、当前点落在自动轴域外；未发现空轴标或缺单位。",
+    "visual_sampling": {
+      "root_fresh_review": {
+        "count": 4,
+        "experiments": ["5:jeans-lab", "13:anisotropy-lab", "12:tidal-tensor-lab", "14:velocity-delay-lab"],
+        "outcome": "5 与 13 有具体问题；12 与 14 现有表现较完整，本轮不改。"
+      },
+      "agent_prior_screenshot_review": {
+        "count": 11,
+        "experiments": ["2:spectral-lab", "4:opening-experiment", "5:sphere-lab", "8:shock-lab", "12:tidal-shock-lab", "13:projection-lab", "16:transmission-lab", "4:growth-lab", "9:hii-lab-model", "15:cosmic-sfr-lab", "15:matching-lab-model"],
+        "note": "复用既有截图筛候选，不是改后验收；不与 root 新增 4 项混算。"
+      },
+      "explicit_limitation": "未对 126 个实验逐页逐参数做视觉验收；静态清点覆盖 126 项，视觉抽样覆盖 15 项。浏览器 page.screenshot 的 document clip 只捕获当前可见片段，不是整卡完整截图；完整局部视觉证据以 root 独立截图（root-jeans-moment-canvas-320.png、root-anisotropy-chart-320.png）与 1440 主图为准。"
+    }
+  },
+  "issues_found": [
+    {
+      "id": "5:jeans-lab",
+      "chapter": 5,
+      "title": "给随机运动一个方向",
+      "severity": "high",
+      "issue": "图内只有 β–Vc 一条曲线；径向箭头、单个切向分量与两分量合成关系没有任何图面表达。读数“单个切向弥散/σr”未说明是单分量还是 √2 合成值。折叠说明里才区分恒星动力学 Jeans 二阶矩与气体 Jeans 不稳定性。",
+      "root_evidence": "390px 改前/改后截图；Canvas 内 σφ=150 标签曾在左边界被裁切，只剩“φ =150”（自动 DOM 横向溢出检测抓不到 Canvas 内部裁字）。",
+      "fix": "新增 Canvas 二阶矩方向图（σr、σθ=σφ、√2σθ 合成条），读数与动态说明区分单分量/合成值，结果与 details 明确非气体 Jeans、非真实恒星轨道、非视向投影；新增重置按钮与 reader 任务导引；Canvas 文字边界写入 textBounds 并在 390/320px 复验。右侧三条改用固定 0–400 km/s 公共标尺（输入最大 220√3≈381.1<400），σr 改变时条长直接变化；方向箭头仍只示意方向与相对分量。"
+    },
+    {
+      "id": "13:anisotropy-lab",
+      "chapter": 13,
+      "title": "同一视向弥散，可以需要不同的质量",
+      "severity": "high",
+      "issue": "图内只有一条 β–Vc 曲线；固定 σlos 与第 5 章固定 σr 的差别、γ=3 投影抵消都只在长 summary 末尾一句带过。代码审查还发现 γ=3 的旧说明把“质量估计不依赖 β”误写成“无法区分 β 与质量”。",
+      "root_evidence": "改前截图；root 独立数值投影积分（z/R=sinh(u)，16000 子区间复合 Simpson，36 组）与 AdvancedPhysics 返回 Vc 最大相对误差 4.073e−12，容限 2e−10。",
+      "fix": "新增 γ=3 参考曲线（Vc=√3σlos），图例逐条命名；γ=3 精确命中（<1e−9）时给出投影抵消说明，措辞改为“质量估计不依赖 β，但 σlos 不能同时确定 β 与 σr”；intro/参数标签/assumptions 明确固定 σlos 与固定 σr 的区别；新增 reader 任务导引。"
+    },
+    {
+      "id": "mobile-canvas-text",
+      "chapter": 5,
+      "title": "Canvas 内标签边界与固定条形标尺",
+      "severity": "medium",
+      "issue": "Canvas 内标签不受 DOM 横向溢出检测约束；390px 时 σφ 标签因左空间不足被裁切。右侧条形曾按当前最大分量归一，改变 σr 只改数字、条长不变，参数变化在图上看不出来。",
+      "fix": "所有 Canvas 文字走同一个测量/记录函数，输出 textBounds 数据；φ 标签在左空间不足时改放端点右侧；浏览器回归脚本在 390/320 两主题断言所有文字边界落在 Canvas 内。条形改为固定 0–400 km/s 标尺并在图内/aria 注明，σr 改变直接反映为条长变化。"
+    }
+  ],
+  "not_changed": [
+    {"id": "12:tidal-tensor-lab", "reason": "root 实际查看改前截图后判定现有表现较完整（已有仪器图与曲线），本轮不改。"},
+    {"id": "14:velocity-delay-lab", "reason": "root 实际查看改前截图后判定现有表现较完整（已有天空投影与关联延迟图），本轮不改。"},
+    {"id": "third-item", "reason": "无同等强度证据；按用户授权取消 3 项下限，两项完整优于凑数。"}
+  ],
+  "changed_author_sources": [
+    "dist/chapter-5.html",
+    "dist/assets/chapter-five.js",
+    "dist/assets/chapter-five.css",
+    "content/chapter-13.json",
+    "dist/assets/advanced-physics.js (仅 anisotropy 模型块)",
+    "content/math/legacy.json (仅 chapter-5 Jeans 三行公式块)",
+    "content/lab-guides.json (仅新增 5:jeans-lab、13:anisotropy-lab)",
+    "scripts/check-experiment-figures.cjs (新增)",
+    "scripts/check-experiment-figures-browser.cjs (新增)"
+  ],
+  "preserved": [
+    "上一轮 41 组正文图与 19 组 redesign 的作者源/校验脚本",
+    "现有未提交改动",
+    "DSH 配置与会话文件",
+    "现有 126 实验数量与章节结构",
+    "没有 git commit / push / deploy"
+  ],
+  "limitations": [
+    "126 个实验的全视觉验收未执行；视觉证据是 4 项 root 新审 + 11 张既有截图抽样 + 本轮 5/13 的浏览器交互与截图。",
+    "page.screenshot 的 document clip 截图只代表当前可见片段；不得当作整卡完整截图。完整局部视觉证据来自 root 独立截图 root-jeans-moment-canvas-320.png、root-anisotropy-chart-320.png 与 1440 主图。",
+    "第 1–8 章手写实验的图面状态联动未做全量自动审计；本轮只对 5:jeans-lab 做了模型与页面契约检查。",
+    "浏览器布局/拖动/键盘/重置/主题与截图由主 agent 运行脚本产生；本轮本地环境无法启动浏览器。",
+    "未对观测图像、原书页码或外部文献做新的独立核对。"
+  ]
+}

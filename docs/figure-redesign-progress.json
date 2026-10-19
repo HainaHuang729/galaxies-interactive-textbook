@@ -1,0 +1,55 @@
+{
+  "task": "figure-redesign-20261018",
+  "status": "已验收",
+  "sessionId": "session-8fd01cff-9642-4aa1-82a1-0f298d855e8a",
+  "scope": "合并两份审阅的19组图 + 共用线样式/标题留白",
+  "owner": "DSH implementation returned; Codex owns final verification and records",
+  "baseline": "TEMP\\galaxies-figure-redesign-baseline",
+  "baselineHashes": {
+    "content/body-figures.json": "f81e6009c7f27a69d6419d65a75988effe0eb6b4a3133f43a9a1c9f6fdca17de",
+    "dist/assets/body-figures-early.js": "11f1fbb7e43a3e6ca2478452e2a9ef64f92df5a373bd7c69af79c8f2816d04d3",
+    "dist/assets/body-figures-late.js": "88ab3b92e0a4a3a6fc1e14ea1a7cbb17bb7a98ef8d649ea6c7e213a3ec39d1b4",
+    "dist/assets/body-figures-physical.js": "8c4c5fb9bba8acdfe6bd9fab043ce7e680845ad241d96f1e5e122a1408e7fbb4",
+    "dist/assets/body-figure-geometry.js": "894635d60d41959a7939f9df4b4ec40242100792559d26d6126b72c77d77727a",
+    "dist/assets/body-figures.css": "76fa14d278f9144cb6c2a4c5ac9dcfd737c1be5742226ce9e1615b866feced13",
+    "dist/assets/body-figures.js": "ff7760acc90e57d2551097b8c604c85fdbfeefe6f0e4e919b500007ed7a4d1dc",
+    "scripts/build-body-figures.cjs": "9a83444c68802eacfc3972f67c0527a7ac717e17268ad262c5f68cd235862499",
+    "scripts/check-body-figures.cjs": "ca823ad7fc2a0f79e5a21a596e21a3b7adb07a87fadbec6847e72b99f3111dfd",
+    "scripts/check-hr-diagram-browser.cjs": "69348db8ee0d18d67dbeddb47b29605c2248c466374ccb02235f0df8da24c260"
+  },
+  "dshDefault": {
+    "provider": "deepseek-account",
+    "model": "deepseek-flash",
+    "reasoningEffort": "max"
+  },
+  "policy": "User requested sufficient execution time; no cancellation solely because of silent message stream",
+  "acceptance": "Relevant model checks, build and release checks; meaningful interactive browser checks; screenshots desktop/mobile 2 themes; independent Codex review",
+  "remaining": [],
+  "actualRuntimeSelection": "deepseek-account/deepseek-flash/high in existing session; persisted default=max, actual max not yet confirmed",
+  "independentReview": {
+    "changedRenderers": 22,
+    "scope": "19 targeted figures plus axes/title spacing affecting 4-linear-6,14-engine-27,15-distribution-28",
+    "visual": "Reviewed 19 desktop/mobile contact sheets and selected full-size screenshots; corrections sent for molecular labels, distance label clipping, morphological terminology and friction paths",
+    "additionalLayouts": 42,
+    "additionalLayoutErrors": [],
+    "evidence": "TEMP/galaxies-figure-redesign-root/root-validation.json",
+    "pending": "none",
+    "probeScenarios": 6,
+    "probeEvidence": "TEMP/galaxies-figure-redesign-root/probe-validation.json",
+    "note": "42 independent layout checks include overlap with worker matrix."
+  },
+  "completedAt": "2026-10-19T00:26:14.805441+08:00",
+  "validation": "docs/figure-redesign-validation.json",
+  "finalSourceHashes": {
+    "content/body-figures.json": "d8791a10ad0ed2eda2e744af89b26f7990029f4f5cafb8384253f0263f8b45e2",
+    "dist/assets/body-figures-early.js": "c786613582ee95a3e94f11800b7d2f3bd16b62b0164494165a00767f7e40d949",
+    "dist/assets/body-figures-late.js": "0592ac8b4f0d4499230bc848c42a14c5576acb9ed63e39135f62eb8458e3fe89",
+    "dist/assets/body-figures-physical.js": "04678de607849f23c647864ee5221e5b22f09ce747fd666f884f2c34a4b0a561",
+    "dist/assets/body-figure-geometry.js": "c5ac7e7ca2e4bfe2184a9b1c16bc97453a5d961ea4e0efe192c62e3f4e0aaca5",
+    "dist/assets/body-figures.css": "0b5f5629f916b89aeeb09217229585698d6fc5dc19753783c2373c5a8d5e073f",
+    "dist/assets/body-figures.js": "cae4c3dde189758c75cc1b80ae3862705ac9bc2924c48cdd83f4e8a4d910a79a",
+    "scripts/build-body-figures.cjs": "9a83444c68802eacfc3972f67c0527a7ac717e17268ad262c5f68cd235862499",
+    "scripts/check-body-figures.cjs": "ca823ad7fc2a0f79e5a21a596e21a3b7adb07a87fadbec6847e72b99f3111dfd",
+    "scripts/check-hr-diagram-browser.cjs": "69348db8ee0d18d67dbeddb47b29605c2248c466374ccb02235f0df8da24c260"
+  }
+}

@@ -120,6 +120,24 @@
     },
     "terms": []
   },
+  "5:jeans-lab": {
+    "objective": "用二阶矩方向图区分径向与两个切向分量，并核对固定三维 σr 时 β 如何改变所需质量。",
+    "steps": [
+      "先把 β 设为 0：方向图中三个分量应等长，读数中单个 \\(\\sigma_\\theta/\\sigma_r\\) 应为 1、两分量合成 \\(\\sqrt2\\,\\sigma_\\theta/\\sigma_r\\) 约为 1.414。",
+      "把 β 调到 0.4 再调到 −0.4：观察径向箭头、两个切向分量与合成标尺，确认 β>0 偏径向、β<0 偏切向。",
+      "固定 β=0，只改 \\(\\sigma_r\\) 或 \\(\\gamma\\)，比较圆速度与 10 kpc 内质量的变化。"
+    ],
+    "check": "\\(\\beta=1-(\\sigma_\\theta^2+\\sigma_\\phi^2)/(2\\sigma_r^2)\\)；单个切向 \\(\\sigma_\\theta=\\sigma_\\phi=\\sigma_r\\sqrt{1-\\beta}\\)，两分量合成 \\(\\sqrt{\\sigma_\\theta^2+\\sigma_\\phi^2}=\\sqrt2\\,\\sigma_\\theta\\)，二者相差 √2 倍。合成是方差相加，不是把两支方向箭头长度相加。这是恒星动力学的 Jeans 二阶矩约束，不是气体 Jeans 不稳定性，也不是真实恒星轨道。",
+    "preset": {
+      "jeans-gamma": 3,
+      "jeans-sigma": 150,
+      "jeans-beta": 0
+    },
+    "terms": [
+      "\\(\\sigma_r\\) 是三维径向速度弥散；观测到的通常是投影后的视向弥散，两者不能直接互换。",
+      "β=0 各向同性；β>0 偏径向；β<0 偏切向。两个切向分量相等，即 \\(\\sigma_\\theta=\\sigma_\\phi\\)。"
+    ]
+  },
   "6:kaiser-lab": {
     "objective": "把方向响应与角平均区分开。",
     "steps": [
@@ -287,6 +305,24 @@
       "frosting-young": 1
     },
     "terms": []
+  },
+  "13:anisotropy-lab": {
+    "objective": "固定可观测的视向弥散 σlos，比较不同 β 所需的 Vc，并找出 γ=3 的投影抵消。",
+    "steps": [
+      "先记录默认 γ=2.5、β=0 时的 Vc 和 σr。",
+      "把 β 从 −0.5 移到 0.5：Vc 与 σr 都改变，但固定的是 σlos，不是 σr。",
+      "把 γ 调到 3.0：参考虚线与当前曲线重合、Vc≈√3σlos 不随 β 变；再改 β，核对 Vc 不变而 σr 仍改变。"
+    ],
+    "check": "γ=3 时 1−β(γ−1)/γ=(γ−2β)/3，投影抵消后 Vc=√3σlos 与 β 无关；但 σr=Vc/√(γ−2β) 仍随 β 变化。固定 σlos 与第 5 章固定三维 σr 是两种不同约束，不能混用。",
+    "preset": {
+      "anisotropy-gamma": 3,
+      "anisotropy-beta": 0,
+      "anisotropy-sigma": 200
+    },
+    "terms": [
+      "σlos 是沿视向投影的速度弥散，是本实验固定的可观测量。",
+      "β=1−σθ²/σr²；β>0 偏径向，β<0 偏切向。"
+    ]
   },
   "14:superluminal-lab": {
     "objective": "表观超光速如何来自到达时间差。",

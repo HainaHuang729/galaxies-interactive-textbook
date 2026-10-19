@@ -1,0 +1,117 @@
+{
+  "chapters": [
+    {
+      "chapter": 1,
+      "experiments": 10,
+      "modules": 0,
+      "script": false,
+      "text": false
+    },
+    {
+      "chapter": 2,
+      "experiments": 17,
+      "modules": 0,
+      "script": false,
+      "text": false
+    },
+    {
+      "chapter": 3,
+      "experiments": 11,
+      "modules": 0,
+      "script": false,
+      "text": false
+    },
+    {
+      "chapter": 4,
+      "experiments": 10,
+      "modules": 0,
+      "script": false,
+      "text": false
+    },
+    {
+      "chapter": 5,
+      "experiments": 15,
+      "modules": 0,
+      "script": false,
+      "text": false
+    },
+    {
+      "chapter": 6,
+      "experiments": 20,
+      "modules": 0,
+      "script": false,
+      "text": false
+    },
+    {
+      "chapter": 7,
+      "experiments": 23,
+      "modules": 0,
+      "script": false,
+      "text": false
+    },
+    {
+      "chapter": 8,
+      "experiments": 31,
+      "modules": 0,
+      "script": false,
+      "text": false
+    },
+    {
+      "chapter": 9,
+      "experiments": 23,
+      "modules": 0,
+      "script": false,
+      "text": false
+    },
+    {
+      "chapter": 10,
+      "experiments": 25,
+      "modules": 0,
+      "script": false,
+      "text": false
+    },
+    {
+      "chapter": 11,
+      "experiments": 21,
+      "modules": 0,
+      "script": false,
+      "text": false
+    },
+    {
+      "chapter": 12,
+      "experiments": 23,
+      "modules": 0,
+      "script": false,
+      "text": false
+    },
+    {
+      "chapter": 13,
+      "experiments": 24,
+      "modules": 0,
+      "script": false,
+      "text": false
+    },
+    {
+      "chapter": 14,
+      "experiments": 29,
+      "modules": 0,
+      "script": false,
+      "text": false
+    },
+    {
+      "chapter": 15,
+      "experiments": 22,
+      "modules": 0,
+      "script": false,
+      "text": false
+    },
+    {
+      "chapter": 16,
+      "experiments": 43,
+      "modules": 0,
+      "script": false,
+      "text": false
+    }
+  ],
+  "errors": []
+}

@@ -15,12 +15,13 @@
       const a=Math.atan2(y2-y1,x2-x1),r=6;
       return H.line(x1,y1,x2,y2,c)+H.polyline([[x2-r*Math.cos(a-.45),y2-r*Math.sin(a-.45)],[x2,y2],[x2-r*Math.cos(a+.45),y2-r*Math.sin(a+.45)]],c);
     },
-    panels(width,titles,panelHeight=240,minWidth=290) {
+    panels(width,titles,panelHeight=240,minWidth=290,offsetY=0) {
       const gap=24,cols=Math.max(1,Math.min(titles.length,Math.floor((width+gap)/(minWidth+gap)))),w=(width-gap*(cols-1))/cols;
-      return {height:Math.ceil(titles.length/cols)*(panelHeight+gap)-gap,items:titles.map((title,i)=>({x:i%cols*(w+gap),y:Math.floor(i/cols)*(panelHeight+gap),w,h:panelHeight}))};
+      return {height:Math.ceil(titles.length/cols)*(panelHeight+gap)-gap+offsetY,items:titles.map((title,i)=>({x:i%cols*(w+gap),y:offsetY+Math.floor(i/cols)*(panelHeight+gap),w,h:panelHeight}))};
     },
     axes(p,o) {
-      const q={x:p.x+46,y:p.y+44,w:p.w-64,h:p.h-92};
+      // The 8px gap below the panel title keeps a title and the y-axis title apart.
+      const q={x:p.x+46,y:p.y+52,w:p.w-64,h:p.h-100};
       if(o.equalAspect){const scale=Math.min(q.w/(o.xmax-o.xmin),q.h/(o.ymax-o.ymin)),w=scale*(o.xmax-o.xmin),h=scale*(o.ymax-o.ymin);q.x+=(q.w-w)/2;q.y+=(q.h-h)/2;q.w=w;q.h=h;}
       const x=v=>q.x+(v-o.xmin)/(o.xmax-o.xmin)*q.w,y=v=>q.y+q.h-(v-o.ymin)/(o.ymax-o.ymin)*q.h;
       const xt=o.xticks||[o.xmin,(o.xmin+o.xmax)/2,o.xmax],yt=o.yticks||[o.ymin,(o.ymin+o.ymax)/2,o.ymax];
@@ -44,7 +45,35 @@
       let svg=`<defs><linearGradient id="${id}" color-interpolation="sRGB">${stops}</linearGradient></defs><rect x="${x}" y="${y}" width="${w}" height="9" fill="url(#${id})"/>`;
       svg+=H.text(x,y+29,String(min),'bf-small')+H.text(x+w,y+29,String(max),'bf-small','end')+H.text(x+w/2,y+50,label,'bf-label','middle');if(mode==='diverging')svg+=H.text(x+w/2,y+29,'0','bf-small','middle');return svg;
     },
-    rng(seed) { return () => {seed=(Math.imul(seed,1664525)+1013904223)>>>0;return (seed+.5)/4294967296;}; }
+    rng(seed) { return () => {seed=(Math.imul(seed,1664525)+1013904223)>>>0;return (seed+.5)/4294967296;}; },
+    // In-place redraw used by interactive renderers: the stage keeps its controls,
+    // so a dragged range input is never replaced under the pointer.
+    patchSvg(host,result,width){
+      const svg=host.querySelector('svg');if(!svg)return null;
+      svg.innerHTML=result.svg;
+      svg.setAttribute('width',String(width));svg.setAttribute('height',String(result.height));
+      svg.setAttribute('viewBox',`0 0 ${width} ${result.height}`);
+      if(result.className&&!svg.classList.contains(result.className))svg.classList.add(...result.className.split(/\s+/).filter(Boolean));
+      return svg;
+    },
+    // Mirror the state of controls from a freshly rendered control block onto the live DOM.
+    syncControls(host,html){
+      const holder=document.createElement('template');holder.innerHTML=html||'';
+      const next=holder.content;
+      const pick=(key,el)=>[...next.querySelectorAll(`[data-sync="${key}"]`)].find(n=>n.tagName===el.tagName&&String(n.type||'')===String(el.type||''));
+      host.querySelectorAll('[data-sync]').forEach(el=>{
+        const src=pick(el.getAttribute('data-sync'),el);if(!src)return;
+        if(el.tagName==='BUTTON')el.setAttribute('aria-pressed',src.getAttribute('aria-pressed')||'false');
+        else if(el.matches('input[type="range"]'))el.value=src.value;
+        else if(el.matches('input[type="checkbox"]'))el.checked=src.checked;
+        else if(el.tagName==='OUTPUT'||el.hasAttribute('data-sync-text'))el.textContent=src.textContent;
+        if(el.hasAttribute('hidden')||src.hasAttribute('hidden'))el.hidden=src.hasAttribute('hidden');
+      });
+      host.querySelectorAll('[data-sync-html]').forEach(el=>{
+        const src=next.querySelector(`[data-sync-html="${el.getAttribute('data-sync-html')}"]`);
+        if(src)el.innerHTML=src.innerHTML;
+      });
+    }
   };
   window.BookFigureGeometry=H;
   window.BookFigureRenderers={};

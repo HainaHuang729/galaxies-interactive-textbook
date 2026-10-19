@@ -11,9 +11,32 @@
 .lab-tool-note{font-size:12px!important;line-height:1.85;color:var(--muted);overflow-wrap:anywhere}.lab-snapshot{overflow-x:auto}.lab-comparison-table{width:100%;border-collapse:collapse;font-size:12px;line-height:1.8;margin-top:14px}.lab-comparison-table th,.lab-comparison-table td{border-bottom:1px solid var(--line);padding:9px 8px;text-align:left;min-width:65px}.lab-comparison-table th{color:var(--muted);font-weight:400}.lab-comparison-table td:first-child{min-width:135px}.lab-comparison-table td:last-child{font-variant-numeric:tabular-nums;color:var(--accent)}
 .illustration-study{margin-top:15px;display:grid;gap:12px}.illustration-study-controls{display:flex;gap:8px;flex-wrap:wrap}.illustration-study-controls button{font-size:12px;border:1px solid var(--line);color:var(--muted);background:var(--panel);padding:7px 11px;border-radius:5px}.illustration-study-controls button[aria-pressed=true]{border-color:var(--accent);color:var(--accent)}.illustration-study p{font-size:13px;line-height:1.9;color:var(--text);margin:0}.illustration-region{position:absolute;pointer-events:none;border:1px solid var(--legacy-d7edff,#d7edff);border-radius:50%;box-shadow:0 0 0 999px var(--legacy-0003,#0003);transition:all .28s ease;opacity:0}.illustration-region[data-on]{opacity:1}
 .reader-slide.is-active>.lab,.reader-slide.is-active>.bf,.reader-slide.is-active>.chapter-illustration{animation:lab-enter .3s ease both}@keyframes lab-enter{from{opacity:.6;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
-@media(max-width:600px){.lab-workbench{padding:13px 12px}.lab-workbench-actions{align-items:stretch}.lab-workbench-actions>label{flex-basis:100%}.lab-workbench-actions>button{flex:1}}
+@media(max-width:600px){.lab-workbench{padding:13px 12px}.lab-workbench-actions{align-items:stretch}.lab-workbench-actions>label{flex-basis:100%}.lab-workbench-actions>button{flex:1 1 130px}}
 @media(prefers-reduced-motion:reduce){.reader-slide.is-active>.lab,.reader-slide.is-active>.bf,.reader-slide.is-active>.chapter-illustration{animation:none}.illustration-region{transition:none}}
 @media(prefers-reduced-motion:reduce){.lab[data-flow] .transfer-bench [data-transfer-ray]{animation:none}}
 @media print{.lab-workbench,.illustration-study{display:none}}
 
 .detail-lab .lab-heading{display:block}.detail-lab .lab-heading h3{font:400 26px/1.5 var(--serif);margin:12px 0}.detail-lab>p{font-size:14px;line-height:1.95}.detail-lab .lab-detail-legend{display:flex;flex-wrap:wrap;gap:14px 24px;font-size:12px;color:var(--muted);margin:20px 0}.lab-detail-legend>span:not(.inline-math, .inline-math *):before{content:"";display:inline-block;border-top:2px solid var(--legend-color);width:22px;margin-right:8px;vertical-align:middle}.detail-lab .lab-links{display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center;margin:22px 0}.detail-lab .lab-links button{font-size:12px}.detail-lab .lab-heading .small-label{font-size:11px}.detail-lab .readout-row strong{font-size:25px;overflow-wrap:anywhere}.detail-lab .transfer-bench{margin:24px 0}.detail-lab .transfer-bench-stage{max-width:850px;margin:auto}@media(max-width:600px){.detail-lab .lab-heading h3{font-size:22px}.detail-lab .readout-row strong{font-size:20px}.transfer-bench figcaption{padding:0 12px 14px}}
+
+.lab-tools-launcher{position:fixed;right:0;top:145px;z-index:72;writing-mode:vertical-rl;letter-spacing:.16em;padding:18px 12px;border:1px solid var(--line);border-right:0;border-radius:10px 0 0 10px;background:var(--panel);color:var(--accent);font:12px var(--sans);box-shadow:0 6px 24px var(--legacy-0002,#0002);cursor:pointer}
+.lab-tools-panel{position:fixed;inset:88px 16px 88px auto;width:min(380px,calc(100vw - 32px));z-index:85;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text);box-shadow:0 18px 64px var(--legacy-0005,#0005);overflow:hidden}
+.lab-tools-panel[hidden],.lab-tools-launcher[hidden]{display:none}
+.lab-tools-header{display:flex;align-items:center;gap:12px;padding:18px 18px 10px;border:0}
+.lab-tools-header h2{font:16px/1.6 var(--serif);margin:0;flex:1}
+.lab-tools-close{width:36px;height:36px;flex:none;border:1px solid var(--line);border-radius:50%;background:var(--bg);color:var(--text);font-size:23px;cursor:pointer}
+.lab-tools-context{font-size:12px;line-height:1.8;color:var(--muted);padding:0 18px 14px;margin:0;border-bottom:1px solid var(--line)}
+.lab-tools-body{overflow:auto;overscroll-behavior:contain;padding:0 18px 18px;min-height:0;scrollbar-gutter:stable}
+.lab-tools-panel .lab-workbench{margin:0;padding:18px 0 0;border:0;border-radius:0;background:transparent}
+.lab-tools-panel .lab-workbench>summary{display:none}
+.lab-tools-panel .lab-workbench-actions{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.lab-tools-panel .lab-workbench-actions>label{grid-column:1/-1;min-width:0}
+.lab-tools-panel .lab-workbench-actions>button{padding:9px 7px;min-width:0}
+.lab-manual-control{display:grid;grid-template-columns:1fr auto;gap:14px;font-size:12px;color:var(--muted);margin:22px 0}
+.lab-manual-control input{grid-column:1/-1;width:100%;margin:0;accent-color:var(--accent);min-height:30px}
+.lab-manual-control output{color:var(--accent);font-variant-numeric:tabular-nums}
+.lab-tools-panel .lab-comparison-table{font-size:11px;table-layout:fixed}
+.lab-tools-panel .lab-comparison-table th,.lab-tools-panel .lab-comparison-table td{min-width:0;padding:9px 4px;overflow-wrap:anywhere}
+.lab-tools-panel .lab-comparison-table td:first-child,.lab-tools-panel .lab-comparison-table th:first-child{width:34%}
+@media(min-width:1280px){.reader-ready.lab-tools-open .book-layout{width:calc(100% - 420px);max-width:none;margin-left:0;margin-right:420px;padding-left:32px;padding-right:32px}}
+@media(max-width:600px){.lab-tools-panel{inset:74px 10px 82px auto;width:calc(100vw - 20px)}.lab-tools-launcher{top:auto;bottom:88px;right:12px;writing-mode:horizontal-tb;border-right:1px solid var(--line);border-radius:20px;padding:11px 15px;letter-spacing:0}.lab-tools-header{padding:12px 14px 8px}.lab-tools-body{padding:0 14px 14px}.lab-tools-context{padding:0 14px 10px}}
+@media print{.lab-tools-launcher,.lab-tools-panel{display:none}}

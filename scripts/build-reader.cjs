@@ -9,6 +9,8 @@ for (const page of ['index.html', ...Array.from({length: 15}, (_, i) => `chapter
   let html = fs.readFileSync(file, 'utf8');
   html = html.replace(/<link rel="stylesheet" href="assets\/reader-slides\.css">|<script src="assets\/(?:reader-slides|lab-guides)\.js" defer><\/script>/g, '');
   html = html.replace('</head>', '<link rel="stylesheet" href="assets/reader-slides.css"><script src="assets/lab-guides.js" defer></script><script src="assets/reader-slides.js" defer></script></head>');
+  html = html.replace(/<!-- discovery:start -->[\s\S]*?<!-- discovery:end -->/g, '');
+  html = html.replace('</head>', '<!-- discovery:start --><link rel="stylesheet" href="assets/discovery.css"><script src="assets/curve-explorer.js" defer></script><!-- discovery:end --></head>');
   fs.writeFileSync(file, html);
 }
 console.log('Installed slide reader on all 16 chapters.');
@@ -29,3 +31,9 @@ require('./build-inline-math.cjs');
 require('./build-academic-visuals.cjs');
 require('./build-glossary.cjs');
 require('./build-open-source.cjs');
+
+const diskPage = path.join(dist, 'chapter-11.html');
+let diskHtml = fs.readFileSync(diskPage, 'utf8').replace(/<!-- disk-brush:start -->[\s\S]*?<!-- disk-brush:end -->/g, '');
+diskHtml = diskHtml.replace('</head>', '<!-- disk-brush:start --><link rel="stylesheet" href="assets/disk-brush.css"><script src="assets/disk-brush.js" defer></script><!-- disk-brush:end --></head>');
+fs.writeFileSync(diskPage, diskHtml);
+require('./build-discovery.cjs');

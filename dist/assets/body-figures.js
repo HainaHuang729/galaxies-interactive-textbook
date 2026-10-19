@@ -28,16 +28,28 @@
     if(!renderer)throw Error('Missing figure renderer '+record.renderer);
     const result=renderer(width,state);
     if(!Number.isFinite(result.height)||/NaN|Infinity/.test(result.svg))throw Error('Invalid geometry '+record.id);
-    host.innerHTML=`<svg class="bf-svg" xmlns="http://www.w3.org/2000/svg" width="${width}" height="${result.height}" viewBox="0 0 ${width} ${result.height}" role="${result.fields?.some(f=>f.probe)?'group':'img'}" aria-label="${window.BookFigureGeometry.esc(record.title)}"><title>${window.BookFigureGeometry.esc(record.title)}</title>${result.svg}</svg>`;
+    host.innerHTML=`<svg class="bf-svg ${result.className||''}" xmlns="http://www.w3.org/2000/svg" width="${width}" height="${result.height}" viewBox="0 0 ${width} ${result.height}" role="${result.controls||result.fields?.some(f=>f.probe)?'group':'img'}" aria-label="${window.BookFigureGeometry.esc(record.title)}"><title>${window.BookFigureGeometry.esc(record.title)}</title>${result.svg}</svg>`;
     paintFields(host,result.fields);
+    if(result.controls){
+      // Interactive readouts are updated with textContent on every input; keep the
+      // math rewriter from replacing them with KaTeX HTML (duplicated text + lag).
+      const live=host.closest('.body-figure')?.querySelector(':scope > .bf-readout')||host.closest('dialog')?.querySelector('.bf-dialog-caption');
+      if(live){live.setAttribute('data-no-math','');live.setAttribute('aria-live','polite');live.setAttribute('aria-atomic','true');}
+      host.insertAdjacentHTML('beforeend',result.controls);
+      result.bind?.(host,()=>{
+        const next=renderSVG(host,record,Math.floor(host.clientWidth)||width,state);
+        const readout=host.closest('.body-figure')?.querySelector(':scope > .bf-readout')||host.closest('dialog')?.querySelector('.bf-dialog-caption');
+        if(readout)readout.textContent=next.readout||'';
+      });
+    }
     if(Array.isArray(result.legend)&&result.legend.length){
-      const legend=document.createElement('div');legend.className='bf-legend';legend.setAttribute('aria-label','曲线图例');
-      for(const [cls,label] of result.legend){const item=document.createElement('span'),key=document.createElement('i');key.className=cls;key.setAttribute('aria-hidden','true');item.append(key,document.createTextNode(label));legend.append(item);}host.append(legend);
+      const legend=document.createElement('div');legend.className='bf-legend';legend.setAttribute('aria-label','图例');
+      for(const [cls,label,shape] of result.legend){const item=document.createElement('span'),key=document.createElement('i');key.className=cls+(shape?' bf-key-'+shape:'');key.setAttribute('aria-hidden','true');item.append(key,document.createTextNode(label));legend.append(item);}host.prepend(legend);
     }
     else if(typeof result.legend==='string'){const diagnostic=document.createElement('p');diagnostic.className='bf-readout';diagnostic.textContent=result.legend;host.append(diagnostic);}
     return result;
   }
-  let dialog;
+  let dialog,dialogWidth=0;
   function openLarge(figure,record,selected) {
     if(!dialog){
       dialog=document.createElement('dialog');dialog.id='body-figure-dialog';dialog.className='body-figure-dialog';dialog.setAttribute('aria-labelledby','bf-dialog-title');
@@ -45,12 +57,17 @@
       dialog.querySelector('button').addEventListener('click',()=>dialog.close());
       dialog.addEventListener('click',event=>{if(event.target!==dialog)return;const b=dialog.getBoundingClientRect();if(event.clientX<b.left||event.clientX>b.right||event.clientY<b.top||event.clientY>b.bottom)dialog.close();});
       document.body.append(dialog);
+      const redrawDialog=()=>{if(!dialog.open||!dialog.dataset.figureId)return;const r=byId.get(dialog.dataset.figureId),stage=dialog.querySelector('.bf-dialog-stage'),width=Math.max(220,Math.min(1120,stage.clientWidth));if(Math.abs(width-dialogWidth)<1)return;dialogWidth=width;const next=renderSVG(stage,r,width,states.get(r.id));dialog.querySelector('.bf-dialog-caption').textContent=next.readout||r.caption;};
+      new ResizeObserver(redrawDialog).observe(dialog);
+      window.addEventListener('bookthemechange',()=>{dialogWidth=0;redrawDialog();});
+      dialog.addEventListener('close',()=>{const f=document.getElementById(dialog.dataset.figureId);if(f){const r=byId.get(f.id),host=f.querySelector('.bf-stage');const next=renderSVG(host,r,Math.floor(host.clientWidth),states.get(f.id));f.querySelector(':scope > .bf-readout').textContent=next.readout||'';}});
     }
     dialog.querySelector('h2').textContent=record.title;
     const stage=dialog.querySelector('.bf-dialog-stage');stage.replaceChildren();
     dialog.showModal();
-    if(record.production==='code')renderSVG(stage,record,Math.max(220,Math.min(1120,stage.clientWidth)),states.get(record.id));
+    if(record.production==='code'){dialog.dataset.figureId=record.id;dialogWidth=Math.max(220,Math.min(1120,stage.clientWidth));renderSVG(stage,record,dialogWidth,states.get(record.id));}
     else {
+      delete dialog.dataset.figureId;
       const panel=selected||figure.querySelector('.bf-image-panel:not([hidden])');
       const img=panel.querySelector('img').cloneNode();img.removeAttribute('srcset');img.removeAttribute('sizes');img.src=panel.dataset.fullSrc||img.src;img.loading='eager';
       const credit=document.createElement('div');credit.className='bf-dialog-credit';credit.setAttribute('data-no-math','');credit.append(...[...panel.querySelector('figcaption').childNodes].map(node=>node.cloneNode(true)));

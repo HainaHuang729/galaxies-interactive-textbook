@@ -120,7 +120,9 @@
     [
       "\\frac{d(\\nu\\sigma_r^2)}{dr}+\\frac{2\\beta\\nu\\sigma_r^2}r=-\\nu\\frac{GM(<r)}{r^2}",
       "\\beta=1-\\frac{\\sigma_\\theta^2+\\sigma_\\phi^2}{2\\sigma_r^2}",
-      "v_c^2=(\\gamma-2\\beta)\\sigma_r^2,\\quad M(<r)=\\frac{rv_c^2}G"
+      "v_c^2=(\\gamma-2\\beta)\\sigma_r^2,\\quad M(<r)=\\frac{rv_c^2}G",
+      "\\sigma_\\theta=\\sigma_\\phi=\\sigma_r\\sqrt{1-\\beta}",
+      "\\sqrt{\\sigma_\\theta^2+\\sigma_\\phi^2}=\\sqrt2\\,\\sigma_\\theta\\quad(\\beta<1)"
     ],
     [
       "t_{\\mathrm{relax}}\\simeq\\frac{N}{10\\ln N}\\,t_{\\mathrm{cross}}"

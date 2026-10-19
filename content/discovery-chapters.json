@@ -1,0 +1,18 @@
+[
+  {"chapter":1,"target":"baryon-lab","question":"改变冷却与外流，比较恒星份额，再检查质量账。"},
+  {"chapter":2,"target":"resolution-lab","question":"比较两个源与合成剖面，观察哪个区间开始分离。"},
+  {"chapter":3,"target":"distance-lab","question":"对照同一红移区间内的三种距离。"},
+  {"chapter":4,"target":"growth-lab","question":"改变宇宙学参数，比较增长曲线与相对抑制。"},
+  {"chapter":5,"target":"virial-lab","question":"观察接近束缚边界时的变化，再核对模型适用域。"},
+  {"chapter":6,"target":"cmb-sampling-lab","question":"对照抽样直方图与理论密度；取样节点统计不代表概率积分。"},
+  {"chapter":7,"target":"halo-escape-lab","question":"比较圆速度、逃逸速度与不同边界约定。"},
+  {"chapter":8,"target":"thermal-conduction-lab","question":"改变导热强度，分别探索空间扰动与波长区间。"},
+  {"chapter":9,"target":"imf-sampling-lab","question":"比较有限恒星样本和连续分布的读数。"},
+  {"chapter":10,"target":"response-memory-lab","question":"改变形成史，比较短期与长期响应的差异。"},
+  {"chapter":11,"target":"disk-profile-lab","question":"框选半径区间，联动查看圆环及其质量份额。"},
+  {"chapter":12,"target":"tidal-tensor-lab","question":"选择半径区间，对照局部潮汐与有限距离响应。"},
+  {"chapter":13,"target":"line-spread-lab","question":"观察仪器展宽后的谱线变化，再比较两条剖面。"},
+  {"chapter":14,"target":"velocity-delay-lab","question":"比较延迟区间内的速度取样；节点数量不是响应概率。"},
+  {"chapter":15,"target":"isophotal-light-lab","question":"改变测光阈值，比较入选光度与完整光度。"},
+  {"chapter":16,"target":"curve-of-growth-lab","question":"比较弱线与强线区间，观察提高柱密度的结果。"}
+]

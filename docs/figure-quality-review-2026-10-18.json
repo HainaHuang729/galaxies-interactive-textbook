@@ -1,0 +1,796 @@
+{
+  "date": "2026-10-18",
+  "task": "全书图解清晰度审阅",
+  "scope": {
+    "chapters": 16,
+    "bodyFigures": 41,
+    "codeFigures": 30,
+    "observationGroups": 11,
+    "capturedLayouts": 82,
+    "layoutPairs": [
+      {
+        "width": 1360,
+        "theme": "afterglow"
+      },
+      {
+        "width": 390,
+        "theme": "moon"
+      }
+    ],
+    "experimentInventory": 126,
+    "visuallySampledExperiments": 16
+  },
+  "summary": {
+    "优先更新": 7,
+    "随后局部优化": 6,
+    "保留": 28
+  },
+  "method": [
+    "运行既有 audit-clarity-browser.cjs，读取当前本机页面，逐图截图并断言无横向溢出。",
+    "人工查看全部正文桌面/手机联系图，对重点候选再查看原尺寸截图并核对当前 renderer。",
+    "实验图逐章抽查一组，另外清点126个实验的图表/文案信息。此项不是126组逐个视觉验收。"
+  ],
+  "browserErrors": [],
+  "items": [
+    {
+      "id": "body-figure-1-diversity-0",
+      "chapter": 1,
+      "title": "形态分类关系图",
+      "priority": "优先更新",
+      "reason": "四类形态主要靠同心椭圆、两条旋臂和一条棒区分；核球与盘的结构层次弱，初学者仍要读文字才能辨认。",
+      "proposedChange": "加强核球、盘、棒和旋臂的视觉层次；点选部件显示对应差异，保留非演化序列说明。",
+      "url": "http://127.0.0.1:8765/index.html#body-figure-1-diversity-0",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-early.js",
+        "line": 26
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-1-diversity-0-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-1-diversity-0-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-1-clocks-1",
+      "chapter": 1,
+      "title": "恒星先出生，星系后组装",
+      "priority": "保留",
+      "reason": "同一批彩色恒星跨三个组装阶段保持身份，轮廓含义和阶段次序清楚。",
+      "proposedChange": "暂不安排重绘。",
+      "url": "http://127.0.0.1:8765/index.html#body-figure-1-clocks-1",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-early.js",
+        "line": 45
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-1-clocks-1-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-1-clocks-1-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-2-observing-2",
+      "chapter": 2,
+      "title": "同一座星系，三种波段",
+      "priority": "保留",
+      "reason": "观测图保留发布方显示色、署名和说明；本轮未发现与原赫罗图类似的粗略示意问题。",
+      "proposedChange": "维持当前表达；新增注释应与图像分离，避免改变观测产品。",
+      "url": "http://127.0.0.1:8765/chapter-2.html#body-figure-2-observing-2",
+      "source": null,
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-2-observing-2-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-2-observing-2-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-2-stars-3",
+      "chapter": 2,
+      "title": "赫罗图：主序、巨星与白矮星",
+      "priority": "保留",
+      "reason": "刚更新的温度配色、太阳参照和同温度半径对照已构成新的读图基准。",
+      "proposedChange": "暂不安排重绘。",
+      "url": "http://127.0.0.1:8765/chapter-2.html#body-figure-2-stars-3",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-early.js",
+        "line": 140
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-2-stars-3-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-2-stars-3-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-3-distance-4",
+      "chapter": 3,
+      "title": "发射与接收时刻的距离几何",
+      "priority": "随后局部优化",
+      "reason": "左图是两条时刻线，右格主要由公式和数字组成，角大小与通量的观测几何仍需读者自行想象。",
+      "proposedChange": "在保持定义的前提下增加同一对象的角大小和通量小图，按所选距离高亮定义所涉及的量；不把各距离画成同一时刻四根尺。",
+      "url": "http://127.0.0.1:8765/chapter-3.html#body-figure-3-distance-4",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-early.js",
+        "line": 292
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-3-distance-4-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-3-distance-4-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-3-distance-5",
+      "chapter": 3,
+      "title": "粒子视界、事件视界与哈勃尺度",
+      "priority": "保留",
+      "reason": "坐标、三类视界图例和今天参考线已明确；此轮未发现需要整体重绘的原因。",
+      "proposedChange": "暂不安排重绘。",
+      "url": "http://127.0.0.1:8765/chapter-3.html#body-figure-3-distance-5",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-early.js",
+        "line": 314
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-3-distance-5-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-3-distance-5-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-4-linear-6",
+      "chapter": 4,
+      "title": "声学恢复与无碰撞自由流对照",
+      "priority": "保留",
+      "reason": "初始与响应曲线共用坐标和图例，振荡/自由流的差别可直接比较。",
+      "proposedChange": "暂不安排重绘。",
+      "url": "http://127.0.0.1:8765/chapter-4.html#body-figure-4-linear-6",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-early.js",
+        "line": 327
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-4-linear-6-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-4-linear-6-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-4-growth-7",
+      "chapter": 4,
+      "title": "同一初始图案的增长因子三帧",
+      "priority": "保留",
+      "reason": "同种子、固定色标、三个阶段及模型切换、探针已经支持主要学习问题。",
+      "proposedChange": "暂不安排重绘。",
+      "url": "http://127.0.0.1:8765/chapter-4.html#body-figure-4-growth-7",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-early.js",
+        "line": 338
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-4-growth-7-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-4-growth-7-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-5-ellipsoid-8",
+      "chapter": 5,
+      "title": "三主轴收缩与片、丝几何",
+      "priority": "随后局部优化",
+      "reason": "三个主平面椭圆的叠画偏抽象，细丝状态趋近一条线，三个主轴方向未就地命名。",
+      "proposedChange": "为三轴加明确标签与可切换主平面，高亮被压缩的方向；保留指定几何轴比，避免把插值当成动力学演化。",
+      "url": "http://127.0.0.1:8765/chapter-5.html#body-figure-5-ellipsoid-8",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-early.js",
+        "line": 353
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-5-ellipsoid-8-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-5-ellipsoid-8-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-5-similarity-9",
+      "chapter": 5,
+      "title": "示踪壳的穿越与径向次序",
+      "priority": "优先更新",
+      "reason": "曲线展示完整时间段，右侧却只固定在 ωt=0.70，圆环仅占很小一块；无法沿同一壳身份观察穿越前后。",
+      "proposedChange": "复用现有解析模型，加入时间滑块及交叉前/交叉时/交叉后三个停靠点，同步曲线当前点、半径排序和空间圆环。空间长度标度须固定且明确。",
+      "url": "http://127.0.0.1:8765/chapter-5.html#body-figure-5-similarity-9",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-early.js",
+        "line": 367
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-5-similarity-9-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-5-similarity-9-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-6-lensing-10",
+      "chapter": 6,
+      "title": "观测者、透镜、源平面与像平面",
+      "priority": "保留",
+      "reason": "光路拓扑与天空角位置分图，源与两像使用对应颜色，坐标结果有读数。",
+      "proposedChange": "暂不安排重绘。",
+      "url": "http://127.0.0.1:8765/chapter-6.html#body-figure-6-lensing-10",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-early.js",
+        "line": 378
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-6-lensing-10-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-6-lensing-10-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-6-galaxies-11",
+      "chapter": 6,
+      "title": "真实分布、巡天遮罩与观测目录",
+      "priority": "保留",
+      "reason": "完整分布、选择后目录和匹配窗口随机目录三格清楚对应。",
+      "proposedChange": "暂不安排重绘。",
+      "url": "http://127.0.0.1:8765/chapter-6.html#body-figure-6-galaxies-11",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-early.js",
+        "line": 399
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-6-galaxies-11-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-6-galaxies-11-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-7-progenitors-12",
+      "chapter": 7,
+      "title": "质量守恒的示意并合树",
+      "priority": "保留",
+      "reason": "时间方向与逐节点质量明确，简单树形已能表达守恒关系。",
+      "proposedChange": "暂不安排重绘。",
+      "url": "http://127.0.0.1:8765/chapter-7.html#body-figure-7-progenitors-12",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-early.js",
+        "line": 420
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-7-progenitors-12-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-7-progenitors-12-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-7-structure-13",
+      "chapter": 7,
+      "title": "同一密度律，球形与三轴结构",
+      "priority": "随后局部优化",
+      "reason": "多个等密度面主平面轮廓互相叠加，球形像线团，截面与三维轮廓的对应关系不够直接。",
+      "proposedChange": "一次突出一层等密度面，联动对应截面，提供视角变化；不得画成实体壳。",
+      "url": "http://127.0.0.1:8765/chapter-7.html#body-figure-7-structure-13",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-physical.js",
+        "line": 8
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-7-structure-13-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-7-structure-13-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-8-feedback-14",
+      "chapter": 8,
+      "title": "瞬时爆炸与持续风泡的分层对照",
+      "priority": "优先更新",
+      "reason": "左侧几乎只有一个填色圆，右侧为数个同心圆；六行文字列在图下，没有将激波、接触面和热气体直接对应到画面。",
+      "proposedChange": "增加剖面和就地引线，点选界面同步高亮两图中的对应层；严格区分 Sedov 与持续风边界条件，示意内部半径不伪装成计算结果。",
+      "url": "http://127.0.0.1:8765/chapter-8.html#body-figure-8-feedback-14",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-early.js",
+        "line": 432
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-8-feedback-14-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-8-feedback-14-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-8-observations-15",
+      "chapter": 8,
+      "title": "恒星之间，还有一片热气体",
+      "priority": "保留",
+      "reason": "观测图保留发布方显示色、署名和说明；本轮未发现与原赫罗图类似的粗略示意问题。",
+      "proposedChange": "维持当前表达；新增注释应与图像分离，避免改变观测产品。",
+      "url": "http://127.0.0.1:8765/chapter-8.html#body-figure-8-observations-15",
+      "source": null,
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-8-observations-15-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-8-observations-15-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-9-individual-16",
+      "chapter": 9,
+      "title": "从包层到恒星：三个独立尺度",
+      "priority": "随后局部优化",
+      "reason": "独立尺度已有说明，但三个场景彼此分离，视觉上缺少从包层到盘再到恒星的定位关系。",
+      "proposedChange": "增加明确的取景框/局部放大连接和部件高亮；继续保留独立比例，不凭空添加真实尺度。",
+      "url": "http://127.0.0.1:8765/chapter-9.html#body-figure-9-individual-16",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-physical.js",
+        "line": 21
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-9-individual-16-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-9-individual-16-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-9-molecules-17",
+      "chapter": 9,
+      "title": "云边缘到内部的解离与遮蔽",
+      "priority": "优先更新",
+      "reason": "两格几乎相同，都是渐深色块和三条长度不同的箭头；宽带衰减与离散谱线吸收这一核心区别没有真正画出来。",
+      "proposedChange": "对照宽带与谱线的入射/透射光谱，联动所选波长与穿透深度；若增加定量关系，先给出明确光深模型，避免把箭头长度称作真实穿透距离。",
+      "url": "http://127.0.0.1:8765/chapter-9.html#body-figure-9-molecules-17",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-late.js",
+        "line": 21
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-9-molecules-17-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-9-molecules-17-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-10-tracks-18",
+      "chapter": 10,
+      "title": "演化路径、等龄线与主序转折",
+      "priority": "优先更新",
+      "reason": "第一格仍是一条主序斜线加两个区域椭圆，中间是阶段文字框，右边只有两个年龄快照；和新版第2章赫罗图的表达差距明显。",
+      "proposedChange": "统一温度/光度视觉方向与配色，将单星阶段和同龄星群分为可切换的视图；年龄滑块使用已有寿命拟合驱动是否在主序的状态。没有轨迹库时不编造精确等龄线。",
+      "url": "http://127.0.0.1:8765/chapter-10.html#body-figure-10-tracks-18",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-late.js",
+        "line": 38
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-10-tracks-18-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-10-tracks-18-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-10-chemistry-19",
+      "chapter": 10,
+      "title": "封闭、外流与流入箱的质量和金属账",
+      "priority": "保留",
+      "reason": "虽使用框图，但流量节点、气体与锁定质量的关系正适合这种表达；不是必须空间化的机制。",
+      "proposedChange": "暂不安排重绘。",
+      "url": "http://127.0.0.1:8765/chapter-10.html#body-figure-10-chemistry-19",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-late.js",
+        "line": 72
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-10-chemistry-19-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-10-chemistry-19-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-11-instability-20",
+      "chapter": 11,
+      "title": "轴对称盘与有棒盘的面密度",
+      "priority": "保留",
+      "reason": "同一范围、质量归一的密度栅格及色标，棒与无棒差异可以直接观察。",
+      "proposedChange": "暂不安排重绘。",
+      "url": "http://127.0.0.1:8765/chapter-11.html#body-figure-11-instability-20",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-physical.js",
+        "line": 32
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-11-instability-20-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-11-instability-20-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-11-exponential-21",
+      "chapter": 11,
+      "title": "同一盘模型的正面与侧面视图",
+      "priority": "保留",
+      "reason": "正面/侧面投影和各自归一条件已明确，空间比例与色标可读。",
+      "proposedChange": "暂不安排重绘。",
+      "url": "http://127.0.0.1:8765/chapter-11.html#body-figure-11-exponential-21",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-late.js",
+        "line": 96
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-11-exponential-21-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-11-exponential-21-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-12-clusters-22",
+      "chapter": 12,
+      "title": "潮汐、冲压和断供：三种不同机制",
+      "priority": "保留",
+      "reason": "三类机制分面且配有不同物理量/示意说明，避免互相混淆。",
+      "proposedChange": "暂不安排重绘。",
+      "url": "http://127.0.0.1:8765/chapter-12.html#body-figure-12-clusters-22",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-physical.js",
+        "line": 39
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-12-clusters-22-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-12-clusters-22-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-12-dynamical-friction-23",
+      "chapter": 12,
+      "title": "卫星运动与引力尾迹",
+      "priority": "随后局部优化",
+      "reason": "卫星、尾迹和反向响应已有区分，但背景粒子与尾迹颜色也分别承担速度和力的语义，静态散点不说明尾迹如何产生。",
+      "proposedChange": "将对象颜色与向量颜色区分，提供粒子偏折前后分步示意；如无自洽模型，明确只讲机制而非模拟。",
+      "url": "http://127.0.0.1:8765/chapter-12.html#body-figure-12-dynamical-friction-23",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-late.js",
+        "line": 113
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-12-dynamical-friction-23-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-12-dynamical-friction-23-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-13-structure-24",
+      "chapter": 13,
+      "title": "三轴势中的箱轨道与管轨道",
+      "priority": "随后局部优化",
+      "reason": "两种轨道形状可辨认，但完整轨迹全部叠画，环绕方向和 Lz 是否变号只在文字中说明。",
+      "proposedChange": "复用已有积分轨迹添加当前点、方向箭头与 Lz 符号读数，可手动推进模型时间，避免重复新增数值积分器。",
+      "url": "http://127.0.0.1:8765/chapter-13.html#body-figure-13-structure-24",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-late.js",
+        "line": 133
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-13-structure-24-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-13-structure-24-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-13-plane-25",
+      "chapter": 13,
+      "title": "基本平面及二维投影",
+      "priority": "优先更新",
+      "reason": "左侧斜网格、右侧点阵虽已标轴，但同一颗样本在两图的对应关系不可追踪，第三变量如何投影成散布仍要读长段文字。",
+      "proposedChange": "点选同一合成点联动两图，按表面亮度着色，提供正视/侧视投影或固定第三变量切片，保留零内禀散布的教学条件。",
+      "url": "http://127.0.0.1:8765/chapter-13.html#body-figure-13-plane-25",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-late.js",
+        "line": 139
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-13-plane-25-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-13-plane-25-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-14-engine-26",
+      "chapter": 14,
+      "title": "吸积盘、广线区、尘埃环与窄线区分层",
+      "priority": "优先更新",
+      "reason": "所谓空间分层图实际是四个纵向文字框；看不到吸积盘、广线区、尘埃结构和窄线区的相对空间关系，也看不出视角遮蔽。",
+      "proposedChange": "改为带局部放大窗口的空间剖面，直接标注部件；点选结构或改变视线方向显示遮蔽关系。不同视野明确独立尺度，喷流仅作为可选现象。",
+      "url": "http://127.0.0.1:8765/chapter-14.html#body-figure-14-engine-26",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-late.js",
+        "line": 152
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-14-engine-26-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-14-engine-26-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-14-engine-27",
+      "chapter": 14,
+      "title": "反响映射的光路差与时延",
+      "priority": "保留",
+      "reason": "近远侧路径差与延迟关系在对应面板显示，观察方向和参考闪光清楚。",
+      "proposedChange": "暂不安排重绘。",
+      "url": "http://127.0.0.1:8765/chapter-14.html#body-figure-14-engine-27",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-late.js",
+        "line": 160
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-14-engine-27-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-14-engine-27-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-15-distribution-28",
+      "chapter": 15,
+      "title": "联合分布与边缘投影",
+      "priority": "保留",
+      "reason": "同一合成样本的散点和两条边缘分布在对应坐标显示。",
+      "proposedChange": "暂不安排重绘。",
+      "url": "http://127.0.0.1:8765/chapter-15.html#body-figure-15-distribution-28",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-late.js",
+        "line": 176
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-15-distribution-28-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-15-distribution-28-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-15-clustering-29",
+      "chapter": 15,
+      "title": "相同平均占据、不同成对数的分组",
+      "priority": "保留",
+      "reason": "成员数、配对连线和计数直接对应，简单圆点足以表达反例。",
+      "proposedChange": "暂不安排重绘。",
+      "url": "http://127.0.0.1:8765/chapter-15.html#body-figure-15-clustering-29",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-late.js",
+        "line": 185
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-15-clustering-29-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-15-clustering-29-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-16-lyman-forest-30",
+      "chapter": 16,
+      "title": "前景气体与合成吸收线对应图",
+      "priority": "保留",
+      "reason": "两图共用视线坐标与参考线，密度峰和透射谷对应可辨。",
+      "proposedChange": "暂不安排重绘。",
+      "url": "http://127.0.0.1:8765/chapter-16.html#body-figure-16-lyman-forest-30",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-late.js",
+        "line": 196
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-16-lyman-forest-30-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-16-lyman-forest-30-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-16-limit-systems-31",
+      "chapter": 16,
+      "title": "Lyα森林、LLS与DLA的分类关系",
+      "priority": "保留",
+      "reason": "明确柱密度轴和 LLS 包含 DLA 的嵌套带，分类关系已清楚。",
+      "proposedChange": "暂不安排重绘。",
+      "url": "http://127.0.0.1:8765/chapter-16.html#body-figure-16-limit-systems-31",
+      "source": {
+        "file": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\dist\\assets\\body-figures-late.js",
+        "line": 202
+      },
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-16-limit-systems-31-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-16-limit-systems-31-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-3-planck-cmb-2013",
+      "chapter": 3,
+      "title": "微波背景：整片天空的温度起伏",
+      "priority": "保留",
+      "reason": "观测图保留发布方显示色、署名和说明；本轮未发现与原赫罗图类似的粗略示意问题。",
+      "proposedChange": "维持当前表达；新增注释应与图像分离，避免改变观测产品。",
+      "url": "http://127.0.0.1:8765/chapter-3.html#body-figure-3-planck-cmb-2013",
+      "source": null,
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-3-planck-cmb-2013-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-3-planck-cmb-2013-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-6-cosmic-horseshoe",
+      "chapter": 6,
+      "title": "宇宙马蹄：真实天空中的透镜弧",
+      "priority": "保留",
+      "reason": "观测图保留发布方显示色、署名和说明；本轮未发现与原赫罗图类似的粗略示意问题。",
+      "proposedChange": "维持当前表达；新增注释应与图像分离，避免改变观测产品。",
+      "url": "http://127.0.0.1:8765/chapter-6.html#body-figure-6-cosmic-horseshoe",
+      "source": null,
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-6-cosmic-horseshoe-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-6-cosmic-horseshoe-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-7-bullet-cluster-composite",
+      "chapter": 7,
+      "title": "子弹星系团：气体与透镜质量的错位",
+      "priority": "保留",
+      "reason": "观测图保留发布方显示色、署名和说明；本轮未发现与原赫罗图类似的粗略示意问题。",
+      "proposedChange": "维持当前表达；新增注释应与图像分离，避免改变观测产品。",
+      "url": "http://127.0.0.1:8765/chapter-7.html#body-figure-7-bullet-cluster-composite",
+      "source": null,
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-7-bullet-cluster-composite-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-7-bullet-cluster-composite-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-15-coma-cluster-field",
+      "chapter": 15,
+      "title": "后发座星系团：环境中的星系样本",
+      "priority": "保留",
+      "reason": "观测图保留发布方显示色、署名和说明；本轮未发现与原赫罗图类似的粗略示意问题。",
+      "proposedChange": "维持当前表达；新增注释应与图像分离，避免改变观测产品。",
+      "url": "http://127.0.0.1:8765/chapter-15.html#body-figure-15-coma-cluster-field",
+      "source": null,
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-15-coma-cluster-field-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-15-coma-cluster-field-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-9-hh30-webb-disk-jet",
+      "chapter": 9,
+      "title": "HH 30：尘埃盘与盘面外的喷流",
+      "priority": "保留",
+      "reason": "观测图保留发布方显示色、署名和说明；本轮未发现与原赫罗图类似的粗略示意问题。",
+      "proposedChange": "维持当前表达；新增注释应与图像分离，避免改变观测产品。",
+      "url": "http://127.0.0.1:8765/chapter-9.html#body-figure-9-hh30-webb-disk-jet",
+      "source": null,
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-9-hh30-webb-disk-jet-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-9-hh30-webb-disk-jet-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-10-tycho-remnant-2019",
+      "chapter": 10,
+      "title": "第谷遗迹：超新星之后的高能物质",
+      "priority": "保留",
+      "reason": "观测图保留发布方显示色、署名和说明；本轮未发现与原赫罗图类似的粗略示意问题。",
+      "proposedChange": "维持当前表达；新增注释应与图像分离，避免改变观测产品。",
+      "url": "http://127.0.0.1:8765/chapter-10.html#body-figure-10-tycho-remnant-2019",
+      "source": null,
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-10-tycho-remnant-2019-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-10-tycho-remnant-2019-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-11-ngc1300-stellar-bar",
+      "chapter": 11,
+      "title": "NGC 1300：真实星系中的恒星棒",
+      "priority": "保留",
+      "reason": "观测图保留发布方显示色、署名和说明；本轮未发现与原赫罗图类似的粗略示意问题。",
+      "proposedChange": "维持当前表达；新增注释应与图像分离，避免改变观测产品。",
+      "url": "http://127.0.0.1:8765/chapter-11.html#body-figure-11-ngc1300-stellar-bar",
+      "source": null,
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-11-ngc1300-stellar-bar-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-11-ngc1300-stellar-bar-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-12-eso137-stripping",
+      "chapter": 12,
+      "title": "ESO 137-001：冲压剥离的观测线索",
+      "priority": "保留",
+      "reason": "观测图保留发布方显示色、署名和说明；本轮未发现与原赫罗图类似的粗略示意问题。",
+      "proposedChange": "维持当前表达；新增注释应与图像分离，避免改变观测产品。",
+      "url": "http://127.0.0.1:8765/chapter-12.html#body-figure-12-eso137-stripping",
+      "source": null,
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-12-eso137-stripping-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-12-eso137-stripping-390.png"
+      ]
+    },
+    {
+      "id": "body-figure-13-eso38112-stellar-shells",
+      "chapter": 13,
+      "title": "恒星壳层：重建形成史的一条线索",
+      "priority": "保留",
+      "reason": "观测图保留发布方显示色、署名和说明；本轮未发现与原赫罗图类似的粗略示意问题。",
+      "proposedChange": "维持当前表达；新增注释应与图像分离，避免改变观测产品。",
+      "url": "http://127.0.0.1:8765/chapter-13.html#body-figure-13-eso38112-stellar-shells",
+      "source": null,
+      "screenshots": [
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-13-eso38112-stellar-shells-1360.png",
+        "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018\\body-figure-13-eso38112-stellar-shells-390.png"
+      ]
+    }
+  ],
+  "experimentSamples": [
+    {
+      "chapter": 1,
+      "hash": "baryon-lab",
+      "title": "让同一团气体走向不同结局"
+    },
+    {
+      "chapter": 2,
+      "hash": "spectral-lab",
+      "title": "移动谱线，辨认红移"
+    },
+    {
+      "chapter": 3,
+      "hash": "components-lab",
+      "title": "在三种组分之间，移动时间"
+    },
+    {
+      "chapter": 4,
+      "hash": "opening-experiment",
+      "title": "密度起伏：振幅与相位"
+    },
+    {
+      "chapter": 5,
+      "hash": "sphere-lab",
+      "title": "一片过密区域的转身"
+    },
+    {
+      "chapter": 6,
+      "hash": "pair-lab",
+      "title": "这一片星系，聚在一起了吗"
+    },
+    {
+      "chapter": 7,
+      "hash": "nfw-lab",
+      "title": "一座暗晕，质量藏在哪里"
+    },
+    {
+      "chapter": 8,
+      "hash": "shock-lab",
+      "title": "穿过激波，气体变慢、变密、变热"
+    },
+    {
+      "chapter": 9,
+      "hash": "jeans-lab",
+      "title": "一团冷气体，何时压不住引力"
+    },
+    {
+      "chapter": 10,
+      "hash": "lifetime-lab",
+      "title": "用主序寿命，读一群恒星的年龄"
+    },
+    {
+      "chapter": 11,
+      "hash": "disk-profile-lab",
+      "title": "一张指数盘，质量怎样累积"
+    },
+    {
+      "chapter": 12,
+      "hash": "tidal-shock-lab",
+      "title": "一次飞掠，留下多少加热"
+    },
+    {
+      "chapter": 13,
+      "hash": "projection-lab",
+      "title": "同一座扁球，可以看起来多圆"
+    },
+    {
+      "chapter": 14,
+      "hash": "eddington-lab",
+      "title": "辐射压力，给出什么光度标尺"
+    },
+    {
+      "chapter": 15,
+      "hash": "luminosity-lab",
+      "title": "多数星系，和多数星光，来自同一端吗"
+    },
+    {
+      "chapter": 16,
+      "hash": "transmission-lab",
+      "title": "一片黑暗，究竟意味着多少中性氢"
+    }
+  ],
+  "experimentalFollowup": "抽查的实验图主要已有坐标、参数和读数。第7章 NFW、第9章 Jeans、第14章 Eddington 的小场景可后续细化，不将装饰场景的简单程度当作曲线模型错误。",
+  "limitations": [
+    "本轮是图解表达与布局审阅，优先级为教学设计判断，不是已确认的科学错误等级。",
+    "没有重新求解全书模型、逐一操作126个实验、核验原书全部页码或重查观测素材许可。",
+    "布局覆盖实际为两组主题/视口配对，没有遍历全部主题×视口组合、320px及所有放大对话框。",
+    "Planck 图在当前开源包中提供官方外链卡片，未将官方外部原图记作本机已审看。"
+  ],
+  "evidenceDirectory": "C:\\Users\\Amadeus\\AppData\\Local\\Temp\\galaxies-figure-quality-20261018",
+  "changes": "本轮不修改教材页面、模型或图像；只添加审阅记录和抽查脚本。",
+  "dshFollowup": {
+    "status": "已读取；共用样式缺陷已核对代码；其余建议待逐项验收",
+    "record": "C:\\Users\\Amadeus\\Documents\\ChatGPT\\galaxies-interactive-textbook\\docs\\dsh-figure-quality-review-2026-10-18.json",
+    "note": "原清单为 Codex 独立视觉审阅；DSH 在用户继续会话后产生了完整报告，未将全部建议自动验收。"
+  }
+}

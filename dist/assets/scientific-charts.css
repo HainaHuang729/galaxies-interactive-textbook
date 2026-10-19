@@ -12,6 +12,12 @@ svg.chart.scientific-plot .scientific-axis-label { font-size:12px; fill:var(--te
 .scientific-probe path { fill:none; stroke:var(--muted); stroke-width:.8; stroke-dasharray:3 4; }
 .scientific-probe circle { fill:var(--panel); stroke:var(--text); stroke-width:1; }
 .scientific-chart-tools { display:flex; justify-content:flex-end; flex-wrap:wrap; gap:8px 16px; margin-top:12px; }
+.scientific-legend { display:flex; flex-wrap:wrap; gap:8px 20px; margin:12px 0; font-size:13px; line-height:1.8; color:var(--text); }
+.scientific-legend > span:not(.inline-math, .inline-math *) { display:inline-flex; align-items:center; gap:7px; max-width:100%; min-width:0; overflow-wrap:anywhere; }
+.advanced-legend.scientific-legend > span:not(.inline-math, .inline-math *):before { content:none; }
+.scientific-legend-key { width:30px; height:16px; flex:none; overflow:visible; }
+.scientific-legend-reference { display:flex; align-items:center; gap:7px; margin-top:10px; font-size:13px; color:var(--muted); }
+.scientific-legend[hidden] { display:none; }
 .scientific-chart-action { min-height:38px; padding:6px 10px; border:1px solid var(--line); border-radius:5px; color:var(--text); background:transparent; font:12px var(--sans); }
 .scientific-chart-action:hover { border-color:var(--accent); color:var(--accent); }
 .scientific-coordinate { display:block; margin:12px 0 0; min-height:1.8em; color:var(--muted); font-size:12px; line-height:1.8; font-variant-numeric:tabular-nums; }

@@ -8,12 +8,16 @@
     "node": ">=22"
   },
   "scripts": {
-    "start": "python3 start.py",
-    "build": "python3 scripts/build-chapters.py",
+    "start": "node scripts/python.cjs start.py",
+    "build": "node scripts/python.cjs scripts/build-chapters.py",
     "test": "node scripts/check-models.cjs",
     "test:browser": "node scripts/check-glossary-browser.cjs",
-    "check:public": "python3 scripts/check-public-release.py",
-    "release:offline": "python3 scripts/package-offline.py"
+    "test:workbench": "node scripts/check-workbench-browser.cjs",
+    "test:disk-brush": "node scripts/check-disk-brush.cjs",
+    "test:discovery": "node scripts/check-discovery-browser.cjs",
+    "test:hr-figure": "node scripts/check-hr-diagram-browser.cjs",
+    "check:public": "node scripts/python.cjs scripts/check-public-release.py",
+    "release:offline": "node scripts/python.cjs scripts/package-offline.py"
   },
   "devDependencies": {
     "playwright": "1.62.1"

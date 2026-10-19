@@ -1,0 +1,97 @@
+{
+  "task": "Whole-book legends and illustrations",
+  "date": "2026-10-19",
+  "status": "accepted",
+  "coverage": {
+    "chapters": 16,
+    "charts": 115,
+    "series": 190,
+    "chartLayouts": 690,
+    "illustrations": 19,
+    "illustrationLayouts": 114,
+    "dialogs": 19,
+    "illustrationLegendItems": 85,
+    "existingBodyFigures": 41,
+    "existingNativeCharts": [
+      "cycle-chart: original reservoir legend retained",
+      "clock-chart: timescale bars retain direct labels",
+      "spectrum-chart: spectral line names and color annotations retained",
+      "survey-chart: existing three-category selection legend retained",
+      "component-chart: existing stacked-component legend retained"
+    ]
+  },
+  "changes": [
+    "Three new original SVG illustrations in chapters 3, 6 and 7; 19 total illustrations across 16 chapters",
+    "85 artwork legend explanations and source labels, including full legends inside dialogs",
+    "115 registered curve charts / 190 data series receive actual line, point or bar keys; existing advanced legends are reused",
+    "Series binding preserves identity when curves coincide; fixed-reference keys update and are included in zoom and exported SVG",
+    "Stellar birth markers use dots; ellipsoid projection keys use the actual dashed and dotted line styles",
+    "Code-SVG dialogs pan horizontally on small screens; fixed artwork colors have dark swatch backing for contrast in moon theme",
+    "Review corrected the cluster-center guide label and clarified light-travel distance and NFW mass-radius wording"
+  ],
+  "verification": {
+    "build": "npm run build: passed",
+    "browser": {
+      "chapters": 16,
+      "charts": 115,
+      "series": 190,
+      "chartLayouts": 690,
+      "illustrations": 19,
+      "illustrationLayouts": 114,
+      "dialogs": 19
+    },
+    "browserEvidence": "TEMP/galaxies-book-legends-20261019/browser-validation.json",
+    "supplemental": {
+      "checks": [
+        "downloaded actual SVG contains curve and pinned-reference legends",
+        "zoomed plot contains the same legend",
+        "body-figure-1-clocks-1 swatch shape matches the meaning",
+        "body-figure-5-ellipsoid-8 swatch shape matches the meaning",
+        "fixed artwork colors have a dark swatch backing in moon theme",
+        "ram-pressure-gas region controls remain exclusive",
+        "galaxy-group-environment region controls remain exclusive",
+        "hii-ionized-cloud region controls remain exclusive",
+        "agb-mass-return region controls remain exclusive"
+      ],
+      "errors": []
+    },
+    "supplementalEvidence": "TEMP/galaxies-book-legends-20261019/supplemental-validation.json",
+    "staticIllustrations": "node scripts/check-illustration-legends.cjs: 19 illustrations / 16 chapters / 85 items; errors=[], warnings=[]",
+    "bodyFigures": "1193 checks passed; original observation source hashes verified",
+    "priorFigureRedesign": "5364 checks passed",
+    "priorExperimentFigures": "15421 checks passed",
+    "science": "npm test: all existing suites passed",
+    "publicScan": "602 files, errors=[] (final)",
+    "visualInspection": [
+      "All three new SVG illustrations at 1200x800",
+      "Full legend sections for the three new diagrams and galaxy diversity",
+      "320px moon artwork legend before/after dark swatch backing",
+      "Three code-SVG mobile detail screenshots, including horizontal pan affordance"
+    ],
+    "paintFollowup": "Dark backing behind artwork swatches changes paint only; checked in final 320px moon screenshot after the complete layout matrix",
+    "uploadPreparation": "Rebased onto remote main; regenerated publication output, preserving the updated standalone-skill download links. Shared paint token aliases were regenerated without changing displayed colors."
+  },
+  "limits": [
+    "Layout matrix uses current default/restored parameters; parameter combinations are not exhaustively enumerated",
+    "Targeted extra states cover theme changes, pinned-reference redraw, zero-diffusion coincident curves, actual SVG download, zoom, artwork region buttons and dialog focus return",
+    "AI artwork pixels were preserved; legend meaning was checked against existing captions/alt/prompt descriptions, without a new pixel-by-pixel scientific audit",
+    "New illustrations are teaching schematics and are not observational products",
+    "No commit, push or deployment"
+  ],
+  "sourceHashes": {
+    "content/illustrations.json": "96f6c4e4af91c4bcc8da8af3c46cc9b4da87022210f6457e23d2ce1c5a0c4d18",
+    "dist/assets/scientific-charts.js": "9bbec93fe78b897c16f4819590c01b2cd5f805f2034fe28c17ef7c72f05b707c",
+    "dist/assets/scientific-charts.css": "569f5b4c06f6ad2c346f7ad5df82faadd423cb94dba1a13b92a1b6c66de5f3b8",
+    "dist/assets/advanced-book.js": "6c532dcb32a8f845fd33f358c61c920d009e60e17480a7c315a170715ba3bb4a",
+    "dist/assets/population-response-labs.js": "075956dd1ae72e9ed52637dfca45b6d22385fb2260fac4384d990b228c94569c",
+    "dist/assets/body-figures.js": "33aba9cdace2f1b85f65193e57a48b7e60c92584f238897b412361ddb28c6a7e",
+    "dist/assets/body-figures-early.js": "48eda5295235444fdb53d19b2c8b3c5395921ff7c6342ae9347214330fb3125d",
+    "dist/assets/body-figures.css": "70ad5f482b0511ba780f8383e8fc4cb1a377abf68c40bb003cea06100b350d9d",
+    "scripts/build-illustrations.cjs": "e4e6beef20ca96ba0d88021c9c36e80ea638d4f2b9f196caffcbb17f9545a4cf",
+    "dist/assets/book-illustrations.js": "c5a85988de99df715573365592da250a7593528373370ca124207eb60777b731",
+    "dist/assets/book-illustrations.css": "0218030630cd7f8eb3fde2f3efbfe8e61e14d76c87277bc5a1e40eac2a9df66f",
+    "dist/assets/illustrations/light-through-expansion.svg": "d5b7088131d0c0a3505fbf18b0c734226aedf87ae2d824ef9313baf2236c1caa",
+    "dist/assets/illustrations/redshift-space-distortion.svg": "de1b2cd6c0d17814f3546e84d105f235a35d6ec46d77f4d46ed5206ee9575dbc",
+    "dist/assets/illustrations/halo-mass-boundary.svg": "6b239c6aa017e7d9ecd2ced7480d835f56e171d1907f53d5a5d03d2d9e2cd79a"
+  }
+}

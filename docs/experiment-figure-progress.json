@@ -1,0 +1,197 @@
+{
+  "task": "experiment-figure-review-20261019",
+  "date": "2026-10-19",
+  "updatedAt": "2026-10-19T12:46:28+08:00",
+  "status": "已验收：两实验完整交互 + 12 布局 + root 全套复跑通过；生产代码在浏览器修复阶段未改",
+  "browser_ready": true,
+  "browserRevision": 6,
+  "browserFinal": {
+    "command": "node scripts/check-experiment-figures-browser.cjs",
+    "result": {"checks": 207, "labs": 2, "layouts": 12, "interactions": 11, "screenshots": 20, "errors": 0, "consoleErrors": 0},
+    "report": "TEMP/galaxies-experiment-figures-20261019/experiment-figure-browser-report.json",
+    "local_full_captures": ["TEMP/galaxies-experiment-figures-20261019/root-jeans-moment-canvas-320.png", "TEMP/galaxies-experiment-figures-20261019/root-anisotropy-chart-320.png"],
+    "screenshot_semantics": "page.screenshot 的 document clip 只代表当前视口可见片段，不是整卡完整截图；完整局部视觉证据以 root 独立截图为准。",
+    "favicon_stub": "最终 consoleErrors=0；此前唯一的 favicon.ico 404 由 root 仅对该路径 route 204 并在报告标注，不忽略其他资源错误。"
+  },
+  "frozenAt": "2026-10-19T12:36:27+08:00",
+  "browser_commands": [
+    "cd <repository root> && node scripts/check-experiment-figures-browser.cjs",
+    "环境：现有本地预览 http://127.0.0.1:8765；脚本自动写入 TEMP/galaxies-experiment-figures-20261019/experiment-figure-browser-report.json 与截图",
+    "第三次运行相对第二次只改了浏览器脚本的拖动/截图助手与 5:jeans 条形固定标尺；模型数值不变"
+  ],
+  "objective": "对全书剩余 126 个交互实验的图形做范围清点与重点视觉审查，列出具体不清楚的问题，本轮只修最有证据的实验；只改善科学表达、图内解释与状态联动，不重做已验收的 41 组正文图/19 组 redesign，不换架构、不加依赖、不盲目增图。",
+  "runtime": {
+    "session": "current DSH session",
+    "provider": "deepseek-account",
+    "model": "deepseek-flash",
+    "reasoningEffort_runtimeLastUsed": "max",
+    "reasoningEffort_source": "DSH session metadata (storages/session_projcache modelSelection.lastUsed), not only config",
+    "note": "只读会话元数据，未修改 DSH 配置或会话文件。"
+  },
+  "read": [
+    "skills/interactive-textbook/SKILL.md",
+    "skills/interactive-textbook/references/scientific-review.md",
+    "skills/interactive-textbook/references/math-and-symbols.md",
+    "skills/interactive-textbook/references/visuals-and-interaction.md",
+    "docs/figure-redesign-validation.json",
+    "docs/whole-book-review-2026-10-18.json (structure, scope/coverage/visuals/interaction/symbols/formulaChartReadout)",
+    "docs/clarity-validation.json",
+    "docs/clarity-review.md",
+    "docs/figure-redesign-progress.json",
+    "docs/figure-redesign-worker-progress.json",
+    "docs/dsh-figure-quality-review-2026-10-18.json",
+    "scripts/build-chapters.py, scripts/build-reader.cjs, scripts/build-lab-details.cjs, scripts/build-math.cjs",
+    "dist/assets/reader-slides.js (page targets), dist/assets/lab-workbench.js (side drawer), dist/assets/scientific-charts.js (chart API)",
+    "dist/chapter-5.html jeans-lab, dist/assets/chapter-five.js, dist/assets/chapter-five.css, dist/assets/collapse-physics.js",
+    "content/chapter-13.json anisotropy lab, dist/chapter-13.html, dist/assets/advanced-physics.js (anisotropy model), dist/assets/advanced-book.js (generated-chapter renderer)",
+    "content/math/legacy.json, content/lab-guides.json",
+    "TEMP/galaxies-figure-quality-20261018/inventory.json (126-experiment base inventory)"
+  ],
+  "environment": {
+    "preview": "http://127.0.0.1:8765 reachable (HTTP 200)",
+    "workspace": "workspace-write sandbox; repository uncommitted changes preserved, no resets/commits/push/deploy",
+    "blocked": [
+      "Playwright chromium.launch({channel:'msedge'}) under workspace-write: spawn EPERM (browser needs piped stdio; sandbox blocks it).",
+      "Direct headless Edge / CDP launch from sandboxed shell: denied or exits (process/pipe restrictions).",
+      "Writing under the machine system TEMP root: access denied; only the session TEMP area is writable.",
+      "Build needs the bundled Python on PATH; plain `python` in this shell is a WindowsApps stub (exit 9009). Use the bundled python directory on PATH before `npm run build`."
+    ],
+    "handoff_to_main_agent": [
+      "node scripts/check-experiment-figures-browser.cjs from the repository root with the preview server at 127.0.0.1:8765; it writes screenshots and the JSON report to TEMP/galaxies-experiment-figures-20261019.",
+      "node scripts/check-experiment-figures.cjs (static/scientific checks; no browser needed)."
+    ],
+    "evidence_location": "TEMP/galaxies-experiment-figures-20261019 (relative path only in public reports)"
+  },
+  "scope_inventory": {
+    "base": "TEMP/galaxies-figure-quality-20261018/inventory.json",
+    "experiments": 126,
+    "perChapter": {"1": 3, "2": 6, "3": 5, "4": 6, "5": 7, "6": 8, "7": 9, "8": 10, "9": 8, "10": 9, "11": 8, "12": 8, "13": 8, "14": 9, "15": 9, "16": 13},
+    "figureSurfaces_static": {
+      "experimentsWithChart": 114,
+      "experimentsWithSceneCanvas": 44,
+      "noChartNoScene": ["1:opening-experiment", "1:clocks-experiment-2", "3:opening-experiment", "4:opening-experiment", "16:transfer-bench-lab"],
+      "note": "chart 与 scene 可同时存在；由 dist 作者源静态提取，126 个实验全部计数。"
+    },
+    "visual_review": {
+      "root_fresh_review": {
+        "count": 4,
+        "items": [
+          "5:jeans-lab（发现只有 β–Vc 曲线、缺方向说明；390px Canvas σφ 标签左裁切）",
+          "13:anisotropy-lab（发现缺固定 σlos/σr 对照与 γ=3 投影抵消的图内说明）",
+          "12:tidal-tensor-lab（root 查看后判定现有表现较完整，本轮不改）",
+          "14:velocity-delay-lab（root 查看后判定现有表现较完整，本轮不改）"
+        ],
+        "before_screenshots": "jeans-before.png、before-anisotropy-lab.png、before-tidal-tensor-lab.png、before-velocity-delay-lab.png（由主 agent 存入本轮 TEMP 证据目录）"
+      },
+      "agent_prior_screenshot_review": {
+        "count": 11,
+        "items": ["2:spectral-lab", "4:opening-experiment", "5:sphere-lab", "8:shock-lab", "12:tidal-shock-lab", "13:projection-lab", "16:transmission-lab", "4:growth-lab", "9:hii-lab-model", "15:cosmic-sfr-lab", "15:matching-lab-model"],
+        "note": "复用既有截图筛候选，不是改后验收，不与 root 新增 4 项混算。"
+      },
+      "not_covered": "126 个实验的逐页逐参数视觉验收未执行；本轮只对上述 15 个实验做了视觉抽样，另对其余实验做静态图面/模型/轴标清点。不以抽样审查看作全书视觉验收。"
+    }
+  },
+  "candidates": [
+    {
+      "id": "5:jeans-lab",
+      "chapter": 5,
+      "title": "给随机运动一个方向",
+      "status": "实现完成，待浏览器复验",
+      "evidence": [
+        "改前只有 β–Vc 一条曲线；主 agent/root 改前截图确认径向、单个切向、两切向合成三种方向信息全部缺席。",
+        "读数只有“单个切向弥散/σr”，未区分单个 σθ=σφ 与两垂直切向分量按方差合成的 √2σθ。",
+        "模型边界写在折叠 details：这是恒星动力学 Jeans 二阶矩约束，不是气体 Jeans 不稳定性，也不是真实恒星轨道。",
+        "root 390px 截图发现 Canvas 内 σφ=150 标签在左边界被裁切（自动 DOM 横向溢出检测抓不到 Canvas 内部裁字）。"
+      ],
+      "implemented": [
+        "新增 Canvas 二阶矩方向图：σr 径向箭头、σθ=σφ 两切向分量、√(σθ²+σφ²)=√2σθ 的合成条；所有文字走测量/边界记录，手机上 σφ 标签在左空间不足时改放端点右侧。",
+        "读数改为“单个 σθ=σφ / σr（两个切向分量各一）”；新增动态图下注释，明确单分量与合成值相差 √2、合成按方差相加。",
+        "结果文字明确：恒星动力学 Jeans 二阶矩，不是气体 Jeans 不稳定性；不追踪真实恒星轨道、未做视向投影，单一 σlos 不能唯一反演质量。",
+        "新增“恢复本实验”按钮；details 补两条公式（σθ=σφ=σr√(1−β)、√(σθ²+σφ²)=√2σθ）。",
+        "新增 reader 任务导引 5:jeans-lab（目标/步骤/核对/预设）。"
+      ],
+      "files": ["dist/chapter-5.html", "dist/assets/chapter-five.js", "dist/assets/chapter-five.css", "content/math/legacy.json", "content/lab-guides.json"]
+    },
+    {
+      "id": "13:anisotropy-lab",
+      "chapter": 13,
+      "title": "同一视向弥散，可以需要不同的质量",
+      "status": "实现完成，待浏览器复验",
+      "evidence": [
+        "改前只有一条 β–Vc 曲线，长 summary 末尾一句带过 γ=3 投影抵消；图内无参考、无固定 σlos 与固定 σr 的区别。",
+        "root 独立数值投影积分（z/R=sinh(u)，16000 子区间复合 Simpson，36 组）与 AdvancedPhysics 返回 Vc 最大相对误差 4.073e−12，断言容限 2e−10；证据 TEMP/galaxies-experiment-figures-20261019/root-projection-integral.json / .cjs。",
+        "代码审查指出 γ=3 时不能说“单一视向弥散无法区分 β 与质量”：该模型下质量/Vc 已不依赖 β；已改为“质量估计不依赖 β，但 σlos 不能同时确定 β 与 σr；γ 未知时另有简并”。"
+      ],
+      "implemented": [
+        "模型新增 γ=3 参考曲线（Vc=√3σlos，与 β 无关），与当前 γ 曲线同轴同刻度，图例逐条命名；γ=3 时两线重合。",
+        "γ=3 精确命中（|γ−3|<1e−9）时显示投影抵消说明；不再用 0.06 宽阈值冒充精确结论。",
+        "intro/参数标签/assumptions/summary 明确：本实验固定视向 σlos，第 5 章固定三维 σr；γ=3 投影抵消的公式与质量、σr、β 各自的依赖关系。",
+        "新增 reader 任务导引 13:anisotropy-lab（含 γ=3 核对步骤与预设）。"
+      ],
+      "files": ["content/chapter-13.json", "dist/assets/advanced-physics.js (anisotropy model)", "content/lab-guides.json"]
+    },
+    {
+      "id": "third-item-not-selected",
+      "status": "取消（按用户授权）",
+      "reason": "root 新看 12:tidal-tensor-lab 与 14:velocity-delay-lab 后判定现有表现较完整；静态审计 63 个第 9–16 章模型未发现死滑块、端点 NaN 或轴标缺口；第 1–8 章抽样截图未提供同等强度的第三项证据。两项完整优于凑数，故本轮不改第三项。"
+    }
+  ],
+  "checks_so_far": {
+    "static_scientific": {"command": "node scripts/check-experiment-figures.cjs", "result": "15421 checks passed", "covers": "5:jeans-lab 独立数值 Jeans 方程 + 离线 KaTeX annotation（σφ）+ String.raw 实时 TeX + 固定 0–400 条形标尺；13:anisotropy-lab 独立 sinh 投影积分 36 组 + γ=3 平坦性；作者源/生成页/导引契约"},
+    "build": {"command": "npm run build (bundled Python on PATH)", "result": "passed"},
+    "npm_test": {"command": "npm test", "result": "passed (including existing projection/energy/photon/census checks)"},
+    "check_public": {"command": "npm run check:public", "result": "{\"scannedFiles\": 592, \"errors\": []}"},
+    "browser": {"command": "node scripts/check-experiment-figures-browser.cjs", "result": "待主 agent 运行", "covers": "2 个实验 × 3 宽度 × 2 主题布局、真实拖动/键盘/重置/主题、读数-曲线一致性、Canvas 文本边界、截图"}
+  },
+  "ownership": {
+    "writable": [
+      "docs/experiment-figure-progress.json",
+      "docs/experiment-figure-review.json",
+      "docs/experiment-figure-validation.json",
+      "dist/chapter-5.html",
+      "dist/assets/chapter-five.js",
+      "dist/assets/chapter-five.css",
+      "content/chapter-13.json",
+      "dist/assets/advanced-physics.js (anisotropy model only)",
+      "content/math/legacy.json (chapter-5 Jeans block only)",
+      "content/lab-guides.json (5:jeans-lab, 13:anisotropy-lab only)",
+      "scripts/check-experiment-figures.cjs",
+      "scripts/check-experiment-figures-browser.cjs"
+    ],
+    "read_only_preserved": [
+      "上一轮 41 组正文图与 19 组 redesign 的作者源和校验脚本",
+      "content/body-figures.json 与 dist/assets/body-figures-*.js",
+      "现有未提交改动",
+      "DSH 配置与会话文件"
+    ],
+    "no_personal_absolute_paths_in_public_reports": true
+  },
+  "next_actions": [
+    "本轮完成：不再修改生产代码或测试脚本；由主 agent 最后运行 check:public 后交付。",
+    "后续若再做全书 126 实验的完整视觉验收，可从 docs/experiment-figure-review.json 的未覆盖项继续，而不是复用本轮抽样结论。"
+  ],
+  "progress_log": [
+    {"at": "2026-10-19T12:14:24+08:00", "event": "session start; read skill/references and prior validation docs"},
+    {"event": "verified runtime metadata: session modelSelection.lastUsed reasoningEffort=max; preview server HTTP 200"},
+    {"event": "browser blocked under workspace-write (spawn EPERM); system TEMP write denied; recorded handoff commands"},
+    {"event": "reused 126-experiment inventory; static inventory of charts/scenes/controls/readouts; ch9-16 model audit (63 labs, 0 dead params/NaN/axis gaps)"},
+    {"event": "confirmed 5:jeans-lab and 13:anisotropy-lab from root/agent evidence; third item not selected"},
+    {"event": "implemented 5:jeans-lab second-moment canvas + readout/label/math/guide/reset changes; implemented 13:anisotropy-lab gamma=3 reference + fixed-sigma_los wording + guide"},
+    {"event": "added scripts/check-experiment-figures.cjs (15402 checks) and scripts/check-experiment-figures-browser.cjs; static/build/npm test/check:public pass"},
+    {"event": "code review: corrected gamma=3 mass-degeneracy wording and exact-only validation threshold; fixed 390px Canvas sigma_phi label clipping with measured fallback placement and text-bounds data; pending browser re-run"},
+    {"at": "2026-10-19T12:28:30+08:00", "event": "progress updated after code review fixes; awaiting main-agent browser verification"},
+    {"event": "code review round 2: live note/result switched to explicit sigma_phi TeX via String.raw + shared BookMath formatter; static script now also formats the actual live templates with KaTeX offline and asserts the annotation (no bare unicode sigma_phi); reader guides use explicit TeX; rebuilt; static 15419 checks, npm test, check:public pass"},
+    {"at": "2026-10-19T12:33:42+08:00", "event": "author sources and scripts frozen; browser_ready=true; waiting for one full main-agent browser run"},
+    {"event": "browser run 2: initial TeX/annotation checks passed; real-drag assertion failed (pointer helper started from an arbitrary track point and footer could cover the slider)"},
+    {"event": "fixed genuine pointer drag helper (scrollIntoView + safe-area scroll + thumb-derived start coordinate + one retry, no synthetic events), screenshot-only pager hiding, fixed 0–400 km/s bar scale with exposed barWidths; static 15421 checks pass"},
+    {"at": "2026-10-19T12:36:27+08:00", "event": "browserRevision=3; waiting for third browser run"},
+    {"event": "browser run 3: root fixed test-only issues (undefined ok, drag helper thumb/safe-area, screenshot bbox stability + document clip, bar-ratio sqrt(2(1-beta)) tolerance 0.02px, Home+2Right ordering, gamma3 display tolerance, legend direct children, renderedText/parseNumber, removed fictional per-state directional summary assertion); production unchanged"},
+    {"event": "BROWSER RESULT SO FAR: 5:jeans-lab full interactions + dual theme x three widths passed; 13 in progress; root visual check at 320px moon confirms complete Jeans canvas labels and distinguishable 13 curves/reference; clip screenshots are viewport-only, full local captures root-jeans-moment-canvas-320.png / root-anisotropy-chart-320.png"},
+    {"at": "2026-10-19T12:44:45+08:00", "event": "browserRevision=4; 13 still running; reports updated with honest screenshot semantics"},
+    {"event": "browser run complete: both labs full interactions + 12 layouts executed; only console error was local favicon.ico 404; root added route 204 for that exact path and documents it as a favicon stub (no other errors ignored); report.layouts.push moved out of if(canvas) so 13 records layouts (test-only)"},
+    {"at": "2026-10-19T12:45:57+08:00", "event": "browserRevision=5; final rerun in progress; reports prepared for final acceptance"},
+    {"event": "FINAL ROOT BROWSER PASS: checks=207, labs=2, layouts=12, interactions=11, screenshots=20, errors=0, consoleErrors=0; report at TEMP/galaxies-experiment-figures-20261019/experiment-figure-browser-report.json"},
+    {"event": "root final rerun also passed: static 15421, 41 body figures 1193, previous 19-figure redesign 5364, full npm test, check:public 594 files / errors=[]; independent projection quadrature 36 cases unchanged"},
+    {"at": "2026-10-19T12:46:28+08:00", "event": "accepted; review/validation/progress written to final accepted state; no production or test changes after browser pass"}
+  ]
+}

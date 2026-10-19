@@ -1,0 +1,520 @@
+{
+  "date": "2026-10-18",
+  "scope": "figure and experiment explanation clarity; not a new source-by-source scientific review",
+  "chapters": 16,
+  "bodyFigures": 41,
+  "sliderExperimentDescriptions": 126,
+  "captionRevisions": 29,
+  "namedChartRevisions": 29,
+  "layoutChecks": [
+    {
+      "id": "body-figure-1-diversity-0",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-1-diversity-0",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-1-clocks-1",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-1-clocks-1",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-2-observing-2",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-2-observing-2",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-2-stars-3",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-2-stars-3",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-3-distance-4",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-3-distance-4",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-3-distance-5",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-3-distance-5",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-3-planck-cmb-2013",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-3-planck-cmb-2013",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-4-linear-6",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-4-linear-6",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-4-growth-7",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-4-growth-7",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-5-similarity-9",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-5-similarity-9",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-5-ellipsoid-8",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-5-ellipsoid-8",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-6-galaxies-11",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-6-galaxies-11",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-6-lensing-10",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-6-lensing-10",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-6-cosmic-horseshoe",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-6-cosmic-horseshoe",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-7-progenitors-12",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-7-progenitors-12",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-7-structure-13",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-7-structure-13",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-7-bullet-cluster-composite",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-7-bullet-cluster-composite",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-8-feedback-14",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-8-feedback-14",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-8-observations-15",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-8-observations-15",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-9-molecules-17",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-9-molecules-17",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-9-individual-16",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-9-individual-16",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-9-hh30-webb-disk-jet",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-9-hh30-webb-disk-jet",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-10-tracks-18",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-10-tracks-18",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-10-chemistry-19",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-10-chemistry-19",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-10-tycho-remnant-2019",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-10-tycho-remnant-2019",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-11-exponential-21",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-11-exponential-21",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-11-instability-20",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-11-instability-20",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-11-ngc1300-stellar-bar",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-11-ngc1300-stellar-bar",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-12-dynamical-friction-23",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-12-dynamical-friction-23",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-12-clusters-22",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-12-clusters-22",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-12-eso137-stripping",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-12-eso137-stripping",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-13-structure-24",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-13-structure-24",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-13-eso38112-stellar-shells",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-13-eso38112-stellar-shells",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-13-plane-25",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-13-plane-25",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-14-engine-26",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-14-engine-26",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-14-engine-27",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-14-engine-27",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-15-distribution-28",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-15-distribution-28",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-15-coma-cluster-field",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-15-coma-cluster-field",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-15-clustering-29",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-15-clustering-29",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-16-lyman-forest-30",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-16-lyman-forest-30",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-16-limit-systems-31",
+      "width": 1360,
+      "theme": "afterglow",
+      "horizontalOverflow": false
+    },
+    {
+      "id": "body-figure-16-limit-systems-31",
+      "width": 390,
+      "theme": "moon",
+      "horizontalOverflow": false
+    }
+  ],
+  "browserErrors": [],
+  "checks": {
+    "build": "passed",
+    "models": "passed",
+    "public": "passed",
+    "bodyFigures": 1193,
+    "namedSeriesChecked": 70,
+    "transferModes": 2,
+    "explorerInput": "passed",
+    "workbench": "passed"
+  },
+  "limits": [
+    "No fresh original-book citation audit",
+    "No exhaustive parameter sweep of all experiments",
+    "Visual review of all before-change figures and selected changed figures; automated layout check of all after-change figures",
+    "Viewport emulation rather than physical device testing"
+  ]
+}

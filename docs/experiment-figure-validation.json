@@ -1,0 +1,125 @@
+{
+  "task": "experiment-figure-review-20261019",
+  "date": "2026-10-19",
+  "updatedAt": "2026-10-19T12:46:28+08:00",
+  "status": "已验收",
+  "runtime": {
+    "provider": "deepseek-account",
+    "model": "deepseek-flash",
+    "reasoningEffort_runtimeLastUsed": "max",
+    "source": "DSH session metadata modelSelection.lastUsed（只读，未修改 DSH 配置或会话文件）"
+  },
+  "scope": {
+    "experiments_inventoried": 126,
+    "experiments_changed": ["5:jeans-lab", "13:anisotropy-lab"],
+    "experiments_visually_sampled": 15,
+    "body_figures_preserved": 41,
+    "previous_redesign_preserved": 19
+  },
+  "browser_acceptance": {
+    "command": "node scripts/check-experiment-figures-browser.cjs",
+    "result": {"checks": 207, "labs": 2, "layouts": 12, "interactions": 11, "screenshots": 20, "errors": 0, "consoleErrors": 0},
+    "report": "TEMP/galaxies-experiment-figures-20261019/experiment-figure-browser-report.json",
+    "covers": [
+      "5:jeans-lab 与 13:anisotropy-lab 完整交互",
+      "1440 / 390 / 320 × afterglow / moon 共 12 个布局",
+      "真实指针拖动（thumb 坐标、页内安全区、避开 footer）、键盘 Home/End/Arrow、重置、主题切换",
+      "读数与模型独立计算一致；曲线当前点像素位置与注册数据一致",
+      "Canvas textBounds 在 390/320 两主题均不越界",
+      "5:jeans 固定 0–400 km/s 条形标尺：σr 改变条长变化而标尺不变",
+      "13:anisotropy γ=3 参考曲线、平坦性、说明出现/隐藏",
+      "KaTeX annotation 使用 σφ；不依赖裸 Unicode 组合"
+    ],
+    "local_full_captures": [
+      "TEMP/galaxies-experiment-figures-20261019/root-jeans-moment-canvas-320.png",
+      "TEMP/galaxies-experiment-figures-20261019/root-anisotropy-chart-320.png"
+    ],
+    "screenshot_semantics": "脚本的 page.screenshot 使用 document clip，只捕获当前视口可见片段，不是整张实验卡的完整截图。完整局部视觉证据来自 root 独立截图与已查看的 1440 主图；报告不把 clip 截图称为全卡完整截图。",
+    "favicon_stub": "唯一曾出现的 console error 是本地预览缺省 favicon.ico 404；root 仅为该精确路径加 route 204 并在报告标注 favicon stub，不忽略任何其他资源错误。最终 consoleErrors=0。"
+  },
+  "root_test_fixes": [
+    "未定义 ok() 改为 assert.ok()（测试错误，生产未改）",
+    "拖动助手从当前值换算 thumb 坐标、滚动到页内安全区避开 footer、最多重试一次；不使用 dispatchEvent",
+    "截图前 mouse.move(1,1) 使 reader 滚动稳定；截图改为相隔 120ms 两次真实 bbox 宽高稳定 <1px 后 page.screenshot document clip",
+    "条长比断言改为 √(2(1−β)) 关系，容限 0.02px（dataset.barWidths 保留 0.01px，非模型误差）；旧“合成条总比径向长”在 β>0.5 物理上相反",
+    "键盘 Home+2×ArrowRight 后先读取切向态，再按 End；End 仅保留端点验证",
+    "数值与 KaTeX 文本读取改用 __renderedText 去掉辅助 MathML 副本；parseNumber 支持 ×10^n；γ=3 三位小数显示容限改 2e−6",
+    "删除“summary 逐状态承诺偏切向”的虚构断言，改为核对 #anisotropy-beta-value 读数与拖动后 β 一致，同时保留质量/Vc/σr 与模型核验",
+    "图例选择器改为 .advanced-legend > span 直接子项（KaTeX 子 span 不计入）",
+    "report.layouts.push 原先在 if (canvas) 内导致 13 未记录，移出后最终 12 条布局（测试报告修复）",
+    "仅 favicon 路径 route 204（测试环境修复）"
+  ],
+  "frozen_hashes": {
+    "dist/chapter-5.html": "6cab48bb013eac4a3c18f816294a2e932e9e8b74af44b69abf8cdd3816145f48",
+    "dist/assets/chapter-five.js": "e4d1f9bd1c3bc0dc63471efd05c66a76869454a8c8b86bae29650ad848ee022b",
+    "dist/assets/chapter-five.css": "0771816770dc647ca1cb7a989ebf393957847d9b421d49a5b77528e64902e965",
+    "content/chapter-13.json": "ea402b13a5b9d6c9385e91ff3013227dfe7ab57e82594330750c457ce4ea452d",
+    "dist/assets/advanced-physics.js": "7cdbbc2fa5bc1d3d5c2fafa1d10c016797ee735a87068f4a34cc4a346ce0da7e",
+    "content/math/legacy.json": "f90ee2a4d41aa09d48491cdc9c53a7f469560fa18f02d986059346f69201ea0f",
+    "content/lab-guides.json": "b9c9348a353e0eabf7556ed28bfec93a628d94b36696188a8a5602d726ac1373",
+    "scripts/check-experiment-figures.cjs": "36ffaacb61965c6a9e17c4001589da282c2ebf9e148fb31c8f42349112c360f8",
+    "scripts/check-experiment-figures-browser.cjs": "bd69fc31f2df6a72947b5745c78d9dd623234d8e53f947693220efb57adb80b3"
+  },
+  "checks": [
+    {
+      "id": "static-scientific",
+      "command": "node scripts/check-experiment-figures.cjs",
+      "result": "15421 checks passed（agent 末轮复跑；root 同值）",
+      "covers": [
+        "13:anisotropy-lab：独立 sinh(u) 投影数值积分 × 36 组（γ=1.5/2.5/3/3.5，β=−0.5/0/0.5，σlos=100/200/300）反解 σr 与 Vc，容限 2e−10",
+        "13:anisotropy-lab：γ=3 平坦性与说明只在精确命中时出现；不含错误的质量简并表述",
+        "5:jeans-lab：独立数值微分球对称 Jeans 方程 × 5γ×4β×3σr×3r；单分量与 √2 合成关系",
+        "5:jeans-lab：String.raw 显式 TeX + 离线 BookMath.format/KaTeX annotation 断言（σφ）",
+        "作者源/生成页/导引契约与固定 0–400 条形标尺"
+      ]
+    },
+    {
+      "id": "root-independent-projection",
+      "result": "36 组独立数值投影积分与模型 Vc 最大相对误差 4.073e−12（容限 2e−10）",
+      "evidence": "TEMP/galaxies-experiment-figures-20261019/root-projection-integral.json / .cjs"
+    },
+    {
+      "id": "existing-suites",
+      "result": "root 末轮复跑：完整 npm test 通过；41 组正文图 1193 checks；上一轮 19 组 redesign 5364 checks；check:public 594 files errors=[]",
+      "note": "均通过，未削弱既有测试。"
+    },
+    {
+      "id": "build",
+      "command": "npm run build（bundled Python 在 PATH）",
+      "result": "passed；生成页/公式/导引可由作者源重建"
+    },
+    {
+      "id": "browser",
+      "command": "node scripts/check-experiment-figures-browser.cjs",
+      "result": "已验收：207 checks / 2 labs / 12 layouts / 11 interactions / 20 screenshots / 0 errors / 0 consoleErrors",
+      "report": "TEMP/galaxies-experiment-figures-20261019/experiment-figure-browser-report.json"
+    }
+  ],
+  "visual_evidence": {
+    "root_fresh_review": ["5:jeans-lab", "13:anisotropy-lab", "12:tidal-tensor-lab（判定现有完整，未改）", "14:velocity-delay-lab（判定现有完整，未改）"],
+    "root_post_change": "320px moon：Jeans Canvas 标签完整；13 两曲线明确且参考虚线可辨。另查看 1440 主图与 390 afterglow / 320 moon 视口片段。",
+    "agent_prior_screenshot_review_count": 11,
+    "not_full_book_visual_acceptance": true
+  },
+  "model_boundaries": [
+    "5:jeans-lab 是稳态、球对称、常 β、常 σr、幂律示踪密度的恒星动力学 Jeans 二阶矩约束；不追踪真实恒星轨道、不做视向投影、不验证完整分布函数非负，不是气体 Jeans 不稳定性判据。",
+    "13:anisotropy-lab 固定视向弥散 σlos，由投影二阶矩反解 Vc；与第 5 章固定三维 σr 的实验不能互换。γ=3 时投影恰好抵消 β 依赖：该模型下质量估计不依赖 β，但 σlos 不能同时确定 β 与 σr；γ 未知时另有简并。",
+    "两处方向图/参考曲线都只是教学二阶矩图，不是观测拟合或 N 体模拟。"
+  ],
+  "unfinished": [
+    "126 个实验未做逐页逐参数的全视觉验收；视觉证据是 root 新审 4 项、既有截图 11 张，以及本轮 5/13 的浏览器交互与截图。",
+    "page.screenshot 的 document clip 只代表当前可见片段；整卡完整视觉证据依赖 root 独立局部截图与 1440 主图。",
+    "浏览器为桌面/390/320 视口模拟，不是物理设备测试；第 1–8 章手写实验的图面状态联动未做全量自动审计。",
+    "未重新核对原书页码、观测图像或外部文献；模型检查说明内部一致性与教学假设，不是观测标定。"
+  ],
+  "evidence_paths": {
+    "progress": "docs/experiment-figure-progress.json",
+    "review": "docs/experiment-figure-review.json",
+    "browser_script": "scripts/check-experiment-figures-browser.cjs",
+    "static_script": "scripts/check-experiment-figures.cjs",
+    "temp_evidence": "TEMP/galaxies-experiment-figures-20261019/"
+  },
+  "acceptedBy": "root independent browser run + rerun of existing suites",
+  "acceptedAt": "2026-10-19T12:46:28+08:00",
+  "production_unchanged_during_browser_fixes": true
+}

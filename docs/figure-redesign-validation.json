@@ -1,0 +1,158 @@
+{
+  "task": "figure-redesign-20261018",
+  "date": "2026-10-19",
+  "status": "已验收",
+  "scope": {
+    "groups": 19,
+    "codeFigures": 30,
+    "bodyFiguresTotal": 41,
+    "unchanged": [
+      "2-stars-3 H-R baseline (ch2)",
+      "1-clocks-1",
+      "4-growth-7",
+      "6-galaxies-11",
+      "7-progenitors-12",
+      "10-chemistry-19",
+      "11-instability-20",
+      "11-exponential-21"
+    ],
+    "sharedSpacingOnly": [
+      "4-linear-6",
+      "14-engine-27",
+      "15-distribution-28"
+    ]
+  },
+  "environment": {
+    "server": "http://127.0.0.1:8765 (existing local preview, not restarted)",
+    "browser": "Playwright 1.62.1, msedge headless",
+    "provider_model": "deepseek-account/deepseek-flash",
+    "reasoningEffort_configured": "max",
+    "reasoningEffort_actual": "Existing session metadata reports high. Persisted default is max; no claim that this turn used max."
+  },
+  "changes": {
+    "author_source": [
+      "content/body-figures.json (caption/scope for all 19 groups, aligned with the new drawings)",
+      "dist/assets/body-figures-early.js",
+      "dist/assets/body-figures-late.js",
+      "dist/assets/body-figures-physical.js",
+      "dist/assets/body-figures.css",
+      "dist/assets/body-figures.js",
+      "dist/assets/body-figure-geometry.js"
+    ],
+    "tests": [
+      "scripts/check-figure-redesign.cjs (new)",
+      "scripts/check-figure-redesign-browser.cjs (new)"
+    ],
+    "records": [
+      "docs/figure-redesign-worker-progress.json",
+      "docs/figure-redesign-validation.json"
+    ],
+    "not_touched": [
+      "docs/figure-redesign-progress.json (owner ledger)",
+      "content/chapter-*.json",
+      "observation assets",
+      "git history (no reset, commit, push or publish)"
+    ]
+  },
+  "interactions_added": {
+    "1-diversity-0": "part tabs, panel focus, reset",
+    "3-distance-4": "a_e slider, reset",
+    "5-similarity-9": "time slider, three crossing presets, reset",
+    "7-structure-13": "level tabs, reset",
+    "8-feedback-14": "layer tabs, reset",
+    "9-molecules-17": "tau0 and lambda sliders, line/continuum presets, reset",
+    "10-tracks-18": "age slider, mass tabs, enlarged view, reset",
+    "12-dynamical-friction-23": "deflection-path toggle",
+    "13-plane-25": "slice slider, point click in both panels, arrow keys, reset",
+    "13-structure-24": "time slider",
+    "14-engine-26": "inclination slider, component tabs, optional jet, reset",
+    "16-lyman-forest-30": "shared pointer/keyboard probe, slider"
+  },
+  "model_boundaries": [
+    "10-tracks-18 reuses the chapter-2 H-R axes and the chapter-10 main-sequence lifetime fit; masses are placed on the MS by a declared teaching mapping, and no isochrone or post-main-sequence track is drawn or claimed.",
+    "5-similarity-9 reuses q cos(omega t)+u sin(omega t) in a fixed harmonic potential, showing only the time window with positive radii; the rings use a fixed scale and are not an accretion solution.",
+    "8-feedback-14 keeps the Sedov limit to shock plus heated interior (no invented inner shell); wind inner radii are labelled schematic and not compared with the Sedov interior.",
+    "9-molecules-17 uses a declared teaching optical-depth model (dust tau=tau0*0.15um/lambda; seven schematic H2 lines); it is not a chemical network, an observed spectrum or a column-density inversion.",
+    "14-engine-26 draws a non-proportional cross-section; the blocking angle follows the drawn torus thickness/radius (about 23 degrees) and is labelled schematic; the jet is optional.",
+    "13-plane-25 keeps 25 synthetic grid points with zero intrinsic scatter on r=1.25s-0.8125i; the third variable colouring and slice are teaching devices, not measurement errors.",
+    "16-limit-systems-31 keeps generalized LLS containing DLA as nested bands; it does not turn the classes into an exclusive partition.",
+    "12-clusters-22 keeps the conceptual ram-pressure panel free of fake axes and states that the tidal curve is a spatial, not temporal, derivative.",
+    "1-diversity-0 does not decompose E into a bulge and disk, and describes arms as disk spiral structure with density waves as only one interpretation."
+  ],
+  "checks": [
+    {
+      "command": "node scripts/check-figure-redesign.cjs",
+      "result": "5364 checks passed",
+      "covers": "19 figures x 6 widths, finite geometry, label inside the SVG, per-figure model contracts (a_e ratio, shell radii and crossings, layer inventory, optical depths, turnoff from the fit, plane relation, blocking threshold, orbit endpoint and Lz, pair totals, probe readout, nested bands)"
+    },
+    {
+      "command": "node scripts/check-body-figures.cjs",
+      "result": "1193 checks passed",
+      "covers": "existing inventory, all 30 renderers at five widths, analytic references, observation hashes"
+    },
+    {
+      "command": "node scripts/check-figure-redesign-browser.cjs",
+      "result": "552 checks, 42 layouts, 52 screenshots, 12 interactions, 0 page errors, 0 failed responses",
+      "covers": "19 figures at 1440 afterglow and 390 moon (four also at 320), every SVG mark inside the stage and the figure card, pointer drags, keyboard, reset, enlarged view, theme and resize state"
+    },
+    {
+      "command": "node scripts/check-hr-diagram-browser.cjs",
+      "result": "218 checks, 170 synthetic points, 0 errors",
+      "covers": "chapter-2 H-R figure and its enlarged view unchanged"
+    },
+    {
+      "command": "npm test",
+      "result": "617 science checks passed",
+      "covers": "book-wide models including lensing image check"
+    },
+    {
+      "command": "npm run build",
+      "result": "built; 41 body figures across 16 chapters",
+      "covers": "author source still reproduces the generated pages"
+    },
+    {
+      "command": "npm run check:public",
+      "result": "PASSED: 589 files scanned, errors=[]",
+      "covers": "private-home-path scan",
+      "note": "Owner cleaned the local progress record and reran the release check."
+    }
+  ],
+  "screenshots": {
+    "directory": "TEMP/galaxies-figure-redesign-20261018",
+    "count": 52,
+    "matrix": "19 groups x afterglow 1440 + moon 390 (38), plus 3-distance-4, 9-molecules-17, 10-tracks-18 and 14-engine-26 at moon 320 (4) = 42 layout shots, plus 10 interaction-state shots at 1440",
+    "report": "TEMP/galaxies-figure-redesign-20261018/figure-redesign-browser-report.json"
+  },
+  "independent_evidence": {
+    "probe": "TEMP/galaxies-figure-redesign-root/probe-validation.json (owner): 6 theme/width cases covering slider/output/readout sync, continuous keyboard, End label boundary, pointer in the second plot, controls hover",
+    "root_layouts": "TEMP/galaxies-figure-redesign-root/root-validation.json: 42 independent layout checks, including overlap with the worker matrix; not 42 additional unique combinations."
+  },
+  "unfinished": [
+    "No independent scientific re-derivation of the chapter-2 H-R sample or the observation assets; both were left untouched.",
+    "The text-fit check uses an estimated glyph width (1.08em CJK / 0.6em Latin) plus real browser bounding boxes over all SVG marks; it does not replace a human reading of every label at every width.",
+    "Actual reasoning effort of the running session is unverified (config says max, session selection reportedly still high)."
+  ],
+  "acceptedBy": "Codex independent review",
+  "acceptedAt": "2026-10-19T00:26:14.805441+08:00",
+  "ownerVerification": {
+    "finalStaticChecks": {
+      "redesign": 5364,
+      "bodyFigures": 1193
+    },
+    "browserReport": {
+      "checks": 552,
+      "layouts": 42,
+      "interactions": 12,
+      "errors": [],
+      "consoleErrors": []
+    },
+    "independentLayouts": 42,
+    "independentProbeScenarios": 6,
+    "publicRelease": {
+      "scannedFiles": 589,
+      "errors": []
+    },
+    "visual": "All 19 desktop/mobile contact sheets and selected full-size figures reviewed; documented typography, geometry, science terminology and interaction issues corrected.",
+    "notPerformed": "No new book-wide scientific re-derivation; synthetic examples remain labelled."
+  }
+}

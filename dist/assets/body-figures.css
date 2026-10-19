@@ -84,3 +84,165 @@ dialog.body-figure-dialog { width: min(1240px,calc(100vw - 32px)); max-width: no
  .body-figure-dialog > h2 { font-size: 21px; }
 }
 @media print { .bf-expand,.bf-gallery-controls { display: none; } .bf-image-panel[hidden] { display: block; } .bf-images { grid-template-columns: repeat(var(--bf-count,2),1fr); } }
+
+/* HR diagram: everything inherits the book's two reading themes. */
+.bf-svg.hr-diagram { background:var(--subtle); border:1px solid var(--line); border-radius:12px; }
+.body-figure > .bf-readout.hr-figure-readout { margin:20px 0 0; padding:14px 0 0 14px; border-top:1px solid var(--line); border-left:2px solid var(--line); }
+dialog.body-figure-dialog { overflow:auto; }
+.hr-diagram { --hr-sun:var(--legacy-e7c279,#e7c279); --hr-sun-strong:var(--legacy-ffe2a1,#ffe2a1); }
+:root[data-book-theme="moon"] .hr-diagram { --hr-sun:var(--legacy-94610d,#94610d); --hr-sun-strong:var(--legacy-744a00,#744a00); }
+.bf-svg .hr-note { font-size:10px; fill:var(--muted); }
+.bf-svg .hr-formula { font-size:10px; fill:var(--muted); }
+.bf-svg .hr-axis-title { font-size:10px; fill:var(--muted); }
+.bf-svg .hr-tick { font-size:10px; fill:var(--muted); font-variant-numeric:tabular-nums; }
+.bf-svg .hr-spectral { fill:var(--legacy-1b2430,#1b2430); font-size:8.5px; font-weight:650; pointer-events:none; }
+.hr-plot { fill:var(--panel); stroke:var(--line); stroke-width:1; }
+.hr-grid { stroke:var(--line); stroke-width:.65; opacity:.7; }
+.hr-axis-line { stroke:var(--muted); stroke-width:.9; }
+.hr-iso { fill:none; stroke:var(--muted); stroke-width:.9; stroke-dasharray:5 5; opacity:.8; }
+.bf-svg .hr-iso-label { font-size:9px; fill:var(--muted); paint-order:stroke; stroke:var(--panel); stroke-width:3px; }
+.hr-type { opacity:1; }
+.hr-type.is-off { opacity:.2; }
+.hr-envelope { fill:var(--text); fill-opacity:.06; stroke:var(--line); stroke-width:.8; stroke-dasharray:2 5; }
+.hr-diagram:not([data-hr-selected="all"]) .hr-type.is-on .hr-envelope { fill-opacity:.12; stroke:var(--accent); }
+.hr-point { stroke:var(--text); stroke-opacity:.26; stroke-width:.45; opacity:.92; }
+:root[data-book-theme="moon"] .hr-point { stroke-opacity:.46; stroke-width:.55; }
+.bf-svg .hr-type-label { font-size:15px; font-weight:650; fill:var(--text); paint-order:stroke; stroke:var(--panel); stroke-width:4.5px; stroke-linejoin:round; }
+.bf-svg .hr-type-sub { font-size:9.5px; fill:var(--muted); paint-order:stroke; stroke:var(--panel); stroke-width:3px; }
+.hr-temp-band { stroke:none; opacity:.92; }
+.hr-sun-guide { fill:none; stroke:var(--hr-sun); stroke-width:1; stroke-dasharray:3 5; opacity:.55; }
+.hr-sun-halo { fill:none; stroke:var(--hr-sun); stroke-width:1.8; }
+.hr-sun-core { fill:var(--hr-sun); }
+.hr-sun.is-located .hr-sun-halo { stroke:var(--hr-sun-strong); stroke-width:2.6; }
+.bf-svg .hr-sun-label { font-size:12px; font-weight:650; fill:var(--text); paint-order:stroke; stroke:var(--panel); stroke-width:3.5px; }
+.bf-svg .hr-sun-sub { font-size:9.5px; fill:var(--muted); paint-order:stroke; stroke:var(--panel); stroke-width:3px; }
+.hr-comparison-line { stroke:var(--series-3); stroke-width:1.1; stroke-dasharray:4 4; opacity:.9; }
+.hr-comparison-ring { fill:none; stroke:var(--series-3); stroke-width:2; }
+.hr-comparison-core { stroke:none; }
+.bf-svg .hr-comparison-label { font-size:9.5px; font-weight:600; fill:var(--text); paint-order:stroke; stroke:var(--panel); stroke-width:3px; }
+.bf-svg .hr-comparison-title { font-size:10.5px; font-weight:650; fill:var(--series-3); paint-order:stroke; stroke:var(--panel); stroke-width:3px; }
+.hr-diagram.is-compact .hr-note,.hr-diagram.is-compact .hr-formula { font-size:9px; }
+.hr-diagram.is-compact .hr-axis-title { font-size:9.2px; }
+.hr-diagram.is-compact .hr-tick { font-size:9.2px; }
+.hr-diagram.is-compact .hr-type-label { font-size:13px; stroke-width:3.5px; }
+.hr-diagram.is-compact .hr-iso-label { font-size:9.3px; }
+.hr-diagram.is-compact .hr-sun-label { font-size:11px; }
+.hr-diagram.is-compact .hr-sun-sub { font-size:8.8px; }
+.hr-diagram.is-compact .hr-comparison-title { font-size:9.5px; }
+.hr-diagram.is-tight .hr-note,.hr-diagram.is-tight .hr-formula { font-size:8.2px; }
+.hr-diagram.is-tight .hr-axis-title,.hr-diagram.is-tight .hr-tick { font-size:8.4px; }
+.hr-diagram.is-tight .hr-iso-label { font-size:8.5px; }
+.hr-controls { margin-top:18px; font-size:13px; }
+.hr-tabs { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px; }
+.hr-controls button { min-height:44px; padding:9px 14px; border:1px solid var(--line); border-radius:7px; background:var(--panel); color:var(--text); font:inherit; cursor:pointer; }
+.hr-controls button:hover { border-color:var(--accent); }
+.hr-controls button[aria-pressed="true"] { border-color:var(--accent); background:var(--soft); box-shadow:inset 0 -2px var(--accent); }
+.hr-controls :focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+.hr-experiment { padding:18px; border:1px solid var(--line); border-radius:10px; background:var(--subtle); }
+.hr-tool-row { display:flex; flex-wrap:wrap; align-items:center; gap:10px 14px; }
+.hr-toggle { display:flex; align-items:center; gap:10px; min-height:44px; font-weight:600; }
+.hr-toggle input { width:18px; height:18px; margin:0; accent-color:var(--accent); }
+.hr-compare-panel { margin-top:14px; padding-top:14px; border-top:1px solid var(--line); }
+.hr-compare-panel[hidden],.hr-hint[hidden] { display:none; }
+.hr-temperature { display:grid; grid-template-columns:1fr auto; gap:8px; align-items:center; margin:0 0 14px; font-size:12px; }
+.hr-temperature input { grid-column:1/-1; width:100%; margin:0; min-height:34px; accent-color:var(--accent); }
+.hr-temperature output { font-variant-numeric:tabular-nums; color:var(--text); font-weight:600; }
+.hr-readings { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+.hr-readings > div { display:grid; gap:7px; padding:12px; border:1px solid var(--line); border-radius:7px; background:var(--panel); }
+.hr-readings span:not(.inline-math, .inline-math *) { font-size:11.5px; line-height:1.6; color:var(--muted); overflow-wrap:anywhere; }
+.hr-readings strong { font-size:17px; font-weight:500; color:var(--text); font-variant-numeric:tabular-nums; overflow-wrap:anywhere; }
+.hr-experiment p { color:var(--muted); line-height:1.8; font-size:12px; margin:14px 0 0; }
+.hr-hint { border-top:1px dashed var(--line); padding-top:13px; }
+.hr-disclaimer { border-top:1px solid var(--line); padding-top:12px; }
+@media(max-width:560px) {
+ .hr-controls { margin-top:14px; }
+ .hr-tabs { gap:6px; }
+ .hr-controls button { padding:8px 11px; }
+ .hr-experiment { padding:13px; }
+ .hr-readings { grid-template-columns:1fr; gap:7px; }
+ .hr-readings > div { grid-template-columns:1fr auto; align-items:center; gap:5px 10px; padding:10px; }
+ .hr-readings > div span:not(.inline-math, .inline-math *):first-child { grid-column:1/-1; }
+ .hr-readings strong { grid-column:1; font-size:15px; }
+ .hr-readings > div span:not(.inline-math, .inline-math *):last-child { grid-column:2; text-align:right; font-size:10.5px; }
+ .hr-tool-row { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+ .hr-toggle { grid-column:1/-1; }
+ .hr-tool-row button { width:100%; }
+}
+@media(max-width:360px) {
+ #body-figure-2-stars-3 .bf-heading h3 { font-size:20px; line-height:1.45; }
+ .hr-tabs { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); }
+ .hr-controls button { padding:7px 5px; font-size:12px; }
+ .hr-readings > div { grid-template-columns:1fr; gap:4px; }
+ .hr-readings > div span:not(.inline-math, .inline-math *):first-child,.hr-readings strong,.hr-readings > div span:not(.inline-math, .inline-math *):last-child { grid-column:1; text-align:left; }
+ .hr-experiment { padding:11px; }
+}
+
+.bf-svg .bf-panel-focus { stroke:var(--accent); stroke-width:1.8; }
+.bf-svg .bf-has { fill:var(--text); font-weight:650; }
+.bf-svg .bf-none { fill:var(--muted); }
+.bf-svg .bf-sel { fill:var(--accent); font-weight:700; }
+/* Stroke-only weak lines. bf-faint paints a fill, so a polyline drawn with it is
+   closed and filled; grids, rulers, chords and sight lines use these instead. */
+.bf-svg .bf-wire { fill:none; stroke:var(--line); stroke-width:.9; }
+.bf-svg .bf-guide { fill:none; stroke:var(--muted); stroke-width:1; opacity:.9; }
+.bf-svg .bf-guide-dash { fill:none; stroke:var(--muted); stroke-width:1; stroke-dasharray:4 4; opacity:.9; }
+.bf-svg .bf-soft-edge { fill:var(--soft); fill-opacity:.5; stroke:var(--line); stroke-width:.9; }
+.bf-svg .bf-soft { fill:var(--soft); fill-opacity:.45; stroke:none; }
+/* Filled bars need to be read quantitatively, so they are stronger than the
+   18%-opacity decorative areas. */
+.bf-svg .bf-bar-a { fill:var(--gold); fill-opacity:.6; stroke:none; }
+.bf-svg .bf-bar-b { fill:var(--cyan); fill-opacity:.6; stroke:none; }
+.bf-svg .bf-bar-c { fill:var(--series-3); fill-opacity:.55; stroke:none; }
+.bf-svg .bf-callout { font-size:11px; fill:var(--text); paint-order:stroke; stroke:var(--subtle); stroke-width:3.5px; stroke-linejoin:round; }
+.bf-svg .bf-callout-muted { font-size:10px; fill:var(--muted); paint-order:stroke; stroke:var(--subtle); stroke-width:3px; stroke-linejoin:round; }
+.bf-svg .bf-callout-accent { font-size:11px; font-weight:650; fill:var(--accent); paint-order:stroke; stroke:var(--subtle); stroke-width:3.5px; stroke-linejoin:round; }
+/* Highlighting a named component inside a multi-part figure. */
+.bf-svg [data-part] { transition:opacity .16s ease; }
+.bf-svg [data-part].is-dim { opacity:.16; }
+
+/* Third-variable colour for the fundamental-plane figure (theme aware). */
+.bf-svg .pl-i0 { fill:var(--cyan); }
+.bf-svg .pl-i1 { fill:color-mix(in srgb, var(--cyan) 70%, var(--gold)); }
+.bf-svg .pl-i2 { fill:color-mix(in srgb, var(--cyan) 40%, var(--gold)); }
+.bf-svg .pl-i3 { fill:color-mix(in srgb, var(--cyan) 15%, var(--gold)); }
+.bf-svg .pl-i4 { fill:var(--gold); }
+.bf-svg .pl-legend-swatch { stroke:var(--line); stroke-width:.6; }
+
+/* Shared control chrome for the redesigned figures (same grammar as .hr-controls). */
+.bf-controls { margin-top:18px; font-size:13px; }
+.bf-controls .bf-tabs { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px; }
+.bf-controls button { min-height:44px; padding:9px 14px; border:1px solid var(--line); border-radius:7px; background:var(--panel); color:var(--text); font:inherit; cursor:pointer; }
+.bf-controls button:hover { border-color:var(--accent); }
+.bf-controls button[aria-pressed="true"] { border-color:var(--accent); background:var(--soft); box-shadow:inset 0 -2px var(--accent); }
+.bf-controls :focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+.bf-controls .bf-box { padding:16px; border:1px solid var(--line); border-radius:10px; background:var(--subtle); }
+.bf-controls .bf-row { display:flex; flex-wrap:wrap; align-items:center; gap:10px 16px; }
+.bf-controls .bf-toggle { display:flex; align-items:center; gap:10px; min-height:44px; font-weight:600; color:var(--text); }
+.bf-controls .bf-toggle input { width:18px; height:18px; margin:0; accent-color:var(--accent); }
+.bf-controls .bf-slider { display:grid; grid-template-columns:1fr auto; gap:5px 10px; align-items:center; margin:12px 0 0; font-size:12px; color:var(--muted); }
+.bf-controls .bf-slider input { grid-column:1/-1; width:100%; min-height:34px; margin:0; accent-color:var(--accent); }
+.bf-controls .bf-slider output { justify-self:end; color:var(--text); font-weight:600; font-variant-numeric:tabular-nums; }
+.bf-controls .bf-readings { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin-top:12px; }
+.bf-controls .bf-readings > div { display:grid; gap:5px; padding:11px; border:1px solid var(--line); border-radius:7px; background:var(--panel); }
+.bf-controls .bf-readings b { font-size:16px; font-weight:500; font-variant-numeric:tabular-nums; color:var(--text); }
+.bf-controls .bf-readings span:not(.inline-math, .inline-math *) { font-size:11px; line-height:1.6; color:var(--muted); overflow-wrap:anywhere; }
+.bf-controls p { color:var(--muted); font-size:12px; line-height:1.8; margin:12px 0 0; }
+.bf-controls .bf-legend-row { display:flex; flex-wrap:wrap; gap:6px 16px; margin-top:10px; font-size:11.5px; color:var(--muted); }
+.bf-controls .bf-swatch { display:inline-block; width:12px; height:12px; border-radius:3px; border:1px solid var(--line); vertical-align:-1px; }
+.bf-controls .bf-swatch.pl-i0 { background:var(--cyan); }
+.bf-controls .bf-swatch.pl-i1 { background:color-mix(in srgb, var(--cyan) 70%, var(--gold)); }
+.bf-controls .bf-swatch.pl-i2 { background:color-mix(in srgb, var(--cyan) 40%, var(--gold)); }
+.bf-controls .bf-swatch.pl-i3 { background:color-mix(in srgb, var(--cyan) 15%, var(--gold)); }
+.bf-controls .bf-swatch.pl-i4 { background:var(--gold); }
+@media(max-width:560px) {
+  .bf-controls .bf-tabs { gap:6px; }
+  .bf-controls button { padding:8px 11px; }
+  .bf-controls .bf-readings { grid-template-columns:1fr; gap:7px; }
+}
+
+.bf-legend:before { content:'图例'; color:var(--muted); }
+.bf-legend .bf-key-dashed { border-top-style:dashed; }
+.bf-legend .bf-key-dotted { border-top-style:dotted; }
+.bf-legend .bf-key-dot { width:8px; height:8px; border:0; border-radius:50%; background:var(--gold); }
+.bf-legend .bf-key-dot.bf-series-2 { background:var(--cyan); }
+.bf-legend .bf-key-dot.bf-series-3 { background:var(--series-3); }

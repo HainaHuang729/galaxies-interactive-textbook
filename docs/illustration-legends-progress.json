@@ -1,0 +1,183 @@
+{
+  "task": "illustration-legends-19",
+  "sessionDate": "2026-10-19",
+  "owner": "illustration worker (Lead scope: illustrations only)",
+  "status": "accepted_by_root",
+  "review": "docs/illustration-legends-review.json",
+  "scope": "第3/6/7章新增3幅原创代码SVG；为全书19幅插画补结构化图例、箭头/显示色语义与读图线索；builder与弹窗来源显示支持",
+  "coverage": {
+    "illustrations": 19,
+    "chapters": 16,
+    "aiConceptImages": 16,
+    "codeSvgImages": 3,
+    "legendItems": 85,
+    "note": "原有16幅AI插画的webp位图与三档srcset保持不变，仅追加图例与来源字段"
+  },
+  "candidates": [
+    {
+      "chapter": 3,
+      "id": "light-through-expansion",
+      "title": "膨胀中的光：红移与距离几何",
+      "anchor": "geometry",
+      "placement": "body",
+      "page": "chapter-3.html",
+      "format": "svg",
+      "status": "implemented_static_checked",
+      "composition": "观测者在右，三座共动星系在左；光路中心线为直线，横向波纹表示波长，波峰间距由源向观测者变宽并用金色波长尺标出λₑ与λ₀；底部对比共动距离与光行距离，并明确“取景中心不是宇宙中心”。",
+      "whyNotDuplicate": "正文图3-distance-4已画共动/物理分面与三种距离定义，3-distance-5已画共形视界；本图把膨胀—光传播—波长拉伸—距离测量放在同一条示意光路上，不重复这两张图的分面。",
+      "files": [
+        "dist/assets/illustrations/light-through-expansion.svg"
+      ],
+      "legendItems": 6
+    },
+    {
+      "chapter": 6,
+      "id": "redshift-space-distortion",
+      "title": "速度把位置写歪：真实空间与红移空间",
+      "anchor": "redshift",
+      "placement": "body",
+      "page": "chapter-6.html",
+      "format": "svg",
+      "status": "implemented_static_checked",
+      "composition": "上下两格为同一批星系示踪点，观测者在左、视线水平；上格真实视向位置r∥，下格按s∥=r∥+v∥/H₀平移；外围相干内流沿视线压扁，核心随机视向速度沿视线拉长；蓝色=朝向观测者，金色=远离观测者。",
+      "whyNotDuplicate": "正文图6-lensing-10与6-galaxies-11分别讲透镜和巡天遮罩，未画红移空间映射；本图直接对应6.3的s∥映射与Kaiser/上帝手指概念，不把位移画成星系真实运动。",
+      "files": [
+        "dist/assets/illustrations/redshift-space-distortion.svg"
+      ],
+      "legendItems": 8
+    },
+    {
+      "chapter": 7,
+      "id": "halo-mass-boundary",
+      "title": "暗晕没有边缘：质量半径与密度边界",
+      "anchor": "boundaries",
+      "placement": "body",
+      "page": "chapter-7.html",
+      "format": "svg",
+      "status": "implemented_static_checked",
+      "composition": "左侧球对称NFW暗晕粒子截面：rₛ尺度半径与R₂₀₀c质量定义半径用虚线圆，边界外仍有稀疏抽样；右侧示例浓度c=4的归一化密度剖面与包围质量曲线，标出ρ(R₂₀₀c)>0与M₂₀₀c。",
+      "whyNotDuplicate": "正文图7-structure-13讲球形/三轴等密度面形状，7-progenitors-12讲并合树；本图专门区分“质量定义半径”和“密度边界不存在”，对应7.5的质量边界与外边界实验。",
+      "files": [
+        "dist/assets/illustrations/halo-mass-boundary.svg"
+      ],
+      "legendItems": 7
+    }
+  ],
+  "legendSchema": {
+    "field": "legend.kind/note/items[{icon,color,label,meaning}]/read",
+    "icons": [
+      "dot",
+      "line",
+      "dashed",
+      "area",
+      "arrow",
+      "ring"
+    ],
+    "renderedIn": "图注与放大弹窗（图注DOM克隆）",
+    "fontSize": "图例中文统一13px；600px以下单列换行",
+    "sourceSeparation": "caption显示manifest provenance；弹窗显示generator+provenance；data-art-kind区分code-svg/ai-image"
+  },
+  "builder": {
+    "status": "ready_not_run_on_real_dist",
+    "script": "scripts/build-illustrations.cjs",
+    "supports": [
+      "format=svg：单矢量src、无srcset、full-src指向同一svg",
+      "旧webp：保留960 src与640/960/1536 srcset、1536大图",
+      "图例HTML：内联SVG点/线/虚线/面块/箭头/虚线圆图标",
+      "data-art-generator/data-art-format与figure data-art-kind",
+      "既有regions按钮与物理依据/参考资料行不变"
+    ],
+    "sandboxVerification": "work/illustration-legends/build-test/dist（22个HTML副本）：19幅全部安装、SVG无srcset、webp srcset/full-src保留、图例/图区控件齐全、正文插图锚点顺序正确、构建幂等、无插图页哈希未变；0错误",
+    "wholeBookBuild": "由主agent统一执行；本worker未对真实dist运行build-illustrations.cjs"
+  },
+  "checks": [
+    {
+      "check": "manifest完整性",
+      "command": "node scripts/check-illustration-legends.cjs",
+      "result": "PASS",
+      "detail": "19幅/16章/16 webp+3 svg/85条图例/图例字号13px/0 errors 0 warnings"
+    },
+    {
+      "check": "SVG静态合法性",
+      "command": "python work/illustration-legends/validate-svg.py",
+      "result": "PASS",
+      "detail": "3个SVG可由lxml解析；viewBox 1200×800；无image/script/foreignObject/外部href；类样式齐全；无文本越界"
+    },
+    {
+      "check": "图内标签近似重叠",
+      "command": "python work/illustration-legends/check-text-overlap.py",
+      "result": "PASS",
+      "detail": "3个SVG按字号与锚点估算的标签两两重叠数为0（旋转轴标除外）"
+    },
+    {
+      "check": "builder沙箱验证",
+      "command": "node work/illustration-legends/test-builder-sandbox.cjs",
+      "result": "PASS",
+      "detail": "22个HTML副本；19幅安装；svg/webp分支、图例、regions、正文锚点顺序、无插图页不变、二次构建幂等；0 errors"
+    },
+    {
+      "check": "生成HTML解析",
+      "command": "python work/illustration-legends/parse-generated-html.py",
+      "result": "PASS",
+      "detail": "19个figure；图例/读图线索/note存在；code-svg的img指向svg且无srcset；webp保留srcset"
+    },
+    {
+      "check": "JS语法",
+      "command": "node --check scripts/build-illustrations.cjs; node --check scripts/check-illustration-legends.cjs; node --check dist/assets/book-illustrations.js",
+      "result": "PASS"
+    },
+    {
+      "check": "清单引用与字节",
+      "command": "node work/illustration-legends/final-manifest-audit.cjs",
+      "result": "PASS",
+      "detail": "无缺失文件、svg文件bytes与manifest一致、url(#...)引用均可解析"
+    },
+    {
+      "check": "离线粗略预览",
+      "command": "python work/illustration-legends/render-preview.py",
+      "result": "AUTHORING_AID_ONLY",
+      "detail": "Pillow近似渲染用于检查标签位置、波长与点云布局；不等于浏览器渲染，不作为视觉验收证据"
+    }
+  ],
+  "browser": {
+    "owner": "main agent",
+    "status": "pending",
+    "requestedChecks": [
+      "第3/6/7章正文插图与图注在桌面与320px的实际排版",
+      "图例中文≥13px、320px单列换行、无横向溢出",
+      "放大弹窗：图注+图例+来源（原创SVG代码绘制 vs ImageGen）正确显示",
+      "两主题（afterglow/moon）下图例图标与文字对比度",
+      "三个SVG在img与dialog中的实际渲染（字体fallback、虚线、透明度）",
+      "既有4幅regions按钮未被图例挤压"
+    ]
+  },
+  "notRun": [
+    "真实dist上的node scripts/build-illustrations.cjs",
+    "整书build",
+    "任何浏览器/Playwright截图",
+    "提交、推送或部署"
+  ],
+  "knownLimitations": [
+    "AI概念图的图例语义依据manifest的alt/caption/cue/prompt，不重新指认像素级小物体；其显示色仍不是定量刻度",
+    "三幅SVG为原创示意：波长、速度位移、粒子抽样与距离比例均未按实际尺度标定；第7章右图使用本章NFW公式与示例c=4，只说明形状",
+    "静态检查不能证明浏览器字体fallback与320px视觉换行；需主agent截图验收",
+    "整书构建后dist HTML才会包含新图例；当前真实dist尚未重建"
+  ],
+  "deliveredFiles": [
+    "content/illustrations.json",
+    "dist/assets/illustrations/light-through-expansion.svg",
+    "dist/assets/illustrations/redshift-space-distortion.svg",
+    "dist/assets/illustrations/halo-mass-boundary.svg",
+    "scripts/build-illustrations.cjs",
+    "dist/assets/book-illustrations.js",
+    "dist/assets/book-illustrations.css",
+    "scripts/check-illustration-legends.cjs"
+  ],
+  "updated_at": "2026-10-19T20:19:00+08:00",
+  "rootAcceptance": {
+    "date": "2026-10-19",
+    "status": "accepted",
+    "report": "docs/book-legends-validation.json",
+    "note": "Root integrated the real build, completed 114 artwork layouts and 19 dialogs, corrected wording, added a readable SVG pan viewport and swatch contrast backing. Earlier worker hashes are historical; final hashes are in the root report."
+  }
+}
