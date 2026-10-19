@@ -4,6 +4,6 @@
   "sourceDownload": "https://github.com/HainaHuang729/galaxies-interactive-textbook/archive/refs/heads/main.zip",
   "workflow": "https://github.com/HainaHuang729/galaxies-interactive-textbook/blob/main/docs/BOOK_PRODUCTION_WORKFLOW.md",
   "release": "0.1.1",
-  "skillDownload": "https://github.com/HainaHuang729/galaxies-interactive-textbook/releases/latest/download/interactive-textbook-skill.zip",
-  "skillSource": "https://github.com/HainaHuang729/galaxies-interactive-textbook/tree/main/skills/interactive-textbook"
+  "skillDownload": "https://github.com/HainaHuang729/interactive-textbook-skill/releases/latest/download/interactive-textbook-skill.zip",
+  "skillGuide": "https://github.com/HainaHuang729/interactive-textbook-skill#readme"
 }
